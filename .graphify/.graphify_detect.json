@@ -23,7 +23,7 @@
   "graphifyignore_patterns": 3,
   "git": {
     "source_owner": "git",
-    "source_hash": "bf795d689f820dd31a179fb87e918861a42d1fa6",
+    "source_hash": "31fe9766db21cb016bffa30991758d2fea8722a7",
     "branches": [
       "main"
     ],
@@ -33,10 +33,10 @@
   "scope": {
     "requested_mode": "all",
     "resolved_mode": "all",
-    "source": "cli",
+    "source": "configured-default",
     "root": ".",
     "git_root": ".",
-    "head": "bf795d689f820dd31a179fb87e918861a42d1fa6",
+    "head": "31fe9766db21cb016bffa30991758d2fea8722a7",
     "candidate_count": null,
     "included_count": 8,
     "excluded_untracked_count": 0,
