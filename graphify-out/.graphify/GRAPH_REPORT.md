@@ -1,7 +1,7 @@
 # Graph Report - .  (2026-06-29)
 
 ## Corpus Check
-- Corpus is ~17,998 words - fits in a single context window. You may not need a graph.
+- Corpus is ~17,997 words - fits in a single context window. You may not need a graph.
 
 ## Summary
 - 68 nodes · 203 edges · 8 communities detected
@@ -17,7 +17,7 @@
 - Excluded: 0 untracked · 0 ignored · 0 sensitive · 0 missing committed
 
 ## Graph Freshness
-- Built from Git commit: `31fe976`
+- Built from Git commit: `0c05c11`
 - Compare this hash to `git rev-parse HEAD` before trusting freshness-sensitive graph output.
 ## God Nodes (most connected - your core abstractions)
 1. `AION Framework` - 55 edges
