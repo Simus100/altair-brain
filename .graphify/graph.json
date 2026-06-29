@@ -1,0 +1,213 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "provenance": {
+      "source_owner": "git",
+      "source_id": "repo:github.com/Simus100/altair-brain",
+      "observed_at": "2026-06-29T21:14:55.126Z",
+      "source_hash": "bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "adapter_version": "graphify-git/1"
+    },
+    "community_labels": {
+      "0": "Community 0",
+      "1": "Community 1"
+    },
+    "built_from_commit": "bf795d689f820dd31a179fb87e918861a42d1fa6"
+  },
+  "topology_signature": "n=6;e=9;branch:repo:github.com/Simus100/altair-brain#main,commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8,commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7,commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945,commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6,commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8|branch:repo:github.com/Simus100/altair-brain#main\tcommit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8\tON_BRANCH;branch:repo:github.com/Simus100/altair-brain#main\tcommit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7\tON_BRANCH;branch:repo:github.com/Simus100/altair-brain#main\tcommit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945\tON_BRANCH;branch:repo:github.com/Simus100/altair-brain#main\tcommit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6\tON_BRANCH;branch:repo:github.com/Simus100/altair-brain#main\tcommit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8\tON_BRANCH;commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8\tcommit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945\tPARENT_OF;commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7\tcommit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945\tPARENT_OF;commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7\tcommit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6\tPARENT_OF;commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945\tcommit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8\tPARENT_OF",
+  "nodes": [
+    {
+      "id": "commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "label": "0cb87b9 Initial commit",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Commit",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "sha": "0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "author": "Simone Macelloni <admin@universalis.it>",
+      "authoredAt": "2026-06-29T21:03:00+02:00",
+      "message_summary": "Initial commit",
+      "message_length": 14,
+      "parents": [],
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "label": "3f36d08 primo grafo",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Commit",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "sha": "3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "author": "Simus100 <admin@universalis.it>",
+      "authoredAt": "2026-06-29T22:09:46+02:00",
+      "message_summary": "primo grafo",
+      "message_length": 11,
+      "parents": [
+        "a9a44d5cec1dedd0772e553768c5f3d491cf7945"
+      ],
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "label": "a9a44d5 Merge branch 'main' of github.com:Simus100/altair-brain",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Commit",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "sha": "a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "author": "Simus100 <admin@universalis.it>",
+      "authoredAt": "2026-06-29T21:08:14+02:00",
+      "message_summary": "Merge branch 'main' of github.com:Simus100/altair-brain",
+      "message_length": 55,
+      "parents": [
+        "d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+        "0cb87b9d18bd4021b95f8927746addb630be84a8"
+      ],
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "label": "bf795d6 aggiunto nuovo file",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Commit",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "sha": "bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "author": "Simus100 <admin@universalis.it>",
+      "authoredAt": "2026-06-29T22:41:05+02:00",
+      "message_summary": "aggiunto nuovo file",
+      "message_length": 19,
+      "parents": [
+        "3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7"
+      ],
+      "community": 1,
+      "community_name": "Community 1"
+    },
+    {
+      "id": "commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "label": "d55c6ea init Altair",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Commit",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "sha": "d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "author": "Simus100 <admin@universalis.it>",
+      "authoredAt": "2026-06-29T21:03:17+02:00",
+      "message_summary": "init Altair",
+      "message_length": 11,
+      "parents": [],
+      "community": 0,
+      "community_name": "Community 0"
+    },
+    {
+      "id": "branch:repo:github.com/Simus100/altair-brain#main",
+      "label": "main",
+      "file_type": "concept",
+      "source_file": "git",
+      "node_type": "Branch",
+      "repo": "repo:github.com/Simus100/altair-brain",
+      "branch_name": "main",
+      "head_sha": "bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "community": 0,
+      "community_name": "Community 0"
+    }
+  ],
+  "links": [
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "target": "branch:repo:github.com/Simus100/altair-brain#main",
+      "relation": "ON_BRANCH",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "_tgt": "branch:repo:github.com/Simus100/altair-brain#main",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "target": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "relation": "PARENT_OF",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@0cb87b9d18bd4021b95f8927746addb630be84a8",
+      "_tgt": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "target": "branch:repo:github.com/Simus100/altair-brain#main",
+      "relation": "ON_BRANCH",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "_tgt": "branch:repo:github.com/Simus100/altair-brain#main",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "target": "commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "relation": "PARENT_OF",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "_tgt": "commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "target": "branch:repo:github.com/Simus100/altair-brain#main",
+      "relation": "ON_BRANCH",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "_tgt": "branch:repo:github.com/Simus100/altair-brain#main",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "target": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "relation": "PARENT_OF",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "_tgt": "commit:repo:github.com/Simus100/altair-brain@3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "target": "branch:repo:github.com/Simus100/altair-brain#main",
+      "relation": "ON_BRANCH",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@bf795d689f820dd31a179fb87e918861a42d1fa6",
+      "_tgt": "branch:repo:github.com/Simus100/altair-brain#main",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "target": "branch:repo:github.com/Simus100/altair-brain#main",
+      "relation": "ON_BRANCH",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "_tgt": "branch:repo:github.com/Simus100/altair-brain#main",
+      "confidence_score": 1
+    },
+    {
+      "source": "commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "target": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "relation": "PARENT_OF",
+      "confidence": "EXTRACTED",
+      "source_file": "git",
+      "_src": "commit:repo:github.com/Simus100/altair-brain@d55c6eac9abda3ee8497bc9ce837d76a7a7dbce8",
+      "_tgt": "commit:repo:github.com/Simus100/altair-brain@a9a44d5cec1dedd0772e553768c5f3d491cf7945",
+      "confidence_score": 1
+    }
+  ],
+  "hyperedges": []
+}

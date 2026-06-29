@@ -1,0 +1,54 @@
+{
+  ".agents/rules/graphify.md": {
+    "mtime": 1782760795266.986,
+    "hash": "a0e4d192b9e2e17256124dbfc8e24e6a"
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1782760795266.986,
+    "hash": "637776aa6f7496d069afe7520c845c8a"
+  },
+  "AGENTS.md": {
+    "mtime": 1782759452391.7888,
+    "hash": "1ddf0664a35c46a69c689efd7bd6a74e"
+  },
+  "CLAUDE.md": {
+    "mtime": 1782760779101.6904,
+    "hash": "8a6643a420fdad6bfb583523bc6cef16"
+  },
+  "README.md": {
+    "mtime": 1782759408580.5193,
+    "hash": "060febd502e820051aabc37c17eecb07"
+  },
+  "graphify-out/2026-06-29/GRAPH_REPORT.md": {
+    "mtime": 1782762835172.2842,
+    "hash": "87f0fc9bdd6b5e3c94d134cb15bfe596"
+  },
+  "graphify-out/GRAPH_REPORT.md": {
+    "mtime": 1782765631770.999,
+    "hash": "c8e3d410f7319c0b49961fa813d5a3e7"
+  },
+  "graphify-out/graph.html": {
+    "mtime": 1782765631774.01,
+    "hash": "d1c4ae482392b718a8ad63c2a347ada1"
+  },
+  "raw/AION_Framework.md": {
+    "mtime": 1782765307178.5623,
+    "hash": "409c8e21906c24f18a3412d5c60439cc"
+  },
+  "raw/AION_Agents.md": {
+    "mtime": 1782767401447.174,
+    "hash": "5fed01200b96afa6f5b56a4b297173dd"
+  },
+  "raw/AION_Components.md": {
+    "mtime": 1782767491000,
+    "hash": "17096a9ccb127b457b9340f56b009244"
+  },
+  "raw/AION_Description.md": {
+    "mtime": 1782767254510.1123,
+    "hash": "f8a2df3724f07111501005e7592f9876"
+  },
+  "raw/AION_Manifest.md": {
+    "mtime": 1782767215049.5789,
+    "hash": "f1f8d32b3c6a935565723c0ba36ac925"
+  }
+}

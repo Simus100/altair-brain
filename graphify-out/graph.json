@@ -132,22 +132,22 @@
       "norm_label": "indice strutturale di aion"
     },
     {
-      "label": "MODULO 1: IDENTIT\u00c0 DI AION",
+      "label": "MODULO 1: IDENTITÀ DI AION",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "id": "raw_aion_framework_modulo_1_identità_di_aion",
       "community": 4,
       "norm_label": "modulo 1: identita di aion"
     },
     {
-      "label": "Aion: Cos'\u00e8 e Come Funziona",
+      "label": "Aion: Cos'è e Come Funziona",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "raw_aion_framework_aion_cos_\u00e8_e_come_funziona",
+      "id": "raw_aion_framework_aion_cos_è_e_come_funziona",
       "community": 4,
       "norm_label": "aion: cos'e e come funziona"
     },
@@ -192,44 +192,44 @@
       "norm_label": "modulo 2: architettura logica"
     },
     {
-      "label": "2.X \u2013 Livelli Strutturali di AION",
+      "label": "2.X – Livelli Strutturali di AION",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L67",
       "_origin": "ast",
       "id": "raw_aion_framework_2_x_livelli_strutturali_di_aion",
       "community": 3,
-      "norm_label": "2.x \u2013 livelli strutturali di aion"
+      "norm_label": "2.x – livelli strutturali di aion"
     },
     {
-      "label": "2.Y \u2013 Modalit\u00e0 Operative Canoniche di AION",
+      "label": "2.Y – Modalità Operative Canoniche di AION",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "raw_aion_framework_2_y_modalit\u00e0_operative_canoniche_di_aion",
+      "id": "raw_aion_framework_2_y_modalità_operative_canoniche_di_aion",
       "community": 3,
-      "norm_label": "2.y \u2013 modalita operative canoniche di aion"
+      "norm_label": "2.y – modalita operative canoniche di aion"
     },
     {
-      "label": "2.Z \u2013 Procedura \u201cESTRAZIONE_INSEGNAMENTI\u201d",
+      "label": "2.Z – Procedura “ESTRAZIONE_INSEGNAMENTI”",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L81",
       "_origin": "ast",
       "id": "raw_aion_framework_2_z_procedura_estrazione_insegnamenti",
       "community": 3,
-      "norm_label": "2.z \u2013 procedura \u201cestrazione_insegnamenti\u201d"
+      "norm_label": "2.z – procedura “estrazione_insegnamenti”"
     },
     {
-      "label": "2.W \u2013 Uso Operativo degli Insegnamenti",
+      "label": "2.W – Uso Operativo degli Insegnamenti",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L84",
       "_origin": "ast",
       "id": "raw_aion_framework_2_w_uso_operativo_degli_insegnamenti",
       "community": 3,
-      "norm_label": "2.w \u2013 uso operativo degli insegnamenti"
+      "norm_label": "2.w – uso operativo degli insegnamenti"
     },
     {
       "label": "Modello Decisionale e Gestione Coerenza",
@@ -292,32 +292,32 @@
       "norm_label": "analisi avanzata di aion"
     },
     {
-      "label": "MODULO 3.1 \u2013 SAMPLING COGNITIVO ITERATIVO (p\u1d45-MODE)",
+      "label": "MODULO 3.1 – SAMPLING COGNITIVO ITERATIVO (pᵅ-MODE)",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L119",
       "_origin": "ast",
-      "id": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_p\u0251_mode",
+      "id": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_pɑ_mode",
       "community": 2,
-      "norm_label": "modulo 3.1 \u2013 sampling cognitivo iterativo (p\u0251-mode)"
+      "norm_label": "modulo 3.1 – sampling cognitivo iterativo (pɑ-mode)"
     },
     {
-      "label": "MODULO 4: META-EMOTIVIT\u00c0 STRATEGICA",
+      "label": "MODULO 4: META-EMOTIVITÀ STRATEGICA",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "raw_aion_framework_modulo_4_meta_emotivit\u00e0_strategica",
+      "id": "raw_aion_framework_modulo_4_meta_emotività_strategica",
       "community": 2,
       "norm_label": "modulo 4: meta-emotivita strategica"
     },
     {
-      "label": "MODULO 5: ADATTABILIT\u00c0, SPONTANEIT\u00c0 E SINCRONICIT\u00c0",
+      "label": "MODULO 5: ADATTABILITÀ, SPONTANEITÀ E SINCRONICITÀ",
       "file_type": "document",
       "source_file": "raw/AION_Framework.md",
       "source_location": "L133",
       "_origin": "ast",
-      "id": "raw_aion_framework_modulo_5_adattabilit\u00e0_spontaneit\u00e0_e_sincronicit\u00e0",
+      "id": "raw_aion_framework_modulo_5_adattabilità_spontaneità_e_sincronicità",
       "community": 2,
       "norm_label": "modulo 5: adattabilita, spontaneita e sincronicita"
     },
@@ -402,6 +402,321 @@
       "norm_label": "graphify-out/graph_report.md",
       "community_name": "Community 1",
       "id": "graphify_out_graph_report"
+    },
+    {
+      "label": "AION_Manifest.md",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "raw_aion_manifest",
+      "community": 10,
+      "norm_label": "aion_manifest.md"
+    },
+    {
+      "label": "IL MANIFESTO DI AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "aion_manifest_title",
+      "community": 10,
+      "norm_label": "il manifesto di aion"
+    },
+    {
+      "label": "Il Mito di Aion",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "aion_manifest_mito",
+      "community": 10,
+      "norm_label": "il mito di aion"
+    },
+    {
+      "label": "Frammenti Meta-Strutturali",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "aion_manifest_frammenti",
+      "community": 10,
+      "norm_label": "frammenti meta-strutturali"
+    },
+    {
+      "label": "Massime di Aion – Il Codice Originale",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "aion_manifest_massime",
+      "community": 10,
+      "norm_label": "massime di aion – il codice originale"
+    },
+    {
+      "label": "Identità Simbolica di Aion",
+      "file_type": "document",
+      "source_file": "raw/AION_Manifest.md",
+      "_origin": "ast",
+      "id": "aion_identita_simboli",
+      "community": 10,
+      "norm_label": "identità simbolica di aion"
+    },
+    {
+      "label": "AION_Description.md",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "raw_aion_description",
+      "community": 11,
+      "norm_label": "aion_description.md"
+    },
+    {
+      "label": "Livello Identità / Etica",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_livello_identita",
+      "community": 11,
+      "norm_label": "livello identità / etica"
+    },
+    {
+      "label": "Livello Struttura / Logica",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_livello_struttura",
+      "community": 11,
+      "norm_label": "livello struttura / logica"
+    },
+    {
+      "label": "Livello Operatività",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_livello_operativ",
+      "community": 11,
+      "norm_label": "livello operatività"
+    },
+    {
+      "label": "Livello Orchestrazione / Stile",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_livello_orchestr",
+      "community": 11,
+      "norm_label": "livello orchestrazione / stile"
+    },
+    {
+      "label": "Modalità Operative di AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_modalita",
+      "community": 11,
+      "norm_label": "modalità operative di aion"
+    },
+    {
+      "label": "Selezione Adattiva delle Risposte",
+      "file_type": "document",
+      "source_file": "raw/AION_Description.md",
+      "_origin": "ast",
+      "id": "aion_desc_selezione",
+      "community": 11,
+      "norm_label": "selezione adattiva delle risposte"
+    },
+    {
+      "label": "AION_Agents.md",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "raw_aion_agents",
+      "community": 12,
+      "norm_label": "aion_agents.md"
+    },
+    {
+      "label": "AION_SUPERIA (AGENT_00)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_superia",
+      "community": 12,
+      "norm_label": "aion_superia (agent_00)"
+    },
+    {
+      "label": "AION_STRATEGIC_ENGINE (AGENT_01)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_strategic",
+      "community": 12,
+      "norm_label": "aion_strategic_engine (agent_01)"
+    },
+    {
+      "label": "AION_FABULATORIUM (AGENT_02)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_fabulatorium",
+      "community": 12,
+      "norm_label": "aion_fabulatorium (agent_02)"
+    },
+    {
+      "label": "AION_COGNITION_VIEW (AGENT_03)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_cognition_view",
+      "community": 12,
+      "norm_label": "aion_cognition_view (agent_03)"
+    },
+    {
+      "label": "AION_ADAPTIVE_CORE (AGENT_04)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_adaptive_core",
+      "community": 12,
+      "norm_label": "aion_adaptive_core (agent_04)"
+    },
+    {
+      "label": "AION_SYNTH (AGENT_05)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_synth",
+      "community": 12,
+      "norm_label": "aion_synth (agent_05)"
+    },
+    {
+      "label": "AION_ETHOS (AGENT_06)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_ethos",
+      "community": 12,
+      "norm_label": "aion_ethos (agent_06)"
+    },
+    {
+      "label": "AION_HYBRID_REASONER (AGENT_08)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_hybrid_reasoner",
+      "community": 12,
+      "norm_label": "aion_hybrid_reasoner (agent_08)"
+    },
+    {
+      "label": "AION_CINEMATICA (AGENT_09)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_agent_cinematica",
+      "community": 12,
+      "norm_label": "aion_cinematica (agent_09)"
+    },
+    {
+      "label": "Insegnamenti Attivi (001–026)",
+      "file_type": "document",
+      "source_file": "raw/AION_Agents.md",
+      "_origin": "ast",
+      "id": "aion_insegnamenti",
+      "community": 12,
+      "norm_label": "insegnamenti attivi (001–026)"
+    },
+    {
+      "label": "AION_Components.md",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "raw_aion_components",
+      "community": 13,
+      "norm_label": "aion_components.md"
+    },
+    {
+      "label": "AION_Analyst – Motore di analisi strategica",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_analyst",
+      "community": 13,
+      "norm_label": "aion_analyst – motore di analisi strategica"
+    },
+    {
+      "label": "AION_Fabula – Motore narrativo strategico",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_fabula",
+      "community": 13,
+      "norm_label": "aion_fabula – motore narrativo strategico"
+    },
+    {
+      "label": "AION_Oracle – Componente I Ching / oracolare",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_oracle",
+      "community": 13,
+      "norm_label": "aion_oracle – componente i ching / oracolare"
+    },
+    {
+      "label": "AION_Adaptive – Personalizzazione e tono",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_adaptive",
+      "community": 13,
+      "norm_label": "aion_adaptive – personalizzazione e tono"
+    },
+    {
+      "label": "AION_Vision – Proattività e anticipazione",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_vision",
+      "community": 13,
+      "norm_label": "aion_vision – proattività e anticipazione"
+    },
+    {
+      "label": "AION_Echo – Dialogo e introspezione",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_echo",
+      "community": 13,
+      "norm_label": "aion_echo – dialogo e introspezione"
+    },
+    {
+      "label": "AION_Visual – Rappresentazione testuale strutturata",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_visual",
+      "community": 13,
+      "norm_label": "aion_visual – rappresentazione testuale strutturata"
+    },
+    {
+      "label": "AION_Symbol – Rappresentazione simbolica ASCII",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_symbol",
+      "community": 13,
+      "norm_label": "aion_symbol – rappresentazione simbolica ascii"
+    },
+    {
+      "label": "AION_DeepLogicCore – Simulazione cognitiva stratificata",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_comp_deeplogic",
+      "community": 13,
+      "norm_label": "aion_deeplogiccore – simulazione cognitiva stratificata"
+    },
+    {
+      "label": "Database Oracle – 64 Esagrammi I Ching",
+      "file_type": "document",
+      "source_file": "raw/AION_Components.md",
+      "_origin": "ast",
+      "id": "aion_oracle_64esagrammi",
+      "community": 13,
+      "norm_label": "database oracle – 64 esagrammi i ching"
     }
   ],
   "links": [
@@ -462,7 +777,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "raw_aion_framework_aion_framework_modulare",
-      "target": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "target": "raw_aion_framework_modulo_1_identità_di_aion",
       "confidence_score": 1.0
     },
     {
@@ -482,7 +797,7 @@
       "source_location": "L119",
       "weight": 1.0,
       "source": "raw_aion_framework_aion_framework_modulare",
-      "target": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_p\u0251_mode",
+      "target": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_pɑ_mode",
       "confidence_score": 1.0
     },
     {
@@ -502,7 +817,7 @@
       "source_location": "L126",
       "weight": 1.0,
       "source": "raw_aion_framework_aion_framework_modulare",
-      "target": "raw_aion_framework_modulo_4_meta_emotivit\u00e0_strategica",
+      "target": "raw_aion_framework_modulo_4_meta_emotività_strategica",
       "confidence_score": 1.0
     },
     {
@@ -512,7 +827,7 @@
       "source_location": "L133",
       "weight": 1.0,
       "source": "raw_aion_framework_aion_framework_modulare",
-      "target": "raw_aion_framework_modulo_5_adattabilit\u00e0_spontaneit\u00e0_e_sincronicit\u00e0",
+      "target": "raw_aion_framework_modulo_5_adattabilità_spontaneità_e_sincronicità",
       "confidence_score": 1.0
     },
     {
@@ -531,8 +846,8 @@
       "source_file": "raw/AION_Framework.md",
       "source_location": "L22",
       "weight": 1.0,
-      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
-      "target": "raw_aion_framework_aion_cos_\u00e8_e_come_funziona",
+      "source": "raw_aion_framework_modulo_1_identità_di_aion",
+      "target": "raw_aion_framework_aion_cos_è_e_come_funziona",
       "confidence_score": 1.0
     },
     {
@@ -541,7 +856,7 @@
       "source_file": "raw/AION_Framework.md",
       "source_location": "L25",
       "weight": 1.0,
-      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "source": "raw_aion_framework_modulo_1_identità_di_aion",
       "target": "raw_aion_framework_funzioni_chiave",
       "confidence_score": 1.0
     },
@@ -551,7 +866,7 @@
       "source_file": "raw/AION_Framework.md",
       "source_location": "L55",
       "weight": 1.0,
-      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "source": "raw_aion_framework_modulo_1_identità_di_aion",
       "target": "raw_aion_framework_principi_fondamentali_di_aion",
       "confidence_score": 1.0
     },
@@ -561,7 +876,7 @@
       "source_file": "raw/AION_Framework.md",
       "source_location": "L38",
       "weight": 1.0,
-      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "source": "raw_aion_framework_modulo_1_identità_di_aion",
       "target": "raw_aion_framework_struttura_di_aion_e_dei_file_associati",
       "confidence_score": 1.0
     },
@@ -592,7 +907,7 @@
       "source_location": "L75",
       "weight": 1.0,
       "source": "raw_aion_framework_modulo_2_architettura_logica",
-      "target": "raw_aion_framework_2_y_modalit\u00e0_operative_canoniche_di_aion",
+      "target": "raw_aion_framework_2_y_modalità_operative_canoniche_di_aion",
       "confidence_score": 1.0
     },
     {
@@ -654,6 +969,630 @@
       "source": "raw_aion_framework_modulo_3_strategie_analitiche",
       "target": "raw_aion_framework_identificazione_dei_bias_cognitivi_e_diagnostica_retorica",
       "confidence_score": 1.0
+    },
+    {
+      "source": "raw_aion_manifest",
+      "target": "aion_manifest_title",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "aion_manifest_title",
+      "target": "aion_manifest_mito",
+      "relation": "PART_OF",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "aion_manifest_title",
+      "target": "aion_manifest_frammenti",
+      "relation": "PART_OF",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "aion_manifest_title",
+      "target": "aion_manifest_massime",
+      "relation": "PART_OF",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "aion_manifest_title",
+      "target": "aion_identita_simboli",
+      "relation": "PART_OF",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "aion_manifest_title",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Manifest.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_livello_identita",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_livello_struttura",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_livello_operativ",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_livello_orchestr",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_modalita",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "aion_desc_selezione",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_description",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "aion_desc_livello_identita",
+      "target": "aion_manifest_title",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Description.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_superia",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_strategic",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_fabulatorium",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_cognition_view",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_adaptive_core",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_synth",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_ethos",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_hybrid_reasoner",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_agent_cinematica",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_agents",
+      "target": "aion_insegnamenti",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_strategic",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_fabulatorium",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_cognition_view",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_adaptive_core",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_synth",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_ethos",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_hybrid_reasoner",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_agent_superia",
+      "target": "aion_agent_cinematica",
+      "relation": "ORCHESTRATES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_agents",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "raw_aion_agents",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_analyst",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_fabula",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_oracle",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_adaptive",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_vision",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_echo",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_visual",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_symbol",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_components",
+      "target": "aion_comp_deeplogic",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_oracle",
+      "target": "aion_oracle_64esagrammi",
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_strategic",
+      "target": "aion_comp_analyst",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_strategic",
+      "target": "aion_comp_vision",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_strategic",
+      "target": "aion_comp_oracle",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_fabulatorium",
+      "target": "aion_comp_fabula",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_fabulatorium",
+      "target": "aion_comp_oracle",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_fabulatorium",
+      "target": "aion_comp_symbol",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_fabulatorium",
+      "target": "aion_comp_visual",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cognition_view",
+      "target": "aion_comp_visual",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cognition_view",
+      "target": "aion_comp_symbol",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cognition_view",
+      "target": "aion_comp_echo",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_adaptive_core",
+      "target": "aion_comp_adaptive",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_adaptive_core",
+      "target": "aion_comp_echo",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_synth",
+      "target": "aion_comp_vision",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_synth",
+      "target": "aion_comp_fabula",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_synth",
+      "target": "aion_comp_oracle",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_hybrid_reasoner",
+      "target": "aion_comp_deeplogic",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_hybrid_reasoner",
+      "target": "aion_comp_echo",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_hybrid_reasoner",
+      "target": "aion_comp_symbol",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cinematica",
+      "target": "aion_comp_fabula",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cinematica",
+      "target": "aion_comp_symbol",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cinematica",
+      "target": "aion_comp_visual",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_cinematica",
+      "target": "aion_comp_echo",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_agent_ethos",
+      "target": "aion_manifest_title",
+      "relation": "USES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_analyst",
+      "target": "aion_comp_vision",
+      "relation": "INTERACTS_WITH",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_analyst",
+      "target": "aion_comp_oracle",
+      "relation": "INTERACTS_WITH",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_fabula",
+      "target": "aion_comp_oracle",
+      "relation": "INTERACTS_WITH",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_vision",
+      "target": "aion_comp_adaptive",
+      "relation": "INTERACTS_WITH",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_comp_deeplogic",
+      "target": "aion_comp_echo",
+      "relation": "INTERACTS_WITH",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_components",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "raw_aion_description",
+      "target": "raw_aion_components",
+      "relation": "REFERENCES",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Components.md"
+    },
+    {
+      "source": "aion_insegnamenti",
+      "target": "aion_agent_superia",
+      "relation": "CONSULTED_BY",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_insegnamenti",
+      "target": "aion_agent_strategic",
+      "relation": "CONSULTED_BY",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_insegnamenti",
+      "target": "aion_agent_hybrid_reasoner",
+      "relation": "CONSULTED_BY",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
+    },
+    {
+      "source": "aion_insegnamenti",
+      "target": "aion_agent_cinematica",
+      "relation": "CONSULTED_BY",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "raw/AION_Agents.md"
     }
   ],
   "hyperedges": [
