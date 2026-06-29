@@ -1,0 +1,205 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "graphify_usage_pattern",
+        "label": "Graphify Usage Pattern",
+        "nodes": [
+          "agents_rules_graphify",
+          "claude_md",
+          "graphify_out_graph_json",
+          "graphify_out_wiki_index",
+          "graphify_out_graph_report"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "CLAUDE.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Graphify Rules",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "id": "agents_rules_graphify",
+      "community": 1,
+      "norm_label": "graphify rules"
+    },
+    {
+      "label": "Graphify Workflow",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "id": "agents_workflows_graphify",
+      "community": 0,
+      "norm_label": "graphify workflow"
+    },
+    {
+      "label": "Altair Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "id": "agents_md",
+      "community": 0,
+      "norm_label": "altair rules"
+    },
+    {
+      "label": "Claude Instructions",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "id": "claude_md",
+      "community": 1,
+      "norm_label": "claude instructions"
+    },
+    {
+      "label": "Altair README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "readme_md",
+      "community": 0,
+      "norm_label": "altair readme"
+    },
+    {
+      "label": "graphify",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "id": "graphify_tool",
+      "community": 0,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "Altair System",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "id": "altair_system",
+      "community": 0,
+      "norm_label": "altair system"
+    },
+    {
+      "label": "graphify-out/graph.json",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "id": "graphify_out_graph_json",
+      "community": 1,
+      "norm_label": "graphify-out/graph.json"
+    },
+    {
+      "label": "graphify-out/wiki/index.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "id": "graphify_out_wiki_index",
+      "community": 1,
+      "norm_label": "graphify-out/wiki/index.md"
+    },
+    {
+      "label": "graphify-out/GRAPH_REPORT.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "id": "graphify_out_graph_report",
+      "community": 1,
+      "norm_label": "graphify-out/graph_report.md"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/graphify.md",
+      "source": "agents_rules_graphify",
+      "target": "graphify_out_graph_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/graphify.md",
+      "source": "agents_rules_graphify",
+      "target": "graphify_out_graph_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/graphify.md",
+      "source": "agents_rules_graphify",
+      "target": "graphify_out_wiki_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/workflows/graphify.md",
+      "source": "agents_workflows_graphify",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "AGENTS.md",
+      "source": "agents_md",
+      "target": "altair_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source": "claude_md",
+      "target": "graphify_out_graph_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source": "claude_md",
+      "target": "graphify_out_graph_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source": "claude_md",
+      "target": "graphify_out_wiki_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "readme_md",
+      "target": "altair_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source": "readme_md",
+      "target": "graphify_tool"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "graphify_usage_pattern",
+      "label": "Graphify Usage Pattern",
+      "nodes": [
+        "agents_rules_graphify",
+        "claude_md",
+        "graphify_out_graph_json",
+        "graphify_out_wiki_index",
+        "graphify_out_graph_report"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "CLAUDE.md"
+    }
+  ],
+  "built_at_commit": "a9a44d5cec1dedd0772e553768c5f3d491cf7945"
+}

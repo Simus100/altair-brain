@@ -1,0 +1,1 @@
+{"nodes": [{"id": "agents_md", "label": "Altair Rules", "file_type": "document", "source_file": "AGENTS.md"}], "edges": [{"source": "agents_md", "target": "altair_system", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "AGENTS.md"}], "hyperedges": []}
