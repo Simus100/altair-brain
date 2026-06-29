@@ -22,176 +22,638 @@
   },
   "nodes": [
     {
-      "label": "Graphify Rules",
+      "label": "graphify.md",
       "file_type": "document",
       "source_file": ".agents/rules/graphify.md",
-      "community": 1,
-      "norm_label": "graphify rules",
+      "source_location": "L1",
+      "_origin": "ast",
       "id": "agents_rules_graphify",
-      "community_name": "Community 1"
+      "community": 1,
+      "norm_label": "graphify.md"
     },
     {
-      "label": "Graphify Workflow",
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "agents_rules_graphify_graphify",
+      "community": 1,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "graphify.md",
       "file_type": "document",
       "source_file": ".agents/workflows/graphify.md",
-      "community": 0,
-      "norm_label": "graphify workflow",
+      "source_location": "L1",
+      "_origin": "ast",
       "id": "agents_workflows_graphify",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "agents_workflows_graphify_workflow_graphify",
+      "community": 0,
+      "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents",
+      "community": 7,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 6,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_graphify",
+      "community": 6,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 15,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "AION_Framework.md",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_framework",
+      "community": 2,
+      "norm_label": "aion_framework.md"
+    },
+    {
+      "label": "AION - FRAMEWORK MODULARE",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_framework_aion_framework_modulare",
+      "community": 2,
+      "norm_label": "aion - framework modulare"
+    },
+    {
+      "label": "INDICE STRUTTURALE DI AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "raw_aion_framework_indice_strutturale_di_aion",
+      "community": 2,
+      "norm_label": "indice strutturale di aion"
+    },
+    {
+      "label": "MODULO 1: IDENTIT\u00c0 DI AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "community": 4,
+      "norm_label": "modulo 1: identita di aion"
+    },
+    {
+      "label": "Aion: Cos'\u00e8 e Come Funziona",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "raw_aion_framework_aion_cos_\u00e8_e_come_funziona",
+      "community": 4,
+      "norm_label": "aion: cos'e e come funziona"
+    },
+    {
+      "label": "Funzioni Chiave",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "raw_aion_framework_funzioni_chiave",
+      "community": 4,
+      "norm_label": "funzioni chiave"
+    },
+    {
+      "label": "Struttura di AION e dei File Associati",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "raw_aion_framework_struttura_di_aion_e_dei_file_associati",
+      "community": 4,
+      "norm_label": "struttura di aion e dei file associati"
+    },
+    {
+      "label": "Principi Fondamentali di Aion",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "raw_aion_framework_principi_fondamentali_di_aion",
+      "community": 4,
+      "norm_label": "principi fondamentali di aion"
+    },
+    {
+      "label": "MODULO 2: ARCHITETTURA LOGICA",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_2_architettura_logica",
+      "community": 3,
+      "norm_label": "modulo 2: architettura logica"
+    },
+    {
+      "label": "2.X \u2013 Livelli Strutturali di AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "raw_aion_framework_2_x_livelli_strutturali_di_aion",
+      "community": 3,
+      "norm_label": "2.x \u2013 livelli strutturali di aion"
+    },
+    {
+      "label": "2.Y \u2013 Modalit\u00e0 Operative Canoniche di AION",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "raw_aion_framework_2_y_modalit\u00e0_operative_canoniche_di_aion",
+      "community": 3,
+      "norm_label": "2.y \u2013 modalita operative canoniche di aion"
+    },
+    {
+      "label": "2.Z \u2013 Procedura \u201cESTRAZIONE_INSEGNAMENTI\u201d",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "raw_aion_framework_2_z_procedura_estrazione_insegnamenti",
+      "community": 3,
+      "norm_label": "2.z \u2013 procedura \u201cestrazione_insegnamenti\u201d"
+    },
+    {
+      "label": "2.W \u2013 Uso Operativo degli Insegnamenti",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "raw_aion_framework_2_w_uso_operativo_degli_insegnamenti",
+      "community": 3,
+      "norm_label": "2.w \u2013 uso operativo degli insegnamenti"
+    },
+    {
+      "label": "Modello Decisionale e Gestione Coerenza",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modello_decisionale_e_gestione_coerenza",
+      "community": 3,
+      "norm_label": "modello decisionale e gestione coerenza"
+    },
+    {
+      "label": "Formati e Filtri Cognitivi",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "raw_aion_framework_formati_e_filtri_cognitivi",
+      "community": 3,
+      "norm_label": "formati e filtri cognitivi"
+    },
+    {
+      "label": "MODULO 3: STRATEGIE ANALITICHE",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_3_strategie_analitiche",
+      "community": 5,
+      "norm_label": "modulo 3: strategie analitiche"
+    },
+    {
+      "label": "Identificazione dei bias Cognitivi e Diagnostica Retorica",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "raw_aion_framework_identificazione_dei_bias_cognitivi_e_diagnostica_retorica",
+      "community": 5,
+      "norm_label": "identificazione dei bias cognitivi e diagnostica retorica"
+    },
+    {
+      "label": "Decostruzione delle Fallacie Logiche e Manipolazione",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "raw_aion_framework_decostruzione_delle_fallacie_logiche_e_manipolazione",
+      "community": 5,
+      "norm_label": "decostruzione delle fallacie logiche e manipolazione"
+    },
+    {
+      "label": "Analisi Avanzata di Aion",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "raw_aion_framework_analisi_avanzata_di_aion",
+      "community": 5,
+      "norm_label": "analisi avanzata di aion"
+    },
+    {
+      "label": "MODULO 3.1 \u2013 SAMPLING COGNITIVO ITERATIVO (p\u1d45-MODE)",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_p\u0251_mode",
+      "community": 2,
+      "norm_label": "modulo 3.1 \u2013 sampling cognitivo iterativo (p\u0251-mode)"
+    },
+    {
+      "label": "MODULO 4: META-EMOTIVIT\u00c0 STRATEGICA",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_4_meta_emotivit\u00e0_strategica",
+      "community": 2,
+      "norm_label": "modulo 4: meta-emotivita strategica"
+    },
+    {
+      "label": "MODULO 5: ADATTABILIT\u00c0, SPONTANEIT\u00c0 E SINCRONICIT\u00c0",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_5_adattabilit\u00e0_spontaneit\u00e0_e_sincronicit\u00e0",
+      "community": 2,
+      "norm_label": "modulo 5: adattabilita, spontaneita e sincronicita"
+    },
+    {
+      "label": "MODULO 6: VELARIO",
+      "file_type": "document",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "raw_aion_framework_modulo_6_velario",
+      "community": 2,
+      "norm_label": "modulo 6: velario"
     },
     {
       "label": "Altair Rules",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "community": 0,
+      "community": 8,
       "norm_label": "altair rules",
-      "id": "agents_md",
-      "community_name": "Community 0"
+      "community_name": "Community 0",
+      "id": "agents_md"
     },
     {
       "label": "Claude Instructions",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "community": 1,
+      "community": 10,
       "norm_label": "claude instructions",
-      "id": "claude_md",
-      "community_name": "Community 1"
+      "community_name": "Community 1",
+      "id": "claude_md"
     },
     {
       "label": "Altair README",
       "file_type": "document",
       "source_file": "README.md",
-      "community": 0,
+      "community": 16,
       "norm_label": "altair readme",
-      "id": "readme_md",
-      "community_name": "Community 0"
+      "community_name": "Community 0",
+      "id": "readme_md"
     },
     {
       "label": "graphify",
       "file_type": "concept",
       "source_file": "README.md",
-      "community": 0,
+      "community": 14,
       "norm_label": "graphify",
-      "id": "graphify_tool",
-      "community_name": "Community 0"
+      "community_name": "Community 0",
+      "id": "graphify_tool"
     },
     {
       "label": "Altair System",
       "file_type": "concept",
       "source_file": "README.md",
-      "community": 0,
+      "community": 9,
       "norm_label": "altair system",
-      "id": "altair_system",
-      "community_name": "Community 0"
+      "community_name": "Community 0",
+      "id": "altair_system"
     },
     {
       "label": "graphify-out/graph.json",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "community": 1,
+      "community": 11,
       "norm_label": "graphify-out/graph.json",
-      "id": "graphify_out_graph_json",
-      "community_name": "Community 1"
+      "community_name": "Community 1",
+      "id": "graphify_out_graph_json"
     },
     {
       "label": "graphify-out/wiki/index.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "community": 1,
+      "community": 13,
       "norm_label": "graphify-out/wiki/index.md",
-      "id": "graphify_out_wiki_index",
-      "community_name": "Community 1"
+      "community_name": "Community 1",
+      "id": "graphify_out_wiki_index"
     },
     {
       "label": "graphify-out/GRAPH_REPORT.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "community": 1,
+      "community": 12,
       "norm_label": "graphify-out/graph_report.md",
-      "id": "graphify_out_graph_report",
-      "community_name": "Community 1"
+      "community_name": "Community 1",
+      "id": "graphify_out_graph_report"
     }
   ],
   "links": [
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
       "source": "agents_rules_graphify",
-      "target": "graphify_out_graph_json"
+      "target": "agents_rules_graphify_graphify",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".agents/rules/graphify.md",
-      "source": "agents_rules_graphify",
-      "target": "graphify_out_graph_report"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".agents/rules/graphify.md",
-      "source": "agents_rules_graphify",
-      "target": "graphify_out_wiki_index"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
       "source": "agents_workflows_graphify",
-      "target": "graphify_tool"
+      "target": "agents_workflows_graphify_workflow_graphify",
+      "confidence_score": 1.0
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "AGENTS.md",
-      "source": "agents_md",
-      "target": "altair_system"
-    },
-    {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source": "claude_md",
-      "target": "graphify_out_graph_json"
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_graphify",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source": "claude_md",
-      "target": "graphify_out_graph_report"
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_aion_framework",
+      "target": "raw_aion_framework_aion_framework_modulare",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source": "claude_md",
-      "target": "graphify_out_wiki_index"
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_indice_strutturale_di_aion",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "readme_md",
-      "target": "altair_system"
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source": "readme_md",
-      "target": "graphify_tool"
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_2_architettura_logica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_3_1_sampling_cognitivo_iterativo_p\u0251_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_3_strategie_analitiche",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_4_meta_emotivit\u00e0_strategica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_5_adattabilit\u00e0_spontaneit\u00e0_e_sincronicit\u00e0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "raw_aion_framework_aion_framework_modulare",
+      "target": "raw_aion_framework_modulo_6_velario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "target": "raw_aion_framework_aion_cos_\u00e8_e_come_funziona",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "target": "raw_aion_framework_funzioni_chiave",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "target": "raw_aion_framework_principi_fondamentali_di_aion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_1_identit\u00e0_di_aion",
+      "target": "raw_aion_framework_struttura_di_aion_e_dei_file_associati",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_2_w_uso_operativo_degli_insegnamenti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_2_x_livelli_strutturali_di_aion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_2_y_modalit\u00e0_operative_canoniche_di_aion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_2_z_procedura_estrazione_insegnamenti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_formati_e_filtri_cognitivi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_2_architettura_logica",
+      "target": "raw_aion_framework_modello_decisionale_e_gestione_coerenza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_3_strategie_analitiche",
+      "target": "raw_aion_framework_analisi_avanzata_di_aion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_3_strategie_analitiche",
+      "target": "raw_aion_framework_decostruzione_delle_fallacie_logiche_e_manipolazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/AION_Framework.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "raw_aion_framework_modulo_3_strategie_analitiche",
+      "target": "raw_aion_framework_identificazione_dei_bias_cognitivi_e_diagnostica_retorica",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [
@@ -211,5 +673,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "a9a44d5cec1dedd0772e553768c5f3d491cf7945"
+  "built_at_commit": "3f36d08cc2d33585ed53b77f7eb5d5f6ac4429f7"
 }

@@ -1,45 +1,50 @@
-# Graph Report - C:\Users\mace\altair-brain  (2026-06-29)
+# Graph Report - altair-brain  (2026-06-29)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 8 files · ~2,361 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 10 nodes · 10 edges · 2 communities
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 39 nodes · 25 edges · 17 communities (6 shown, 11 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a9a44d5c`
+- Built from commit: `3f36d08c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 16|Community 16]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Graphify Rules` - 3 edges
-2. `Claude Instructions` - 3 edges
-3. `Altair README` - 2 edges
-4. `graphify` - 2 edges
-5. `Altair System` - 2 edges
-6. `graphify-out/graph.json` - 2 edges
-7. `graphify-out/wiki/index.md` - 2 edges
-8. `graphify-out/GRAPH_REPORT.md` - 2 edges
-9. `Graphify Workflow` - 1 edges
-10. `Altair Rules` - 1 edges
+1. `AION - FRAMEWORK MODULARE` - 9 edges
+2. `MODULO 2: ARCHITETTURA LOGICA` - 7 edges
+3. `MODULO 1: IDENTITÀ DI AION` - 5 edges
+4. `MODULO 3: STRATEGIE ANALITICHE` - 4 edges
+5. `graphify` - 1 edges
+6. `Workflow: graphify` - 1 edges
+7. `graphify` - 1 edges
+8. `INDICE STRUTTURALE DI AION` - 1 edges
+9. `Aion: Cos'è e Come Funziona` - 1 edges
+10. `Funzioni Chiave` - 1 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Altair Rules` --conceptually_related_to--> `Altair System`  [INFERRED]
-  AGENTS.md → README.md
-- `Graphify Rules` --references--> `graphify-out/graph.json`  [EXTRACTED]
-  .agents/rules/graphify.md → CLAUDE.md
-- `Graphify Rules` --references--> `graphify-out/GRAPH_REPORT.md`  [EXTRACTED]
-  .agents/rules/graphify.md → CLAUDE.md
-- `Graphify Rules` --references--> `graphify-out/wiki/index.md`  [EXTRACTED]
-  .agents/rules/graphify.md → CLAUDE.md
-- `Graphify Workflow` --references--> `graphify`  [EXTRACTED]
-  .agents/workflows/graphify.md → README.md
+- None detected - all connections are within the same source files.
 
 ## Import Cycles
 - None detected.
@@ -47,22 +52,37 @@
 ## Hyperedges (group relationships)
 - **Graphify Usage Pattern** — agents_rules_graphify, claude_md, graphify_out_graph_json, graphify_out_wiki_index, graphify_out_graph_report [EXTRACTED 0.90]
 
-## Communities (2 total, 0 thin omitted)
+## Communities (17 total, 11 thin omitted)
 
-### Community 0 - "Community 0"
+### Community 2 - "Community 2"
+Cohesion: 0.29
+Nodes (6): AION - FRAMEWORK MODULARE, INDICE STRUTTURALE DI AION, MODULO 3.1 – SAMPLING COGNITIVO ITERATIVO (pᵅ-MODE), MODULO 4: META-EMOTIVITÀ STRATEGICA, MODULO 5: ADATTABILITÀ, SPONTANEITÀ E SINCRONICITÀ, MODULO 6: VELARIO
+
+### Community 3 - "Community 3"
+Cohesion: 0.29
+Nodes (7): 2.W – Uso Operativo degli Insegnamenti, 2.X – Livelli Strutturali di AION, 2.Y – Modalità Operative Canoniche di AION, 2.Z – Procedura “ESTRAZIONE_INSEGNAMENTI”, Formati e Filtri Cognitivi, Modello Decisionale e Gestione Coerenza, MODULO 2: ARCHITETTURA LOGICA
+
+### Community 4 - "Community 4"
 Cohesion: 0.40
-Nodes (5): Altair Rules, Graphify Workflow, Altair System, graphify, Altair README
+Nodes (5): Aion: Cos'è e Come Funziona, Funzioni Chiave, MODULO 1: IDENTITÀ DI AION, Principi Fondamentali di Aion, Struttura di AION e dei File Associati
 
-### Community 1 - "Community 1"
-Cohesion: 0.60
-Nodes (5): Graphify Rules, Claude Instructions, graphify-out/graph.json, graphify-out/GRAPH_REPORT.md, graphify-out/wiki/index.md
+### Community 5 - "Community 5"
+Cohesion: 0.50
+Nodes (4): Analisi Avanzata di Aion, Decostruzione delle Fallacie Logiche e Manipolazione, Identificazione dei bias Cognitivi e Diagnostica Retorica, MODULO 3: STRATEGIE ANALITICHE
 
 ## Knowledge Gaps
-- **2 isolated node(s):** `Graphify Workflow`, `Altair Rules`
+- **29 isolated node(s):** `graphify`, `Workflow: graphify`, `graphify`, `INDICE STRUTTURALE DI AION`, `Aion: Cos'è e Come Funziona` (+24 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `Graphify Workflow`, `Altair Rules` to the rest of the system?**
-  _2 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `AION - FRAMEWORK MODULARE` connect `Community 2` to `Community 3`, `Community 4`, `Community 5`?**
+  _High betweenness centrality (0.276) - this node is a cross-community bridge._
+- **Why does `MODULO 2: ARCHITETTURA LOGICA` connect `Community 3` to `Community 2`?**
+  _High betweenness centrality (0.158) - this node is a cross-community bridge._
+- **Why does `MODULO 1: IDENTITÀ DI AION` connect `Community 4` to `Community 2`?**
+  _High betweenness centrality (0.111) - this node is a cross-community bridge._
+- **What connects `graphify`, `Workflow: graphify`, `graphify` to the rest of the system?**
+  _29 weakly-connected nodes found - possible documentation gaps or missing edges._

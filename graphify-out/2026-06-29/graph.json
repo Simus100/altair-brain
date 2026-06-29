@@ -25,81 +25,91 @@
       "label": "Graphify Rules",
       "file_type": "document",
       "source_file": ".agents/rules/graphify.md",
-      "id": "agents_rules_graphify",
       "community": 1,
-      "norm_label": "graphify rules"
+      "norm_label": "graphify rules",
+      "id": "agents_rules_graphify",
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Workflow",
       "file_type": "document",
       "source_file": ".agents/workflows/graphify.md",
-      "id": "agents_workflows_graphify",
       "community": 0,
-      "norm_label": "graphify workflow"
+      "norm_label": "graphify workflow",
+      "id": "agents_workflows_graphify",
+      "community_name": "Community 0"
     },
     {
       "label": "Altair Rules",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "id": "agents_md",
       "community": 0,
-      "norm_label": "altair rules"
+      "norm_label": "altair rules",
+      "id": "agents_md",
+      "community_name": "Community 0"
     },
     {
       "label": "Claude Instructions",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "id": "claude_md",
       "community": 1,
-      "norm_label": "claude instructions"
+      "norm_label": "claude instructions",
+      "id": "claude_md",
+      "community_name": "Community 1"
     },
     {
       "label": "Altair README",
       "file_type": "document",
       "source_file": "README.md",
-      "id": "readme_md",
       "community": 0,
-      "norm_label": "altair readme"
+      "norm_label": "altair readme",
+      "id": "readme_md",
+      "community_name": "Community 0"
     },
     {
       "label": "graphify",
       "file_type": "concept",
       "source_file": "README.md",
-      "id": "graphify_tool",
       "community": 0,
-      "norm_label": "graphify"
+      "norm_label": "graphify",
+      "id": "graphify_tool",
+      "community_name": "Community 0"
     },
     {
       "label": "Altair System",
       "file_type": "concept",
       "source_file": "README.md",
-      "id": "altair_system",
       "community": 0,
-      "norm_label": "altair system"
+      "norm_label": "altair system",
+      "id": "altair_system",
+      "community_name": "Community 0"
     },
     {
       "label": "graphify-out/graph.json",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "id": "graphify_out_graph_json",
       "community": 1,
-      "norm_label": "graphify-out/graph.json"
+      "norm_label": "graphify-out/graph.json",
+      "id": "graphify_out_graph_json",
+      "community_name": "Community 1"
     },
     {
       "label": "graphify-out/wiki/index.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "id": "graphify_out_wiki_index",
       "community": 1,
-      "norm_label": "graphify-out/wiki/index.md"
+      "norm_label": "graphify-out/wiki/index.md",
+      "id": "graphify_out_wiki_index",
+      "community_name": "Community 1"
     },
     {
       "label": "graphify-out/GRAPH_REPORT.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "id": "graphify_out_graph_report",
       "community": 1,
-      "norm_label": "graphify-out/graph_report.md"
+      "norm_label": "graphify-out/graph_report.md",
+      "id": "graphify_out_graph_report",
+      "community_name": "Community 1"
     }
   ],
   "links": [
