@@ -11,9 +11,9 @@ Applica il modello di pensiero AION alla richiesta dell'utente.
 
 1. Carica il protocollo: `engine/aion-reasoner.md`.
 2. Carica il modello tipizzato: `engine/aion.model.json` (entita e relazioni).
-3. Esegui la **pipeline a 8 passi** del protocollo:
-   INTAKE → DL_ICC → MODALITA → ATTIVAZIONE AGENTI → COMPONENTI+INSEGNAMENTI →
-   GATE ETHOS → VALUTAZIONE INTERMODULARE → SINTESI (SFO + FCC).
+3. Esegui la **pipeline a 9 passi** del protocollo:
+   MEMORIA (lezioni) → INTAKE → DL_ICC → MODALITA → ATTIVAZIONE AGENTI →
+   COMPONENTI+INSEGNAMENTI → GATE ETHOS → VALUTAZIONE INTERMODULARE → SINTESI (SFO + FCC).
 4. Per orientarti nel grafo del modello puoi usare (gratis):
    `graphify query "<concetto>"`, `graphify explain "<id>"`, `graphify path "<A>" "<B>"`.
 

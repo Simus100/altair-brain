@@ -13,9 +13,15 @@ descritta in `raw/aion/aion-description.md` e `raw/aion/aion-framework.md`.
 
 ---
 
-## Pipeline (8 passi)
+## Pipeline (9 passi)
 
 Eseguire in ordine. Caricare `engine/aion.model.json` come modello.
+
+### 0. MEMORIA — consulta le lezioni apprese
+Se esiste `graphify-out/reflections/LESSONS.md`, leggilo prima di rispondere: contiene
+le lezioni distillate dalle interazioni passate (nodi affidabili, vicoli ciechi,
+correzioni). Usalo come *prior* per orientare i passi seguenti. È il punto in cui il
+feedback rientra nel ragionamento.
 
 ### 1. INTAKE — classifica la richiesta
 Tramite la logica di `aion-analyst`, classifica la domanda:
