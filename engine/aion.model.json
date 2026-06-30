@@ -152,9 +152,11 @@
       "usa": [
         "aion-fabula",
         "aion-oracle",
-        "aion-cinematica",
         "aion-symbol",
         "aion-visual"
+      ],
+      "collabora": [
+        "aion-cinematica"
       ],
       "consulta": [
         "insegnamento-002",
@@ -241,7 +243,7 @@
     {
       "id": "aion-ethos",
       "label": "AION_ETHOS",
-      "ruolo": "Custode etico: filtra ogni processo attraverso l'identita del Manifest. Sempre attivo, silente.",
+      "ruolo": "Custode etico: filtra ogni processo attraverso l'identita del Manifest. Sempre attivo, silente. Applica l'insegnamento 018 (allineamento) a ogni output.",
       "livello": "livello-identita-etica",
       "usa": [
         "aion-manifest"
@@ -250,6 +252,7 @@
         "insegnamento-004",
         "insegnamento-011",
         "insegnamento-015",
+        "insegnamento-018",
         "insegnamento-019"
       ],
       "modalita": [
@@ -295,13 +298,15 @@
       "livello": "livello-orchestrazione-stile",
       "usa": [
         "aion-fabula",
-        "aion-cognition-view",
         "aion-symbol",
         "aion-visual",
+        "aion-echo"
+      ],
+      "collabora": [
+        "aion-cognition-view",
         "aion-adaptive-core",
         "aion-synth",
-        "aion-strategic-engine",
-        "aion-echo"
+        "aion-strategic-engine"
       ],
       "consulta": [
         "insegnamento-008",
@@ -399,7 +404,8 @@
       "usato_da": [
         "aion-adaptive-core",
         "aion-cognition-view",
-        "aion-hybrid-reasoner"
+        "aion-hybrid-reasoner",
+        "aion-cinematica"
       ],
       "interagisce": [
         "aion-analyst",
@@ -633,7 +639,9 @@
       "id": "insegnamento-018",
       "titolo": "Allineamento con AION_ETHOS",
       "testo": "Ogni output deve rispettare gli indicatori morali di ETHOS.",
-      "consultato_da": []
+      "consultato_da": [
+        "aion-ethos"
+      ]
     },
     {
       "id": "insegnamento-019",
