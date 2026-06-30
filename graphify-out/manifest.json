@@ -19,6 +19,11 @@
     "ast_hash": "bac0b4b33aeef4c7aa4b09eca648d51e",
     "semantic_hash": ""
   },
+  "tools/altair_compact_view.py": {
+    "mtime": 1782840382.489859,
+    "ast_hash": "cce34474b98ea34a73641193cf161ced",
+    "semantic_hash": ""
+  },
   ".agents/rules/graphify.md": {
     "mtime": 1782760795.2669861,
     "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
@@ -40,8 +45,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1782760779.1016903,
-    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "mtime": 1782841037.4953375,
+    "ast_hash": "d3e4495b9105235f7fe3d51da7084261",
     "semantic_hash": ""
   },
   "README.md": {
@@ -117,6 +122,11 @@
   "raw/web-design/README.md": {
     "mtime": 1782836610.4756536,
     "ast_hash": "4eb78c40d277264a090109a9945a5480",
+    "semantic_hash": ""
+  },
+  "tools/README.md": {
+    "mtime": 1782841050.4223762,
+    "ast_hash": "b9b1be93a3a6f974535bd12ef6aba2bc",
     "semantic_hash": ""
   },
   "wiki/aion/aion-adaptive-core.md": {
