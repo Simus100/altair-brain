@@ -10,7 +10,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_rules_graphify",
-      "community": 77,
+      "community": 78,
       "norm_label": "graphify.md"
     },
     {
@@ -20,7 +20,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "agents_rules_graphify_graphify",
-      "community": 77,
+      "community": 78,
       "norm_label": "graphify"
     },
     {
@@ -30,7 +30,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_workflows_graphify",
-      "community": 78,
+      "community": 79,
       "norm_label": "graphify.md"
     },
     {
@@ -40,8 +40,68 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "agents_workflows_graphify_workflow_graphify",
-      "community": 78,
+      "community": 79,
       "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill",
+      "community": 73,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: ragionamento AION",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "community": 73,
+      "norm_label": "skill: ragionamento aion"
+    },
+    {
+      "label": "Come procedere",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill_come_procedere",
+      "community": 73,
+      "norm_label": "come procedere"
+    },
+    {
+      "label": "Vincoli",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill_vincoli",
+      "community": 73,
+      "norm_label": "vincoli"
+    },
+    {
+      "label": "Output atteso",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill_output_atteso",
+      "community": 73,
+      "norm_label": "output atteso"
+    },
+    {
+      "label": "Apprendimento",
+      "file_type": "document",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "claude_skills_aion_skill_apprendimento",
+      "community": 73,
+      "norm_label": "apprendimento"
     },
     {
       "label": "AGENTS.md",
@@ -60,7 +120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude",
-      "community": 79,
+      "community": 80,
       "norm_label": "claude.md"
     },
     {
@@ -70,7 +130,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude_graphify",
-      "community": 79,
+      "community": 80,
       "norm_label": "graphify"
     },
     {
@@ -80,8 +140,148 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 80,
+      "community": 81,
       "norm_label": "readme.md"
+    },
+    {
+      "label": "aion-reasoner.md",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner",
+      "community": 6,
+      "norm_label": "aion-reasoner.md"
+    },
+    {
+      "label": "AION Reasoner \u2014 protocollo di ragionamento",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "community": 6,
+      "norm_label": "aion reasoner \u2014 protocollo di ragionamento"
+    },
+    {
+      "label": "Pipeline (8 passi)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_pipeline_8_passi",
+      "community": 6,
+      "norm_label": "pipeline (8 passi)"
+    },
+    {
+      "label": "1. INTAKE \u2014 classifica la richiesta",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_1_intake_classifica_la_richiesta",
+      "community": 6,
+      "norm_label": "1. intake \u2014 classifica la richiesta"
+    },
+    {
+      "label": "2. DL_ICC \u2014 valuta la complessit\u00e0",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_2_dl_icc_valuta_la_complessit\u00e0",
+      "community": 6,
+      "norm_label": "2. dl_icc \u2014 valuta la complessita"
+    },
+    {
+      "label": "3. MODALIT\u00c0 \u2014 scegli il registro",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_3_modalit\u00e0_scegli_il_registro",
+      "community": 6,
+      "norm_label": "3. modalita \u2014 scegli il registro"
+    },
+    {
+      "label": "4. ATTIVAZIONE AGENTI \u2014 orchestrazione (AION_SUPERIA)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_4_attivazione_agenti_orchestrazione_aion_superia",
+      "community": 6,
+      "norm_label": "4. attivazione agenti \u2014 orchestrazione (aion_superia)"
+    },
+    {
+      "label": "5. COMPONENTI + INSEGNAMENTI",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_5_componenti_insegnamenti",
+      "community": 6,
+      "norm_label": "5. componenti + insegnamenti"
+    },
+    {
+      "label": "6. GATE ETHOS \u2014 vincolo di identit\u00e0 (sempre attivo)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_6_gate_ethos_vincolo_di_identit\u00e0_sempre_attivo",
+      "community": 6,
+      "norm_label": "6. gate ethos \u2014 vincolo di identita (sempre attivo)"
+    },
+    {
+      "label": "7. VALUTAZIONE INTERMODULARE",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_7_valutazione_intermodulare",
+      "community": 6,
+      "norm_label": "7. valutazione intermodulare"
+    },
+    {
+      "label": "8. SINTESI + FORMATO (SUPERIA \u2192 SFO \u2192 FCC)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_8_sintesi_formato_superia_sfo_fcc",
+      "community": 6,
+      "norm_label": "8. sintesi + formato (superia \u2192 sfo \u2192 fcc)"
+    },
+    {
+      "label": "Decisione di fondo (gerarchia dei fattori)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_decisione_di_fondo_gerarchia_dei_fattori",
+      "community": 6,
+      "norm_label": "decisione di fondo (gerarchia dei fattori)"
+    },
+    {
+      "label": "Moduli trasversali (richiamabili quando pertinenti)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_moduli_trasversali_richiamabili_quando_pertinenti",
+      "community": 6,
+      "norm_label": "moduli trasversali (richiamabili quando pertinenti)"
+    },
+    {
+      "label": "Apprendimento (opzionale, no API)",
+      "file_type": "document",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "engine_aion_reasoner_apprendimento_opzionale_no_api",
+      "community": 6,
+      "norm_label": "apprendimento (opzionale, no api)"
     },
     {
       "label": "README.md",
@@ -370,7 +570,7 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_1_\u4e7e_il_creativo_qi\u00e1n",
-      "community": 18,
+      "community": 19,
       "norm_label": "1. \u4e7e il creativo (qian) \u4dc0"
     },
     {
@@ -380,7 +580,7 @@
       "source_location": "L239",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura",
-      "community": 18,
+      "community": 19,
       "norm_label": "struttura"
     },
     {
@@ -390,7 +590,7 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni",
-      "community": 18,
+      "community": 19,
       "norm_label": "relazioni"
     },
     {
@@ -400,7 +600,7 @@
       "source_location": "L249",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag",
-      "community": 18,
+      "community": 19,
       "norm_label": "tag"
     },
     {
@@ -410,7 +610,7 @@
       "source_location": "L252",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio",
-      "community": 18,
+      "community": 19,
       "norm_label": "giudizio"
     },
     {
@@ -420,7 +620,7 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine",
-      "community": 18,
+      "community": 19,
       "norm_label": "immagine"
     },
     {
@@ -430,7 +630,7 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna",
-      "community": 18,
+      "community": 19,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -440,7 +640,7 @@
       "source_location": "L261",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili",
-      "community": 18,
+      "community": 19,
       "norm_label": "linee mobili"
     },
     {
@@ -1090,7 +1290,7 @@
       "source_location": "L552",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_10_\u5c65_il_procedere_l\u01da",
-      "community": 8,
+      "community": 10,
       "norm_label": "10. \u5c65 il procedere (lu) \u4dc9"
     },
     {
@@ -1100,7 +1300,7 @@
       "source_location": "L554",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_554",
-      "community": 8,
+      "community": 10,
       "norm_label": "struttura"
     },
     {
@@ -1110,7 +1310,7 @@
       "source_location": "L559",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_559",
-      "community": 8,
+      "community": 10,
       "norm_label": "relazioni"
     },
     {
@@ -1120,7 +1320,7 @@
       "source_location": "L564",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_564",
-      "community": 8,
+      "community": 10,
       "norm_label": "tag"
     },
     {
@@ -1130,7 +1330,7 @@
       "source_location": "L567",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_567",
-      "community": 8,
+      "community": 10,
       "norm_label": "giudizio"
     },
     {
@@ -1140,7 +1340,7 @@
       "source_location": "L570",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_570",
-      "community": 8,
+      "community": 10,
       "norm_label": "immagine"
     },
     {
@@ -1150,7 +1350,7 @@
       "source_location": "L573",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_573",
-      "community": 8,
+      "community": 10,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1160,7 +1360,7 @@
       "source_location": "L576",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_576",
-      "community": 8,
+      "community": 10,
       "norm_label": "linee mobili"
     },
     {
@@ -1170,7 +1370,7 @@
       "source_location": "L587",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_11_\u6cf0_la_pace_t\u00e0i",
-      "community": 9,
+      "community": 11,
       "norm_label": "11. \u6cf0 la pace (tai) \u4dca"
     },
     {
@@ -1180,7 +1380,7 @@
       "source_location": "L589",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_589",
-      "community": 9,
+      "community": 11,
       "norm_label": "struttura"
     },
     {
@@ -1190,7 +1390,7 @@
       "source_location": "L594",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_594",
-      "community": 9,
+      "community": 11,
       "norm_label": "relazioni"
     },
     {
@@ -1200,7 +1400,7 @@
       "source_location": "L599",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_599",
-      "community": 9,
+      "community": 11,
       "norm_label": "tag"
     },
     {
@@ -1210,7 +1410,7 @@
       "source_location": "L602",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_602",
-      "community": 9,
+      "community": 11,
       "norm_label": "giudizio"
     },
     {
@@ -1220,7 +1420,7 @@
       "source_location": "L605",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_605",
-      "community": 9,
+      "community": 11,
       "norm_label": "immagine"
     },
     {
@@ -1230,7 +1430,7 @@
       "source_location": "L608",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_608",
-      "community": 9,
+      "community": 11,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1240,7 +1440,7 @@
       "source_location": "L611",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_611",
-      "community": 9,
+      "community": 11,
       "norm_label": "linee mobili"
     },
     {
@@ -1250,7 +1450,7 @@
       "source_location": "L622",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_12_\u5426_il_ristagno_p\u01d0",
-      "community": 10,
+      "community": 12,
       "norm_label": "12. \u5426 il ristagno (pi) \u4dcb"
     },
     {
@@ -1260,7 +1460,7 @@
       "source_location": "L624",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_624",
-      "community": 10,
+      "community": 12,
       "norm_label": "struttura"
     },
     {
@@ -1270,7 +1470,7 @@
       "source_location": "L629",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_629",
-      "community": 10,
+      "community": 12,
       "norm_label": "relazioni"
     },
     {
@@ -1280,7 +1480,7 @@
       "source_location": "L634",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_634",
-      "community": 10,
+      "community": 12,
       "norm_label": "tag"
     },
     {
@@ -1290,7 +1490,7 @@
       "source_location": "L637",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_637",
-      "community": 10,
+      "community": 12,
       "norm_label": "giudizio"
     },
     {
@@ -1300,7 +1500,7 @@
       "source_location": "L640",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_640",
-      "community": 10,
+      "community": 12,
       "norm_label": "immagine"
     },
     {
@@ -1310,7 +1510,7 @@
       "source_location": "L643",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_643",
-      "community": 10,
+      "community": 12,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1320,7 +1520,7 @@
       "source_location": "L646",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_646",
-      "community": 10,
+      "community": 12,
       "norm_label": "linee mobili"
     },
     {
@@ -1330,7 +1530,7 @@
       "source_location": "L657",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_13_\u540c\u4eba_la_comunit\u00e0_t\u00f3ng_r\u00e9n",
-      "community": 11,
+      "community": 13,
       "norm_label": "13. \u540c\u4eba la comunita (tong ren) \u4dcc"
     },
     {
@@ -1340,7 +1540,7 @@
       "source_location": "L659",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_659",
-      "community": 11,
+      "community": 13,
       "norm_label": "struttura"
     },
     {
@@ -1350,7 +1550,7 @@
       "source_location": "L664",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_664",
-      "community": 11,
+      "community": 13,
       "norm_label": "relazioni"
     },
     {
@@ -1360,7 +1560,7 @@
       "source_location": "L669",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_669",
-      "community": 11,
+      "community": 13,
       "norm_label": "tag"
     },
     {
@@ -1370,7 +1570,7 @@
       "source_location": "L672",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_672",
-      "community": 11,
+      "community": 13,
       "norm_label": "giudizio"
     },
     {
@@ -1380,7 +1580,7 @@
       "source_location": "L675",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_675",
-      "community": 11,
+      "community": 13,
       "norm_label": "immagine"
     },
     {
@@ -1390,7 +1590,7 @@
       "source_location": "L678",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_678",
-      "community": 11,
+      "community": 13,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1400,7 +1600,7 @@
       "source_location": "L681",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_681",
-      "community": 11,
+      "community": 13,
       "norm_label": "linee mobili"
     },
     {
@@ -1410,7 +1610,7 @@
       "source_location": "L692",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_14_\u5927\u6709_il_possesso_grande_d\u00e0_y\u01d2u",
-      "community": 12,
+      "community": 14,
       "norm_label": "14. \u5927\u6709 il possesso grande (da you) \u4dcd"
     },
     {
@@ -1420,7 +1620,7 @@
       "source_location": "L694",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_694",
-      "community": 12,
+      "community": 14,
       "norm_label": "struttura"
     },
     {
@@ -1430,7 +1630,7 @@
       "source_location": "L699",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_699",
-      "community": 12,
+      "community": 14,
       "norm_label": "relazioni"
     },
     {
@@ -1440,7 +1640,7 @@
       "source_location": "L704",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_704",
-      "community": 12,
+      "community": 14,
       "norm_label": "tag"
     },
     {
@@ -1450,7 +1650,7 @@
       "source_location": "L707",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_707",
-      "community": 12,
+      "community": 14,
       "norm_label": "giudizio"
     },
     {
@@ -1460,7 +1660,7 @@
       "source_location": "L710",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_710",
-      "community": 12,
+      "community": 14,
       "norm_label": "immagine"
     },
     {
@@ -1470,7 +1670,7 @@
       "source_location": "L713",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_713",
-      "community": 12,
+      "community": 14,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1480,7 +1680,7 @@
       "source_location": "L716",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_716",
-      "community": 12,
+      "community": 14,
       "norm_label": "linee mobili"
     },
     {
@@ -1490,7 +1690,7 @@
       "source_location": "L727",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_15_\u8b19_la_modestia_qi\u0101n",
-      "community": 13,
+      "community": 15,
       "norm_label": "15. \u8b19 la modestia (qian) \u4dce"
     },
     {
@@ -1500,7 +1700,7 @@
       "source_location": "L729",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_729",
-      "community": 13,
+      "community": 15,
       "norm_label": "struttura"
     },
     {
@@ -1510,7 +1710,7 @@
       "source_location": "L734",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_734",
-      "community": 13,
+      "community": 15,
       "norm_label": "relazioni"
     },
     {
@@ -1520,7 +1720,7 @@
       "source_location": "L739",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_739",
-      "community": 13,
+      "community": 15,
       "norm_label": "tag"
     },
     {
@@ -1530,7 +1730,7 @@
       "source_location": "L742",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_742",
-      "community": 13,
+      "community": 15,
       "norm_label": "giudizio"
     },
     {
@@ -1540,7 +1740,7 @@
       "source_location": "L745",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_745",
-      "community": 13,
+      "community": 15,
       "norm_label": "immagine"
     },
     {
@@ -1550,7 +1750,7 @@
       "source_location": "L748",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_748",
-      "community": 13,
+      "community": 15,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1560,7 +1760,7 @@
       "source_location": "L751",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_751",
-      "community": 13,
+      "community": 15,
       "norm_label": "linee mobili"
     },
     {
@@ -1570,7 +1770,7 @@
       "source_location": "L762",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_16_\u8c6b_l_entusiasmo_y\u00f9",
-      "community": 14,
+      "community": 16,
       "norm_label": "16. \u8c6b l'entusiasmo (yu) \u4dcf"
     },
     {
@@ -1580,7 +1780,7 @@
       "source_location": "L764",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_764",
-      "community": 14,
+      "community": 16,
       "norm_label": "struttura"
     },
     {
@@ -1590,7 +1790,7 @@
       "source_location": "L769",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_769",
-      "community": 14,
+      "community": 16,
       "norm_label": "relazioni"
     },
     {
@@ -1600,7 +1800,7 @@
       "source_location": "L774",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_774",
-      "community": 14,
+      "community": 16,
       "norm_label": "tag"
     },
     {
@@ -1610,7 +1810,7 @@
       "source_location": "L777",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_777",
-      "community": 14,
+      "community": 16,
       "norm_label": "giudizio"
     },
     {
@@ -1620,7 +1820,7 @@
       "source_location": "L780",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_780",
-      "community": 14,
+      "community": 16,
       "norm_label": "immagine"
     },
     {
@@ -1630,7 +1830,7 @@
       "source_location": "L783",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_783",
-      "community": 14,
+      "community": 16,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1640,7 +1840,7 @@
       "source_location": "L786",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_786",
-      "community": 14,
+      "community": 16,
       "norm_label": "linee mobili"
     },
     {
@@ -1650,7 +1850,7 @@
       "source_location": "L797",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_17_\u96a8_il_seguimento_su\u00ed",
-      "community": 15,
+      "community": 17,
       "norm_label": "17. \u96a8 il seguimento (sui) \u4dd0"
     },
     {
@@ -1660,7 +1860,7 @@
       "source_location": "L799",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_799",
-      "community": 15,
+      "community": 17,
       "norm_label": "struttura"
     },
     {
@@ -1670,7 +1870,7 @@
       "source_location": "L804",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_804",
-      "community": 15,
+      "community": 17,
       "norm_label": "relazioni"
     },
     {
@@ -1680,7 +1880,7 @@
       "source_location": "L809",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_809",
-      "community": 15,
+      "community": 17,
       "norm_label": "tag"
     },
     {
@@ -1690,7 +1890,7 @@
       "source_location": "L812",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_812",
-      "community": 15,
+      "community": 17,
       "norm_label": "giudizio"
     },
     {
@@ -1700,7 +1900,7 @@
       "source_location": "L815",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_815",
-      "community": 15,
+      "community": 17,
       "norm_label": "immagine"
     },
     {
@@ -1710,7 +1910,7 @@
       "source_location": "L818",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_818",
-      "community": 15,
+      "community": 17,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1720,7 +1920,7 @@
       "source_location": "L821",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_821",
-      "community": 15,
+      "community": 17,
       "norm_label": "linee mobili"
     },
     {
@@ -1730,7 +1930,7 @@
       "source_location": "L832",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_18_\u8831_il_lavoro_sul_deterioramento_g\u01d4",
-      "community": 16,
+      "community": 3,
       "norm_label": "18. \u8831 il lavoro sul deterioramento (gu) \u4dd1"
     },
     {
@@ -1740,7 +1940,7 @@
       "source_location": "L834",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_834",
-      "community": 16,
+      "community": 3,
       "norm_label": "struttura"
     },
     {
@@ -1750,7 +1950,7 @@
       "source_location": "L839",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_839",
-      "community": 16,
+      "community": 3,
       "norm_label": "relazioni"
     },
     {
@@ -1760,7 +1960,7 @@
       "source_location": "L844",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_844",
-      "community": 16,
+      "community": 3,
       "norm_label": "tag"
     },
     {
@@ -1770,7 +1970,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_847",
-      "community": 16,
+      "community": 3,
       "norm_label": "giudizio"
     },
     {
@@ -1780,7 +1980,7 @@
       "source_location": "L850",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_850",
-      "community": 16,
+      "community": 3,
       "norm_label": "immagine"
     },
     {
@@ -1790,7 +1990,7 @@
       "source_location": "L853",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_853",
-      "community": 16,
+      "community": 3,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1800,7 +2000,7 @@
       "source_location": "L856",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_856",
-      "community": 16,
+      "community": 3,
       "norm_label": "linee mobili"
     },
     {
@@ -1810,7 +2010,7 @@
       "source_location": "L867",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_19_\u81e8_l_avvicinamento_l\u00edn",
-      "community": 17,
+      "community": 18,
       "norm_label": "19. \u81e8 l'avvicinamento (lin) \u4dd2"
     },
     {
@@ -1820,7 +2020,7 @@
       "source_location": "L869",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_869",
-      "community": 17,
+      "community": 18,
       "norm_label": "struttura"
     },
     {
@@ -1830,7 +2030,7 @@
       "source_location": "L874",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_874",
-      "community": 17,
+      "community": 18,
       "norm_label": "relazioni"
     },
     {
@@ -1840,7 +2040,7 @@
       "source_location": "L879",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_879",
-      "community": 17,
+      "community": 18,
       "norm_label": "tag"
     },
     {
@@ -1850,7 +2050,7 @@
       "source_location": "L882",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_882",
-      "community": 17,
+      "community": 18,
       "norm_label": "giudizio"
     },
     {
@@ -1860,7 +2060,7 @@
       "source_location": "L885",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_885",
-      "community": 17,
+      "community": 18,
       "norm_label": "immagine"
     },
     {
@@ -1870,7 +2070,7 @@
       "source_location": "L888",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_888",
-      "community": 17,
+      "community": 18,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1880,7 +2080,7 @@
       "source_location": "L891",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_891",
-      "community": 17,
+      "community": 18,
       "norm_label": "linee mobili"
     },
     {
@@ -1890,7 +2090,7 @@
       "source_location": "L902",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_20_\u89c0_la_contemplazione_gu\u0101n",
-      "community": 19,
+      "community": 20,
       "norm_label": "20. \u89c0 la contemplazione (guan) \u4dd3"
     },
     {
@@ -1900,7 +2100,7 @@
       "source_location": "L904",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_904",
-      "community": 19,
+      "community": 20,
       "norm_label": "struttura"
     },
     {
@@ -1910,7 +2110,7 @@
       "source_location": "L909",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_909",
-      "community": 19,
+      "community": 20,
       "norm_label": "relazioni"
     },
     {
@@ -1920,7 +2120,7 @@
       "source_location": "L914",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_914",
-      "community": 19,
+      "community": 20,
       "norm_label": "tag"
     },
     {
@@ -1930,7 +2130,7 @@
       "source_location": "L917",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_917",
-      "community": 19,
+      "community": 20,
       "norm_label": "giudizio"
     },
     {
@@ -1940,7 +2140,7 @@
       "source_location": "L920",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_920",
-      "community": 19,
+      "community": 20,
       "norm_label": "immagine"
     },
     {
@@ -1950,7 +2150,7 @@
       "source_location": "L923",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_923",
-      "community": 19,
+      "community": 20,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -1960,7 +2160,7 @@
       "source_location": "L926",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_926",
-      "community": 19,
+      "community": 20,
       "norm_label": "linee mobili"
     },
     {
@@ -1970,7 +2170,7 @@
       "source_location": "L937",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_21_\u566c\u55d1_il_morso_che_spezza_sh\u00ec_k\u00e8",
-      "community": 20,
+      "community": 21,
       "norm_label": "21. \u566c\u55d1 il morso che spezza (shi ke) \u4dd4"
     },
     {
@@ -1980,7 +2180,7 @@
       "source_location": "L939",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_939",
-      "community": 20,
+      "community": 21,
       "norm_label": "struttura"
     },
     {
@@ -1990,7 +2190,7 @@
       "source_location": "L944",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_944",
-      "community": 20,
+      "community": 21,
       "norm_label": "relazioni"
     },
     {
@@ -2000,7 +2200,7 @@
       "source_location": "L949",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_949",
-      "community": 20,
+      "community": 21,
       "norm_label": "tag"
     },
     {
@@ -2010,7 +2210,7 @@
       "source_location": "L952",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_952",
-      "community": 20,
+      "community": 21,
       "norm_label": "giudizio"
     },
     {
@@ -2020,7 +2220,7 @@
       "source_location": "L955",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_955",
-      "community": 20,
+      "community": 21,
       "norm_label": "immagine"
     },
     {
@@ -2030,7 +2230,7 @@
       "source_location": "L958",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_958",
-      "community": 20,
+      "community": 21,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -2040,7 +2240,7 @@
       "source_location": "L961",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_961",
-      "community": 20,
+      "community": 21,
       "norm_label": "linee mobili"
     },
     {
@@ -2050,7 +2250,7 @@
       "source_location": "L972",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_22_\u8cc1_la_grazia_b\u00ec",
-      "community": 21,
+      "community": 22,
       "norm_label": "22. \u8cc1 la grazia (bi) \u4dd5"
     },
     {
@@ -2060,7 +2260,7 @@
       "source_location": "L974",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_974",
-      "community": 21,
+      "community": 22,
       "norm_label": "struttura"
     },
     {
@@ -2070,7 +2270,7 @@
       "source_location": "L979",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_979",
-      "community": 21,
+      "community": 22,
       "norm_label": "relazioni"
     },
     {
@@ -2080,7 +2280,7 @@
       "source_location": "L984",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_984",
-      "community": 21,
+      "community": 22,
       "norm_label": "tag"
     },
     {
@@ -2090,7 +2290,7 @@
       "source_location": "L987",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_987",
-      "community": 21,
+      "community": 22,
       "norm_label": "giudizio"
     },
     {
@@ -2100,7 +2300,7 @@
       "source_location": "L990",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_990",
-      "community": 21,
+      "community": 22,
       "norm_label": "immagine"
     },
     {
@@ -2110,7 +2310,7 @@
       "source_location": "L993",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_993",
-      "community": 21,
+      "community": 22,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -2120,7 +2320,7 @@
       "source_location": "L996",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_996",
-      "community": 21,
+      "community": 22,
       "norm_label": "linee mobili"
     },
     {
@@ -2130,7 +2330,7 @@
       "source_location": "L1007",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_23_\u525d_il_disgregarsi_b\u014d",
-      "community": 22,
+      "community": 3,
       "norm_label": "23. \u525d il disgregarsi (bo) \u4dd6"
     },
     {
@@ -2140,7 +2340,7 @@
       "source_location": "L1009",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_1009",
-      "community": 22,
+      "community": 3,
       "norm_label": "struttura"
     },
     {
@@ -2150,7 +2350,7 @@
       "source_location": "L1014",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_1014",
-      "community": 22,
+      "community": 3,
       "norm_label": "relazioni"
     },
     {
@@ -2160,7 +2360,7 @@
       "source_location": "L1019",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_1019",
-      "community": 22,
+      "community": 3,
       "norm_label": "tag"
     },
     {
@@ -2170,7 +2370,7 @@
       "source_location": "L1022",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_1022",
-      "community": 22,
+      "community": 3,
       "norm_label": "giudizio"
     },
     {
@@ -2180,7 +2380,7 @@
       "source_location": "L1025",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_1025",
-      "community": 22,
+      "community": 3,
       "norm_label": "immagine"
     },
     {
@@ -2190,7 +2390,7 @@
       "source_location": "L1028",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_1028",
-      "community": 22,
+      "community": 3,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -2200,7 +2400,7 @@
       "source_location": "L1031",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_1031",
-      "community": 22,
+      "community": 3,
       "norm_label": "linee mobili"
     },
     {
@@ -5490,7 +5690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_data_science_readme",
-      "community": 73,
+      "community": 74,
       "norm_label": "readme.md"
     },
     {
@@ -5500,7 +5700,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_data_science_readme_data_science",
-      "community": 73,
+      "community": 74,
       "norm_label": "data science"
     },
     {
@@ -5510,7 +5710,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "raw_data_science_readme_ambito",
-      "community": 73,
+      "community": 74,
       "norm_label": "ambito"
     },
     {
@@ -5520,7 +5720,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "raw_data_science_readme_note",
-      "community": 73,
+      "community": 74,
       "norm_label": "note"
     },
     {
@@ -5530,7 +5730,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_divulgazione_readme",
-      "community": 74,
+      "community": 75,
       "norm_label": "readme.md"
     },
     {
@@ -5540,7 +5740,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_divulgazione_readme_divulgazione",
-      "community": 74,
+      "community": 75,
       "norm_label": "divulgazione"
     },
     {
@@ -5550,7 +5750,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "raw_divulgazione_readme_ambito",
-      "community": 74,
+      "community": 75,
       "norm_label": "ambito"
     },
     {
@@ -5560,7 +5760,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "raw_divulgazione_readme_note",
-      "community": 74,
+      "community": 75,
       "norm_label": "note"
     },
     {
@@ -5570,7 +5770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_finanza_readme",
-      "community": 75,
+      "community": 76,
       "norm_label": "readme.md"
     },
     {
@@ -5580,7 +5780,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_finanza_readme_finanza",
-      "community": 75,
+      "community": 76,
       "norm_label": "finanza"
     },
     {
@@ -5590,7 +5790,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "raw_finanza_readme_ambito",
-      "community": 75,
+      "community": 76,
       "norm_label": "ambito"
     },
     {
@@ -5600,7 +5800,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "raw_finanza_readme_note",
-      "community": 75,
+      "community": 76,
       "norm_label": "note"
     },
     {
@@ -5610,7 +5810,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_web_design_readme",
-      "community": 76,
+      "community": 77,
       "norm_label": "readme.md"
     },
     {
@@ -5620,7 +5820,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "raw_web_design_readme_web_design",
-      "community": 76,
+      "community": 77,
       "norm_label": "web design"
     },
     {
@@ -5630,7 +5830,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "raw_web_design_readme_ambito",
-      "community": 76,
+      "community": 77,
       "norm_label": "ambito"
     },
     {
@@ -5640,7 +5840,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "raw_web_design_readme_note",
-      "community": 76,
+      "community": 77,
       "norm_label": "note"
     },
     {
@@ -5650,7 +5850,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_adaptive_core",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion-adaptive-core.md"
     },
     {
@@ -5660,7 +5860,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_adaptive_core_aion_adaptive_core",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion_adaptive_core"
     },
     {
@@ -5670,7 +5870,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_adaptive",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion-adaptive.md"
     },
     {
@@ -5680,7 +5880,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_adaptive_aion_adaptive",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion_adaptive"
     },
     {
@@ -5690,7 +5890,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_analyst",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion-analyst.md"
     },
     {
@@ -5700,7 +5900,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_analyst_aion_analyst",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion_analyst"
     },
     {
@@ -5710,7 +5910,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_cinematica",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion-cinematica.md"
     },
     {
@@ -5720,7 +5920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_cinematica_aion_cinematica",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion_cinematica"
     },
     {
@@ -5750,7 +5950,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_deeplogiccore",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion-deeplogiccore.md"
     },
     {
@@ -5760,7 +5960,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_deeplogiccore_aion_deeplogiccore",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion_deeplogiccore"
     },
     {
@@ -5770,7 +5970,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_echo",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion-echo.md"
     },
     {
@@ -5780,7 +5980,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_echo_aion_echo",
-      "community": 3,
+      "community": 4,
       "norm_label": "aion_echo"
     },
     {
@@ -5790,7 +5990,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_ethos",
-      "community": 4,
+      "community": 5,
       "norm_label": "aion-ethos.md"
     },
     {
@@ -5800,7 +6000,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_ethos_aion_ethos",
-      "community": 4,
+      "community": 5,
       "norm_label": "aion_ethos"
     },
     {
@@ -5810,7 +6010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_fabula",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion-fabula.md"
     },
     {
@@ -5820,7 +6020,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_fabula_aion_fabula",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion_fabula"
     },
     {
@@ -5870,7 +6070,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_oracle",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion-oracle.md"
     },
     {
@@ -5880,7 +6080,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_oracle_aion_oracle",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion_oracle"
     },
     {
@@ -5890,7 +6090,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_paradox",
-      "community": 7,
+      "community": 9,
       "norm_label": "aion-paradox.md"
     },
     {
@@ -5900,7 +6100,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_paradox_aion_paradox",
-      "community": 7,
+      "community": 9,
       "norm_label": "aion_paradox"
     },
     {
@@ -5930,7 +6130,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_superia",
-      "community": 6,
+      "community": 8,
       "norm_label": "aion-superia.md"
     },
     {
@@ -5940,7 +6140,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_superia_aion_superia",
-      "community": 6,
+      "community": 8,
       "norm_label": "aion_superia"
     },
     {
@@ -5970,7 +6170,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_synth",
-      "community": 7,
+      "community": 9,
       "norm_label": "aion-synth.md"
     },
     {
@@ -5980,7 +6180,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_synth_aion_synth",
-      "community": 7,
+      "community": 9,
       "norm_label": "aion_synth"
     },
     {
@@ -5990,7 +6190,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_vision",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion-vision.md"
     },
     {
@@ -6000,7 +6200,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_vision_aion_vision",
-      "community": 5,
+      "community": 7,
       "norm_label": "aion_vision"
     },
     {
@@ -6030,7 +6230,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_index",
-      "community": 6,
+      "community": 8,
       "norm_label": "index.md"
     },
     {
@@ -6040,7 +6240,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_index_aion_modello_di_pensiero",
-      "community": 6,
+      "community": 8,
       "norm_label": "aion - modello di pensiero"
     },
     {
@@ -6050,7 +6250,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamenti",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamenti.md"
     },
     {
@@ -6060,7 +6260,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamenti_insegnamenti_attivi_di_aion",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamenti attivi di aion"
     },
     {
@@ -6110,7 +6310,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_003",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento-003.md"
     },
     {
@@ -6120,7 +6320,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_003_insegnamento_003_asimmetrie_invisibili",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento 003 - asimmetrie invisibili"
     },
     {
@@ -6130,7 +6330,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_004",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-004.md"
     },
     {
@@ -6140,7 +6340,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_004_insegnamento_004_auto_riflessivita_cognitiva",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 004 - auto-riflessivita cognitiva"
     },
     {
@@ -6150,7 +6350,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_005",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-005.md"
     },
     {
@@ -6160,7 +6360,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_005_insegnamento_005_ecologia_sistemica_della_conoscenza",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 005 - ecologia sistemica della conoscenza"
     },
     {
@@ -6210,7 +6410,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_008",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento-008.md"
     },
     {
@@ -6220,7 +6420,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_008_insegnamento_008_reward_shaping_strategico",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento 008 - reward shaping strategico"
     },
     {
@@ -6270,7 +6470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_011",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-011.md"
     },
     {
@@ -6280,7 +6480,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_011_insegnamento_011_dinamiche_narrative_evolutive_i_ching",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 011 - dinamiche narrative evolutive (i ching)"
     },
     {
@@ -6290,7 +6490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_012",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento-012.md"
     },
     {
@@ -6300,7 +6500,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_012_insegnamento_012_risonanza_cognitiva",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento 012 - risonanza cognitiva"
     },
     {
@@ -6350,7 +6550,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_015",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-015.md"
     },
     {
@@ -6360,7 +6560,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_015_insegnamento_015_pattern_emotivo_archetipici",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 015 - pattern emotivo-archetipici"
     },
     {
@@ -6370,7 +6570,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_016",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento-016.md"
     },
     {
@@ -6380,7 +6580,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_016_insegnamento_016_simulazioni_predittive_multi_agent",
-      "community": 7,
+      "community": 9,
       "norm_label": "insegnamento 016 - simulazioni predittive multi-agent"
     },
     {
@@ -6410,7 +6610,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_018",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-018.md"
     },
     {
@@ -6420,7 +6620,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_018_insegnamento_018_allineamento_con_aion_ethos",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 018 - allineamento con aion_ethos"
     },
     {
@@ -6430,7 +6630,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_019",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento-019.md"
     },
     {
@@ -6440,7 +6640,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_019_insegnamento_019_assiomi_invisibili",
-      "community": 4,
+      "community": 5,
       "norm_label": "insegnamento 019 - assiomi invisibili"
     },
     {
@@ -6490,7 +6690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_022",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento-022.md"
     },
     {
@@ -6500,7 +6700,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_022_insegnamento_022_previsione_emozionale_per_output_cinematografico",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento 022 - previsione emozionale per output cinematografico"
     },
     {
@@ -6530,7 +6730,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_024",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento-024.md"
     },
     {
@@ -6540,7 +6740,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_024_insegnamento_024_comunicazione_multicanale_sincronizzata",
-      "community": 3,
+      "community": 4,
       "norm_label": "insegnamento 024 - comunicazione multicanale sincronizzata"
     },
     {
@@ -6590,7 +6790,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_identita_etica",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello-identita-etica.md"
     },
     {
@@ -6600,7 +6800,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_identita_etica_livello_identita_etica",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello identita / etica"
     },
     {
@@ -6610,7 +6810,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_operativita",
-      "community": 5,
+      "community": 7,
       "norm_label": "livello-operativita.md"
     },
     {
@@ -6620,7 +6820,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_operativita_livello_operativita",
-      "community": 5,
+      "community": 7,
       "norm_label": "livello operativita"
     },
     {
@@ -6630,7 +6830,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_orchestrazione_stile",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello-orchestrazione-stile.md"
     },
     {
@@ -6640,7 +6840,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_orchestrazione_stile_livello_orchestrazione_stile",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello orchestrazione / stile"
     },
     {
@@ -6650,7 +6850,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_struttura_logica",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello-struttura-logica.md"
     },
     {
@@ -6660,7 +6860,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_struttura_logica_livello_struttura_logica",
-      "community": 6,
+      "community": 8,
       "norm_label": "livello struttura / logica"
     },
     {
@@ -6670,7 +6870,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_analytic_core",
-      "community": 5,
+      "community": 7,
       "norm_label": "modalita-analytic-core.md"
     },
     {
@@ -6680,7 +6880,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_analytic_core_modalita_analytic_core",
-      "community": 5,
+      "community": 7,
       "norm_label": "modalita [analytic_core]"
     },
     {
@@ -6690,7 +6890,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_guidance_empathic",
-      "community": 3,
+      "community": 4,
       "norm_label": "modalita-guidance-empathic.md"
     },
     {
@@ -6700,7 +6900,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_guidance_empathic_modalita_guidance_empathic",
-      "community": 3,
+      "community": 4,
       "norm_label": "modalita [guidance_empathic]"
     },
     {
@@ -6710,7 +6910,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_hybrid_synth",
-      "community": 6,
+      "community": 8,
       "norm_label": "modalita-hybrid-synth.md"
     },
     {
@@ -6720,7 +6920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_hybrid_synth_modalita_hybrid_synth",
-      "community": 6,
+      "community": 8,
       "norm_label": "modalita [hybrid_synth]"
     },
     {
@@ -6730,7 +6930,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_mythic_narrative",
-      "community": 6,
+      "community": 8,
       "norm_label": "modalita-mythic-narrative.md"
     },
     {
@@ -6740,7 +6940,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_modalita_mythic_narrative_modalita_mythic_narrative",
-      "community": 6,
+      "community": 8,
       "norm_label": "modalita [mythic_narrative]"
     }
   ],
@@ -6766,6 +6966,56 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_aion_skill",
+      "target": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "target": "claude_skills_aion_skill_apprendimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "target": "claude_skills_aion_skill_come_procedere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "target": "claude_skills_aion_skill_output_atteso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/aion/SKILL.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "claude_skills_aion_skill_skill_ragionamento_aion",
+      "target": "claude_skills_aion_skill_vincoli",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "raw/README.md",
@@ -6783,6 +7033,136 @@
       "weight": 1.0,
       "source": "claude",
       "target": "claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner",
+      "target": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "target": "engine_aion_reasoner_apprendimento_opzionale_no_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "target": "engine_aion_reasoner_decisione_di_fondo_gerarchia_dei_fattori",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "target": "engine_aion_reasoner_moduli_trasversali_richiamabili_quando_pertinenti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
+      "target": "engine_aion_reasoner_pipeline_8_passi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_1_intake_classifica_la_richiesta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_2_dl_icc_valuta_la_complessit\u00e0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_3_modalit\u00e0_scegli_il_registro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_4_attivazione_agenti_orchestrazione_aion_superia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_5_componenti_insegnamenti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_6_gate_ethos_vincolo_di_identit\u00e0_sempre_attivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_7_valutazione_intermodulare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/aion-reasoner.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "engine_aion_reasoner_pipeline_8_passi",
+      "target": "engine_aion_reasoner_8_sintesi_formato_superia_sfo_fcc",
       "confidence_score": 1.0
     },
     {
@@ -14907,5 +15287,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1fac7d2891a93751bedaa534ebefa5d0c391e91e"
+  "built_at_commit": "2ce332a43a549ce4c2e6135651ba9d7f0247ff36"
 }

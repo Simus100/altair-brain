@@ -14,6 +14,11 @@
     "ast_hash": "755d5e21651e906fc6a54ffc28d23eed",
     "semantic_hash": ""
   },
+  "engine/aion.model.json": {
+    "mtime": 1782839370.2961767,
+    "ast_hash": "230898c97f55a9ffc87b9506bad02071",
+    "semantic_hash": ""
+  },
   ".agents/rules/graphify.md": {
     "mtime": 1782760795.2669861,
     "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
@@ -22,6 +27,11 @@
   ".agents/workflows/graphify.md": {
     "mtime": 1782760795.2669861,
     "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": ""
+  },
+  ".claude/skills/aion/SKILL.md": {
+    "mtime": 1782839430.9828765,
+    "ast_hash": "09d611259a4dae4a5de7f75dd0de4ed1",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -37,6 +47,11 @@
   "README.md": {
     "mtime": 1782759408.5805192,
     "ast_hash": "060febd502e820051aabc37c17eecb07",
+    "semantic_hash": ""
+  },
+  "engine/aion-reasoner.md": {
+    "mtime": 1782839401.3424904,
+    "ast_hash": "f2b215a914f81b645f58006542ae14c2",
     "semantic_hash": ""
   },
   "raw/README.md": {
