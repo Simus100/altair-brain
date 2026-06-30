@@ -82,6 +82,256 @@
       "id": "readme",
       "community": 4,
       "norm_label": "readme.md"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_readme",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "raw/ \u2014 materiale grezzo per macroarea",
+      "file_type": "document",
+      "source_file": "raw/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_readme_raw_materiale_grezzo_per_macroarea",
+      "community": 3,
+      "norm_label": "raw/ \u2014 materiale grezzo per macroarea"
+    },
+    {
+      "label": "Macroaree attive",
+      "file_type": "document",
+      "source_file": "raw/README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "raw_readme_macroaree_attive",
+      "community": 3,
+      "norm_label": "macroaree attive"
+    },
+    {
+      "label": "Regole",
+      "file_type": "document",
+      "source_file": "raw/README.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "raw_readme_regole",
+      "community": 3,
+      "norm_label": "regole"
+    },
+    {
+      "label": "Aggiungere una nuova macroarea",
+      "file_type": "document",
+      "source_file": "raw/README.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "raw_readme_aggiungere_una_nuova_macroarea",
+      "community": 3,
+      "norm_label": "aggiungere una nuova macroarea"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_readme",
+      "community": 5,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "AION \u2014 modello di pensiero",
+      "file_type": "document",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_readme_aion_modello_di_pensiero",
+      "community": 5,
+      "norm_label": "aion \u2014 modello di pensiero"
+    },
+    {
+      "label": "Ambito",
+      "file_type": "document",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "raw_aion_readme_ambito",
+      "community": 5,
+      "norm_label": "ambito"
+    },
+    {
+      "label": "Note",
+      "file_type": "document",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "raw_aion_readme_note",
+      "community": 5,
+      "norm_label": "note"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_data_science_readme",
+      "community": 6,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Data science",
+      "file_type": "document",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_data_science_readme_data_science",
+      "community": 6,
+      "norm_label": "data science"
+    },
+    {
+      "label": "Ambito",
+      "file_type": "document",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "raw_data_science_readme_ambito",
+      "community": 6,
+      "norm_label": "ambito"
+    },
+    {
+      "label": "Note",
+      "file_type": "document",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "raw_data_science_readme_note",
+      "community": 6,
+      "norm_label": "note"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_divulgazione_readme",
+      "community": 7,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Divulgazione",
+      "file_type": "document",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_divulgazione_readme_divulgazione",
+      "community": 7,
+      "norm_label": "divulgazione"
+    },
+    {
+      "label": "Ambito",
+      "file_type": "document",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "raw_divulgazione_readme_ambito",
+      "community": 7,
+      "norm_label": "ambito"
+    },
+    {
+      "label": "Note",
+      "file_type": "document",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "raw_divulgazione_readme_note",
+      "community": 7,
+      "norm_label": "note"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_finanza_readme",
+      "community": 8,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Finanza",
+      "file_type": "document",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_finanza_readme_finanza",
+      "community": 8,
+      "norm_label": "finanza"
+    },
+    {
+      "label": "Ambito",
+      "file_type": "document",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "raw_finanza_readme_ambito",
+      "community": 8,
+      "norm_label": "ambito"
+    },
+    {
+      "label": "Note",
+      "file_type": "document",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "raw_finanza_readme_note",
+      "community": 8,
+      "norm_label": "note"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_web_design_readme",
+      "community": 9,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Web design",
+      "file_type": "document",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_web_design_readme_web_design",
+      "community": 9,
+      "norm_label": "web design"
+    },
+    {
+      "label": "Ambito",
+      "file_type": "document",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "raw_web_design_readme_ambito",
+      "community": 9,
+      "norm_label": "ambito"
+    },
+    {
+      "label": "Note",
+      "file_type": "document",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "raw_web_design_readme_note",
+      "community": 9,
+      "norm_label": "note"
     }
   ],
   "links": [
@@ -106,6 +356,16 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "raw_readme",
+      "target": "agents",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
@@ -114,8 +374,198 @@
       "source": "claude",
       "target": "claude_graphify",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_readme",
+      "target": "raw_readme_raw_materiale_grezzo_per_macroarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/README.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "raw_readme_raw_materiale_grezzo_per_macroarea",
+      "target": "raw_readme_aggiungere_una_nuova_macroarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "raw_readme_raw_materiale_grezzo_per_macroarea",
+      "target": "raw_readme_macroaree_attive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "raw_readme_raw_materiale_grezzo_per_macroarea",
+      "target": "raw_readme_regole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_aion_readme",
+      "target": "raw_aion_readme_aion_modello_di_pensiero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "raw_aion_readme_aion_modello_di_pensiero",
+      "target": "raw_aion_readme_ambito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "raw_aion_readme_aion_modello_di_pensiero",
+      "target": "raw_aion_readme_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_data_science_readme",
+      "target": "raw_data_science_readme_data_science",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "raw_data_science_readme_data_science",
+      "target": "raw_data_science_readme_ambito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/data-science/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "raw_data_science_readme_data_science",
+      "target": "raw_data_science_readme_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_divulgazione_readme",
+      "target": "raw_divulgazione_readme_divulgazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "raw_divulgazione_readme_divulgazione",
+      "target": "raw_divulgazione_readme_ambito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/divulgazione/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "raw_divulgazione_readme_divulgazione",
+      "target": "raw_divulgazione_readme_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_finanza_readme",
+      "target": "raw_finanza_readme_finanza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "raw_finanza_readme_finanza",
+      "target": "raw_finanza_readme_ambito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/finanza/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "raw_finanza_readme_finanza",
+      "target": "raw_finanza_readme_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_web_design_readme",
+      "target": "raw_web_design_readme_web_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "raw_web_design_readme_web_design",
+      "target": "raw_web_design_readme_ambito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/web-design/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "raw_web_design_readme_web_design",
+      "target": "raw_web_design_readme_note",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "022680d5c7386e29c5218c00789c6b51957d3fe0"
+  "built_at_commit": "82e308c3d1e795efab45d1de9dfd4a45d818e7d5"
 }

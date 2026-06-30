@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "description": "Registro delle macroaree del second brain. Fonte di verita unica per scaffolding, router e gate di sicurezza. Aggiungere un'area = aggiungere una voce qui + la cartella raw/<id>/.",
+  "convention": {
+    "id": "kebab-case ascii, nessuno spazio; coincide col nome della cartella in raw/<id>/",
+    "bridge": "i concetti condivisi tra aree, scritti con lo stesso nome esatto, vengono fusi dal grafo e diventano ponti intercampo",
+    "status": "active | draft | archived"
+  },
+  "areas": [
+    {
+      "id": "aion",
+      "label": "AION",
+      "description": "Modello di pensiero AION: framework concettuale, principi, struttura e applicazioni.",
+      "status": "active"
+    },
+    {
+      "id": "data-science",
+      "label": "Data science",
+      "description": "Machine learning, statistica, analisi dati, MLOps, strumenti e metodi.",
+      "status": "active"
+    },
+    {
+      "id": "finanza",
+      "label": "Finanza",
+      "description": "Mercati, fiscale, contabilita, investimenti, gestione d'impresa.",
+      "status": "active"
+    },
+    {
+      "id": "divulgazione",
+      "label": "Divulgazione",
+      "description": "Comunicazione, scrittura, contenuti, public speaking, didattica.",
+      "status": "active"
+    },
+    {
+      "id": "web-design",
+      "label": "Web design",
+      "description": "UI/UX, front-end, design system, accessibilita, prototipazione.",
+      "status": "active"
+    }
+  ]
+}

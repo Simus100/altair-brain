@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1782835512.0822263,
-    "ast_hash": "78fbdf42e8e3d48a29d42dc6421f990f",
+    "mtime": 1782836153.0409365,
+    "ast_hash": "28566fbbf47902d28ad92853f3c1a0ee",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -32,6 +32,41 @@
   "README.md": {
     "mtime": 1782759408.5805192,
     "ast_hash": "060febd502e820051aabc37c17eecb07",
+    "semantic_hash": ""
+  },
+  "areas.json": {
+    "mtime": 1782836568.366708,
+    "ast_hash": "755d5e21651e906fc6a54ffc28d23eed",
+    "semantic_hash": ""
+  },
+  "raw/README.md": {
+    "mtime": 1782836580.8982759,
+    "ast_hash": "b217e674af7cea5922de71931dd010f1",
+    "semantic_hash": ""
+  },
+  "raw/aion/README.md": {
+    "mtime": 1782836587.2734098,
+    "ast_hash": "096fe5eb03107d4a2722a5d4f81b3dce",
+    "semantic_hash": ""
+  },
+  "raw/data-science/README.md": {
+    "mtime": 1782836592.1844766,
+    "ast_hash": "52bfdfe692a67936edb4f4076a85e44f",
+    "semantic_hash": ""
+  },
+  "raw/divulgazione/README.md": {
+    "mtime": 1782836603.543064,
+    "ast_hash": "53d283cf9825a694a6a3d7ab2f61dd1e",
+    "semantic_hash": ""
+  },
+  "raw/finanza/README.md": {
+    "mtime": 1782836598.3290472,
+    "ast_hash": "f46d78eeba783b2a251488d86dd073ce",
+    "semantic_hash": ""
+  },
+  "raw/web-design/README.md": {
+    "mtime": 1782836610.4756536,
+    "ast_hash": "4eb78c40d277264a090109a9945a5480",
     "semantic_hash": ""
   }
 }
