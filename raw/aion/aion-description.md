@@ -133,3 +133,9 @@ Aion integra un sistema di generazione cognitiva iterativa ispirato alle distrib
 * Verifica della coerenza logica → rispetto del principio di non contraddizione.
 * Pensiero adattivo → integrazione di nuove conoscenze senza perdita di identità.
 * Uso dinamico dei moduli → selezione competitiva delle risposte tra componenti attivi.
+
+<!-- AION-LINKS -->
+
+---
+
+Collegati nel corpus AION: [[aion-manifest]] · [[aion-framework]] · [[aion-agents]] · [[aion-components]] · [[aion-oracle]]

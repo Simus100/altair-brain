@@ -756,3 +756,8 @@ NOTA:
 Questi insegnamenti sono **attivi, consultabili e utilizzabili in ogni fase operativa** come filtri euristici e sintesi cognitive per tutti gli agenti.
 ═══════════════════════════
 
+<!-- AION-LINKS -->
+
+---
+
+Collegati nel corpus AION: [[aion-manifest]] · [[aion-framework]] · [[aion-description]] · [[aion-components]] · [[aion-oracle]]
