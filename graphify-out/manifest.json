@@ -2,11 +2,11 @@
   ".claude/settings.json": {
     "mtime": 1782760779.102698,
     "ast_hash": "598cb075410bcd95220ac90bbb60344a",
-    "semantic_hash": "598cb075410bcd95220ac90bbb60344a"
+    "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1782765630.8698065,
-    "ast_hash": "1fb245023d5902f61dece3a470df3de1",
+    "mtime": 1782835512.0822263,
+    "ast_hash": "78fbdf42e8e3d48a29d42dc6421f990f",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -32,11 +32,6 @@
   "README.md": {
     "mtime": 1782759408.5805192,
     "ast_hash": "060febd502e820051aabc37c17eecb07",
-    "semantic_hash": ""
-  },
-  "raw/AION_Framework.md": {
-    "mtime": 1782765307.1785622,
-    "ast_hash": "dba87ab495b08abaa2acfa333ac2f12b",
     "semantic_hash": ""
   }
 }
