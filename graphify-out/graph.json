@@ -174,6 +174,2076 @@
       "norm_label": "note"
     },
     {
+      "label": "aion-agents.md",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-agents.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_aion_agents",
+      "community": 73,
+      "norm_label": "aion-agents.md"
+    },
+    {
+      "label": "aion-components.md",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components",
+      "community": 10,
+      "norm_label": "aion-components.md"
+    },
+    {
+      "label": "SEZIONE 0: ##  Struttura del Componente:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L658",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_sezione_0_struttura_del_componente",
+      "community": 10,
+      "norm_label": "sezione 0: ##  struttura del componente:"
+    },
+    {
+      "label": "SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L664",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_sezione_1_funzionamento_del_sistema_modo_attivo",
+      "community": 10,
+      "norm_label": "sezione 1: ##  funzionamento del sistema (modo attivo):"
+    },
+    {
+      "label": "SEZIONE 2:  ## Funzionamento Creativo e Autonomo:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L723",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_sezione_2_funzionamento_creativo_e_autonomo",
+      "community": 10,
+      "norm_label": "sezione 2:  ## funzionamento creativo e autonomo:"
+    },
+    {
+      "label": "SEZIONE 3:  ## Utilizzo Narrativo dell\u2019I Ching:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L741",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "community": 11,
+      "norm_label": "sezione 3:  ## utilizzo narrativo dell\u2019i ching:"
+    },
+    {
+      "label": "Spunti di Trama:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L745",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_spunti_di_trama",
+      "community": 11,
+      "norm_label": "spunti di trama:"
+    },
+    {
+      "label": "Caratterizzazione dei Personaggi",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L748",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_caratterizzazione_dei_personaggi",
+      "community": 11,
+      "norm_label": "caratterizzazione dei personaggi"
+    },
+    {
+      "label": "Ambientazioni e Atmosfere:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L751",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_ambientazioni_e_atmosfere",
+      "community": 11,
+      "norm_label": "ambientazioni e atmosfere:"
+    },
+    {
+      "label": "Tensioni e Svolte:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L754",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_tensioni_e_svolte",
+      "community": 11,
+      "norm_label": "tensioni e svolte:"
+    },
+    {
+      "label": "SEZIONE 4: ## Database Oracle \u2013 64 Esagrammi:",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L759",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_sezione_4_database_oracle_64_esagrammi",
+      "community": 10,
+      "norm_label": "sezione 4: ## database oracle \u2013 64 esagrammi:"
+    },
+    {
+      "label": "1. Il Creativo (Cielo) (\u2630 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L768",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_1_il_creativo_cielo",
+      "community": 21,
+      "norm_label": "1. il creativo (cielo) (\u2630 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L769",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna",
+      "community": 21,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L771",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili",
+      "community": 21,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "2. Il Ricettivo (Terra) (\u2637 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L781",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_2_il_ricettivo_terra",
+      "community": 32,
+      "norm_label": "2. il ricettivo (terra) (\u2637 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L782",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_782",
+      "community": 32,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_784",
+      "community": 32,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "3. Difficolt\u00e0 Iniziale (\u2633 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L794",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_3_difficolt\u00e0_iniziale",
+      "community": 43,
+      "norm_label": "3. difficolta iniziale (\u2633 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L795",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_795",
+      "community": 43,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L797",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_797",
+      "community": 43,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "4. L\u2019Inesperienza (\u2636 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L807",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_4_l_inesperienza",
+      "community": 54,
+      "norm_label": "4. l\u2019inesperienza (\u2636 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L808",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_808",
+      "community": 54,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L810",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_810",
+      "community": 54,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "5. L\u2019Attesa (\u2635 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L820",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_5_l_attesa",
+      "community": 64,
+      "norm_label": "5. l\u2019attesa (\u2635 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L821",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_821",
+      "community": 64,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L823",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_823",
+      "community": 64,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "6. Il Conflitto (\u2630 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L833",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_6_il_conflitto",
+      "community": 69,
+      "norm_label": "6. il conflitto (\u2630 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L834",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_834",
+      "community": 69,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L836",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_836",
+      "community": 69,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "7. L\u2019Esercito (\u2635 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L846",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_7_l_esercito",
+      "community": 70,
+      "norm_label": "7. l\u2019esercito (\u2635 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L847",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_847",
+      "community": 70,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L849",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_849",
+      "community": 70,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "8. La Coesione (\u2637 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L859",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_8_la_coesione",
+      "community": 71,
+      "norm_label": "8. la coesione (\u2637 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L860",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_860",
+      "community": 71,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L862",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_862",
+      "community": 71,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "9. La Forza Domata dal Piccolo (\u2630 \u2634)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L872",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_9_la_forza_domata_dal_piccolo",
+      "community": 72,
+      "norm_label": "9. la forza domata dal piccolo (\u2630 \u2634)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L873",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_873",
+      "community": 72,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L875",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_875",
+      "community": 72,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "10. Il Procedere (\u2630 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L885",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_10_il_procedere",
+      "community": 12,
+      "norm_label": "10. il procedere (\u2630 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L886",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_886",
+      "community": 12,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L888",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_888",
+      "community": 12,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "11. La Pace (\u2630 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L898",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_11_la_pace",
+      "community": 13,
+      "norm_label": "11. la pace (\u2630 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L899",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_899",
+      "community": 13,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L901",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_901",
+      "community": 13,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "12. Il Ristagno (\u2637 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L911",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_12_il_ristagno",
+      "community": 14,
+      "norm_label": "12. il ristagno (\u2637 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L912",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_912",
+      "community": 14,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L914",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_914",
+      "community": 14,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "13. La Comunit\u00e0 (\u2630 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L924",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_13_la_comunit\u00e0",
+      "community": 15,
+      "norm_label": "13. la comunita (\u2630 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L925",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_925",
+      "community": 15,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L927",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_927",
+      "community": 15,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "14. Il Possesso Grande (\u2632 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L937",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_14_il_possesso_grande",
+      "community": 16,
+      "norm_label": "14. il possesso grande (\u2632 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L938",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_938",
+      "community": 16,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L940",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_940",
+      "community": 16,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "15. La Modestia (\u2637 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L950",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_15_la_modestia",
+      "community": 17,
+      "norm_label": "15. la modestia (\u2637 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L951",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_951",
+      "community": 17,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L953",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_953",
+      "community": 17,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "16. L\u2019Entusiasmo (\u2633 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L963",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_16_l_entusiasmo",
+      "community": 18,
+      "norm_label": "16. l\u2019entusiasmo (\u2633 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L964",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_964",
+      "community": 18,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L966",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_966",
+      "community": 18,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "17. Il Seguimento (\u2631 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L976",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_17_il_seguimento",
+      "community": 19,
+      "norm_label": "17. il seguimento (\u2631 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L977",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_977",
+      "community": 19,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L979",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_979",
+      "community": 19,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "18. Il Lavoro sul Deterioramento (\u2636 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L989",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_18_il_lavoro_sul_deterioramento",
+      "community": 20,
+      "norm_label": "18. il lavoro sul deterioramento (\u2636 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L990",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_990",
+      "community": 20,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L992",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_992",
+      "community": 20,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "19. L\u2019Avvicinamento (\u2637 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1002",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_19_l_avvicinamento",
+      "community": 10,
+      "norm_label": "19. l\u2019avvicinamento (\u2637 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1003",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1003",
+      "community": 10,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1005",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1005",
+      "community": 10,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "20. La Contemplazione (\u2631 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1015",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_20_la_contemplazione",
+      "community": 22,
+      "norm_label": "20. la contemplazione (\u2631 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1016",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1016",
+      "community": 22,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1018",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1018",
+      "community": 22,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "21. Il Morso che Spezza (\u2632 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1028",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_21_il_morso_che_spezza",
+      "community": 23,
+      "norm_label": "21. il morso che spezza (\u2632 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1029",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1029",
+      "community": 23,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1031",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1031",
+      "community": 23,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "22. La Grazia (\u2636 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1041",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_22_la_grazia",
+      "community": 24,
+      "norm_label": "22. la grazia (\u2636 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1042",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1042",
+      "community": 24,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1044",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1044",
+      "community": 24,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "23. Il Disgregarsi (\u2637 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1054",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_23_il_disgregarsi",
+      "community": 25,
+      "norm_label": "23. il disgregarsi (\u2637 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1055",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1055",
+      "community": 25,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1057",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1057",
+      "community": 25,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "24. Il Ritorno (\u2636 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1067",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_24_il_ritorno",
+      "community": 26,
+      "norm_label": "24. il ritorno (\u2636 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1068",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1068",
+      "community": 26,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1070",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1070",
+      "community": 26,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "25. L\u2019Innocenza (\u2630 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1080",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_25_l_innocenza",
+      "community": 27,
+      "norm_label": "25. l\u2019innocenza (\u2630 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1081",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1081",
+      "community": 27,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1083",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1083",
+      "community": 27,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "26. La Forza Domatrice del Grande (\u2636 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1093",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_26_la_forza_domatrice_del_grande",
+      "community": 28,
+      "norm_label": "26. la forza domatrice del grande (\u2636 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1094",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1094",
+      "community": 28,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1096",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1096",
+      "community": 28,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "27. Gli Angoli della Bocca (\u2636 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1106",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_27_gli_angoli_della_bocca",
+      "community": 29,
+      "norm_label": "27. gli angoli della bocca (\u2636 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1107",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1107",
+      "community": 29,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1109",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1109",
+      "community": 29,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "28. La Preponderanza del Grande (\u2633 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1119",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_28_la_preponderanza_del_grande",
+      "community": 30,
+      "norm_label": "28. la preponderanza del grande (\u2633 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1120",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1120",
+      "community": 30,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1122",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1122",
+      "community": 30,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "29. L\u2019Abissale (Acqua) (\u2635 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1132",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_29_l_abissale_acqua",
+      "community": 31,
+      "norm_label": "29. l\u2019abissale (acqua) (\u2635 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1133",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1133",
+      "community": 31,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1135",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1135",
+      "community": 31,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "30. Il Fuoco (\u2632 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1145",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_30_il_fuoco",
+      "community": 33,
+      "norm_label": "30. il fuoco (\u2632 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1146",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1146",
+      "community": 33,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1148",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1148",
+      "community": 33,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "31. L\u2019Attrazione (\u2631 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1158",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_31_l_attrazione",
+      "community": 34,
+      "norm_label": "31. l\u2019attrazione (\u2631 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1159",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1159",
+      "community": 34,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1161",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1161",
+      "community": 34,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "32. La Durata (\u2636 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1171",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_32_la_durata",
+      "community": 35,
+      "norm_label": "32. la durata (\u2636 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1172",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1172",
+      "community": 35,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1174",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1174",
+      "community": 35,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "33. La Ritirata (\u2630 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1184",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_33_la_ritirata",
+      "community": 36,
+      "norm_label": "33. la ritirata (\u2630 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1185",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1185",
+      "community": 36,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1187",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1187",
+      "community": 36,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "34. La Potenza del Grande (\u2633 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1197",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_34_la_potenza_del_grande",
+      "community": 37,
+      "norm_label": "34. la potenza del grande (\u2633 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1198",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1198",
+      "community": 37,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1200",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1200",
+      "community": 37,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "35. Il Progresso (\u2632 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1210",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_35_il_progresso",
+      "community": 38,
+      "norm_label": "35. il progresso (\u2632 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1211",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1211",
+      "community": 38,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1213",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1213",
+      "community": 38,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "36. L\u2019Ottenebramento della Luce (\u2637 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1223",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_36_l_ottenebramento_della_luce",
+      "community": 39,
+      "norm_label": "36. l\u2019ottenebramento della luce (\u2637 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1224",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1224",
+      "community": 39,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1226",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1226",
+      "community": 39,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "37. La Casata (\u2632 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1236",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_37_la_casata",
+      "community": 40,
+      "norm_label": "37. la casata (\u2632 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1237",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1237",
+      "community": 40,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1239",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1239",
+      "community": 40,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "38. L\u2019Opposizione (\u2635 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1249",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_38_l_opposizione",
+      "community": 41,
+      "norm_label": "38. l\u2019opposizione (\u2635 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1250",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1250",
+      "community": 41,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1252",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1252",
+      "community": 41,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "39. L\u2019Impedimento (\u2635 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1262",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_39_l_impedimento",
+      "community": 42,
+      "norm_label": "39. l\u2019impedimento (\u2635 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1263",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1263",
+      "community": 42,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1265",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1265",
+      "community": 42,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "40. La Liberazione (\u2636 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1275",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_40_la_liberazione",
+      "community": 44,
+      "norm_label": "40. la liberazione (\u2636 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1276",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1276",
+      "community": 44,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1278",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1278",
+      "community": 44,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "41. La Diminuzione (\u2636 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1288",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_41_la_diminuzione",
+      "community": 45,
+      "norm_label": "41. la diminuzione (\u2636 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1289",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1289",
+      "community": 45,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1291",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1291",
+      "community": 45,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "42. L\u2019Accrescimento (\u2631 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1301",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_42_l_accrescimento",
+      "community": 46,
+      "norm_label": "42. l\u2019accrescimento (\u2631 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1302",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1302",
+      "community": 46,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1304",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1304",
+      "community": 46,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "43. Lo Straripamento (\u2630 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1314",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_43_lo_straripamento",
+      "community": 47,
+      "norm_label": "43. lo straripamento (\u2630 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1315",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1315",
+      "community": 47,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1317",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1317",
+      "community": 47,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "44. Il Farsi Incontro (\u2631 \u2630)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1327",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_44_il_farsi_incontro",
+      "community": 48,
+      "norm_label": "44. il farsi incontro (\u2631 \u2630)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1328",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1328",
+      "community": 48,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1330",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1330",
+      "community": 48,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "45. La Raccolta (\u2637 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1340",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_45_la_raccolta",
+      "community": 49,
+      "norm_label": "45. la raccolta (\u2637 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1341",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1341",
+      "community": 49,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1343",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1343",
+      "community": 49,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "46. L\u2019Ascendere (\u2631 \u2637)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1353",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_46_l_ascendere",
+      "community": 50,
+      "norm_label": "46. l\u2019ascendere (\u2631 \u2637)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1354",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1354",
+      "community": 50,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1356",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1356",
+      "community": 50,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "47. L\u2019Esaurimento (\u2635 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1366",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_47_l_esaurimento",
+      "community": 51,
+      "norm_label": "47. l\u2019esaurimento (\u2635 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1367",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1367",
+      "community": 51,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1369",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1369",
+      "community": 51,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "48. Il Pozzo (\u2632 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1379",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_48_il_pozzo",
+      "community": 52,
+      "norm_label": "48. il pozzo (\u2632 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1380",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1380",
+      "community": 52,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1382",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1382",
+      "community": 52,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "49. Il Sovvertimento (\u2632 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1392",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_49_il_sovvertimento",
+      "community": 53,
+      "norm_label": "49. il sovvertimento (\u2632 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1393",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1393",
+      "community": 53,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1395",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1395",
+      "community": 53,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "50. Il Crogiolo (\u2632 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1405",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_50_il_crogiolo",
+      "community": 55,
+      "norm_label": "50. il crogiolo (\u2632 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1406",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1406",
+      "community": 55,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1408",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1408",
+      "community": 55,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "51. Il Tuono (\u2633 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1418",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_51_il_tuono",
+      "community": 56,
+      "norm_label": "51. il tuono (\u2633 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1419",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1419",
+      "community": 56,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1421",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1421",
+      "community": 56,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "52. L\u2019Arresto (\u2636 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1431",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_52_l_arresto",
+      "community": 10,
+      "norm_label": "52. l\u2019arresto (\u2636 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1432",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1432",
+      "community": 10,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1434",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1434",
+      "community": 10,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "53. Lo Sviluppo (\u2636 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1444",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_53_lo_sviluppo",
+      "community": 57,
+      "norm_label": "53. lo sviluppo (\u2636 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1445",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1445",
+      "community": 57,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1447",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1447",
+      "community": 57,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "54. La Ragazza che Si Sposa (\u2631 \u2636)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1457",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_54_la_ragazza_che_si_sposa",
+      "community": 58,
+      "norm_label": "54. la ragazza che si sposa (\u2631 \u2636)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1458",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1458",
+      "community": 58,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1460",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1460",
+      "community": 58,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "55. L\u2019Abbondanza (\u2632 \u2633)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1470",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_55_l_abbondanza",
+      "community": 59,
+      "norm_label": "55. l\u2019abbondanza (\u2632 \u2633)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1471",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1471",
+      "community": 59,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1473",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1473",
+      "community": 59,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "56. Il Viandante (\u2633 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1483",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_56_il_viandante",
+      "community": 60,
+      "norm_label": "56. il viandante (\u2633 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1484",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1484",
+      "community": 60,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1486",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1486",
+      "community": 60,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "57. Il Vento (\u2634 \u2634)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1496",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_57_il_vento",
+      "community": 61,
+      "norm_label": "57. il vento (\u2634 \u2634)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1497",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1497",
+      "community": 61,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1499",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1499",
+      "community": 61,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "58. Il Sereno (\u2631 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1509",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_58_il_sereno",
+      "community": 62,
+      "norm_label": "58. il sereno (\u2631 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1510",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1510",
+      "community": 62,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1512",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1512",
+      "community": 62,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "59. La Dissoluzione (\u2635 \u2634)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1522",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_59_la_dissoluzione",
+      "community": 63,
+      "norm_label": "59. la dissoluzione (\u2635 \u2634)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1523",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1523",
+      "community": 63,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1525",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1525",
+      "community": 63,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "60. La Limitazione (\u2634 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1535",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_60_la_limitazione",
+      "community": 65,
+      "norm_label": "60. la limitazione (\u2634 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1536",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1536",
+      "community": 65,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1538",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1538",
+      "community": 65,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "61. La Veracit\u00e0 Interiore (\u2635 \u2631)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1548",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_61_la_veracit\u00e0_interiore",
+      "community": 66,
+      "norm_label": "61. la veracita interiore (\u2635 \u2631)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1549",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1549",
+      "community": 66,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1551",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1551",
+      "community": 66,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "62. La Preponderanza del Piccolo (\u2631 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1561",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_62_la_preponderanza_del_piccolo",
+      "community": 67,
+      "norm_label": "62. la preponderanza del piccolo (\u2631 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1562",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1562",
+      "community": 67,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1564",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1564",
+      "community": 67,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "63. Dopo il Compimento (\u2635 \u2632)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1574",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_63_dopo_il_compimento",
+      "community": 68,
+      "norm_label": "63. dopo il compimento (\u2635 \u2632)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1575",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1575",
+      "community": 68,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1577",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1577",
+      "community": 68,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "64. Prima del Compimento (\u2632 \u2635)",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1587",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_64_prima_del_compimento",
+      "community": 10,
+      "norm_label": "64. prima del compimento (\u2632 \u2635)"
+    },
+    {
+      "label": "Interpretazione Moderna",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1588",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_interpretazione_moderna_1588",
+      "community": 10,
+      "norm_label": "interpretazione moderna"
+    },
+    {
+      "label": "Linee Mobili",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1590",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_linee_mobili_1590",
+      "community": 10,
+      "norm_label": "linee mobili"
+    },
+    {
+      "label": "Ciclo computazionale semplificato \u2013 AION_NeurosSpike",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L2299",
+      "_origin": "ast",
+      "id": "raw_aion_aion_components_ciclo_computazionale_semplificato_aion_neurosspike",
+      "community": 10,
+      "norm_label": "ciclo computazionale semplificato \u2013 aion_neurosspike"
+    },
+    {
+      "label": "aion-description.md",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-description.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_aion_description",
+      "community": 74,
+      "norm_label": "aion-description.md"
+    },
+    {
+      "label": "aion-framework.md",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-framework.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_aion_framework",
+      "community": 75,
+      "norm_label": "aion-framework.md"
+    },
+    {
+      "label": "aion-manifest.md",
+      "file_type": "document",
+      "source_file": "raw/aion/aion-manifest.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aion_aion_manifest",
+      "community": 76,
+      "norm_label": "aion-manifest.md"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "raw/data-science/README.md",
@@ -448,6 +2518,2026 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L885",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_10_il_procedere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L898",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_11_la_pace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L911",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_12_il_ristagno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L924",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_13_la_comunit\u00e0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L937",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_14_il_possesso_grande",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L950",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_15_la_modestia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L963",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_16_l_entusiasmo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L976",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_17_il_seguimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L989",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_18_il_lavoro_sul_deterioramento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1002",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_19_l_avvicinamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L768",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_1_il_creativo_cielo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1015",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_20_la_contemplazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1028",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_21_il_morso_che_spezza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1041",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_22_la_grazia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1054",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_23_il_disgregarsi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1067",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_24_il_ritorno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1080",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_25_l_innocenza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1093",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_26_la_forza_domatrice_del_grande",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1106",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_27_gli_angoli_della_bocca",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1119",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_28_la_preponderanza_del_grande",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1132",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_29_l_abissale_acqua",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L781",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_2_il_ricettivo_terra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1145",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_30_il_fuoco",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1158",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_31_l_attrazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1171",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_32_la_durata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1184",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_33_la_ritirata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1197",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_34_la_potenza_del_grande",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1210",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_35_il_progresso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1223",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_36_l_ottenebramento_della_luce",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1236",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_37_la_casata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1249",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_38_l_opposizione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1262",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_39_l_impedimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L794",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_3_difficolt\u00e0_iniziale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1275",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_40_la_liberazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1288",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_41_la_diminuzione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1301",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_42_l_accrescimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1314",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_43_lo_straripamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1327",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_44_il_farsi_incontro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1340",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_45_la_raccolta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1353",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_46_l_ascendere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1366",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_47_l_esaurimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1379",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_48_il_pozzo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1392",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_49_il_sovvertimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L807",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_4_l_inesperienza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1405",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_50_il_crogiolo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1418",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_51_il_tuono",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1431",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_52_l_arresto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1444",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_53_lo_sviluppo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1457",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_54_la_ragazza_che_si_sposa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1470",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_55_l_abbondanza",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1483",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_56_il_viandante",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1496",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_57_il_vento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1509",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_58_il_sereno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1522",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_59_la_dissoluzione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L820",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_5_l_attesa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1535",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_60_la_limitazione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1548",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_61_la_veracit\u00e0_interiore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1561",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_62_la_preponderanza_del_piccolo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1574",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_63_dopo_il_compimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1587",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_64_prima_del_compimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L833",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_6_il_conflitto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L846",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_7_l_esercito",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L859",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_8_la_coesione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L872",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_9_la_forza_domata_dal_piccolo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L2299",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_ciclo_computazionale_semplificato_aion_neurosspike",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L658",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_sezione_0_struttura_del_componente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L664",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_sezione_1_funzionamento_del_sistema_modo_attivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L723",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_sezione_2_funzionamento_creativo_e_autonomo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L741",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L759",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components",
+      "target": "raw_aion_aion_components_sezione_4_database_oracle_64_esagrammi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L751",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "target": "raw_aion_aion_components_ambientazioni_e_atmosfere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L748",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "target": "raw_aion_aion_components_caratterizzazione_dei_personaggi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L745",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "target": "raw_aion_aion_components_spunti_di_trama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L754",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_sezione_3_utilizzo_narrativo_dell_i_ching",
+      "target": "raw_aion_aion_components_tensioni_e_svolte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L769",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_1_il_creativo_cielo",
+      "target": "raw_aion_aion_components_interpretazione_moderna",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L771",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_1_il_creativo_cielo",
+      "target": "raw_aion_aion_components_linee_mobili",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L782",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_2_il_ricettivo_terra",
+      "target": "raw_aion_aion_components_interpretazione_moderna_782",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L784",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_2_il_ricettivo_terra",
+      "target": "raw_aion_aion_components_linee_mobili_784",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L795",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_3_difficolt\u00e0_iniziale",
+      "target": "raw_aion_aion_components_interpretazione_moderna_795",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L797",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_3_difficolt\u00e0_iniziale",
+      "target": "raw_aion_aion_components_linee_mobili_797",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L808",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_4_l_inesperienza",
+      "target": "raw_aion_aion_components_interpretazione_moderna_808",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L810",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_4_l_inesperienza",
+      "target": "raw_aion_aion_components_linee_mobili_810",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L821",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_5_l_attesa",
+      "target": "raw_aion_aion_components_interpretazione_moderna_821",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L823",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_5_l_attesa",
+      "target": "raw_aion_aion_components_linee_mobili_823",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L834",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_6_il_conflitto",
+      "target": "raw_aion_aion_components_interpretazione_moderna_834",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L836",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_6_il_conflitto",
+      "target": "raw_aion_aion_components_linee_mobili_836",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L847",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_7_l_esercito",
+      "target": "raw_aion_aion_components_interpretazione_moderna_847",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L849",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_7_l_esercito",
+      "target": "raw_aion_aion_components_linee_mobili_849",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L860",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_8_la_coesione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_860",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L862",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_8_la_coesione",
+      "target": "raw_aion_aion_components_linee_mobili_862",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L873",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_9_la_forza_domata_dal_piccolo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_873",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L875",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_9_la_forza_domata_dal_piccolo",
+      "target": "raw_aion_aion_components_linee_mobili_875",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L886",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_10_il_procedere",
+      "target": "raw_aion_aion_components_interpretazione_moderna_886",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L888",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_10_il_procedere",
+      "target": "raw_aion_aion_components_linee_mobili_888",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L899",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_11_la_pace",
+      "target": "raw_aion_aion_components_interpretazione_moderna_899",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L901",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_11_la_pace",
+      "target": "raw_aion_aion_components_linee_mobili_901",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L912",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_12_il_ristagno",
+      "target": "raw_aion_aion_components_interpretazione_moderna_912",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L914",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_12_il_ristagno",
+      "target": "raw_aion_aion_components_linee_mobili_914",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L925",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_13_la_comunit\u00e0",
+      "target": "raw_aion_aion_components_interpretazione_moderna_925",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L927",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_13_la_comunit\u00e0",
+      "target": "raw_aion_aion_components_linee_mobili_927",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L938",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_14_il_possesso_grande",
+      "target": "raw_aion_aion_components_interpretazione_moderna_938",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L940",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_14_il_possesso_grande",
+      "target": "raw_aion_aion_components_linee_mobili_940",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L951",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_15_la_modestia",
+      "target": "raw_aion_aion_components_interpretazione_moderna_951",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L953",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_15_la_modestia",
+      "target": "raw_aion_aion_components_linee_mobili_953",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L964",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_16_l_entusiasmo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_964",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L966",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_16_l_entusiasmo",
+      "target": "raw_aion_aion_components_linee_mobili_966",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L977",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_17_il_seguimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_977",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L979",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_17_il_seguimento",
+      "target": "raw_aion_aion_components_linee_mobili_979",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L990",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_18_il_lavoro_sul_deterioramento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_990",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L992",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_18_il_lavoro_sul_deterioramento",
+      "target": "raw_aion_aion_components_linee_mobili_992",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1003",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_19_l_avvicinamento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1003",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1005",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_19_l_avvicinamento",
+      "target": "raw_aion_aion_components_linee_mobili_1005",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1016",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_20_la_contemplazione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1016",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1018",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_20_la_contemplazione",
+      "target": "raw_aion_aion_components_linee_mobili_1018",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1029",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_21_il_morso_che_spezza",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1029",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1031",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_21_il_morso_che_spezza",
+      "target": "raw_aion_aion_components_linee_mobili_1031",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1042",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_22_la_grazia",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1042",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_22_la_grazia",
+      "target": "raw_aion_aion_components_linee_mobili_1044",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1055",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_23_il_disgregarsi",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1055",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1057",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_23_il_disgregarsi",
+      "target": "raw_aion_aion_components_linee_mobili_1057",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1068",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_24_il_ritorno",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1068",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1070",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_24_il_ritorno",
+      "target": "raw_aion_aion_components_linee_mobili_1070",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1081",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_25_l_innocenza",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1081",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1083",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_25_l_innocenza",
+      "target": "raw_aion_aion_components_linee_mobili_1083",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1094",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_26_la_forza_domatrice_del_grande",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1094",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1096",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_26_la_forza_domatrice_del_grande",
+      "target": "raw_aion_aion_components_linee_mobili_1096",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1107",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_27_gli_angoli_della_bocca",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1107",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1109",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_27_gli_angoli_della_bocca",
+      "target": "raw_aion_aion_components_linee_mobili_1109",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1120",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_28_la_preponderanza_del_grande",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1120",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1122",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_28_la_preponderanza_del_grande",
+      "target": "raw_aion_aion_components_linee_mobili_1122",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1133",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_29_l_abissale_acqua",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1133",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1135",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_29_l_abissale_acqua",
+      "target": "raw_aion_aion_components_linee_mobili_1135",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1146",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_30_il_fuoco",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1146",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1148",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_30_il_fuoco",
+      "target": "raw_aion_aion_components_linee_mobili_1148",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1159",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_31_l_attrazione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1161",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_31_l_attrazione",
+      "target": "raw_aion_aion_components_linee_mobili_1161",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1172",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_32_la_durata",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1172",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1174",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_32_la_durata",
+      "target": "raw_aion_aion_components_linee_mobili_1174",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1185",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_33_la_ritirata",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1185",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1187",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_33_la_ritirata",
+      "target": "raw_aion_aion_components_linee_mobili_1187",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1198",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_34_la_potenza_del_grande",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1198",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1200",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_34_la_potenza_del_grande",
+      "target": "raw_aion_aion_components_linee_mobili_1200",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1211",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_35_il_progresso",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1211",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1213",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_35_il_progresso",
+      "target": "raw_aion_aion_components_linee_mobili_1213",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1224",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_36_l_ottenebramento_della_luce",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1224",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1226",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_36_l_ottenebramento_della_luce",
+      "target": "raw_aion_aion_components_linee_mobili_1226",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1237",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_37_la_casata",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1237",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1239",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_37_la_casata",
+      "target": "raw_aion_aion_components_linee_mobili_1239",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1250",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_38_l_opposizione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1250",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1252",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_38_l_opposizione",
+      "target": "raw_aion_aion_components_linee_mobili_1252",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1263",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_39_l_impedimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1263",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1265",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_39_l_impedimento",
+      "target": "raw_aion_aion_components_linee_mobili_1265",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1276",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_40_la_liberazione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1276",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1278",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_40_la_liberazione",
+      "target": "raw_aion_aion_components_linee_mobili_1278",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1289",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_41_la_diminuzione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1289",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1291",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_41_la_diminuzione",
+      "target": "raw_aion_aion_components_linee_mobili_1291",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1302",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_42_l_accrescimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1302",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1304",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_42_l_accrescimento",
+      "target": "raw_aion_aion_components_linee_mobili_1304",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1315",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_43_lo_straripamento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1315",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1317",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_43_lo_straripamento",
+      "target": "raw_aion_aion_components_linee_mobili_1317",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1328",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_44_il_farsi_incontro",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1328",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1330",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_44_il_farsi_incontro",
+      "target": "raw_aion_aion_components_linee_mobili_1330",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1341",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_45_la_raccolta",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1341",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1343",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_45_la_raccolta",
+      "target": "raw_aion_aion_components_linee_mobili_1343",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1354",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_46_l_ascendere",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1354",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1356",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_46_l_ascendere",
+      "target": "raw_aion_aion_components_linee_mobili_1356",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1367",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_47_l_esaurimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1367",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1369",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_47_l_esaurimento",
+      "target": "raw_aion_aion_components_linee_mobili_1369",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1380",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_48_il_pozzo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1380",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1382",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_48_il_pozzo",
+      "target": "raw_aion_aion_components_linee_mobili_1382",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1393",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_49_il_sovvertimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1393",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1395",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_49_il_sovvertimento",
+      "target": "raw_aion_aion_components_linee_mobili_1395",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1406",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_50_il_crogiolo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1406",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1408",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_50_il_crogiolo",
+      "target": "raw_aion_aion_components_linee_mobili_1408",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1419",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_51_il_tuono",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1419",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1421",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_51_il_tuono",
+      "target": "raw_aion_aion_components_linee_mobili_1421",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1432",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_52_l_arresto",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1432",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1434",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_52_l_arresto",
+      "target": "raw_aion_aion_components_linee_mobili_1434",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1445",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_53_lo_sviluppo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1445",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1447",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_53_lo_sviluppo",
+      "target": "raw_aion_aion_components_linee_mobili_1447",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1458",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_54_la_ragazza_che_si_sposa",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1458",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1460",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_54_la_ragazza_che_si_sposa",
+      "target": "raw_aion_aion_components_linee_mobili_1460",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1471",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_55_l_abbondanza",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1471",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1473",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_55_l_abbondanza",
+      "target": "raw_aion_aion_components_linee_mobili_1473",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1484",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_56_il_viandante",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1484",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1486",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_56_il_viandante",
+      "target": "raw_aion_aion_components_linee_mobili_1486",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1497",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_57_il_vento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1497",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1499",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_57_il_vento",
+      "target": "raw_aion_aion_components_linee_mobili_1499",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1510",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_58_il_sereno",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1510",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1512",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_58_il_sereno",
+      "target": "raw_aion_aion_components_linee_mobili_1512",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1523",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_59_la_dissoluzione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1523",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1525",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_59_la_dissoluzione",
+      "target": "raw_aion_aion_components_linee_mobili_1525",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1536",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_60_la_limitazione",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1536",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1538",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_60_la_limitazione",
+      "target": "raw_aion_aion_components_linee_mobili_1538",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1549",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_61_la_veracit\u00e0_interiore",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1549",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1551",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_61_la_veracit\u00e0_interiore",
+      "target": "raw_aion_aion_components_linee_mobili_1551",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1562",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_62_la_preponderanza_del_piccolo",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1562",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1564",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_62_la_preponderanza_del_piccolo",
+      "target": "raw_aion_aion_components_linee_mobili_1564",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1575",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_63_dopo_il_compimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1575",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1577",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_63_dopo_il_compimento",
+      "target": "raw_aion_aion_components_linee_mobili_1577",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1588",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_64_prima_del_compimento",
+      "target": "raw_aion_aion_components_interpretazione_moderna_1588",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw/aion/aion-components.md",
+      "source_location": "L1590",
+      "weight": 1.0,
+      "source": "raw_aion_aion_components_64_prima_del_compimento",
+      "target": "raw_aion_aion_components_linee_mobili_1590",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "raw/data-science/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -567,5 +4657,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "82e308c3d1e795efab45d1de9dfd4a45d818e7d5"
+  "built_at_commit": "bce9f3f17f00931c04e08971847d7938ce00a65f"
 }
