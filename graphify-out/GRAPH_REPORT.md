@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-06-30)
 
 ## Corpus Check
-- 19 files · ~25,547 words
+- 74 files · ~27,503 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 240 nodes · 225 edges · 77 communities (74 shown, 3 thin omitted)
+- 350 nodes · 472 edges · 83 communities (80 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bce9f3f1`
+- Built from commit: `6af66ca3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,6 +19,7 @@
 - [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
 - [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
@@ -87,6 +88,11 @@
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `SEZIONE 3:  ## Utilizzo Narrativo dell’I Ching:` - 5 edges
@@ -106,75 +112,91 @@
 ## Import Cycles
 - None detected.
 
-## Communities (77 total, 3 thin omitted)
+## Communities (83 total, 3 thin omitted)
+
+### Community 0 - "Community 0"
+Cohesion: 0.06
+Nodes (28): AION_COGNITION_VIEW, AION_ETHOS, AION_HYBRID_REASONER, AION_Paradox, AION_STRATEGIC_ENGINE, AION_SUPERIA, AION_SYNTH, Insegnamenti attivi di AION (+20 more)
+
+### Community 1 - "Community 1"
+Cohesion: 0.12
+Nodes (14): AION_Adaptive, AION_Analyst, AION_DeepLogicCore, AION_Echo, AION_Fabula, AION_Oracle, AION_Vision, AION - modello di pensiero (+6 more)
+
+### Community 2 - "Community 2"
+Cohesion: 0.12
+Nodes (13): AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 001 - Interconnessione non lineare, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva (+5 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.33
 Nodes (4): Aggiungere una nuova macroarea, Macroaree attive, raw/ — materiale grezzo per macroarea, Regole
 
+### Community 4 - "Community 4"
+Cohesion: 0.33
+Nodes (5): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
+
 ### Community 5 - "Community 5"
-Cohesion: 0.50
-Nodes (3): AION — modello di pensiero, Ambito, Note
-
-### Community 6 - "Community 6"
-Cohesion: 0.50
-Nodes (3): Ambito, Data science, Note
-
-### Community 7 - "Community 7"
-Cohesion: 0.50
-Nodes (3): Ambito, Divulgazione, Note
-
-### Community 8 - "Community 8"
-Cohesion: 0.50
-Nodes (3): Ambito, Finanza, Note
-
-### Community 9 - "Community 9"
-Cohesion: 0.50
-Nodes (3): Ambito, Note, Web design
-
-### Community 10 - "Community 10"
-Cohesion: 0.13
-Nodes (14): 19. L’Avvicinamento (☷ ☱), 52. L’Arresto (☶ ☶), 64. Prima del Compimento (☲ ☵), Ciclo computazionale semplificato – AION_NeurosSpike, Interpretazione Moderna, Interpretazione Moderna, Interpretazione Moderna, Linee Mobili (+6 more)
-
-### Community 11 - "Community 11"
 Cohesion: 0.40
 Nodes (5): Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 3:  ## Utilizzo Narrativo dell’I Ching:, Spunti di Trama:, Tensioni e Svolte:
 
-### Community 12 - "Community 12"
+### Community 6 - "Community 6"
+Cohesion: 0.50
+Nodes (3): AION — modello di pensiero, Ambito, Note
+
+### Community 7 - "Community 7"
+Cohesion: 0.50
+Nodes (3): Ambito, Data science, Note
+
+### Community 8 - "Community 8"
+Cohesion: 0.50
+Nodes (3): Ambito, Divulgazione, Note
+
+### Community 9 - "Community 9"
+Cohesion: 0.50
+Nodes (3): Ambito, Finanza, Note
+
+### Community 10 - "Community 10"
+Cohesion: 0.50
+Nodes (3): Ambito, Note, Web design
+
+### Community 11 - "Community 11"
 Cohesion: 0.67
 Nodes (3): 10. Il Procedere (☰ ☱), Interpretazione Moderna, Linee Mobili
 
-### Community 13 - "Community 13"
+### Community 12 - "Community 12"
 Cohesion: 0.67
 Nodes (3): 11. La Pace (☰ ☷), Interpretazione Moderna, Linee Mobili
 
-### Community 14 - "Community 14"
+### Community 13 - "Community 13"
 Cohesion: 0.67
 Nodes (3): 12. Il Ristagno (☷ ☰), Interpretazione Moderna, Linee Mobili
 
-### Community 15 - "Community 15"
+### Community 14 - "Community 14"
 Cohesion: 0.67
 Nodes (3): 13. La Comunità (☰ ☲), Interpretazione Moderna, Linee Mobili
 
-### Community 16 - "Community 16"
+### Community 15 - "Community 15"
 Cohesion: 0.67
 Nodes (3): 14. Il Possesso Grande (☲ ☰), Interpretazione Moderna, Linee Mobili
 
-### Community 17 - "Community 17"
+### Community 16 - "Community 16"
 Cohesion: 0.67
 Nodes (3): 15. La Modestia (☷ ☶), Interpretazione Moderna, Linee Mobili
 
-### Community 18 - "Community 18"
+### Community 17 - "Community 17"
 Cohesion: 0.67
 Nodes (3): 16. L’Entusiasmo (☳ ☷), Interpretazione Moderna, Linee Mobili
 
-### Community 19 - "Community 19"
+### Community 18 - "Community 18"
 Cohesion: 0.67
 Nodes (3): 17. Il Seguimento (☱ ☳), Interpretazione Moderna, Linee Mobili
 
-### Community 20 - "Community 20"
+### Community 19 - "Community 19"
 Cohesion: 0.67
 Nodes (3): 18. Il Lavoro sul Deterioramento (☶ ☷), Interpretazione Moderna, Linee Mobili
+
+### Community 20 - "Community 20"
+Cohesion: 0.67
+Nodes (3): 19. L’Avvicinamento (☷ ☱), Interpretazione Moderna, Linee Mobili
 
 ### Community 21 - "Community 21"
 Cohesion: 0.67
@@ -322,83 +344,95 @@ Nodes (3): 51. Il Tuono (☳ ☳), Interpretazione Moderna, Linee Mobili
 
 ### Community 57 - "Community 57"
 Cohesion: 0.67
-Nodes (3): 53. Lo Sviluppo (☶ ☱), Interpretazione Moderna, Linee Mobili
+Nodes (3): 52. L’Arresto (☶ ☶), Interpretazione Moderna, Linee Mobili
 
 ### Community 58 - "Community 58"
 Cohesion: 0.67
-Nodes (3): 54. La Ragazza che Si Sposa (☱ ☶), Interpretazione Moderna, Linee Mobili
+Nodes (3): 53. Lo Sviluppo (☶ ☱), Interpretazione Moderna, Linee Mobili
 
 ### Community 59 - "Community 59"
 Cohesion: 0.67
-Nodes (3): 55. L’Abbondanza (☲ ☳), Interpretazione Moderna, Linee Mobili
+Nodes (3): 54. La Ragazza che Si Sposa (☱ ☶), Interpretazione Moderna, Linee Mobili
 
 ### Community 60 - "Community 60"
 Cohesion: 0.67
-Nodes (3): 56. Il Viandante (☳ ☲), Interpretazione Moderna, Linee Mobili
+Nodes (3): 55. L’Abbondanza (☲ ☳), Interpretazione Moderna, Linee Mobili
 
 ### Community 61 - "Community 61"
 Cohesion: 0.67
-Nodes (3): 57. Il Vento (☴ ☴), Interpretazione Moderna, Linee Mobili
+Nodes (3): 56. Il Viandante (☳ ☲), Interpretazione Moderna, Linee Mobili
 
 ### Community 62 - "Community 62"
 Cohesion: 0.67
-Nodes (3): 58. Il Sereno (☱ ☱), Interpretazione Moderna, Linee Mobili
+Nodes (3): 57. Il Vento (☴ ☴), Interpretazione Moderna, Linee Mobili
 
 ### Community 63 - "Community 63"
 Cohesion: 0.67
-Nodes (3): 59. La Dissoluzione (☵ ☴), Interpretazione Moderna, Linee Mobili
+Nodes (3): 58. Il Sereno (☱ ☱), Interpretazione Moderna, Linee Mobili
 
 ### Community 64 - "Community 64"
 Cohesion: 0.67
-Nodes (3): 5. L’Attesa (☵ ☰), Interpretazione Moderna, Linee Mobili
+Nodes (3): 59. La Dissoluzione (☵ ☴), Interpretazione Moderna, Linee Mobili
 
 ### Community 65 - "Community 65"
 Cohesion: 0.67
-Nodes (3): 60. La Limitazione (☴ ☵), Interpretazione Moderna, Linee Mobili
+Nodes (3): 5. L’Attesa (☵ ☰), Interpretazione Moderna, Linee Mobili
 
 ### Community 66 - "Community 66"
 Cohesion: 0.67
-Nodes (3): 61. La Veracità Interiore (☵ ☱), Interpretazione Moderna, Linee Mobili
+Nodes (3): 60. La Limitazione (☴ ☵), Interpretazione Moderna, Linee Mobili
 
 ### Community 67 - "Community 67"
 Cohesion: 0.67
-Nodes (3): 62. La Preponderanza del Piccolo (☱ ☵), Interpretazione Moderna, Linee Mobili
+Nodes (3): 61. La Veracità Interiore (☵ ☱), Interpretazione Moderna, Linee Mobili
 
 ### Community 68 - "Community 68"
 Cohesion: 0.67
-Nodes (3): 63. Dopo il Compimento (☵ ☲), Interpretazione Moderna, Linee Mobili
+Nodes (3): 62. La Preponderanza del Piccolo (☱ ☵), Interpretazione Moderna, Linee Mobili
 
 ### Community 69 - "Community 69"
 Cohesion: 0.67
-Nodes (3): 6. Il Conflitto (☰ ☵), Interpretazione Moderna, Linee Mobili
+Nodes (3): 63. Dopo il Compimento (☵ ☲), Interpretazione Moderna, Linee Mobili
 
 ### Community 70 - "Community 70"
 Cohesion: 0.67
-Nodes (3): 7. L’Esercito (☵ ☷), Interpretazione Moderna, Linee Mobili
+Nodes (3): 64. Prima del Compimento (☲ ☵), Interpretazione Moderna, Linee Mobili
 
 ### Community 71 - "Community 71"
 Cohesion: 0.67
-Nodes (3): 8. La Coesione (☷ ☵), Interpretazione Moderna, Linee Mobili
+Nodes (3): 6. Il Conflitto (☰ ☵), Interpretazione Moderna, Linee Mobili
 
 ### Community 72 - "Community 72"
+Cohesion: 0.67
+Nodes (3): 7. L’Esercito (☵ ☷), Interpretazione Moderna, Linee Mobili
+
+### Community 73 - "Community 73"
+Cohesion: 0.67
+Nodes (3): 8. La Coesione (☷ ☵), Interpretazione Moderna, Linee Mobili
+
+### Community 74 - "Community 74"
 Cohesion: 0.67
 Nodes (3): 9. La Forza Domata dal Piccolo (☰ ☴), Interpretazione Moderna, Linee Mobili
 
 ## Knowledge Gaps
-- **153 isolated node(s):** `graphify`, `Workflow: graphify`, `graphify`, `Macroaree attive`, `Regole` (+148 more)
+- **208 isolated node(s):** `graphify`, `Workflow: graphify`, `graphify`, `Macroaree attive`, `Regole` (+203 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SEZIONE 3:  ## Utilizzo Narrativo dell’I Ching:` connect `Community 11` to `Community 10`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `1. Il Creativo (Cielo) (☰ ☰)` connect `Community 21` to `Community 10`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `2. Il Ricettivo (Terra) (☷ ☷)` connect `Community 32` to `Community 10`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `SEZIONE 3:  ## Utilizzo Narrativo dell’I Ching:` connect `Community 5` to `Community 4`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `1. Il Creativo (Cielo) (☰ ☰)` connect `Community 21` to `Community 4`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `2. Il Ricettivo (Terra) (☷ ☷)` connect `Community 32` to `Community 4`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `graphify`, `Workflow: graphify`, `graphify` to the rest of the system?**
-  _153 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 10` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _208 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.06298701298701298 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.12169312169312169 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.11692307692307692 - nodes in this community are weakly interconnected._
