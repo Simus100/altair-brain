@@ -1,0 +1,11 @@
+[Unit]
+Description=altair-brain — trigger aggiornamento ogni 3 giorni
+
+[Timer]
+# Primo run 10 min dopo il boot, poi ogni 3 giorni dall'ultima esecuzione.
+OnBootSec=10min
+OnUnitActiveSec=3d
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+# Reverse proxy con HTTPS automatico (Caddy). Sostituisci il dominio.
+# Caddy ottiene e rinnova il certificato TLS da solo (serve un dominio che punta alla VPS).
+brain.tuodominio.it {
+    encode gzip
+    reverse_proxy 127.0.0.1:8000
+}
+
+# Senza dominio: esponi via IP usando solo il token su HTTP (meno sicuro) oppure
+# usa un tunnel (Tailscale/WireGuard). Vedi server/README.md.

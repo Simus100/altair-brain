@@ -1,0 +1,17 @@
+[Unit]
+Description=altair-brain API (FastAPI/uvicorn)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Adatta User e percorsi al tuo ambiente
+User=altair
+WorkingDirectory=/home/altair/altair-brain
+EnvironmentFile=/home/altair/altair-brain/server/.env
+ExecStart=/home/altair/altair-brain/.venv/bin/uvicorn server.app:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

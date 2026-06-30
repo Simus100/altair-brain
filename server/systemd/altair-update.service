@@ -1,0 +1,10 @@
+[Unit]
+Description=altair-brain — aggiornamento periodico (pull + grafo)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=altair
+WorkingDirectory=/home/altair/altair-brain
+ExecStart=/usr/bin/bash /home/altair/altair-brain/server/update_brain.sh
