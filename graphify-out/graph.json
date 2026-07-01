@@ -778,10 +778,20 @@
       "norm_label": "implementazione 4 \u2014 guardie di qualita aggiuntive (ci)"
     },
     {
-      "label": "DOPO che le macroaree saranno popolate (non prima)",
+      "label": "INFRASTRUTTURA 2.0 \u2014 miglioramenti per la scala (decisioni da prendere PRIMA che facciano male)",
       "file_type": "document",
       "source_file": "ROADMAP.md",
       "source_location": "L206",
+      "_origin": "ast",
+      "id": "roadmap_infrastruttura_2_0_miglioramenti_per_la_scala_decisioni_da_prendere_prima_che_facciano_male",
+      "community": 90,
+      "norm_label": "infrastruttura 2.0 \u2014 miglioramenti per la scala (decisioni da prendere prima che facciano male)"
+    },
+    {
+      "label": "DOPO che le macroaree saranno popolate (non prima)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L264",
       "_origin": "ast",
       "id": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
       "community": 90,
@@ -791,7 +801,7 @@
       "label": "Completato (storico, per orientamento)",
       "file_type": "document",
       "source_file": "ROADMAP.md",
-      "source_location": "L224",
+      "source_location": "L282",
       "_origin": "ast",
       "id": "roadmap_completato_storico_per_orientamento",
       "community": 90,
@@ -5124,7 +5134,7 @@
       "source_location": "L1917",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_49_\u9769_il_sovvertimento_g\u00e9",
-      "community": 49,
+      "community": 0,
       "norm_label": "49. \u9769 il sovvertimento (ge) \u4df0"
     },
     {
@@ -5134,7 +5144,7 @@
       "source_location": "L1919",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_1919",
-      "community": 49,
+      "community": 0,
       "norm_label": "struttura"
     },
     {
@@ -5144,7 +5154,7 @@
       "source_location": "L1924",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_1924",
-      "community": 49,
+      "community": 0,
       "norm_label": "relazioni"
     },
     {
@@ -5154,7 +5164,7 @@
       "source_location": "L1929",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_1929",
-      "community": 49,
+      "community": 0,
       "norm_label": "tag"
     },
     {
@@ -5164,7 +5174,7 @@
       "source_location": "L1932",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_1932",
-      "community": 49,
+      "community": 0,
       "norm_label": "giudizio"
     },
     {
@@ -5174,7 +5184,7 @@
       "source_location": "L1935",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_1935",
-      "community": 49,
+      "community": 0,
       "norm_label": "immagine"
     },
     {
@@ -5184,7 +5194,7 @@
       "source_location": "L1938",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_1938",
-      "community": 49,
+      "community": 0,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -5194,7 +5204,7 @@
       "source_location": "L1941",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_1941",
-      "community": 49,
+      "community": 0,
       "norm_label": "linee mobili"
     },
     {
@@ -8466,7 +8476,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ROADMAP.md",
-      "source_location": "L224",
+      "source_location": "L282",
       "weight": 1.0,
       "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
       "target": "roadmap_completato_storico_per_orientamento",
@@ -8486,7 +8496,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ROADMAP.md",
-      "source_location": "L206",
+      "source_location": "L264",
       "weight": 1.0,
       "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
       "target": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
@@ -8530,6 +8540,16 @@
       "weight": 1.0,
       "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
       "target": "roadmap_implementazione_4_guardie_di_qualit\u00e0_aggiuntive_ci",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_infrastruttura_2_0_miglioramenti_per_la_scala_decisioni_da_prendere_prima_che_facciano_male",
       "confidence_score": 1.0
     },
     {
@@ -16954,5 +16974,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9ffaf7e0bf24b676f62f29a708c63e42f7ef43dc"
+  "built_at_commit": "eee53bb173e13d2c7bbd703b472695fa6346d1e3"
 }

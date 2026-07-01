@@ -203,6 +203,64 @@ Aggiungi step CI: `pip install fastapi httpx pytest && pytest -q`.
 
 ---
 
+## INFRASTRUTTURA 2.0 — miglioramenti per la scala (decisioni da prendere PRIMA che facciano male)
+
+**I2.1 — Router + sottografi per area (priorità alta appena c'è una 2ª area).**
+Un solo `graph.json` monolitico non scala (traversal lenti, viz inusabile a 10k+ nodi)
+e lo scope di sicurezza per-area come "filtro sui risultati" è fragile. Architettura:
+- genera `graphify-out/areas/<area>/graph.json` (sottografo per macroarea; un tool in
+  `tools/` che partiziona per prefisso `source_file`, oppure run graphify per-cartella);
+- `engine/router.json`: tabella di routing machine-readable
+  `{area: {keywords[], descrizione, budget_default}}` — il router deterministico
+  (match keyword; embeddings locali in futuro) decide quale/i grafo/i interrogare;
+- API: `/query?area=` usa `--graph graphify-out/areas/<area>/graph.json`; senza `area`,
+  il router decide. Scope di sicurezza = QUALE FILE puoi leggere (per costruzione),
+  non un filtro. Regola ponti: nodo-ponte visibile solo se il chiamante vede entrambe le aree;
+- vista globale on-demand: `graphify merge-graphs` (gia nel CLI).
+
+**I2.2 — Guardia anti-regressione del grafo in CI.**
+Il workflow fa `rm graph.json` prima del rebuild, quindi BYPASSA la protezione nativa
+di graphify (fewer nodes → --force). Aggiungere a `tools/graph_health.py`: confronto
+col graph.json del commit precedente (`git show HEAD~1:graphify-out/graph.json`);
+se i nodi calano oltre il 20% senza flag esplicito → exit 1.
+
+**I2.3 — Notifiche di guasto (VPS autonoma = VPS che sa chiedere aiuto).**
+`OnFailure=altair-notify@%n.service` sulle unit; la unit di notifica manda un push via
+ntfy.sh (gratuito, senza account): `curl -d "altair-brain: %i FALLITO" ntfy.sh/<topic-segreto>`.
+Silenzio ≠ successo: senza questo, un update rotto passa inosservato per giorni.
+
+**I2.4 — `/health` arricchito (staleness detection).**
+Esporre: `built_at_commit` (gia dentro graph.json), conteggio nodi/edge, mtime del
+grafo, versione modello. I client rilevano da soli un brain stantio.
+
+**I2.5 — Backup `~/altair-data` (unico dato NON protetto da GitHub).**
+Timer systemd giornaliero: tar con rotazione (7 copie) in `~/backups/`, o rclone verso
+storage esterno. Feedback/lezioni/catture della VPS oggi hanno zero copie.
+
+**I2.6 — Contratto del modello: `schema_version` + JSON Schema.**
+Aggiungere `schema_version` a `engine/aion.model.json` e creare
+`engine/schema/aion.model.schema.json`; la CI valida il modello contro lo schema
+(`pip install jsonschema`). I sistemi esterni ottengono un contratto versionato:
+il modello puo evolvere senza rompere i client.
+
+**I2.7 — API versionata `/v1/` + rate limiting basilare.**
+Prefissare gli endpoint con `/v1/` (mantenere alias non versionati per compatibilita
+finche serve). Rate limiting: middleware semplice in-app o plugin Caddy. Costa zero
+ora, evita breaking change quando i client saranno molti.
+
+**I2.8 — Merge driver graphify per lavoro multi-macchina.**
+Quando si scrivera da piu PC, i conflitti git su graph.json sono ingestibili a mano.
+graphify ha gia la soluzione: `graphify hook install` (post-commit/post-checkout +
+merge driver union). Cablarlo e documentarlo in README.
+
+**I2.9 — Front-matter standard per le note raw.**
+Convenzione YAML in testa a ogni nota (`date`, `source`, `tags`, `area`): prepara
+provenienza e ricerca semantica prima che ci siano mille note da retrofittare.
+Documentare in `raw/README.md` + template.
+
+Ordine consigliato: I2.3 e I2.6 subito (costano poco, proteggono molto); I2.2 nella
+prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto a seguire.
+
 ## DOPO che le macroaree saranno popolate (non prima)
 
 - **Ricerca semantica locale**: `sentence-transformers` (gratuito) per un indice

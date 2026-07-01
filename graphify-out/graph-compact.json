@@ -524,153 +524,23 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-oracle",
+      "source": "wiki:aion-analyst",
       "target": "wiki:livello-operativita",
       "kind": "rel"
     },
     {
-      "source": "wiki:index",
-      "target": "wiki:livello-identita-etica",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:aion-visual",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:modalita-hybrid-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-oracle",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cognition-view",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:aion-symbol",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:modalita-analytic-core",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cognition-view",
-      "target": "wiki:aion-symbol",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
-      "target": "wiki:modalita-guidance-empathic",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:aion-vision",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
+      "source": "wiki:aion-strategic-engine",
       "target": "wiki:aion-superia",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-fabulatorium",
-      "target": "wiki:modalita-mythic-narrative",
+      "source": "wiki:aion-cognition-view",
+      "target": "wiki:aion-superia",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-vision",
-      "target": "wiki:modalita-hybrid-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-paradox",
-      "target": "wiki:aion-symbol",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:insegnamenti",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
-      "target": "wiki:index",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:aion-cinematica",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-symbol",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-symbol",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-echo",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-vision",
-      "target": "wiki:modalita-analytic-core",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-components",
-      "target": "doc:aion-framework",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:livello-orchestrazione-stile",
-      "target": "wiki:modalita-analytic-core",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-adaptive-core",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-symbol",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:modalita-analytic-core",
+      "source": "wiki:aion-synth",
+      "target": "wiki:aion-vision",
       "kind": "rel"
     },
     {
@@ -679,88 +549,8 @@
       "kind": "rel"
     },
     {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-strategic-engine",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:modalita-guidance-empathic",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-hybrid-reasoner",
-      "target": "wiki:aion-superia",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-deeplogiccore",
-      "target": "wiki:modalita-analytic-core",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-fabulatorium",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-cognition-view",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-strategic-engine",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-oracle",
-      "target": "wiki:aion-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-oracle",
-      "target": "wiki:aion-strategic-engine",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabulatorium",
-      "target": "wiki:aion-superia",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-components",
-      "target": "doc:aion-description",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-framework",
-      "target": "grp:iching",
+      "source": "doc:aion-agents",
+      "target": "doc:aion-manifest",
       "kind": "rel"
     },
     {
@@ -769,223 +559,13 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-paradox",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-ethos",
-      "target": "wiki:insegnamenti",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-fabula",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-strategic-engine",
-      "target": "wiki:aion-vision",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:insegnamenti",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-framework",
-      "target": "doc:aion-manifest",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-hybrid-reasoner",
-      "target": "wiki:modalita-hybrid-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-visual",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:livello-orchestrazione-stile",
-      "target": "wiki:modalita-hybrid-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-agents",
-      "target": "doc:aion-framework",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
-      "target": "wiki:aion-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-components",
-      "target": "grp:iching",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cognition-view",
-      "target": "wiki:aion-superia",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-cinematica",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-agents",
-      "target": "doc:aion-manifest",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:livello-struttura-logica",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-vision",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-agents",
-      "target": "doc:aion-description",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-components",
-      "target": "doc:aion-manifest",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
+      "source": "wiki:aion-deeplogiccore",
       "target": "wiki:modalita-analytic-core",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-ethos",
-      "target": "wiki:modalita-guidance-empathic",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive",
-      "target": "wiki:aion-adaptive-core",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabulatorium",
-      "target": "wiki:aion-oracle",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive",
-      "target": "wiki:aion-echo",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-description",
-      "target": "doc:aion-framework",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:aion-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-deeplogiccore",
-      "target": "wiki:aion-hybrid-reasoner",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:modalita-guidance-empathic",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-synth",
-      "target": "wiki:modalita-hybrid-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabula",
-      "target": "wiki:aion-fabulatorium",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cognition-view",
-      "target": "wiki:aion-echo",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-superia",
-      "kind": "rel"
-    },
-    {
-      "source": "grp:insegnamenti",
-      "target": "wiki:aion-hybrid-reasoner",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-agents",
-      "target": "doc:aion-components",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-vision",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:index",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-deeplogiccore",
-      "target": "wiki:aion-vision",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-deeplogiccore",
-      "target": "wiki:livello-struttura-logica",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-paradox",
-      "target": "wiki:aion-synth",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-deeplogiccore",
-      "kind": "rel"
-    },
-    {
-      "source": "doc:aion-agents",
-      "target": "grp:iching",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-hybrid-reasoner",
-      "target": "wiki:aion-paradox",
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:aion-cinematica",
       "kind": "rel"
     },
     {
@@ -994,13 +574,58 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-strategic-engine",
-      "target": "wiki:aion-superia",
+      "source": "doc:aion-description",
+      "target": "doc:aion-framework",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:aion-echo",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-components",
+      "target": "doc:aion-description",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive",
+      "target": "wiki:aion-analyst",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-vision",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-description",
+      "target": "grp:iching",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabulatorium",
+      "target": "wiki:aion-symbol",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:livello-struttura-logica",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:livello-orchestrazione-stile",
       "kind": "rel"
     },
     {
       "source": "wiki:aion-fabula",
-      "target": "wiki:aion-oracle",
+      "target": "wiki:aion-symbol",
       "kind": "rel"
     },
     {
@@ -1009,58 +634,53 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-synth",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-fabula",
-      "kind": "rel"
-    },
-    {
       "source": "wiki:livello-orchestrazione-stile",
-      "target": "wiki:modalita-guidance-empathic",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
       "target": "wiki:modalita-hybrid-synth",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:aion-superia",
+      "source": "wiki:aion-deeplogiccore",
+      "target": "wiki:livello-struttura-logica",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-synth",
+      "source": "doc:aion-components",
+      "target": "grp:iching",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-strategic-engine",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-echo",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-hybrid-reasoner",
+      "source": "wiki:aion-cognition-view",
       "target": "wiki:livello-orchestrazione-stile",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-fabulatorium",
+      "source": "wiki:aion-strategic-engine",
+      "target": "wiki:livello-orchestrazione-stile",
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-oracle",
+      "source": "wiki:aion-vision",
+      "target": "wiki:modalita-hybrid-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-symbol",
+      "target": "wiki:aion-visual",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
       "target": "wiki:aion-vision",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-paradox",
+      "target": "wiki:aion-symbol",
       "kind": "rel"
     },
     {
@@ -1069,33 +689,93 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-echo",
-      "target": "wiki:livello-operativita",
-      "kind": "rel"
-    },
-    {
       "source": "wiki:livello-orchestrazione-stile",
-      "target": "wiki:modalita-mythic-narrative",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabulatorium",
-      "target": "wiki:aion-visual",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-hybrid-reasoner",
-      "target": "wiki:aion-symbol",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:livello-operativita",
+      "target": "wiki:modalita-guidance-empathic",
       "kind": "rel"
     },
     {
       "source": "wiki:aion-synth",
-      "target": "wiki:aion-vision",
+      "target": "wiki:livello-orchestrazione-stile",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabulatorium",
+      "target": "wiki:aion-superia",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-adaptive-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-cinematica",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-oracle",
+      "target": "wiki:aion-strategic-engine",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-symbol",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cognition-view",
+      "target": "wiki:aion-echo",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-strategic-engine",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-oracle",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-symbol",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:insegnamenti",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabulatorium",
+      "target": "wiki:aion-oracle",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-strategic-engine",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:insegnamenti",
       "kind": "rel"
     },
     {
@@ -1109,43 +789,8 @@
       "kind": "rel"
     },
     {
-      "source": "doc:aion-description",
-      "target": "grp:iching",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive",
-      "target": "wiki:aion-analyst",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-symbol",
-      "target": "wiki:aion-visual",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-cinematica",
-      "target": "wiki:aion-visual",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-superia",
-      "target": "wiki:livello-orchestrazione-stile",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-adaptive-core",
-      "target": "wiki:aion-echo",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-analyst",
-      "target": "wiki:aion-strategic-engine",
-      "kind": "rel"
-    },
-    {
-      "source": "wiki:aion-fabulatorium",
-      "target": "wiki:aion-symbol",
+      "source": "doc:aion-agents",
+      "target": "doc:aion-description",
       "kind": "rel"
     },
     {
@@ -1154,8 +799,358 @@
       "kind": "rel"
     },
     {
+      "source": "doc:aion-components",
+      "target": "doc:aion-framework",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-paradox",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-superia",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-visual",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-ethos",
+      "target": "wiki:modalita-guidance-empathic",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
+      "target": "wiki:aion-fabulatorium",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-deeplogiccore",
+      "target": "wiki:aion-hybrid-reasoner",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-echo",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:livello-orchestrazione-stile",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-echo",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:livello-identita-etica",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-strategic-engine",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:modalita-guidance-empathic",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:aion-superia",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-fabula",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:livello-orchestrazione-stile",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-hybrid-reasoner",
+      "target": "wiki:aion-paradox",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-vision",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
+      "target": "wiki:aion-oracle",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:modalita-hybrid-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-paradox",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-fabulatorium",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabulatorium",
+      "target": "wiki:aion-visual",
+      "kind": "rel"
+    },
+    {
       "source": "wiki:aion-adaptive",
       "target": "wiki:modalita-guidance-empathic",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cognition-view",
+      "target": "wiki:aion-symbol",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-hybrid-reasoner",
+      "target": "wiki:aion-symbol",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-hybrid-reasoner",
+      "target": "wiki:modalita-hybrid-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-framework",
+      "target": "grp:iching",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:modalita-guidance-empathic",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-oracle",
+      "target": "wiki:aion-vision",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-deeplogiccore",
+      "target": "wiki:aion-vision",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:modalita-hybrid-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-hybrid-reasoner",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabulatorium",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-agents",
+      "target": "doc:aion-framework",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-components",
+      "target": "doc:aion-manifest",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-fabula",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-agents",
+      "target": "grp:iching",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-superia",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-deeplogiccore",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-hybrid-reasoner",
+      "target": "wiki:aion-superia",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:modalita-guidance-empathic",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-visual",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-ethos",
+      "target": "wiki:insegnamenti",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-oracle",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:livello-orchestrazione-stile",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-symbol",
+      "target": "wiki:livello-operativita",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:index",
+      "target": "wiki:modalita-analytic-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive",
+      "target": "wiki:aion-adaptive-core",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:modalita-mythic-narrative",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-analyst",
+      "target": "wiki:aion-vision",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:aion-visual",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive",
+      "target": "wiki:aion-echo",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-hybrid-reasoner",
+      "target": "wiki:livello-orchestrazione-stile",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-agents",
+      "target": "doc:aion-components",
+      "kind": "rel"
+    },
+    {
+      "source": "grp:insegnamenti",
+      "target": "wiki:aion-fabulatorium",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-echo",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-adaptive-core",
+      "target": "wiki:livello-orchestrazione-stile",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-strategic-engine",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:livello-orchestrazione-stile",
+      "kind": "rel"
+    },
+    {
+      "source": "doc:aion-framework",
+      "target": "doc:aion-manifest",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-strategic-engine",
+      "target": "wiki:aion-vision",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-synth",
+      "target": "wiki:modalita-hybrid-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-superia",
+      "target": "wiki:index",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-cognition-view",
       "kind": "rel"
     },
     {
@@ -1164,8 +1159,13 @@
       "kind": "rel"
     },
     {
-      "source": "wiki:aion-strategic-engine",
-      "target": "wiki:modalita-analytic-core",
+      "source": "wiki:aion-oracle",
+      "target": "wiki:aion-synth",
+      "kind": "rel"
+    },
+    {
+      "source": "wiki:aion-cinematica",
+      "target": "wiki:aion-fabula",
       "kind": "rel"
     }
   ],

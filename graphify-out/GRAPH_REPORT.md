@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-01)
 
 ## Corpus Check
-- 89 files · ~44,053 words
+- 89 files · ~44,539 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 774 nodes · 917 edges · 94 communities (88 shown, 6 thin omitted)
+- 775 nodes · 918 edges · 93 communities (87 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9ffaf7e0`
+- Built from commit: `eee53bb1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,7 +64,6 @@
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 48|Community 48]]
-- [[_COMMUNITY_Community 49|Community 49]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
@@ -109,7 +108,7 @@
 - [[_COMMUNITY_Community 93|Community 93]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `ROADMAP — guida alle prossime implementazioni` - 10 edges
+1. `ROADMAP — guida alle prossime implementazioni` - 11 edges
 2. `Pipeline (9 passi)` - 10 edges
 3. `run_graphify()` - 8 edges
 4. `1. 乾 Il Creativo (Qián) ䷀` - 8 edges
@@ -126,11 +125,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (94 total, 6 thin omitted)
+## Communities (93 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.15
-Nodes (16): Ciclo computazionale semplificato – AION_NeurosSpike, Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen): (+8 more)
+Cohesion: 0.10
+Nodes (24): Ciclo computazionale semplificato – AION_NeurosSpike, 49. 革 Il Sovvertimento (Gé) ䷰, Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili (+16 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.11
@@ -324,10 +323,6 @@ Nodes (8): 47. 困 L'Esaurimento (Kùn) ䷮, Giudizio, Immagine, Interpretazione
 Cohesion: 0.25
 Nodes (8): 48. 井 Il Pozzo (Jǐng) ䷯, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
-### Community 49 - "Community 49"
-Cohesion: 0.25
-Nodes (8): 49. 革 Il Sovvertimento (Gé) ䷰, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
-
 ### Community 50 - "Community 50"
 Cohesion: 0.25
 Nodes (8): 4. 蒙 L'Inesperienza (Méng) ䷃, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
@@ -457,8 +452,8 @@ Cohesion: 0.50
 Nodes (3): graphify, Roadmap, Viste del grafo (processo standard)
 
 ### Community 90 - "Community 90"
-Cohesion: 0.18
-Nodes (10): Completato (storico, per orientamento), Contesto in 10 righe, DOPO che le macroaree saranno popolate (non prima), IMPLEMENTAZIONE 1 — Cattura da ovunque (inbox + /capture + /triage), IMPLEMENTAZIONE 2 — Server MCP (connettore universale per assistenti AI), IMPLEMENTAZIONE 3 — Oracle eseguibile (AION_Oracle funzionante), IMPLEMENTAZIONE 4 — Guardie di qualità aggiuntive (CI), PRIORITÀ 0 — Repo privato (azione umana, 2 minuti) ⚠️ (+2 more)
+Cohesion: 0.17
+Nodes (11): Completato (storico, per orientamento), Contesto in 10 righe, DOPO che le macroaree saranno popolate (non prima), IMPLEMENTAZIONE 1 — Cattura da ovunque (inbox + /capture + /triage), IMPLEMENTAZIONE 2 — Server MCP (connettore universale per assistenti AI), IMPLEMENTAZIONE 3 — Oracle eseguibile (AION_Oracle funzionante), IMPLEMENTAZIONE 4 — Guardie di qualità aggiuntive (CI), INFRASTRUTTURA 2.0 — miglioramenti per la scala (decisioni da prendere PRIMA che facciano male) (+3 more)
 
 ### Community 91 - "Community 91"
 Cohesion: 0.25
@@ -473,7 +468,7 @@ Cohesion: 0.25
 Nodes (8): 52. 艮 L'Arresto (Gèn) ䷳, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ## Knowledge Gaps
-- **578 isolated node(s):** `bootstrap.sh script`, `PATH`, `update_brain.sh script`, `PATH`, `graphify` (+573 more)
+- **579 isolated node(s):** `bootstrap.sh script`, `PATH`, `update_brain.sh script`, `PATH`, `graphify` (+574 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -487,9 +482,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `3. 屯 Difficoltà Iniziale (Zhūn) ䷂` connect `Community 40` to `Community 0`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `Richiede Bearer token o X-API-Key. /health e esente.`, `Esegue graphify con argomenti come LISTA (niente shell -> niente injection).`, `bootstrap.sh script` to the rest of the system?**
-  _582 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _583 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0967741935483871 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11375661375661375 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
