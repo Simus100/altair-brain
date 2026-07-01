@@ -224,6 +224,78 @@
       "norm_label": "esegue graphify con argomenti come lista (niente shell -> niente injection)."
     },
     {
+      "label": "bootstrap.sh",
+      "file_type": "code",
+      "source_file": "server/bootstrap.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "server_bootstrap",
+      "community": 85,
+      "norm_label": "bootstrap.sh"
+    },
+    {
+      "label": "bootstrap.sh script",
+      "file_type": "code",
+      "source_file": "server/bootstrap.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "server_bootstrap_sh__entry",
+      "community": 85,
+      "norm_label": "bootstrap.sh script"
+    },
+    {
+      "label": "PATH",
+      "file_type": "code",
+      "source_file": "server/bootstrap.sh",
+      "source_location": "L9",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "server_bootstrap_path",
+      "community": 85,
+      "norm_label": "path"
+    },
+    {
+      "label": "client_example.py",
+      "file_type": "code",
+      "source_file": "server/client_example.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "server_client_example",
+      "community": 86,
+      "norm_label": "client_example.py"
+    },
+    {
+      "label": "call()",
+      "file_type": "code",
+      "source_file": "server/client_example.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "server_client_example_call",
+      "community": 86,
+      "norm_label": "call()"
+    },
+    {
+      "label": "show()",
+      "file_type": "code",
+      "source_file": "server/client_example.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "server_client_example_show",
+      "community": 86,
+      "norm_label": "show()"
+    },
+    {
       "label": "update_brain.sh",
       "file_type": "code",
       "source_file": "server/update_brain.sh",
@@ -250,6 +322,20 @@
       "id": "server_update_brain_sh__entry",
       "community": 87,
       "norm_label": "update_brain.sh script"
+    },
+    {
+      "label": "PATH",
+      "file_type": "code",
+      "source_file": "server/update_brain.sh",
+      "source_location": "L11",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "server_update_brain_path",
+      "community": 87,
+      "norm_label": "path"
     },
     {
       "label": "altair_compact_view.py",
@@ -328,7 +414,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_rules_graphify",
-      "community": 85,
+      "community": 88,
       "norm_label": "graphify.md"
     },
     {
@@ -338,7 +424,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "agents_rules_graphify_graphify",
-      "community": 85,
+      "community": 88,
       "norm_label": "graphify"
     },
     {
@@ -348,7 +434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_workflows_graphify",
-      "community": 86,
+      "community": 89,
       "norm_label": "graphify.md"
     },
     {
@@ -358,7 +444,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "agents_workflows_graphify_workflow_graphify",
-      "community": 86,
+      "community": 89,
       "norm_label": "workflow: graphify"
     },
     {
@@ -468,7 +554,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme",
-      "community": 88,
+      "community": 90,
       "norm_label": "readme.md"
     },
     {
@@ -6262,20 +6348,20 @@
       "norm_label": "componenti"
     },
     {
-      "label": "Dipendenza esterna: graphify (build Linux)",
+      "label": "Dipendenza: graphify (pacchetto Python)",
       "file_type": "document",
       "source_file": "server/README.md",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "server_readme_dipendenza_esterna_graphify_build_linux",
+      "id": "server_readme_dipendenza_graphify_pacchetto_python",
       "community": 74,
-      "norm_label": "dipendenza esterna: graphify (build linux)"
+      "norm_label": "dipendenza: graphify (pacchetto python)"
     },
     {
       "label": "Endpoint",
       "file_type": "document",
       "source_file": "server/README.md",
-      "source_location": "L20",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "server_readme_endpoint",
       "community": 74,
@@ -6285,7 +6371,7 @@
       "label": "Deploy",
       "file_type": "document",
       "source_file": "server/README.md",
-      "source_location": "L36",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "server_readme_deploy",
       "community": 74,
@@ -6295,7 +6381,7 @@
       "label": "Sicurezza (attenzioni del caso)",
       "file_type": "document",
       "source_file": "server/README.md",
-      "source_location": "L45",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "server_readme_sicurezza_attenzioni_del_caso",
       "community": 74,
@@ -7636,17 +7722,6 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "server/app.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "server_app_graphify_available",
-      "target": "server_app_path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "server/app.py",
       "source_location": "L73",
@@ -7805,6 +7880,56 @@
       "weight": 1.0,
       "source": "server_app_feedback",
       "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "server/bootstrap.sh",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "server_bootstrap",
+      "target": "server_bootstrap_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/bootstrap.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "server_bootstrap",
+      "target": "server_bootstrap_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/client_example.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "server_client_example",
+      "target": "server_client_example_call",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/client_example.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "server_client_example",
+      "target": "server_client_example_show",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "server/update_brain.sh",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "server_update_brain",
+      "target": "server_update_brain_path",
       "confidence_score": 1.0
     },
     {
@@ -13831,7 +13956,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "server/README.md",
-      "source_location": "L36",
+      "source_location": "L45",
       "weight": 1.0,
       "source": "server_readme_server_esposizione_del_second_brain_via_fastapi",
       "target": "server_readme_deploy",
@@ -13844,14 +13969,14 @@
       "source_location": "L14",
       "weight": 1.0,
       "source": "server_readme_server_esposizione_del_second_brain_via_fastapi",
-      "target": "server_readme_dipendenza_esterna_graphify_build_linux",
+      "target": "server_readme_dipendenza_graphify_pacchetto_python",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "server/README.md",
-      "source_location": "L20",
+      "source_location": "L29",
       "weight": 1.0,
       "source": "server_readme_server_esposizione_del_second_brain_via_fastapi",
       "target": "server_readme_endpoint",
@@ -13861,7 +13986,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "server/README.md",
-      "source_location": "L45",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "server_readme_server_esposizione_del_second_brain_via_fastapi",
       "target": "server_readme_sicurezza_attenzioni_del_caso",
@@ -16369,5 +16494,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "79d69ab5fafa8d17df81231dbded159ad565f73b"
+  "built_at_commit": "7ad7e4000aa5b9f2cb2394c6d05717717a051ac8"
 }

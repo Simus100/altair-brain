@@ -11,11 +11,20 @@ Espone il brain e graphify ad altri dispositivi, in sicurezza, **senza API a pag
 - `Caddyfile` — reverse proxy con HTTPS automatico.
 - `.env.example` — copia in `.env` e imposta `ALTAIR_API_TOKEN`.
 
-## Dipendenza esterna: graphify (build Linux)
-graphify e un **binario standalone**, non un pacchetto pip. Sulla VPS serve la **build
-Linux** dello stesso graphify, messa sul PATH (`graphify --version` deve funzionare).
-L'API degrada con eleganza: gli endpoint dati funzionano comunque, quelli graphify
-rispondono 503 finche il binario non c'e.
+## Dipendenza: graphify (pacchetto Python)
+graphify e il pacchetto PyPI **`graphifyy`** (CLI `graphify`), da https://github.com/safishamsi/graphify.
+Installazione su Linux (consigliata pipx o uv):
+
+```bash
+pipx install graphifyy         # oppure:  uv tool install graphifyy
+graphify --version
+```
+
+Va sul PATH dell'utente (`~/.local/bin`). Poiche i servizi systemd non ereditano quel
+PATH, imposta in `server/.env` la variabile `GRAPHIFY_BIN` col percorso assoluto
+(es. `/home/altair/.local/bin/graphify`); `bootstrap.sh` lo fa da solo. L'API degrada
+con eleganza: gli endpoint dati funzionano comunque, quelli graphify rispondono 503 se
+il binario non e raggiungibile.
 
 ## Endpoint
 | Metodo | Path | Funzione |

@@ -24,9 +24,19 @@
     "ast_hash": "8fdb7245722e0549efad655312db99b5",
     "semantic_hash": ""
   },
+  "server/bootstrap.sh": {
+    "mtime": 1782918672.603606,
+    "ast_hash": "3d1b1feb1bf098cfa2eeacfea96beb2e",
+    "semantic_hash": ""
+  },
+  "server/client_example.py": {
+    "mtime": 1782918691.2526326,
+    "ast_hash": "afb5057ff4dc5296ac6d9536c7d4382b",
+    "semantic_hash": ""
+  },
   "server/update_brain.sh": {
-    "mtime": 1782841421.8798482,
-    "ast_hash": "6e0978490419697f74446e99e1f2fccd",
+    "mtime": 1782918650.3698685,
+    "ast_hash": "2ca38ae88cc939e44b3e397bbbab1c4b",
     "semantic_hash": ""
   },
   "tools/altair_compact_view.py": {
@@ -135,8 +145,8 @@
     "semantic_hash": ""
   },
   "server/README.md": {
-    "mtime": 1782841483.060555,
-    "ast_hash": "8fa366d102032ab084545cde5382c02f",
+    "mtime": 1782918642.4741738,
+    "ast_hash": "430b1e45f9d9e53a0d7ad61caef3a3d4",
     "semantic_hash": ""
   },
   "server/requirements.txt": {

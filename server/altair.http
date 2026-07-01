@@ -1,0 +1,52 @@
+### altair-brain API — richieste di esempio (VS Code REST Client / JetBrains HTTP)
+### Imposta le variabili qui sotto.
+
+@base = https://brain.tuodominio.it
+@token = INSERISCI_IL_TOKEN
+
+### Stato (pubblico, senza token)
+GET {{base}}/health
+
+### Modello AION tipizzato
+GET {{base}}/model
+Authorization: Bearer {{token}}
+
+### Protocollo di ragionamento
+GET {{base}}/reasoner
+Authorization: Bearer {{token}}
+
+### Grafo compatto (JSON)
+GET {{base}}/graph/compact
+Authorization: Bearer {{token}}
+
+### Query sul grafo (graphify)
+GET {{base}}/query?q=quali componenti usa AION_STRATEGIC_ENGINE
+Authorization: Bearer {{token}}
+
+### Explain di un nodo
+GET {{base}}/explain?x=aion-superia
+Authorization: Bearer {{token}}
+
+### Percorso tra due nodi
+GET {{base}}/path?a=AION_SUPERIA&b=AION_Analyst
+Authorization: Bearer {{token}}
+
+### Lezioni apprese
+GET {{base}}/lessons
+Authorization: Bearer {{token}}
+
+### Feedback (apprendimento)
+POST {{base}}/feedback
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "question": "domanda di esempio",
+  "answer": "risposta di esempio",
+  "outcome": "useful",
+  "nodes": ["AION_SUPERIA"]
+}
+
+### Aggiornamento manuale (pull + rigenerazione)
+POST {{base}}/admin/update
+Authorization: Bearer {{token}}

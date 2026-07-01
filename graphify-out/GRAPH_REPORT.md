@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-06-30)
+# Graph Report - altair-brain  (2026-07-01)
 
 ## Corpus Check
-- 84 files · ~40,519 words
+- 86 files · ~41,037 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 743 nodes · 891 edges · 89 communities (84 shown, 5 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 750 nodes · 895 edges · 91 communities (85 shown, 6 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `79d69ab5`
+- Built from commit: `7ad7e400`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -101,8 +101,9 @@
 - [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
-- [[_COMMUNITY_Community 86|Community 86]]
 - [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Pipeline (9 passi)` - 10 edges
@@ -122,7 +123,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (89 total, 5 thin omitted)
+## Communities (91 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.15
@@ -422,7 +423,7 @@ Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Imm
 
 ### Community 74 - "Community 74"
 Cohesion: 0.29
-Nodes (6): Componenti, Deploy, Dipendenza esterna: graphify (build Linux), Endpoint, server/ — esposizione del second brain via FastAPI, Sicurezza (attenzioni del caso)
+Nodes (6): Componenti, Deploy, Dipendenza: graphify (pacchetto Python), Endpoint, server/ — esposizione del second brain via FastAPI, Sicurezza (attenzioni del caso)
 
 ### Community 76 - "Community 76"
 Cohesion: 0.33
@@ -457,9 +458,9 @@ Cohesion: 0.50
 Nodes (3): altair_compact_view.py — vista compatta strutturale, Le due viste, tools/ — feature di supporto ad altair-brain
 
 ## Knowledge Gaps
-- **559 isolated node(s):** `update_brain.sh script`, `graphify`, `Workflow: graphify`, `Come procedere`, `Vincoli` (+554 more)
+- **562 isolated node(s):** `bootstrap.sh script`, `PATH`, `update_brain.sh script`, `PATH`, `graphify` (+557 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -470,11 +471,11 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `3. 屯 Difficoltà Iniziale (Zhūn) ䷂` connect `Community 42` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **What connects `Richiede Bearer token o X-API-Key. /health e esente.`, `Esegue graphify con argomenti come LISTA (niente shell -> niente injection).`, `update_brain.sh script` to the rest of the system?**
-  _562 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Richiede Bearer token o X-API-Key. /health e esente.`, `Esegue graphify con argomenti come LISTA (niente shell -> niente injection).`, `bootstrap.sh script` to the rest of the system?**
+  _565 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.1471861471861472 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.11255411255411256 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.13725490196078433 - nodes in this community are weakly interconnected._

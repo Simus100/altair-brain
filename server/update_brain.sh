@@ -7,6 +7,9 @@ set -euo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO"
 
+# I servizi systemd non ereditano il PATH di login: aggiungi ~/.local/bin (pipx/uv).
+export PATH="$HOME/.local/bin:$PATH"
+
 echo "[$(date -Is)] update: git pull"
 git pull --ff-only
 
