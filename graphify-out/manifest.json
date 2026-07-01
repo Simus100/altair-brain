@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1782939080.0104082,
-    "ast_hash": "366ca272353d02cc91ddb0d2226d0aea",
+    "mtime": 1782939698.089606,
+    "ast_hash": "becb89ac0c335ec4d78c413e972bddd5",
     "semantic_hash": ""
   },
   "README.md": {
@@ -447,6 +447,11 @@
   "wiki/aion/modalita-mythic-narrative.md": {
     "mtime": 1782939090.2178175,
     "ast_hash": "b1c27f6ec7f6f5badb71b837369ad227",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1782939686.9201224,
+    "ast_hash": "4929f5ebcc3ad49ea2c155cfb6dbe3b4",
     "semantic_hash": ""
   }
 }

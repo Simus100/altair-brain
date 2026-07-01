@@ -588,10 +588,20 @@
       "norm_label": "claude.md"
     },
     {
-      "label": "graphify",
+      "label": "Roadmap",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_roadmap",
+      "community": 82,
+      "norm_label": "roadmap"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 82,
@@ -601,7 +611,7 @@
       "label": "Viste del grafo (processo standard)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L11",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "claude_viste_del_grafo_processo_standard",
       "community": 82,
@@ -676,6 +686,116 @@
       "id": "readme_workflow_di_modifica_per_chi_scrive_nel_brain",
       "community": 72,
       "norm_label": "workflow di modifica (per chi scrive nel brain)"
+    },
+    {
+      "label": "ROADMAP.md",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "roadmap",
+      "community": 90,
+      "norm_label": "roadmap.md"
+    },
+    {
+      "label": "ROADMAP \u2014 guida alle prossime implementazioni",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "community": 90,
+      "norm_label": "roadmap \u2014 guida alle prossime implementazioni"
+    },
+    {
+      "label": "Contesto in 10 righe",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "roadmap_contesto_in_10_righe",
+      "community": 90,
+      "norm_label": "contesto in 10 righe"
+    },
+    {
+      "label": "Regole vincolanti (violarle rompe il sistema)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "roadmap_regole_vincolanti_violarle_rompe_il_sistema",
+      "community": 90,
+      "norm_label": "regole vincolanti (violarle rompe il sistema)"
+    },
+    {
+      "label": "PRIORIT\u00c0 0 \u2014 Repo privato (azione umana, 2 minuti) \u26a0\ufe0f",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "roadmap_priorit\u00e0_0_repo_privato_azione_umana_2_minuti",
+      "community": 90,
+      "norm_label": "priorita 0 \u2014 repo privato (azione umana, 2 minuti) \u26a0\ufe0f"
+    },
+    {
+      "label": "IMPLEMENTAZIONE 1 \u2014 Cattura da ovunque (inbox + /capture + /triage)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "roadmap_implementazione_1_cattura_da_ovunque_inbox_capture_triage",
+      "community": 90,
+      "norm_label": "implementazione 1 \u2014 cattura da ovunque (inbox + /capture + /triage)"
+    },
+    {
+      "label": "IMPLEMENTAZIONE 2 \u2014 Server MCP (connettore universale per assistenti AI)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "roadmap_implementazione_2_server_mcp_connettore_universale_per_assistenti_ai",
+      "community": 90,
+      "norm_label": "implementazione 2 \u2014 server mcp (connettore universale per assistenti ai)"
+    },
+    {
+      "label": "IMPLEMENTAZIONE 3 \u2014 Oracle eseguibile (AION_Oracle funzionante)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "roadmap_implementazione_3_oracle_eseguibile_aion_oracle_funzionante",
+      "community": 90,
+      "norm_label": "implementazione 3 \u2014 oracle eseguibile (aion_oracle funzionante)"
+    },
+    {
+      "label": "IMPLEMENTAZIONE 4 \u2014 Guardie di qualit\u00e0 aggiuntive (CI)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L189",
+      "_origin": "ast",
+      "id": "roadmap_implementazione_4_guardie_di_qualit\u00e0_aggiuntive_ci",
+      "community": 90,
+      "norm_label": "implementazione 4 \u2014 guardie di qualita aggiuntive (ci)"
+    },
+    {
+      "label": "DOPO che le macroaree saranno popolate (non prima)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
+      "community": 90,
+      "norm_label": "dopo che le macroaree saranno popolate (non prima)"
+    },
+    {
+      "label": "Completato (storico, per orientamento)",
+      "file_type": "document",
+      "source_file": "ROADMAP.md",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "roadmap_completato_storico_per_orientamento",
+      "community": 90,
+      "norm_label": "completato (storico, per orientamento)"
     },
     {
       "label": "aion-reasoner.md",
@@ -4124,7 +4244,7 @@
       "source_location": "L1532",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_38_\u777d_l_opposizione_ku\u00ed",
-      "community": 0,
+      "community": 91,
       "norm_label": "38. \u777d l'opposizione (kui) \u4de5"
     },
     {
@@ -4134,7 +4254,7 @@
       "source_location": "L1534",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_1534",
-      "community": 0,
+      "community": 91,
       "norm_label": "struttura"
     },
     {
@@ -4144,7 +4264,7 @@
       "source_location": "L1539",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_1539",
-      "community": 0,
+      "community": 91,
       "norm_label": "relazioni"
     },
     {
@@ -4154,7 +4274,7 @@
       "source_location": "L1544",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_1544",
-      "community": 0,
+      "community": 91,
       "norm_label": "tag"
     },
     {
@@ -4164,7 +4284,7 @@
       "source_location": "L1547",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_1547",
-      "community": 0,
+      "community": 91,
       "norm_label": "giudizio"
     },
     {
@@ -4174,7 +4294,7 @@
       "source_location": "L1550",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_1550",
-      "community": 0,
+      "community": 91,
       "norm_label": "immagine"
     },
     {
@@ -4184,7 +4304,7 @@
       "source_location": "L1553",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_1553",
-      "community": 0,
+      "community": 91,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -4194,7 +4314,7 @@
       "source_location": "L1556",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_1556",
-      "community": 0,
+      "community": 91,
       "norm_label": "linee mobili"
     },
     {
@@ -4444,7 +4564,7 @@
       "source_location": "L1672",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_42_\u76ca_l_accrescimento_y\u00ec",
-      "community": 0,
+      "community": 92,
       "norm_label": "42. \u76ca l'accrescimento (yi) \u4de9"
     },
     {
@@ -4454,7 +4574,7 @@
       "source_location": "L1674",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_1674",
-      "community": 0,
+      "community": 92,
       "norm_label": "struttura"
     },
     {
@@ -4464,7 +4584,7 @@
       "source_location": "L1679",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_1679",
-      "community": 0,
+      "community": 92,
       "norm_label": "relazioni"
     },
     {
@@ -4474,7 +4594,7 @@
       "source_location": "L1684",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_1684",
-      "community": 0,
+      "community": 92,
       "norm_label": "tag"
     },
     {
@@ -4484,7 +4604,7 @@
       "source_location": "L1687",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_1687",
-      "community": 0,
+      "community": 92,
       "norm_label": "giudizio"
     },
     {
@@ -4494,7 +4614,7 @@
       "source_location": "L1690",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_1690",
-      "community": 0,
+      "community": 92,
       "norm_label": "immagine"
     },
     {
@@ -4504,7 +4624,7 @@
       "source_location": "L1693",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_1693",
-      "community": 0,
+      "community": 92,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -4514,7 +4634,7 @@
       "source_location": "L1696",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_1696",
-      "community": 0,
+      "community": 92,
       "norm_label": "linee mobili"
     },
     {
@@ -5244,7 +5364,7 @@
       "source_location": "L2022",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_52_\u826e_l_arresto_g\u00e8n",
-      "community": 0,
+      "community": 93,
       "norm_label": "52. \u826e l'arresto (gen) \u4df3"
     },
     {
@@ -5254,7 +5374,7 @@
       "source_location": "L2024",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_struttura_2024",
-      "community": 0,
+      "community": 93,
       "norm_label": "struttura"
     },
     {
@@ -5264,7 +5384,7 @@
       "source_location": "L2029",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_relazioni_2029",
-      "community": 0,
+      "community": 93,
       "norm_label": "relazioni"
     },
     {
@@ -5274,7 +5394,7 @@
       "source_location": "L2034",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_tag_2034",
-      "community": 0,
+      "community": 93,
       "norm_label": "tag"
     },
     {
@@ -5284,7 +5404,7 @@
       "source_location": "L2037",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_giudizio_2037",
-      "community": 0,
+      "community": 93,
       "norm_label": "giudizio"
     },
     {
@@ -5294,7 +5414,7 @@
       "source_location": "L2040",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_immagine_2040",
-      "community": 0,
+      "community": 93,
       "norm_label": "immagine"
     },
     {
@@ -5304,7 +5424,7 @@
       "source_location": "L2043",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_interpretazione_moderna_2043",
-      "community": 0,
+      "community": 93,
       "norm_label": "interpretazione moderna"
     },
     {
@@ -5314,7 +5434,7 @@
       "source_location": "L2046",
       "_origin": "ast",
       "id": "raw_aion_aion_oracle_linee_mobili_2046",
-      "community": 0,
+      "community": 93,
       "norm_label": "linee mobili"
     },
     {
@@ -8246,7 +8366,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L1",
+      "source_location": "L7",
       "weight": 1.0,
       "source": "claude",
       "target": "claude_graphify",
@@ -8256,7 +8376,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L11",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_roadmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "claude",
       "target": "claude_viste_del_grafo_processo_standard",
@@ -8320,6 +8450,106 @@
       "weight": 1.0,
       "source": "readme_altair_brain",
       "target": "readme_workflow_di_modifica_per_chi_scrive_nel_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "roadmap",
+      "target": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_completato_storico_per_orientamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_contesto_in_10_righe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_implementazione_1_cattura_da_ovunque_inbox_capture_triage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_implementazione_2_server_mcp_connettore_universale_per_assistenti_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_implementazione_3_oracle_eseguibile_aion_oracle_funzionante",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_implementazione_4_guardie_di_qualit\u00e0_aggiuntive_ci",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_priorit\u00e0_0_repo_privato_azione_umana_2_minuti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ROADMAP.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+      "target": "roadmap_regole_vincolanti_violarle_rompe_il_sistema",
       "confidence_score": 1.0
     },
     {
@@ -16724,5 +16954,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "99a6567e33075ea54021414d32463a886d88ba35"
+  "built_at_commit": "9ffaf7e0bf24b676f62f29a708c63e42f7ef43dc"
 }

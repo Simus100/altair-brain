@@ -1,3 +1,9 @@
+## Roadmap
+
+Le implementazioni pianificate (con spec complete, regole vincolanti del progetto e
+criteri di accettazione) sono in **`ROADMAP.md`**: leggilo PRIMA di iniziare qualsiasi
+nuova feature, e aggiornalo quando completi una voce.
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
