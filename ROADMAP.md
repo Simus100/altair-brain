@@ -303,9 +303,13 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
   arricchito (nodi, built_at_commit, eta, modello, aree). **I2.5** backup
   (`backup_data.sh` + timer giornaliero, 7 copie). **I2.6** `schema_version` +
   `engine/schema/aion.model.schema.json` validato in CI. **I2.7** API `/v1/` (alias
-  legacy) + rate limit per IP + auth constant-time. **I2.8** merge driver graphify
-  (`graphify hook install` eseguito in locale; rieseguirlo su ogni nuova macchina di
-  scrittura). **I2.9** front-matter standard documentato in `raw/README.md`.
+  legacy) + rate limit per IP + auth constant-time. **I2.8** merge driver graphify:
+  configurato ESPLICITAMENTE (niente `graphify hook install`: i suoi hook post-commit
+  rilanciano rebuild in background e sporcano l'albero). Su ogni nuova macchina di
+  scrittura eseguire una volta:
+  `git config merge.graphify.name "graphify graph union merge"` e
+  `git config merge.graphify.driver "graphify merge-driver %O %A %B"`
+  (il binding e gia in .gitattributes: `graphify-out/graph.json merge=graphify`). **I2.9** front-matter standard documentato in `raw/README.md`.
 - **`tools/rebuild_all.py`**: un comando per l'intera pipeline (usato da GUIDA e skill).
 - **`GUIDA.md`**: manuale d'uso per umani (newbie-friendly).
 

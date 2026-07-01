@@ -5,3 +5,4 @@
 *.timer     text eol=lf
 Caddyfile   text eol=lf
 *.json      text eol=lf
+graphify-out/graph.json merge=graphify
