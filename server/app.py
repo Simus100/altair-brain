@@ -23,6 +23,10 @@ REPO = Path(os.environ.get("ALTAIR_REPO_DIR", Path(__file__).resolve().parent.pa
 GRAPHIFY = os.environ.get("GRAPHIFY_BIN", "graphify")
 TOKEN = os.environ.get("ALTAIR_API_TOKEN")
 TIMEOUT = int(os.environ.get("ALTAIR_CMD_TIMEOUT", "120"))
+# Dati scrivibili TENUTI FUORI dal repo (così l'auto-update git non entra in conflitto):
+MEMORY_DIR = os.environ.get("ALTAIR_MEMORY_DIR", str(REPO / "graphify-out" / "memory"))
+LESSONS = os.environ.get("ALTAIR_LESSONS", str(REPO / "graphify-out" / "reflections" / "LESSONS.md"))
+UPDATE_SCRIPT = os.environ.get("ALTAIR_UPDATE_SCRIPT", str(REPO / "server" / "update_brain.sh"))
 
 app = FastAPI(title="altair-brain API", version="1.0",
               description="Second brain + graphify, esposto in modo sicuro. Velario inerte.")
@@ -92,7 +96,9 @@ def graph_compact():
 
 @app.get("/lessons", response_class=PlainTextResponse, dependencies=[Depends(auth)])
 def lessons():
-    f = REPO / "graphify-out/reflections/LESSONS.md"
+    f = Path(LESSONS)
+    if not f.exists():
+        f = REPO / "graphify-out/reflections/LESSONS.md"
     return f.read_text(encoding="utf-8") if f.exists() else "# Nessuna lezione ancora.\n"
 
 @app.get("/views/extended", dependencies=[Depends(auth)])
@@ -133,25 +139,26 @@ class Feedback(BaseModel):
 
 @app.post("/feedback", dependencies=[Depends(auth)])
 def feedback(fb: Feedback):
+    os.makedirs(MEMORY_DIR, exist_ok=True)
     args = ["save-result", "--question", fb.question, "--answer", fb.answer,
-            "--type", fb.type, "--outcome", fb.outcome,
-            "--memory-dir", "graphify-out/memory"]
+            "--type", fb.type, "--outcome", fb.outcome, "--memory-dir", MEMORY_DIR]
     if fb.nodes:
         args += ["--nodes", *fb.nodes]
     if fb.correction:
         args += ["--correction", fb.correction]
     out = run_graphify(args)
-    run_graphify(["reflect", "--memory-dir", "graphify-out/memory",
-                  "--graph", "graphify-out/graph.json"])
+    os.makedirs(os.path.dirname(LESSONS), exist_ok=True)
+    run_graphify(["reflect", "--memory-dir", MEMORY_DIR, "--out", LESSONS,
+                  "--graph", str(REPO / "graphify-out" / "graph.json")])
     return {"saved": True, "detail": out.strip()}
 
 
 # ---------------- admin: aggiornamento manuale ----------------
 @app.post("/admin/update", dependencies=[Depends(auth)])
 def admin_update():
-    script = REPO / "server" / "update_brain.sh"
+    script = Path(UPDATE_SCRIPT)
     if not script.exists():
-        raise HTTPException(404, "update_brain.sh non trovato.")
+        raise HTTPException(404, f"Script di update non trovato: {UPDATE_SCRIPT}")
     try:
         p = subprocess.run(["bash", str(script)], cwd=str(REPO),
                            capture_output=True, text=True, timeout=600)
