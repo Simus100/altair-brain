@@ -1,0 +1,8 @@
+[Unit]
+Description=altair-brain — backup di ~/altair-data (dati NON protetti da GitHub)
+OnFailure=altair-notify@%n.service
+
+[Service]
+Type=oneshot
+User=altair
+ExecStart=/usr/bin/bash /home/altair/altair-api/backup_data.sh

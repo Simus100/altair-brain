@@ -13,22 +13,53 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # serve il commit precedente per l'anti-regressione del grafo
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Sintassi Python (server + tools)
-        run: python -m compileall -q server tools
+      - name: Dipendenze di verifica
+        run: pip install -q jsonschema fastapi httpx pytest
 
-      - name: Consistenza modello AION (0 errori richiesti)
+      - name: Sintassi Python (server + tools + tests)
+        run: python -m compileall -q server tools tests
+
+      - name: Consistenza modello AION + JSON Schema (0 errori richiesti)
         run: python tools/validate_model.py
 
-      - name: JSON validi (engine, aree, grafo)
+      - name: DB Oracle coerente col grezzo (fonte unica)
+        run: |
+          python tools/build_iching_db.py
+          if ! git diff --quiet -- engine/iching.db.json; then
+            echo "::error::engine/iching.db.json non coerente con raw/aion/aion-oracle.md — rigenera con tools/build_iching_db.py"
+            exit 1
+          fi
+
+      - name: Wiki coerente col modello (fonte unica)
+        run: |
+          python tools/gen_wiki_from_model.py
+          if ! git diff --quiet -- wiki/; then
+            echo "::error::wiki/aion non coerente con engine/aion.model.json — rigenera con tools/gen_wiki_from_model.py"
+            git diff --stat -- wiki/
+            exit 1
+          fi
+
+      - name: Sottografi per area coerenti col grafo
+        run: |
+          python tools/build_area_graphs.py
+          if ! git diff --quiet -- graphify-out/areas; then
+            echo "::error::graphify-out/areas non coerente con graph.json — rigenera con tools/build_area_graphs.py"
+            exit 1
+          fi
+
+      - name: JSON validi
         run: |
           python - <<'EOF'
-          import json, glob, sys
-          files = ["areas.json", "engine/aion.model.json",
+          import json, sys
+          files = ["areas.json", "engine/aion.model.json", "engine/router.json",
+                   "engine/iching.db.json", "engine/schema/aion.model.schema.json",
                    "graphify-out/graph.json", "graphify-out/graph-compact.json"]
           bad = []
           for f in files:
@@ -41,19 +72,15 @@ jobs:
           print(f"{len(files)} file JSON validi")
           EOF
 
-      - name: Wiki coerente col modello (fonte unica di verita)
-        run: |
-          python tools/gen_wiki_from_model.py
-          if ! git diff --quiet -- wiki/; then
-            echo "::error::wiki/aion non coerente con engine/aion.model.json — rigenera con tools/gen_wiki_from_model.py"
-            git diff --stat -- wiki/
-            exit 1
-          fi
-          echo "wiki/aion allineata al modello"
+      - name: Salute del grafo (coesione + anti-regressione)
+        run: python tools/graph_health.py
+
+      - name: Test API (sicurezza, oracle, inbox, degradazione)
+        run: python -m pytest tests/ -q
 
       - name: Fine-riga LF sugli script per la VPS
         run: |
-          if grep -rl $'\r' server/*.sh tools/*.py 2>/dev/null; then
+          if grep -rl $'\r' server/*.sh server/*.py tools/*.py 2>/dev/null; then
             echo "::error::trovati CRLF in file eseguiti su Linux"
             exit 1
           fi

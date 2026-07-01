@@ -1,4 +1,5 @@
 {
+  "schema_version": 1,
   "model": "AION",
   "versione": "2.2",
   "tipo": "modello di pensiero (thinking model) come dati tipizzati",

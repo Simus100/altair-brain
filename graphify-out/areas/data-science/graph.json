@@ -1,0 +1,81 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "data-science",
+ "built_at_commit": "641490c8ee173965e9c8941114e7c64f00c180be",
+ "nodes": [
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_readme",
+   "community": 77,
+   "norm_label": "readme.md"
+  },
+  {
+   "label": "Ambito",
+   "file_type": "document",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L6",
+   "_origin": "ast",
+   "id": "raw_data_science_readme_ambito",
+   "community": 77,
+   "norm_label": "ambito"
+  },
+  {
+   "label": "Data science",
+   "file_type": "document",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_readme_data_science",
+   "community": 77,
+   "norm_label": "data science"
+  },
+  {
+   "label": "Note",
+   "file_type": "document",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L13",
+   "_origin": "ast",
+   "id": "raw_data_science_readme_note",
+   "community": 77,
+   "norm_label": "note"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "raw_data_science_readme",
+   "target": "raw_data_science_readme_data_science",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "raw_data_science_readme_data_science",
+   "target": "raw_data_science_readme_ambito",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/README.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "raw_data_science_readme_data_science",
+   "target": "raw_data_science_readme_note",
+   "confidence_score": 1.0
+  }
+ ]
+}

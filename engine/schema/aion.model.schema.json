@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "altair-brain — contratto di engine/aion.model.json",
+  "description": "Contratto versionato per i sistemi esterni che consumano il modello di pensiero AION. Cambi incompatibili richiedono un incremento di schema_version.",
+  "type": "object",
+  "required": ["schema_version", "model", "versione", "livelli", "modalita", "agenti", "componenti", "insegnamenti"],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "model": {"type": "string"},
+    "versione": {"type": "string"},
+    "livelli": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "ruolo"],
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "label": {"type": "string"},
+          "ruolo": {"type": "string"}
+        }
+      }
+    },
+    "modalita": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "tag", "priorita", "dominanti"],
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "tag": {"type": "string"},
+          "priorita": {"type": "string"},
+          "dominanti": {"type": "array", "items": {"$ref": "#/definitions/id"}}
+        }
+      }
+    },
+    "agenti": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "ruolo", "livello", "consulta"],
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "label": {"type": "string"},
+          "ruolo": {"type": "string"},
+          "livello": {"$ref": "#/definitions/id"},
+          "usa": {"type": "array", "items": {"$ref": "#/definitions/id"}},
+          "collabora": {"type": "array", "items": {"$ref": "#/definitions/id"}},
+          "consulta": {"type": "array", "items": {"$ref": "#/definitions/id"}},
+          "modalita": {"type": "array", "items": {"$ref": "#/definitions/id"}},
+          "orchestra": {"type": "array", "items": {"$ref": "#/definitions/id"}}
+        }
+      }
+    },
+    "componenti": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "ruolo", "livello", "usato_da"],
+        "properties": {
+          "id": {"$ref": "#/definitions/id"},
+          "label": {"type": "string"},
+          "ruolo": {"type": "string"},
+          "livello": {"$ref": "#/definitions/id"},
+          "usato_da": {"type": "array", "items": {"$ref": "#/definitions/id"}},
+          "interagisce": {"type": "array", "items": {"$ref": "#/definitions/id"}}
+        }
+      }
+    },
+    "insegnamenti": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "titolo", "testo"],
+        "properties": {
+          "id": {"pattern": "^insegnamento-[0-9]{3}$"},
+          "titolo": {"type": "string"},
+          "testo": {"type": "string"}
+        }
+      }
+    }
+  },
+  "definitions": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}
+  }
+}

@@ -45,9 +45,13 @@ sono i **ponti intercampo**.
 
 ```bash
 # 1. modifica raw/ o engine/aion.model.json (mai wiki/ a mano)
-python tools/gen_wiki_from_model.py      # se hai toccato il modello
-python tools/validate_model.py           # deve dare 0 errori
-graphify update .                        # rigenera grafo e vista estesa
-python tools/altair_compact_view.py      # rigenera vista compatta
-# 2. commit + push: i consumatori si allineano da soli
+python tools/rebuild_all.py     # UN comando: wiki, validazioni, DB oracle, grafo,
+                                # sottografi per area, viste, salute del grafo
+# 2. commit + push: i consumatori si allineano da soli (la CI rivalida tutto)
 ```
+
+## Guide
+
+- **`GUIDA.md`** — uso quotidiano per umani (cattura, triage, query, oracolo, collegare AI)
+- **`ROADMAP.md`** — handoff tecnico per agenti (regole vincolanti + spec implementazioni)
+- **`server/README.md`** — API, deploy VPS, MCP, Custom GPT

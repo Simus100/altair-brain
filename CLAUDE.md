@@ -24,12 +24,13 @@ Il sistema produce DUE viste affiancate del grafo:
   (3) Motore `engine/` → (4) Skill `/aion` → (5) Feedback `LESSONS`, con anello di
   ritorno. Collassa il rumore (es. i 64 esagrammi in un nodo). Deterministica, no API.
 
-Workflow dopo ogni modifica (in ordine):
-1. se hai toccato `engine/aion.model.json`: `python tools/gen_wiki_from_model.py` (la wiki
-   e GENERATA dal modello — mai editarla a mano)
-2. `python tools/validate_model.py` (deve dare 0 errori)
-3. `graphify update .`
-4. `python tools/altair_compact_view.py`
+Workflow dopo ogni modifica: **`python tools/rebuild_all.py`** (un comando: wiki dal
+modello, validazioni, DB oracle, grafo, sottografi per area, viste, salute). Poi commit.
+Regole: la wiki e GENERATA da `engine/aion.model.json` (mai editarla a mano); il DB
+oracle e GENERATO da `raw/aion/aion-oracle.md`.
 
 La CI (`.github/workflows/validate.yml`) ripete questi controlli su ogni push: i
 consumatori (VPS, dispositivi) ricevono solo un brain valido.
+
+Skill del brain: `/aion` (ragionamento col modello di pensiero), `/triage` (smista
+l'inbox nelle macroaree), `/oracle` (I Ching eseguibile via tools/oracle_cast.py).

@@ -1,0 +1,81 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "finanza",
+ "built_at_commit": "641490c8ee173965e9c8941114e7c64f00c180be",
+ "nodes": [
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_readme",
+   "community": 79,
+   "norm_label": "readme.md"
+  },
+  {
+   "label": "Ambito",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L6",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_ambito",
+   "community": 79,
+   "norm_label": "ambito"
+  },
+  {
+   "label": "Finanza",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_finanza",
+   "community": 79,
+   "norm_label": "finanza"
+  },
+  {
+   "label": "Note",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L13",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_note",
+   "community": 79,
+   "norm_label": "note"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "raw_finanza_readme",
+   "target": "raw_finanza_readme_finanza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "raw_finanza_readme_finanza",
+   "target": "raw_finanza_readme_ambito",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "raw_finanza_readme_finanza",
+   "target": "raw_finanza_readme_note",
+   "confidence_score": 1.0
+  }
+ ]
+}

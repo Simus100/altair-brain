@@ -26,21 +26,46 @@ PATH, imposta in `server/.env` la variabile `GRAPHIFY_BIN` col percorso assoluto
 con eleganza: gli endpoint dati funzionano comunque, quelli graphify rispondono 503 se
 il binario non e raggiungibile.
 
-## Endpoint
+## Endpoint (v1 — alias non versionati mantenuti)
 | Metodo | Path | Funzione |
 |--------|------|----------|
-| GET | `/health` | stato (pubblico) |
-| GET | `/model` | `engine/aion.model.json` |
-| GET | `/reasoner` | protocollo di ragionamento |
-| GET | `/graph`, `/graph/compact` | grafo esteso / compatto (JSON) |
-| GET | `/views/extended`, `/views/compact` | le due viste HTML |
-| GET | `/lessons` | lezioni apprese |
-| GET | `/query?q=`, `/path?a=&b=`, `/explain?x=`, `/affected?x=` | funzioni graphify |
-| POST | `/feedback` | registra esito + reflect (apprendimento) |
-| POST | `/admin/update` | pull + rigenerazione manuale |
+| GET | `/v1/health` | stato ricco: grafo (nodi, commit, età), modello, aree (pubblico) |
+| GET | `/v1/model` | `engine/aion.model.json` (contratto: `schema_version`) |
+| GET | `/v1/reasoner` | protocollo di ragionamento AION |
+| GET | `/v1/graph`, `?area=<id>`, `/v1/graph/compact` | grafo completo / per area / compatto |
+| GET | `/v1/areas` | aree disponibili + tabella di routing |
+| GET | `/v1/views/extended`, `/v1/views/compact` | le due viste HTML |
+| GET | `/v1/lessons` | lezioni apprese |
+| GET | `/v1/route?q=` | decisione del router (trasparenza) |
+| GET | `/v1/query?q=&area=&budget=` | query (router automatico; header `X-Altair-Area`) |
+| GET | `/v1/path`, `/v1/explain`, `/v1/affected` | funzioni graphify |
+| POST | `/v1/oracle` `{question?, seed?}` | lancio I Ching (AION_Oracle eseguibile) |
+| GET | `/v1/oracle/hexagram/{id}` | scheda esagramma (1-64) |
+| POST | `/v1/capture` `{text, title?, area_hint?, source?}` | cattura nota → inbox |
+| GET | `/v1/inbox`, `/v1/inbox/{id}` | note pendenti / contenuto |
+| POST | `/v1/inbox/{id}/done` | archivia nota processata |
+| POST | `/v1/feedback` | registra esito + reflect (apprendimento) |
+| POST | `/v1/admin/update` | allineamento manuale al remoto |
 
-Tutti (tranne `/health`) richiedono header `Authorization: Bearer <ALTAIR_API_TOKEN>`
-(oppure `X-API-Key: <token>`).
+Tutti (tranne `/health`) richiedono `Authorization: Bearer <ALTAIR_API_TOKEN>`
+(o `X-API-Key`). Confronto token constant-time; rate limit per IP
+(`ALTAIR_RATE_LIMIT`, default 120 req/min).
+
+## Server MCP (assistenti AI locali)
+`server/mcp_server.py` espone il brain come tool MCP nativi (`brain_query`,
+`brain_model`, `brain_oracle`, `brain_feedback`, ...). Richiede `pip install mcp`.
+Config Claude Desktop: vedi intestazione del file o `GUIDA.md`.
+
+## Custom GPT (ChatGPT Actions)
+Nelle Actions del GPT importa lo schema da `https://<dominio>/openapi.json` e imposta
+autenticazione API Key → Bearer con il token. Il GPT ottiene tutti gli endpoint v1.
+
+## Notifiche di guasto + backup
+- `systemd/altair-notify@.service`: push gratuito via ntfy.sh quando una unit fallisce
+  (imposta `NTFY_TOPIC` in `.env`, iscriviti dall'app ntfy sul telefono). Le unit
+  API/update/backup hanno gia `OnFailure=`.
+- `systemd/altair-backup.{service,timer}` + `backup_data.sh`: backup giornaliero
+  rotante (7 copie) di `~/altair-data` — l'unico dato non protetto da GitHub.
 
 ## Deploy
 Vedi i prompt passo-passo per OpenClaw (consegnati a parte). In sintesi:

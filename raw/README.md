@@ -16,6 +16,19 @@ L'elenco canonico vive in [`../areas.json`](../areas.json). Allo stato attuale:
 | `divulgazione/` | Divulgazione | Comunicazione, scrittura, contenuti |
 | `web-design/` | Web design | UI/UX, front-end, design system |
 
+## Front-matter standard (consigliato per ogni nota)
+
+```yaml
+---
+date: 2026-07-01T12:00:00
+source: dove l'hai presa (libro, url, tua riflessione)
+tags: [parola-chiave, altra]
+---
+```
+
+Prepara provenienza e futura ricerca semantica. Le note catturate via `/capture` lo
+hanno gia. La cartella `_inbox/` e la cassetta di cattura: smistala con la skill `/triage`.
+
 ## Regole
 
 - **`raw/` e grezzo.** Qui vanno fonti, note e documenti cosi come sono. Le pagine ragionate e

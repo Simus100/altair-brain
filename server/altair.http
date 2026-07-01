@@ -48,5 +48,35 @@ Content-Type: application/json
 }
 
 ### Aggiornamento manuale (pull + rigenerazione)
-POST {{base}}/admin/update
+POST {{base}}/v1/admin/update
+Authorization: Bearer {{token}}
+
+### Router: quale area risponderebbe?
+GET {{base}}/v1/route?q=cosa dice l'oracolo
+Authorization: Bearer {{token}}
+
+### Query scopata su un'area
+GET {{base}}/v1/query?q=AION_SUPERIA&area=aion
+Authorization: Bearer {{token}}
+
+### Oracle: lancio I Ching
+POST {{base}}/v1/oracle
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "question": "conviene lanciare il progetto ora?" }
+
+### Oracle: scheda esagramma
+GET {{base}}/v1/oracle/hexagram/1
+Authorization: Bearer {{token}}
+
+### Cattura una nota (dal telefono)
+POST {{base}}/v1/capture
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "text": "idea al volo da smistare", "title": "idea", "source": "telefono" }
+
+### Inbox pendente
+GET {{base}}/v1/inbox
 Authorization: Bearer {{token}}

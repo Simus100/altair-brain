@@ -63,7 +63,7 @@ con `/views/extended` e `/views/compact`).
 
 ---
 
-## IMPLEMENTAZIONE 1 — Cattura da ovunque (inbox + /capture + /triage)
+## ✅ IMPLEMENTAZIONE 1 — Cattura da ovunque — COMPLETATA (vedi Completato)
 
 **Perché:** un second brain vive o muore sull'attrito di cattura. Oggi si scrive solo
 dal PC con l'agente. Serve catturare un pensiero da telefono/altro dispositivo in
@@ -109,7 +109,7 @@ rompa con la cartella (al più la indicizza: innocuo).
 
 ---
 
-## IMPLEMENTAZIONE 2 — Server MCP (connettore universale per assistenti AI)
+## ✅ IMPLEMENTAZIONE 2 — Server MCP — COMPLETATA (vedi Completato)
 
 **Perché:** MCP è lo standard per collegare assistenti AI a strumenti. Con un server
 MCP, Claude Desktop / altri client usano il brain come tool nativi, senza HTTP a mano.
@@ -145,7 +145,7 @@ pronto per le Actions di un Custom GPT (URL + auth Bearer). Aggiungi 5 righe in
 
 ---
 
-## IMPLEMENTAZIONE 3 — Oracle eseguibile (AION_Oracle funzionante)
+## ✅ IMPLEMENTAZIONE 3 — Oracle eseguibile — COMPLETATA (vedi Completato)
 
 **Perché:** primo componente AION che passa da descritto a ESEGUIBILE. Tutto
 deterministico, zero API.
@@ -186,7 +186,7 @@ in locale leggendo `engine/iching.db.json` (stessa logica, senza API).
 
 ---
 
-## IMPLEMENTAZIONE 4 — Guardie di qualità aggiuntive (CI)
+## ✅ IMPLEMENTAZIONE 4 — Guardie di qualita — COMPLETATA (vedi Completato)
 
 **4a. `tools/graph_health.py`:** legge `graphify-out/graph.json` (committato) e
 fallisce (exit 1) se: i nodi di `wiki/aion` non formano 1 solo componente connesso;
@@ -203,7 +203,7 @@ Aggiungi step CI: `pip install fastapi httpx pytest && pytest -q`.
 
 ---
 
-## INFRASTRUTTURA 2.0 — miglioramenti per la scala (decisioni da prendere PRIMA che facciano male)
+## ✅ INFRASTRUTTURA 2.0 — COMPLETATA 2026-07-01 (vedi Completato; le spec restano come riferimento)
 
 **I2.1 — Router + sottografi per area (priorità alta appena c'è una 2ª area).**
 Un solo `graph.json` monolitico non scala (traversal lenti, viz inusabile a 10k+ nodi)
@@ -280,6 +280,36 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
 ---
 
 ## Completato (storico, per orientamento)
+
+- **Impl 1 — Cattura da ovunque** (2026-07-01): `POST /v1/capture`, `GET /v1/inbox`,
+  `/v1/inbox/{id}`, `/v1/inbox/{id}/done` (anti path-traversal, limite 100KB);
+  `raw/_inbox/` locale; skill `/triage`. Inbox VPS fuori dal repo (`ALTAIR_INBOX_DIR`).
+- **Impl 2 — Server MCP** (2026-07-01): `server/mcp_server.py` (stdio, SDK `mcp`) con
+  tool brain_query/explain/path/model/reasoner/lessons/oracle/feedback; logica condivisa
+  in `server/brain_core.py` (zero duplicazione con app.py). Actions Custom GPT via
+  `/openapi.json` documentate.
+- **Impl 3 — Oracle eseguibile** (2026-07-01): `tools/build_iching_db.py` →
+  `engine/iching.db.json` (64/64 validati, lookup Re Wen, cross-check binario↔id);
+  `tools/oracle_cast.py` (cast deterministico seedabile, regole linee mobili);
+  `POST /v1/oracle`, `GET /v1/oracle/hexagram/{id}`; skill `/oracle`. Coerenza in CI.
+- **Impl 4 — Guardie qualita** (2026-07-01): `tools/graph_health.py` (coesione wiki/raw,
+  orfani, anti-regressione vs HEAD~1 con override ALTAIR_ALLOW_SHRINK);
+  `tests/test_api.py` (11 test: auth, degradazione, oracle, inbox, traversal); CI estesa.
+- **I2.1 Router+sottografi** (2026-07-01): `engine/router.json`,
+  `tools/build_area_graphs.py` → `graphify-out/areas/<area>/graph.json` + `bridges.json`;
+  `/v1/query?area=` con routing automatico (header X-Altair-Area), `/v1/route`, `/v1/areas`.
+- **I2.2** anti-regressione (in graph_health, CI con fetch-depth 2). **I2.3** notifiche
+  ntfy (`altair-notify@.service`, OnFailure su api/update/backup). **I2.4** `/health`
+  arricchito (nodi, built_at_commit, eta, modello, aree). **I2.5** backup
+  (`backup_data.sh` + timer giornaliero, 7 copie). **I2.6** `schema_version` +
+  `engine/schema/aion.model.schema.json` validato in CI. **I2.7** API `/v1/` (alias
+  legacy) + rate limit per IP + auth constant-time. **I2.8** merge driver graphify
+  (`graphify hook install` eseguito in locale; rieseguirlo su ogni nuova macchina di
+  scrittura). **I2.9** front-matter standard documentato in `raw/README.md`.
+- **`tools/rebuild_all.py`**: un comando per l'intera pipeline (usato da GUIDA e skill).
+- **`GUIDA.md`**: manuale d'uso per umani (newbie-friendly).
+
+### Storico precedente
 
 - Strato 1-2-3 AION: `raw/aion` (6 doc interconnessi) → `wiki/aion` (55 pagine
   GENERATE) → `engine/` (modello tipizzato + reasoner 9 passi + skill `/aion`).

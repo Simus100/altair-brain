@@ -1,0 +1,10 @@
+[Unit]
+Description=altair-brain — notifica push di fallimento della unit %i
+
+[Service]
+Type=oneshot
+User=altair
+EnvironmentFile=/home/altair/altair-api/.env
+# ntfy.sh: push gratuito sul telefono, senza account. Imposta NTFY_TOPIC in .env
+# (un nome lungo e segreto, es. altair-brain-x8f2k9). App ntfy sul telefono -> subscribe.
+ExecStart=/usr/bin/bash -c 'if [ -n "${NTFY_TOPIC:-}" ]; then curl -fsS -m 10 -H "Title: altair-brain GUASTO" -H "Priority: high" -d "Unit %i FALLITA su $(hostname) alle $(date -Is)" "https://ntfy.sh/${NTFY_TOPIC}"; else echo "NTFY_TOPIC non configurato: notifica saltata"; fi'

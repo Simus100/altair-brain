@@ -17,6 +17,23 @@ def main() -> int:
     with open(MODEL, encoding="utf-8") as f:
         m = json.load(f)
 
+    # contratto: schema_version + (se jsonschema e installato) validazione JSON Schema
+    if not isinstance(m.get("schema_version"), int) or m["schema_version"] < 1:
+        print("MODELLO NON VALIDO — manca schema_version (intero >= 1)")
+        return 1
+    schema_path = os.path.join(ROOT, "engine", "schema", "aion.model.schema.json")
+    if os.path.exists(schema_path):
+        try:
+            import jsonschema
+            with open(schema_path, encoding="utf-8") as f:
+                jsonschema.validate(m, json.load(f))
+            print("JSON Schema: conforme")
+        except ImportError:
+            print("[info] jsonschema non installato: validazione schema saltata (la CI la esegue)")
+        except Exception as e:
+            print(f"MODELLO NON VALIDO — violazione JSON Schema: {str(e)[:300]}")
+            return 1
+
     aid = {a["id"] for a in m["agenti"]}
     cid = {c["id"] for c in m["componenti"]}
     lid = {l["id"] for l in m["livelli"]}

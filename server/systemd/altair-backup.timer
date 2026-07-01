@@ -1,0 +1,10 @@
+[Unit]
+Description=altair-brain — backup giornaliero di altair-data
+
+[Timer]
+OnCalendar=daily
+RandomizedDelaySec=30min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
