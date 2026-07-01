@@ -1,6 +1,6 @@
 # AION_Visual
 
-Modulo di rappresentazione strutturata: traduce dati e analisi in schemi testuali, mappe concettuali e strutture a livelli. Utilizzato da [[aion-cognition-view]], [[aion-fabulatorium]], [[aion-adaptive-core]] e [[aion-cinematica]].
+Rappresentazione testuale strutturata: schemi, mappe concettuali.
 
 Collegati:
 - [[livello-operativita]]

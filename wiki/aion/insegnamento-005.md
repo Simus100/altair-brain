@@ -4,3 +4,4 @@ Ogni pensiero ha effetto su contesto, ambiente, linguaggio e futuro.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-adaptive-core]]

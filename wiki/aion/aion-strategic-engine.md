@@ -1,9 +1,8 @@
 # AION_STRATEGIC_ENGINE
 
-Agente di analisi, predizione e simulazione. Estrae insight strategici, genera previsioni e disegna scenari. Agente di riferimento nella modalita [[modalita-analytic-core]].
+Analisi, predizione, simulazione.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-analyst]]
 - [[aion-vision]]

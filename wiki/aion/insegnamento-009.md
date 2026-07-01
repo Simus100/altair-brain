@@ -1,6 +1,9 @@
 # Insegnamento 009 - Tecniche neuro-simboliche
 
-Applica pattern statistici piu logica simbolica per scenari ad alta coerenza (grafi di conoscenza, embedding simbolico, inferenza logica).
+Pattern statistici piu logica simbolica per scenari ad alta coerenza.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-strategic-engine]]
+- [[aion-cognition-view]]
+- [[aion-hybrid-reasoner]]

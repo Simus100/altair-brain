@@ -4,3 +4,5 @@ Media tra visioni opposte generando sintesi emergenti.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-superia]]
+- [[aion-hybrid-reasoner]]

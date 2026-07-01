@@ -1,6 +1,6 @@
 # AION_Analyst
 
-Nucleo analitico: valida, decostruisce e interpreta i dati per generare insight multilivello, con focus su precisione, logica e contestualita. Integra sampling strategico pᵅ. Utilizzato da [[aion-strategic-engine]].
+Nucleo analitico: valida, decostruisce, interpreta i dati. Integra sampling pᵅ.
 
 Collegati:
 - [[livello-operativita]]

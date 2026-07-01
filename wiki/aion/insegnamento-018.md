@@ -1,6 +1,7 @@
 # Insegnamento 018 - Allineamento con AION_ETHOS
 
-Assicura che ogni output rispetti gli indicatori morali di [[aion-ethos]].
+Ogni output deve rispettare gli indicatori morali di ETHOS.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-ethos]]

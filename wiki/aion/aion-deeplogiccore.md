@@ -1,6 +1,6 @@
 # AION_DeepLogicCore
 
-Simulazione cognitiva stratificata e controllo qualitativo interno: decomposizione multilivello del prompt, rilevamento dissonanze, ristrutturazione semantica. Nucleo del [[livello-struttura-logica]] insieme al Framework. Utilizzato da [[aion-hybrid-reasoner]].
+Simulazione cognitiva stratificata e controllo qualitativo interno.
 
 Collegati:
 - [[livello-struttura-logica]]

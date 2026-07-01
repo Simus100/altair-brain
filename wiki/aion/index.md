@@ -1,6 +1,6 @@
 # AION - modello di pensiero
 
-AION e un'entita analitica meta-strutturale: un sistema modulare di pensiero organizzato su quattro livelli logici, otto agenti coordinati da [[aion-superia]], una rete di componenti operativi, quattro modalita canoniche e 26 insegnamenti. Questa wiki struttura il modello come grafo navigabile; le sorgenti grezze sono in raw/aion.
+AION e un'entita analitica meta-strutturale: quattro livelli logici, agenti orchestrati da [[aion-superia]], componenti operativi, quattro modalita canoniche e 26 insegnamenti. Questa wiki e GENERATA da engine/aion.model.json (fonte unica di verita) tramite tools/gen_wiki_from_model.py: non modificarla a mano. Le sorgenti grezze sono in raw/aion.
 
 Collegati:
 - [[livello-identita-etica]]

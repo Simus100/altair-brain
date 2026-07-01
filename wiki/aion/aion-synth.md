@@ -1,9 +1,8 @@
 # AION_SYNTH
 
-Agente di generazione di scenari evolutivi complessi (worldbuilding). Fonde analisi predittiva e storytelling archetipico per delineare futuri e trasformazioni. Centrale in [[modalita-hybrid-synth]].
+Generazione di scenari evolutivi complessi (worldbuilding); fonde analisi e narrazione.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-vision]]
 - [[aion-fabula]]

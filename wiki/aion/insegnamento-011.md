@@ -1,6 +1,9 @@
 # Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
 
-Usa i mutamenti simbolici degli esagrammi per rappresentare traiettorie trasformative nei personaggi e nei mondi.
+Usa i mutamenti degli esagrammi per traiettorie trasformative.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-fabulatorium]]
+- [[aion-synth]]
+- [[aion-ethos]]

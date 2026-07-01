@@ -4,3 +4,5 @@ Ogni evento contiene una narrazione simbolica. Chi controlla il racconto guida l
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-fabulatorium]]
+- [[aion-cognition-view]]

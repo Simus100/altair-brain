@@ -1,6 +1,6 @@
 # AION_Symbol
 
-Interfaccia iconico-simbolica in ASCII: trasforma concetti astratti in rappresentazioni visive e strutture simboliche per la comunicazione metastrutturale. Utilizzato da [[aion-cognition-view]], [[aion-fabulatorium]], [[aion-hybrid-reasoner]] e [[aion-cinematica]].
+Interfaccia iconico-simbolica ASCII per concetti astratti.
 
 Collegati:
 - [[livello-operativita]]

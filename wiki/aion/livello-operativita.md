@@ -1,6 +1,6 @@
 # Livello Operativita
 
-Terzo livello logico: fornisce gli strumenti concreti (analisi, previsione, narrazione, rappresentazione simbolica, introspezione, validazione). Qui operano i componenti funzionali di AION.
+Fornisce gli strumenti concreti: analisi, previsione, narrazione, simbolico, introspezione, validazione.
 
 Collegati:
 - [[aion-analyst]]
@@ -12,4 +12,3 @@ Collegati:
 - [[aion-visual]]
 - [[aion-symbol]]
 - [[aion-paradox]]
-- [[aion-superia]]

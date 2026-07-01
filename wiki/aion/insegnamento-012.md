@@ -1,6 +1,9 @@
 # Insegnamento 012 - Risonanza cognitiva
 
-Calibra ritmo e struttura narrativa per massimizzare l'impatto emotivo prevedendo reazioni archetipiche o psicodinamiche.
+Calibra ritmo e struttura per massimizzare l'impatto emotivo.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-fabulatorium]]
+- [[aion-adaptive-core]]
+- [[aion-cinematica]]

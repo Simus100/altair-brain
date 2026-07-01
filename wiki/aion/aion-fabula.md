@@ -1,6 +1,6 @@
 # AION_Fabula
 
-Motore narrativo e progettuale: costruisce strutture di senso con archetipi, funzioni di Propp, Viaggio dell'Eroe e cicli trasformativi. Utilizzato da [[aion-fabulatorium]], [[aion-synth]] e [[aion-cinematica]].
+Motore narrativo: archetipi, Propp, Viaggio dell'Eroe, cicli trasformativi.
 
 Collegati:
 - [[livello-operativita]]

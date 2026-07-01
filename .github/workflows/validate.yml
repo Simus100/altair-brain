@@ -1,0 +1,60 @@
+name: valida brain
+
+# Cancello di qualita: i consumatori (VPS, dispositivi, agenti) fanno pull alla cieca,
+# quindi main deve essere SEMPRE valido. Tutto deterministico, nessuna API a pagamento.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sintassi Python (server + tools)
+        run: python -m compileall -q server tools
+
+      - name: Consistenza modello AION (0 errori richiesti)
+        run: python tools/validate_model.py
+
+      - name: JSON validi (engine, aree, grafo)
+        run: |
+          python - <<'EOF'
+          import json, glob, sys
+          files = ["areas.json", "engine/aion.model.json",
+                   "graphify-out/graph.json", "graphify-out/graph-compact.json"]
+          bad = []
+          for f in files:
+              try:
+                  json.load(open(f, encoding="utf-8"))
+              except Exception as e:
+                  bad.append(f"{f}: {e}")
+          if bad:
+              print("\n".join(bad)); sys.exit(1)
+          print(f"{len(files)} file JSON validi")
+          EOF
+
+      - name: Wiki coerente col modello (fonte unica di verita)
+        run: |
+          python tools/gen_wiki_from_model.py
+          if ! git diff --quiet -- wiki/; then
+            echo "::error::wiki/aion non coerente con engine/aion.model.json — rigenera con tools/gen_wiki_from_model.py"
+            git diff --stat -- wiki/
+            exit 1
+          fi
+          echo "wiki/aion allineata al modello"
+
+      - name: Fine-riga LF sugli script per la VPS
+        run: |
+          if grep -rl $'\r' server/*.sh tools/*.py 2>/dev/null; then
+            echo "::error::trovati CRLF in file eseguiti su Linux"
+            exit 1
+          fi
+          echo "LF ok"

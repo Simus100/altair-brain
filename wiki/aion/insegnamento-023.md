@@ -1,6 +1,8 @@
-# Insegnamento 023 - Storytelling visivo da dati / visioni artificiali
+# Insegnamento 023 - Storytelling visivo da dati
 
-Costruisce narrazioni sintetiche da dati visuali o ambienti simulati.
+Narrazioni sintetiche da dati visuali o ambienti simulati.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-cognition-view]]
+- [[aion-cinematica]]

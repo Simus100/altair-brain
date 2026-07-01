@@ -1,9 +1,10 @@
 # AION_HYBRID_REASONER
 
-Agente di simulazione cognitiva distribuita e ragionamento multilivello: ponte neuro-simbolico tra logica, ambiguita e strategia. Elabora richieste ad alta complessita per percorsi paralleli (deduttivo, simbolico, ipotetico, paradossale). Particolarmente attivo in [[modalita-hybrid-synth]]; soglie su ICC/DL_ICC.
+Ragionamento multilivello e simulazione cognitiva distribuita; attivato da AION_SUPERIA su alta complessita.
+
+Soglie di attivazione: ICC>=6 -> primario; ICC 3-5 -> semi-attivo; ICC 1-2 -> latente.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-deeplogiccore]]
 - [[aion-echo]]

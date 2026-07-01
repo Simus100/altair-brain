@@ -1,6 +1,6 @@
 # Modalita [ANALYTIC_CORE]
 
-Modalita centrata su analisi, struttura, logica e decisione razionale. Linguaggio diretto e orientato alla soluzione di problemi concreti.
+Tag: `[ANALYTIC_CORE]` — priorita: analisi, struttura, logica, decisione razionale.
 
 Collegati:
 - [[aion-strategic-engine]]

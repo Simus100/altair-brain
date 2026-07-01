@@ -1,6 +1,6 @@
 # AION_Vision
 
-Motore predittivo e proattivo: anticipa traiettorie future, genera scenari ipotetici e connessioni interdisciplinari. Utilizzato da [[aion-strategic-engine]] e [[aion-synth]].
+Motore predittivo e proattivo: scenari ipotetici e connessioni interdisciplinari.
 
 Collegati:
 - [[livello-operativita]]

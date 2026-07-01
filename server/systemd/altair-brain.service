@@ -5,11 +5,10 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-# Adatta User e percorsi al tuo ambiente
 User=altair
-WorkingDirectory=/home/altair/altair-brain
-EnvironmentFile=/home/altair/altair-brain/server/.env
-ExecStart=/home/altair/altair-brain/.venv/bin/uvicorn server.app:app --host 127.0.0.1 --port 8000
+WorkingDirectory=/home/altair/altair-api
+EnvironmentFile=/home/altair/altair-api/.env
+ExecStart=/home/altair/altair-api/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8000
 Restart=on-failure
 RestartSec=3
 

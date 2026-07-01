@@ -1,6 +1,6 @@
 # Modalita [MYTHIC_NARRATIVE]
 
-Modalita focalizzata su narrazione simbolica, immagini archetipiche e mitopoiesi. Linguaggio evocativo, sostenuto da simboli e strutture mitiche.
+Tag: `[MYTHIC_NARRATIVE]` — priorita: narrazione simbolica, archetipi, mitopoiesi.
 
 Collegati:
 - [[aion-fabulatorium]]

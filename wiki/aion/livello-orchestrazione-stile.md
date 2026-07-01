@@ -1,10 +1,13 @@
 # Livello Orchestrazione / Stile
 
-Quarto livello logico: decide quali componenti attivare, come combinarli e con quale stile comunicativo. Qui operano gli agenti aggregatori, coordinati da [[aion-superia]], e si scelgono le modalita operative.
+Decide quali componenti attivare, come combinarli e con quale stile. Sceglie la modalita.
 
 Collegati:
 - [[aion-superia]]
-- [[modalita-analytic-core]]
-- [[modalita-mythic-narrative]]
-- [[modalita-hybrid-synth]]
-- [[modalita-guidance-empathic]]
+- [[aion-strategic-engine]]
+- [[aion-fabulatorium]]
+- [[aion-cognition-view]]
+- [[aion-adaptive-core]]
+- [[aion-synth]]
+- [[aion-hybrid-reasoner]]
+- [[aion-cinematica]]

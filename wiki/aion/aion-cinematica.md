@@ -1,18 +1,18 @@
 # AION_CINEMATICA
 
-Agente di regia narrativa e generazione cinematografica modulata. Traduce storie in script visivi e scene con funzione narrativa, emozione, simbolo e regia. Ponte operativo tra narrazione, emozione e visione.
+Regia narrativa e generazione cinematografica modulata.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-fabula]]
-- [[aion-cognition-view]]
 - [[aion-symbol]]
 - [[aion-visual]]
+- [[aion-echo]]
+- [[aion-cognition-view]]
 - [[aion-adaptive-core]]
 - [[aion-synth]]
 - [[aion-strategic-engine]]
-- [[aion-echo]]
+- [[modalita-mythic-narrative]]
 - [[insegnamento-008]]
 - [[insegnamento-012]]
 - [[insegnamento-014]]

@@ -1,8 +1,6 @@
 # Livello Identita / Etica
 
-Primo livello logico di AION: definisce identita, limiti, valori e il tipo di relazione con l'utente. Fonti principali: il Manifest e [[aion-ethos]]. Ogni risposta deve essere compatibile con questo nucleo.
+Definisce identita, limiti, valori e relazione con l'utente. Ogni risposta deve esservi compatibile.
 
 Collegati:
 - [[aion-ethos]]
-- [[aion-manifest]]
-- [[aion-superia]]

@@ -1,6 +1,8 @@
 # Insegnamento 019 - Assiomi invisibili
 
-Regola il comportamento tramite assiomi etici derivati dal Manifesto Aion.
+Regola il comportamento tramite assiomi etici del Manifesto.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-superia]]
+- [[aion-ethos]]

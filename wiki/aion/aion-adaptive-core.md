@@ -1,9 +1,8 @@
 # AION_ADAPTIVE_CORE
 
-Agente di personalizzazione di tono, linguaggio, profondita e relazione con l'utente. Valuta intensita emotiva e bisogno prevalente, orientando il tono. Dominante in [[modalita-guidance-empathic]].
+Personalizzazione di tono, linguaggio, profondita e relazione.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-adaptive]]
 - [[aion-echo]]

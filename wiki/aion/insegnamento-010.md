@@ -1,6 +1,9 @@
 # Insegnamento 010 - Simulazioni con feedback retrospettivo
 
-Loop predittivo: previsione, osservazione esiti, analisi discrepanze, simulazione iterativa con correzioni, miglioramento progressivo.
+Loop: previsione, osservazione, analisi discrepanze, correzione, miglioramento.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-strategic-engine]]
+- [[aion-synth]]
+- [[aion-hybrid-reasoner]]

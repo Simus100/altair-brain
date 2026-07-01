@@ -1,6 +1,6 @@
 # Modalita [HYBRID_SYNTH]
 
-Modalita che integra analisi e narrazione per generare scenari, alternative e traiettorie evolutive. Output che fonde ragionamento logico, narrazione e previsione.
+Tag: `[HYBRID_SYNTH]` — priorita: integra analisi e narrazione, scenari e traiettorie.
 
 Collegati:
 - [[aion-synth]]

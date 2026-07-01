@@ -1,6 +1,8 @@
 # Insegnamento 017 - Generator meta-ciclico
 
-Scenari narrativi che si auto-rigenerano seguendo logiche di feedback simbolico.
+Scenari narrativi che si auto-rigenerano per feedback simbolico.
 
 Collegati:
 - [[insegnamenti]]
+- [[aion-fabulatorium]]
+- [[aion-synth]]

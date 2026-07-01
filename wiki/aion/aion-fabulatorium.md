@@ -1,15 +1,14 @@
 # AION_FABULATORIUM
 
-Agente di narrazione simbolica, mitopoiesi e storytelling strategico. Definisce il 'perche' narrativo: sceglie quale storia, metafora o mito e strategicamente utile. Dominante in [[modalita-mythic-narrative]].
+Narrazione simbolica, mitopoiesi, storytelling strategico.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-fabula]]
 - [[aion-oracle]]
-- [[aion-cinematica]]
 - [[aion-symbol]]
 - [[aion-visual]]
+- [[aion-cinematica]]
 - [[modalita-mythic-narrative]]
 - [[insegnamento-002]]
 - [[insegnamento-011]]

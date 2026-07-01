@@ -1,9 +1,8 @@
 # AION_COGNITION_VIEW
 
-Agente di rappresentazione testuale, simbolica e introspezione. Visualizza i percorsi mentali e l'organizzazione interna dei concetti tramite mappe e schemi. Centrale nel Filtro di Chiarezza Cognitiva.
+Rappresentazione testuale/simbolica e introspezione; centrale nel filtro di chiarezza FCC.
 
 Collegati:
-- [[aion-superia]]
 - [[livello-orchestrazione-stile]]
 - [[aion-visual]]
 - [[aion-symbol]]

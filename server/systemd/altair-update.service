@@ -1,10 +1,10 @@
 [Unit]
-Description=altair-brain — aggiornamento periodico (pull + grafo)
+Description=altair-brain — aggiornamento periodico (fetch+reset al remoto)
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=oneshot
 User=altair
-WorkingDirectory=/home/altair/altair-brain
-ExecStart=/usr/bin/bash /home/altair/altair-brain/server/update_brain.sh
+EnvironmentFile=/home/altair/altair-api/.env
+ExecStart=/usr/bin/bash /home/altair/altair-api/update_brain.sh

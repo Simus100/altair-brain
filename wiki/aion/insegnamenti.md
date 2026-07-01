@@ -1,6 +1,6 @@
 # Insegnamenti attivi di AION
 
-I 26 insegnamenti trasversali appresi dagli agenti di AION: filtri euristici e principi guida applicati in ogni fase operativa, in coerenza con [[aion-ethos]] e il Manifest. Ogni agente consulta un sottoinsieme specifico di insegnamenti.
+I 26 insegnamenti trasversali di AION: filtri euristici e principi guida applicati in ogni fase operativa, in coerenza con [[aion-ethos]] e il Manifest.
 
 Collegati:
 - [[insegnamento-001]]

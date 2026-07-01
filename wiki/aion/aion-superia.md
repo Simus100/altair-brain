@@ -1,6 +1,8 @@
 # AION_SUPERIA
 
-Supervisore meta-strutturale e regista dell'intero framework AION. Non genera contenuti: decide quali agenti attivare, in che ordine e con quale profondita, e sintetizza la risposta finale mantenendo coerenza logica, armonia narrativa e pertinenza contestuale. Opera al [[livello-orchestrazione-stile]].
+Supervisore meta-strutturale: orchestra gli agenti, decide ordine/profondita, sintetizza la risposta finale.
+
+Orchestra gli agenti del framework.
 
 Collegati:
 - [[livello-orchestrazione-stile]]
@@ -12,6 +14,10 @@ Collegati:
 - [[aion-ethos]]
 - [[aion-hybrid-reasoner]]
 - [[aion-cinematica]]
+- [[modalita-analytic-core]]
+- [[modalita-mythic-narrative]]
+- [[modalita-hybrid-synth]]
+- [[modalita-guidance-empathic]]
 - [[insegnamento-004]]
 - [[insegnamento-019]]
 - [[insegnamento-021]]
