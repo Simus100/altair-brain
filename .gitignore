@@ -5,3 +5,17 @@ graphify-out/cache/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Dati pesanti delle macroaree: restano su disco locale, NON in git
+# (limiti GitHub 100MB/file; la VPS clona il repo a ogni update). La conoscenza
+# vive negli appunti .txt/.md/.docx e nelle pagine wiki; i dati sono documentati.
+raw/**/*.xlsx
+raw/**/*.pbix
+raw/**/*.csv
+raw/**/*.zip
+raw/**/*.png
+raw/**/*.pdf
+raw/**/*.bkp
+**/~$*
+raw/**/backup/
+raw/**/excell_old/

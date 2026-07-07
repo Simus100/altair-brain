@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "641490c8ee173965e9c8941114e7c64f00c180be",
+ "built_at_commit": "46aed942e7a28bc0b2af4d8875ebe8a42ea70028",
  "nodes": [
   {
    "label": "README.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_data_science_readme",
-   "community": 77,
+   "community": 95,
    "norm_label": "readme.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "raw_data_science_readme_ambito",
-   "community": 77,
+   "community": 95,
    "norm_label": "ambito"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_data_science_readme_data_science",
-   "community": 77,
+   "community": 95,
    "norm_label": "data science"
   },
   {
@@ -42,8 +42,628 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_data_science_readme_note",
-   "community": 77,
+   "community": 95,
    "norm_label": "note"
+  },
+  {
+   "label": "algebra-relazionale.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_algebra_relazionale",
+   "community": 0,
+   "norm_label": "algebra-relazionale.md"
+  },
+  {
+   "label": "Algebra relazionale",
+   "file_type": "document",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_algebra_relazionale_algebra_relazionale",
+   "community": 0,
+   "norm_label": "algebra relazionale"
+  },
+  {
+   "label": "analisi-esplorativa.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_analisi_esplorativa",
+   "community": 0,
+   "norm_label": "analisi-esplorativa.md"
+  },
+  {
+   "label": "Analisi esplorativa (EDA)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_analisi_esplorativa_analisi_esplorativa_eda",
+   "community": 0,
+   "norm_label": "analisi esplorativa (eda)"
+  },
+  {
+   "label": "cloud-computing.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/cloud-computing.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_cloud_computing",
+   "community": 0,
+   "norm_label": "cloud-computing.md"
+  },
+  {
+   "label": "Cloud computing",
+   "file_type": "document",
+   "source_file": "wiki/data-science/cloud-computing.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_cloud_computing_cloud_computing",
+   "community": 0,
+   "norm_label": "cloud computing"
+  },
+  {
+   "label": "data-cleaning.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_cleaning",
+   "community": 0,
+   "norm_label": "data-cleaning.md"
+  },
+  {
+   "label": "Data cleaning",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_cleaning_data_cleaning",
+   "community": 0,
+   "norm_label": "data cleaning"
+  },
+  {
+   "label": "data-driven-culture.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_driven_culture",
+   "community": 0,
+   "norm_label": "data-driven-culture.md"
+  },
+  {
+   "label": "Data-driven culture",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_driven_culture_data_driven_culture",
+   "community": 0,
+   "norm_label": "data-driven culture"
+  },
+  {
+   "label": "data-storytelling.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_storytelling",
+   "community": 0,
+   "norm_label": "data-storytelling.md"
+  },
+  {
+   "label": "Data storytelling",
+   "file_type": "document",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_data_storytelling_data_storytelling",
+   "community": 0,
+   "norm_label": "data storytelling"
+  },
+  {
+   "label": "dataset.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/dataset.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_dataset",
+   "community": 0,
+   "norm_label": "dataset.md"
+  },
+  {
+   "label": "Dataset e file di dati (su disco, non in git)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/dataset.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_dataset_dataset_e_file_di_dati_su_disco_non_in_git",
+   "community": 0,
+   "norm_label": "dataset e file di dati (su disco, non in git)"
+  },
+  {
+   "label": "docker.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_docker",
+   "community": 0,
+   "norm_label": "docker.md"
+  },
+  {
+   "label": "Docker",
+   "file_type": "document",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_docker_docker",
+   "community": 0,
+   "norm_label": "docker"
+  },
+  {
+   "label": "drawio.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_drawio",
+   "community": 0,
+   "norm_label": "drawio.md"
+  },
+  {
+   "label": "draw.io",
+   "file_type": "document",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_drawio_draw_io",
+   "community": 0,
+   "norm_label": "draw.io"
+  },
+  {
+   "label": "excel.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_excel",
+   "community": 0,
+   "norm_label": "excel.md"
+  },
+  {
+   "label": "Microsoft Excel",
+   "file_type": "document",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_excel_microsoft_excel",
+   "community": 0,
+   "norm_label": "microsoft excel"
+  },
+  {
+   "label": "index.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_index",
+   "community": 0,
+   "norm_label": "index.md"
+  },
+  {
+   "label": "Data science",
+   "file_type": "document",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_index_data_science",
+   "community": 0,
+   "norm_label": "data science"
+  },
+  {
+   "label": "intelligenza-artificiale.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/intelligenza-artificiale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_intelligenza_artificiale",
+   "community": 0,
+   "norm_label": "intelligenza-artificiale.md"
+  },
+  {
+   "label": "Intelligenza artificiale (fondamenti)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/intelligenza-artificiale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_intelligenza_artificiale_intelligenza_artificiale_fondamenti",
+   "community": 0,
+   "norm_label": "intelligenza artificiale (fondamenti)"
+  },
+  {
+   "label": "jupyter.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_jupyter",
+   "community": 0,
+   "norm_label": "jupyter.md"
+  },
+  {
+   "label": "Jupyter Notebook",
+   "file_type": "document",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_jupyter_jupyter_notebook",
+   "community": 0,
+   "norm_label": "jupyter notebook"
+  },
+  {
+   "label": "metodi.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_metodi",
+   "community": 0,
+   "norm_label": "metodi.md"
+  },
+  {
+   "label": "Metodi e concetti (data science)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_metodi_metodi_e_concetti_data_science",
+   "community": 0,
+   "norm_label": "metodi e concetti (data science)"
+  },
+  {
+   "label": "mongodb.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/mongodb.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_mongodb",
+   "community": 0,
+   "norm_label": "mongodb.md"
+  },
+  {
+   "label": "MongoDB",
+   "file_type": "document",
+   "source_file": "wiki/data-science/mongodb.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_mongodb_mongodb",
+   "community": 0,
+   "norm_label": "mongodb"
+  },
+  {
+   "label": "normalizzazione-decimali.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/normalizzazione-decimali.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_normalizzazione_decimali",
+   "community": 0,
+   "norm_label": "normalizzazione-decimali.md"
+  },
+  {
+   "label": "Normalizzazione dei decimali (ENG/ITA)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/normalizzazione-decimali.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_normalizzazione_decimali_normalizzazione_dei_decimali_eng_ita",
+   "community": 0,
+   "norm_label": "normalizzazione dei decimali (eng/ita)"
+  },
+  {
+   "label": "postgresql.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_postgresql",
+   "community": 0,
+   "norm_label": "postgresql.md"
+  },
+  {
+   "label": "PostgreSQL",
+   "file_type": "document",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_postgresql_postgresql",
+   "community": 0,
+   "norm_label": "postgresql"
+  },
+  {
+   "label": "power-bi.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_power_bi",
+   "community": 0,
+   "norm_label": "power-bi.md"
+  },
+  {
+   "label": "Power BI",
+   "file_type": "document",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_power_bi_power_bi",
+   "community": 0,
+   "norm_label": "power bi"
+  },
+  {
+   "label": "progettazione-database.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progettazione-database.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progettazione_database",
+   "community": 0,
+   "norm_label": "progettazione-database.md"
+  },
+  {
+   "label": "Progettazione di un database",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progettazione-database.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progettazione_database_progettazione_di_un_database",
+   "community": 0,
+   "norm_label": "progettazione di un database"
+  },
+  {
+   "label": "progetti.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetti",
+   "community": 0,
+   "norm_label": "progetti.md"
+  },
+  {
+   "label": "Progetti reali (data science)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetti_progetti_reali_data_science",
+   "community": 0,
+   "norm_label": "progetti reali (data science)"
+  },
+  {
+   "label": "progetto-hotel-booking.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_hotel_booking",
+   "community": 0,
+   "norm_label": "progetto-hotel-booking.md"
+  },
+  {
+   "label": "Progetto: Analisi prenotazioni hotel",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_hotel_booking_progetto_analisi_prenotazioni_hotel",
+   "community": 0,
+   "norm_label": "progetto: analisi prenotazioni hotel"
+  },
+  {
+   "label": "progetto-insurance.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_insurance",
+   "community": 0,
+   "norm_label": "progetto-insurance.md"
+  },
+  {
+   "label": "Progetto: Insurance Analysis",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_insurance_progetto_insurance_analysis",
+   "community": 0,
+   "norm_label": "progetto: insurance analysis"
+  },
+  {
+   "label": "progetto-olist-ecommerce.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_olist_ecommerce",
+   "community": 0,
+   "norm_label": "progetto-olist-ecommerce.md"
+  },
+  {
+   "label": "Progetto: Brazilian E-Commerce (Olist)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_olist_ecommerce_progetto_brazilian_e_commerce_olist",
+   "community": 0,
+   "norm_label": "progetto: brazilian e-commerce (olist)"
+  },
+  {
+   "label": "progetto-social-media.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_social_media",
+   "community": 0,
+   "norm_label": "progetto-social-media.md"
+  },
+  {
+   "label": "Progetto: Analisi dati social media",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_social_media_progetto_analisi_dati_social_media",
+   "community": 0,
+   "norm_label": "progetto: analisi dati social media"
+  },
+  {
+   "label": "prompt-engineering.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/prompt-engineering.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_prompt_engineering",
+   "community": 0,
+   "norm_label": "prompt-engineering.md"
+  },
+  {
+   "label": "Prompt engineering",
+   "file_type": "document",
+   "source_file": "wiki/data-science/prompt-engineering.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_prompt_engineering_prompt_engineering",
+   "community": 0,
+   "norm_label": "prompt engineering"
+  },
+  {
+   "label": "python-pandas.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas",
+   "community": 0,
+   "norm_label": "python-pandas.md"
+  },
+  {
+   "label": "Python / pandas",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas_python_pandas",
+   "community": 0,
+   "norm_label": "python / pandas"
+  },
+  {
+   "label": "quartili-outlier.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/quartili-outlier.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_quartili_outlier",
+   "community": 0,
+   "norm_label": "quartili-outlier.md"
+  },
+  {
+   "label": "Quartili e outlier (IQR)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/quartili-outlier.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_quartili_outlier_quartili_e_outlier_iqr",
+   "community": 0,
+   "norm_label": "quartili e outlier (iqr)"
+  },
+  {
+   "label": "sql.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/sql.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_sql",
+   "community": 0,
+   "norm_label": "sql.md"
+  },
+  {
+   "label": "SQL",
+   "file_type": "document",
+   "source_file": "wiki/data-science/sql.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_sql_sql",
+   "community": 0,
+   "norm_label": "sql"
+  },
+  {
+   "label": "strumenti.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/strumenti.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_strumenti",
+   "community": 0,
+   "norm_label": "strumenti.md"
+  },
+  {
+   "label": "Strumenti (data science)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/strumenti.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_strumenti_strumenti_data_science",
+   "community": 0,
+   "norm_label": "strumenti (data science)"
+  },
+  {
+   "label": "tipi-di-analisi.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/tipi-di-analisi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_tipi_di_analisi",
+   "community": 0,
+   "norm_label": "tipi-di-analisi.md"
+  },
+  {
+   "label": "Tipi di analisi dati",
+   "file_type": "document",
+   "source_file": "wiki/data-science/tipi-di-analisi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_tipi_di_analisi_tipi_di_analisi_dati",
+   "community": 0,
+   "norm_label": "tipi di analisi dati"
+  },
+  {
+   "label": "visualizzazione-dati.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/visualizzazione-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_visualizzazione_dati",
+   "community": 0,
+   "norm_label": "visualizzazione-dati.md"
+  },
+  {
+   "label": "Visualizzazione efficace dei dati",
+   "file_type": "document",
+   "source_file": "wiki/data-science/visualizzazione-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
+   "community": 0,
+   "norm_label": "visualizzazione efficace dei dati"
   }
  ],
  "links": [
@@ -75,6 +695,1156 @@
    "weight": 1.0,
    "source": "raw_data_science_readme_data_science",
    "target": "raw_data_science_readme_note",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_algebra_relazionale",
+   "target": "wiki_data_science_algebra_relazionale_algebra_relazionale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_algebra_relazionale",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_algebra_relazionale",
+   "target": "wiki_data_science_progettazione_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/algebra-relazionale.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_algebra_relazionale",
+   "target": "wiki_data_science_sql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_analisi_esplorativa_analisi_esplorativa_eda",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-esplorativa.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/cloud-computing.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_cloud_computing",
+   "target": "wiki_data_science_cloud_computing_cloud_computing",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/cloud-computing.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_cloud_computing",
+   "target": "wiki_data_science_intelligenza_artificiale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/cloud-computing.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_cloud_computing",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_data_cleaning_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_normalizzazione_decimali",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-cleaning.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_driven_culture",
+   "target": "wiki_data_science_data_driven_culture_data_driven_culture",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_driven_culture",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_driven_culture",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-driven-culture.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_driven_culture",
+   "target": "wiki_data_science_tipi_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_data_storytelling_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_tipi_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/dataset.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_dataset",
+   "target": "wiki_data_science_dataset_dataset_e_file_di_dati_su_disco_non_in_git",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/dataset.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_dataset",
+   "target": "wiki_data_science_progetti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_docker",
+   "target": "wiki_data_science_docker_docker",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_docker",
+   "target": "wiki_data_science_mongodb",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_docker",
+   "target": "wiki_data_science_postgresql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/docker.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_docker",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_drawio",
+   "target": "wiki_data_science_drawio_draw_io",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_drawio",
+   "target": "wiki_data_science_progettazione_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_drawio",
+   "target": "wiki_data_science_progetto_olist_ecommerce",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/drawio.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_drawio",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_excel_microsoft_excel",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_normalizzazione_decimali",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_progetto_hotel_booking",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_progetto_social_media",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_index_data_science",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_progetti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/intelligenza-artificiale.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_intelligenza_artificiale",
+   "target": "wiki_data_science_intelligenza_artificiale_intelligenza_artificiale_fondamenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/intelligenza-artificiale.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_intelligenza_artificiale",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/intelligenza-artificiale.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_intelligenza_artificiale",
+   "target": "wiki_data_science_prompt_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_jupyter",
+   "target": "wiki_data_science_jupyter_jupyter_notebook",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_jupyter",
+   "target": "wiki_data_science_mongodb",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_jupyter",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/jupyter.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_jupyter",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_metodi_metodi_e_concetti_data_science",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_normalizzazione_decimali",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_progettazione_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_prompt_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_tipi_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L12",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/mongodb.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_mongodb",
+   "target": "wiki_data_science_mongodb_mongodb",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/mongodb.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_mongodb",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/mongodb.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_mongodb",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/normalizzazione-decimali.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_normalizzazione_decimali",
+   "target": "wiki_data_science_normalizzazione_decimali_normalizzazione_dei_decimali_eng_ita",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_postgresql",
+   "target": "wiki_data_science_postgresql_postgresql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_postgresql",
+   "target": "wiki_data_science_progettazione_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_postgresql",
+   "target": "wiki_data_science_progetto_olist_ecommerce",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_postgresql",
+   "target": "wiki_data_science_sql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/postgresql.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_postgresql",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_power_bi_power_bi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_progetto_olist_ecommerce",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_tipi_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progettazione-database.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progettazione_database",
+   "target": "wiki_data_science_progettazione_database_progettazione_di_un_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progettazione-database.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progettazione_database",
+   "target": "wiki_data_science_sql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetti_progetti_reali_data_science",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetto_hotel_booking",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetto_insurance",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetto_olist_ecommerce",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetto_social_media",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_analisi_esplorativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_progetto_hotel_booking_progetto_analisi_prenotazioni_hotel",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_analisi_esplorativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_progetto_insurance_progetto_insurance_analysis",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_algebra_relazionale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_progettazione_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_progetto_olist_ecommerce_progetto_brazilian_e_commerce_olist",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_sql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_progetto_social_media_progetto_analisi_dati_social_media",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/prompt-engineering.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_prompt_engineering",
+   "target": "wiki_data_science_prompt_engineering_prompt_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_analisi_esplorativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_python_pandas_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/quartili-outlier.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_quartili_outlier",
+   "target": "wiki_data_science_quartili_outlier_quartili_e_outlier_iqr",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/sql.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_sql",
+   "target": "wiki_data_science_sql_sql",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/sql.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_sql",
+   "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/strumenti.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_strumenti",
+   "target": "wiki_data_science_strumenti_strumenti_data_science",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/tipi-di-analisi.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_tipi_di_analisi",
+   "target": "wiki_data_science_tipi_di_analisi_tipi_di_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/visualizzazione-dati.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_visualizzazione_dati",
+   "target": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
    "confidence_score": 1.0
   }
  ]

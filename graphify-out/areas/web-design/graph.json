@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "web-design",
- "built_at_commit": "641490c8ee173965e9c8941114e7c64f00c180be",
+ "built_at_commit": "46aed942e7a28bc0b2af4d8875ebe8a42ea70028",
  "nodes": [
   {
    "label": "README.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_web_design_readme",
-   "community": 80,
+   "community": 98,
    "norm_label": "readme.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "raw_web_design_readme_ambito",
-   "community": 80,
+   "community": 98,
    "norm_label": "ambito"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_web_design_readme_note",
-   "community": 80,
+   "community": 98,
    "norm_label": "note"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_web_design_readme_web_design",
-   "community": 80,
+   "community": 98,
    "norm_label": "web design"
   }
  ],

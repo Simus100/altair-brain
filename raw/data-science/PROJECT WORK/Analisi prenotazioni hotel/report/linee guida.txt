@@ -1,0 +1,49 @@
+Dettagli
+Obiettivi
+
+L’analisi dovrà concentrarsi su tre aspetti principali:
+
+Andamento della domanda nel tempo, utilizzando le informazioni sulle date di arrivo, si dovrà analizzare come varia il numero di prenotazioni durante l’anno e se esistono pattern di stagionalità.
+
+Confrontare le performance delle due strutture presenti nel dataset, il City Hotel e il Resort Hotel, osservando differenze nel volume delle prenotazioni, nella durata dei soggiorni e nei livelli di prezzo.
+
+Approfondire il tema delle cancellazioni, cercando di individuare quali variabili, come il tempo di anticipo della prenotazione (lead time), il segmento di mercato o il canale di distribuzione, sono più frequentemente associate ad una cancellazione.
+
+Il risultato finale dovrà essere un report visuale interattivo composto da almeno tre pagine e realizzato con Power BI, Tableau o Looker Studio, nel quale sintetizzare in modo chiaro i principali insight emersi dall’analisi.
+Dataset
+
+Il progetto utilizza il dataset Hotel Booking Demand, un dataset reale che raccoglie circa 119.000 prenotazioni alberghiere effettuate tra il 2015 e il 2017 per due tipologie di struttura: un City Hotel situato in area urbana e un Resort Hotel situato in una località turistica.
+
+Ogni osservazione rappresenta una prenotazione e contiene informazioni relative alla data di arrivo, alla durata del soggiorno, al prezzo medio giornaliero della stanza (ADR), al segmento di mercato da cui proviene la prenotazione, al canale di distribuzione utilizzato, al paese di provenienza del cliente e ad alcune caratteristiche del soggiorno, come il numero di ospiti o la presenza di richieste speciali. Il dataset include inoltre l’informazione relativa alla cancellazione della prenotazione, elemento che permette di studiare uno dei problemi più rilevanti per il revenue management alberghiero.
+Preparazione e trasformazione dei dati
+
+La prima fase del progetto è dedicata alla preparazione del dataset e alla verifica della qualità dei dati. Questa fase dovrà essere svolta principalmente utilizzando Excel/Google Sheets, chi lo desidera può affiancare a questi strumenti anche un’analisi preliminare con Python, ma non è obbligatorio.
+
+Il primo passo consiste nell’esplorare la struttura del dataset per comprendere il significato delle variabili, il numero di osservazioni presenti e il tipo di dati contenuti nelle diverse colonne. Successivamente sarà necessario effettuare un controllo sulla qualità dei dati, verificando la presenza di valori mancanti, duplicati o valori incoerenti. In questa fase è importante anche osservare la distribuzione delle variabili numeriche per individuare eventuali valori anomali o outlier che potrebbero influenzare le analisi successive.
+
+Una volta completata la fase di controllo e pulizia, il dataset dovrà essere arricchito con alcune variabili derivate che permettano di analizzare meglio i comportamenti di prenotazione e i ricavi. In particolare, si dovranno creare almeno tre nuove colonne a partire dalle variabili esistenti.
+Report e Data Storytelling
+
+Nella seconda fase del progetto il dataset preparato verrà importato in uno strumento di Business Intelligence, a scelta tra Power BI, Tableau o Looker Studio, con l’obiettivo di costruire un report interattivo che permetta di esplorare i dati e di comunicare gli insight principali.
+
+Il report dovrà essere organizzato in almeno tre pagine, ciascuna dedicata a un aspetto specifico dell’analisi.
+
+La prima pagina potrà essere dedicata ad una panoramica generale delle prenotazioni, mostrando ad esempio il numero totale di prenotazioni nel dataset, l’andamento delle prenotazioni nel tempo e il confronto tra le due tipologie di hotel. Questa sezione serve a fornire una visione generale della domanda e della sua evoluzione nel tempo.
+
+La seconda pagina potrà concentrarsi sull’analisi dei prezzi e dei ricavi. Qui sarà utile osservare la distribuzione dell’ADR, analizzare come il prezzo medio varia nei diversi mesi dell’anno e confrontare i livelli di prezzo tra i due hotel o tra diversi segmenti di mercato.
+
+La terza pagina dovrà invece essere dedicata allo studio delle cancellazioni. L’obiettivo è comprendere quanto frequentemente le prenotazioni vengono cancellate e se esistono categorie di prenotazioni più soggette alla cancellazione rispetto ad altre. Ad esempio, si può analizzare il tasso di cancellazione per segmento di mercato, per canale di distribuzione o in relazione al lead time della prenotazione.
+
+Durante la costruzione del report è importante prestare attenzione non solo alla scelta dei grafici, ma anche alla narrazione dei risultati. L’uso di titoli descrittivi, brevi spiegazioni e annotazioni sui grafici può aiutare a guidare il lettore nella comprensione dell’analisi e a evidenziare gli insight più rilevanti emersi dai dati.
+Materiale da consegnare
+
+File Excel o Google Sheets contenente il dataset pulito e le trasformazioni effettuate durante la fase di preparazione dei dati.
+
+Report, nel caso di Power BI dovrà essere consegnato il file .pbix, mentre per Tableau o Looker Studio sarà sufficiente fornire un link con permesso di visualizzazione.
+
+Documentazione finale, di circa tre-cinque pagine, nel quale descrivere le principali operazioni svolte durante il progetto. La documentazione dovrà spiegare le attività di pulizia e trasformazione dei dati, la struttura del report e gli insight principali emersi dall’analisi.
+Criteri di valutazione
+
+Il project work sarà valutato considerando diversi aspetti del lavoro svolto. In primo luogo verrà valutata la qualità della fase di data processing, cioè la correttezza delle operazioni di pulizia e trasformazione dei dati. Sarà inoltre presa in considerazione la qualità del report dal punto di vista grafico e della chiarezza della struttura delle dashboard.
+
+Un altro elemento importante riguarda la capacità di data storytelling, cioè la capacità di interpretare i dati e di comunicarne il significato attraverso visualizzazioni e commenti chiari. Verrà infine valutata la completezza delle analisi rispetto agli obiettivi del progetto e la qualità della documentazione finale consegnata.

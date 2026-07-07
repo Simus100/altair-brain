@@ -1,0 +1,86 @@
+- IMPLEMENTAZIONE
+
+
+*creiamo un virtualenv dedicato:
+
+% python -m venv mongodb-python
+
+*verifichiamo presenza directory:
+
+% ls -al
+
+*attiviamo il virtualenv:
+
+% source mongodb-python/bin/activate
+
+*installare pymongo:
+
+% pip install pymongo
+
+*installiamo nel venv anche jupyter per avere un notebook:
+
+% pip install jupyter
+
+*avviamo il notebook:
+
+% jupyter notebook
+
+----------
+
+- UTILIZZO
+
+
+Dentro il jupyter:
+
+
+% !pip intall pymongo
+
+% from pymongo import MongoClient
+
+% client= MongoCLient(
+ "mongodb://root:secret@localhost:50000/"
+)
+
+% db = client.library
+
+*inserimento di un nuovo utente:
+
+% db.users.insert_one({
+"user_id": 1001,
+"first_name": "Giuseppe",
+"last_name": "Mastrandrea"
+})
+
+% user= db.users.find({
+"user_id": 1001
+})
+
+print(user)
+
+*possiamo usar anche il lookup:
+
+pipeline = [
+{
+"$lookup": {
+  "from": "enrollments",
+ "localField": "student_id",
+ "foreignField": "student_id",
+   "as"; "enrollments"
+}
+},
+
+{
+ "$lookup": {
+   "from": "ecourses",
+ "localField": "enrollments.courses_id",
+ "foreignField": "course_id",
+   "as"; "courses"
+
+}
+}
+]
+
+results = db.students.aggregate(pipeline)
+
+for r in results:
+   print(r)

@@ -1,0 +1,58 @@
+1. Pivot high_cost_outlier:
+
+Righe: high_cost_outlier
+Valori: age
+
+GRAFICO: Grafico ad anello
+
+INSIGHT: Il 10,40% degli assicurati presenta charges superiori alla soglia IQR di circa 34.524,78 dollari. 
+
+
+2. Pivot avanzata: outlier per fumatore:
+
+Righe: smoker
+Colonne: high_cost_outlier
+Valori: age
+
+
+GRAFICO : Colonne in pila al 100%
+
+INSIGHT: Quasi la metà dei fumatori rientra tra gli assicurati ad alto costo, contro meno dell’1% dei non fumatori.
+
+
+3. Pivot risk_segment
+
+Righe: risk_segment
+Valori: charges
+
+
+4. Pivot age_group
+
+Righe: age_group
+Valori: charges
+
+GRAFICO: Colonne
+
+INSIGHT: Il costo cresce con l’età.
+
+
+5. Pivot bmi_category
+
+Righe: bmi_category
+Valori: charges
+
+GRAFICO: Colonne
+
+INSIGHT: scrivere
+
+
+6. Pivot per region
+
+Righe: region
+Valori: charges
+
+GRAFICO: Colonne
+
+INSIGHT: La regione southeast presenta il costo medio più alto, mentre southwest registra il valore medio più basso.
+
+

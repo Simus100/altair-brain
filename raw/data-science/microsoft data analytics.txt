@@ -1,0 +1,52 @@
+TIPO DI ANALISI:
+
+1 - DESCRITTIVA (Cosa è successo)
+2 - DIAGNOSTICA (Perchè è successo)
+3 - PREDITTIVA (Cosa succederà) 
+4 - PRESCRITTIVA (Cosa posso fare)
+5 - COGNITIVA (Approfondimento scenari/dati futuri)
+
+COMPITI:
+
+1 - PREPARARE 
+
+Reperire e collegarsi ai dati aziendali. Assicurarsi reperibilità e correttezza dei dati. 
+
+2 - MODELLARE
+
+Strutturare  e collegare  i vari tipi di dato per creare un significato semantico da vari punti di vista.
+
+3 - VISUALIZZARE
+
+Rappresentare i  dati graficamente. Devo far una serie di scelte su quali dati usare e quali dati visualizzare .
+
+4. ANALISI 
+
+Evidenziare aspetti e prospetti informativi per andare a produrre gli insight aziendali . Scelte guidate sui dati.
+
+5. GESTIRE
+
+Impostazioni sui dati e accessibilità alle persone che se ne occupano .
+
+---
+
+
+Microsoft ci mette a disposizione la possibilità di produrre tutto questo. 
+
+POWER BI DESKTOP (importare dati e produrre dashboard) -> POWER BI SERVICE (distribuire attraverso dispositivi o web)
+
+Le fasi pratiche di implementazione sono le seguenti:
+
+1. Recuperare i dati da fonti differenti e applicare le trasformazioni necessarie
+
+2. Progettare e implementare un modello dati, potenziato con DAX.
+
+3. Creare prima REPORT e poi una DASHBOARD efficace (report e dashboard non sono la stessa cosa: Prima si ottiene un report che integra una analisi della situazione presa in esame e poi si crea una dashboard accessibile per gestire i dati in modo semplice ed accessibile ai dipendenti. 
+
+4.   Eseguire analisi avanzate e ottenere informazioni dai dati
+
+5. Impostare la sicurezza a livello di riga per la gestione dei dati. 
+
+---
+
+Un elemento importante da capire è la differenza tra dimensioni e fatti. Il fatto è un evento che viene analizzato attraverso varie dimensioni. Ad esempio se un fatto registrato è una vendita possiamo analizzarlo tramite le sue dimensioni come il valore della vendita, la data, eccetera.

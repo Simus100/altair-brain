@@ -1,0 +1,65 @@
+PULIZIA DEI DATI:
+
+Dopo aver importato il dataset e trasformato i dati in una tabella in Excel, ho effettuato una fase di data cleaning finalizzata a individuare eventuali valori mancanti, la presenza di outlier e a verificare la coerenza delle variabili categoriche.
+
+Successivamente, ho analizzato la logica interna del dataset, individuando alcune incoerenze puntuali tra le variabili.
+
+Entrambe le attività sono documentate nei fogli data_cleaning e data_logic.
+
+
+COLONNE DERIVATE:
+
+Ho prodotto delle colonne derivate di dati per aggregare e riformulare le informazioni in modo più adatto alle finalità del report:
+
+- total_nights 
+
+  =[@[stays_in_weekend_nights]]+[@[stays_in_week_nights]]
+
+
+- total_guests 
+
+  =[@adults]+[@children]+[@babies]
+
+
+- booking_value 
+  
+  =[@adr]*[@[total_nights]]
+
+
+- arrival_date_full e arrival date_fixed
+
+  =[@[arrival_date_day_of_month]]&" "&[@[arrival_date_month]]&" "&[@[arrival_date_year]]
+
+  =DATA([@[arrival_date_year]];[@[arrival_month_number]];[@[arrival_date_day_of_month]])
+
+
+
+- lead_time_period 
+
+  =SE([@[lead_time]]<=7;"0-7";
+   SE([@[lead_time]]<=30;"8-30";
+   SE([@[lead_time]]<=90;"31-90";
+   SE([@[lead_time]]<=180;"91-180";"181+"))))
+ 
+
+- is_family 
+  =SE(O([@children]>0;[@babies]>0);"Family";"Non Family")
+
+
+- room_match 
+
+  =SE([@reserved_room_type]=[@assigned_room_type];"Match";"Different")
+
+
+
+- Ho creato un foglio Excel con una tabella chiamata seasons_lookup e creato nel dataset la colonna season derivata 
+
+  =CERCA.X([@[arrival_date_month]];season_lookup[month];season_lookup[season])
+
+
+- Ho creato un foglio Excel con una tabella chiamata country_lookup e creato nel dataset la colonna country derivata 
+  
+  =CERCA.X([@country];country_lookup[country_code];country_lookup[country_name])
+
+
+

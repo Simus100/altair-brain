@@ -1,0 +1,74 @@
+1. IMPORTAZIONE E PULIZIA DE I DATI:
+
+----------
+
+1.1 Operazioni preliminari:
+
+
+- Ho scaricato ed importato i file su excel tramite la funzione da Testo/CSV per una corretta impaginazione dei dati in una tabella. 
+
+
+- Ho applicato preventivamente un filtro condizionale alla colonna [Student_ID] per l'evidenziazione dei dati duplicati. Nessun valore trovato.
+
+- Ho selezionato tutti i valori della tabella e ho utilizzato lo strumento Trova e seleziona, formato speciale e celle vuote. Nessun valore trovato.
+
+- Ho verificato dalla freccia del filtro sulle intestazioni che non ci fossero dati inseriti male e che non venissero generati elementi duplicati.
+
+----------
+
+1.2 In Excel ho creato un altro foglio (pulizia_dati):
+
+
+
+- Ho inserito  la formula di =CONTA.VALORI e l'ho confrontata con il =CONTA.VALORI UNICI per evidenziare la presenza di eventuali duplicati.
+
+- Ho applicato un =CONTA.VUOTE sulla tabella per verificare eventuali dati mancanti.
+
+- Ho individuato il MIN e il MAX dei valori delle età, dell'utilizzo quotidiano e delle ore di sonno  nella tabella e inserito una cella di controllo sulla coerenza dei dati.
+
+! Ho incontrato una incoerenza nei dati, nell'importazione della tabella la media delle ore di utilizzo e le ore di sonno non erano corrette, ho dovuto dividere tutti i valori delle colonne interessate per 10.
+
+- Aggiunto check box finale per la validazione del dataset sul controllo dei dati effettuato.
+ 
+
+----------
+
+
+1.3 Ho introdotto tre nuove colonne che rappresentano:
+
+
+
+- Livello_Utilizzo (Ho introdotto tre fasce di utilizzo in relazione alle ore medie passate sui social quotidianamente).
+
+- Tempo_Libero (Ho sottratto le ore di sonno e le ore di utilizzo medio dei social dal totale).
+
+- Rapp_Social_Sonno (Rapporto tra le ore passate sui social e le ore di sonno).
+
+
+----------
+
+
+2. INTERPRETAZIONE ESPLORATIVA DEI DATI
+
+
+2.1 In Excel ho creato un altro foglio (analisi_exp):
+ 
+Ho inserito delle tabelle Pivot e i relativi grafici per individuare delle correlazioni esplorative dei dati.
+
+
+3. REALIZZAZIONE DEL REPORT SU LOOKER STUDIO 
+
+
+Link al report: https://lookerstudio.google.com/reporting/ae631261-3e5f-4b13-b25e-3c1140667854
+
+il report è inoltre allegato come Pdf.
+
+
+NOTA: 
+
+Saluti,
+
+Ho iniziato da poco il corso di data analyst, ho avuto poco tempo per ultimare le parti del corso relative a questo project work e quindi consegnarlo. Il report presenta sicuramente delle imperfezioni e parti che possono essere migliorate. Mi sono buttato ;D Grazie per la disponibilità,
+
+Simone Macelloni.
+

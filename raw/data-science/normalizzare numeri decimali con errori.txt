@@ -1,0 +1,5 @@
+
+valori importati non convertiti in numeri decimali ma rimane testo:
+
+
+=SE.ERRORE(VALORE(SOSTITUISCI(ANNULLA.SPAZI([@adr]);".";","));"")

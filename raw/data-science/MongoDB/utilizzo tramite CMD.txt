@@ -1,0 +1,541 @@
+Possiamo usare il RB system tramite shell del sistema operativo. 
+
+*I comandi del cmd verranno identificati con il simbolo % all'inizio.
+
+
+PER CONNETTERCI:
+
+% docker exec -it mongodb-container mongosh -u "root" -p "password"
+
+(mongodb-container è il nome del container)
+
+
+CASO D'USO:
+
+
+SELEZIONE DB:
+
+% use <nome database>  *selezione del DB
+
+% show collections  *VIsualizza le collections del db
+
+
+Poniamo il caso di avere un database chiamato "library" ocn due collections "books" e "users"
+
+
+INSERIMENTO DI UN DATO:
+
+Una volta selezionato il DB come visto sopra:
+
+% db.users.insertOne({"first_name": "Charlie", "last_name": "Brown", "hobbies": ["dogs,baseball"]})
+
+INSERIMENTO MULTIPLO: 
+
+% db.users.insertMany([{"first_name": "Lucy", "last_name":"Van Pelt"}, {"first_name": "Culo", "last_name":"Cau"}])
+
+
+INSERIMENTO DA FILE JSON:
+
+*i dati sono di esempio, sostituire le directory con quelle reali
+
+1. copiare il file nela cartella di docker del DB:
+
+% docker cp /user/mace/downloads/nomefile.json mongodb-container:/tmp/users.json
+
+2. Importare il file nella colleciton:
+
+% docker exec mongodb-container mongoimport --db library --collections users --file /tmp/users.json --jsonArray --username root --password password --authenticationDatabase admin
+
+
+(possiamo usare "% mongoimport --help" per capire i comandi possibili).
+
+
+VISUALIZZARE DATI:
+
+% use library
+
+% db.users.find()
+
+
+
+
+ESPORTARE LE COLLECTIONS:
+
+1. Creare il file
+
+% docker exec mongodb-container mongoexport --db library --collections users --out /tmp/users.csv --type csv --username root --password password --authenticationDatabase admin --fields=first_name,last_name,birth_date
+
+
+*si noti che serve inserire anche i campi dell'oggetto 
+
+2. Spostarlo:
+
+% docker cp mongodb-container:/tmp/users.csv /users/mace…
+
+
+
+MONGODUMP e MONGORESTORE:
+
+1. Dump dle db in un file specifico:
+
+% docker exec mongodb-container mongodump --db library --out /tmp/dump --uusername root --password password --authenticationDatabase admin
+
+------
+
+*Per verificare la presenza dei file creati possiamo ispezionare le cartelle del container dal terminale di docker relativo al container selezionando la scheda Terminal nel container appunto da docker e scrivere:
+
+% cd /tmp
+
+% ls -al
+
+% ls -al dump   *ispezionare cartella dump dentro /tmp
+
+% ls -al dump/library
+ 
+
+------
+
+2. Copiare i file per poi importarli in un altra istanza di mongoDB
+
+
+% docker cp mongodb-container:/tmp/dump /users/mace/…
+
+
+% docker exec mongodb-container mongorestore --db library2 /tmp/dump/library --username root --password secret -- authenticationDatabse admin
+
+
+
+OPERAZIONI DI BASE SULLE COLLECTIONS:
+
+*Puoi vedere la guida ufficiale con tutte le query sul sito ufficiale di mongoDb.
+
+
+- CERCARE ELEMENTI (ESEMPIO)
+
+
+% docker exec -it mongodb-container mongosh --username root --password password --authenticationDatabase admin
+
+% use library
+
+% db.users.find({"last_name": "nome da cercare"})
+
+
+- possiamo anche aggiungere condizioni innestatE:
+
+% db.users.find({grade_science: { $gt: 90 }})
+
+* il precedente comando visualizza tutti gli oggetti della collection che hanno un valore all'attributo grade_science superiore a 90
+
+
+% db.users.find({grade_science: { $lt: 90 }})
+
+* il precedente comando visualizza tutti gli oggetti della collection che hanno un valore all'attributo grade_science inferiore a 90
+
+*gt = greather then,  lt= less then, gte e lte (includono l'uguale a..)
+
+- concatenazione di più condizioni
+
+
+% db.users.find({grade_science: { $gte: 60, $lte: 90 }})
+
+*il precedente comando visualizza i valori compresi tra 60 e 90
+
+
+
+% db.users.find({
+  grade_science: { $gte: 60, $lte: 90 },
+  first_name: "Pippo"
+})
+
+*il precedente comando in visualizzazione più leggibile visualizza i valori compresi tra 60 e 90 che si chiamano Pippo
+
+
+- inserimento di operatori
+
+% db.users.find(
+    {
+       $or: [
+          {favorite_color: "blue"},
+          {favorite_color: "green"},
+            ]
+     }
+)
+
+* oltre a $or possiamo usare altri condizionali come $and
+
+
+
+- ORDINAMENTO, LIMIT E SKIP
+
+
+Prendiamo come esempio la query seguente e poi andiamo ad applicare dei filtri di ordinamento:
+
+
+% db.users.find({
+     $and: [
+         { grade_science: {$gte: 60 } },
+         {
+       $or: [
+          {favorite_color: "blue"},
+          {favorite_color: "green"}
+        ]
+     }
+  ]
+},
+  {first_name: 1, last_name: 1, favorite_color: 1, grade_science: 1}   
+)
+
+* questa riga:  {first_name: 1, last_name: 1, favorite_color: 1, grade_science: 1}   fa comparire nella query solo gli attributi selezionati.
+
+
+quindi con il filtro:
+
+$ db.users.find({
+     $and: [
+         { grade_science: {$gte: 60 } },
+         {
+       $or: [
+          {favorite_color: "blue"},
+          {favorite_color: "green"}
+        ]
+     }
+  ]
+},
+  {first_name: 1, last_name: 1, favorite_color: 1, grade_science: 1}   
+).sort({ last_name:1})
+
+
+* con il ".sort({ last_name:1})" la query ordinerà glie elementi in ordine alfabetico di last_name.. possiamo anche indicare il parametro -1 per ordinare al contrario. Possiamo anche concatenare più ordinamenti: .sort({ last_name: 1, first_name: 1 })
+
+
+
+In coda, dopo l'elemento sort possiamo anche aggiungere un limit per stabilire quanti elementi visualizzare:
+
+
+%
+    … {first_name: 1, last_name: 1, favorite_color: 1, grade_science: 1}   
+).sort({ last_name:1}).limit(3)
+
+
+Possiamo anche usare .skip() prima di .limit() per saltare degli elementi. 
+  
+
+- MODIFICA DI DOCUMENTI:
+
+
+- sempre dentro la libreria selezionata:
+
+%
+
+db.users.updateOne({
+
+user_id: 3,
+},
+
+{
+$set: {
+    "hobbies": ["reading", "travelling"]
+
+    }
+  }
+})
+
+
+La precedente istruzine è così composta e possiamo aggiungere quanti arogmenti vogliamo, di swguito vediamo $set ma possiamo usare anche $unset ad esempio o altri:
+
+
+---
+
+Argomento 1. filtro:
+
+
+{
+
+user_id: 3,
+},
+
+---
+
+Argomento 2. operatore di set:
+
+{
+$set: {
+    "hobbies": ["reading", "travelling"]
+
+    }
+  }
+
+---
+
+Altro esempio di aggiunta di campi calcolati su altri:
+
+%
+
+db.users.updateMany(
+{},     <- *questo indica l'applicazione a tutti gli elementi.
+[
+  {
+    $set: {
+     avg_score: {
+       $avg: ["$grade_math", "$grade_science", "$grade_english"]
+       }
+     }
+   },
+   {
+    $set: {
+       full_name: {
+         $concat: ["$first_name"," ", "last_name"]
+     }
+  ]
+)
+
+
+CANCELLAZIONE DI DOCUMENTI:
+
+%
+
+db.users.deleteOne({user_id: 4})
+
+db.users.deleteMany({grade_math: {$lte: 60}})
+
+* la precedente elimina tutti gli users con un valore inferiore a 60 
+
+
+QUERY COMPLESSE: 
+
+db.users.find({
+ favorite_color: {$ne: "blue"}
+})
+
+*tutti gli utenti dove il colore è diverso da "blue"
+
+
+db.users.find({
+ favorite_color: {$in: ["blue", "yellow"]}
+})
+
+*utenti dove hanno le preferenze con dentro blue e yellow.
+
+
+Esiste anche il comando $nin ovvero not in che esclude gli elementi che hanno quell'attributo.
+
+
+db.users.uppdateOne ({user_id: 3}, {$set: {$mail: "abc@def.it}})
+
+*Aggiunge il campo mail
+
+
+db.users.find({user_id: 3}) 
+
+*controlla che esita
+
+
+db.users.find({
+  email: {$exists: true}
+})
+
+*verifica che sia presente il campo selezionato
+
+
+db.users.find({
+ grade_marh: {$eq: null}
+})
+
+*cerca utenti con un valore null al parametro selezionato.
+
+db.users.find({
+ grade_marh: {$eq: null, $exists: False}
+})
+
+*cerca i valori null o l'assenza del campo
+
+
+db.users.find({
+ first_name: {
+  $regex: /^A/
+ }
+})
+
+*Tutti gli utenti il cui nome inizia per A, per questa query vengono usate espressioni regolari, studiarle.
+
+
+
+AGGREGAZIONI:
+
+%
+
+db.users.aggregate( 
+ [
+  {
+   $match: {grade_math:{$gte: 60}}
+  },
+  {
+   $group: {
+    _id: "$favorite_color",
+    avg_science_scores: {avg: "$grade_science"}
+   }
+  },
+    $project: {
+      _id: 0,     <- nasconde id
+      avg_science_scores:1,  <- visualizza
+      favorite_color "$_id"  <- visualizza il colore
+    }
+   }
+ ]
+)
+
+*restituisce le medie dei raggruppamenti ottenuti sui colori preferiti 
+
+
+EMBEDDING:
+ 
+db.orders.insertOne({
+ order_id: 1,
+ order_date: new Date()
+ product: [
+  {product_id: 1, name: "Laptop", price: 1200},
+  {product_id: 2, name: "Mouse", price: 20},
+ ],
+  customer: "Livvy Jeves"
+})
+
+*Abbiamo in questo modo embeddato i prodotti all'interno del nostro documento ordine.
+
+
+REFERENCING:
+
+
+Inserimento di prodotti:
+
+db.products.insertMany([
+  {product_id: 1, name: "Laptop", price: 1200},
+  {product_id: 2, name: "Mouse", price: 20}
+])
+
+
+Verifica presenza dei prodotti:
+
+db.products.find()
+
+
+Inserimento altor ordine riferito ai prodotti:
+
+db.order.insertOne({
+ order_id: 2,
+ customer_name: "Jhon Doe",
+ product_ids: [1,2],
+ order_date: new Date()
+});
+
+
+---
+
+Possiamo creare anche delle JOIN in modo simile a come facevamo con i database SQL:
+
+
+db.orders.aggregate([
+ {
+  $lookup: {
+   from: "products",
+   localField: "product_ids",
+   foreignField: "product_id",
+   as: "product_details"   <-- diamo un alias
+
+  }
+ }
+]);
+
+
+Mappare una relazione many to one:
+
+
+db.order.insertMany([
+ {
+  order_id: 1,
+  order_date: new Date(),
+  customer_id: 101,
+  product_ids: [1,3]
+  },
+  {
+  order_id: 2,
+  order_date: new Date(),
+  customer_ids: [2,4]
+  }
+]);
+
+* la precedente inserisce sue ordini diversi riferiti allo stesso customer.
+
+db.orders.aggregate([
+ {
+  $lookup: {
+   from: "users",
+   localField: "customer_id",
+   foreignField: "user_id",
+   as: "customer"
+  }
+ },
+   {
+  $lookup {
+   from "products",
+   localField: "product_ids",
+   foreingField: "product_id",
+   as: "product_details"
+  }
+ }
+])
+
+
+Relazione many to many:
+
+Per velocità creiamo nuovi documenti con compass e li chiamiamo uno students e uno courses, poi creiamo anche enrollments.
+
+db.students.insertOne ({
+ student_id: 1,
+ first_name: "Alice",
+ last_name: "Buzzi"
+})
+
+
+db.courses.insertMany([{
+ course_id: 101,
+ name: "Fondamenti di informatica"
+ },
+  {
+ course_id: 102,
+ name: "Distinguere le Pere dalle Mele"
+ }
+}])
+
+*Per mappare many to many occorre una terza collezione come succede con SQL
+
+
+db.enrollments.insertMany([
+{student_id: 1, course_id: 101 },
+{student_id: 1, course_id: 102 },
+{student_id: 2, course_id: 101 }
+]);
+
+*anche se non ho uno studente 2 nel database lui lo crea lo stesso.. è il bello dei databases schemeless
+
+
+
+db.students.aggregate([
+ {
+ $lookup: {
+  from: "enrollments",
+  localField: "student_id",
+  foreignField: "student_id",
+  as: "enrollments"
+},
+{
+$lookup: {
+ from: "courses",
+ localField: "enrollments.course_id",  <- accedere ai dati di enrollments.
+ foreingField: "course_id",
+ as: "courses"
+}
+}
+ }
+])
+
+*enrollments è la terza entità

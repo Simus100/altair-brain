@@ -1,0 +1,34 @@
+Q1 = INC.QUARTILE(intervallo_della_variabile;1)
+
+Q3 = INC.QUARTILE(intervallo_della_variabile;3)
+
+IQR = Q3 - Q1
+
+Lower Bound = Q1 - 1,5 * IQR
+
+Upper Bound = Q3 + 1,5 * IQR
+
+OUTLIER:
+
+se valore < Lower Bound e valore > Upper Bound
+
+ovvero:
+
+=SE(O(valore<Lower Bound;valore>Upper Bound);"OUTLIER";"OK")
+
+conteggio:
+
+=CONTA.SE(intervallo_della_variabile;"<"&Lower Bound)+CONTA.SE(intervallo_della_variabile;">"&Upper Bound)
+
+
+
+
+ESEMPIO:
+
+
+Q1 = INC.QUARTILE(variabile;1)
+Q3 = INC.QUARTILE(variabile;3)
+IQR = Q3 - Q1
+Lower Bound = Q1 - 1,5 * IQR
+Upper Bound = Q3 + 1,5 * IQR
+Outlier Check = SE(O(valore<Lower Bound;valore>Upper Bound);"OUTLIER";"OK")

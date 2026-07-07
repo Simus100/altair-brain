@@ -1,0 +1,183 @@
+Appunti di Artificial Intelligence: Fondamenti, Metodologie e Applicazioni
+
+1. Classificazione dell'Intelligenza Artificiale
+L'evoluzione dell'IA viene comunemente suddivisa in tre stadi, basati sulla capacità di eguagliare o superare le facoltà cognitive umane:
+
+ANI (Artificial Narrow Intelligence): È l'IA "ristretta" o debole. È progettata per eseguire un singolo compito specifico con efficienza sovrumana (es. giocare a scacchi, riconoscere volti), ma non possiede coscienza né versatilità. È lo stadio attuale della tecnologia.
+
+AGI (Artificial General Intelligence): È l'IA "generale" o forte. Rappresenta un sistema ipotetico capace di comprendere, apprendere e applicare l'intelligenza in modo trasversale a qualsiasi problema, al pari di un essere umano.
+
+ASI (Artificial Super Intelligence): È la super-intelligenza. Un sistema che supera le capacità cognitive umane in ogni campo (creatività, problem solving, intelligenza sociale).
+
+2. I Paradigmi di Apprendimento (Machine Learning)
+I modelli di IA apprendono dai dati attraverso tre metodologie principali:
+
+A. Supervised Learning (Apprendimento Supervisionato)
+In questo approccio, il modello viene addestrato su un dataset di dati etichettati (input + output desiderato). L'algoritmo impara a mappare l'input all'output corretto minimizzando l'errore.
+
+Definizione: Il sistema riceve esempi con la "soluzione" inclusa (classe o valore target).
+
+Esempi Applicativi:
+
+Credit Scoring (Settore Bancario): Addestrando l'IA su storici di prestiti (etichettati come "pagati" o "insoluti"), le banche prevedono la solvibilità di nuovi clienti e il rischio di credito.
+
+AES Corporation (Energia): Utilizzo di droni e computer vision per la manutenzione delle pale eoliche. Analizzando migliaia di immagini etichettate di danni strutturali, il sistema segnala dove intervenire, riducendo i costi di valutazione della manutenzione del 50%.
+
+Bayer (AgriTech): Sviluppo della MagicTrap (Digital Yellow Trap). Un sistema di computer vision che riconosce e conta i parassiti catturati nelle trappole fisiche, avvisando gli agricoltori su smartphone in caso di rischio infestazione, permettendo interventi mirati.
+
+American Cancer Society (Healthcare): Utilizzo di modelli di visione artificiale per l'analisi mammografica. L'IA riconosce pattern tumorali ricorrenti con efficienza superiore all'occhio umano, facilitando la diagnosi precoce del tumore al seno.
+
+B. Unsupervised Learning (Apprendimento Non Supervisionato)
+Al modello vengono forniti dati non etichettati. L'obiettivo è lasciare che l'algoritmo scopra autonomamente strutture nascoste, pattern o raggruppamenti (cluster) nei dati.
+
+Definizione: L'algoritmo esplora i dati senza una guida esterna per trovare associazioni o anomalie.
+
+Esempi Applicativi:
+
+Darktrace (Cybersecurity): Utilizza il clustering e l'analisi comportamentale per apprendere il "normale schema di vita" di una rete aziendale. Identifica attacchi zero-day (sconosciuti) rilevando deviazioni sottili dallo standard, senza bisogno di conoscere a priori la firma del virus.
+
+Netflix (Sistemi di Raccomandazione): Analizza metadati, descrizioni e, soprattutto, relazioni semantiche tra i contenuti visualizzati. Raggruppa utenti con gusti simili per suggerire titoli. Nota: L'80% del tempo di visione sulla piattaforma deriva da questi suggerimenti.
+
+MasterCard (Prevenzione Frodi): Algoritmi di Anomaly Detection associano un risk score a ogni transazione in tempo reale. Poiché non esistono etichette per nuove tipologie di frode, il sistema si autoadatta rilevando comportamenti di spesa anomali rispetto allo storico dell'utente.
+
+C. Reinforcement Learning (Apprendimento per Rinforzo)
+L'algoritmo (agente) apprende interagendo con un ambiente dinamico. Non riceve dati passivi, ma impara per tentativi ed errori (trial and error) basandosi su un sistema di ricompense e punizioni.
+
+Definizione: Apprendimento basato sull'esperienza diretta per massimizzare una ricompensa a lungo termine.
+
+Esempi Applicativi:
+
+Gestione Magazzini Automatizzati: Algoritmi che decidono la disposizione ottimale (slotting) delle merci per minimizzare i tempi di prelievo (picking).
+
+Amazon Robotics: Coordinamento di flotte di robot mobili nei centri logistici. I robot imparano a muoversi evitando collisioni e colli di bottiglia. Amazon utilizza un approccio decentralizzato dove l'efficienza emerge dalla collaborazione dei singoli agenti ("swarm intelligence").
+
+Wayve (Guida Autonoma): Utilizza il Reinforcement Learning per addestrare veicoli alla guida senza mappe HD precaricate. L'auto riceve una "ricompensa" se resta in corsia e guida sicura, e una "punizione" se devia o commette infrazioni, imparando a generalizzare in ambienti urbani mai visti prima.
+
+AlphaGo (DeepMind): Il sistema ha appreso giocando milioni di partite contro sé stesso, sviluppando strategie inedite che hanno permesso di battere il campione mondiale Lee Sedol nel gioco del Go.
+
+3. Le Due Grandi Famiglie dell'IA
+In base alla funzione finale, possiamo distinguere l'IA in:
+
+IA Predittiva:
+
+Scopo: Analizzare dati passati per classificare informazioni o prevedere eventi futuri.
+
+Casi d'uso: Manutenzione predittiva (Siemens), Valutazione del rischio di credito (American Express), Diagnostica medica supportata da dati (IBM Watson Health).
+
+IA Generativa (GenAI):
+
+Scopo: Creare nuovi contenuti (testo, immagini, codice, design) partendo da dati esistenti.
+
+Casi d'uso:
+
+Amazon: Generazione automatica di riassunti delle recensioni clienti per evidenziare pro e contro di un prodotto.
+
+Stitch Fix: Generazione di outfit personalizzati visualizzabili graficamente basati sulle preferenze stilistiche dell'utente.
+
+Ferrari: Utilizzo in R&D per esplorare nuove soluzioni di design aerodinamico e per assistenti virtuali post-vendita evoluti.
+
+4. Metodi di Integrazione: Workflow vs Agents
+Come l'IA viene inserita nei processi aziendali.
+
+A. AI Workflow (Flussi Deterministici)
+Una catena di passaggi prestabiliti in cui l'IA viene chiamata in momenti specifici per eseguire compiti definiti.
+
+Caratteristiche: Processi lineari, ripetitivi, a basso rischio di errore. C'è spesso supervisione umana ("Human in the loop").
+
+Ambiti: Supporto IT, Onboarding clienti, Gestione documentale, Flussi HR.
+
+Esempi:
+
+Accenture: Sistema di instradamento ticket che analizza la richiesta e la assegna automaticamente al dipartimento competente.
+
+Booking.com: Workflow che aggrega diverse API (voli, hotel, attrazioni) per proporre pacchetti viaggio combinati.
+
+Kaiser Permanente: Trascrizione automatica di dati clinici e tabelle per la generazione di report medici standardizzati.
+
+B. AI Agents (Sistemi Autonomi)
+Sistemi dotati di "agency", ovvero la capacità di prendere decisioni autonome per raggiungere un obiettivo, adattandosi a imprevisti.
+
+Caratteristiche: Adattamento in tempo reale, gestione di ambienti complessi e dinamici, non seguono un copione rigido.
+
+Ambiti: Ricerca farmaceutica, Supply Chain dinamica, Ottimizzazione scorte.
+
+Esempi:
+
+Walmart: Monitoraggio real-time dello stock con riordino autonomo. Risultati: -35% di stock in eccesso e +15% di accuratezza nell'inventario.
+
+BenevolentAI & AstraZeneca: Agenti IA che analizzano il grafo della conoscenza biologica per simulare interazioni molecolari e suggerire nuovi candidati farmaci, accelerando la scoperta scientifica.
+
+DHL: Ottimizzazione logistica predittiva. L'IA ripianifica percorsi e carichi in base alla domanda prevista. Risultati: +30% precisione consegne, -20% consumo carburante.
+
+H&M: Chatbot evoluti che gestiscono l'intera trattativa di vendita, dal suggerimento dell'outfit al check-out.
+
+5. Etica, Rischi e Governance
+L'adozione dell'IA comporta rischi significativi che richiedono supervisione umana e governance rigorosa.
+
+Principali Criticità
+Bias (Pregiudizi): L'IA riflette i pregiudizi contenuti nei dati di addestramento.
+
+Allucinazioni: Generazione di informazioni false o inventate presentate come fatti.
+
+Data Protection: Rischi legati alla privacy e all'uso di dati sensibili.
+
+Black Box: Difficoltà nello spiegare il "perché" una decisione è stata presa (Explainability).
+
+Casi Studio di Errori e Bias
+Chevrolet (Allucinazione/Prompt Injection): Un utente ha manipolato il chatbot di assistenza clienti (basato su LLM) inducendolo ad accettare legalmente un'offerta di vendita di un'auto per 1 dollaro. Dimostra la necessità di limiti rigidi (guardrails) negli agenti conversazionali.
+
+Amazon Recruiting Tool (Gender Bias): Un sistema sperimentale per filtrare CV ha imparato a penalizzare le donne. Motivo: Il set di dati storico (ultimi 10 anni) era dominato da CV maschili. L'IA ha dedotto erroneamente che "uomo" fosse un fattore di competenza, scartando CV contenenti parole come "femminile" o nomi di college femminili.
+
+Boston Housing Dataset (Razzismo nei Dati): Un dataset storico famoso nel machine learning conteneva feature eticamente inaccettabili:
+
+Parametro B: Calcolato sulla proporzione di persone di colore nella zona (bias razziale esplicito).
+
+Parametro LSTAT: Indicava la % di popolazione di "basso stato". Una definizione arbitraria e classista che mischiava povertà e mancanza di istruzione, introducendo un bias valoriale nel modello.
+
+Il caso dei "Giudici Affamati" (Human Bias): Uno studio ha dimostrato che le decisioni umane sono influenzate da fattori esterni (es. la fame prima di pranzo porta a sentenze più severe). Se addestriamo l'IA sulle sentenze umane passate, l'IA erediterà e automatizzerà questi bias cognitivi, rendendo l'ingiustizia sistemica.
+
+
+- Allucinazioni
+
+1.Fattuali (argomentazioni coerenti e corrette ma con fatti non veri o parzialmente veri).
+
+2.Semantiche (contraddizioni logiche nelle frasi)
+
+3.Strutturali (errori di forma e organizzazione delle informazioni)
+
+4.Contestuali (risposte fuori contesto)
+
+
+- IMPLEMENTARE AI IN AZIENDA
+
+1. strategia e cultura
+
+Visione chiara e strategia allineata con un nuovo modo di intendere lo scenario. La leadership deve essere coinvolta.
+Rispetto del GDPR e del regolamento legale inclusi audit e responsabilità di ognuno.
+Sicurezza e gestione dei rischi con cybersecurity.
+
+2.Fattori di successo
+
+Gestione deo dato, selezione qualità e aggiornamento.
+
+Architettura IT scalabile 
+
+Ecosistema e partner affidabili (vendor consulenti ecc)
+
+competenze e formazione continua
+(tecnoche etiche legali e manageriali)
+
+Monitoraggio e miglioramento continuo
+(kpi chiari, valutazione impatto)
+
+Comunicazione e change management
+
+dialogo trasparente e change management 
+superare resilienze e fare innovazione. 
+
+Audit e valutazioni etiche dei modelli
+
+Process human in (nel processo) e on (monitora il processo) in the loop.
+
+
+

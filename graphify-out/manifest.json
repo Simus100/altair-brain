@@ -19,9 +19,34 @@
     "ast_hash": "4304042274d818147e15eb0ae0c57dfc",
     "semantic_hash": ""
   },
+  "engine/iching.db.json": {
+    "mtime": 1783450107.7338247,
+    "ast_hash": "0afa903ce634c8c50f624541638ec2f5",
+    "semantic_hash": ""
+  },
+  "engine/router.json": {
+    "mtime": 1782941296.4996738,
+    "ast_hash": "e2dcda919dbc7695a1de2c47a006717b",
+    "semantic_hash": ""
+  },
+  "engine/schema/aion.model.schema.json": {
+    "mtime": 1782941628.444054,
+    "ast_hash": "2ec045050c90ed5aea7f8fbb7655f65d",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/schema ER/postgress.sql": {
+    "mtime": 1777710692.271,
+    "ast_hash": "292e6086d15fbcd2e09395d1293a4586",
+    "semantic_hash": ""
+  },
   "server/app.py": {
     "mtime": 1782941423.030889,
     "ast_hash": "b8c5ee3042edaa716d349f9f59c8bd22",
+    "semantic_hash": ""
+  },
+  "server/backup_data.sh": {
+    "mtime": 1782941780.6810102,
+    "ast_hash": "9567d101a3bf3476e93ac7a9579e6c05",
     "semantic_hash": ""
   },
   "server/bootstrap.sh": {
@@ -29,9 +54,19 @@
     "ast_hash": "8877c7a6da2cc4358e7d1baae9716ff8",
     "semantic_hash": ""
   },
+  "server/brain_core.py": {
+    "mtime": 1782941383.7239206,
+    "ast_hash": "9e3913bb08ea85f5e9afe3daf96c2daf",
+    "semantic_hash": ""
+  },
   "server/client_example.py": {
     "mtime": 1782918691.2526326,
     "ast_hash": "afb5057ff4dc5296ac6d9536c7d4382b",
+    "semantic_hash": ""
+  },
+  "server/mcp_server.py": {
+    "mtime": 1782941451.522018,
+    "ast_hash": "52a8de035f64f795d2d1cf7460415881",
     "semantic_hash": ""
   },
   "server/update_brain.sh": {
@@ -39,14 +74,44 @@
     "ast_hash": "a2254268ae7138255c4fc437b7b1f04a",
     "semantic_hash": ""
   },
+  "tests/test_api.py": {
+    "mtime": 1782941667.3867798,
+    "ast_hash": "0a317c94e7a6b23b9842f63fb83aa05d",
+    "semantic_hash": ""
+  },
   "tools/altair_compact_view.py": {
     "mtime": 1782840382.489859,
     "ast_hash": "cce34474b98ea34a73641193cf161ced",
     "semantic_hash": ""
   },
+  "tools/build_area_graphs.py": {
+    "mtime": 1782941320.1048052,
+    "ast_hash": "66d276f5149f06955083c2321579fcc3",
+    "semantic_hash": ""
+  },
+  "tools/build_iching_db.py": {
+    "mtime": 1782941217.260073,
+    "ast_hash": "955e68c2a7efdec340863ea69da46647",
+    "semantic_hash": ""
+  },
   "tools/gen_wiki_from_model.py": {
     "mtime": 1782938957.1776998,
     "ast_hash": "7513f5d56221a9568c6946f86b9a350d",
+    "semantic_hash": ""
+  },
+  "tools/graph_health.py": {
+    "mtime": 1783450095.7831855,
+    "ast_hash": "bd04d6aa4f90e9ca059a2b5c5df48e2d",
+    "semantic_hash": ""
+  },
+  "tools/oracle_cast.py": {
+    "mtime": 1782941245.7105913,
+    "ast_hash": "32100586c3d6359d1253ecbc69b2581b",
+    "semantic_hash": ""
+  },
+  "tools/rebuild_all.py": {
+    "mtime": 1782941585.0443585,
+    "ast_hash": "9718991cbbc151514c685904e24ed995",
     "semantic_hash": ""
   },
   "tools/validate_model.py": {
@@ -69,6 +134,16 @@
     "ast_hash": "ecc72d6f57068caf0c142c50863b01e0",
     "semantic_hash": ""
   },
+  ".claude/skills/oracle/SKILL.md": {
+    "mtime": 1782941537.0291889,
+    "ast_hash": "7be344040b343651483f9ca166284600",
+    "semantic_hash": ""
+  },
+  ".claude/skills/triage/SKILL.md": {
+    "mtime": 1782941476.8054402,
+    "ast_hash": "9d8f12512533b7e6885fbebdf6519ad6",
+    "semantic_hash": ""
+  },
   ".github/workflows/validate.yml": {
     "mtime": 1782941749.4345565,
     "ast_hash": "067e2149f10edc90f64aff6d99f8903e",
@@ -84,9 +159,19 @@
     "ast_hash": "9c90dcf460ee67dca821d43e058c1a82",
     "semantic_hash": ""
   },
+  "GUIDA.md": {
+    "mtime": 1782942085.8889074,
+    "ast_hash": "bea91f267c9e6673c8b8253281f3b5df",
+    "semantic_hash": ""
+  },
   "README.md": {
     "mtime": 1782942102.3804233,
     "ast_hash": "c61abdea39c3510c4fa120b4a1581981",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1782942619.1773436,
+    "ast_hash": "1e05e8b4643847d6c97d4cbd53c1d3b6",
     "semantic_hash": ""
   },
   "engine/aion-reasoner.md": {
@@ -102,6 +187,11 @@
   "raw/README.md": {
     "mtime": 1782942145.0020568,
     "ast_hash": "3645ffae671401194a367f3cac4f92ac",
+    "semantic_hash": ""
+  },
+  "raw/_inbox/README.md": {
+    "mtime": 1782941537.0554874,
+    "ast_hash": "b43e48913fd909d6e02870242a860e7f",
     "semantic_hash": ""
   },
   "raw/aion/README.md": {
@@ -139,9 +229,134 @@
     "ast_hash": "1cf0711ccd42a2ee909ce794532f12d1",
     "semantic_hash": ""
   },
+  "raw/data-science/AI introduzione.txt": {
+    "mtime": 1775425494.232,
+    "ast_hash": "f4831b6806f5352212ae4851b604dba0",
+    "semantic_hash": ""
+  },
+  "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.txt": {
+    "mtime": 1773566046.153,
+    "ast_hash": "62772b9675238a0ad808859bf4d8f809",
+    "semantic_hash": ""
+  },
+  "raw/data-science/Data culture.txt": {
+    "mtime": 1769547226.788,
+    "ast_hash": "198504ecdab7743d7d740dd5fb5aa08f",
+    "semantic_hash": ""
+  },
+  "raw/data-science/MongoDB/beanie e python per MongoDB.txt": {
+    "mtime": 1783334356.909,
+    "ast_hash": "4f42461394d339ac00d966dcc66983a6",
+    "semantic_hash": ""
+  },
+  "raw/data-science/MongoDB/installazione.txt": {
+    "mtime": 1782922027.849,
+    "ast_hash": "6deeb10337b69011cdb7c7d19e51d952",
+    "semantic_hash": ""
+  },
+  "raw/data-science/MongoDB/integrazione con python.txt": {
+    "mtime": 1783250833.729,
+    "ast_hash": "f6033b859445f7437dd3c663fd9fbda7",
+    "semantic_hash": ""
+  },
+  "raw/data-science/MongoDB/utilizzo tramite CMD.txt": {
+    "mtime": 1783249185.491,
+    "ast_hash": "3501bda5e5b135f4f5986f3950ed8f29",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.txt": {
+    "mtime": 1771881271.645,
+    "ast_hash": "ba21b698d8f1513c9088f7d83b9668ba",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Project work - Analisi dati social media/Documentazione.txt": {
+    "mtime": 1771881637.59,
+    "ast_hash": "af16fc2ee1e0f1281340e51064a500ea",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.txt": {
+    "mtime": 1774973010.324,
+    "ast_hash": "5784f027c7f3b894ee9467ef9ddfa5cc",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.txt": {
+    "mtime": 1773253655.24,
+    "ast_hash": "b1737fd08ac32d2212783b77f78eb994",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/APPUNTI PER REPORT.txt": {
+    "mtime": 1774538855.266,
+    "ast_hash": "7aee8f25e9a919a753b6964ba4bf4597",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/linee guida.txt": {
+    "mtime": 1773253535.82,
+    "ast_hash": "3cc6638504297784386570cdf0109d8b",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.txt": {
+    "mtime": 1776543741.749,
+    "ast_hash": "5da443ef0fce3e5f0a8dd38808deb78c",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.txt": {
+    "mtime": 1782252944.97,
+    "ast_hash": "daedd2355829781b514e02bc266926ea",
+    "semantic_hash": ""
+  },
+  "raw/data-science/PROJECT WORK/Insurance Analysis/2 analisi preliminare.txt": {
+    "mtime": 1782292293.514,
+    "ast_hash": "42d27730e7d3a30879836dd0983e45f6",
+    "semantic_hash": ""
+  },
+  "raw/data-science/Quarta rivoluzione indusriale.txt": {
+    "mtime": 1769007841.65,
+    "ast_hash": "cf59616bf77ba5c0173a8a16889c488c",
+    "semantic_hash": ""
+  },
   "raw/data-science/README.md": {
     "mtime": 1782836592.1844766,
     "ast_hash": "52bfdfe692a67936edb4f4076a85e44f",
+    "semantic_hash": ""
+  },
+  "raw/data-science/Sql/Progettazione DB.txt": {
+    "mtime": 1776598869.677,
+    "ast_hash": "79fc37f496ce1fd18b7c2b4e46176442",
+    "semantic_hash": ""
+  },
+  "raw/data-science/Sql/Teoria algebra relazionale.txt": {
+    "mtime": 1776589192.239,
+    "ast_hash": "b504eed82dbab3a4b725c11300b1b43a",
+    "semantic_hash": ""
+  },
+  "raw/data-science/Sql/sql appunti.txt": {
+    "mtime": 1776005423.231,
+    "ast_hash": "5b4b4f1e62601ab43a54abb00f458fb7",
+    "semantic_hash": ""
+  },
+  "raw/data-science/excell.txt": {
+    "mtime": 1769083320.448,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "raw/data-science/microsoft data analytics.txt": {
+    "mtime": 1777717274.358,
+    "ast_hash": "6ddc018ffeacc0f7e785cc6e037fd6a1",
+    "semantic_hash": ""
+  },
+  "raw/data-science/normalizzare numeri decimali con errori.txt": {
+    "mtime": 1773566963.896,
+    "ast_hash": "068885959e1455bc7048ffa1026d56b1",
+    "semantic_hash": ""
+  },
+  "raw/data-science/prompt engineering/prompt engineering base.txt": {
+    "mtime": 1775746376.419,
+    "ast_hash": "904d259ec72dcb2ec900a950262e97f2",
+    "semantic_hash": ""
+  },
+  "raw/data-science/storytelling.txt": {
+    "mtime": 1771701988.329,
+    "ast_hash": "08fc8863b0427cfe5fdbd29a1376e520",
     "semantic_hash": ""
   },
   "raw/divulgazione/README.md": {
@@ -175,363 +390,433 @@
     "semantic_hash": ""
   },
   "wiki/aion/aion-adaptive-core.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "5dc9b63c76ef000043b112a7e98b102a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-adaptive.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "fbe32c6b59ba30ee399e4f1711f9dd99",
     "semantic_hash": ""
   },
   "wiki/aion/aion-analyst.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8596144,
     "ast_hash": "f2855ff85d4be191fc5d4313d9311986",
     "semantic_hash": ""
   },
   "wiki/aion/aion-cinematica.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8596144,
     "ast_hash": "e5fc909b8e2724013ef4d542e3e23828",
     "semantic_hash": ""
   },
   "wiki/aion/aion-cognition-view.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "64e0305883c3fb58f8a5681b5f5d6c38",
     "semantic_hash": ""
   },
   "wiki/aion/aion-deeplogiccore.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "8c0180cbf9e83c0aae99f4f73ca13cf4",
     "semantic_hash": ""
   },
   "wiki/aion/aion-echo.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "fb8c1488fe2638139f5f6a23ff6d2485",
     "semantic_hash": ""
   },
   "wiki/aion/aion-ethos.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "b83a29909e58e59b1713d9dd2b7d661e",
     "semantic_hash": ""
   },
   "wiki/aion/aion-fabula.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "aebd91fd14d5460fd6758f230ec19a9e",
     "semantic_hash": ""
   },
   "wiki/aion/aion-fabulatorium.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "1039ca1676af060859df5c3785a4e08a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-hybrid-reasoner.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "9eb03ca11b69f9c0489dad3f019f6f7c",
     "semantic_hash": ""
   },
   "wiki/aion/aion-oracle.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "7f7a6ca5b1d086501b4bb30c8831246a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-paradox.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.860614,
     "ast_hash": "32a37c0018b961b50f6f890560361920",
     "semantic_hash": ""
   },
   "wiki/aion/aion-strategic-engine.md": {
-    "mtime": 1782942341.5576048,
+    "mtime": 1783450106.8582118,
     "ast_hash": "046d4ebe1ed478cab4c5333c0b1cf44d",
     "semantic_hash": ""
   },
   "wiki/aion/aion-superia.md": {
-    "mtime": 1782942341.5576048,
+    "mtime": 1783450106.8582118,
     "ast_hash": "ede98f237a3fc24633129b4a02fe98c1",
     "semantic_hash": ""
   },
   "wiki/aion/aion-symbol.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.860614,
     "ast_hash": "a611b1fa811fcc4a40dc73299f5bbb5b",
     "semantic_hash": ""
   },
   "wiki/aion/aion-synth.md": {
-    "mtime": 1782942341.5586047,
+    "mtime": 1783450106.8582118,
     "ast_hash": "5f1a79c0f491feb0be99c85660b91c38",
     "semantic_hash": ""
   },
   "wiki/aion/aion-vision.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "6a4abe611be3b196c9bf96c457928603",
     "semantic_hash": ""
   },
   "wiki/aion/aion-visual.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.8596144,
     "ast_hash": "191879ecd7d113551d389866daeb3319",
     "semantic_hash": ""
   },
   "wiki/aion/index.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.864618,
     "ast_hash": "10cd996b60bcd491545eccf64920881a",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamenti.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.864618,
     "ast_hash": "6cf99dd8ce0fb4873d2703d309a47515",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-001.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.8616183,
     "ast_hash": "95c603db0a62f30b3331335f3a958ab0",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-002.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.8616183,
     "ast_hash": "7d2bb906b2f20cd7e3f2d7856648a62c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-003.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "7e4fa551d564ce646e8c0c5f049eb165",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-004.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "31916293526bc8e4e3fb1f86b238442c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-005.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "d15f183de10a034004b90a1ba17db32d",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-006.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "7e7aa260a909e41950ffe3d3231f05f9",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-007.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "4ca92616768759f9a65c4995af4f8b5a",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-008.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8616183,
     "ast_hash": "a0f3e476bb777b3dec68124e26af28ca",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-009.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8626182,
     "ast_hash": "b8644efc164a47d1a2fc99232918e351",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-010.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8626182,
     "ast_hash": "686322131e7a9e8a2ed213e1529fd92c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-011.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8626182,
     "ast_hash": "742874ad9fa2bb2439e47b819990c07f",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-012.md": {
-    "mtime": 1782942341.561613,
+    "mtime": 1783450106.8626182,
     "ast_hash": "a2ab4a63c5b6efdbbf501cb0acaaa4f6",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-013.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8626182,
     "ast_hash": "566393c10d9cb47d9b66130ca2266325",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-014.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8626182,
     "ast_hash": "5c3492e067ab03a415a1704a121d8dc4",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-015.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "f354908c993cd558ecce3434571e51f8",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-016.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "3948819692eca41e8ecac4bd1fce31b3",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-017.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "359e6bc7976a520429eb578deb4956ff",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-018.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "bcf2a0821eebec3e03d1677b47a38227",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-019.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "e6e13d9369042cd5eb875acd13a132ea",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-020.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "5384a1e31d4890fefd05bb963602b5d6",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-021.md": {
-    "mtime": 1782942341.5626132,
+    "mtime": 1783450106.8636184,
     "ast_hash": "f148e87d0a2a85dbb605c8de1de2d00d",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-022.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.8636184,
     "ast_hash": "d3e29321c34c0c7093e4d8fc79e6e20b",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-023.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.8636184,
     "ast_hash": "5d113aead9e5b77b1d0c27fcaa18f958",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-024.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.864618,
     "ast_hash": "dca5255e7b1b0404fcb7ade4c803d3d2",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-025.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.864618,
     "ast_hash": "20b5180c1780cbf62184b4b7c9296ad4",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-026.md": {
-    "mtime": 1782942341.56361,
+    "mtime": 1783450106.864618,
     "ast_hash": "565221562ac89195e4d541cc7eaebcc1",
     "semantic_hash": ""
   },
   "wiki/aion/livello-identita-etica.md": {
-    "mtime": 1782942341.559613,
+    "mtime": 1783450106.860614,
     "ast_hash": "457e270654f37246ffc17de9521ffacb",
     "semantic_hash": ""
   },
   "wiki/aion/livello-operativita.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "45bef2aa3280c944fd6585a7cbe3cdb0",
     "semantic_hash": ""
   },
   "wiki/aion/livello-orchestrazione-stile.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "3cdf802179be9f0a1f8c4f42ff111832",
     "semantic_hash": ""
   },
   "wiki/aion/livello-struttura-logica.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "08dcff2e5780bb1d2aba95e09174864e",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-analytic-core.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "fc2aa83c267692401195bd3dd86c0301",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-guidance-empathic.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.8616183,
     "ast_hash": "09d4028297ee60c9cc92adffe521ea62",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-hybrid-synth.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "0510a41d0641ec4195c71e579ab187e5",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-mythic-narrative.md": {
-    "mtime": 1782942341.5606127,
+    "mtime": 1783450106.860614,
     "ast_hash": "b1c27f6ec7f6f5badb71b837369ad227",
     "semantic_hash": ""
   },
-  "ROADMAP.md": {
-    "mtime": 1782942302.9173,
-    "ast_hash": "6c726a172b2f62b600806e296b564cfd",
+  "wiki/data-science/algebra-relazionale.md": {
+    "mtime": 1783449924.8364906,
+    "ast_hash": "47b5c1ad73d9cbee7b4d58bcf0acec11",
     "semantic_hash": ""
   },
-  "engine/iching.db.json": {
-    "mtime": 1782942342.3571913,
-    "ast_hash": "0afa903ce634c8c50f624541638ec2f5",
+  "wiki/data-science/analisi-esplorativa.md": {
+    "mtime": 1783449924.8364906,
+    "ast_hash": "0323a3f2cbbdcef879722361b3ab59fc",
     "semantic_hash": ""
   },
-  "engine/router.json": {
-    "mtime": 1782941296.4996738,
-    "ast_hash": "e2dcda919dbc7695a1de2c47a006717b",
+  "wiki/data-science/cloud-computing.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "4cdd16e49adee0d481b2a879260c7aaa",
     "semantic_hash": ""
   },
-  "engine/schema/aion.model.schema.json": {
-    "mtime": 1782941628.444054,
-    "ast_hash": "2ec045050c90ed5aea7f8fbb7655f65d",
+  "wiki/data-science/data-cleaning.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "89abca1072bac8cd5f141fb85345c512",
     "semantic_hash": ""
   },
-  "server/backup_data.sh": {
-    "mtime": 1782941780.6810102,
-    "ast_hash": "9567d101a3bf3476e93ac7a9579e6c05",
+  "wiki/data-science/data-driven-culture.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "e95348f527f3da470bd89a2d8078f0e9",
     "semantic_hash": ""
   },
-  "server/brain_core.py": {
-    "mtime": 1782941383.7239206,
-    "ast_hash": "9e3913bb08ea85f5e9afe3daf96c2daf",
+  "wiki/data-science/data-storytelling.md": {
+    "mtime": 1783449924.8364906,
+    "ast_hash": "2eba94842576f3e5a3aacef70b0cee37",
     "semantic_hash": ""
   },
-  "server/mcp_server.py": {
-    "mtime": 1782941451.522018,
-    "ast_hash": "52a8de035f64f795d2d1cf7460415881",
+  "wiki/data-science/dataset.md": {
+    "mtime": 1783449924.8384943,
+    "ast_hash": "d9c18488b17c223876771876ad490253",
     "semantic_hash": ""
   },
-  "tests/test_api.py": {
-    "mtime": 1782941667.3867798,
-    "ast_hash": "0a317c94e7a6b23b9842f63fb83aa05d",
+  "wiki/data-science/docker.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "c84ce0236a676d288ac99fa18880c93c",
     "semantic_hash": ""
   },
-  "tools/build_area_graphs.py": {
-    "mtime": 1782941320.1048052,
-    "ast_hash": "66d276f5149f06955083c2321579fcc3",
+  "wiki/data-science/drawio.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "cb3deb36ef741d62f43f34639d55e175",
     "semantic_hash": ""
   },
-  "tools/build_iching_db.py": {
-    "mtime": 1782941217.260073,
-    "ast_hash": "955e68c2a7efdec340863ea69da46647",
+  "wiki/data-science/excel.md": {
+    "mtime": 1783449924.8329792,
+    "ast_hash": "e78512da464df97aa001a57981a694c3",
     "semantic_hash": ""
   },
-  "tools/graph_health.py": {
-    "mtime": 1782941568.9067478,
-    "ast_hash": "a728227785f428e7120df9c3ad926e4b",
+  "wiki/data-science/index.md": {
+    "mtime": 1783449924.8394945,
+    "ast_hash": "8b11106bf389255a5769af7030a7bd6b",
     "semantic_hash": ""
   },
-  "tools/oracle_cast.py": {
-    "mtime": 1782941245.7105913,
-    "ast_hash": "32100586c3d6359d1253ecbc69b2581b",
+  "wiki/data-science/intelligenza-artificiale.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "59f89eea7cb53e83082f55ed83e8f8bf",
     "semantic_hash": ""
   },
-  "tools/rebuild_all.py": {
-    "mtime": 1782941585.0443585,
-    "ast_hash": "9718991cbbc151514c685904e24ed995",
+  "wiki/data-science/jupyter.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "1f5b95e07250ec77ba8619cdbc82b869",
     "semantic_hash": ""
   },
-  ".claude/skills/oracle/SKILL.md": {
-    "mtime": 1782941537.0291889,
-    "ast_hash": "7be344040b343651483f9ca166284600",
+  "wiki/data-science/metodi.md": {
+    "mtime": 1783449924.8394945,
+    "ast_hash": "075f7dedd409f7a4ca3d9a700b0f0deb",
     "semantic_hash": ""
   },
-  ".claude/skills/triage/SKILL.md": {
-    "mtime": 1782941476.8054402,
-    "ast_hash": "9d8f12512533b7e6885fbebdf6519ad6",
+  "wiki/data-science/mongodb.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "8fb082de5effa0968ad5c8129d58a54b",
     "semantic_hash": ""
   },
-  "GUIDA.md": {
-    "mtime": 1782942085.8889074,
-    "ast_hash": "bea91f267c9e6673c8b8253281f3b5df",
+  "wiki/data-science/normalizzazione-decimali.md": {
+    "mtime": 1783449924.8359878,
+    "ast_hash": "4dd305a7971175e9141cc01851ea6b49",
     "semantic_hash": ""
   },
-  "raw/_inbox/README.md": {
-    "mtime": 1782941537.0554874,
-    "ast_hash": "b43e48913fd909d6e02870242a860e7f",
+  "wiki/data-science/postgresql.md": {
+    "mtime": 1783449924.8329792,
+    "ast_hash": "a55ca41a17085248f841f508c93273d0",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/power-bi.md": {
+    "mtime": 1783449924.8349829,
+    "ast_hash": "a32a78b702b52ba72ac63bcae945a3f0",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progettazione-database.md": {
+    "mtime": 1783449924.8364906,
+    "ast_hash": "20f67f17fb430f48161174dfa1ca81af",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progetti.md": {
+    "mtime": 1783449924.8394945,
+    "ast_hash": "ed0aa0164158f9ba95d6f0eaa4a3a3af",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progetto-hotel-booking.md": {
+    "mtime": 1783449924.8384943,
+    "ast_hash": "adcbf4834ead427f301038fa50d7db55",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progetto-insurance.md": {
+    "mtime": 1783449924.8384943,
+    "ast_hash": "8533c4bb74cbc89c7c3f0b364575f3ec",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progetto-olist-ecommerce.md": {
+    "mtime": 1783449924.8384943,
+    "ast_hash": "325c5d9b1c36514d498f9605568de03a",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/progetto-social-media.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "bcbea8fbddda9f803f3176a670a90065",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/prompt-engineering.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "d4df9cd7cd692976579436e8732f334e",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/python-pandas.md": {
+    "mtime": 1783449924.8329792,
+    "ast_hash": "c21152a31a2956c50ed6b66841fe0c90",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/quartili-outlier.md": {
+    "mtime": 1783449924.8359878,
+    "ast_hash": "c9a30ecd376b36ce9bba14a4ef940134",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/sql.md": {
+    "mtime": 1783449924.8329792,
+    "ast_hash": "ca756a657d77d943d9cc69683ec685a2",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/strumenti.md": {
+    "mtime": 1783449924.8394945,
+    "ast_hash": "599c62760bf6ae87b2bed1942e2d35d1",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/tipi-di-analisi.md": {
+    "mtime": 1783449924.8374944,
+    "ast_hash": "86dae42f2fba178cab75823d1e096548",
+    "semantic_hash": ""
+  },
+  "wiki/data-science/visualizzazione-dati.md": {
+    "mtime": 1783449924.8364906,
+    "ast_hash": "6198a48e6bbd70c1192c8cb4b9294d94",
     "semantic_hash": ""
   }
 }

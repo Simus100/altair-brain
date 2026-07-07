@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "641490c8ee173965e9c8941114e7c64f00c180be",
+ "built_at_commit": "46aed942e7a28bc0b2af4d8875ebe8a42ea70028",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents",
-   "community": 71,
+   "community": 20,
    "norm_label": "agents.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_agents_md_regole_di_altair_brain_per_gli_agenti",
-   "community": 71,
+   "community": 20,
    "norm_label": "agents.md — regole di altair-brain per gli agenti"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_rules_graphify",
-   "community": 87,
+   "community": 106,
    "norm_label": "graphify.md"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "agents_rules_graphify_graphify",
-   "community": 87,
+   "community": 106,
    "norm_label": "graphify"
   },
   {
@@ -52,7 +52,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_workflows_graphify",
-   "community": 88,
+   "community": 107,
    "norm_label": "graphify.md"
   },
   {
@@ -62,7 +62,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "agents_workflows_graphify_workflow_graphify",
-   "community": 88,
+   "community": 107,
    "norm_label": "workflow: graphify"
   },
   {
@@ -72,7 +72,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "basemodel",
-   "community": 2,
+   "community": 1,
    "norm_label": "basemodel"
   },
   {
@@ -82,7 +82,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "claude",
-   "community": 82,
+   "community": 91,
    "norm_label": "claude.md"
   },
   {
@@ -92,7 +92,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "claude_graphify",
-   "community": 82,
+   "community": 91,
    "norm_label": "graphify"
   },
   {
@@ -102,7 +102,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "claude_roadmap",
-   "community": 82,
+   "community": 91,
    "norm_label": "roadmap"
   },
   {
@@ -112,7 +112,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "claude_skills_aion_skill",
-   "community": 75,
+   "community": 88,
    "norm_label": "skill.md"
   },
   {
@@ -122,7 +122,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "claude_skills_aion_skill_apprendimento",
-   "community": 75,
+   "community": 88,
    "norm_label": "apprendimento"
   },
   {
@@ -132,7 +132,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "claude_skills_aion_skill_come_procedere",
-   "community": 75,
+   "community": 88,
    "norm_label": "come procedere"
   },
   {
@@ -142,7 +142,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "claude_skills_aion_skill_output_atteso",
-   "community": 75,
+   "community": 88,
    "norm_label": "output atteso"
   },
   {
@@ -152,7 +152,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "claude_skills_aion_skill_skill_ragionamento_aion",
-   "community": 75,
+   "community": 88,
    "norm_label": "skill: ragionamento aion"
   },
   {
@@ -162,7 +162,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "claude_skills_aion_skill_vincoli",
-   "community": 75,
+   "community": 88,
    "norm_label": "vincoli"
   },
   {
@@ -172,7 +172,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "claude_skills_oracle_skill",
-   "community": 103,
+   "community": 92,
    "norm_label": "skill.md"
   },
   {
@@ -182,7 +182,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "claude_skills_oracle_skill_procedura",
-   "community": 103,
+   "community": 92,
    "norm_label": "procedura"
   },
   {
@@ -192,7 +192,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "claude_skills_oracle_skill_skill_aion_oracle_i_ching_eseguibile",
-   "community": 103,
+   "community": 92,
    "norm_label": "skill: aion_oracle (i ching eseguibile)"
   },
   {
@@ -202,7 +202,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "claude_skills_oracle_skill_vincoli",
-   "community": 103,
+   "community": 92,
    "norm_label": "vincoli"
   },
   {
@@ -212,7 +212,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "claude_skills_triage_skill",
-   "community": 104,
+   "community": 93,
    "norm_label": "skill.md"
   },
   {
@@ -222,7 +222,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "claude_skills_triage_skill_procedura",
-   "community": 104,
+   "community": 93,
    "norm_label": "procedura"
   },
   {
@@ -232,7 +232,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "claude_skills_triage_skill_skill_triage_dell_inbox",
-   "community": 104,
+   "community": 93,
    "norm_label": "skill: triage dell'inbox"
   },
   {
@@ -242,7 +242,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "claude_skills_triage_skill_vincoli",
-   "community": 104,
+   "community": 93,
    "norm_label": "vincoli"
   },
   {
@@ -252,7 +252,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "claude_viste_del_grafo_processo_standard",
-   "community": 82,
+   "community": 91,
    "norm_label": "viste del grafo (processo standard)"
   },
   {
@@ -262,7 +262,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "engine_aion_reasoner",
-   "community": 6,
+   "community": 10,
    "norm_label": "aion-reasoner.md"
   },
   {
@@ -272,7 +272,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "engine_aion_reasoner_0_memoria_consulta_le_lezioni_apprese",
-   "community": 6,
+   "community": 10,
    "norm_label": "0. memoria — consulta le lezioni apprese"
   },
   {
@@ -282,7 +282,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "engine_aion_reasoner_1_intake_classifica_la_richiesta",
-   "community": 6,
+   "community": 10,
    "norm_label": "1. intake — classifica la richiesta"
   },
   {
@@ -292,7 +292,7 @@
    "source_location": "L33",
    "_origin": "ast",
    "id": "engine_aion_reasoner_2_dl_icc_valuta_la_complessità",
-   "community": 6,
+   "community": 10,
    "norm_label": "2. dl_icc — valuta la complessita"
   },
   {
@@ -302,7 +302,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "engine_aion_reasoner_3_modalità_scegli_il_registro",
-   "community": 6,
+   "community": 10,
    "norm_label": "3. modalita — scegli il registro"
   },
   {
@@ -312,7 +312,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "engine_aion_reasoner_4_attivazione_agenti_orchestrazione_aion_superia",
-   "community": 6,
+   "community": 10,
    "norm_label": "4. attivazione agenti — orchestrazione (aion_superia)"
   },
   {
@@ -322,7 +322,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "engine_aion_reasoner_5_componenti_insegnamenti",
-   "community": 6,
+   "community": 10,
    "norm_label": "5. componenti + insegnamenti"
   },
   {
@@ -332,7 +332,7 @@
    "source_location": "L52",
    "_origin": "ast",
    "id": "engine_aion_reasoner_6_gate_ethos_vincolo_di_identità_sempre_attivo",
-   "community": 6,
+   "community": 10,
    "norm_label": "6. gate ethos — vincolo di identita (sempre attivo)"
   },
   {
@@ -342,7 +342,7 @@
    "source_location": "L57",
    "_origin": "ast",
    "id": "engine_aion_reasoner_7_valutazione_intermodulare",
-   "community": 6,
+   "community": 10,
    "norm_label": "7. valutazione intermodulare"
   },
   {
@@ -352,7 +352,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "engine_aion_reasoner_8_sintesi_formato_superia_sfo_fcc",
-   "community": 6,
+   "community": 10,
    "norm_label": "8. sintesi + formato (superia → sfo → fcc)"
   },
   {
@@ -362,7 +362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "engine_aion_reasoner_aion_reasoner_protocollo_di_ragionamento",
-   "community": 6,
+   "community": 10,
    "norm_label": "aion reasoner — protocollo di ragionamento"
   },
   {
@@ -372,7 +372,7 @@
    "source_location": "L80",
    "_origin": "ast",
    "id": "engine_aion_reasoner_apprendimento_opzionale_no_api",
-   "community": 6,
+   "community": 10,
    "norm_label": "apprendimento (opzionale, no api)"
   },
   {
@@ -382,7 +382,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "engine_aion_reasoner_decisione_di_fondo_gerarchia_dei_fattori",
-   "community": 6,
+   "community": 10,
    "norm_label": "decisione di fondo (gerarchia dei fattori)"
   },
   {
@@ -392,7 +392,7 @@
    "source_location": "L74",
    "_origin": "ast",
    "id": "engine_aion_reasoner_moduli_trasversali_richiamabili_quando_pertinenti",
-   "community": 6,
+   "community": 10,
    "norm_label": "moduli trasversali (richiamabili quando pertinenti)"
   },
   {
@@ -402,7 +402,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "engine_aion_reasoner_pipeline_9_passi",
-   "community": 6,
+   "community": 10,
    "norm_label": "pipeline (9 passi)"
   },
   {
@@ -412,7 +412,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema",
-   "community": 98,
+   "community": 15,
    "norm_label": "aion.model.schema.json"
   },
   {
@@ -422,7 +422,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_items",
-   "community": 99,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -432,7 +432,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_minitems",
-   "community": 99,
+   "community": 16,
    "norm_label": "minitems"
   },
   {
@@ -442,7 +442,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_type",
-   "community": 99,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -452,7 +452,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_collabora_items",
-   "community": 95,
+   "community": 7,
    "norm_label": "items"
   },
   {
@@ -462,7 +462,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_collabora_type",
-   "community": 95,
+   "community": 7,
    "norm_label": "type"
   },
   {
@@ -472,7 +472,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_items",
-   "community": 99,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -482,7 +482,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 96,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 96,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -502,7 +502,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_consulta_items",
-   "community": 95,
+   "community": 7,
    "norm_label": "items"
   },
   {
@@ -512,7 +512,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_consulta_type",
-   "community": 95,
+   "community": 7,
    "norm_label": "type"
   },
   {
@@ -522,7 +522,7 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_definitions",
-   "community": 98,
+   "community": 15,
    "norm_label": "definitions"
   },
   {
@@ -532,7 +532,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_definitions_id",
-   "community": 98,
+   "community": 15,
    "norm_label": "id"
   },
   {
@@ -542,7 +542,7 @@
    "source_location": "L4",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_description",
-   "community": 98,
+   "community": 15,
    "norm_label": "description"
   },
   {
@@ -552,7 +552,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_dominanti_items",
-   "community": 106,
+   "community": 100,
    "norm_label": "items"
   },
   {
@@ -562,7 +562,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_dominanti_type",
-   "community": 106,
+   "community": 100,
    "norm_label": "type"
   },
   {
@@ -572,7 +572,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_pattern",
-   "community": 98,
+   "community": 15,
    "norm_label": "pattern"
   },
   {
@@ -582,7 +582,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_ref",
-   "community": 98,
+   "community": 15,
    "norm_label": "$ref"
   },
   {
@@ -592,7 +592,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_type",
-   "community": 98,
+   "community": 15,
    "norm_label": "type"
   },
   {
@@ -602,7 +602,7 @@
    "source_location": "L71",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_items",
-   "community": 99,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -612,7 +612,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_minitems",
-   "community": 99,
+   "community": 16,
    "norm_label": "minitems"
   },
   {
@@ -622,7 +622,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_type",
-   "community": 99,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -632,7 +632,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_interagisce_items",
-   "community": 95,
+   "community": 7,
    "norm_label": "items"
   },
   {
@@ -642,7 +642,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_interagisce_type",
-   "community": 95,
+   "community": 7,
    "norm_label": "type"
   },
   {
@@ -652,7 +652,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_properties",
-   "community": 68,
+   "community": 4,
    "norm_label": "properties"
   },
   {
@@ -662,7 +662,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_ref",
-   "community": 95,
+   "community": 7,
    "norm_label": "$ref"
   },
   {
@@ -672,7 +672,7 @@
    "source_location": "L15",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_required",
-   "community": 99,
+   "community": 16,
    "norm_label": "required"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_type",
-   "community": 99,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -692,7 +692,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_label_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -702,7 +702,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livelli_items",
-   "community": 99,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -712,7 +712,7 @@
    "source_location": "L12",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livelli_minitems",
-   "community": 96,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -722,7 +722,7 @@
    "source_location": "L12",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livelli_type",
-   "community": 96,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -732,7 +732,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livello_ref",
-   "community": 68,
+   "community": 4,
    "norm_label": "$ref"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 68,
+   "community": 4,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 68,
+   "community": 4,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -772,7 +772,7 @@
    "source_location": "L9",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_model_type",
-   "community": 96,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -782,7 +782,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_orchestra_items",
-   "community": 107,
+   "community": 101,
    "norm_label": "items"
   },
   {
@@ -792,7 +792,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_orchestra_type",
-   "community": 107,
+   "community": 101,
    "norm_label": "type"
   },
   {
@@ -802,7 +802,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_priorita_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -812,7 +812,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties",
-   "community": 96,
+   "community": 11,
    "norm_label": "properties"
   },
   {
@@ -822,7 +822,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_agenti",
-   "community": 99,
+   "community": 16,
    "norm_label": "agenti"
   },
   {
@@ -832,7 +832,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_collabora",
-   "community": 95,
+   "community": 7,
    "norm_label": "collabora"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 96,
+   "community": 11,
    "norm_label": "componenti"
   },
   {
@@ -852,7 +852,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_consulta",
-   "community": 95,
+   "community": 7,
    "norm_label": "consulta"
   },
   {
@@ -862,7 +862,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_dominanti",
-   "community": 106,
+   "community": 100,
    "norm_label": "dominanti"
   },
   {
@@ -872,7 +872,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_id",
-   "community": 98,
+   "community": 15,
    "norm_label": "id"
   },
   {
@@ -882,7 +882,7 @@
    "source_location": "L69",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_insegnamenti",
-   "community": 99,
+   "community": 16,
    "norm_label": "insegnamenti"
   },
   {
@@ -892,7 +892,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_interagisce",
-   "community": 95,
+   "community": 7,
    "norm_label": "interagisce"
   },
   {
@@ -902,7 +902,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_label",
-   "community": 68,
+   "community": 4,
    "norm_label": "label"
   },
   {
@@ -912,7 +912,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_livelli",
-   "community": 96,
+   "community": 11,
    "norm_label": "livelli"
   },
   {
@@ -922,7 +922,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_livello",
-   "community": 68,
+   "community": 4,
    "norm_label": "livello"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 68,
+   "community": 4,
    "norm_label": "modalita"
   },
   {
@@ -942,7 +942,7 @@
    "source_location": "L9",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_model",
-   "community": 96,
+   "community": 11,
    "norm_label": "model"
   },
   {
@@ -952,7 +952,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_orchestra",
-   "community": 107,
+   "community": 101,
    "norm_label": "orchestra"
   },
   {
@@ -962,7 +962,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_priorita",
-   "community": 68,
+   "community": 4,
    "norm_label": "priorita"
   },
   {
@@ -972,7 +972,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_ruolo",
-   "community": 68,
+   "community": 4,
    "norm_label": "ruolo"
   },
   {
@@ -982,7 +982,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_schema_version",
-   "community": 96,
+   "community": 11,
    "norm_label": "schema_version"
   },
   {
@@ -992,7 +992,7 @@
    "source_location": "L30",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_tag",
-   "community": 68,
+   "community": 4,
    "norm_label": "tag"
   },
   {
@@ -1002,7 +1002,7 @@
    "source_location": "L77",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_testo",
-   "community": 68,
+   "community": 4,
    "norm_label": "testo"
   },
   {
@@ -1012,7 +1012,7 @@
    "source_location": "L76",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_titolo",
-   "community": 68,
+   "community": 4,
    "norm_label": "titolo"
   },
   {
@@ -1022,7 +1022,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_usa",
-   "community": 95,
+   "community": 7,
    "norm_label": "usa"
   },
   {
@@ -1032,7 +1032,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_usato_da",
-   "community": 95,
+   "community": 7,
    "norm_label": "usato_da"
   },
   {
@@ -1042,7 +1042,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_versione",
-   "community": 96,
+   "community": 11,
    "norm_label": "versione"
   },
   {
@@ -1052,7 +1052,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_required",
-   "community": 98,
+   "community": 15,
    "norm_label": "required"
   },
   {
@@ -1062,7 +1062,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_ruolo_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -1072,7 +1072,7 @@
    "source_location": "L2",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_schema",
-   "community": 98,
+   "community": 15,
    "norm_label": "$schema"
   },
   {
@@ -1082,7 +1082,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_schema_version_minimum",
-   "community": 96,
+   "community": 11,
    "norm_label": "minimum"
   },
   {
@@ -1092,7 +1092,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_schema_version_type",
-   "community": 96,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -1102,7 +1102,7 @@
    "source_location": "L30",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_tag_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -1112,7 +1112,7 @@
    "source_location": "L77",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_testo_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L3",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_title",
-   "community": 98,
+   "community": 15,
    "norm_label": "title"
   },
   {
@@ -1132,7 +1132,7 @@
    "source_location": "L76",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_titolo_type",
-   "community": 68,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -1142,7 +1142,7 @@
    "source_location": "L5",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_type",
-   "community": 98,
+   "community": 15,
    "norm_label": "type"
   },
   {
@@ -1152,7 +1152,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_usa_items",
-   "community": 95,
+   "community": 7,
    "norm_label": "items"
   },
   {
@@ -1162,7 +1162,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_usa_type",
-   "community": 95,
+   "community": 7,
    "norm_label": "type"
   },
   {
@@ -1172,7 +1172,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_usato_da_items",
-   "community": 95,
+   "community": 7,
    "norm_label": "items"
   },
   {
@@ -1182,7 +1182,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_usato_da_type",
-   "community": 95,
+   "community": 7,
    "norm_label": "type"
   },
   {
@@ -1192,7 +1192,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_versione_type",
-   "community": 96,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -1202,7 +1202,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "exception",
-   "community": 49,
+   "community": 2,
    "norm_label": "exception"
   },
   {
@@ -1212,7 +1212,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "guida",
-   "community": 97,
+   "community": 12,
    "norm_label": "guida.md"
   },
   {
@@ -1222,7 +1222,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "guida_1_aggiungere_conoscenza_dal_pc",
-   "community": 97,
+   "community": 12,
    "norm_label": "1. aggiungere conoscenza (dal pc)"
   },
   {
@@ -1232,7 +1232,7 @@
    "source_location": "L33",
    "_origin": "ast",
    "id": "guida_2_catturare_un_idea_dal_telefono_o_ovunque",
-   "community": 97,
+   "community": 12,
    "norm_label": "2. catturare un'idea dal telefono (o ovunque)"
   },
   {
@@ -1242,7 +1242,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "guida_3_interrogare_il_brain",
-   "community": 97,
+   "community": 12,
    "norm_label": "3. interrogare il brain"
   },
   {
@@ -1252,7 +1252,7 @@
    "source_location": "L53",
    "_origin": "ast",
    "id": "guida_4_consultare_l_oracolo_i_ching",
-   "community": 97,
+   "community": 12,
    "norm_label": "4. consultare l'oracolo (i ching)"
   },
   {
@@ -1262,7 +1262,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "guida_5_far_imparare_il_brain",
-   "community": 97,
+   "community": 12,
    "norm_label": "5. far imparare il brain"
   },
   {
@@ -1272,7 +1272,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "guida_6_vedere_il_grafo",
-   "community": 97,
+   "community": 12,
    "norm_label": "6. vedere il grafo"
   },
   {
@@ -1282,7 +1282,7 @@
    "source_location": "L71",
    "_origin": "ast",
    "id": "guida_collegare_altre_ai_al_brain",
-   "community": 97,
+   "community": 12,
    "norm_label": "collegare altre ai al brain"
   },
   {
@@ -1292,7 +1292,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "guida_cos_è_in_un_minuto",
-   "community": 97,
+   "community": 12,
    "norm_label": "cos'e, in un minuto"
   },
   {
@@ -1302,7 +1302,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
-   "community": 97,
+   "community": 12,
    "norm_label": "guida — come usare il tuo second brain (per umani, zero tecnicismi)"
   },
   {
@@ -1312,7 +1312,7 @@
    "source_location": "L92",
    "_origin": "ast",
    "id": "guida_la_vps_il_brain_sempre_acceso",
-   "community": 97,
+   "community": 12,
    "norm_label": "la vps (il brain sempre acceso)"
   },
   {
@@ -1322,7 +1322,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "guida_le_6_cose_che_farai_più_spesso",
-   "community": 97,
+   "community": 12,
    "norm_label": "le 6 cose che farai piu spesso"
   },
   {
@@ -1332,7 +1332,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "guida_le_regole_d_oro_non_dimenticarle",
-   "community": 97,
+   "community": 12,
    "norm_label": "le regole d'oro (non dimenticarle)"
   },
   {
@@ -1342,7 +1342,7 @@
    "source_location": "L103",
    "_origin": "ast",
    "id": "guida_se_qualcosa_va_storto",
-   "community": 97,
+   "community": 12,
    "norm_label": "se qualcosa va storto"
   },
   {
@@ -1352,7 +1352,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "path",
-   "community": 49,
+   "community": 2,
    "norm_label": "path"
   },
   {
@@ -1362,7 +1362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_readme",
-   "community": 71,
+   "community": 20,
    "norm_label": "readme.md"
   },
   {
@@ -1372,7 +1372,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "raw_readme_aggiungere_una_nuova_macroarea",
-   "community": 71,
+   "community": 20,
    "norm_label": "aggiungere una nuova macroarea"
   },
   {
@@ -1382,7 +1382,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "raw_readme_front_matter_standard_consigliato_per_ogni_nota",
-   "community": 71,
+   "community": 20,
    "norm_label": "front-matter standard (consigliato per ogni nota)"
   },
   {
@@ -1392,7 +1392,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "raw_readme_macroaree_attive",
-   "community": 71,
+   "community": 20,
    "norm_label": "macroaree attive"
   },
   {
@@ -1402,7 +1402,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_readme_raw_materiale_grezzo_per_macroarea",
-   "community": 71,
+   "community": 20,
    "norm_label": "raw/ — materiale grezzo per macroarea"
   },
   {
@@ -1412,7 +1412,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "raw_readme_regole",
-   "community": 71,
+   "community": 20,
    "norm_label": "regole"
   },
   {
@@ -1422,7 +1422,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "readme",
-   "community": 72,
+   "community": 85,
    "norm_label": "readme.md"
   },
   {
@@ -1432,7 +1432,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "readme_altair_brain",
-   "community": 72,
+   "community": 85,
    "norm_label": "altair-brain"
   },
   {
@@ -1442,7 +1442,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "readme_come_si_consuma",
-   "community": 72,
+   "community": 85,
    "norm_label": "come si consuma"
   },
   {
@@ -1452,7 +1452,7 @@
    "source_location": "L53",
    "_origin": "ast",
    "id": "readme_guide",
-   "community": 72,
+   "community": 85,
    "norm_label": "guide"
   },
   {
@@ -1462,7 +1462,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "readme_macroaree",
-   "community": 72,
+   "community": 85,
    "norm_label": "macroaree"
   },
   {
@@ -1472,7 +1472,7 @@
    "source_location": "L9",
    "_origin": "ast",
    "id": "readme_principi",
-   "community": 72,
+   "community": 85,
    "norm_label": "principi"
   },
   {
@@ -1482,7 +1482,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "readme_struttura_il_processo_a_5_fasi",
-   "community": 72,
+   "community": 85,
    "norm_label": "struttura (il processo a 5 fasi)"
   },
   {
@@ -1492,7 +1492,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "readme_workflow_di_modifica_per_chi_scrive_nel_brain",
-   "community": 72,
+   "community": 85,
    "norm_label": "workflow di modifica (per chi scrive nel brain)"
   },
   {
@@ -1502,7 +1502,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "request",
-   "community": 2,
+   "community": 1,
    "norm_label": "request"
   },
   {
@@ -1512,7 +1512,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "response",
-   "community": 2,
+   "community": 1,
    "norm_label": "response"
   },
   {
@@ -1522,7 +1522,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "roadmap",
-   "community": 90,
+   "community": 14,
    "norm_label": "roadmap.md"
   },
   {
@@ -1532,7 +1532,7 @@
    "source_location": "L282",
    "_origin": "ast",
    "id": "roadmap_completato_storico_per_orientamento",
-   "community": 90,
+   "community": 14,
    "norm_label": "completato (storico, per orientamento)"
   },
   {
@@ -1542,7 +1542,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "roadmap_contesto_in_10_righe",
-   "community": 90,
+   "community": 14,
    "norm_label": "contesto in 10 righe"
   },
   {
@@ -1552,7 +1552,7 @@
    "source_location": "L264",
    "_origin": "ast",
    "id": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
-   "community": 90,
+   "community": 14,
    "norm_label": "dopo che le macroaree saranno popolate (non prima)"
   },
   {
@@ -1562,7 +1562,7 @@
    "source_location": "L66",
    "_origin": "ast",
    "id": "roadmap_implementazione_1_cattura_da_ovunque_completata_vedi_completato",
-   "community": 90,
+   "community": 14,
    "norm_label": "✅ implementazione 1 — cattura da ovunque — completata (vedi completato)"
   },
   {
@@ -1572,7 +1572,7 @@
    "source_location": "L112",
    "_origin": "ast",
    "id": "roadmap_implementazione_2_server_mcp_completata_vedi_completato",
-   "community": 90,
+   "community": 14,
    "norm_label": "✅ implementazione 2 — server mcp — completata (vedi completato)"
   },
   {
@@ -1582,7 +1582,7 @@
    "source_location": "L148",
    "_origin": "ast",
    "id": "roadmap_implementazione_3_oracle_eseguibile_completata_vedi_completato",
-   "community": 90,
+   "community": 14,
    "norm_label": "✅ implementazione 3 — oracle eseguibile — completata (vedi completato)"
   },
   {
@@ -1592,7 +1592,7 @@
    "source_location": "L189",
    "_origin": "ast",
    "id": "roadmap_implementazione_4_guardie_di_qualita_completata_vedi_completato",
-   "community": 90,
+   "community": 14,
    "norm_label": "✅ implementazione 4 — guardie di qualita — completata (vedi completato)"
   },
   {
@@ -1602,7 +1602,7 @@
    "source_location": "L206",
    "_origin": "ast",
    "id": "roadmap_infrastruttura_2_0_completata_2026_07_01_vedi_completato_le_spec_restano_come_riferimento",
-   "community": 90,
+   "community": 14,
    "norm_label": "✅ infrastruttura 2.0 — completata 2026-07-01 (vedi completato; le spec restano come riferimento)"
   },
   {
@@ -1612,7 +1612,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "roadmap_priorità_0_repo_privato_azione_umana_2_minuti",
-   "community": 90,
+   "community": 14,
    "norm_label": "priorita 0 — repo privato (azione umana, 2 minuti) ⚠️"
   },
   {
@@ -1622,7 +1622,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "roadmap_regole_vincolanti_violarle_rompe_il_sistema",
-   "community": 90,
+   "community": 14,
    "norm_label": "regole vincolanti (violarle rompe il sistema)"
   },
   {
@@ -1632,17 +1632,17 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "roadmap_roadmap_guida_alle_prossime_implementazioni",
-   "community": 90,
+   "community": 14,
    "norm_label": "roadmap — guida alle prossime implementazioni"
   },
   {
    "label": "Storico precedente",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L312",
+   "source_location": "L316",
    "_origin": "ast",
    "id": "roadmap_storico_precedente",
-   "community": 90,
+   "community": 14,
    "norm_label": "storico precedente"
   },
   {
@@ -1652,7 +1652,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_app",
-   "community": 2,
+   "community": 1,
    "norm_label": "app.py"
   },
   {
@@ -1662,7 +1662,7 @@
    "source_location": "L244",
    "_origin": "ast",
    "id": "server_app_admin_update",
-   "community": 2,
+   "community": 1,
    "norm_label": "admin_update()"
   },
   {
@@ -1672,7 +1672,7 @@
    "source_location": "L163",
    "_origin": "ast",
    "id": "server_app_affected",
-   "community": 2,
+   "community": 1,
    "norm_label": "affected()"
   },
   {
@@ -1682,7 +1682,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "server_app_areas",
-   "community": 2,
+   "community": 1,
    "norm_label": "areas()"
   },
   {
@@ -1692,7 +1692,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "server_app_auth",
-   "community": 2,
+   "community": 1,
    "norm_label": "auth()"
   },
   {
@@ -1702,7 +1702,7 @@
    "source_location": "L198",
    "_origin": "ast",
    "id": "server_app_capture",
-   "community": 2,
+   "community": 1,
    "norm_label": "capture()"
   },
   {
@@ -1712,7 +1712,7 @@
    "source_location": "L191",
    "_origin": "ast",
    "id": "server_app_capturereq",
-   "community": 2,
+   "community": 1,
    "norm_label": "capturereq"
   },
   {
@@ -1722,7 +1722,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "server_app_err",
-   "community": 2,
+   "community": 1,
    "norm_label": "_err()"
   },
   {
@@ -1732,7 +1732,7 @@
    "source_location": "L156",
    "_origin": "ast",
    "id": "server_app_explain",
-   "community": 2,
+   "community": 1,
    "norm_label": "explain()"
   },
   {
@@ -1742,7 +1742,7 @@
    "source_location": "L224",
    "_origin": "ast",
    "id": "server_app_feedback",
-   "community": 2,
+   "community": 1,
    "norm_label": "feedback"
   },
   {
@@ -1752,7 +1752,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "server_app_file",
-   "community": 2,
+   "community": 1,
    "norm_label": "_file()"
   },
   {
@@ -1762,7 +1762,7 @@
    "source_location": "L103",
    "_origin": "ast",
    "id": "server_app_graph",
-   "community": 2,
+   "community": 1,
    "norm_label": "graph()"
   },
   {
@@ -1772,7 +1772,7 @@
    "source_location": "L112",
    "_origin": "ast",
    "id": "server_app_graph_compact",
-   "community": 2,
+   "community": 1,
    "norm_label": "graph_compact()"
   },
   {
@@ -1782,7 +1782,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "server_app_health",
-   "community": 2,
+   "community": 1,
    "norm_label": "health()"
   },
   {
@@ -1792,7 +1792,7 @@
    "source_location": "L216",
    "_origin": "ast",
    "id": "server_app_inbox_done",
-   "community": 2,
+   "community": 1,
    "norm_label": "inbox_done()"
   },
   {
@@ -1802,7 +1802,7 @@
    "source_location": "L205",
    "_origin": "ast",
    "id": "server_app_inbox_list",
-   "community": 2,
+   "community": 1,
    "norm_label": "inbox_list()"
   },
   {
@@ -1812,7 +1812,7 @@
    "source_location": "L209",
    "_origin": "ast",
    "id": "server_app_inbox_read",
-   "community": 2,
+   "community": 1,
    "norm_label": "inbox_read()"
   },
   {
@@ -1822,7 +1822,7 @@
    "source_location": "L120",
    "_origin": "ast",
    "id": "server_app_lessons",
-   "community": 2,
+   "community": 1,
    "norm_label": "lessons()"
   },
   {
@@ -1832,7 +1832,7 @@
    "source_location": "L95",
    "_origin": "ast",
    "id": "server_app_model",
-   "community": 2,
+   "community": 1,
    "norm_label": "model()"
   },
   {
@@ -1842,7 +1842,7 @@
    "source_location": "L176",
    "_origin": "ast",
    "id": "server_app_oracle",
-   "community": 2,
+   "community": 1,
    "norm_label": "oracle()"
   },
   {
@@ -1852,7 +1852,7 @@
    "source_location": "L183",
    "_origin": "ast",
    "id": "server_app_oracle_hexagram",
-   "community": 2,
+   "community": 1,
    "norm_label": "oracle_hexagram()"
   },
   {
@@ -1862,7 +1862,7 @@
    "source_location": "L171",
    "_origin": "ast",
    "id": "server_app_oraclereq",
-   "community": 2,
+   "community": 1,
    "norm_label": "oraclereq"
   },
   {
@@ -1872,7 +1872,7 @@
    "source_location": "L149",
    "_origin": "ast",
    "id": "server_app_path",
-   "community": 2,
+   "community": 1,
    "norm_label": "path()"
   },
   {
@@ -1882,7 +1882,7 @@
    "source_location": "L138",
    "_origin": "ast",
    "id": "server_app_query",
-   "community": 2,
+   "community": 1,
    "norm_label": "query()"
   },
   {
@@ -1892,7 +1892,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "server_app_rate_limiter",
-   "community": 2,
+   "community": 1,
    "norm_label": "rate_limiter()"
   },
   {
@@ -1902,7 +1902,7 @@
    "source_location": "L99",
    "_origin": "ast",
    "id": "server_app_reasoner",
-   "community": 2,
+   "community": 1,
    "norm_label": "reasoner()"
   },
   {
@@ -1912,7 +1912,7 @@
    "source_location": "L134",
    "_origin": "ast",
    "id": "server_app_route",
-   "community": 2,
+   "community": 1,
    "norm_label": "route()"
   },
   {
@@ -1922,7 +1922,7 @@
    "source_location": "L128",
    "_origin": "ast",
    "id": "server_app_view_compact",
-   "community": 2,
+   "community": 1,
    "norm_label": "view_compact()"
   },
   {
@@ -1932,7 +1932,7 @@
    "source_location": "L124",
    "_origin": "ast",
    "id": "server_app_view_extended",
-   "community": 2,
+   "community": 1,
    "norm_label": "view_extended()"
   },
   {
@@ -1974,7 +1974,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap",
-   "community": 83,
+   "community": 102,
    "norm_label": "bootstrap.sh"
   },
   {
@@ -1988,7 +1988,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap_path",
-   "community": 83,
+   "community": 102,
    "norm_label": "path"
   },
   {
@@ -2002,7 +2002,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap_sh__entry",
-   "community": 83,
+   "community": 102,
    "norm_label": "bootstrap.sh script"
   },
   {
@@ -2012,7 +2012,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_brain_core",
-   "community": 49,
+   "community": 2,
    "norm_label": "brain_core.py"
   },
   {
@@ -2022,7 +2022,7 @@
    "source_location": "L86",
    "_origin": "ast",
    "id": "server_brain_core_area_graph_path",
-   "community": 49,
+   "community": 2,
    "norm_label": "area_graph_path()"
   },
   {
@@ -2032,7 +2032,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "server_brain_core_brainerror",
-   "community": 49,
+   "community": 2,
    "norm_label": "brainerror"
   },
   {
@@ -2042,7 +2042,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "server_brain_core_brainerror_init",
-   "community": 49,
+   "community": 2,
    "norm_label": ".__init__()"
   },
   {
@@ -2052,7 +2052,7 @@
    "source_location": "L164",
    "_origin": "ast",
    "id": "server_brain_core_capture",
-   "community": 49,
+   "community": 2,
    "norm_label": "capture()"
   },
   {
@@ -2062,7 +2062,7 @@
    "source_location": "L108",
    "_origin": "ast",
    "id": "server_brain_core_graph_query",
-   "community": 49,
+   "community": 2,
    "norm_label": "graph_query()"
   },
   {
@@ -2072,7 +2072,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "server_brain_core_graphify_available",
-   "community": 49,
+   "community": 2,
    "norm_label": "graphify_available()"
   },
   {
@@ -2082,7 +2082,7 @@
    "source_location": "L241",
    "_origin": "ast",
    "id": "server_brain_core_health_info",
-   "community": 49,
+   "community": 2,
    "norm_label": "health_info()"
   },
   {
@@ -2092,7 +2092,7 @@
    "source_location": "L209",
    "_origin": "ast",
    "id": "server_brain_core_inbox_done",
-   "community": 49,
+   "community": 2,
    "norm_label": "inbox_done()"
   },
   {
@@ -2102,7 +2102,7 @@
    "source_location": "L187",
    "_origin": "ast",
    "id": "server_brain_core_inbox_list",
-   "community": 49,
+   "community": 2,
    "norm_label": "inbox_list()"
   },
   {
@@ -2112,7 +2112,7 @@
    "source_location": "L202",
    "_origin": "ast",
    "id": "server_brain_core_inbox_read",
-   "community": 49,
+   "community": 2,
    "norm_label": "inbox_read()"
   },
   {
@@ -2122,7 +2122,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "server_brain_core_lessons_text",
-   "community": 49,
+   "community": 2,
    "norm_label": "lessons_text()"
   },
   {
@@ -2132,7 +2132,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "server_brain_core_load_router",
-   "community": 49,
+   "community": 2,
    "norm_label": "load_router()"
   },
   {
@@ -2142,7 +2142,7 @@
    "source_location": "L124",
    "_origin": "ast",
    "id": "server_brain_core_oracle_cast",
-   "community": 49,
+   "community": 2,
    "norm_label": "oracle_cast()"
   },
   {
@@ -2152,7 +2152,7 @@
    "source_location": "L137",
    "_origin": "ast",
    "id": "server_brain_core_oracle_hexagram",
-   "community": 49,
+   "community": 2,
    "norm_label": "oracle_hexagram()"
   },
   {
@@ -2162,7 +2162,7 @@
    "source_location": "L109",
    "_origin": "ast",
    "id": "server_brain_core_rationale_109",
-   "community": 49,
+   "community": 2,
    "norm_label": "ritorna (output, area_usata). area=none -> router; 'full' -> grafo completo."
   },
   {
@@ -2172,7 +2172,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "server_brain_core_rationale_96",
-   "community": 49,
+   "community": 2,
    "norm_label": "routing deterministico: match keyword per area. nessun match -> grafo completo."
   },
   {
@@ -2182,7 +2182,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "server_brain_core_read_repo_json",
-   "community": 49,
+   "community": 2,
    "norm_label": "read_repo_json()"
   },
   {
@@ -2192,7 +2192,7 @@
    "source_location": "L53",
    "_origin": "ast",
    "id": "server_brain_core_read_repo_text",
-   "community": 49,
+   "community": 2,
    "norm_label": "read_repo_text()"
   },
   {
@@ -2202,7 +2202,7 @@
    "source_location": "L95",
    "_origin": "ast",
    "id": "server_brain_core_route_question",
-   "community": 49,
+   "community": 2,
    "norm_label": "route_question()"
   },
   {
@@ -2212,7 +2212,7 @@
    "source_location": "L39",
    "_origin": "ast",
    "id": "server_brain_core_run_graphify",
-   "community": 49,
+   "community": 2,
    "norm_label": "run_graphify()"
   },
   {
@@ -2222,7 +2222,7 @@
    "source_location": "L150",
    "_origin": "ast",
    "id": "server_brain_core_safe_inbox_file",
-   "community": 49,
+   "community": 2,
    "norm_label": "_safe_inbox_file()"
   },
   {
@@ -2232,7 +2232,7 @@
    "source_location": "L220",
    "_origin": "ast",
    "id": "server_brain_core_save_feedback",
-   "community": 49,
+   "community": 2,
    "norm_label": "save_feedback()"
   },
   {
@@ -2242,7 +2242,7 @@
    "source_location": "L159",
    "_origin": "ast",
    "id": "server_brain_core_slug",
-   "community": 49,
+   "community": 2,
    "norm_label": "_slug()"
   },
   {
@@ -2252,7 +2252,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "server_brain_core_valid_areas",
-   "community": 49,
+   "community": 2,
    "norm_label": "valid_areas()"
   },
   {
@@ -2262,7 +2262,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_client_example",
-   "community": 84,
+   "community": 103,
    "norm_label": "client_example.py"
   },
   {
@@ -2272,7 +2272,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "server_client_example_call",
-   "community": 84,
+   "community": 103,
    "norm_label": "call()"
   },
   {
@@ -2282,7 +2282,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "server_client_example_show",
-   "community": 84,
+   "community": 103,
    "norm_label": "show()"
   },
   {
@@ -2292,7 +2292,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_mcp_server",
-   "community": 94,
+   "community": 5,
    "norm_label": "mcp_server.py"
   },
   {
@@ -2302,7 +2302,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "server_mcp_server_brain_explain",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_explain()"
   },
   {
@@ -2312,7 +2312,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "server_mcp_server_brain_feedback",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_feedback()"
   },
   {
@@ -2322,7 +2322,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "server_mcp_server_brain_lessons",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_lessons()"
   },
   {
@@ -2332,7 +2332,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "server_mcp_server_brain_model",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_model()"
   },
   {
@@ -2342,7 +2342,7 @@
    "source_location": "L74",
    "_origin": "ast",
    "id": "server_mcp_server_brain_oracle",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_oracle()"
   },
   {
@@ -2352,7 +2352,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "server_mcp_server_brain_path",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_path()"
   },
   {
@@ -2362,7 +2362,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "server_mcp_server_brain_query",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_query()"
   },
   {
@@ -2372,7 +2372,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "server_mcp_server_brain_reasoner",
-   "community": 94,
+   "community": 5,
    "norm_label": "brain_reasoner()"
   },
   {
@@ -2382,7 +2382,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_35",
-   "community": 94,
+   "community": 5,
    "norm_label": "interroga il knowledge graph del brain (bfs scopato). area: vuota = router     a"
   },
   {
@@ -2392,7 +2392,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_45",
-   "community": 94,
+   "community": 5,
    "norm_label": "spiega un nodo del grafo e i suoi collegamenti (graphify explain)."
   },
   {
@@ -2402,7 +2402,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_51",
-   "community": 94,
+   "community": 5,
    "norm_label": "percorso piu breve tra due nodi del grafo (graphify path)."
   },
   {
@@ -2412,7 +2412,7 @@
    "source_location": "L57",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_57",
-   "community": 94,
+   "community": 5,
    "norm_label": "il modello di pensiero aion tipizzato (engine/aion.model.json)."
   },
   {
@@ -2422,7 +2422,7 @@
    "source_location": "L63",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_63",
-   "community": 94,
+   "community": 5,
    "norm_label": "il protocollo di ragionamento aion a 9 passi (engine/aion-reasoner.md)."
   },
   {
@@ -2432,7 +2432,7 @@
    "source_location": "L69",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_69",
-   "community": 94,
+   "community": 5,
    "norm_label": "le lezioni apprese dal brain (lessons.md, feedback loop)."
   },
   {
@@ -2442,7 +2442,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_75",
-   "community": 94,
+   "community": 5,
    "norm_label": "lancio i ching (aion_oracle eseguibile). seed >= 0 per un lancio riproducibile."
   },
   {
@@ -2452,7 +2452,7 @@
    "source_location": "L84",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_84",
-   "community": 94,
+   "community": 5,
    "norm_label": "registra l'esito di una risposta (useful|dead_end|corrected): il brain impara."
   },
   {
@@ -2462,7 +2462,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "server_mcp_server_safe",
-   "community": 94,
+   "community": 5,
    "norm_label": "_safe()"
   },
   {
@@ -2472,7 +2472,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_readme",
-   "community": 73,
+   "community": 19,
    "norm_label": "readme.md"
   },
   {
@@ -2482,7 +2482,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "server_readme_componenti",
-   "community": 73,
+   "community": 19,
    "norm_label": "componenti"
   },
   {
@@ -2492,7 +2492,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "server_readme_custom_gpt_chatgpt_actions",
-   "community": 73,
+   "community": 19,
    "norm_label": "custom gpt (chatgpt actions)"
   },
   {
@@ -2502,7 +2502,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "server_readme_deploy",
-   "community": 73,
+   "community": 19,
    "norm_label": "deploy"
   },
   {
@@ -2512,7 +2512,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "server_readme_dipendenza_graphify_pacchetto_python",
-   "community": 73,
+   "community": 19,
    "norm_label": "dipendenza: graphify (pacchetto python)"
   },
   {
@@ -2522,7 +2522,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "server_readme_endpoint_v1_alias_non_versionati_mantenuti",
-   "community": 73,
+   "community": 19,
    "norm_label": "endpoint (v1 — alias non versionati mantenuti)"
   },
   {
@@ -2532,7 +2532,7 @@
    "source_location": "L63",
    "_origin": "ast",
    "id": "server_readme_notifiche_di_guasto_backup",
-   "community": 73,
+   "community": 19,
    "norm_label": "notifiche di guasto + backup"
   },
   {
@@ -2542,7 +2542,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_readme_server_esposizione_del_second_brain_via_fastapi",
-   "community": 73,
+   "community": 19,
    "norm_label": "server/ — esposizione del second brain via fastapi"
   },
   {
@@ -2552,7 +2552,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "server_readme_server_mcp_assistenti_ai_locali",
-   "community": 73,
+   "community": 19,
    "norm_label": "server mcp (assistenti ai locali)"
   },
   {
@@ -2562,7 +2562,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "server_readme_sicurezza_attenzioni_del_caso",
-   "community": 73,
+   "community": 19,
    "norm_label": "sicurezza (attenzioni del caso)"
   },
   {
@@ -2576,7 +2576,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain",
-   "community": 85,
+   "community": 104,
    "norm_label": "update_brain.sh"
   },
   {
@@ -2590,7 +2590,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain_path",
-   "community": 85,
+   "community": 104,
    "norm_label": "path"
   },
   {
@@ -2604,7 +2604,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain_sh__entry",
-   "community": 85,
+   "community": 104,
    "norm_label": "update_brain.sh script"
   },
   {
@@ -2614,7 +2614,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tests_test_api",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_api.py"
   },
   {
@@ -2624,7 +2624,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tests_test_api_test_alias_non_versionati",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_alias_non_versionati()"
   },
   {
@@ -2634,7 +2634,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tests_test_api_test_auth_richiesta_e_constant_time_ok",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_auth_richiesta_e_constant_time_ok()"
   },
   {
@@ -2644,7 +2644,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "tests_test_api_test_capture_vuoto_e_troppo_grande",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_capture_vuoto_e_troppo_grande()"
   },
   {
@@ -2654,7 +2654,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tests_test_api_test_health_pubblico_e_ricco",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_health_pubblico_e_ricco()"
   },
   {
@@ -2664,7 +2664,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_flusso_completo",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_inbox_flusso_completo()"
   },
   {
@@ -2674,7 +2674,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_inbox_path_traversal_respinto()"
   },
   {
@@ -2684,7 +2684,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_deterministico_con_seed",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_oracle_deterministico_con_seed()"
   },
   {
@@ -2694,7 +2694,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_hexagram_lookup_re_wen",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_oracle_hexagram_lookup_re_wen()"
   },
   {
@@ -2704,7 +2704,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tests_test_api_test_query_area_invalida",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_query_area_invalida()"
   },
   {
@@ -2714,7 +2714,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tests_test_api_test_query_degrada_o_funziona",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_query_degrada_o_funziona()"
   },
   {
@@ -2724,7 +2724,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "tests_test_api_test_route_deterministico",
-   "community": 2,
+   "community": 1,
    "norm_label": "test_route_deterministico()"
   },
   {
@@ -2734,7 +2734,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_altair_compact_view",
-   "community": 74,
+   "community": 87,
    "norm_label": "altair_compact_view.py"
   },
   {
@@ -2744,7 +2744,7 @@
    "source_location": "L97",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_edge",
-   "community": 74,
+   "community": 87,
    "norm_label": "add_edge()"
   },
   {
@@ -2754,7 +2754,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_node",
-   "community": 74,
+   "community": 87,
    "norm_label": "add_node()"
   },
   {
@@ -2764,7 +2764,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tools_altair_compact_view_collapse",
-   "community": 74,
+   "community": 87,
    "norm_label": "collapse()"
   },
   {
@@ -2774,7 +2774,7 @@
    "source_location": "L52",
    "_origin": "ast",
    "id": "tools_altair_compact_view_label_for",
-   "community": 74,
+   "community": 87,
    "norm_label": "label_for()"
   },
   {
@@ -2784,7 +2784,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tools_altair_compact_view_layer_for",
-   "community": 74,
+   "community": 87,
    "norm_label": "layer_for()"
   },
   {
@@ -2794,7 +2794,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "tools_altair_compact_view_rationale_28",
-   "community": 74,
+   "community": 87,
    "norm_label": "mappa un nodo originale al suo nodo compatto."
   },
   {
@@ -2844,7 +2844,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model",
-   "community": 86,
+   "community": 105,
    "norm_label": "gen_wiki_from_model.py"
   },
   {
@@ -2854,7 +2854,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model_rationale_26",
-   "community": 86,
+   "community": 105,
    "norm_label": "scrive una pagina: corpo + lista 'collegati:' (niente sotto-heading -> niente no"
   },
   {
@@ -2864,7 +2864,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model_w",
-   "community": 86,
+   "community": 105,
    "norm_label": "w()"
   },
   {
@@ -2894,7 +2894,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_oracle_cast",
-   "community": 49,
+   "community": 2,
    "norm_label": "oracle_cast.py"
   },
   {
@@ -2904,7 +2904,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "tools_oracle_cast_cast_reading",
-   "community": 49,
+   "community": 2,
    "norm_label": "cast_reading()"
   },
   {
@@ -2914,7 +2914,7 @@
    "source_location": "L52",
    "_origin": "ast",
    "id": "tools_oracle_cast_focus_line",
-   "community": 49,
+   "community": 2,
    "norm_label": "_focus_line()"
   },
   {
@@ -2924,7 +2924,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tools_oracle_cast_get_hexagram",
-   "community": 49,
+   "community": 2,
    "norm_label": "get_hexagram()"
   },
   {
@@ -2934,7 +2934,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "tools_oracle_cast_load",
-   "community": 49,
+   "community": 2,
    "norm_label": "_load()"
   },
   {
@@ -2944,7 +2944,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tools_oracle_cast_mutate",
-   "community": 49,
+   "community": 2,
    "norm_label": "_mutate()"
   },
   {
@@ -2954,7 +2954,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tools_oracle_cast_public",
-   "community": 49,
+   "community": 2,
    "norm_label": "_public()"
   },
   {
@@ -2964,7 +2964,7 @@
    "source_location": "L53",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_53",
-   "community": 49,
+   "community": 2,
    "norm_label": "applica le regole di selezione della linea da interpretare. ritorna (posizione,"
   },
   {
@@ -2974,7 +2974,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tools_oracle_cast_to_binary",
-   "community": 49,
+   "community": 2,
    "norm_label": "_to_binary()"
   },
   {
@@ -2984,7 +2984,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_readme",
-   "community": 81,
+   "community": 99,
    "norm_label": "readme.md"
   },
   {
@@ -2994,7 +2994,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "tools_readme_altair_compact_view_py_vista_compatta_strutturale",
-   "community": 81,
+   "community": 99,
    "norm_label": "altair_compact_view.py — vista compatta strutturale"
   },
   {
@@ -3004,7 +3004,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_readme_le_due_viste",
-   "community": 81,
+   "community": 99,
    "norm_label": "le due viste"
   },
   {
@@ -3014,7 +3014,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_readme_tools_feature_di_supporto_ad_altair_brain",
-   "community": 81,
+   "community": 99,
    "norm_label": "tools/ — feature di supporto ad altair-brain"
   },
   {
@@ -3024,7 +3024,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_rebuild_all",
-   "community": 113,
+   "community": 114,
    "norm_label": "rebuild_all.py"
   },
   {
@@ -3034,7 +3034,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_validate_model",
-   "community": 89,
+   "community": 113,
    "norm_label": "validate_model.py"
   },
   {
@@ -3044,7 +3044,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "tools_validate_model_main",
-   "community": 89,
+   "community": 113,
    "norm_label": "main()"
   }
  ],
@@ -4623,7 +4623,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L312",
+   "source_location": "L316",
    "weight": 1.0,
    "source": "roadmap_completato_storico_per_orientamento",
    "target": "roadmap_storico_precedente",

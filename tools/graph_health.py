@@ -49,16 +49,28 @@ def components_of(prefix):
             stack.extend((adj[x] & ids) - seen)
     return comps, len(ids)
 
-for prefix in ("wiki/aion/", "raw/aion/"):
+# coesione della wiki di OGNI area (lo strato curato deve essere un unico grafo).
+# Le note grezze in raw/ possono essere scollegate (sono appunti): non si richiede coesione.
+try:
+    with open(os.path.join(ROOT, "areas.json"), encoding="utf-8") as f:
+        area_ids = [a["id"] for a in json.load(f)["areas"]]
+except Exception:
+    area_ids = ["aion"]
+for area in area_ids:
+    prefix = f"wiki/{area}/"
     comps, n = components_of(prefix)
     if n and comps != 1:
         problems.append(f"{prefix}: {comps} componenti connessi (atteso 1) su {n} nodi")
+# raw/aion e interconnesso dai footer: resta un invariante noto
+comps, n = components_of("raw/aion/")
+if n and comps != 1:
+    problems.append(f"raw/aion/: {comps} componenti connessi (atteso 1) su {n} nodi")
 
+# orfani ammessi solo NON negli strati curati (wiki/ ed engine/)
 orphans = [i for i in adj if not adj[i]
-           and sf[i].startswith(("raw/", "wiki/", "engine/"))
-           and not sf[i].startswith("raw/_inbox")]
+           and sf[i].startswith(("wiki/", "engine/"))]
 if orphans:
-    problems.append(f"nodi isolati (grado 0): {len(orphans)} — es. {orphans[:5]}")
+    problems.append(f"nodi isolati (grado 0) in wiki/ o engine/: {len(orphans)} — es. {orphans[:5]}")
 
 # anti-regressione vs commit precedente
 prev_ref = os.environ.get("ALTAIR_PREV_REF", "HEAD~1")

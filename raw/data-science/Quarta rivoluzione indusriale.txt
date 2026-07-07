@@ -1,0 +1,108 @@
+La nuova frontiera è il cloud computing. Storia del cloud. Permette alle aziende di ocncentrarsi sul servizio offerto piuttosto che sull'infrastruttura locale. può essere personalizzabile e utilizzare solo la potenza computazionale che serve.
+
+-il cloud computing è on demand (l'utente può richiedere e attivare autonomamente i servizi)
+
+- ha Accessibilità ( basta un dispositivo connesso ad internet per usufruire dei servizi
+
+- E' scalabile ( si possono aumentare o diminuire le risorse richieste a comando )
+
+- Condivisibile (le risorse possono essere condivise fra gli utenti)
+
+- Misurabilità (monitorare le risorse effettivamente utilizzate)
+
+- Resilienza (c'è ridondanza e protezione dei dati ) 
+
+- Ubiquità (raggiungibile da qualsiasi luogo e dispositivo)
+
+- Sicurezza ( crittografia, accesso su ruoli, sicurezza operativa)
+
+-Aggiornato (accesso immediato alle ultime tecnologie) 
+
+
+i 4 principali modelli di cloude sono 4
+
+- Privato ( offre servizi ad un unico soggetto o azienda)
+
+ha risors dedicate, pieno controllo, alta perosnalizzazione, costi più alti.
+
+- Pubblico (infrastruttura condivisa come azure google ecc) 
+
+Scalabilità, costi a consumo, nessuna manutenzione e specialisti necessari, minor controllo.
+
+- ibrido (combina elementi di pubblico e privato)
+
+Flessibilità, controllo e scalabilità, ottimizzazione dei costi ottimizzando parte pubblica e privata, maggiore complessita nella progettazione e applicaizone).
+
+-community (risorse hard e soft condivise con enti di tipo simile. )
+
+condivisione risorse, riduzione dei costi, conformità a standar specifici, governance condivisa.
+Ad esmepio: gruppo di università che condivide risorse sui progetti di ricerca.
+
+tipi di servizio:
+
+- IaaS ( provider offre accesso a tutte le risorse)
+
+Offre elaborazione, memoria, storage e rete. 
+
+indicata per sviluppatori.
+
+gestisce tutti gli aspetti dell'impianto it di solito virtualizzato. 
+
+- PaaS (accesso a piattaforme di sviluppo ed esecuzione).
+
+server web, DMBS, load balancer,firewall, proxy ecc.
+
+- SaaS (accesso a software applicativi all'utente finale)
+
+L'utente non ha il controllo ma attravers l'nterfaccia web o un app ha accesso alle funzionalità messe a disposizione.
+
+Documenti, fogli di clacolo, CRM, ecc..
+
+BI (business intelligence)
+
+insieme di processi, tecnologie e strumenti per prendere decisione basate sui dati.
+
+acquisizione -> data cleaning e trasformation ->memorizzazione 
+
+poi interviene l'analytics 
+
+reportistica -> visualizzazione -> analisi statistiche e predittive. 
+
+- tecniche: 
+
+data mining: analizzare grossi dataset per scoprire patterne e anomalie. 
+
+tex analytics: analzizare testi non strutturati, feedback email ecc.. offerte e campagne a singoli clienti o gruppi.
+
+data visualization:
+
+predictive modeling ( machine learning):
+
+
+- strumenti:
+ piattaforme di BI ( tabloo, powerBI ecc),
+
+ data warehousing (biquery azue synapisis eccetera), 
+
+modellazione predittiva e prescrittiva( python ). 
+per l'implementazione si utiluzzano tecnihce statistiche, machine learning. 
+
+strumenti di elaborazione del lnguaggio naturale (NLP): analizzano i testi non strutturati in linguaggio naturale per integrare informazioni.
+
+BI workflow e implementazione:
+
+1.definire gli obiettivi di business molto dettagliata, definire KPI (key performance indicators).. metriche da monitorare.
+
+
+2.identificazione delle fonti più rilevanti (log, database, social eccetera.
+
+3. Data collection e integration:raccolta ati e uniformazione dei dati (pulendoli dai rumori o errori)
+
+4. Data analysis: data mining e analisi statistica per individuare trend comuni, pattern, rishci e possibilità. 
+
+5. reporting e visualization (tabloo powerBI ecc..), dashboard interattive insomma. 
+
+
+
+introduzione a blockchain, da integrare negli appunti.mettere anchd esempio filiera alimentare che non può essere alterata. confronto Client-Server e blockchain. concetto di democratizzazione dei dati.
+Concetto di smart contracts. esempio per il sistema di voto e contratti digitali, sistemi di commercio ecc..

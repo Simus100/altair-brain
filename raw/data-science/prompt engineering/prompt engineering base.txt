@@ -1,0 +1,85 @@
+Prompt Engineering
+
+
+Si è parlato per un periodo del prompt engineer  ma poi si è capito che le competenze di dominio sono importanti e per interagire co questi sistemi e trarre da loro il meglio occorre un professionista che ha competenze specifiche dell'argomento. 
+
+Quindi il prompt engineering è una skill e non una professione/mestiere. 
+
+IL prompt è l'input che andiamo a dare ad un llm (modello linguistico) ovvero un modello in grado di leggere un testo naturale.
+
+Formulazione di base di un prompt:
+
+1. Chiarezza. 
+
+2. Dettagli.
+
+3. Contesto.
+
+4. esempi. 
+
+
+Nei modelli multimodali la tipologia di prompt può essere di vario tipo:
+
+1. Testo.
+
+2. Visivo.
+
+3. Audio.
+
+4. Misto. 
+
+
+Tipologie di task:
+
+- Completamento.
+
+- Descrittivo.
+
+- Classificazione.
+
+- Traduzione.
+
+- Continuazione.
+
+- Altro.
+
+Una volta definiti gli elementi precedenti è opportuno selezionare la corretta tipologia le prompt da utilizzare:
+
+- Scelta dell'obiettivo
+
+- Specificità del prompt
+
+- Qual tipologia di input
+
+- Quale tipologia di output
+
+- Non fermarsi allo starter prompt ma migliorare sempre ogni iterazione
+
+
+Il modello non legge nella mente dell'utilizzatore e per ottenere un output di qualità occorre spiegare bene le cose. Meno il modello deve speculare e più sarà preciso. 
+
+
+FORMULAZIONE "RACE"
+
+- Role:
+
+- Action:
+
+- Context:
+
+- Execution o Expectations:
+
+Possiamo usare proprio quella forma con i due punti e successivamente la spiegazione.
+
+Per avere un risultato strutturato ma in formato di testo semplice è possibile chiedere un output formattato in "markdown" pronto per essere copiato in un editor markdown. Quest'ultimo avrà la classica formattazione con ## titolo principale,  # titolo, eccetera.
+
+
+ 
+
+
+
+
+
+
+
+

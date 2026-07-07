@@ -1,0 +1,476 @@
+SQL è un linguaggio per database relazionali inventato da ibm. 
+
+Le istruzioni sono poche e semplici:
+
+- Query: 
+ 
+ - SELECT (Mostra righe di una o più tabelle)
+
+- Maintenance:
+
+ - INSERT (Aggiunge una riga ad una tabella)
+
+ - UPDATE: (Modifica una riga di una tabella)
+
+ - DELETE (Cancella una riga da una tabella)
+
+- Definition: 
+
+ - CREATE (Crea uno schema o una tabella)
+
+ - DROP (Rimuove uno schema o una tabella)
+
+
+Tutte le query di lettura hanno clausole SELECT e FROM. 
+
+SELECT -> specifichiamo le colonne della tabella che ci sarà restituita
+
+From -> Specifichiamo quale tabella stiamo interrogando 
+
+* -> Tutte le colonne
+
+---
+
+Il comando più semplice è "SELECT * FROM <nome_tabella>"
+
+SELECT <nome colonna>, <nome colonna>, ... FROM <nome tabella>
+
+---
+
+SELEZIONE RIGHE:
+
+Le righe in una tabella sono identificate dai valori. Le categorie possono essere:
+
+ - Numerici : Valori positivi, Valori negativi, valori decimali
+
+(vengono inseriti normalmente)
+
+
+ - Non numerici : Parole singole, multiple e Single quotes
+
+(Vengono inseriti tra singole apici)
+
+
+ - Date: 'yyyy-mm-dd'
+
+(Vengono inserite in quel formato racchiuse tra apici)
+
+*All'interno di un testo se vogliamo usare apici si usano i doppi apici per distinguerli dal singolo
+
+---
+
+Per gli operatori di selezione va lea regola normale rispettando i formati e devono essere 
+
+<nome colonna> <operatore> <valore>
+
+
+Per fare una query condizionale si  usa il where.
+
+ in questa forma:
+
+SELECT <nome colonne>
+FORM <nome tabella>
+WHERE <nome colonna> <operatore> <valore>
+
+Questo visualizza tutti gli elementi per cui la condizione viene verificata.
+
+---
+
+ORDINAMENTO:
+
+Possiamo ordinare gli elementi della query usando una clausola ORDER BY e può essere inserita la parola chiave DESC se la vogliamo discendente. 
+
+In questa forma:
+
+SELECT <nome colonne>
+FROM <nome tabella>
+WHERE <nome colonna> <operatore> <valore>
+ORDER BY <nome colonna> DESC
+
+---
+
+ELIMINARE DUPLICATI:
+
+
+Per eliminare i duplicati si usa DISTINCT può essere usato solo una volta per query, viene manipolata la tabella visualizzata, non viene eliminato nulla dalla tabella originale
+
+In questa forma:
+
+SELECT DISTINCT <nome colonna>
+FROM <nome tabella>
+
+Restituisce un evento di attributi unici.. senza ripetere gli stessi elementi in molteplici occorrenze non distinte.
+
+
+---
+
+OPERATORE LIKE
+
+LIKE trova valori che matchano un pattern,
+il simbolo % significa 0 o + caratteri, 
+il simbolo _ significa 1 o più caratteri.
+
+
+se mettiamo il simbolo prima delle lettere significa finisce con..  viceversa il contrario:
+
+
+'Z%' -> inizia con Z
+'%Z' -> finisce zon Z
+'%Z%' -> contiene Z
+
+In questa forma:
+
+SELECT <nome colonna>, <nome colonna>
+FROM <nome tabella>
+WHERE <nome colonna> LIKE '<carattere>%'
+
+Filtrerà tutti i contenuti nella colonna con il like che INIZIA con quel carattere e eventualmente le relative colonne accessorie collegate nella tabella in riga. 
+
+ oppure:
+
+
+SELECT <nome colonna>, <nome colonna>
+FROM <nome tabella>
+WHERE <nome colonna> LIKE '%<lettera/e>__<lettera/e>%'
+
+
+Il % all'inizio e alla fine significa che la condizione viene inclusa in tutto iltesto e i __ significa che all'interno di questi gruppi di lettere ci devono essere la massimo due caratteri tra le due condizioni.
+
+
+---
+
+
+OPERATORE AND
+
+And combina due confronti  e si mette tra i due operatori di confronto, restituisce righe in cui entrambi gli operatori restituiscono true.
+
+In questa forma esempio:
+
+SELECT <nome colonne>
+FROM <nome tabella>
+WHERE <nome colonna> LIKE '<lettere>%'
+AND <nome colonna> <condizione> <'data'>
+
+Possiamo aggiungere l'operatore BETWEEN per visualizzare un range che include l'inizio e la fine. 
+
+Esempio:
+
+SELECT <colonne>
+FROM <tabella>
+WHERE <colonna> >= 55
+AND <colonna> <= 60
+ORDER BY <colonna>
+
+Diventa:
+
+SELECT <colonne>
+FROM <tabella>
+WHERE <colonna> BETWEEN 55 AND 60
+
+---
+
+
+OPERATORI OR E IN
+
+SELECT <colonna>, <colonna>
+FROM <tabella>
+WHERE <colonna> <condizione> <'valore'>
+OR <colonna> <condizione> <'valore'>
+OR <colonna> <condizione> <'valore'>
+ORDERBY <colonna>, <colonna>
+
+
+
+L'operatore IN rende una serie di OR più leggibili, ad esempio le istruzioni sopra diventano:
+
+
+SELECT <colonna>, <colonna>
+FROM <tabella>
+WHERE <colonna> IN ('valore', 'valore', 'valore')
+ORDER BY <colonna>, <colonna>
+
+---
+
+OPERATORE IS NULL
+
+Null significa valore nullo che è diverso da zero e blank. Null è non settato
+
+SELECT <colonna>, <colonna>
+FROM <tabella>
+WHERE <colonna> IS NULL
+
+*restituisce le righe con valori null.
+
+---
+
+
+OPERATORI ARITMETICI 
+
+Si possono specificare operatori aritmetici in SELECT, WHERE o ORDER BY. Le operazioni producono nuove colonne nella tabella restituita.
+
+
+Esempio:
+
+SELECT country, pop/area
+FROM countries
+WHERE pop/area > 2000
+ORDER BY pop/area DESC
+
+In questo caso viene crata una colonna derivata pop/area come definita nella formula. 
+
+Possiamo anche dare un alias alla nuova colonna usando AS nel seguente modo:
+
+SELECT country, pop/area AS density
+FROM countries
+WHERE pop/area > 2000
+ORDER BY pop/area DESC 
+
+---
+
+FUNZIONI STATISTICHE , GROUPBY E HAVING
+
+Queste funzioni accettano parametri
+
+COUNT() --> conta tutte le righe
+
+Es.  COUNT(*) --> conta tutte
+     COUNT(job) --> conta non null
+     COUNT(DISTINCT job) --> conta righe uniche
+     
+SUM() 
+MIN()
+MAX()
+AVG() Es. AVG(pop/area) 
+ecc..
+      
+
+Esempio:
+
+SELECT job, COUNT(*) AS total
+FROM persons
+WHERE gender = 'male'
+GROUP BY job
+HAVING total >= 200
+ORDER BY total DESC
+
+visualizzerà:
+
+job       | total
+
+developer | 400
+writer    | 200
+
+ecc..
+
+---
+
+JOIN
+
+
+Due tabelle possono essere combinate in una risultante.
+
+Viene fatto in tre step:
+
+ - Append delle righe di una tabella all'altra
+
+ - Selezione di righe che rispettano una condizione paticolare 
+
+ - Eliminazione colonna ridondante
+
+-Join implicito : più tabelle nella WHERE
+
+- Join esplicito : JOIN al posto di WHERE
+
+- E' possibile specificare <nome tabella>.<nome colonna>
+
+
+implicito: 
+
+SELECT person, name, person.job = jobs.job
+FROM personas, jobs
+WHERE persons.job = jobs.job
+
+equivalente esplicito:
+
+SELECT person, name, person.job, title
+FROM personas
+INNNER JOIN jobs ON personas.job = jobs.job
+
+---
+
+SINGLE VALUED SUBQURIES
+
+Producono una sola riga e una sola colonna, vengono scritte fra parentesi e sono usate in WHERE
+
+
+SELECT country, pop
+FROM countries
+WHERE pop > (
+    SELECT AVG (pop)
+    FROM countries
+)
+
+*Questa query produce i paesi e il loro numero di abitanti tra quelli con il valore sopra la media di tutti.
+
+
+MULTI VALUED SUBQUERIES
+
+
+
+SELECT job,title
+FROM jobs
+WHERE NOT job IN (
+    SELECT DISTINCT job
+    FROM persons
+    WHERE gender = 'female'
+)
+
+*Restituisce i lavori che non compaiono tra i lavori delle persone di sesso femminile.
+
+---
+
+INSERT
+
+Si usa per aggiungere valori ad una tabella. Per farlo si esplicita in INTO. Ad ogni elemento viene associato un valore in modo corrispettivo, primo al primo ecc..
+
+
+INSERT INTO countries 
+        (country, literacy, area, pop)
+VALUES ('Italy', 100, 301340, 59000000)
+
+---
+
+UPDATE
+
+Si possono aggiornare i valori con questo metodo.
+In SET si scrivono i nuovi valori (colonna=valore), 
+In WHERE si identificano quali righe aggiornare, se non presente si aggiornano tutte le righe!
+
+UPDATE countries 
+SET area = 24, language = 'italian', pop=1000
+WHERE country = 'Vatican City'
+
+*Stiamo aggiornando i valori di vatican city.
+
+---
+
+DELETE
+
+Si usa per cancellare elementi . 
+LA clausola FROM si riferisce alla tabella su cui operare.
+La clausola WHERE si usa per specificare quali righe.
+
+DELETE 
+FROM countries
+WHERE country = 'Yugoslavia'
+
+---
+
+CREARE TABELLE    
+
+Si usa lo statement CREATE TABLE nel seguente modo:
+
+CREATE TABLE writers (
+   name VARCHAR (20),
+   bdate DATE,
+   gender VATCHAR (10),
+   country VARCHAR (20),
+   sales NUMERIC (9,2)
+)
+   
+   *VARCHAR () significa il numero massimo di caratteri accettato.
+
+---
+
+CANCELLARE TABELLE
+
+Si usa per cancellare tabelle o anche interi database
+
+DROP TABLE users;
+DROP DATABASE my_database;
+
+---
+
+VINCOLI DI INTEGRITA'
+
+Possiamo usare dei vincoli per la tipologia dei valori.
+
+NOT NULL impedisce valori nulli
+DEFAULT imposta un valore predefinito.
+CHECK vincolo che il dato deve rispettare
+UNIQUE impedisce i valori duplicati. 
+CHECK E UNIQUE vanno specificati dopo l'insieme di definizione dei campi.
+
+CHAR  lunghezza fissa
+VARCHAR  lunghezza variabile con valore massimo specificato tra ()
+
+
+Per esempio:
+
+CREATE TABLE writers (
+   name CHAR (20) NOT NULL,  
+   bdate DATE,
+   gender VARCHAR (10) DEFAULT 'unknow',
+   country VARCHAR (20),
+   sales NUMERIC (9,2) DEFAULT 0
+   UNIQUE (name),
+   CHECK (sales >= 0)
+)
+
+
+
+PRIMARY KEY settare le chiavi primarie di una tabella
+FOREIGN KEY riferirsi a chiavi primarie di altre tabelle ma presenti anche in quella corrente
+
+AUTO_INCREMENT Esiste solo in MySQL e aggiunge 1 ad ogni riga aggiunta.
+
+
+CREATE TABLE writers (
+   id INT NOT NULL AUTO_INCREMENT,
+   name CHAR (20) NOT NULL,
+   bdate DATE,
+   gender VARCHAR (10) DEFAULT 'unknow',
+   country VARCHAR (20),
+   sales NUMERIC (9,2) DEFAULT 0,
+   UNIQUE (name),
+   CHECK (sales >= 0),
+   PRIMARY KEY(id),
+   FOREIGN KEY (country) REFERENCES countries(country)
+)
+
+---
+
+VINCOLI CHIAVE ESTERNA
+
+Quando le definiamo con references dobbiamo rispettare delle regole. 
+Bisogna specificare cosa succede alla tabella padre o figlia quando viene cancellato o modificato un valore in una di esse.
+
+all'aggiornamento (ON UPDATE) di una riga nella tabella padre o alla cancellazione (ON DELETE)  di una riga nella tabella padre:
+
+
+CREATE TABLE parent_Table (
+   parent_id INT PRIMARY KEY
+);
+
+CREATE TABLE child_table (
+   child_id INT PRIMARY KEY,
+   parent_id INT,
+   FOREING KEY (parent_id) REFERENCES parent_table(parent_iD)
+   ON DELETE [option]
+   ON UPDATE [option]
+);
+
+varie [option] : 
+
+NO ACTION (oppure RESTRICT): impedisce l'esecuzione dell'azione a cascata.
+
+SET DEFAULT : imposta il valore di default nelle colonne della tabella figlia
+
+SET NULL : imposta il valore NULL come valore nelle colonne della tabella figlia
+
+CASCADE : propaga le modifiche nella tabella figlia ( potrebbe causare perdita)
+
+
+
+
+

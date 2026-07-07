@@ -1,0 +1,143 @@
+- INTRO A BEANIE
+
+
+Beanie è un ODM (Object-Document Mapper) asincrono per MongoDB in Python.
+
+
+
+
+!pip install beanie motor
+
+
+- creo con compass il database chiamato "imdb_per_poveri" e una collection chiamata "movies". Copio anche l'indirizzo del server locale.
+
+- Non in un jupyter ma in un file app.py nella cartella mongodb-python:
+
+
+- importiamo le librerie che servono:
+
+
+from pydantic import BaseModel, Field
+
+from typing import List, Optional
+
+from beanie import Document
+
+
+import asyncio
+
+
+
+from motor.motor_asyncio import AsyncIOMotorClient
+
+from beanie import init_beanie
+
+
+
+- Costruiamo un catalogo semplice di films:
+
+
+
+class Genre(BaseModel):
+   name: str
+
+class Actor(BaseModel):
+   name: str
+
+class Movie(Document):
+   title: str
+   release_year: int
+   genres: List[Genre]
+   actors: List[Actor]
+   director: Director
+   summary: Optional[str]
+   rating: Optional[float]
+
+class Setting:
+   name = "movies"
+
+
+
+
+Connettiamo il database:
+
+
+CONNECTION_STRING = "mongodb://root:secret@localhost:50000/"
+
+
+
+client = AsyncIOMotorClient(CONNECTION_STRING)
+
+
+
+init_beanie(client.imbd_per_poveri, document:models=Movie])
+
+
+
+
+async def init():
+
+client = AsyncIOMotorClient(CONNECTION_STRING)
+
+database = client.imbd_per_poveri
+
+await init_beanie(database, document:models=Movie])
+
+
+
+inserimento degli elementi per esempio:
+
+   async def add_movie():
+
+      inception = Movie(
+         title= "Inception",
+         release_year= 2010
+         genres= [ Genre(name="sci-fi"), Genre(name="Thriller")],
+         actors= [Actor(name="Leonardo Di Caprio")],
+         director= Director(name="Chistopher Nolan"),
+         summary= "Riassunto film",
+         rating= 9
+   )
+
+   await Inception.insert()
+
+async def get_movies():
+   movies = await Movie.find_all().to_list()
+   for movie in movies:
+   print(movie)
+
+
+async def run_app():
+   await init()
+   await add_movie()
+   await get_movies()
+
+
+asyncio.run(run_app())
+
+--- 
+
+Mandiamo in esecuzione:
+
+
+pip install beanie motor
+
+
+Richiamare il file app.py dal cmd nella directory mongodb-python:
+
+
+source mongodb-python/bin/activate
+
+python app.py
+
+
+---
+
+
+- Possiamo verificare con compass se il film inception è stato aggiunto
+
+
+
+
+
+

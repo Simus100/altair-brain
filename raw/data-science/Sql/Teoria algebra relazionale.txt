@@ -1,0 +1,228 @@
+ALGEBRA RELAZIONALE
+---
+
+IL DATO RELAZIONE
+
+E' il pilastro del modello relazionale. 
+Definisce la struttura matematica su cui si basano le query e la manipolazione delle risorse. 
+
+Caratteristiche:
+
+- Struttura tabellare 
+
+Tabelle bidimensionali disposti in righe (tuple) e colonne (attributi). 
+
+- Uniformità dei dati
+
+Schema uniforme e rigido in cui ogni colonna ha un tipo coerente di informazione.
+
+- Flessibilità nelle query
+
+Vasta gamma di possibilità per interrogare il database e avere accesso ai dati. Utile anche per fare analisi preliminari
+
+- Indipendenza dai dettagli di implementazione
+
+LO schema logico è separato da come i dati vengono salvati sul disco. Sarà il DBMS ad occuparsi dell'archiviazione dei dati . Noi dobbiamo solo occuparci dello schema logico dei dati.
+
+- Condivisione e integrazione dei dati
+
+LA struttura tabella standardizzata facilità la condivisione e la distribuzione dei dati. Utile in ambiti aziendali e informativi.
+
+- Sicurezza e controllo accessi.
+
+I Database possono definire dei ruoli ovvero gruppi di autorizzazioni per l'accesso ai dati e la loro manipolazione. 
+
+- Integrità dei dati
+
+Vincoli di integrità del database garantendo continuità e correttezza nella manipolazione dei dati. 
+
+- Ampia adozione e supporto.
+
+---
+
+IL CONCETTO DI RELAZIONE
+
+Una relazione è un insieme di dati strutturati in una tabella bidimensionale. L'algebra relazionale è un linguaggio matematico formale che descrive come operare sulle relazioni.
+
+Le operazioni di algebra relazione lavorano alla base sugli insiemi e includono selezione, proiezione, unione, intersezione e join. Il risultato di ogni relazione è sempre un altra relazione che a sua volta può essere ancora elaborata. PEr relazione come abbiamo già specificato si intende una tabella bidimensionale.
+
+Relazione -> Struttura bidimensionale in cui sono memorizzate le informazioni.
+
+Tupla -> una riga di una relazione, identifica l'insieme di dati correlati in una istanza. (orizzonatlità)
+
+Attributo -> Una caratteristica specifica di un insieme di dati (verticalità)
+
+Chiave -> Un attributo che identifica inequivocabilmente una tupla. 
+
+* In un database relazionale non possono esistere due tuple perfettamente uguali. 
+
+formula della relazione:
+
+R(a1, a2, …, an) 
+
+Le a sono le caratteristiche che definiscono una relazione.
+
+---
+
+GRADO E CARDINALITA'
+
+Il grado di una relazione è la quantità di attributi (colonne) che essa contiene. Rappresenta la quantità di campi o caratteristiche di ogni tupla. 
+
+La Cardinalità invece indica il numero di tuple presenti nella relazione che rappresentano la quantità di righe della tabella. Detto anche numero di istanze. 
+
+---
+
+OPERATORI ARITA' 
+
+NEl campo dell'algebra relazionale l'arità degli operatori rappresenta il numero di tabelle che un operatore accetta come input.
+
+Arity 1 -> Operatore unario. 1 relazione come input.
+
+Operazione di selezione per esempio.
+
+Arity 2 -> operatori binari, accettano due relazione e forniscono una relazione come output.
+ 
+Ad esempio l'unione di due tabelle.. 
+
+ecc..
+
+Operatori primitivi:
+
+Proiezione -> Selezionare specifici attributi all'interno di una relazione.. Si crea un subset di attributi scelti per rappresentare una nuova tabella (operatore orizzontale)
+
+Selezione -> Permette di estrarre righe specifiche secondo determinate condizioni scelte. (Operatore verticale)
+
+Unione -> Consente di combinare due tabelle restituendo entrambe le relazioni ( tabelle ) senza duplicati.
+
+Intersezione -> Restituisce tutte le righe comuni a due tabelle. 
+
+
+Differenza -> Restituisce tutte le righe presenti in una tabella di partenza che non sono presenti nell'altra.
+
+Prodotto cartesiano -> Combina ogni tupla della prima tabella con un altra. 
+
+Ridenominazione -> Aliasing, permette di assegnare nuovi nomi agli attributi o alla colonna stessa. 
+
+Operatori derivati:
+
+Join, Aggregazione e Ordinamento.
+
+---
+
+PROIEZIONE: 
+
+
+Si denota con p.greco
+
+p.greco<attributes>(Relation)
+
+SE volessi solo alcuni attributi: 
+
+p.greco<attributo1, attributo2, …>(tabella)
+
+
+SELEZIONE:
+
+Si denota con omega
+
+omega<condizione>(R)
+
+omega<attributo1 = valore1>(tabella)
+
+UNIONE:
+
+Si denota con il simbolo U
+
+R1 U R2
+
+Combina tuple fra relazioni diverse ma con la stessa struttura senza duplicati. 
+
+INTERSEZIONE:
+
+Si denota con il simbolo "U Capovolta"
+
+
+Crea una relazione contenente solo le tuple presenti in entrambe le relazioni di origine
+
+DIFFERENZA:
+
+R1 - R2
+
+
+Crea una relazione contenete le tuple presenti in R1 ma non in R2.
+
+PRODOTTO CARTESIANO:
+
+Si denota con il simbolo R1 x R2
+
+E' il prodotto fra due relazioni che implementa una relazione con tutte le combinazioni possibili.. 
+Per esempio se abbiamo due relazioni di tre tuple restituirà una tupla con nove elementi. la prima riga della prima relazione viene integrata con tutte le righe della seconda e così via
+
+1a     1d
+2b     2e
+3c     3f
+
+1a1d
+1a2e
+1a3f
+2b1d
+2b2e
+2b3f
+3c1d
+3c2e
+3c3f
+
+Stare attenti alle risorse che occupa questa query, può avvenire una esplosione combinatoria che rallenta molto il database.
+
+---
+
+JOIN E INNER JOIN:
+
+
+Consente di combinare due tabelle correlate basandosi su operazioni di uguaglianza tra dati comuni.
+
+Si parla di correlazione quando due tabelle hanno un attributo che gli consente di dialogare. Possiamo usare JOIN per aggregare due relazioni in modo coerente. 
+
+l'INNER JOIN restituisce solo le righe che hanno una correlazione in entrambe le tabelle per la condizione specificata. Le righe che non rispecchiano questa condizione sono escluse.  
+
+
+
+LEFT OUTER JOIN:
+
+Funziona come il join ma in questo metodo vengono integrati nella prima tabella (left) i dati corrispondenti della seconda.. Se la seconda tabella non completa tutti i dati della prima questi ultimi non vengono eliminati ma rimangono con valori null corrispondenti.. Cioè se la prima tabella ha più valori della seconda che non soddisfa tutte le righe,  queste ultime rimangono nel risultato con un valore null corrispondente.
+
+
+IN partica quando non esiste una corrispondenza di alcuni valori nella prima tabella, il dato non viene eliminato ma viene mantenuto con il valore null negli elementi senza corrispondenza.
+
+
+RIGHT OUTER JOIN:
+
+Funziona come il left ma la tabella risultante è quella di destra e i valori mancanti di quella sinistra vengono integrati con null.
+
+
+FULL OUTER JOIN
+
+Unisce tutti gli elementi inserendo NULL negli elementi senza corrispondenze, in entrambe le tabelle. La tabella risultante è quindi l'insieme di tutte le righe di entrambe le tabelle anche dove non vi sono corrispondenze
+
+SELF JOIN:
+
+Quando una tabella ha una corrispondenza interna. Possiamo prendere un subset di elementi che associano la doppia correlazione interna
+
+---
+
+OPERATORI DI ORDINAMENTO E AGGREGAZIONE:
+
+Gli operatori di ordinamento permettono di costituire un ordine specifico crescente o meno dei valori all'interno di uno o più attributi specificati.
+
+GLi operatori di aggregazione invece ci permettono di eseguire calcoli aggregati su gruppi di righe all'interno di una relazione. Vengono utilizzati per ottenere informazioni sommarie o statistiche dei dati. 
+
+SUM(attr), COUNT(attr), AVG(attr), MAX(attr), MIN(attr),
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+Per installare MongoDB possiamo usare docker. 
+
+Similmente a PostgreSql e MySQL si cerca l'immagine nella barra di ricerca ufficiale di Docker per MongoDB e si avvia run a new container. 
+
+Le variabili di ambiente per avviare il server sono: 
+
+
+PORTA SERVER : Inserire una qualsiasi porta libera
+VOLUME : una cartella associata del sistema
+CONTAINER PATH: /data/db 
+
+MONGO_INITDB_ROOT_USERNAME: 
+MONGO_INITDB_ROOT_PASSWORD: 
+
+Per usare MongoDB possiamo usare una gui visiva direttamente fornita da MongoDB. Si chiama Compass e possiamo scaricarla dal sito ufficiale.
+
+Una volta avviato ci chiederà l'uri del database, inseriremo:
+
+mongodb://localhost:<PORTA SERVER> 
+
+*senza <> ovviamente
+ 
+in authenticator metod inseriamo username e password.. e li mettiamo, username= root
+
+C

@@ -1,0 +1,134 @@
+PROGETTARE UN DB:
+
+
+Per progettare un database è opportuni separare cosa rappresentare dal come.
+
+Si esegue in tre fasi distinte: 
+
+1. Progettazione Concettuale -> produce uno schema concettuale.
+
+- Istruzioni di alto livello ma senza considerare l'implementazione tecnica. 
+Modellare dal punto di vista concettuale cosa verrà implementato nel database.
+
+
+
+2. Progettazione logica -> produce uno schema logico.
+
+- Traduzione dello schema concettuale nel modello di dati adottato dal sistema del DBMS scelto.
+Rappresenta i dati ancora indipendente dai dettagli fisici ma deve supportare il modello scelto.
+
+
+3. Progettazione fisica -> produce schema fisico.
+
+- Lo schema logico viene integrato con i dettagli fisici di implementazione. Organizzazione di file, indici e altro sul DBMS.
+
+---
+
+1. PROGETTAZIONE CONCETTUALE
+
+
+Per rappresentare questa fase si utilizza un diagramma ER dove si identificano quale sono le relazioni e le proprietà comuni.
+
+ENTITA':
+
+- Ogni entità viene rappresentata da un rettangolo con all'interno il nome.
+Ogni entità è composta da occorrenze univoche che hanno una identità propria. l'oggetto esiste senza proprietà. E' un valore univoco e non una relazione.
+
+
+RELAZIONI:
+
+Una relazione è un collegamento logico fra due o più entità. molto vicina alla relazione insiemistica. 
+
+- Ogni relazione viene rappresentata da un rombo contenete il nome della relazione. Le linee collegano il rombo con le entità coinvolte nella relazione stessa.
+
+La relazione può avere un verbo come nome o un sostantivo. 
+
+La relazione può rappresentare anche delle gerarchie. SI raffigurano come un triangolo centrale a cui si collegano le entità. Sulla punta del triangolo parte l'entità padre e dal centro della linea di base del triangolo parte una linea che si dirama tra le entità figlie.
+
+ATTRIBUTI:
+
+Un attributo associa a ciascuna entità un insieme noto come dominio dell'attributo,
+sono le proprietà elementari delle entità ma anche delle relazioni. 
+
+Sono raffigurate con delle line con a capo un puntino. 
+
+Ad esempio l'entità Address potrebbe avere attributi come City, Street , Zipcode.
+
+
+IDENTIFICATORI E CHIAVI:
+
+GLi identificatori sono attributi univoci di  una entità. Ad esempio un attributo unico può essere identificato dal numero di targa. 
+
+ Si rappresenta come gli attributi ovvero linea con un puntino al vertice ma con il testo sottolineato.
+
+
+CARDINALITA' RELAZIONI:
+
+Vengono specificate sulla linea di collegamento delle entità verso la relazione. 
+Descrivono il numero di entità che partecipa alla relazione.
+
+- I possibili valori sono 0,1 e N
+
+- Le possibili relazioni sono One to one, One to many o many to many
+
+
+Ad esempio sul collegamento tra studenti ed esami che collega studenti a corso andremo a scrivere (0,N), Questo significa che uno studente può aver dato 0 esami come un numero N.. Quindi viene indicato il numero minimo di cardinalità e poi il massimo.
+
+Esempi:
+
+
+[PERSON] -- (1,1) --> <RESIDENCE> -- (0,N) --> [CITY]
+
+(1,1) --> Ogni persona nel rapporto residenza ha minimo una residenza e massimo una residenza
+
+(0, N) --> Ogni città può non avere residenti o avere molti residenti.
+
+
+Avremmo potuto semplificare (0,1) come 1 e (0,N) come N
+
+Uno a molti. 
+
+*PER COMPRENDERE UNA PERSONA PUO' AVERE UNA RESIDENZA E UNA CITTA' PUO' AVERE MOLTE RESIDENZE.
+
+
+--
+
+[ORDER] -- (0,1) --> <SALE> -- (1,1) --> [INVOICE]
+
+Avremmo potuto semplificare con Uno a Uno.
+
+*PER COMPRENDERE UN ORDINE PUO' AVERE UNA VENDITA E UNA RICEVUTA UNA VENDITA.
+
+
+---
+
+
+
+[TOURIST] -- (1,N) --> <RESERVATION> -- (0,N) --> [VOYAGE]
+
+Avremmo potuto semplificare come Molti a molti.
+
+
+* PER COMPRENDERE UN TURISTA PUO' EFFETTURE N PRENOTAZIONI e UN VIAGGIO PUO' AVERE N TURISTI
+
+*IN PRATICA POSSIAMO OMETTERE LA CARIDNALTA' MINIMA PER INDIVIDUARE LA RELAZIONE.
+
+
+---
+
+
+FLUSSO PER LA MODELLAZIONE CONCETTUALE:
+
+
+Le fasi di implementazione sono le seguenti:
+
+- Identificazione delle entità 
+
+- Identificazione delle relazioni e cardinalità
+
+- Identificazione degli attributi identificatori (chiavi)
+
+
+
+
+

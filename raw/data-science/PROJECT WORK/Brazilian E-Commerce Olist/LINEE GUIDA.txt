@@ -1,0 +1,45 @@
+Dettagli
+Obiettivi
+
+    Importare il dataset Olist in un database PostgreSQL.
+    Eseguire delle query SQL preliminari per esplorare la struttura dei dati, verificare la qualità (valori null, outlier, duplicati).
+    Connettere il db a Looker Studio e costruire un report interattivo con delle dashboard che rispondano agli obiettivi di business:
+        Analisi temporale della domanda (trend mensili e stagionalità).
+        Confronto delle performance dei seller vs. buyer, categorie di prodotto e prezzi.
+        Studio dei fattori che influenzano le cancellazioni e la soddisfazione del cliente.
+
+Preparazione e trasformazione dei dati
+
+    Verificare e gestire i valori mancanti.
+    Identificare e gestire gli outlier.
+    Verificare e gestire eventuali dati duplicati.
+    Creare delle tabelle separate per orders, order_items, customers, sellers, products, payments, reviews, geolocation.
+    Definire chiavi primarie (*_id) e chiavi esterne (es. order_items.order_id → orders.order_id).
+
+Report e Data Storytelling (Looker Studio)
+
+Il dataset importato sarà collegato a Looker Studio tramite il connettore PostgreSQL. Il report dovrà contenere le seguenti analisi in più pagine:
+
+    Volume totale di prenotazioni, trend mensili/annuali, distribuzione geografica dei clienti e dei seller.
+    Prezzi & Logistica – analisi di degli ordini, tempi di consegna per categoria di prodotto e per zona.
+    Customer Experience – tasso di cancellazione, distribuzione dei punteggi delle recensioni, correlazione fra le variabili.
+
+Materiale da consegnare
+
+    Schema ER del database e le relative tabelle.
+    File delle query SQL con commenti sul risultato delle query.
+    Report Looker Studio (link di visualizzazione condivisibile con permessi di lettura).
+    Documentazione finale (3‑5 pagine) che descriva:
+        Fase di pulizia e trasformazione.
+        Struttura del database e delle relazioni.
+        Scelte di visualizzazione ed insight emersi.
+
+Criteri di valutazione
+
+    Data Processing – correttezza nella gestione di valori mancanti, outlier e creazione delle variabili derivate.
+    Modellazione del DB – schema ben progettato, chiavi primarie/esterne corrette.
+    Design del report – chiarezza, coerenza, uso appropriato di visualizzazioni interattive.
+    Data Storytelling – capacità di trasformare i risultati in insight di business concreti.
+    Completezza – tutti gli obiettivi richiesti sono stati soddisfatti e il materiale richiesto è stato consegnato.
+
+Buon lavoro :)
