@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-07)
 
 ## Corpus Check
-- 137 files · ~77,545 words
+- 143 files · ~78,118 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1031 nodes · 1293 edges · 115 communities (107 shown, 8 thin omitted)
+- 1043 nodes · 1343 edges · 115 communities (107 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `46aed942`
+- Built from commit: `84cf7fef`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -152,7 +152,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (31): Algebra relazionale, Analisi esplorativa (EDA), Cloud computing, Data cleaning, Data-driven culture, Data storytelling, Dataset e file di dati (su disco, non in git), Docker (+23 more)
+Nodes (37): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+29 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.07
@@ -555,23 +555,23 @@ Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
 ## Knowledge Gaps
-- **667 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+662 more)
+- **673 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+668 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `20. 觀 La Contemplazione (Guān) ䷓` connect `Community 32` to `Community 13`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `64. 未濟 Prima del Compimento (Wèi Jì) ䷿` connect `Community 80` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `4. 蒙 L'Inesperienza (Méng) ䷃` connect `Community 64` to `Community 13`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `7. 師 L'Esercito (Shī) ䷆` connect `Community 82` to `Community 13`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _680 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _686 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.060814383923849816 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06765327695560254 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

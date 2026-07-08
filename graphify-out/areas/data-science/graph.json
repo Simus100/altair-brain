@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "46aed942e7a28bc0b2af4d8875ebe8a42ea70028",
+ "built_at_commit": "84cf7fef545e922e7eb035d954a8888563a0673e",
  "nodes": [
   {
    "label": "README.md",
@@ -86,6 +86,26 @@
    "norm_label": "analisi esplorativa (eda)"
   },
   {
+   "label": "analisi-relazionale.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_analisi_relazionale",
+   "community": 0,
+   "norm_label": "analisi-relazionale.md"
+  },
+  {
+   "label": "Analisi relazionale (confronti tra variabili)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_analisi_relazionale_analisi_relazionale_confronti_tra_variabili",
+   "community": 0,
+   "norm_label": "analisi relazionale (confronti tra variabili)"
+  },
+  {
    "label": "cloud-computing.md",
    "file_type": "document",
    "source_file": "wiki/data-science/cloud-computing.md",
@@ -104,6 +124,26 @@
    "id": "wiki_data_science_cloud_computing_cloud_computing",
    "community": 0,
    "norm_label": "cloud computing"
+  },
+  {
+   "label": "controlli-qualita-dati.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_controlli_qualita_dati",
+   "community": 0,
+   "norm_label": "controlli-qualita-dati.md"
+  },
+  {
+   "label": "Controlli di qualita dei dati (data quality)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_controlli_qualita_dati_controlli_di_qualita_dei_dati_data_quality",
+   "community": 0,
+   "norm_label": "controlli di qualita dei dati (data quality)"
   },
   {
    "label": "data-cleaning.md",
@@ -176,14 +216,14 @@
    "norm_label": "dataset.md"
   },
   {
-   "label": "Dataset e file di dati (su disco, non in git)",
+   "label": "Dataset e file di dati (fuori dal repo)",
    "file_type": "document",
    "source_file": "wiki/data-science/dataset.md",
    "source_location": "L1",
    "_origin": "ast",
-   "id": "wiki_data_science_dataset_dataset_e_file_di_dati_su_disco_non_in_git",
+   "id": "wiki_data_science_dataset_dataset_e_file_di_dati_fuori_dal_repo",
    "community": 0,
-   "norm_label": "dataset e file di dati (su disco, non in git)"
+   "norm_label": "dataset e file di dati (fuori dal repo)"
   },
   {
    "label": "docker.md",
@@ -244,6 +284,46 @@
    "id": "wiki_data_science_excel_microsoft_excel",
    "community": 0,
    "norm_label": "microsoft excel"
+  },
+  {
+   "label": "feature-engineering.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_feature_engineering",
+   "community": 0,
+   "norm_label": "feature-engineering.md"
+  },
+  {
+   "label": "Feature engineering (colonne derivate)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_feature_engineering_feature_engineering_colonne_derivate",
+   "community": 0,
+   "norm_label": "feature engineering (colonne derivate)"
+  },
+  {
+   "label": "framework-domande-analitiche.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_framework_domande_analitiche",
+   "community": 0,
+   "norm_label": "framework-domande-analitiche.md"
+  },
+  {
+   "label": "Framework delle domande analitiche",
+   "file_type": "document",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_framework_domande_analitiche_framework_delle_domande_analitiche",
+   "community": 0,
+   "norm_label": "framework delle domande analitiche"
   },
   {
    "label": "index.md",
@@ -626,6 +706,26 @@
    "norm_label": "strumenti (data science)"
   },
   {
+   "label": "struttura-report-analisi.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/struttura-report-analisi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_struttura_report_analisi",
+   "community": 0,
+   "norm_label": "struttura-report-analisi.md"
+  },
+  {
+   "label": "Struttura del report di analisi",
+   "file_type": "document",
+   "source_file": "wiki/data-science/struttura-report-analisi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_struttura_report_analisi_struttura_del_report_di_analisi",
+   "community": 0,
+   "norm_label": "struttura del report di analisi"
+  },
+  {
    "label": "tipi-di-analisi.md",
    "file_type": "document",
    "source_file": "wiki/data-science/tipi-di-analisi.md",
@@ -664,6 +764,26 @@
    "id": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
    "community": 0,
    "norm_label": "visualizzazione efficace dei dati"
+  },
+  {
+   "label": "workflow-analisi-dati.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_workflow_analisi_dati",
+   "community": 0,
+   "norm_label": "workflow-analisi-dati.md"
+  },
+  {
+   "label": "Workflow di analisi dati (end-to-end)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_workflow_analisi_dati_workflow_di_analisi_dati_end_to_end",
+   "community": 0,
+   "norm_label": "workflow di analisi dati (end-to-end)"
   }
  ],
  "links": [
@@ -751,20 +871,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/analisi-esplorativa.md",
-   "source_location": "L9",
-   "weight": 1.0,
-   "source": "wiki_data_science_analisi_esplorativa",
-   "target": "wiki_data_science_data_cleaning",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "wiki/data-science/analisi-esplorativa.md",
    "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_analisi_esplorativa",
-   "target": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_analisi_relazionale",
    "confidence_score": 1.0
   },
   {
@@ -784,7 +894,7 @@
    "source_location": "L8",
    "weight": 1.0,
    "source": "wiki_data_science_analisi_esplorativa",
-   "target": "wiki_data_science_quartili_outlier",
+   "target": "wiki_data_science_visualizzazione_dati",
    "confidence_score": 1.0
   },
   {
@@ -794,6 +904,46 @@
    "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_analisi_esplorativa",
+   "target": "wiki_data_science_workflow_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_relazionale",
+   "target": "wiki_data_science_analisi_relazionale_analisi_relazionale_confronti_tra_variabili",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_relazionale",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_relazionale",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/analisi-relazionale.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_analisi_relazionale",
    "target": "wiki_data_science_visualizzazione_dati",
    "confidence_score": 1.0
   },
@@ -830,6 +980,66 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_controlli_qualita_dati_controlli_di_qualita_dei_dati_data_quality",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_excel",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L12",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_normalizzazione_decimali",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/controlli-qualita-dati.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/data-cleaning.md",
    "source_location": "L1",
    "weight": 1.0,
@@ -854,17 +1064,17 @@
    "source_location": "L8",
    "weight": 1.0,
    "source": "wiki_data_science_data_cleaning",
-   "target": "wiki_data_science_normalizzazione_decimali",
+   "target": "wiki_data_science_quartili_outlier",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/data-cleaning.md",
-   "source_location": "L7",
+   "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_data_cleaning",
-   "target": "wiki_data_science_quartili_outlier",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
@@ -931,6 +1141,16 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
    "source_location": "L8",
    "weight": 1.0,
    "source": "wiki_data_science_data_storytelling",
@@ -948,13 +1168,23 @@
    "confidence_score": 1.0
   },
   {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/data-storytelling.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_workflow_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/dataset.md",
    "source_location": "L1",
    "weight": 1.0,
    "source": "wiki_data_science_dataset",
-   "target": "wiki_data_science_dataset_dataset_e_file_di_dati_su_disco_non_in_git",
+   "target": "wiki_data_science_dataset_dataset_e_file_di_dati_fuori_dal_repo",
    "confidence_score": 1.0
   },
   {
@@ -991,7 +1221,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/docker.md",
-   "source_location": "L8",
+   "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_docker",
    "target": "wiki_data_science_postgresql",
@@ -1051,10 +1281,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/excel.md",
-   "source_location": "L7",
+   "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_excel",
-   "target": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_analisi_esplorativa",
    "confidence_score": 1.0
   },
   {
@@ -1071,10 +1301,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/excel.md",
-   "source_location": "L9",
+   "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_excel",
-   "target": "wiki_data_science_normalizzazione_decimali",
+   "target": "wiki_data_science_feature_engineering",
    "confidence_score": 1.0
   },
   {
@@ -1094,6 +1324,16 @@
    "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_excel",
+   "target": "wiki_data_science_progetto_insurance",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/excel.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_excel",
    "target": "wiki_data_science_progetto_social_media",
    "confidence_score": 1.0
   },
@@ -1101,7 +1341,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/excel.md",
-   "source_location": "L8",
+   "source_location": "L9",
    "weight": 1.0,
    "source": "wiki_data_science_excel",
    "target": "wiki_data_science_quartili_outlier",
@@ -1118,6 +1358,106 @@
    "confidence_score": 1.0
   },
   {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_feature_engineering",
+   "target": "wiki_data_science_feature_engineering_feature_engineering_colonne_derivate",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_feature_engineering",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_data_science_feature_engineering",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_data_science_feature_engineering",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/feature-engineering.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_feature_engineering",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "wiki_data_science_framework_domande_analitiche",
+   "target": "wiki_data_science_analisi_esplorativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L18",
+   "weight": 1.0,
+   "source": "wiki_data_science_framework_domande_analitiche",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_framework_domande_analitiche",
+   "target": "wiki_data_science_framework_domande_analitiche_framework_delle_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/framework-domande-analitiche.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_data_science_framework_domande_analitiche",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/index.md",
@@ -1125,6 +1465,26 @@
    "weight": 1.0,
    "source": "wiki_data_science_index",
    "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_framework_domande_analitiche",
    "confidence_score": 1.0
   },
   {
@@ -1141,7 +1501,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/index.md",
-   "source_location": "L7",
+   "source_location": "L6",
    "weight": 1.0,
    "source": "wiki_data_science_index",
    "target": "wiki_data_science_metodi",
@@ -1161,10 +1521,30 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/index.md",
-   "source_location": "L6",
+   "source_location": "L7",
    "weight": 1.0,
    "source": "wiki_data_science_index",
    "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
@@ -1251,7 +1631,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L8",
+   "source_location": "L14",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_normalizzazione_decimali",
@@ -1261,7 +1641,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L10",
+   "source_location": "L16",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_progettazione_database",
@@ -1271,7 +1651,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L16",
+   "source_location": "L22",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_prompt_engineering",
@@ -1281,7 +1661,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L7",
+   "source_location": "L13",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_quartili_outlier",
@@ -1291,7 +1671,17 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L14",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L20",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_tipi_di_analisi",
@@ -1301,10 +1691,20 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/metodi.md",
-   "source_location": "L12",
+   "source_location": "L18",
    "weight": 1.0,
    "source": "wiki_data_science_metodi",
    "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/metodi.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_metodi",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
@@ -1335,6 +1735,16 @@
    "weight": 1.0,
    "source": "wiki_data_science_mongodb",
    "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/normalizzazione-decimali.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_normalizzazione_decimali",
+   "target": "wiki_data_science_excel",
    "confidence_score": 1.0
   },
   {
@@ -1434,6 +1844,16 @@
    "source_location": "L3",
    "weight": 1.0,
    "source": "wiki_data_science_power_bi",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/power-bi.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_power_bi",
    "target": "wiki_data_science_tipi_di_analisi",
    "confidence_score": 1.0
   },
@@ -1455,6 +1875,16 @@
    "weight": 1.0,
    "source": "wiki_data_science_progettazione_database",
    "target": "wiki_data_science_progettazione_database_progettazione_di_un_database",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progettazione-database.md",
+   "source_location": "L3",
+   "weight": 1.0,
+   "source": "wiki_data_science_progettazione_database",
+   "target": "wiki_data_science_progetto_olist_ecommerce",
    "confidence_score": 1.0
   },
   {
@@ -1521,30 +1951,40 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
    "source_location": "L11",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_hotel_booking",
-   "target": "wiki_data_science_analisi_esplorativa",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "wiki/data-science/progetto-hotel-booking.md",
-   "source_location": "L3",
-   "weight": 1.0,
-   "source": "wiki_data_science_progetto_hotel_booking",
-   "target": "wiki_data_science_data_cleaning",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "wiki/data-science/progetto-hotel-booking.md",
-   "source_location": "L3",
-   "weight": 1.0,
-   "source": "wiki_data_science_progetto_hotel_booking",
    "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_framework_domande_analitiche",
    "confidence_score": 1.0
   },
   {
@@ -1571,7 +2011,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-hotel-booking.md",
-   "source_location": "L3",
+   "source_location": "L22",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_hotel_booking",
    "target": "wiki_data_science_quartili_outlier",
@@ -1580,31 +2020,71 @@
   {
    "relation": "references",
    "confidence": "EXTRACTED",
-   "source_file": "wiki/data-science/progetto-insurance.md",
-   "source_location": "L3",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L9",
    "weight": 1.0,
-   "source": "wiki_data_science_progetto_insurance",
-   "target": "wiki_data_science_analisi_esplorativa",
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-hotel-booking.md",
+   "source_location": "L5",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-insurance.md",
-   "source_location": "L3",
+   "source_location": "L9",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_insurance",
-   "target": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_analisi_relazionale",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-insurance.md",
-   "source_location": "L3",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L11",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_insurance",
    "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_framework_domande_analitiche",
    "confidence_score": 1.0
   },
   {
@@ -1631,17 +2111,27 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-insurance.md",
-   "source_location": "L3",
+   "source_location": "L18",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_insurance",
-   "target": "wiki_data_science_visualizzazione_dati",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-insurance.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
-   "source_location": "L11",
+   "source_location": "L23",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_olist_ecommerce",
    "target": "wiki_data_science_algebra_relazionale",
@@ -1651,7 +2141,17 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
-   "source_location": "L3",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L11",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_olist_ecommerce",
    "target": "wiki_data_science_dataset",
@@ -1661,10 +2161,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
-   "source_location": "L3",
+   "source_location": "L18",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_olist_ecommerce",
-   "target": "wiki_data_science_progettazione_database",
+   "target": "wiki_data_science_framework_domande_analitiche",
    "confidence_score": 1.0
   },
   {
@@ -1681,7 +2181,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
-   "source_location": "L3",
+   "source_location": "L6",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_olist_ecommerce",
    "target": "wiki_data_science_sql",
@@ -1690,31 +2190,61 @@
   {
    "relation": "references",
    "confidence": "EXTRACTED",
-   "source_file": "wiki/data-science/progetto-social-media.md",
-   "source_location": "L3",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L8",
    "weight": 1.0,
-   "source": "wiki_data_science_progetto_social_media",
-   "target": "wiki_data_science_data_cleaning",
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-social-media.md",
-   "source_location": "L3",
+   "source_location": "L9",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_social_media",
-   "target": "wiki_data_science_data_storytelling",
+   "target": "wiki_data_science_analisi_esplorativa",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-social-media.md",
-   "source_location": "L3",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L12",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_social_media",
    "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_feature_engineering",
    "confidence_score": 1.0
   },
   {
@@ -1731,10 +2261,20 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-social-media.md",
-   "source_location": "L3",
+   "source_location": "L10",
    "weight": 1.0,
    "source": "wiki_data_science_progetto_social_media",
-   "target": "wiki_data_science_visualizzazione_dati",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-social-media.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "wiki_data_science_workflow_analisi_dati",
    "confidence_score": 1.0
   },
   {
@@ -1764,7 +2304,7 @@
    "source_location": "L8",
    "weight": 1.0,
    "source": "wiki_data_science_python_pandas",
-   "target": "wiki_data_science_data_cleaning",
+   "target": "wiki_data_science_controlli_qualita_dati",
    "confidence_score": 1.0
   },
   {
@@ -1830,6 +2370,26 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/struttura-report-analisi.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_struttura_report_analisi",
+   "target": "wiki_data_science_struttura_report_analisi_struttura_del_report_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/struttura-report-analisi.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "wiki_data_science_struttura_report_analisi",
+   "target": "wiki_data_science_visualizzazione_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/tipi-di-analisi.md",
    "source_location": "L1",
    "weight": 1.0,
@@ -1845,6 +2405,66 @@
    "weight": 1.0,
    "source": "wiki_data_science_visualizzazione_dati",
    "target": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_analisi_relazionale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L6",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/workflow-analisi-dati.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "wiki_data_science_workflow_analisi_dati",
+   "target": "wiki_data_science_workflow_analisi_dati_workflow_di_analisi_dati_end_to_end",
    "confidence_score": 1.0
   }
  ]

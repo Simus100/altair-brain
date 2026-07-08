@@ -1,6 +1,6 @@
 # Progetti reali (data science)
 
-I project work: casi reali che collegano strumenti e metodi.
+I project work: casi reali da cui sono estratte le metodologie.
 
 Collegati:
 - [[progetto-social-media]]

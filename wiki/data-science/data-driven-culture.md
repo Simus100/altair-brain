@@ -1,6 +1,6 @@
 # Data-driven culture
 
-Cultura aziendale in cui i dati sono il motore centrale di ogni decisione (non solo un report a consuntivo), organizzata sui suoi pilastri fondamentali. Presuppone padronanza dei [[tipi-di-analisi]] e dello [[data-storytelling]].
+Cultura in cui i dati sono il motore delle decisioni (non un report a consuntivo). Presuppone padronanza dei [[tipi-di-analisi]] e dello [[data-storytelling]].
 
 Collegati:
 - [[metodi]]

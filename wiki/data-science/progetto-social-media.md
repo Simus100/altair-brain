@@ -1,11 +1,22 @@
 # Progetto: Analisi dati social media
 
-Progetto reale di analisi dell'impatto dei social media in [[excel]]: import CSV, [[data-cleaning]] (verifica duplicati su Student_ID, celle vuote, coerenza), analisi e report finale con [[data-storytelling]] e [[visualizzazione-dati]]. Dati: vedi [[dataset]] (raw/data-science/PROJECT WORK/Analisi Dati Social Media).
+Analisi dell'impatto dei social (uso quotidiano, sonno) in [[excel]], report su Looker Studio.
+
+**Metodologia**:
+- *Import*: da Testo/CSV in tabella.
+- *Cleaning* ([[controlli-qualita-dati]]): filtro condizionale su Student_ID (duplicati), celle vuote, CONTA.VALORI vs CONTA.VALORI.UNICI, CONTA.VUOTE, coerenza MIN/MAX; corretta un'incoerenza dividendo per 10 le ore di uso/sonno; checkbox di validazione finale.
+- *Feature* ([[feature-engineering]]): Livello_Utilizzo (fasce), Tempo_Libero = 24 - sonno - social, Rapp_Social_Sonno (rapporto).
+- *EDA* ([[analisi-esplorativa]]): foglio analisi_exp con Pivot e grafici per correlazioni.
+- *Report*: Looker Studio ([[struttura-report-analisi]]).
+
+Dati su disco (fuori dal repo): vedi [[dataset]].
 
 Collegati:
 - [[progetti]]
+- [[workflow-analisi-dati]]
+- [[controlli-qualita-dati]]
+- [[feature-engineering]]
+- [[analisi-esplorativa]]
+- [[struttura-report-analisi]]
 - [[excel]]
-- [[data-cleaning]]
-- [[visualizzazione-dati]]
-- [[data-storytelling]]
 - [[dataset]]

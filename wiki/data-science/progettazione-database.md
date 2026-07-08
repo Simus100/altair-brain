@@ -1,6 +1,6 @@
 # Progettazione di un database
 
-Tre fasi: concettuale (schema concettuale, cosa rappresentare), logica (schema logico nel modello del DBMS), fisica (schema fisico su disco). Nel progetto Olist si concretizza in schema ER ([[drawio]]), DBML e implementazione [[postgresql]].
+Tre fasi: concettuale -> logica -> fisica. In [[progetto-olist-ecommerce]]: schema ER ([[drawio]], DBML), 8 tabelle con chiavi primarie (*_id) ed esterne (order_items.order_id -> orders.order_id), implementazione [[postgresql]].
 
 Collegati:
 - [[metodi]]

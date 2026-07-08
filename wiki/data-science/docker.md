@@ -1,6 +1,6 @@
 # Docker
 
-Containerizzazione usata per avviare database (PostgreSQL, [[mongodb]]) in modo isolato e riproducibile, definendo porta, volume e variabili d'ambiente.
+Containerizzazione per avviare database ([[postgresql]], [[mongodb]]) in modo isolato e riproducibile (porta, volume, variabili d'ambiente).
 
 Collegati:
 - [[strumenti]]

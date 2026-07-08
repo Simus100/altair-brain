@@ -1,6 +1,6 @@
 # MongoDB
 
-Database NoSQL orientato ai documenti. Installazione via [[docker]] (variabili MONGO_INITDB_ROOT_*), GUI Compass, shell `mongosh`. Integrazione Python con `pymongo` e l'ODM asincrono Beanie, tipicamente dentro un notebook [[jupyter]].
+Database NoSQL a documenti. Installazione via [[docker]], GUI Compass, shell mongosh; integrazione Python con pymongo e l'ODM asincrono Beanie in un notebook [[jupyter]].
 
 Collegati:
 - [[strumenti]]

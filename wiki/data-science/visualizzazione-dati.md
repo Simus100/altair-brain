@@ -1,8 +1,9 @@
 # Visualizzazione efficace dei dati
 
-Scelta e costruzione di grafici che comunicano gli insight in modo chiaro: selezione del tipo di grafico giusto, riduzione del rumore, evidenziazione del messaggio. Base tecnica dello [[data-storytelling]].
+Scelta del grafico giusto per il messaggio (anello per quote, colonne in pila 100% per confronti di composizione, colonne per confronti tra categorie). Base tecnica dello [[data-storytelling]] e della [[struttura-report-analisi]].
 
 Collegati:
 - [[metodi]]
 - [[data-storytelling]]
 - [[power-bi]]
+- [[analisi-relazionale]]

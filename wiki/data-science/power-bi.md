@@ -1,8 +1,9 @@
 # Power BI
 
-Strumento di Business Intelligence Microsoft per report e dashboard interattive (file .pbix). Usato per il reporting di [[progetto-olist-ecommerce]]. Realizza in pratica i diversi [[tipi-di-analisi]] e la [[visualizzazione-dati]].
+BI Microsoft per report e dashboard interattive (.pbix). Usato per il reporting di [[progetto-olist-ecommerce]]. Realizza in pratica i [[tipi-di-analisi]] e la [[visualizzazione-dati]] nella [[struttura-report-analisi]]. Alternativa: Looker Studio.
 
 Collegati:
 - [[strumenti]]
 - [[tipi-di-analisi]]
 - [[visualizzazione-dati]]
+- [[struttura-report-analisi]]

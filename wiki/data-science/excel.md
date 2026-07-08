@@ -1,9 +1,9 @@
 # Microsoft Excel
 
-Strumento base per data analysis su fogli di calcolo. Importazione da Testo/CSV per una corretta impaginazione in tabella, filtri condizionali (evidenziazione duplicati/celle vuote), formule per statistica e pulizia, colonne derivate e tabelle pivot. Usato come ambiente principale nei progetti [[progetto-social-media]] e [[progetto-hotel-booking]].
+Ambiente principale di data analysis nei progetti. Import da Testo/CSV in tabella, fogli dedicati (pulizia_dati, analisi_exp, lookup), formule per [[controlli-qualita-dati]] e [[feature-engineering]], tabelle Pivot e grafici per l'[[analisi-esplorativa]]. Usato in [[progetto-social-media]], [[progetto-hotel-booking]], [[progetto-insurance]].
 
 Collegati:
 - [[strumenti]]
-- [[data-cleaning]]
+- [[controlli-qualita-dati]]
+- [[feature-engineering]]
 - [[quartili-outlier]]
-- [[normalizzazione-decimali]]

@@ -1,6 +1,6 @@
 # SQL
 
-Linguaggio per database relazionali (nato in IBM). Query (SELECT/FROM), maintenance (INSERT/UPDATE/DELETE), definition (CREATE/DROP). Fondamento dell'interrogazione dati; implementato da [[postgresql]] e basato sull'[[algebra-relazionale]].
+Linguaggio per database relazionali (SELECT/FROM, INSERT/UPDATE/DELETE, CREATE/DROP). In [[progetto-olist-ecommerce]] usato per import e query preliminari di qualita (null, outlier, duplicati). Implementato da [[postgresql]], fondato sull'[[algebra-relazionale]].
 
 Collegati:
 - [[strumenti]]

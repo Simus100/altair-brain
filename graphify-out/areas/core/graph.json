@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "46aed942e7a28bc0b2af4d8875ebe8a42ea70028",
+ "built_at_commit": "84cf7fef545e922e7eb035d954a8888563a0673e",
  "nodes": [
   {
    "label": "AGENTS.md",

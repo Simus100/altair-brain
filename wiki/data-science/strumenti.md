@@ -1,6 +1,6 @@
 # Strumenti (data science)
 
-Gli strumenti usati nell'area data science.
+Gli strumenti usati nell'area.
 
 Collegati:
 - [[excel]]

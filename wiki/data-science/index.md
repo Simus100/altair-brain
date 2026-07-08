@@ -1,9 +1,10 @@
 # Data science
 
-Macroarea data science del second brain: strumenti, metodi/concetti e progetti reali, collegati in un sistema di dipendenze (ogni progetto USA strumenti e APPLICA metodi). La conoscenza vive negli appunti (raw/data-science) e in queste pagine; i dati pesanti sono su disco (vedi [[dataset]]).
+Macroarea data science orientata all'INTELLIGENZA ANALISTA: non archivia dati, ma il METODO con cui si analizzano. Contiene metodi trasferibili ([[workflow-analisi-dati]], [[controlli-qualita-dati]], [[feature-engineering]], [[framework-domande-analitiche]], [[struttura-report-analisi]]), strumenti e progetti reali da cui i metodi sono estratti. Chiedendo 'come analizzo un dataset di X?' il brain risponde col metodo. I dati pesanti sono su disco fuori dal repo (vedi [[dataset]]).
 
 Collegati:
-- [[strumenti]]
 - [[metodi]]
+- [[strumenti]]
 - [[progetti]]
+- [[workflow-analisi-dati]]
 - [[dataset]]
