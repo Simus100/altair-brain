@@ -117,4 +117,11 @@ CI-guarded, self-updating deployment. Growing by design.
 
 ---
 
+## Contributors
+
+- **Simus100** (Lead Architect & Core Developer)
+- **Antigravity** (AI Coding Assistant by Google DeepMind)
+
+---
+
 Built on [graphify](https://github.com/safishamsi/graphify) · MIT licensed.
