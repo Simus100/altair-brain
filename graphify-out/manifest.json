@@ -853,5 +853,10 @@
     "mtime": 1783528367.3150287,
     "ast_hash": "ea942468a1150de5d4422675dc5c0fc5",
     "semantic_hash": ""
+  },
+  "raw/template_showcase_3d.md": {
+    "mtime": 1783532264.9650488,
+    "ast_hash": "4c6eaeb54f1675aaefbcd2c425027230",
+    "semantic_hash": ""
   }
 }
