@@ -6,7 +6,6 @@ Agisce come gate: vincolo sempre attivo su ogni output.
 
 Collegati:
 - [[livello-identita-etica]]
-- [[aion-manifest]]
 - [[modalita-guidance-empathic]]
 - [[insegnamento-004]]
 - [[insegnamento-011]]

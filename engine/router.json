@@ -1,43 +1,51 @@
 {
   "schema_version": 1,
-  "descrizione": "Tabella di routing del brain: decide QUALE sottografo interrogare. Deterministica (match keyword, case-insensitive, substring). Se nessuna area supera score 0 si usa il grafo completo. Aggiungere un'area = voce qui + voce in areas.json + cartelle raw/wiki.",
+  "descrizione": "Tabella di routing del brain: decide QUALE sottografo interrogare. Deterministica (match keyword, case-insensitive, substring). Nota: usare keyword abbastanza specifiche da evitare falsi match come 'repo' dentro 'report'. Se nessuna area supera score 0 si usa il grafo completo. Aggiungere un'area = voce qui + areas.json + cartelle raw/wiki.",
   "regola_ponti": "un nodo-ponte tra due aree e visibile solo a chi puo leggere ENTRAMBE le aree",
   "aree": {
     "aion": {
       "descrizione": "Modello di pensiero AION: agenti, componenti, modalita, insegnamenti, I Ching.",
       "keywords": ["aion", "superia", "ethos", "oracolo", "oracle", "i ching", "esagramma",
                    "trigramma", "agente", "fabula", "analyst", "insegnament", "modalita",
-                   "narrazion", "archetip", "hybrid", "reasoner", "deeplogic", "velario"],
+                   "narrazion", "archetip", "hybrid", "reasoner", "deeplogic", "velario",
+                   "modello di pensiero", "cinematica", "synth"],
       "budget_default": 2000
     },
     "data-science": {
-      "descrizione": "Machine learning, statistica, analisi dati, MLOps.",
-      "keywords": ["machine learning", "statistic", "dataset", "modello ml", "dati ",
-                   "python", "mlops", "regression", "classificazion", "neural"],
+      "descrizione": "Analisi dati: metodo (cleaning, feature, EDA, report), strumenti (Excel, SQL, Power BI, PostgreSQL, MongoDB, pandas) e progetti reali.",
+      "keywords": ["data science", "data-science", "analisi dati", "analisi di dati", "dataset",
+                   "data cleaning", "pulizia dati", "outlier", "quartile", "iqr", "feature",
+                   "colonna derivata", "colonne derivate", "pivot", "excel", "power bi", "powerbi",
+                   "looker", "dashboard", "report", "reportistica", "sql", "postgres", "mongodb",
+                   "database", "query", "pandas", "python", "jupyter", "docker", "storytelling",
+                   "visualizzazione", "statistic", "media", "mediana", "machine learning", "mlops",
+                   "kpi", "insight", "schema er", "prenotazioni", "assicurativ", "olist",
+                   "ecommerce", "social media", "hotel", "insurance", "analista", "analyst"],
       "budget_default": 2000
     },
     "finanza": {
       "descrizione": "Mercati, fiscale, contabilita, investimenti.",
       "keywords": ["finanz", "fiscal", "investiment", "mercat", "contabil", "tasse",
-                   "bilancio", "portafoglio", "rendiment"],
+                   "bilancio", "portafoglio", "rendiment", "trading", "azioni"],
       "budget_default": 2000
     },
     "divulgazione": {
       "descrizione": "Comunicazione, scrittura, contenuti, public speaking.",
       "keywords": ["divulgazion", "comunicazion", "scrittura", "articolo", "public speaking",
-                   "contenut", "pubblico", "storytelling"],
+                   "contenut", "pubblico", "storytelling narrativo", "presentazione"],
       "budget_default": 2000
     },
     "web-design": {
       "descrizione": "UI/UX, front-end, design system, accessibilita.",
-      "keywords": ["ui", "ux", "css", "front-end", "frontend", "design system",
-                   "accessibilit", "prototip", "layout", "responsive"],
+      "keywords": ["ui/ux", "ux", "css", "front-end", "frontend", "design system",
+                   "accessibilit", "prototip", "layout", "responsive", "figma", "wireframe"],
       "budget_default": 2000
     },
     "core": {
-      "descrizione": "Infrastruttura del brain: engine, server, tool, repo.",
-      "keywords": ["server", "api", "graphify", "repo", "infrastruttur", "endpoint",
-                   "deploy", "vps", "engine", "router", "skill", "workflow"],
+      "descrizione": "Infrastruttura del brain: engine, server, tool, repository.",
+      "keywords": ["repository", "git ", "graphify", "fastapi", "infrastruttur", "endpoint",
+                   "deploy", "vps", "engine", "reasoner del brain", "server", "systemd",
+                   "auto-update", "ci ", "pipeline"],
       "budget_default": 2000
     }
   }

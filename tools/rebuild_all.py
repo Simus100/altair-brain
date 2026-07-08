@@ -26,6 +26,7 @@ STEPS = [
     ("grafo (graphify update)", ["graphify", "update", "."]),
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
+    ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
     ("salute del grafo", [PY, "tools/graph_health.py"]),
 ]
 

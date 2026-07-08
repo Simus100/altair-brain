@@ -72,6 +72,9 @@ jobs:
           print(f"{len(files)} file JSON validi")
           EOF
 
+      - name: Relazioni wiki (nessun wikilink rotto)
+        run: python tools/check_wikilinks.py
+
       - name: Salute del grafo (coesione + anti-regressione)
         run: python tools/graph_health.py
 

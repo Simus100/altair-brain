@@ -22,11 +22,18 @@ with open(MODEL, encoding="utf-8") as f:
 os.makedirs(OUT, exist_ok=True)
 written = set()
 
+# Insiemi degli id che AVRANNO una pagina: i link vanno filtrati su questi, cosi una
+# relazione del modello verso un non-concetto (es. il documento raw 'aion-manifest')
+# non produce un wikilink penzolante.
+VALID = ({a["id"] for a in M["agenti"]} | {c["id"] for c in M["componenti"]}
+         | {l["id"] for l in M["livelli"]} | {x["id"] for x in M["modalita"]}
+         | {t["id"] for t in M["insegnamenti"]} | {"insegnamenti", "index"})
+
 def w(stem, title, body, links):
     """Scrive una pagina: corpo + lista 'Collegati:' (niente sotto-heading -> niente nodi spurii)."""
     seen, uniq = set(), []
     for l in links:
-        if l and l != stem and l not in seen:
+        if l and l != stem and l not in seen and l in VALID:
             seen.add(l); uniq.append(l)
     txt = f"# {title}\n\n{body.strip()}\n\nCollegati:\n"
     txt += "".join(f"- [[{l}]]\n" for l in uniq)
