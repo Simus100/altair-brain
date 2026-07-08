@@ -73,14 +73,18 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       color: var(--text-main);
       background-color: var(--bg-dark);
+      line-height: 1.5;
       padding: 20px 10px;
+      -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
     @media (min-width: 768px) { body { padding: 40px 20px; } }
+    
     .wrapper { max-width: 1200px; margin: 0 auto; }
     
     header {
@@ -91,6 +95,8 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       margin-bottom: 25px;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 6px 0 #151a2b, 0 15px 25px rgba(0, 0, 0, 0.6);
     }
+    @media (min-width: 768px) { header { padding: 30px; margin-bottom: 30px; } }
+
     .badge-brand {
       display: inline-flex;
       align-items: center;
@@ -103,15 +109,25 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       padding: 5px 12px;
       border-radius: 3px;
       text-transform: uppercase;
+      letter-spacing: 0.12em;
       margin-bottom: 12px;
     }
+    
     h1 {
-      font-size: 1.85rem; font-weight: 900; text-transform: uppercase;
+      font-size: 1.85rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1.15;
+      text-transform: uppercase;
       background: linear-gradient(to right, #ffffff, #c7d2fe, #38bdf8);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       display: flex; align-items: center; gap: 12px;
     }
     @media (min-width: 768px) { h1 { font-size: 2.35rem; } }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+      max-width: 950px;
+    }
     
     .command-grid {
       display: grid; grid-template-columns: 1fr; gap: 30px;
@@ -123,50 +139,73 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       border: 2px solid var(--border-color);
       border-radius: 8px;
       padding: 20px;
+      position: relative;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 5px 0 #151a2b, 0 15px 25px rgba(0, 0, 0, 0.5);
+      transition: transform 0.1s, box-shadow 0.1s;
     }
+    @media (min-width: 768px) { .panel-3d { padding: 25px; } }
+    .panel-3d:hover { border-color: rgba(99, 102, 241, 0.4); }
+
     h2 {
       font-size: 1.15rem; font-weight: 800; margin-bottom: 20px;
       border-left: 4px solid var(--color-primary); padding-left: 12px;
-      text-transform: uppercase; color: #ffffff;
+      text-transform: uppercase; letter-spacing: 0.05em; color: #ffffff;
     }
+    @media (min-width: 768px) { h2 { font-size: 1.25rem; } }
     
     .brain-canvas-container {
       width: 100%; height: 380px; background: #030509;
       border: 2px solid var(--border-color); border-radius: 6px;
       position: relative; overflow: hidden;
+      box-shadow: inset 0 2px 10px rgba(0,0,0,0.9);
     }
     @media (min-width: 768px) { .brain-canvas-container { height: 480px; } }
-    canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+    
+    #webgl-canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+    #webgl-canvas:active { cursor: grabbing; }
     
     .canvas-overlay-tip {
       position: absolute; bottom: 12px; left: 12px; right: 12px;
       background: rgba(4, 6, 11, 0.9); border: 1px solid var(--border-color);
       padding: 6px 10px; border-radius: 4px; font-size: 0.7rem;
-      color: var(--text-muted); text-transform: uppercase; text-align: center;
+      color: var(--text-muted); font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; text-align: center; pointer-events: none;
     }
     
     .details-panel { display: flex; flex-direction: column; gap: 25px; }
+    
     .node-details-card {
       background: rgba(14, 19, 34, 0.85); border: 2px solid var(--border-color);
       border-radius: 8px; padding: 20px;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 5px 0 #151a2b, 0 15px 20px rgba(0, 0, 0, 0.5);
       min-height: 280px; display: flex; flex-direction: column;
     }
+    @media (min-width: 768px) { .node-details-card { padding: 25px; min-height: 330px; } }
+    
     .node-header {
       display: flex; align-items: center; gap: 12px;
       border-bottom: 2px solid var(--border-color); padding-bottom: 12px; margin-bottom: 15px;
     }
-    .node-icon-dot { width: 14px; height: 14px; border-radius: 50%; }
+    
+    .node-icon-dot { width: 14px; height: 14px; border-radius: 50%; background-color: var(--color-gold); box-shadow: 0 0 10px var(--color-gold); }
     .node-title-text h3 { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; color: #fff; }
-    .node-title-text span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; }
+    .node-title-text span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
     .node-body-content { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; flex-grow: 1; }
+    .node-body-content ul { margin-left: 15px; margin-top: 8px; }
+    .node-body-content li { margin-bottom: 8px; }
+
+    /* Evidenziazioni forti per il testo */
+    .highlight-strong { color: #ffffff; font-weight: 700; }
+    .highlight-cyan { color: var(--color-secondary); font-weight: 700; }
+    .highlight-rose { color: var(--color-rose); font-weight: 700; }
+    .highlight-amber { color: var(--color-amber); font-weight: 700; }
     
     .oracle-box {
       border: 2px solid var(--color-gold); background: rgba(251, 191, 36, 0.03);
       border-radius: 6px; padding: 15px; margin-top: 15px;
     }
-    .oracle-title { font-size: 0.8rem; font-weight: 800; color: var(--color-gold); text-transform: uppercase; }
+    .oracle-title { font-size: 0.8rem; font-weight: 800; color: var(--color-gold); text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .oracle-title::before { content: "䷪"; font-size: 1.1rem; }
     .oracle-content { font-style: italic; font-size: 0.85rem; color: #fef08a; }
     
     .tech-specs-sidebar { list-style: none; font-size: 0.825rem; }
@@ -179,15 +218,23 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     .conclusions-box {
       background: linear-gradient(135deg, #101524 0%, #0c0f18 100%);
       border: 2px solid var(--border-color); border-top: 4px solid var(--color-gold);
-      border-radius: 8px; padding: 25px;
+      border-radius: 8px; padding: 25px; margin-top: 30px;
       box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 5px 0 #080a13, 0 15px 25px rgba(0,0,0,0.5);
     }
-    .conclusions-box h3 { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; color: var(--color-gold); }
+    .conclusions-box h3 {
+      font-size: 1.15rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--color-gold); margin-bottom: 15px;
+      border-bottom: 1px solid rgba(251, 191, 36, 0.2); padding-bottom: 8px;
+    }
     .conclusions-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+    .conclusions-text p { margin-bottom: 12px; }
+    .conclusions-text ul { margin-left: 20px; margin-bottom: 12px; }
+    .conclusions-text li { margin-bottom: 6px; }
     
     footer {
       margin-top: 40px; border-top: 2px solid var(--border-color);
-      padding-top: 20px; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);
+      padding-top: 20px; display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.75rem; color: var(--text-muted);
     }
   </style>
 </head>
@@ -220,7 +267,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     </header>
 
     <div class="command-grid">
-      <main>
+      <main style="display: flex; flex-direction: column; gap: 25px;">
         <div class="panel-3d">
           <h2>🧠 Struttura Neurale 3D Altair-Brain</h2>
           <div class="brain-canvas-container">
@@ -228,12 +275,19 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
             <div class="canvas-overlay-tip">Trascina per ruotare · Clicca sui nodi per analizzare</div>
           </div>
         </div>
+
+        <div class="conclusions-box" style="margin-top: 0;">
+          <h3>🔮 Conclusioni Strategiche</h3>
+          <div class="conclusions-text">
+            {{STRATEGIC_CONCLUSIONS_HTML}}
+          </div>
+        </div>
       </main>
 
       <aside class="details-panel">
         <div class="node-details-card" id="details-card">
           <div class="node-header">
-            <div class="node-icon-dot" id="node-color-dot"></div>
+            <div class="node-icon-dot" id="node-color-dot" style="background-color: var(--color-gold); box-shadow: 0 0 10px var(--color-gold);"></div>
             <div class="node-title-text">
               <h3 id="node-name-label">Console</h3>
               <span id="node-type-label">Seleziona un nodo</span>
@@ -256,13 +310,6 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
           </ul>
         </div>
       </aside>
-    </div>
-
-    <div class="conclusions-box">
-      <h3>🔮 Conclusioni Strategiche</h3>
-      <div class="conclusions-text">
-        {{STRATEGIC_CONCLUSIONS_HTML}}
-      </div>
     </div>
 
     <footer>
