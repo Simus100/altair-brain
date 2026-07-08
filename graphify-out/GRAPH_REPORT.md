@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-08)
 
 ## Corpus Check
-- 144 files · ~78,407 words
+- 146 files · ~78,977 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1041 nodes · 1340 edges · 116 communities (109 shown, 7 thin omitted)
+- 1042 nodes · 1340 edges · 117 communities (110 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cb907fcb`
+- Built from commit: `642f3966`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -147,7 +147,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (116 total, 7 thin omitted)
+## Communities (117 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -563,9 +563,9 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `7. 師 L'Esercito (Shī) ䷆` connect `Community 82` to `Community 13`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `5. 需 L'Attesa (Xū) ䷄` connect `Community 75` to `Community 13`?**
+- **Why does `8. 比 La Coesione (Bǐ) ䷇` connect `Community 83` to `Community 13`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `20. 觀 La Contemplazione (Guān) ䷓` connect `Community 32` to `Community 13`?**
+- **Why does `17. 隨 Il Seguimento (Suí) ䷐` connect `Community 28` to `Community 13`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
   _685 weakly-connected nodes found - possible documentation gaps or missing edges._

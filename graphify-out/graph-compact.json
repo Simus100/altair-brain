@@ -232,6 +232,21 @@
       "source": "fase:5",
       "target": "data:lessons",
       "kind": "has"
+    },
+    {
+      "source": "wiki:aion",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:aion",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:aion",
+      "target": "wiki:data-science",
+      "kind": "bridge"
     }
   ],
   "meta": {
@@ -244,7 +259,7 @@
       "divulgazione",
       "web-design"
     ],
-    "ponti_intercampo": 0,
+    "ponti_intercampo": 3,
     "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
   }
 }

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "descrizione": "Ponti intercampo CURATI tra macroaree. I wikilink non attraversano le cartelle e graphify non fonde nodi tra aree: i ponti vanno dichiarati qui e iniettati nel grafo da tools/apply_bridges.py (arco 'bridge'). Regola di sicurezza: un ponte e visibile solo a chi puo leggere ENTRAMBE le aree collegate.",
+  "bridges": [
+    {
+      "concetto": "storytelling / narrazione",
+      "from": {"area": "aion", "page": "aion-fabulatorium"},
+      "to": {"area": "data-science", "page": "data-storytelling"},
+      "nota": "La narrazione simbolica di AION e lo storytelling con i dati condividono lo stesso principio: usare il racconto per rendere un messaggio memorabile e orientare le decisioni."
+    },
+    {
+      "concetto": "analisi",
+      "from": {"area": "aion", "page": "aion-analyst"},
+      "to": {"area": "data-science", "page": "analisi-esplorativa"},
+      "nota": "AION_Analyst (analisi strategica, validazione, insight) e l'analisi esplorativa dei dati sono lo stesso gesto cognitivo applicato a domini diversi."
+    },
+    {
+      "concetto": "intelligenza artificiale / prompt",
+      "from": {"area": "aion", "page": "index"},
+      "to": {"area": "data-science", "page": "intelligenza-artificiale"},
+      "nota": "AION e un modello di pensiero AI interrogabile via prompt; i fondamenti di IA e il prompt engineering della data science ne sono la base teorica."
+    }
+  ]
+}

@@ -24,6 +24,7 @@ STEPS = [
     ("validazione modello", [PY, "tools/validate_model.py"]),
     ("DB oracle", [PY, "tools/build_iching_db.py"]),
     ("grafo (graphify update)", ["graphify", "update", "."]),
+    ("ponti intercampo", [PY, "tools/apply_bridges.py"]),
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
     ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
