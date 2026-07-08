@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-08)
 
 ## Corpus Check
-- 146 files · ~79,388 words
+- 146 files · ~79,407 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1043 nodes · 1344 edges · 117 communities (110 shown, 7 thin omitted)
+- 1043 nodes · 1341 edges · 117 communities (110 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4ecef39b`
+- Built from commit: `578b69f8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -133,7 +133,7 @@
 6. `server/ — esposizione del second brain via FastAPI` - 9 edges
 7. `$ref` - 8 edges
 8. `_safe()` - 8 edges
-9. `altair-brain` - 8 edges
+9. `Altair Brain` - 8 edges
 10. `1. 乾 Il Creativo (Qián) ䷀` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -166,8 +166,8 @@ Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.13
-Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
+Cohesion: 0.11
+Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.16
@@ -195,7 +195,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.14
@@ -214,8 +214,8 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.16
-Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
+Cohesion: 0.21
+Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.17
@@ -491,7 +491,7 @@ Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Imm
 
 ### Community 85 - "Community 85"
 Cohesion: 0.22
-Nodes (8): altair-brain, Architecture — the system as a 5-phase process, How AIs interface with it, Inside the brain (domains), Repository layout, Status, Technical characteristics, What makes it different from graphify
+Nodes (8): Altair Brain, Architecture — the system as a 5-phase process, How AIs interface with it, Inside the brain (domains), Repository layout, Status, Technical characteristics, What makes it different from graphify
 
 ### Community 86 - "Community 86"
 Cohesion: 0.25

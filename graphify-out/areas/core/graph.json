@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "4ecef39b16c55919b0b1c22fbee87bb8702d2f38",
+ "built_at_commit": "578b69f8af69de7051cbbe0a27d35d80ae591e0f",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -482,7 +482,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 16,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 16,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 16,
+   "community": 4,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 11,
+   "community": 4,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 11,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 16,
+   "community": 11,
    "norm_label": "componenti"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 11,
+   "community": 4,
    "norm_label": "modalita"
   },
   {
@@ -1426,20 +1426,20 @@
    "norm_label": "readme.md"
   },
   {
-   "label": "altair-brain",
+   "label": "Altair Brain",
    "file_type": "document",
    "source_file": "README.md",
    "source_location": "L1",
    "_origin": "ast",
    "id": "readme_altair_brain",
    "community": 85,
-   "norm_label": "altair-brain"
+   "norm_label": "altair brain"
   },
   {
    "label": "Architecture — the system as a 5-phase process",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L38",
+   "source_location": "L40",
    "_origin": "ast",
    "id": "readme_architecture_the_system_as_a_5_phase_process",
    "community": 85,
@@ -1449,7 +1449,7 @@
    "label": "How AIs interface with it",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L71",
+   "source_location": "L73",
    "_origin": "ast",
    "id": "readme_how_ais_interface_with_it",
    "community": 85,
@@ -1459,7 +1459,7 @@
    "label": "Inside the brain (domains)",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L81",
+   "source_location": "L83",
    "_origin": "ast",
    "id": "readme_inside_the_brain_domains",
    "community": 85,
@@ -1469,7 +1469,7 @@
    "label": "Repository layout",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L92",
+   "source_location": "L94",
    "_origin": "ast",
    "id": "readme_repository_layout",
    "community": 85,
@@ -1479,7 +1479,7 @@
    "label": "Status",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L105",
+   "source_location": "L107",
    "_origin": "ast",
    "id": "readme_status",
    "community": 85,
@@ -1489,7 +1489,7 @@
    "label": "Technical characteristics",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L55",
+   "source_location": "L57",
    "_origin": "ast",
    "id": "readme_technical_characteristics",
    "community": 85,
@@ -1499,7 +1499,7 @@
    "label": "What makes it different from graphify",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L17",
+   "source_location": "L19",
    "_origin": "ast",
    "id": "readme_what_makes_it_different_from_graphify",
    "community": 85,
@@ -4553,7 +4553,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L38",
+   "source_location": "L40",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_architecture_the_system_as_a_5_phase_process",
@@ -4563,7 +4563,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L71",
+   "source_location": "L73",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_how_ais_interface_with_it",
@@ -4573,7 +4573,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L81",
+   "source_location": "L83",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_inside_the_brain_domains",
@@ -4583,7 +4583,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L92",
+   "source_location": "L94",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_repository_layout",
@@ -4593,7 +4593,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L105",
+   "source_location": "L107",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_status",
@@ -4603,7 +4603,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L55",
+   "source_location": "L57",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_technical_characteristics",
@@ -4613,7 +4613,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L17",
+   "source_location": "L19",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_what_makes_it_different_from_graphify",

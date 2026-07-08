@@ -1,6 +1,8 @@
-# altair-brain
+# Altair Brain
 
 **An operational second brain that AIs reason *with* — not just a knowledge graph they read.**
+
+**Un second brain operativo con cui le AI ragionano — non solo un grafo di conoscenza che leggono.**
 
 altair-brain turns a knowledge graph into a living, servable, self-maintaining brain:
 organized knowledge across domains, **executable thinking models**, multi-channel access
