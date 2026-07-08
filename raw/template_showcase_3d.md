@@ -340,8 +340,8 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     </div>
 
     <footer>
-      <span>Showcase sviluppata con tecnologia Altair-Brain</span>
-      <span>© 2026 Altair Solutions // Riservato</span>
+      <span>Tecnologia Altair-Brain AI</span>
+      <span>© 2026 Universalis Produzioni // Automation Intelligence</span>
     </footer>
   </div>
 
@@ -364,6 +364,10 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     let basePerspectiveScale = 140;
     let perspectiveScale = 140;
     let zoomLevel = 1.0;
+
+    // Offset camera (centro di rotazione)
+    let cameraTarget = { x: 0, y: 0, z: 0 };
+    let currentCameraTarget = { x: 0, y: 0, z: 0 };
 
     function resizeCanvas() {
       width = canvas.clientWidth;
@@ -428,12 +432,20 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 
       const renderQueue = [];
 
+      const tx = currentCameraTarget.x;
+      const ty = currentCameraTarget.y;
+      const tz = currentCameraTarget.z;
+
       // Punti
       brainPoints.forEach((p) => {
-        let x1 = p.x * cosY - p.z * sinY;
-        let z1 = p.z * cosY + p.x * sinY;
-        let y2 = p.y * cosX - z1 * sinX;
-        let z2 = z1 * cosX + p.y * sinX;
+        const px = p.x - tx;
+        const py = p.y - ty;
+        const pz = p.z - tz;
+
+        let x1 = px * cosY - pz * sinY;
+        let z1 = pz * cosY + px * sinY;
+        let y2 = py * cosX - z1 * sinX;
+        let z2 = z1 * cosX + py * sinX;
 
         const depthFactor = cameraDist / (z2 + cameraDist);
         const sx = width / 2 + x1 * perspectiveScale * depthFactor * 0.8;
@@ -451,15 +463,23 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         const pt1 = brainPoints[line.p1];
         const pt2 = brainPoints[line.p2];
 
-        let x1_1 = pt1.x * cosY - pt1.z * sinY;
-        let z1_1 = pt1.z * cosY + pt1.x * sinY;
-        let y2_1 = pt1.y * cosX - z1_1 * sinX;
-        let z2_1 = z1_1 * cosX + pt1.y * sinX;
+        const px1 = pt1.x - tx;
+        const py1 = pt1.y - ty;
+        const pz1 = pt1.z - tz;
 
-        let x1_2 = pt2.x * cosY - pt2.z * sinY;
-        let z1_2 = pt2.z * cosY + pt2.x * sinY;
-        let y2_2 = pt2.y * cosX - z1_2 * sinX;
-        let z2_2 = z1_2 * cosX + pt2.y * sinX;
+        let x1_1 = px1 * cosY - pz1 * sinY;
+        let z1_1 = pz1 * cosY + px1 * sinY;
+        let y2_1 = py1 * cosX - z1_1 * sinX;
+        let z2_1 = z1_1 * cosX + py1 * sinX;
+
+        const px2 = pt2.x - tx;
+        const py2 = pt2.y - ty;
+        const pz2 = pt2.z - tz;
+
+        let x1_2 = px2 * cosY - pz2 * sinY;
+        let z1_2 = pz2 * cosY + px2 * sinY;
+        let y2_2 = py2 * cosX - z1_2 * sinX;
+        let z2_2 = z1_2 * cosX + py2 * sinX;
 
         const depthFactor1 = cameraDist / (z2_1 + cameraDist);
         const depthFactor2 = cameraDist / (z2_2 + cameraDist);
@@ -480,10 +500,14 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       nodes.forEach(node => {
         const p = node.pos;
 
-        let x1 = p.x * cosY - p.z * sinY;
-        let z1 = p.z * cosY + p.x * sinY;
-        let y2 = p.y * cosX - z1 * sinX;
-        let z2 = z1 * cosX + p.y * sinX;
+        const px = p.x - tx;
+        const py = p.y - ty;
+        const pz = p.z - tz;
+
+        let x1 = px * cosY - pz * sinY;
+        let z1 = pz * cosY + px * sinY;
+        let y2 = py * cosX - z1 * sinX;
+        let z2 = z1 * cosX + py * sinX;
 
         const depthFactor = cameraDist / (z2 + cameraDist);
         const sx = width / 2 + x1 * perspectiveScale * depthFactor * 0.8;
@@ -675,19 +699,8 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 
       if (closestNode) {
         selectNode(closestNode.id);
-        const targetAngleY = -Math.atan2(closestNode.pos.x, closestNode.pos.z);
-        const targetAngleX = Math.atan2(closestNode.pos.y, Math.hypot(closestNode.pos.x, closestNode.pos.z));
-        
-        let step = 0;
-        function transition() {
-          if (step < 12) {
-            angleY += (targetAngleY - angleY) * 0.2;
-            angleX += (targetAngleX - angleX) * 0.2;
-            step++;
-            requestAnimationFrame(transition);
-          }
-        }
-        transition();
+        // Imposta il nodo cliccato come nuovo centro della camera
+        cameraTarget = { x: closestNode.pos.x, y: closestNode.pos.y, z: closestNode.pos.z };
       }
     }
 
@@ -696,6 +709,12 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         if (!isDragging) {
           angleY += 0.0015;
         }
+        
+        // Interpolazione morbida verso il target della camera
+        currentCameraTarget.x += (cameraTarget.x - currentCameraTarget.x) * 0.08;
+        currentCameraTarget.y += (cameraTarget.y - currentCameraTarget.y) * 0.08;
+        currentCameraTarget.z += (cameraTarget.z - currentCameraTarget.z) * 0.08;
+
         render3DFrame();
         requestAnimationFrame(loop);
       }
