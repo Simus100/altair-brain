@@ -100,7 +100,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       color: #a5b4fc;
       font-size: 0.7rem;
       font-weight: 800;
-      padding: 4px 12px;
+      padding: 5px 12px;
       border-radius: 3px;
       text-transform: uppercase;
       margin-bottom: 12px;
@@ -109,11 +109,12 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       font-size: 1.85rem; font-weight: 900; text-transform: uppercase;
       background: linear-gradient(to right, #ffffff, #c7d2fe, #38bdf8);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      display: flex; align-items: center; gap: 12px;
     }
     @media (min-width: 768px) { h1 { font-size: 2.35rem; } }
     
     .command-grid {
-      display: grid; grid-template-columns: 1fr; gap: 30px; margin-bottom: 30px;
+      display: grid; grid-template-columns: 1fr; gap: 30px;
     }
     @media (min-width: 950px) { .command-grid { grid-template-columns: 1fr 420px; } }
     
@@ -194,8 +195,27 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 
   <div class="wrapper">
     <header>
-      <div class="badge-brand">Multi-Agent Simulation // Altair-Brain</div>
-      <h1>{{SHOWCASE_TITLE}}</h1>
+      <div class="badge-brand">
+        <!-- Piccola Stella di Altair nel Badge -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 12px; height: 12px; filter: drop-shadow(0 0 2px var(--color-gold)); margin-right: 4px; display: inline-block; vertical-align: middle;">
+          <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" fill="var(--color-gold)"/>
+        </svg>
+        <span>Multi-Agent Simulation // Altair-Brain</span>
+      </div>
+      
+      <h1>
+        <!-- Grande Stella di Altair nel Titolo principale -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px; filter: drop-shadow(0 0 8px var(--color-gold)); flex-shrink: 0;">
+          <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" fill="url(#star-grad)"/>
+          <defs>
+            <linearGradient id="star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="var(--color-gold)" />
+              <stop offset="100%" stop-color="var(--color-amber)" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>{{SHOWCASE_TITLE}}</span>
+      </h1>
       <p class="tagline">{{SHOWCASE_TAGLINE}}</p>
     </header>
 
@@ -252,7 +272,6 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
   </div>
 
   <script>
-    // Iniezione Dati del Grafo e Vettori Informativi
     const nodeIntelligence = {{NODE_INTELLIGENCE_JSON}};
     const nodes = {{NODES_LIST_JSON}};
     const nodeConnections = {{NODE_CONNECTIONS_JSON}};
@@ -326,7 +345,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 
       const renderQueue = [];
 
-      // Punti del Cervello
+      // Punti
       brainPoints.forEach((p) => {
         let x1 = p.x * cosY - p.z * sinY;
         let z1 = p.z * cosY + p.x * sinY;
@@ -344,7 +363,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         });
       });
 
-      // Connessioni Sinaptiche
+      // Linee
       brainLines.forEach(line => {
         const pt1 = brainPoints[line.p1];
         const pt2 = brainPoints[line.p2];
@@ -373,7 +392,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         });
       });
 
-      // Nodi Accesi
+      // Nodi
       const pulseTime = Date.now() * 0.003;
       nodes.forEach(node => {
         const p = node.pos;
@@ -450,7 +469,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         }
       });
 
-      // Linee di Collegamento dei Nodi Accesi
+      // Linee di collegamento
       nodeConnections.forEach(conn => {
         const fromNode = nodes.find(n => n.id === conn.from);
         const toNode = nodes.find(n => n.id === conn.to);
@@ -468,7 +487,6 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       });
     }
 
-    // Interazioni Drag & Touch
     let isDragging = false;
     let dragStart = { x: 0, y: 0 };
     let previousMousePosition = { x: 0, y: 0 };

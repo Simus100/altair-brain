@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-08)
 
 ## Corpus Check
-- 147 files · ~81,760 words
+- 147 files · ~81,848 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1050 nodes · 1350 edges · 118 communities (111 shown, 7 thin omitted)
+- 1050 nodes · 1347 edges · 117 communities (110 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7d5ec3f7`
+- Built from commit: `c3f5f09d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,7 +32,6 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
@@ -148,7 +147,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (118 total, 7 thin omitted)
+## Communities (117 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -167,16 +166,16 @@ Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.13
-Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
+Cohesion: 0.11
+Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.12
+Nodes (10): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 017 - Generator meta-ciclico (+2 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -187,8 +186,8 @@ Cohesion: 0.17
 Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ### Community 9 - "Community 9"
-Cohesion: 0.20
-Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
+Cohesion: 0.24
+Nodes (7): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Modalita [ANALYTIC_CORE]
 
 ### Community 10 - "Community 10"
 Cohesion: 0.13
@@ -196,7 +195,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.14
@@ -215,16 +214,12 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.16
-Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
-
-### Community 17 - "Community 17"
-Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
+Cohesion: 0.21
+Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.12
+Nodes (12): AION_ETHOS, AION_SUPERIA, AION - modello di pensiero, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica, Livello Orchestrazione / Stile (+4 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.20

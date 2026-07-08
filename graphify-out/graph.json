@@ -280,7 +280,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_properties_modalita",
-      "community": 11,
+      "community": 4,
       "norm_label": "modalita"
     },
     {
@@ -290,7 +290,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_type",
-      "community": 11,
+      "community": 4,
       "norm_label": "type"
     },
     {
@@ -300,7 +300,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_minitems",
-      "community": 11,
+      "community": 4,
       "norm_label": "minitems"
     },
     {
@@ -310,7 +310,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_items",
-      "community": 16,
+      "community": 4,
       "norm_label": "items"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_properties_componenti",
-      "community": 16,
+      "community": 11,
       "norm_label": "componenti"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_componenti_type",
-      "community": 16,
+      "community": 11,
       "norm_label": "type"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_componenti_minitems",
-      "community": 16,
+      "community": 11,
       "norm_label": "minitems"
     },
     {
@@ -8842,7 +8842,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_ethos",
-      "community": 17,
+      "community": 18,
       "norm_label": "aion-ethos.md"
     },
     {
@@ -8852,7 +8852,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_aion_ethos_aion_ethos",
-      "community": 17,
+      "community": 18,
       "norm_label": "aion_ethos"
     },
     {
@@ -9182,7 +9182,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_004",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento-004.md"
     },
     {
@@ -9192,7 +9192,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_004_insegnamento_004_auto_riflessivita_cognitiva",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento 004 - auto-riflessivita cognitiva"
     },
     {
@@ -9402,7 +9402,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_015",
-      "community": 17,
+      "community": 6,
       "norm_label": "insegnamento-015.md"
     },
     {
@@ -9412,7 +9412,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_015_insegnamento_015_pattern_emotivo_archetipici",
-      "community": 17,
+      "community": 6,
       "norm_label": "insegnamento 015 - pattern emotivo-archetipici"
     },
     {
@@ -9462,7 +9462,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_018",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento-018.md"
     },
     {
@@ -9472,7 +9472,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_018_insegnamento_018_allineamento_con_aion_ethos",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento 018 - allineamento con aion_ethos"
     },
     {
@@ -9482,7 +9482,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_019",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento-019.md"
     },
     {
@@ -9492,7 +9492,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_insegnamento_019_insegnamento_019_assiomi_invisibili",
-      "community": 17,
+      "community": 18,
       "norm_label": "insegnamento 019 - assiomi invisibili"
     },
     {
@@ -9642,7 +9642,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_identita_etica",
-      "community": 17,
+      "community": 18,
       "norm_label": "livello-identita-etica.md"
     },
     {
@@ -9652,7 +9652,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_identita_etica_livello_identita_etica",
-      "community": 17,
+      "community": 18,
       "norm_label": "livello identita / etica"
     },
     {
@@ -9702,7 +9702,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_struttura_logica",
-      "community": 9,
+      "community": 18,
       "norm_label": "livello-struttura-logica.md"
     },
     {
@@ -9712,7 +9712,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_aion_livello_struttura_logica_livello_struttura_logica",
-      "community": 9,
+      "community": 18,
       "norm_label": "livello struttura / logica"
     },
     {
@@ -20211,16 +20211,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "bridge",
-      "concetto": "analisi",
-      "confidence": "CURATED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/aion/aion-analyst.md",
-      "source": "wiki_aion_aion_analyst",
-      "target": "wiki_data_science_analisi_esplorativa"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/aion/aion-echo.md",
@@ -20969,16 +20959,6 @@
       "source": "wiki_aion_aion_fabulatorium",
       "target": "wiki_aion_modalita_mythic_narrative",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "bridge",
-      "concetto": "storytelling / narrazione",
-      "confidence": "CURATED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/aion/aion-fabulatorium.md",
-      "source": "wiki_aion_aion_fabulatorium",
-      "target": "wiki_data_science_data_storytelling"
     },
     {
       "relation": "references",
@@ -21799,16 +21779,6 @@
       "source": "wiki_aion_index",
       "target": "wiki_aion_modalita_mythic_narrative",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "bridge",
-      "concetto": "intelligenza artificiale / prompt",
-      "confidence": "CURATED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/aion/index.md",
-      "source": "wiki_aion_index",
-      "target": "wiki_data_science_intelligenza_artificiale"
     },
     {
       "relation": "contains",
@@ -24112,5 +24082,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7d5ec3f77b2f4a8232143d6b7b8368e99d25f9ac"
+  "built_at_commit": "c3f5f09d808978da00852a224985fc42e2de05f8"
 }
