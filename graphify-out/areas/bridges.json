@@ -1,26 +1,4 @@
 {
  "descrizione": "archi cross-area (ponti intercampo)",
- "bridges": [
-  {
-   "source": "wiki_aion_aion_analyst",
-   "target": "wiki_data_science_analisi_esplorativa",
-   "relation": "bridge",
-   "area_source": "aion",
-   "area_target": "data-science"
-  },
-  {
-   "source": "wiki_aion_aion_fabulatorium",
-   "target": "wiki_data_science_data_storytelling",
-   "relation": "bridge",
-   "area_source": "aion",
-   "area_target": "data-science"
-  },
-  {
-   "source": "wiki_aion_index",
-   "target": "wiki_data_science_intelligenza_artificiale",
-   "relation": "bridge",
-   "area_source": "aion",
-   "area_target": "data-science"
-  }
- ]
+ "bridges": []
 }

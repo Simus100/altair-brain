@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "578b69f8af69de7051cbbe0a27d35d80ae591e0f",
+ "built_at_commit": "5467ce069d15bd5249826b73d68de6e4a62071cb",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -1416,6 +1416,76 @@
    "norm_label": "regole"
   },
   {
+   "label": "template_showcase_3d.md",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d",
+   "community": 117,
+   "norm_label": "template_showcase_3d.md"
+  },
+  {
+   "label": "1. Schema Dati (JSON Payload)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L7",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_1_schema_dati_json_payload",
+   "community": 117,
+   "norm_label": "1. schema dati (json payload)"
+  },
+  {
+   "label": "2. Blueprint del File HTML (`template_showcase_3d.html`)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L43",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_2_blueprint_del_file_html_template_showcase_3d_html",
+   "community": 117,
+   "norm_label": "2. blueprint del file html (`template_showcase_3d.html`)"
+  },
+  {
+   "label": "A. Nodi del Grafo (`nodes`)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L11",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_a_nodi_del_grafo_nodes",
+   "community": 117,
+   "norm_label": "a. nodi del grafo (`nodes`)"
+  },
+  {
+   "label": "B. Connessioni Tratteggiate (`nodeConnections`)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L19",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_b_connessioni_tratteggiate_nodeconnections",
+   "community": 117,
+   "norm_label": "b. connessioni tratteggiate (`nodeconnections`)"
+  },
+  {
+   "label": "C. Contenuto Informativo dei Nodi (`nodeIntelligence`)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L27",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_c_contenuto_informativo_dei_nodi_nodeintelligence",
+   "community": 117,
+   "norm_label": "c. contenuto informativo dei nodi (`nodeintelligence`)"
+  },
+  {
+   "label": "Schema di Template per Dashboard Neurale 3D (Altair-Brain)",
+   "file_type": "document",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
+   "community": 117,
+   "norm_label": "schema di template per dashboard neurale 3d (altair-brain)"
+  },
+  {
    "label": "README.md",
    "file_type": "document",
    "source_file": "README.md",
@@ -1446,6 +1516,16 @@
    "norm_label": "architecture — the system as a 5-phase process"
   },
   {
+   "label": "Contributors",
+   "file_type": "document",
+   "source_file": "README.md",
+   "source_location": "L120",
+   "_origin": "ast",
+   "id": "readme_contributors",
+   "community": 85,
+   "norm_label": "contributors"
+  },
+  {
    "label": "How AIs interface with it",
    "file_type": "document",
    "source_file": "README.md",
@@ -1469,7 +1549,7 @@
    "label": "Repository layout",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L94",
+   "source_location": "L99",
    "_origin": "ast",
    "id": "readme_repository_layout",
    "community": 85,
@@ -1479,7 +1559,7 @@
    "label": "Status",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L107",
+   "source_location": "L113",
    "_origin": "ast",
    "id": "readme_status",
    "community": 85,
@@ -1494,6 +1574,16 @@
    "id": "readme_technical_characteristics",
    "community": 85,
    "norm_label": "technical characteristics"
+  },
+  {
+   "label": "Visualizzazione 3D (Showcases)",
+   "file_type": "document",
+   "source_file": "README.md",
+   "source_location": "L94",
+   "_origin": "ast",
+   "id": "readme_visualizzazione_3d_showcases",
+   "community": 85,
+   "norm_label": "visualizzazione 3d (showcases)"
   },
   {
    "label": "What makes it different from graphify",
@@ -4542,6 +4632,66 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d",
+   "target": "raw_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d_1_schema_dati_json_payload",
+   "target": "raw_template_showcase_3d_a_nodi_del_grafo_nodes",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L19",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d_1_schema_dati_json_payload",
+   "target": "raw_template_showcase_3d_b_connessioni_tratteggiate_nodeconnections",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L27",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d_1_schema_dati_json_payload",
+   "target": "raw_template_showcase_3d_c_contenuto_informativo_dei_nodi_nodeintelligence",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L7",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
+   "target": "raw_template_showcase_3d_1_schema_dati_json_payload",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/template_showcase_3d.md",
+   "source_location": "L43",
+   "weight": 1.0,
+   "source": "raw_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
+   "target": "raw_template_showcase_3d_2_blueprint_del_file_html_template_showcase_3d_html",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "README.md",
    "source_location": "L1",
    "weight": 1.0,
@@ -4557,6 +4707,16 @@
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_architecture_the_system_as_a_5_phase_process",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "README.md",
+   "source_location": "L120",
+   "weight": 1.0,
+   "source": "readme_altair_brain",
+   "target": "readme_contributors",
    "confidence_score": 1.0
   },
   {
@@ -4583,7 +4743,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L94",
+   "source_location": "L99",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_repository_layout",
@@ -4593,7 +4753,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L107",
+   "source_location": "L113",
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_status",
@@ -4607,6 +4767,16 @@
    "weight": 1.0,
    "source": "readme_altair_brain",
    "target": "readme_technical_characteristics",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "README.md",
+   "source_location": "L94",
+   "weight": 1.0,
+   "source": "readme_altair_brain",
+   "target": "readme_visualizzazione_3d_showcases",
    "confidence_score": 1.0
   },
   {

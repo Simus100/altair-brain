@@ -121,6 +121,7 @@ CI-guarded, self-updating deployment. Growing by design.
 
 - **Simus100** (Lead Architect & Core Developer)
 - **Antigravity** (AI Coding Assistant by Google DeepMind)
+- **Jules** (AI Coding Assistant)
 
 ---
 
