@@ -91,18 +91,24 @@ an operational brain that AIs think with — and keeps it correct over time.*
   from real projects**. It knows the *how*, not just the *what* — so it can approach a new
   dataset the way an analyst would.
 
+## Visualizzazione 3D (Showcases)
+
+altair-brain dispone di un sistema di presentazione interattivo WebGL-free per esporre le analisi strategiche prodotte tramite un **Cervello Neurale 3D** navigabile integrato con l'Oracolo AION.
+- **Template Schema:** [raw/template_showcase_3d.md](file:///C:/Users/mace/altair-brain/raw/template_showcase_3d.md) definisce le specifiche dati (JSON per nodi e relazioni) ed il blueprint HTML/CSS/JS nativo (con rendering proiettivo 3D in tempo reale) per generare console di controllo offline ad alte prestazioni per mobile e desktop.
+
 ## Repository layout
 
 ```
-raw/<area>/       grezzo sources per macro-area          areas.json      area registry
+raw/<area>/       grezzo sources per macro-area (e template globali in raw/)
 wiki/<area>/      interlinked model (generated for AION)  engine/         typed model + reasoner + router + bridges
 tools/            deterministic pipeline (rebuild, guards, views)         server/  FastAPI + MCP + deploy
-.github/          CI quality gates                        graphify-out/   graph + two visual views
+.github/          CI quality gates                        graphify-out/   graph + visual views
 ```
 
 - **`GUIDA.md`** — everyday use (human, non-technical).
 - **`ROADMAP.md`** — engineering handoff (binding rules + specs) for any future contributor/agent.
 - **`server/README.md`** — API reference, MCP, and VPS deployment.
+- **`raw/template_showcase_3d.md`** — Schema riutilizzabile per dashboard neurali 3D.
 
 ## Status
 

@@ -280,7 +280,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_properties_modalita",
-      "community": 4,
+      "community": 11,
       "norm_label": "modalita"
     },
     {
@@ -290,7 +290,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_type",
-      "community": 4,
+      "community": 11,
       "norm_label": "type"
     },
     {
@@ -300,7 +300,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_minitems",
-      "community": 4,
+      "community": 11,
       "norm_label": "minitems"
     },
     {
@@ -310,7 +310,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_modalita_items",
-      "community": 4,
+      "community": 16,
       "norm_label": "items"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_properties_componenti",
-      "community": 11,
+      "community": 16,
       "norm_label": "componenti"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_componenti_type",
-      "community": 11,
+      "community": 16,
       "norm_label": "type"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "engine_schema_aion_model_schema_componenti_minitems",
-      "community": 11,
+      "community": 16,
       "norm_label": "minitems"
     },
     {
@@ -2546,10 +2546,20 @@
       "norm_label": "inside the brain (domains)"
     },
     {
-      "label": "Repository layout",
+      "label": "Visualizzazione 3D (Showcases)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L94",
+      "_origin": "ast",
+      "id": "readme_visualizzazione_3d_showcases",
+      "community": 85,
+      "norm_label": "visualizzazione 3d (showcases)"
+    },
+    {
+      "label": "Repository layout",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "readme_repository_layout",
       "community": 85,
@@ -2559,7 +2569,7 @@
       "label": "Status",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L107",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "readme_status",
       "community": 85,
@@ -13764,7 +13774,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L94",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "readme_altair_brain",
       "target": "readme_repository_layout",
@@ -13774,7 +13784,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L107",
+      "source_location": "L113",
       "weight": 1.0,
       "source": "readme_altair_brain",
       "target": "readme_status",
@@ -13788,6 +13798,16 @@
       "weight": 1.0,
       "source": "readme_altair_brain",
       "target": "readme_technical_characteristics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "readme_altair_brain",
+      "target": "readme_visualizzazione_3d_showcases",
       "confidence_score": 1.0
     },
     {
@@ -24082,5 +24102,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c3f5f09d808978da00852a224985fc42e2de05f8"
+  "built_at_commit": "357553606110d4a8ca5c1066e96a253ebb76f60f"
 }
