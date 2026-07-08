@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "642f396685d869d9032ab41426d26d4fb9309d69",
+ "built_at_commit": "4ecef39b16c55919b0b1c22fbee87bb8702d2f38",
  "nodes": [
   {
    "label": "aion-agents.md",

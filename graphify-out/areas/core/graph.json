@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "642f396685d869d9032ab41426d26d4fb9309d69",
+ "built_at_commit": "4ecef39b16c55919b0b1c22fbee87bb8702d2f38",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -482,7 +482,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 11,
+   "community": 16,
    "norm_label": "minitems"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 11,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 4,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 4,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 4,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 11,
+   "community": 16,
    "norm_label": "componenti"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 4,
+   "community": 11,
    "norm_label": "modalita"
   },
   {
@@ -1436,64 +1436,74 @@
    "norm_label": "altair-brain"
   },
   {
-   "label": "Come si consuma",
+   "label": "Architecture — the system as a 5-phase process",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L35",
+   "source_location": "L38",
    "_origin": "ast",
-   "id": "readme_come_si_consuma",
+   "id": "readme_architecture_the_system_as_a_5_phase_process",
    "community": 85,
-   "norm_label": "come si consuma"
+   "norm_label": "architecture — the system as a 5-phase process"
   },
   {
-   "label": "Guide",
+   "label": "How AIs interface with it",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L53",
+   "source_location": "L71",
    "_origin": "ast",
-   "id": "readme_guide",
+   "id": "readme_how_ais_interface_with_it",
    "community": 85,
-   "norm_label": "guide"
+   "norm_label": "how ais interface with it"
   },
   {
-   "label": "Macroaree",
+   "label": "Inside the brain (domains)",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L29",
+   "source_location": "L81",
    "_origin": "ast",
-   "id": "readme_macroaree",
+   "id": "readme_inside_the_brain_domains",
    "community": 85,
-   "norm_label": "macroaree"
+   "norm_label": "inside the brain (domains)"
   },
   {
-   "label": "Principi",
+   "label": "Repository layout",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L9",
+   "source_location": "L92",
    "_origin": "ast",
-   "id": "readme_principi",
+   "id": "readme_repository_layout",
    "community": 85,
-   "norm_label": "principi"
+   "norm_label": "repository layout"
   },
   {
-   "label": "Struttura (il processo a 5 fasi)",
+   "label": "Status",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L16",
+   "source_location": "L105",
    "_origin": "ast",
-   "id": "readme_struttura_il_processo_a_5_fasi",
+   "id": "readme_status",
    "community": 85,
-   "norm_label": "struttura (il processo a 5 fasi)"
+   "norm_label": "status"
   },
   {
-   "label": "Workflow di modifica (per chi scrive nel brain)",
+   "label": "Technical characteristics",
    "file_type": "document",
    "source_file": "README.md",
-   "source_location": "L44",
+   "source_location": "L55",
    "_origin": "ast",
-   "id": "readme_workflow_di_modifica_per_chi_scrive_nel_brain",
+   "id": "readme_technical_characteristics",
    "community": 85,
-   "norm_label": "workflow di modifica (per chi scrive nel brain)"
+   "norm_label": "technical characteristics"
+  },
+  {
+   "label": "What makes it different from graphify",
+   "file_type": "document",
+   "source_file": "README.md",
+   "source_location": "L17",
+   "_origin": "ast",
+   "id": "readme_what_makes_it_different_from_graphify",
+   "community": 85,
+   "norm_label": "what makes it different from graphify"
   },
   {
    "label": "Request",
@@ -4543,60 +4553,70 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L35",
+   "source_location": "L38",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_come_si_consuma",
+   "target": "readme_architecture_the_system_as_a_5_phase_process",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L53",
+   "source_location": "L71",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_guide",
+   "target": "readme_how_ais_interface_with_it",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L29",
+   "source_location": "L81",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_macroaree",
+   "target": "readme_inside_the_brain_domains",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L9",
+   "source_location": "L92",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_principi",
+   "target": "readme_repository_layout",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L16",
+   "source_location": "L105",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_struttura_il_processo_a_5_fasi",
+   "target": "readme_status",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "README.md",
-   "source_location": "L44",
+   "source_location": "L55",
    "weight": 1.0,
    "source": "readme_altair_brain",
-   "target": "readme_workflow_di_modifica_per_chi_scrive_nel_brain",
+   "target": "readme_technical_characteristics",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "README.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "readme_altair_brain",
+   "target": "readme_what_makes_it_different_from_graphify",
    "confidence_score": 1.0
   },
   {

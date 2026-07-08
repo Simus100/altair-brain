@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-08)
 
 ## Corpus Check
-- 146 files · ~78,977 words
+- 146 files · ~79,388 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1042 nodes · 1340 edges · 117 communities (110 shown, 7 thin omitted)
+- 1043 nodes · 1344 edges · 117 communities (110 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `642f3966`
+- Built from commit: `4ecef39b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -133,8 +133,8 @@
 6. `server/ — esposizione del second brain via FastAPI` - 9 edges
 7. `$ref` - 8 edges
 8. `_safe()` - 8 edges
-9. `1. 乾 Il Creativo (Qián) ䷀` - 8 edges
-10. `2. 坤 Il Ricettivo (Kūn) ䷁` - 8 edges
+9. `altair-brain` - 8 edges
+10. `1. 乾 Il Creativo (Qián) ䷀` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
@@ -166,8 +166,8 @@ Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
+Cohesion: 0.13
+Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.16
@@ -195,7 +195,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.14
@@ -214,8 +214,8 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.21
-Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
+Cohesion: 0.16
+Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.17
@@ -490,8 +490,8 @@ Cohesion: 0.25
 Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 85 - "Community 85"
-Cohesion: 0.25
-Nodes (7): altair-brain, Come si consuma, Guide, Macroaree, Principi, Struttura (il processo a 5 fasi), Workflow di modifica (per chi scrive nel brain)
+Cohesion: 0.22
+Nodes (8): altair-brain, Architecture — the system as a 5-phase process, How AIs interface with it, Inside the brain (domains), Repository layout, Status, Technical characteristics, What makes it different from graphify
 
 ### Community 86 - "Community 86"
 Cohesion: 0.25
@@ -554,21 +554,21 @@ Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
 ## Knowledge Gaps
-- **673 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+668 more)
+- **674 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+669 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `7. 師 L'Esercito (Shī) ䷆` connect `Community 82` to `Community 13`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `8. 比 La Coesione (Bǐ) ䷇` connect `Community 83` to `Community 13`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `17. 隨 Il Seguimento (Suí) ䷐` connect `Community 28` to `Community 13`?**
+- **Why does `20. 觀 La Contemplazione (Guān) ䷓` connect `Community 32` to `Community 13`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `64. 未濟 Prima del Compimento (Wèi Jì) ䷿` connect `Community 80` to `Community 13`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `4. 蒙 L'Inesperienza (Méng) ䷃` connect `Community 64` to `Community 13`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _685 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _686 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
