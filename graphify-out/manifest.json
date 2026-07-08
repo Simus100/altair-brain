@@ -855,8 +855,18 @@
     "semantic_hash": ""
   },
   "raw/template_showcase_3d.md": {
-    "mtime": 1783532470.6888,
-    "ast_hash": "eae2ad92bafefdae13504bad6be6ad43",
+    "mtime": 1783539699.8649876,
+    "ast_hash": "de517c25f200733e5a7fcfd03028078a",
+    "semantic_hash": ""
+  },
+  "raw/altair_iran_showcase.html": {
+    "mtime": 1783539673.2664561,
+    "ast_hash": "0c4eef7725b075b3babc941acfc410c2",
+    "semantic_hash": ""
+  },
+  "raw/altair_iran_showcase_prototype.html": {
+    "mtime": 1783539673.2664561,
+    "ast_hash": "0c4eef7725b075b3babc941acfc410c2",
     "semantic_hash": ""
   }
 }

@@ -130,15 +130,32 @@
 
     /* Layout Principale a Griglia */
     .command-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
     }
+    
+    .command-grid > main, .command-grid > aside {
+      display: contents;
+    }
+
+    #box-canvas { order: 1; }
+    #box-specs { order: 2; }
+    #details-card { order: 3; }
+    #box-conclusions { order: 4; }
 
     @media (min-width: 950px) {
       .command-grid {
+        display: grid;
         grid-template-columns: 1fr 420px;
+        gap: 30px;
       }
+      .command-grid > main, .command-grid > aside {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      #box-canvas, #box-specs, #details-card, #box-conclusions { order: 0; }
     }
 
     /* Elementi 3D Solidi Bisellati (Hard Frame Design) -> Glassmorphism */
@@ -256,6 +273,12 @@
       .node-details-card {
         padding: 25px;
         min-height: 330px;
+      }
+    }
+
+    @media (max-width: 949px) {
+      #details-card:not(.node-active) {
+        display: none;
       }
     }
 
@@ -437,8 +460,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.75rem;
-      color: var(--text-muted);
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      footer { flex-direction: column; gap: 10px; text-align: center; font-size: 0.85rem; }
     }
   </style>
 </head>
@@ -476,8 +503,8 @@
 
     <div class="command-grid">
       <!-- Colonna Principale (WebGL Canvas 3D Brain & Conclusioni) -->
-      <main style="display: flex; flex-direction: column; gap: 25px;">
-        <div class="panel-3d">
+      <main>
+        <div class="panel-3d" id="box-canvas">
           <h2>🧠 Struttura Neurale 3D Altair-Brain</h2>
           <div class="brain-canvas-container">
             <canvas id="webgl-canvas"></canvas>
@@ -486,7 +513,7 @@
         </div>
 
         <!-- Sezione Conclusioni Strategiche spostata all'interno del Main per simmetria desktop -->
-        <div class="conclusions-box" style="margin-top: 0;">
+        <div class="conclusions-box" id="box-conclusions" style="margin-top: 0;">
           <h3>🔮 Conclusioni Strategiche di Altair-Brain</h3>
           <div class="conclusions-text">
             <p>
@@ -506,7 +533,7 @@
       </main>
 
       <!-- Barra Laterale (Console Olografica & Altair Specs) -->
-      <aside class="details-panel">
+      <aside>
         
         <!-- Dettaglio del Nodo Cliccato -->
         <div class="node-details-card" id="details-card">
@@ -531,7 +558,7 @@
         </div>
 
         <!-- Perché Altair-Brain (Specifiche Prodotto) -->
-        <div class="panel-3d" style="padding: 20px;">
+        <div class="panel-3d" id="box-specs" style="padding: 20px;">
           <h2 style="font-size: 1rem; border-left-color: var(--color-emerald);">⚡ Altair-Brain Specs</h2>
           <ul class="tech-specs-sidebar">
             <li>
@@ -1108,6 +1135,7 @@
       document.getElementById('oracle-text-content').innerText = data.oracle;
 
       const card = document.getElementById('details-card');
+      card.classList.add('node-active');
       card.style.borderColor = data.color;
       setTimeout(() => { card.style.borderColor = 'var(--border-color)'; }, 300);
 

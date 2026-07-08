@@ -140,9 +140,33 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     }
     
     .command-grid {
-      display: grid; grid-template-columns: 1fr; gap: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
     }
-    @media (min-width: 950px) { .command-grid { grid-template-columns: 1fr 420px; } }
+    
+    .command-grid > main, .command-grid > aside {
+      display: contents;
+    }
+
+    #box-canvas { order: 1; }
+    #box-specs { order: 2; }
+    #details-card { order: 3; }
+    #box-conclusions { order: 4; }
+
+    @media (min-width: 950px) {
+      .command-grid {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 30px;
+      }
+      .command-grid > main, .command-grid > aside {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      #box-canvas, #box-specs, #details-card, #box-conclusions { order: 0; }
+    }
     
     .panel-3d {
       background: var(--bg-card);
@@ -201,6 +225,12 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
     @media (min-width: 768px) { .node-details-card { padding: 25px; min-height: 330px; } }
+    
+    @media (max-width: 949px) {
+      #details-card:not(.node-active) {
+        display: none;
+      }
+    }
     
     .node-header {
       display: flex; align-items: center; gap: 12px;
@@ -261,7 +291,10 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     footer {
       margin-top: 40px; border-top: 2px solid var(--border-color);
       padding-top: 20px; display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.75rem; color: var(--text-muted);
+      font-size: 0.95rem; color: #cbd5e1; font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      footer { flex-direction: column; gap: 10px; text-align: center; font-size: 0.85rem; }
     }
   </style>
 </head>
@@ -294,8 +327,8 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     </header>
 
     <div class="command-grid">
-      <main style="display: flex; flex-direction: column; gap: 25px;">
-        <div class="panel-3d">
+      <main>
+        <div class="panel-3d" id="box-canvas">
           <h2>🧠 Struttura Neurale 3D Altair-Brain</h2>
           <div class="brain-canvas-container">
             <canvas id="webgl-canvas"></canvas>
@@ -303,7 +336,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
           </div>
         </div>
 
-        <div class="conclusions-box" style="margin-top: 0;">
+        <div class="conclusions-box" id="box-conclusions" style="margin-top: 0;">
           <h3>🔮 Conclusioni Strategiche</h3>
           <div class="conclusions-text">
             {{STRATEGIC_CONCLUSIONS_HTML}}
@@ -311,7 +344,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         </div>
       </main>
 
-      <aside class="details-panel">
+      <aside>
         <div class="node-details-card" id="details-card">
           <div class="node-header">
             <div class="node-icon-dot" id="node-color-dot" style="background-color: var(--color-gold); box-shadow: 0 0 10px var(--color-gold);"></div>
@@ -330,7 +363,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
           </div>
         </div>
 
-        <div class="panel-3d" style="padding: 20px;">
+        <div class="panel-3d" id="box-specs" style="padding: 20px;">
           <h2 style="font-size: 1rem; border-left-color: var(--color-emerald);">⚡ Altair-Brain Specs</h2>
           <ul class="tech-specs-sidebar">
             {{TECH_SPECS_HTML}}
@@ -735,6 +768,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
       document.getElementById('oracle-text-content').innerText = data.oracle;
 
       const card = document.getElementById('details-card');
+      card.classList.add('node-active');
       card.style.borderColor = data.color;
       setTimeout(() => { card.style.borderColor = 'var(--border-color)'; }, 300);
 
