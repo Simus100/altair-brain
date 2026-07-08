@@ -58,9 +58,10 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 
   <style>
     :root {
-      --bg-dark: #06080d;
-      --bg-card: #0e1322;
-      --border-color: rgba(99, 102, 241, 0.25);
+      --bg-dark: #030408;
+      --bg-card: rgba(14, 19, 34, 0.65);
+      --border-color: rgba(99, 102, 241, 0.2);
+      --border-glow: rgba(99, 102, 241, 0.5);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       
@@ -77,8 +78,9 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       color: var(--text-main);
-      background-color: var(--bg-dark);
-      line-height: 1.5;
+      background: radial-gradient(circle at 50% 0%, #0d1225 0%, var(--bg-dark) 60%);
+      background-attachment: fixed;
+      line-height: 1.6;
       padding: 20px 10px;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
@@ -89,11 +91,19 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     
     header {
       background: var(--bg-card);
-      border: 2px solid var(--border-color);
-      border-radius: 8px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
       padding: 25px;
       margin-bottom: 25px;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 6px 0 #151a2b, 0 15px 25px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-primary), transparent); opacity: 0.5;
     }
     @media (min-width: 768px) { header { padding: 30px; margin-bottom: 30px; } }
 
@@ -136,15 +146,21 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     
     .panel-3d {
       background: var(--bg-card);
-      border: 2px solid var(--border-color);
-      border-radius: 8px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
       padding: 20px;
       position: relative;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 5px 0 #151a2b, 0 15px 25px rgba(0, 0, 0, 0.5);
-      transition: transform 0.1s, box-shadow 0.1s;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
     }
     @media (min-width: 768px) { .panel-3d { padding: 25px; } }
-    .panel-3d:hover { border-color: rgba(99, 102, 241, 0.4); }
+    .panel-3d:hover { 
+      border-color: var(--border-glow); 
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1); 
+      transform: translateY(-2px); 
+    }
 
     h2 {
       font-size: 1.15rem; font-weight: 800; margin-bottom: 20px;
@@ -175,10 +191,14 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     .details-panel { display: flex; flex-direction: column; gap: 25px; }
     
     .node-details-card {
-      background: rgba(14, 19, 34, 0.85); border: 2px solid var(--border-color);
-      border-radius: 8px; padding: 20px;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 5px 0 #151a2b, 0 15px 20px rgba(0, 0, 0, 0.5);
+      background: rgba(14, 19, 34, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px; padding: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
       min-height: 280px; display: flex; flex-direction: column;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
     @media (min-width: 768px) { .node-details-card { padding: 25px; min-height: 330px; } }
     
@@ -216,10 +236,17 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     .tech-specs-sidebar li span.value { font-weight: 700; color: #fff; }
     
     .conclusions-box {
-      background: linear-gradient(135deg, #101524 0%, #0c0f18 100%);
-      border: 2px solid var(--border-color); border-top: 4px solid var(--color-gold);
-      border-radius: 8px; padding: 25px; margin-top: 30px;
-      box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 5px 0 #080a13, 0 15px 25px rgba(0,0,0,0.5);
+      background: linear-gradient(135deg, rgba(16, 21, 36, 0.7) 0%, rgba(12, 15, 24, 0.7) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color); border-top: 3px solid var(--color-gold);
+      border-radius: 16px; padding: 25px; margin-top: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .conclusions-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(251, 191, 36, 0.1);
     }
     .conclusions-box h3 {
       font-size: 1.15rem; font-weight: 800; text-transform: uppercase;
@@ -272,7 +299,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
           <h2>🧠 Struttura Neurale 3D Altair-Brain</h2>
           <div class="brain-canvas-container">
             <canvas id="webgl-canvas"></canvas>
-            <div class="canvas-overlay-tip">Trascina per ruotare · Clicca sui nodi per analizzare</div>
+            <div class="canvas-overlay-tip">Trascina per ruotare · Usa rotellina o pizzica per zoomare · Clicca per analizzare</div>
           </div>
         </div>
 
@@ -334,14 +361,23 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     let angleY = 0.5;
 
     const cameraDist = 8;
+    let basePerspectiveScale = 140;
     let perspectiveScale = 140;
+    let zoomLevel = 1.0;
 
     function resizeCanvas() {
       width = canvas.clientWidth;
       height = canvas.clientHeight;
       canvas.width = width;
       canvas.height = height;
-      perspectiveScale = Math.min(width, height) * 0.45;
+      basePerspectiveScale = Math.min(width, height) * 0.45;
+      perspectiveScale = basePerspectiveScale * zoomLevel;
+    }
+
+    function updateZoom(delta) {
+      zoomLevel += delta;
+      zoomLevel = Math.max(0.4, Math.min(zoomLevel, 3.5));
+      perspectiveScale = basePerspectiveScale * zoomLevel;
     }
 
     function generateBrainGeometry() {
@@ -537,6 +573,7 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
     let isDragging = false;
     let dragStart = { x: 0, y: 0 };
     let previousMousePosition = { x: 0, y: 0 };
+    let initialPinchDistance = null;
 
     function setupInteraction() {
       canvas.addEventListener('mousedown', e => {
@@ -563,29 +600,52 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
         }
       });
 
+      canvas.addEventListener('wheel', e => {
+        e.preventDefault();
+        updateZoom(e.deltaY * -0.001);
+      }, { passive: false });
+
       canvas.addEventListener('touchstart', e => {
         if (e.touches.length === 1) {
           isDragging = true;
           const touch = e.touches[0];
           dragStart = { x: touch.clientX, y: touch.clientY };
           previousMousePosition = { x: touch.clientX, y: touch.clientY };
+        } else if (e.touches.length === 2) {
+          isDragging = false;
+          initialPinchDistance = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
         }
-      });
+      }, { passive: false });
 
       canvas.addEventListener('touchmove', e => {
-        if (!isDragging || e.touches.length !== 1) return;
-        const touch = e.touches[0];
-        const deltaX = touch.clientX - previousMousePosition.x;
-        const deltaY = touch.clientY - previousMousePosition.y;
-        angleY += deltaX * 0.005;
-        angleX += deltaY * 0.005;
-        previousMousePosition = { x: touch.clientX, y: touch.clientY };
-      });
+        e.preventDefault();
+        if (e.touches.length === 1 && isDragging) {
+          const touch = e.touches[0];
+          const deltaX = touch.clientX - previousMousePosition.x;
+          const deltaY = touch.clientY - previousMousePosition.y;
+          angleY += deltaX * 0.005;
+          angleX += deltaY * 0.005;
+          previousMousePosition = { x: touch.clientX, y: touch.clientY };
+        } else if (e.touches.length === 2 && initialPinchDistance !== null) {
+          const dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          const delta = dist - initialPinchDistance;
+          updateZoom(delta * 0.005);
+          initialPinchDistance = dist;
+        }
+      }, { passive: false });
 
       canvas.addEventListener('touchend', e => {
-        if (!isDragging) return;
-        isDragging = false;
-        if (e.changedTouches.length === 1) {
+        if (e.touches.length < 2) {
+          initialPinchDistance = null;
+        }
+        if (e.changedTouches.length === 1 && isDragging) {
+          isDragging = false;
           const touch = e.changedTouches[0];
           const dist = Math.hypot(touch.clientX - dragStart.x, touch.clientY - dragStart.y);
           if (dist < 6) {
