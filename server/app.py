@@ -60,8 +60,7 @@ _buckets = defaultdict(deque)
 async def rate_limiter(request: Request, call_next):
     path = request.url.path
     if not path.endswith("/health"):
-        ip = (request.headers.get("x-forwarded-for", "").split(",")[0].strip()
-              or (request.client.host if request.client else "?"))
+        ip = request.client.host if request.client else "?"
         now = time.time()
         q = _buckets[ip]
         while q and now - q[0] > 60:
