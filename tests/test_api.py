@@ -103,3 +103,34 @@ def test_capture_vuoto_e_troppo_grande():
     assert client.post("/v1/capture", json={"text": "  "}, headers=AUTH).status_code == 400
     big = "x" * 150_000
     assert client.post("/v1/capture", json={"text": big}, headers=AUTH).status_code == 413
+
+def test_rate_limiter_uses_client_host():
+    # Simulate requests with spoofed X-Forwarded-For headers
+    # Uvicorn would normally set request.client.host if trusted, but TestClient
+    # provides a testclient IP. We just want to ensure it doesn't crash and returns 429
+    # if we exceed the limit (which is 10000 in this test file).
+    # To test actual bypass, we would need to mock time.time or reduce the limit,
+    # but since this is just TestClient, checking it doesn't crash on standard requests is sufficient.
+
+    # We will reset the rate limit specifically for this test
+    old_limit = app_module.RATE_LIMIT
+    app_module.RATE_LIMIT = 2
+    app_module._buckets.clear()
+
+    try:
+        # First request from testclient (IP: testclient by default in TestClient)
+        r1 = client.get("/v1/model", headers=AUTH | {"X-Forwarded-For": "9.9.9.9"})
+        assert r1.status_code == 200
+
+        # Second request (limit is 2)
+        r2 = client.get("/v1/model", headers=AUTH | {"X-Forwarded-For": "8.8.8.8"})
+        assert r2.status_code == 200
+
+        # Third request should be 429 because it should ignore the different X-Forwarded-For
+        # and count against the same testclient IP.
+        r3 = client.get("/v1/model", headers=AUTH | {"X-Forwarded-For": "7.7.7.7"})
+        assert r3.status_code == 429
+        assert "Rate limit superato" in r3.json()["detail"]
+    finally:
+        app_module.RATE_LIMIT = old_limit
+        app_module._buckets.clear()
