@@ -19,3 +19,4 @@ raw/**/*.bkp
 **/~$*
 raw/**/backup/
 raw/**/excell_old/
+test_env/
