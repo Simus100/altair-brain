@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "1bc9d18db1337c2aa579ed232dc2ca4746b14300",
+ "built_at_commit": "6b304b666460b3e691030855482bb6fdc8fcc2fd",
  "nodes": [
   {
    "label": "README.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_divulgazione_readme",
-   "community": 96,
+   "community": 97,
    "norm_label": "readme.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "raw_divulgazione_readme_ambito",
-   "community": 96,
+   "community": 97,
    "norm_label": "ambito"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_divulgazione_readme_divulgazione",
-   "community": 96,
+   "community": 97,
    "norm_label": "divulgazione"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_divulgazione_readme_note",
-   "community": 96,
+   "community": 97,
    "norm_label": "note"
   }
  ],

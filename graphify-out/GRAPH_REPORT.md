@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-10)
 
 ## Corpus Check
-- 150 files · ~107,668 words
+- 150 files · ~107,893 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1060 nodes · 1355 edges · 119 communities (112 shown, 7 thin omitted)
+- 1062 nodes · 1357 edges · 120 communities (113 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1bc9d18d`
+- Built from commit: `6b304b66`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -114,16 +114,17 @@
 - [[_COMMUNITY_Community 96|Community 96]]
 - [[_COMMUNITY_Community 97|Community 97]]
 - [[_COMMUNITY_Community 98|Community 98]]
-- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 99|Community 99]]
 - [[_COMMUNITY_Community 101|Community 101]]
 - [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
-- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 104|Community 104]]
 - [[_COMMUNITY_Community 106|Community 106]]
 - [[_COMMUNITY_Community 107|Community 107]]
 - [[_COMMUNITY_Community 108|Community 108]]
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
+- [[_COMMUNITY_Community 111|Community 111]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -148,14 +149,14 @@
 ## Import Cycles
 - None detected.
 
-## Communities (119 total, 7 thin omitted)
+## Communities (120 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
 Nodes (37): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+29 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.07
+Cohesion: 0.06
 Nodes (24): BaseModel, Request, Response, affected(), capture(), CaptureReq, _err(), explain() (+16 more)
 
 ### Community 2 - "Community 2"
@@ -163,32 +164,32 @@ Cohesion: 0.12
 Nodes (32): Exception, Path, area_graph_path(), BrainError, capture(), graph_query(), graphify_available(), health_info() (+24 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.10
-Nodes (16): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_COGNITION_VIEW, AION_Echo, AION_FABULATORIUM, AION_Symbol, AION_Visual (+8 more)
+Cohesion: 0.11
+Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
-Nodes (11): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamento 001 - Interconnessione non lineare, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche, Insegnamento 010 - Simulazioni con feedback retrospettivo, Insegnamento 013 - Reasoning neuro-simbolico (+3 more)
-
-### Community 5 - "Community 5"
-Cohesion: 0.11
 Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
 
-### Community 6 - "Community 6"
+### Community 5 - "Community 5"
 Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
+
+### Community 6 - "Community 6"
+Cohesion: 0.14
+Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
 Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.20
-Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
+Cohesion: 0.17
+Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ### Community 9 - "Community 9"
-Cohesion: 0.17
-Nodes (8): AION_ETHOS, Insegnamenti attivi di AION, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 011 - Dinamiche narrative evolutive (I Ching), Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili
+Cohesion: 0.20
+Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
 
 ### Community 10 - "Community 10"
 Cohesion: 0.13
@@ -207,32 +208,32 @@ Cohesion: 0.31
 Nodes (7): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
 
 ### Community 14 - "Community 14"
-Cohesion: 0.22
-Nodes (7): AION_SUPERIA, AION - modello di pensiero, Livello Identita / Etica, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
-
-### Community 15 - "Community 15"
 Cohesion: 0.15
 Nodes (12): Completato (storico, per orientamento), Contesto in 10 righe, DOPO che le macroaree saranno popolate (non prima), ✅ IMPLEMENTAZIONE 1 — Cattura da ovunque — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 2 — Server MCP — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 3 — Oracle eseguibile — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 4 — Guardie di qualita — COMPLETATA (vedi Completato), ✅ INFRASTRUTTURA 2.0 — COMPLETATA 2026-07-01 (vedi Completato; le spec restano come riferimento) (+4 more)
 
-### Community 16 - "Community 16"
+### Community 15 - "Community 15"
 Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
-### Community 17 - "Community 17"
+### Community 16 - "Community 16"
 Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
+### Community 17 - "Community 17"
+Cohesion: 0.17
+Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
+
 ### Community 18 - "Community 18"
+Cohesion: 0.27
+Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+
+### Community 19 - "Community 19"
 Cohesion: 0.18
 Nodes (10): Altair Brain, Architecture — the system as a 5-phase process, Contributors, How AIs interface with it, Inside the brain (domains), Repository layout, Status, Technical characteristics (+2 more)
 
-### Community 19 - "Community 19"
-Cohesion: 0.20
-Nodes (9): Componenti, Custom GPT (ChatGPT Actions), Deploy, Dipendenza: graphify (pacchetto Python), Endpoint (v1 — alias non versionati mantenuti), Notifiche di guasto + backup, server/ — esposizione del second brain via FastAPI, Server MCP (assistenti AI locali) (+1 more)
-
 ### Community 20 - "Community 20"
 Cohesion: 0.20
-Nodes (5): AION_Paradox, AION_SYNTH, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 008 - Reward shaping strategico, Insegnamento 016 - Simulazioni predittive multi-agent
+Nodes (9): Componenti, Custom GPT (ChatGPT Actions), Deploy, Dipendenza: graphify (pacchetto Python), Endpoint (v1 — alias non versionati mantenuti), Notifiche di guasto + backup, server/ — esposizione del second brain via FastAPI, Server MCP (assistenti AI locali) (+1 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.25
@@ -495,66 +496,70 @@ Cohesion: 0.25
 Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 86 - "Community 86"
-Cohesion: 0.29
-Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
+Cohesion: 0.25
+Nodes (4): AION_Paradox, AION_SYNTH, Insegnamento 008 - Reward shaping strategico, Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.29
 Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
 
 ### Community 88 - "Community 88"
+Cohesion: 0.29
+Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
+
+### Community 89 - "Community 89"
 Cohesion: 0.33
 Nodes (5): Apprendimento, Come procedere, Output atteso, Skill: ragionamento AION, Vincoli
 
-### Community 89 - "Community 89"
+### Community 90 - "Community 90"
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: Conviene esporre ora il second brain via API pubblica (GPT custom) o e prematuro?, Source Nodes
 
-### Community 90 - "Community 90"
+### Community 91 - "Community 91"
 Cohesion: 0.40
 Nodes (5): Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 3:  ## Utilizzo Narrativo dell'I Ching:, Spunti di Trama:, Tensioni e Svolte:
 
-### Community 91 - "Community 91"
+### Community 92 - "Community 92"
 Cohesion: 0.50
 Nodes (3): graphify, Roadmap, Viste del grafo (processo standard)
 
-### Community 92 - "Community 92"
+### Community 93 - "Community 93"
 Cohesion: 0.50
 Nodes (3): Procedura, Skill: AION_Oracle (I Ching eseguibile), Vincoli
 
-### Community 93 - "Community 93"
+### Community 94 - "Community 94"
 Cohesion: 0.50
 Nodes (3): Procedura, Skill: triage dell'inbox, Vincoli
 
-### Community 94 - "Community 94"
+### Community 95 - "Community 95"
 Cohesion: 0.50
 Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
 
-### Community 95 - "Community 95"
+### Community 96 - "Community 96"
 Cohesion: 0.50
 Nodes (3): Ambito, Data science, Note
 
-### Community 96 - "Community 96"
+### Community 97 - "Community 97"
 Cohesion: 0.50
 Nodes (3): Ambito, Divulgazione, Note
 
-### Community 97 - "Community 97"
+### Community 98 - "Community 98"
 Cohesion: 0.50
 Nodes (3): Ambito, Finanza, Note
 
-### Community 98 - "Community 98"
+### Community 99 - "Community 99"
 Cohesion: 0.50
 Nodes (3): Ambito, Note, Web design
 
-### Community 100 - "Community 100"
+### Community 101 - "Community 101"
 Cohesion: 0.50
 Nodes (3): altair_compact_view.py — vista compatta strutturale, Le due viste, tools/ — feature di supporto ad altair-brain
 
-### Community 101 - "Community 101"
+### Community 102 - "Community 102"
 Cohesion: 0.67
 Nodes (3): items, type, dominanti
 
-### Community 102 - "Community 102"
+### Community 103 - "Community 103"
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
@@ -569,14 +574,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 13`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `58. 兌 Il Sereno (Duì) ䷹` connect `Community 74` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `29. 坎 L'Abissale (Kǎn) ䷜` connect `Community 42` to `Community 13`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
   _696 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.06765327695560254 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06376811594202898 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.11746031746031746 - nodes in this community are weakly interconnected._
