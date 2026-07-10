@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-07-08)
+# Graph Report - altair-brain  (2026-07-10)
 
 ## Corpus Check
-- 147 files · ~81,943 words
+- 150 files · ~107,663 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1052 nodes · 1349 edges · 117 communities (110 shown, 7 thin omitted)
+- 1060 nodes · 1355 edges · 120 communities (113 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5467ce06`
+- Built from commit: `542c3955`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,6 +32,7 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
@@ -123,6 +124,7 @@
 - [[_COMMUNITY_Community 108|Community 108]]
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 117|Community 117]]
+- [[_COMMUNITY_Community 118|Community 118]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -147,7 +149,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (117 total, 7 thin omitted)
+## Communities (120 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -163,7 +165,7 @@ Nodes (32): Exception, Path, area_graph_path(), BrainError, capture(), graph_que
 
 ### Community 3 - "Community 3"
 Cohesion: 0.11
-Nodes (11): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamento 001 - Interconnessione non lineare, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche, Insegnamento 010 - Simulazioni con feedback retrospettivo, Insegnamento 013 - Reasoning neuro-simbolico (+3 more)
+Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
@@ -174,8 +176,8 @@ Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (16): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_COGNITION_VIEW, AION_Echo, AION_FABULATORIUM, AION_Symbol, AION_Visual (+8 more)
+Cohesion: 0.14
+Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -183,7 +185,7 @@ Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.17
-Nodes (8): AION_ETHOS, Insegnamenti attivi di AION, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 011 - Dinamiche narrative evolutive (I Ching), Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili
+Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
 
 ### Community 9 - "Community 9"
 Cohesion: 0.20
@@ -217,9 +219,13 @@ Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 
 Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
+### Community 17 - "Community 17"
+Cohesion: 0.17
+Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
+
 ### Community 18 - "Community 18"
-Cohesion: 0.22
-Nodes (7): AION_SUPERIA, AION - modello di pensiero, Livello Identita / Etica, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.27
+Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
 
 ### Community 19 - "Community 19"
 Cohesion: 0.20
@@ -490,8 +496,8 @@ Cohesion: 0.18
 Nodes (10): Altair Brain, Architecture — the system as a 5-phase process, Contributors, How AIs interface with it, Inside the brain (domains), Repository layout, Status, Technical characteristics (+2 more)
 
 ### Community 86 - "Community 86"
-Cohesion: 0.20
-Nodes (5): AION_Paradox, AION_SYNTH, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 008 - Reward shaping strategico, Insegnamento 016 - Simulazioni predittive multi-agent
+Cohesion: 0.25
+Nodes (4): AION_Paradox, AION_SYNTH, Insegnamento 008 - Reward shaping strategico, Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
 
 ### Community 88 - "Community 88"
 Cohesion: 0.33
@@ -553,22 +559,26 @@ Nodes (3): items, type, orchestra
 Cohesion: 0.29
 Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
 
+### Community 118 - "Community 118"
+Cohesion: 0.29
+Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
+
 ## Knowledge Gaps
-- **680 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+675 more)
+- **684 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+679 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `58. 兌 Il Sereno (Duì) ䷹` connect `Community 73` to `Community 13`?**
+- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 31` to `Community 13`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 40` to `Community 13`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `2. 坤 Il Ricettivo (Kūn) ䷁` connect `Community 42` to `Community 13`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `58. 兌 Il Sereno (Duì) ䷹` connect `Community 73` to `Community 13`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _692 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _696 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
