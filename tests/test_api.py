@@ -103,3 +103,14 @@ def test_capture_vuoto_e_troppo_grande():
     assert client.post("/v1/capture", json={"text": "  "}, headers=AUTH).status_code == 400
     big = "x" * 150_000
     assert client.post("/v1/capture", json={"text": big}, headers=AUTH).status_code == 413
+
+
+def test_feedback_node_injection_rejected():
+    payload = {
+        "question": "test question",
+        "answer": "test answer",
+        "nodes": ["--out", "hacked"]
+    }
+    r = client.post("/v1/feedback", json=payload, headers=AUTH)
+    assert r.status_code == 400
+    assert "non possono iniziare con" in r.json()["detail"]

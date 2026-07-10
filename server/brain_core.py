@@ -221,6 +221,8 @@ def save_feedback(question: str, answer: str, outcome: str = "useful",
                   ftype: str = "query", nodes: list = None, correction: str = None) -> str:
     if outcome not in ("useful", "dead_end", "corrected"):
         raise BrainError(400, "outcome deve essere useful|dead_end|corrected.")
+    if nodes and any(n.startswith("-") for n in nodes):
+        raise BrainError(400, "I nodi non possono iniziare con '-'.")
     MEMORY_DIR.mkdir(parents=True, exist_ok=True)
     args = ["save-result", "--question", question, "--answer", answer,
             "--type", ftype, "--outcome", outcome, "--memory-dir", str(MEMORY_DIR)]
