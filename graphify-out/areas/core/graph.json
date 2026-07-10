@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "542c3955337d45bfc873372c6da71a7a0d762d50",
+ "built_at_commit": "1bc9d18db1337c2aa579ed232dc2ca4746b14300",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents",
-   "community": 20,
+   "community": 21,
    "norm_label": "agents.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_agents_md_regole_di_altair_brain_per_gli_agenti",
-   "community": 20,
+   "community": 21,
    "norm_label": "agents.md — regole di altair-brain per gli agenti"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_rules_graphify",
-   "community": 106,
+   "community": 107,
    "norm_label": "graphify.md"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "agents_rules_graphify_graphify",
-   "community": 106,
+   "community": 107,
    "norm_label": "graphify"
   },
   {
@@ -52,7 +52,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "agents_workflows_graphify",
-   "community": 107,
+   "community": 108,
    "norm_label": "graphify.md"
   },
   {
@@ -62,7 +62,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "agents_workflows_graphify_workflow_graphify",
-   "community": 107,
+   "community": 108,
    "norm_label": "workflow: graphify"
   },
   {
@@ -412,7 +412,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema",
-   "community": 15,
+   "community": 16,
    "norm_label": "aion.model.schema.json"
   },
   {
@@ -422,7 +422,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_items",
-   "community": 16,
+   "community": 17,
    "norm_label": "items"
   },
   {
@@ -432,7 +432,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_minitems",
-   "community": 16,
+   "community": 17,
    "norm_label": "minitems"
   },
   {
@@ -442,7 +442,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_agenti_type",
-   "community": 16,
+   "community": 17,
    "norm_label": "type"
   },
   {
@@ -472,7 +472,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_items",
-   "community": 16,
+   "community": 17,
    "norm_label": "items"
   },
   {
@@ -522,7 +522,7 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_definitions",
-   "community": 15,
+   "community": 16,
    "norm_label": "definitions"
   },
   {
@@ -532,7 +532,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_definitions_id",
-   "community": 15,
+   "community": 16,
    "norm_label": "id"
   },
   {
@@ -542,7 +542,7 @@
    "source_location": "L4",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_description",
-   "community": 15,
+   "community": 16,
    "norm_label": "description"
   },
   {
@@ -552,7 +552,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_dominanti_items",
-   "community": 100,
+   "community": 101,
    "norm_label": "items"
   },
   {
@@ -562,7 +562,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_dominanti_type",
-   "community": 100,
+   "community": 101,
    "norm_label": "type"
   },
   {
@@ -572,7 +572,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_pattern",
-   "community": 15,
+   "community": 16,
    "norm_label": "pattern"
   },
   {
@@ -582,7 +582,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_ref",
-   "community": 15,
+   "community": 16,
    "norm_label": "$ref"
   },
   {
@@ -592,7 +592,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_id_type",
-   "community": 15,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -602,7 +602,7 @@
    "source_location": "L71",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_items",
-   "community": 16,
+   "community": 17,
    "norm_label": "items"
   },
   {
@@ -612,7 +612,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_minitems",
-   "community": 16,
+   "community": 17,
    "norm_label": "minitems"
   },
   {
@@ -622,7 +622,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_insegnamenti_type",
-   "community": 16,
+   "community": 17,
    "norm_label": "type"
   },
   {
@@ -652,7 +652,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_properties",
-   "community": 4,
+   "community": 5,
    "norm_label": "properties"
   },
   {
@@ -672,7 +672,7 @@
    "source_location": "L15",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_required",
-   "community": 16,
+   "community": 17,
    "norm_label": "required"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_items_type",
-   "community": 16,
+   "community": 17,
    "norm_label": "type"
   },
   {
@@ -692,7 +692,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_label_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -702,7 +702,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livelli_items",
-   "community": 16,
+   "community": 17,
    "norm_label": "items"
   },
   {
@@ -732,7 +732,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_livello_ref",
-   "community": 4,
+   "community": 5,
    "norm_label": "$ref"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 4,
+   "community": 5,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 4,
+   "community": 5,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -782,7 +782,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_orchestra_items",
-   "community": 101,
+   "community": 102,
    "norm_label": "items"
   },
   {
@@ -792,7 +792,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_orchestra_type",
-   "community": 101,
+   "community": 102,
    "norm_label": "type"
   },
   {
@@ -802,7 +802,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_priorita_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -822,7 +822,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_agenti",
-   "community": 16,
+   "community": 17,
    "norm_label": "agenti"
   },
   {
@@ -862,7 +862,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_dominanti",
-   "community": 100,
+   "community": 101,
    "norm_label": "dominanti"
   },
   {
@@ -872,7 +872,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_id",
-   "community": 15,
+   "community": 16,
    "norm_label": "id"
   },
   {
@@ -882,7 +882,7 @@
    "source_location": "L69",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_insegnamenti",
-   "community": 16,
+   "community": 17,
    "norm_label": "insegnamenti"
   },
   {
@@ -902,7 +902,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_label",
-   "community": 4,
+   "community": 5,
    "norm_label": "label"
   },
   {
@@ -922,7 +922,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_livello",
-   "community": 4,
+   "community": 5,
    "norm_label": "livello"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 4,
+   "community": 5,
    "norm_label": "modalita"
   },
   {
@@ -952,7 +952,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_orchestra",
-   "community": 101,
+   "community": 102,
    "norm_label": "orchestra"
   },
   {
@@ -962,7 +962,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_priorita",
-   "community": 4,
+   "community": 5,
    "norm_label": "priorita"
   },
   {
@@ -972,7 +972,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_ruolo",
-   "community": 4,
+   "community": 5,
    "norm_label": "ruolo"
   },
   {
@@ -992,7 +992,7 @@
    "source_location": "L30",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_tag",
-   "community": 4,
+   "community": 5,
    "norm_label": "tag"
   },
   {
@@ -1002,7 +1002,7 @@
    "source_location": "L77",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_testo",
-   "community": 4,
+   "community": 5,
    "norm_label": "testo"
   },
   {
@@ -1012,7 +1012,7 @@
    "source_location": "L76",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_titolo",
-   "community": 4,
+   "community": 5,
    "norm_label": "titolo"
   },
   {
@@ -1052,7 +1052,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_required",
-   "community": 15,
+   "community": 16,
    "norm_label": "required"
   },
   {
@@ -1062,7 +1062,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_ruolo_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -1072,7 +1072,7 @@
    "source_location": "L2",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_schema",
-   "community": 15,
+   "community": 16,
    "norm_label": "$schema"
   },
   {
@@ -1102,7 +1102,7 @@
    "source_location": "L30",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_tag_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -1112,7 +1112,7 @@
    "source_location": "L77",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_testo_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L3",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_title",
-   "community": 15,
+   "community": 16,
    "norm_label": "title"
   },
   {
@@ -1132,7 +1132,7 @@
    "source_location": "L76",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_titolo_type",
-   "community": 4,
+   "community": 5,
    "norm_label": "type"
   },
   {
@@ -1142,7 +1142,7 @@
    "source_location": "L5",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_type",
-   "community": 15,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -1362,7 +1362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_readme",
-   "community": 20,
+   "community": 21,
    "norm_label": "readme.md"
   },
   {
@@ -1372,7 +1372,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "raw_readme_aggiungere_una_nuova_macroarea",
-   "community": 20,
+   "community": 21,
    "norm_label": "aggiungere una nuova macroarea"
   },
   {
@@ -1382,7 +1382,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "raw_readme_front_matter_standard_consigliato_per_ogni_nota",
-   "community": 20,
+   "community": 21,
    "norm_label": "front-matter standard (consigliato per ogni nota)"
   },
   {
@@ -1392,7 +1392,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "raw_readme_macroaree_attive",
-   "community": 20,
+   "community": 21,
    "norm_label": "macroaree attive"
   },
   {
@@ -1402,7 +1402,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_readme_raw_materiale_grezzo_per_macroarea",
-   "community": 20,
+   "community": 21,
    "norm_label": "raw/ — materiale grezzo per macroarea"
   },
   {
@@ -1412,7 +1412,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "raw_readme_regole",
-   "community": 20,
+   "community": 21,
    "norm_label": "regole"
   },
   {
@@ -1422,7 +1422,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_template_showcase_3d",
-   "community": 117,
+   "community": 86,
    "norm_label": "template_showcase_3d.md"
   },
   {
@@ -1432,7 +1432,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_1_schema_dati_json_payload",
-   "community": 117,
+   "community": 86,
    "norm_label": "1. schema dati (json payload)"
   },
   {
@@ -1442,7 +1442,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_2_blueprint_del_file_html_template_showcase_3d_html",
-   "community": 117,
+   "community": 86,
    "norm_label": "2. blueprint del file html (`template_showcase_3d.html`)"
   },
   {
@@ -1452,7 +1452,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_a_nodi_del_grafo_nodes",
-   "community": 117,
+   "community": 86,
    "norm_label": "a. nodi del grafo (`nodes`)"
   },
   {
@@ -1462,7 +1462,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_b_connessioni_tratteggiate_nodeconnections",
-   "community": 117,
+   "community": 86,
    "norm_label": "b. connessioni tratteggiate (`nodeconnections`)"
   },
   {
@@ -1472,7 +1472,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_c_contenuto_informativo_dei_nodi_nodeintelligence",
-   "community": 117,
+   "community": 86,
    "norm_label": "c. contenuto informativo dei nodi (`nodeintelligence`)"
   },
   {
@@ -1482,7 +1482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
-   "community": 117,
+   "community": 86,
    "norm_label": "schema di template per dashboard neurale 3d (altair-brain)"
   },
   {
@@ -1492,7 +1492,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "readme",
-   "community": 85,
+   "community": 18,
    "norm_label": "readme.md"
   },
   {
@@ -1502,7 +1502,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "readme_altair_brain",
-   "community": 85,
+   "community": 18,
    "norm_label": "altair brain"
   },
   {
@@ -1512,7 +1512,7 @@
    "source_location": "L40",
    "_origin": "ast",
    "id": "readme_architecture_the_system_as_a_5_phase_process",
-   "community": 85,
+   "community": 18,
    "norm_label": "architecture — the system as a 5-phase process"
   },
   {
@@ -1522,7 +1522,7 @@
    "source_location": "L120",
    "_origin": "ast",
    "id": "readme_contributors",
-   "community": 85,
+   "community": 18,
    "norm_label": "contributors"
   },
   {
@@ -1532,7 +1532,7 @@
    "source_location": "L73",
    "_origin": "ast",
    "id": "readme_how_ais_interface_with_it",
-   "community": 85,
+   "community": 18,
    "norm_label": "how ais interface with it"
   },
   {
@@ -1542,7 +1542,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "readme_inside_the_brain_domains",
-   "community": 85,
+   "community": 18,
    "norm_label": "inside the brain (domains)"
   },
   {
@@ -1552,7 +1552,7 @@
    "source_location": "L99",
    "_origin": "ast",
    "id": "readme_repository_layout",
-   "community": 85,
+   "community": 18,
    "norm_label": "repository layout"
   },
   {
@@ -1562,7 +1562,7 @@
    "source_location": "L113",
    "_origin": "ast",
    "id": "readme_status",
-   "community": 85,
+   "community": 18,
    "norm_label": "status"
   },
   {
@@ -1572,7 +1572,7 @@
    "source_location": "L57",
    "_origin": "ast",
    "id": "readme_technical_characteristics",
-   "community": 85,
+   "community": 18,
    "norm_label": "technical characteristics"
   },
   {
@@ -1582,7 +1582,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "readme_visualizzazione_3d_showcases",
-   "community": 85,
+   "community": 18,
    "norm_label": "visualizzazione 3d (showcases)"
   },
   {
@@ -1592,7 +1592,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "readme_what_makes_it_different_from_graphify",
-   "community": 85,
+   "community": 18,
    "norm_label": "what makes it different from graphify"
   },
   {
@@ -1602,7 +1602,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "reports_template_showcase_3d",
-   "community": 118,
+   "community": 87,
    "norm_label": "template_showcase_3d.md"
   },
   {
@@ -1612,7 +1612,7 @@
    "source_location": "L7",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_1_schema_dati_json_payload",
-   "community": 118,
+   "community": 87,
    "norm_label": "1. schema dati (json payload)"
   },
   {
@@ -1622,7 +1622,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_2_blueprint_del_file_html_template_showcase_3d_html",
-   "community": 118,
+   "community": 87,
    "norm_label": "2. blueprint del file html (`template_showcase_3d.html`)"
   },
   {
@@ -1632,7 +1632,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_a_nodi_del_grafo_nodes",
-   "community": 118,
+   "community": 87,
    "norm_label": "a. nodi del grafo (`nodes`)"
   },
   {
@@ -1642,7 +1642,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_b_connessioni_tratteggiate_nodeconnections",
-   "community": 118,
+   "community": 87,
    "norm_label": "b. connessioni tratteggiate (`nodeconnections`)"
   },
   {
@@ -1652,7 +1652,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_c_contenuto_informativo_dei_nodi_nodeintelligence",
-   "community": 118,
+   "community": 87,
    "norm_label": "c. contenuto informativo dei nodi (`nodeintelligence`)"
   },
   {
@@ -1662,7 +1662,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
-   "community": 118,
+   "community": 87,
    "norm_label": "schema di template per dashboard neurale 3d (altair-brain)"
   },
   {
@@ -1692,7 +1692,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "roadmap",
-   "community": 14,
+   "community": 15,
    "norm_label": "roadmap.md"
   },
   {
@@ -1702,7 +1702,7 @@
    "source_location": "L282",
    "_origin": "ast",
    "id": "roadmap_completato_storico_per_orientamento",
-   "community": 14,
+   "community": 15,
    "norm_label": "completato (storico, per orientamento)"
   },
   {
@@ -1712,7 +1712,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "roadmap_contesto_in_10_righe",
-   "community": 14,
+   "community": 15,
    "norm_label": "contesto in 10 righe"
   },
   {
@@ -1722,7 +1722,7 @@
    "source_location": "L264",
    "_origin": "ast",
    "id": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
-   "community": 14,
+   "community": 15,
    "norm_label": "dopo che le macroaree saranno popolate (non prima)"
   },
   {
@@ -1732,7 +1732,7 @@
    "source_location": "L66",
    "_origin": "ast",
    "id": "roadmap_implementazione_1_cattura_da_ovunque_completata_vedi_completato",
-   "community": 14,
+   "community": 15,
    "norm_label": "✅ implementazione 1 — cattura da ovunque — completata (vedi completato)"
   },
   {
@@ -1742,7 +1742,7 @@
    "source_location": "L112",
    "_origin": "ast",
    "id": "roadmap_implementazione_2_server_mcp_completata_vedi_completato",
-   "community": 14,
+   "community": 15,
    "norm_label": "✅ implementazione 2 — server mcp — completata (vedi completato)"
   },
   {
@@ -1752,7 +1752,7 @@
    "source_location": "L148",
    "_origin": "ast",
    "id": "roadmap_implementazione_3_oracle_eseguibile_completata_vedi_completato",
-   "community": 14,
+   "community": 15,
    "norm_label": "✅ implementazione 3 — oracle eseguibile — completata (vedi completato)"
   },
   {
@@ -1762,7 +1762,7 @@
    "source_location": "L189",
    "_origin": "ast",
    "id": "roadmap_implementazione_4_guardie_di_qualita_completata_vedi_completato",
-   "community": 14,
+   "community": 15,
    "norm_label": "✅ implementazione 4 — guardie di qualita — completata (vedi completato)"
   },
   {
@@ -1772,7 +1772,7 @@
    "source_location": "L206",
    "_origin": "ast",
    "id": "roadmap_infrastruttura_2_0_completata_2026_07_01_vedi_completato_le_spec_restano_come_riferimento",
-   "community": 14,
+   "community": 15,
    "norm_label": "✅ infrastruttura 2.0 — completata 2026-07-01 (vedi completato; le spec restano come riferimento)"
   },
   {
@@ -1782,7 +1782,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "roadmap_priorità_0_repo_privato_azione_umana_2_minuti",
-   "community": 14,
+   "community": 15,
    "norm_label": "priorita 0 — repo privato (azione umana, 2 minuti) ⚠️"
   },
   {
@@ -1792,7 +1792,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "roadmap_regole_vincolanti_violarle_rompe_il_sistema",
-   "community": 14,
+   "community": 15,
    "norm_label": "regole vincolanti (violarle rompe il sistema)"
   },
   {
@@ -1802,7 +1802,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "roadmap_roadmap_guida_alle_prossime_implementazioni",
-   "community": 14,
+   "community": 15,
    "norm_label": "roadmap — guida alle prossime implementazioni"
   },
   {
@@ -1812,7 +1812,7 @@
    "source_location": "L316",
    "_origin": "ast",
    "id": "roadmap_storico_precedente",
-   "community": 14,
+   "community": 15,
    "norm_label": "storico precedente"
   },
   {
@@ -2116,7 +2116,7 @@
    },
    "_origin": "ast",
    "id": "server_backup_data",
-   "community": 109,
+   "community": 110,
    "norm_label": "backup_data.sh"
   },
   {
@@ -2130,7 +2130,7 @@
    },
    "_origin": "ast",
    "id": "server_backup_data_sh__entry",
-   "community": 109,
+   "community": 110,
    "norm_label": "backup_data.sh script"
   },
   {
@@ -2144,7 +2144,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap",
-   "community": 102,
+   "community": 103,
    "norm_label": "bootstrap.sh"
   },
   {
@@ -2158,7 +2158,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap_path",
-   "community": 102,
+   "community": 103,
    "norm_label": "path"
   },
   {
@@ -2172,7 +2172,7 @@
    },
    "_origin": "ast",
    "id": "server_bootstrap_sh__entry",
-   "community": 102,
+   "community": 103,
    "norm_label": "bootstrap.sh script"
   },
   {
@@ -2432,7 +2432,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_client_example",
-   "community": 103,
+   "community": 104,
    "norm_label": "client_example.py"
   },
   {
@@ -2442,7 +2442,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "server_client_example_call",
-   "community": 103,
+   "community": 104,
    "norm_label": "call()"
   },
   {
@@ -2452,7 +2452,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "server_client_example_show",
-   "community": 103,
+   "community": 104,
    "norm_label": "show()"
   },
   {
@@ -2462,7 +2462,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_mcp_server",
-   "community": 5,
+   "community": 6,
    "norm_label": "mcp_server.py"
   },
   {
@@ -2472,7 +2472,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "server_mcp_server_brain_explain",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_explain()"
   },
   {
@@ -2482,7 +2482,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "server_mcp_server_brain_feedback",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_feedback()"
   },
   {
@@ -2492,7 +2492,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "server_mcp_server_brain_lessons",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_lessons()"
   },
   {
@@ -2502,7 +2502,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "server_mcp_server_brain_model",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_model()"
   },
   {
@@ -2512,7 +2512,7 @@
    "source_location": "L74",
    "_origin": "ast",
    "id": "server_mcp_server_brain_oracle",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_oracle()"
   },
   {
@@ -2522,7 +2522,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "server_mcp_server_brain_path",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_path()"
   },
   {
@@ -2532,7 +2532,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "server_mcp_server_brain_query",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_query()"
   },
   {
@@ -2542,7 +2542,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "server_mcp_server_brain_reasoner",
-   "community": 5,
+   "community": 6,
    "norm_label": "brain_reasoner()"
   },
   {
@@ -2552,7 +2552,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_35",
-   "community": 5,
+   "community": 6,
    "norm_label": "interroga il knowledge graph del brain (bfs scopato). area: vuota = router     a"
   },
   {
@@ -2562,7 +2562,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_45",
-   "community": 5,
+   "community": 6,
    "norm_label": "spiega un nodo del grafo e i suoi collegamenti (graphify explain)."
   },
   {
@@ -2572,7 +2572,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_51",
-   "community": 5,
+   "community": 6,
    "norm_label": "percorso piu breve tra due nodi del grafo (graphify path)."
   },
   {
@@ -2582,7 +2582,7 @@
    "source_location": "L57",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_57",
-   "community": 5,
+   "community": 6,
    "norm_label": "il modello di pensiero aion tipizzato (engine/aion.model.json)."
   },
   {
@@ -2592,7 +2592,7 @@
    "source_location": "L63",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_63",
-   "community": 5,
+   "community": 6,
    "norm_label": "il protocollo di ragionamento aion a 9 passi (engine/aion-reasoner.md)."
   },
   {
@@ -2602,7 +2602,7 @@
    "source_location": "L69",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_69",
-   "community": 5,
+   "community": 6,
    "norm_label": "le lezioni apprese dal brain (lessons.md, feedback loop)."
   },
   {
@@ -2612,7 +2612,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_75",
-   "community": 5,
+   "community": 6,
    "norm_label": "lancio i ching (aion_oracle eseguibile). seed >= 0 per un lancio riproducibile."
   },
   {
@@ -2622,7 +2622,7 @@
    "source_location": "L84",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_84",
-   "community": 5,
+   "community": 6,
    "norm_label": "registra l'esito di una risposta (useful|dead_end|corrected): il brain impara."
   },
   {
@@ -2632,7 +2632,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "server_mcp_server_safe",
-   "community": 5,
+   "community": 6,
    "norm_label": "_safe()"
   },
   {
@@ -2746,7 +2746,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain",
-   "community": 104,
+   "community": 105,
    "norm_label": "update_brain.sh"
   },
   {
@@ -2760,7 +2760,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain_path",
-   "community": 104,
+   "community": 105,
    "norm_label": "path"
   },
   {
@@ -2774,7 +2774,7 @@
    },
    "_origin": "ast",
    "id": "server_update_brain_sh__entry",
-   "community": 104,
+   "community": 105,
    "norm_label": "update_brain.sh script"
   },
   {
@@ -2904,7 +2904,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_altair_compact_view",
-   "community": 87,
+   "community": 99,
    "norm_label": "altair_compact_view.py"
   },
   {
@@ -2914,7 +2914,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_edge",
-   "community": 87,
+   "community": 99,
    "norm_label": "add_edge()"
   },
   {
@@ -2924,7 +2924,7 @@
    "source_location": "L53",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_node",
-   "community": 87,
+   "community": 99,
    "norm_label": "add_node()"
   },
   {
@@ -2934,7 +2934,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "tools_altair_compact_view_sz",
-   "community": 87,
+   "community": 99,
    "norm_label": "sz()"
   },
   {
@@ -2944,7 +2944,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_apply_bridges",
-   "community": 116,
+   "community": 115,
    "norm_label": "apply_bridges.py"
   },
   {
@@ -2954,7 +2954,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_build_area_graphs",
-   "community": 110,
+   "community": 111,
    "norm_label": "build_area_graphs.py"
   },
   {
@@ -2964,7 +2964,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "tools_build_area_graphs_area_of",
-   "community": 110,
+   "community": 111,
    "norm_label": "area_of()"
   },
   {
@@ -2974,7 +2974,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_build_iching_db",
-   "community": 111,
+   "community": 112,
    "norm_label": "build_iching_db.py"
   },
   {
@@ -2984,7 +2984,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "tools_build_iching_db_section",
-   "community": 111,
+   "community": 112,
    "norm_label": "section()"
   },
   {
@@ -2994,7 +2994,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_check_wikilinks",
-   "community": 115,
+   "community": 116,
    "norm_label": "check_wikilinks.py"
   },
   {
@@ -3004,7 +3004,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model",
-   "community": 105,
+   "community": 106,
    "norm_label": "gen_wiki_from_model.py"
   },
   {
@@ -3014,7 +3014,7 @@
    "source_location": "L33",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model_rationale_33",
-   "community": 105,
+   "community": 106,
    "norm_label": "scrive una pagina: corpo + lista 'collegati:' (niente sotto-heading -> niente no"
   },
   {
@@ -3024,7 +3024,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_gen_wiki_from_model_w",
-   "community": 105,
+   "community": 106,
    "norm_label": "w()"
   },
   {
@@ -3034,7 +3034,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_graph_health",
-   "community": 112,
+   "community": 113,
    "norm_label": "graph_health.py"
   },
   {
@@ -3044,7 +3044,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tools_graph_health_components_of",
-   "community": 112,
+   "community": 113,
    "norm_label": "components_of()"
   },
   {
@@ -3144,7 +3144,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_readme",
-   "community": 99,
+   "community": 100,
    "norm_label": "readme.md"
   },
   {
@@ -3154,7 +3154,7 @@
    "source_location": "L6",
    "_origin": "ast",
    "id": "tools_readme_altair_compact_view_py_vista_compatta_strutturale",
-   "community": 99,
+   "community": 100,
    "norm_label": "altair_compact_view.py — vista compatta strutturale"
   },
   {
@@ -3164,7 +3164,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_readme_le_due_viste",
-   "community": 99,
+   "community": 100,
    "norm_label": "le due viste"
   },
   {
@@ -3174,7 +3174,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_readme_tools_feature_di_supporto_ad_altair_brain",
-   "community": 99,
+   "community": 100,
    "norm_label": "tools/ — feature di supporto ad altair-brain"
   },
   {
@@ -3184,7 +3184,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_rebuild_all",
-   "community": 114,
+   "community": 117,
    "norm_label": "rebuild_all.py"
   },
   {
@@ -3194,7 +3194,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_report_update",
-   "community": 119,
+   "community": 118,
    "norm_label": "report_update.py"
   },
   {
@@ -3204,7 +3204,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_validate_model",
-   "community": 113,
+   "community": 114,
    "norm_label": "validate_model.py"
   },
   {
@@ -3214,7 +3214,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "tools_validate_model_main",
-   "community": 113,
+   "community": 114,
    "norm_label": "main()"
   }
  ],
