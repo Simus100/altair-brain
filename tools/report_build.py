@@ -55,6 +55,10 @@ CSS = """
     .vl-dot { width:7px; height:7px; border-radius:50%; background: var(--color-gold); animation: ul-pulse 2.2s ease-in-out infinite; }
     .vl-current { font-size: .93rem; color: var(--text-main); line-height: 1.7; }
     .concl-badge { display:inline-flex; align-items:center; gap:7px; font-size:.62rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#99f6e4; background:rgba(6,182,212,.10); border:1px solid rgba(6,182,212,.35); padding:4px 11px; border-radius:999px; margin-bottom:12px; }
+    .live-pill { display:inline-flex; align-items:center; gap:7px; vertical-align:middle; margin-left:14px; font-size:.6rem; font-weight:900; letter-spacing:.16em; text-transform:uppercase; color:#fda4af; background:rgba(244,63,94,.12); border:1px solid rgba(244,63,94,.45); border-radius:999px; padding:4px 12px; }
+    .live-dot { width:7px; height:7px; border-radius:50%; background: var(--color-rose); animation: live-pulse 1.6s ease-in-out infinite; }
+    @keyframes live-pulse { 0%,100% { box-shadow: 0 0 4px var(--color-rose); opacity: 1; } 50% { box-shadow: 0 0 12px var(--color-rose), 0 0 20px rgba(244,63,94,.4); opacity: .6; } }
+    .live-date { display:inline-block; vertical-align:middle; margin-left:10px; font-size:.62rem; font-weight:700; letter-spacing:.05em; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 """
 
 FEATURE = """
@@ -99,8 +103,32 @@ FEATURE = """
       window.selectNode = function (id) { _orig(id); try { renderNodeHistory(id); } catch (e) {} };
     }
 
+    /* --- TITOLO: badge LIVE + ultima data di aggiornamento (dal database) --- */
+    function latestTs() {
+      var all = [];
+      if (DB.verdetto && DB.verdetto.storia) all = all.concat(DB.verdetto.storia);
+      if (DB.conclusioni && DB.conclusioni.storia) all = all.concat(DB.conclusioni.storia);
+      if (DB.nodi) Object.keys(DB.nodi).forEach(function (k) { all = all.concat(DB.nodi[k]); });
+      var ts = DB.aggiornato_il || '';
+      all.forEach(function (u) { if (u.ts > ts) ts = u.ts; });
+      return ts;
+    }
+    function renderLiveTitle() {
+      var h1 = document.querySelector('header h1'); if (!h1) return;
+      if (document.getElementById('live-pill')) return;
+      var pill = document.createElement('span');
+      pill.id = 'live-pill'; pill.className = 'live-pill';
+      pill.innerHTML = '<span class="live-dot"></span>LIVE';
+      h1.appendChild(pill);
+      var dt = document.createElement('span');
+      dt.className = 'live-date';
+      dt.textContent = 'agg. ' + fmt(latestTs());
+      h1.appendChild(dt);
+    }
+
     /* --- CONCLUSIONI: responso SOPRA + testo pilotato dal database --- */
     function renderLiving() {
+      renderLiveTitle();
       var host = document.getElementById('box-conclusions'); if (!host) return;
       var conclText = host.querySelector('.conclusions-text');
 
@@ -134,6 +162,8 @@ feature = FEATURE.replace("__DB__", db_json)
 
 if "</style>" not in html or "</body>" not in html:
     sys.exit("HTML sorgente senza </style> o </body>: impossibile iniettare.")
+# titolo del living report: via il prefisso, resta il nome del caso
+html = html.replace("Cervello Geopolitico 3D: ", "", 1)
 html = html.replace("</style>", CSS + "\n  </style>", 1)
 html = html.replace("</body>", feature + "\n</body>", 1)
 
