@@ -788,3 +788,78 @@ Sotto è riportato lo scheletro HTML pronto per l'interpolazione delle stringhe 
 </body>
 </html>
 ```
+
+---
+
+## 3. Estensione LIVING REPORT (report che si aggiorna)
+
+Ogni showcase può diventare un **report vivo**: cronologia di aggiornamenti per nodo,
+responso oracolare in evoluzione e Conclusioni Strategiche pilotate da un database.
+Il report statico resta il sorgente; la versione live è GENERATA.
+
+### 3.1 Convenzione dei file
+
+```
+reports/<caso>.html                       sorgente statico (questo template istanziato)
+reports/data/<caso>.updates.json          DATABASE degli aggiornamenti (fonte di verità)
+reports/<caso>-prototype.html             living report GENERATO (mai editarlo a mano)
+```
+
+### 3.2 Schema del database aggiornamenti (`updates.json`)
+
+```json
+{
+  "report": "<caso>",
+  "titolo": "Titolo del report",
+  "aggiornato_il": "YYYY-MM-DDTHH:MM:SS",
+  "verdetto": {
+    "corrente": "Responso attuale dell'Oracolo (HTML consentito)",
+    "storia": [ { "ts": "YYYY-MM-DDTHH:MM:SS", "testo": "Considerazione datata" } ]
+  },
+  "conclusioni": {
+    "aggiornato_il": "YYYY-MM-DDTHH:MM:SS",
+    "corrente": "Testo attuale delle Conclusioni Strategiche (HTML consentito)",
+    "storia": [ { "ts": "...", "testo": "Evoluzione delle conclusioni" } ]
+  },
+  "nodi": {
+    "<id_nodo>": [ { "ts": "...", "testo": "Aggiornamento del vettore" } ]
+  }
+}
+```
+
+Regole: gli `id_nodo` DEVONO coincidere con gli id di `nodes`/`nodeIntelligence` (Sez. 1);
+timestamp ISO locali e MAI futuri; il JSON è la fonte di verità, l'HTML uno specchio.
+
+### 3.3 Layout della forma live (ordine vincolante)
+
+- **Titolo (h1)**: nessun prefisso di categoria; accanto al nome del caso una pill
+  `LIVE` pulsante + `agg. <data>` calcolata dinamicamente come il timestamp più
+  recente dell'intero database.
+- **Console del nodo** (al clic): 1) 🕒 Cronologia Aggiornamenti (timeline, più
+  recente in alto con marcatore `ULTIMO`), 2) analisi del vettore, 3) Oracolo AION.
+- **Box conclusioni**: 1) ䷪ *Responso in aggiornamento* (corrente + data + Evoluzione
+  del Responso), SOPRA a 2) *Conclusioni Strategiche* pilotate dal database (badge
+  "aggiornate il", testo corrente, timeline Evoluzione delle Conclusioni).
+
+### 3.4 Generazione e aggiornamento (tool del repo, deterministici, no API)
+
+```bash
+python tools/report_build.py  --report <caso>    # sorgente + DB -> living report
+python tools/report_update.py --report <caso> --node <id> --text "..."
+python tools/report_update.py --report <caso> --verdict     --text "..." [--set-current "..."]
+python tools/report_update.py --report <caso> --conclusions --text "..." [--set-current "..."]
+```
+
+`report_update.py` appende la voce (ts = adesso, oppure `--ts`), aggiorna
+`aggiornato_il` e ri-sincronizza da solo il blocco `#updates-db` nel prototipo.
+`report_build.py` inietta CSS timeline, database inline e logica JS senza toccare la
+logica 3D del template (avvolge `selectNode` e riempie i box a runtime): il living
+report funziona anche da `file://`, senza server.
+
+### 3.5 Istanziare un nuovo report live (checklist per agenti)
+
+1. Istanzia il template (Sez. 1-2) -> `reports/<caso>.html`.
+2. Crea `reports/data/<caso>.updates.json` con lo schema 3.2 (storia iniziale datata).
+3. `python tools/report_build.py --report <caso>` e verifica: titolo con LIVE,
+   cronologia in cima ai nodi, responso sopra le conclusioni, zero date future.
+4. Ogni nuovo evento -> `report_update.py` (mai editare il prototipo a mano).

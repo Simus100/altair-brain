@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "09dcfe945e15530f3a5c45b1d5335333b8acd9f9",
+ "built_at_commit": "e0fc8867ae43a3872473b7e468b640aec0ae0359",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -1626,6 +1626,66 @@
    "norm_label": "2. blueprint del file html (`template_showcase_3d.html`)"
   },
   {
+   "label": "3.1 Convenzione dei file",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L800",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_1_convenzione_dei_file",
+   "community": 88,
+   "norm_label": "3.1 convenzione dei file"
+  },
+  {
+   "label": "3.2 Schema del database aggiornamenti (`updates.json`)",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L808",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_2_schema_del_database_aggiornamenti_updates_json",
+   "community": 88,
+   "norm_label": "3.2 schema del database aggiornamenti (`updates.json`)"
+  },
+  {
+   "label": "3.3 Layout della forma live (ordine vincolante)",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L833",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_3_layout_della_forma_live_ordine_vincolante",
+   "community": 88,
+   "norm_label": "3.3 layout della forma live (ordine vincolante)"
+  },
+  {
+   "label": "3.4 Generazione e aggiornamento (tool del repo, deterministici, no API)",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L844",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_4_generazione_e_aggiornamento_tool_del_repo_deterministici_no_api",
+   "community": 88,
+   "norm_label": "3.4 generazione e aggiornamento (tool del repo, deterministici, no api)"
+  },
+  {
+   "label": "3.5 Istanziare un nuovo report live (checklist per agenti)",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L859",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_5_istanziare_un_nuovo_report_live_checklist_per_agenti",
+   "community": 88,
+   "norm_label": "3.5 istanziare un nuovo report live (checklist per agenti)"
+  },
+  {
+   "label": "3. Estensione LIVING REPORT (report che si aggiorna)",
+   "file_type": "document",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L794",
+   "_origin": "ast",
+   "id": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "community": 88,
+   "norm_label": "3. estensione living report (report che si aggiorna)"
+  },
+  {
    "label": "A. Nodi del Grafo (`nodes`)",
    "file_type": "document",
    "source_file": "reports/template_showcase_3d.md",
@@ -2784,7 +2844,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tests_test_api",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_api.py"
   },
   {
@@ -2794,7 +2854,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tests_test_api_test_alias_non_versionati",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_alias_non_versionati()"
   },
   {
@@ -2804,7 +2864,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tests_test_api_test_auth_richiesta_e_constant_time_ok",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_auth_richiesta_e_constant_time_ok()"
   },
   {
@@ -2814,7 +2874,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "tests_test_api_test_capture_vuoto_e_troppo_grande",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_capture_vuoto_e_troppo_grande()"
   },
   {
@@ -2824,7 +2884,7 @@
    "source_location": "L108",
    "_origin": "ast",
    "id": "tests_test_api_test_feedback_node_injection_rejected",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_feedback_node_injection_rejected()"
   },
   {
@@ -2834,7 +2894,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tests_test_api_test_health_pubblico_e_ricco",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_health_pubblico_e_ricco()"
   },
   {
@@ -2844,7 +2904,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_flusso_completo",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_inbox_flusso_completo()"
   },
   {
@@ -2854,7 +2914,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_inbox_path_traversal_respinto()"
   },
   {
@@ -2864,7 +2924,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_deterministico_con_seed",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_oracle_deterministico_con_seed()"
   },
   {
@@ -2874,7 +2934,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_hexagram_lookup_re_wen",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_oracle_hexagram_lookup_re_wen()"
   },
   {
@@ -2884,7 +2944,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tests_test_api_test_query_area_invalida",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_query_area_invalida()"
   },
   {
@@ -2894,7 +2954,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tests_test_api_test_query_degrada_o_funziona",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_query_degrada_o_funziona()"
   },
   {
@@ -2904,7 +2964,7 @@
    "source_location": "L117",
    "_origin": "ast",
    "id": "tests_test_api_test_rate_limiter_uses_client_host",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_rate_limiter_uses_client_host()"
   },
   {
@@ -2914,7 +2974,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "tests_test_api_test_route_deterministico",
-   "community": 1,
+   "community": 121,
    "norm_label": "test_route_deterministico()"
   },
   {
@@ -4943,6 +5003,56 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L800",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "target": "reports_template_showcase_3d_3_1_convenzione_dei_file",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L808",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "target": "reports_template_showcase_3d_3_2_schema_del_database_aggiornamenti_updates_json",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L833",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "target": "reports_template_showcase_3d_3_3_layout_della_forma_live_ordine_vincolante",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L844",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "target": "reports_template_showcase_3d_3_4_generazione_e_aggiornamento_tool_del_repo_deterministici_no_api",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L859",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
+   "target": "reports_template_showcase_3d_3_5_istanziare_un_nuovo_report_live_checklist_per_agenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
    "source_location": "L7",
    "weight": 1.0,
    "source": "reports_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
@@ -4957,6 +5067,16 @@
    "weight": 1.0,
    "source": "reports_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
    "target": "reports_template_showcase_3d_2_blueprint_del_file_html_template_showcase_3d_html",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "reports/template_showcase_3d.md",
+   "source_location": "L794",
+   "weight": 1.0,
+   "source": "reports_template_showcase_3d_schema_di_template_per_dashboard_neurale_3d_altair_brain",
+   "target": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
    "confidence_score": 1.0
   },
   {

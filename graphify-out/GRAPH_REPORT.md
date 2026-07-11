@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-12)
 
 ## Corpus Check
-- 151 files · ~110,144 words
+- 151 files · ~110,578 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1063 nodes · 1360 edges · 121 communities (114 shown, 7 thin omitted)
+- 1069 nodes · 1363 edges · 122 communities (115 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `09dcfe94`
+- Built from commit: `e0fc8867`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -149,14 +149,14 @@
 ## Import Cycles
 - None detected.
 
-## Communities (121 total, 7 thin omitted)
+## Communities (122 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
 Nodes (37): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+29 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.06
+Cohesion: 0.10
 Nodes (24): BaseModel, Request, Response, affected(), capture(), CaptureReq, _err(), explain() (+16 more)
 
 ### Community 2 - "Community 2"
@@ -500,8 +500,8 @@ Cohesion: 0.29
 Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
 
 ### Community 88 - "Community 88"
-Cohesion: 0.29
-Nodes (6): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), A. Nodi del Grafo (`nodes`), B. Connessioni Tratteggiate (`nodeConnections`), C. Contenuto Informativo dei Nodi (`nodeIntelligence`), Schema di Template per Dashboard Neurale 3D (Altair-Brain)
+Cohesion: 0.15
+Nodes (12): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template_showcase_3d.html`), 3.1 Convenzione dei file, 3.2 Schema del database aggiornamenti (`updates.json`), 3.3 Layout della forma live (ordine vincolante), 3.4 Generazione e aggiornamento (tool del repo, deterministici, no API), 3.5 Istanziare un nuovo report live (checklist per agenti), 3. Estensione LIVING REPORT (report che si aggiorna) (+4 more)
 
 ### Community 89 - "Community 89"
 Cohesion: 0.33
@@ -564,7 +564,7 @@ Cohesion: 0.17
 Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
 
 ## Knowledge Gaps
-- **684 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+679 more)
+- **689 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+684 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -572,16 +572,16 @@ Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegname
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `57. 巽 Il Vento (Xùn) ䷸` connect `Community 73` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 13`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _696 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _701 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.06376811594202898 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10483870967741936 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.11746031746031746 - nodes in this community are weakly interconnected._
