@@ -19,6 +19,20 @@
       }
     ]
   },
+  "conclusioni": {
+    "aggiornato_il": "2026-08-02T18:40:00",
+    "corrente": "L'elaborazione predittiva e multidimensionale del protocollo <strong class=\"highlight-strong\">AION 2.2</strong> evidenzia che la crisi iraniana del 2026 ha superato la soglia di linearità: la stabilità del Golfo Persico e la continuità del regime dipendono da cicli di retroazione incrociati che rendono obsolete le analisi a vettore singolo.<ul><li><strong class=\"highlight-strong\">Transizione di leadership blindata:</strong> la nomina lampo di <span class=\"highlight-strong\">Mojtaba Khamenei</span> (8 marzo 2026) sotto il controllo dei <span class=\"highlight-strong\">Pasdaran (IRGC)</span> ha consolidato una giunta militare-clericale, stabilizzata da oltre <span class=\"highlight-cyan\">134 esecuzioni</span> a giugno.</li><li><strong class=\"highlight-strong\">Circuito valuta-stretto-deterrenza:</strong> con inflazione all'<span class=\"highlight-cyan\">88,6%</span>, Rial a <span class=\"highlight-cyan\">1,5M per USD</span> e la <span class=\"highlight-cyan\">revoca delle esenzioni petrolifere</span> (luglio), Teheran non ha risorse per una guerra cinetica prolungata: la pressione si sposta su cyber e minaccia dello Stretto per spingere il Brent oltre i <span class=\"highlight-strong\">100 USD</span>.</li><li><strong class=\"highlight-strong\">Svolta del malware poliglotta Rust:</strong> le campagne dell'APT <span class=\"highlight-rose\">MuddyWater</span> con <span class=\"highlight-rose\">RustyWater</span> confermano il cyber come braccio asimmetrico preferito prima della soglia cinetica.</li><li><strong class=\"highlight-amber\">Fattore aggiornato — soglia nucleare:</strong> l'IAEA stima ora un breakout a <span class=\"highlight-amber\">&lt;10 giorni</span> (Pickaxe Mountain, IR-6/IR-9): il vettore Deterrenza diventa il baricentro del rischio e restringe la finestra per una de-escalation verificabile.</li></ul>",
+    "storia": [
+      {
+        "ts": "2026-07-08T14:30:00",
+        "testo": "Sintesi iniziale: crisi non lineare; tre vettori dominanti (transizione di leadership, circuito valuta-stretto, malware poliglotta Rust)."
+      },
+      {
+        "ts": "2026-08-02T18:40:00",
+        "testo": "Conclusioni ricalibrate: il breakout nucleare < 10 giorni e la revoca delle esenzioni spostano il baricentro sul vettore Deterrenza; la finestra diplomatica si restringe."
+      }
+    ]
+  },
   "nodi": {
     "economy": [
       {

@@ -10,6 +10,7 @@ Deterministico, nessuna API.
 Esempi:
   python tools/report_update.py --node nuclear --text "IAEA: nuova ispezione negata."
   python tools/report_update.py --verdict --text "Rivalutazione: ..." --set-current "Nuovo responso HTML..."
+  python tools/report_update.py --conclusions --text "Ricalibrate: ..." --set-current "Nuove conclusioni HTML..."
 """
 import argparse, json, os, re, datetime, sys
 
@@ -20,9 +21,10 @@ ap.add_argument("--report", default="altair-brain-iran-2026")
 g = ap.add_mutually_exclusive_group(required=True)
 g.add_argument("--node", help="id del nodo (es. nuclear, economy, ...)")
 g.add_argument("--verdict", action="store_true", help="aggiorna il verdetto/responso")
+g.add_argument("--conclusions", action="store_true", help="aggiorna le Conclusioni Strategiche")
 ap.add_argument("--text", required=True, help="testo dell'aggiornamento")
 ap.add_argument("--ts", default=None, help="timestamp ISO (default: adesso)")
-ap.add_argument("--set-current", default=None, help="(solo --verdict) nuova considerazione corrente (HTML)")
+ap.add_argument("--set-current", default=None, help="(con --verdict/--conclusions) nuovo testo corrente (HTML)")
 a = ap.parse_args()
 
 db_path = os.path.join(ROOT, "reports", "data", f"{a.report}.updates.json")
@@ -41,6 +43,13 @@ if a.verdict:
     if a.set_current:
         db["verdetto"]["corrente"] = a.set_current
     target = "verdetto"
+elif a.conclusions:
+    c = db.setdefault("conclusioni", {})
+    c.setdefault("storia", []).append(entry)
+    c["aggiornato_il"] = ts
+    if a.set_current:
+        c["corrente"] = a.set_current
+    target = "conclusioni"
 else:
     nodi = db.setdefault("nodi", {})
     if a.node not in nodi:

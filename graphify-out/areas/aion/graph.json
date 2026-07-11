@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "6b304b666460b3e691030855482bb6fdc8fcc2fd",
+ "built_at_commit": "034ec3cdbd691c3eac18e7725ce239a0fa8fd46a",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -5502,7 +5502,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_ethos",
-   "community": 17,
+   "community": 18,
    "norm_label": "aion-ethos.md"
   },
   {
@@ -5512,7 +5512,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_ethos_aion_ethos",
-   "community": 17,
+   "community": 18,
    "norm_label": "aion_ethos"
   },
   {
@@ -5842,7 +5842,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_004",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento-004.md"
   },
   {
@@ -5852,7 +5852,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_004_insegnamento_004_auto_riflessivita_cognitiva",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento 004 - auto-riflessivita cognitiva"
   },
   {
@@ -6062,7 +6062,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_015",
-   "community": 17,
+   "community": 6,
    "norm_label": "insegnamento-015.md"
   },
   {
@@ -6072,7 +6072,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_015_insegnamento_015_pattern_emotivo_archetipici",
-   "community": 17,
+   "community": 6,
    "norm_label": "insegnamento 015 - pattern emotivo-archetipici"
   },
   {
@@ -6122,7 +6122,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_018",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento-018.md"
   },
   {
@@ -6132,7 +6132,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_018_insegnamento_018_allineamento_con_aion_ethos",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento 018 - allineamento con aion_ethos"
   },
   {
@@ -6142,7 +6142,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_019",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento-019.md"
   },
   {
@@ -6152,7 +6152,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_019_insegnamento_019_assiomi_invisibili",
-   "community": 17,
+   "community": 18,
    "norm_label": "insegnamento 019 - assiomi invisibili"
   },
   {
@@ -6302,7 +6302,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica",
-   "community": 17,
+   "community": 18,
    "norm_label": "livello-identita-etica.md"
   },
   {
@@ -6312,7 +6312,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica_livello_identita_etica",
-   "community": 17,
+   "community": 18,
    "norm_label": "livello identita / etica"
   },
   {
@@ -6362,7 +6362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_struttura_logica",
-   "community": 9,
+   "community": 18,
    "norm_label": "livello-struttura-logica.md"
   },
   {
@@ -6372,7 +6372,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_struttura_logica_livello_struttura_logica",
-   "community": 9,
+   "community": 18,
    "norm_label": "livello struttura / logica"
   },
   {

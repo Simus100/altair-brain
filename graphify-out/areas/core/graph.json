@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "6b304b666460b3e691030855482bb6fdc8fcc2fd",
+ "built_at_commit": "034ec3cdbd691c3eac18e7725ce239a0fa8fd46a",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -3206,6 +3206,16 @@
    "id": "tools_rebuild_all",
    "community": 118,
    "norm_label": "rebuild_all.py"
+  },
+  {
+   "label": "report_build.py",
+   "file_type": "code",
+   "source_file": "tools/report_build.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tools_report_build",
+   "community": 17,
+   "norm_label": "report_build.py"
   },
   {
    "label": "report_update.py",

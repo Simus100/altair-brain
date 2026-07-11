@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-07-10)
+# Graph Report - altair-brain  (2026-07-11)
 
 ## Corpus Check
-- 150 files · ~107,893 words
+- 151 files · ~109,320 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1062 nodes · 1357 edges · 120 communities (113 shown, 7 thin omitted)
+- 1063 nodes · 1360 edges · 120 communities (113 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6b304b66`
+- Built from commit: `034ec3cd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,7 +32,6 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
@@ -176,8 +175,8 @@ Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.12
+Nodes (10): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 017 - Generator meta-ciclico (+2 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -188,8 +187,8 @@ Cohesion: 0.17
 Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ### Community 9 - "Community 9"
-Cohesion: 0.20
-Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
+Cohesion: 0.24
+Nodes (7): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Modalita [ANALYTIC_CORE]
 
 ### Community 10 - "Community 10"
 Cohesion: 0.13
@@ -219,13 +218,9 @@ Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 
 Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
-### Community 17 - "Community 17"
-Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
-
 ### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.12
+Nodes (12): AION_ETHOS, AION_SUPERIA, AION - modello di pensiero, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica, Livello Orchestrazione / Stile (+4 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.18
@@ -571,11 +566,11 @@ Nodes (3): items, type, orchestra
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 13`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `29. 坎 L'Abissale (Kǎn) ䷜` connect `Community 42` to `Community 13`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `57. 巽 Il Vento (Xùn) ䷸` connect `Community 73` to `Community 13`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 13`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
   _696 weakly-connected nodes found - possible documentation gaps or missing edges._

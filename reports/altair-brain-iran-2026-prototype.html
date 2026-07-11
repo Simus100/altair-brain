@@ -468,19 +468,21 @@
       footer { flex-direction: column; gap: 10px; text-align: center; font-size: 0.85rem; }
     }
   
-    /* --- LIVING REPORT: timeline aggiornamenti --- */
-    .update-log { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border-color); }
+    /* --- LIVING REPORT: timeline aggiornamenti + conclusioni vive --- */
+    .update-log { margin: 14px 0; padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 10px; background: rgba(6, 182, 212, 0.04); }
     .ul-title { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a5b4fc; margin-bottom: 12px; }
     .ul-item { position: relative; padding-left: 18px; margin-bottom: 14px; }
     .ul-item::before { content: ''; position: absolute; left: 0; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-secondary); box-shadow: 0 0 8px var(--color-secondary); }
     .ul-item::after { content: ''; position: absolute; left: 3.5px; top: 14px; bottom: -14px; width: 1px; background: var(--border-color); }
     .ul-item:last-child::after { display: none; }
+    .ul-item:last-child { margin-bottom: 2px; }
     .ul-time { font-size: .68rem; font-weight: 700; color: var(--color-secondary); font-variant-numeric: tabular-nums; margin-bottom: 3px; }
     .ul-text { font-size: .82rem; color: var(--text-muted); line-height: 1.5; }
     .ul-empty { font-size: .8rem; color: var(--text-muted); font-style: italic; }
-    .verdict-live { margin-top: 22px; padding: 18px; border: 1px solid var(--border-glow); border-radius: 12px; background: rgba(99, 102, 241, 0.06); }
+    .verdict-live { margin: 0 0 22px 0; padding: 18px; border: 1px solid rgba(251,191,36,.4); border-radius: 12px; background: rgba(251, 191, 36, 0.05); }
     .vl-badge { display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#fde68a; background:rgba(251,191,36,.12); border:1px solid rgba(251,191,36,.35); padding:3px 9px; border-radius:3px; margin-bottom:10px; }
     .vl-current { font-size: .92rem; color: var(--text-main); line-height: 1.65; }
+    .concl-badge { display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#99f6e4; background:rgba(6,182,212,.10); border:1px solid rgba(6,182,212,.35); padding:3px 9px; border-radius:3px; margin-bottom:12px; }
 
   </style>
 </head>
@@ -1193,6 +1195,20 @@
       }
     ]
   },
+  "conclusioni": {
+    "aggiornato_il": "2026-08-02T18:40:00",
+    "corrente": "L'elaborazione predittiva e multidimensionale del protocollo <strong class=\"highlight-strong\">AION 2.2</strong> evidenzia che la crisi iraniana del 2026 ha superato la soglia di linearità: la stabilità del Golfo Persico e la continuità del regime dipendono da cicli di retroazione incrociati che rendono obsolete le analisi a vettore singolo.<ul><li><strong class=\"highlight-strong\">Transizione di leadership blindata:</strong> la nomina lampo di <span class=\"highlight-strong\">Mojtaba Khamenei</span> (8 marzo 2026) sotto il controllo dei <span class=\"highlight-strong\">Pasdaran (IRGC)</span> ha consolidato una giunta militare-clericale, stabilizzata da oltre <span class=\"highlight-cyan\">134 esecuzioni</span> a giugno.</li><li><strong class=\"highlight-strong\">Circuito valuta-stretto-deterrenza:</strong> con inflazione all'<span class=\"highlight-cyan\">88,6%</span>, Rial a <span class=\"highlight-cyan\">1,5M per USD</span> e la <span class=\"highlight-cyan\">revoca delle esenzioni petrolifere</span> (luglio), Teheran non ha risorse per una guerra cinetica prolungata: la pressione si sposta su cyber e minaccia dello Stretto per spingere il Brent oltre i <span class=\"highlight-strong\">100 USD</span>.</li><li><strong class=\"highlight-strong\">Svolta del malware poliglotta Rust:</strong> le campagne dell'APT <span class=\"highlight-rose\">MuddyWater</span> con <span class=\"highlight-rose\">RustyWater</span> confermano il cyber come braccio asimmetrico preferito prima della soglia cinetica.</li><li><strong class=\"highlight-amber\">Fattore aggiornato — soglia nucleare:</strong> l'IAEA stima ora un breakout a <span class=\"highlight-amber\">&lt;10 giorni</span> (Pickaxe Mountain, IR-6/IR-9): il vettore Deterrenza diventa il baricentro del rischio e restringe la finestra per una de-escalation verificabile.</li></ul>",
+    "storia": [
+      {
+        "ts": "2026-07-08T14:30:00",
+        "testo": "Sintesi iniziale: crisi non lineare; tre vettori dominanti (transizione di leadership, circuito valuta-stretto, malware poliglotta Rust)."
+      },
+      {
+        "ts": "2026-08-02T18:40:00",
+        "testo": "Conclusioni ricalibrate: il breakout nucleare < 10 giorni e la revoca delle esenzioni spostano il baricentro sul vettore Deterrenza; la finestra diplomatica si restringe."
+      }
+    ]
+  },
   "nodi": {
     "economy": [
       {
@@ -1255,43 +1271,56 @@
       return p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
     }
     function timeline(items) {
-      if (!items || !items.length) return '<div class="ul-empty">Nessun aggiornamento registrato per questo vettore.</div>';
+      if (!items || !items.length) return '<div class="ul-empty">Nessun aggiornamento registrato.</div>';
       return items.slice().reverse().map(function (u) {
         return '<div class="ul-item"><div class="ul-time">' + fmt(u.ts) + '</div><div class="ul-text">' + u.testo + '</div></div>';
       }).join('');
     }
-    function ensureNodeHistory() {
-      var el = document.getElementById('oracle-history');
-      if (!el) {
-        el = document.createElement('div'); el.id = 'oracle-history'; el.className = 'update-log';
-        var ob = document.getElementById('oracle-box');
-        ob.parentNode.insertBefore(el, ob.nextSibling);
-      }
-      return el;
-    }
+
+    /* --- NODI: cronologia IN CIMA alla console (sopra l'analisi) --- */
     window.renderNodeHistory = function (id) {
-      var el = ensureNodeHistory();
+      var card = document.getElementById('details-card');
+      var body = document.getElementById('node-body-text');
+      if (!card || !body) return;
+      var el = document.getElementById('oracle-history');
+      if (!el) { el = document.createElement('div'); el.id = 'oracle-history'; el.className = 'update-log'; }
+      body.parentNode.insertBefore(el, body);   // sopra il testo di analisi
       var items = (DB.nodi && DB.nodi[id]) || [];
       el.style.display = 'block';
       el.innerHTML = '<div class="ul-title">\uD83D\uDD52 Cronologia Aggiornamenti</div>' + timeline(items);
     };
-    // aggancia la cronologia alla selezione del nodo, senza toccare la logica 3D originale
     if (typeof window.selectNode === 'function') {
       var _orig = window.selectNode;
       window.selectNode = function (id) { _orig(id); try { renderNodeHistory(id); } catch (e) {} };
     }
-    // verdetto vivo: considerazione corrente + evoluzione
-    function renderVerdict() {
+
+    /* --- CONCLUSIONI: responso SOPRA + testo pilotato dal database --- */
+    function renderLiving() {
       var host = document.getElementById('box-conclusions'); if (!host) return;
-      var box = document.getElementById('verdict-live');
-      if (!box) { box = document.createElement('div'); box.id = 'verdict-live'; box.className = 'verdict-live'; host.appendChild(box); }
+      var conclText = host.querySelector('.conclusions-text');
+
+      /* 1. Responso in aggiornamento, SOPRA le conclusioni */
       var v = DB.verdetto || {};
-      box.innerHTML = '<div class="vl-badge">Responso in aggiornamento</div>' +
+      var vbox = document.getElementById('verdict-live');
+      if (!vbox) {
+        vbox = document.createElement('div'); vbox.id = 'verdict-live'; vbox.className = 'verdict-live';
+        if (conclText) host.insertBefore(vbox, conclText); else host.appendChild(vbox);
+      }
+      vbox.innerHTML = '<div class="vl-badge">\u26A1 Responso in aggiornamento \u00B7 ' + fmt((v.storia && v.storia.length ? v.storia[v.storia.length-1].ts : DB.aggiornato_il)) + '</div>' +
         '<div class="vl-current">' + (v.corrente || '') + '</div>' +
         '<div class="ul-title" style="margin-top:16px;">\uD83D\uDD52 Evoluzione del Responso</div>' + timeline(v.storia);
+
+      /* 2. Conclusioni Strategiche pilotate dal database */
+      var c = DB.conclusioni;
+      if (c && conclText) {
+        conclText.innerHTML =
+          '<div class="concl-badge">\uD83D\uDD01 Conclusioni aggiornate il ' + fmt(c.aggiornato_il || DB.aggiornato_il) + '</div>' +
+          '<div>' + (c.corrente || '') + '</div>' +
+          '<div class="update-log" style="margin-top:18px;"><div class="ul-title">\uD83D\uDD52 Evoluzione delle Conclusioni</div>' + timeline(c.storia) + '</div>';
+      }
     }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderVerdict);
-    else renderVerdict();
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderLiving);
+    else renderLiving();
   })();
   </script>
 
