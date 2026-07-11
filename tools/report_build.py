@@ -33,20 +33,28 @@ json.loads(db_json)  # valida
 
 CSS = """
     /* --- LIVING REPORT: timeline aggiornamenti + conclusioni vive --- */
-    .update-log { margin: 14px 0; padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 10px; background: rgba(6, 182, 212, 0.04); }
-    .ul-title { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a5b4fc; margin-bottom: 12px; }
-    .ul-item { position: relative; padding-left: 18px; margin-bottom: 14px; }
+    .update-log { margin: 14px 0; padding: 14px 16px; border: 1px solid var(--border-color); border-left: 2px solid var(--color-secondary); border-radius: 10px; background: linear-gradient(135deg, rgba(6,182,212,.06), rgba(6,182,212,.015) 55%); }
+    .ul-title { display: flex; align-items: center; gap: 8px; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #a5b4fc; margin-bottom: 14px; }
+    .ul-count { font-size: .62rem; font-weight: 800; color: var(--color-secondary); background: rgba(6,182,212,.12); border: 1px solid rgba(6,182,212,.3); border-radius: 999px; padding: 1px 8px; }
+    .ul-item { position: relative; padding-left: 20px; margin-bottom: 16px; }
     .ul-item::before { content: ''; position: absolute; left: 0; top: 5px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-secondary); box-shadow: 0 0 8px var(--color-secondary); }
-    .ul-item::after { content: ''; position: absolute; left: 3.5px; top: 14px; bottom: -14px; width: 1px; background: var(--border-color); }
+    .ul-item::after { content: ''; position: absolute; left: 3.5px; top: 15px; bottom: -16px; width: 1px; background: linear-gradient(to bottom, var(--border-glow), var(--border-color)); }
     .ul-item:last-child::after { display: none; }
     .ul-item:last-child { margin-bottom: 2px; }
-    .ul-time { font-size: .68rem; font-weight: 700; color: var(--color-secondary); font-variant-numeric: tabular-nums; margin-bottom: 3px; }
-    .ul-text { font-size: .82rem; color: var(--text-muted); line-height: 1.5; }
+    .ul-item.latest::before { background: var(--color-gold); box-shadow: 0 0 10px var(--color-gold); animation: ul-pulse 2.2s ease-in-out infinite; }
+    @keyframes ul-pulse { 0%,100% { box-shadow: 0 0 6px var(--color-gold); } 50% { box-shadow: 0 0 14px var(--color-gold), 0 0 22px rgba(251,191,36,.35); } }
+    .ul-time { display: inline-flex; align-items: center; gap: 7px; font-size: .67rem; font-weight: 700; color: var(--color-secondary); font-variant-numeric: tabular-nums; letter-spacing: .04em; margin-bottom: 4px; }
+    .ul-new { font-size: .56rem; font-weight: 900; letter-spacing: .12em; color: #0b0e18; background: var(--color-gold); border-radius: 999px; padding: 1.5px 7px; }
+    .ul-item.latest .ul-time { color: var(--color-gold); }
+    .ul-text { font-size: .83rem; color: var(--text-muted); line-height: 1.55; }
+    .ul-item.latest .ul-text { color: var(--text-main); }
     .ul-empty { font-size: .8rem; color: var(--text-muted); font-style: italic; }
-    .verdict-live { margin: 0 0 22px 0; padding: 18px; border: 1px solid rgba(251,191,36,.4); border-radius: 12px; background: rgba(251, 191, 36, 0.05); }
-    .vl-badge { display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#fde68a; background:rgba(251,191,36,.12); border:1px solid rgba(251,191,36,.35); padding:3px 9px; border-radius:3px; margin-bottom:10px; }
-    .vl-current { font-size: .92rem; color: var(--text-main); line-height: 1.65; }
-    .concl-badge { display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#99f6e4; background:rgba(6,182,212,.10); border:1px solid rgba(6,182,212,.35); padding:3px 9px; border-radius:3px; margin-bottom:12px; }
+    .verdict-live { position: relative; margin: 0 0 24px 0; padding: 20px; border: 1px solid rgba(251,191,36,.4); border-radius: 12px; background: linear-gradient(160deg, rgba(251,191,36,.08), rgba(251,191,36,.02) 60%); overflow: hidden; }
+    .verdict-live::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--color-gold), transparent); opacity: .7; }
+    .vl-badge { display:inline-flex; align-items:center; gap:7px; font-size:.62rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#fde68a; background:rgba(251,191,36,.12); border:1px solid rgba(251,191,36,.35); padding:4px 11px; border-radius:999px; margin-bottom:12px; }
+    .vl-dot { width:7px; height:7px; border-radius:50%; background: var(--color-gold); animation: ul-pulse 2.2s ease-in-out infinite; }
+    .vl-current { font-size: .93rem; color: var(--text-main); line-height: 1.7; }
+    .concl-badge { display:inline-flex; align-items:center; gap:7px; font-size:.62rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#99f6e4; background:rgba(6,182,212,.10); border:1px solid rgba(6,182,212,.35); padding:4px 11px; border-radius:999px; margin-bottom:12px; }
 """
 
 FEATURE = """
@@ -62,9 +70,16 @@ FEATURE = """
     }
     function timeline(items) {
       if (!items || !items.length) return '<div class="ul-empty">Nessun aggiornamento registrato.</div>';
-      return items.slice().reverse().map(function (u) {
-        return '<div class="ul-item"><div class="ul-time">' + fmt(u.ts) + '</div><div class="ul-text">' + u.testo + '</div></div>';
+      return items.slice().reverse().map(function (u, i) {
+        var latest = i === 0;
+        return '<div class="ul-item' + (latest ? ' latest' : '') + '">' +
+               '<div class="ul-time">' + fmt(u.ts) + (latest ? ' <span class="ul-new">ULTIMO</span>' : '') + '</div>' +
+               '<div class="ul-text">' + u.testo + '</div></div>';
       }).join('');
+    }
+    function title(label, items) {
+      var n = (items || []).length;
+      return '<div class="ul-title">\\uD83D\\uDD52 ' + label + (n ? ' <span class="ul-count">' + n + '</span>' : '') + '</div>';
     }
 
     /* --- NODI: cronologia IN CIMA alla console (sopra l'analisi) --- */
@@ -77,7 +92,7 @@ FEATURE = """
       body.parentNode.insertBefore(el, body);   // sopra il testo di analisi
       var items = (DB.nodi && DB.nodi[id]) || [];
       el.style.display = 'block';
-      el.innerHTML = '<div class="ul-title">\\uD83D\\uDD52 Cronologia Aggiornamenti</div>' + timeline(items);
+      el.innerHTML = title('Cronologia Aggiornamenti', items) + timeline(items);
     };
     if (typeof window.selectNode === 'function') {
       var _orig = window.selectNode;
@@ -96,9 +111,9 @@ FEATURE = """
         vbox = document.createElement('div'); vbox.id = 'verdict-live'; vbox.className = 'verdict-live';
         if (conclText) host.insertBefore(vbox, conclText); else host.appendChild(vbox);
       }
-      vbox.innerHTML = '<div class="vl-badge">\\u26A1 Responso in aggiornamento \\u00B7 ' + fmt((v.storia && v.storia.length ? v.storia[v.storia.length-1].ts : DB.aggiornato_il)) + '</div>' +
+      vbox.innerHTML = '<div class="vl-badge"><span class="vl-dot"></span>\\u4DEA Responso in aggiornamento \\u00B7 ' + fmt((v.storia && v.storia.length ? v.storia[v.storia.length-1].ts : DB.aggiornato_il)) + '</div>' +
         '<div class="vl-current">' + (v.corrente || '') + '</div>' +
-        '<div class="ul-title" style="margin-top:16px;">\\uD83D\\uDD52 Evoluzione del Responso</div>' + timeline(v.storia);
+        '<div style="margin-top:18px;">' + title('Evoluzione del Responso', v.storia) + timeline(v.storia) + '</div>';
 
       /* 2. Conclusioni Strategiche pilotate dal database */
       var c = DB.conclusioni;
@@ -106,7 +121,7 @@ FEATURE = """
         conclText.innerHTML =
           '<div class="concl-badge">\\uD83D\\uDD01 Conclusioni aggiornate il ' + fmt(c.aggiornato_il || DB.aggiornato_il) + '</div>' +
           '<div>' + (c.corrente || '') + '</div>' +
-          '<div class="update-log" style="margin-top:18px;"><div class="ul-title">\\uD83D\\uDD52 Evoluzione delle Conclusioni</div>' + timeline(c.storia) + '</div>';
+          '<div class="update-log" style="margin-top:18px;">' + title('Evoluzione delle Conclusioni', c.storia) + timeline(c.storia) + '</div>';
       }
     }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderLiving);

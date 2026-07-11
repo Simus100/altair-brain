@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-07-11)
+# Graph Report - altair-brain  (2026-07-12)
 
 ## Corpus Check
-- 151 files · ~109,320 words
+- 151 files · ~109,760 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1063 nodes · 1360 edges · 120 communities (113 shown, 7 thin omitted)
+- 1063 nodes · 1357 edges · 121 communities (114 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `034ec3cd`
+- Built from commit: `c44ea2cd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -124,6 +124,7 @@
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
 - [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 120|Community 120]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -148,7 +149,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (120 total, 7 thin omitted)
+## Communities (121 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -175,8 +176,8 @@ Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.12
-Nodes (10): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 017 - Generator meta-ciclico (+2 more)
+Cohesion: 0.14
+Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -187,8 +188,8 @@ Cohesion: 0.17
 Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ### Community 9 - "Community 9"
-Cohesion: 0.24
-Nodes (7): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Modalita [ANALYTIC_CORE]
+Cohesion: 0.20
+Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
 
 ### Community 10 - "Community 10"
 Cohesion: 0.13
@@ -219,8 +220,8 @@ Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.12
-Nodes (12): AION_ETHOS, AION_SUPERIA, AION - modello di pensiero, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica, Livello Orchestrazione / Stile (+4 more)
+Cohesion: 0.27
+Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
 
 ### Community 19 - "Community 19"
 Cohesion: 0.18
@@ -557,6 +558,10 @@ Nodes (3): items, type, dominanti
 ### Community 103 - "Community 103"
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
+
+### Community 120 - "Community 120"
+Cohesion: 0.17
+Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
 
 ## Knowledge Gaps
 - **684 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+679 more)

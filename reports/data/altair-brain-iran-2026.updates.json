@@ -1,34 +1,34 @@
 {
   "report": "altair-brain-iran-2026",
   "titolo": "Caso Iran 2026 — AION NEXUS Report",
-  "aggiornato_il": "2026-08-02T18:40:00",
+  "aggiornato_il": "2026-07-10T18:40:00",
   "verdetto": {
     "corrente": "In linea con il Cervello Centrale AION, l'evoluzione dall'esagramma <strong>43 (Lo Straripamento)</strong> al <strong>16 (L'Entusiasmo)</strong> sconsiglia l'escalation cinetica diretta nello Stretto. Con il breakout nucleare stimato dall'IAEA a <strong>&lt;10 giorni</strong> e la revoca delle esenzioni petrolifere, la via di massimo vantaggio resta la <strong>mediazione diplomatica verificabile</strong> (canale di Mascate) da riattivare con urgenza, scambiando una riduzione controllata dello sforamento nucleare con esenzioni petrolifere mirate.",
     "storia": [
       {
-        "ts": "2026-07-08T14:30:00",
+        "ts": "2026-06-12T14:30:00",
         "testo": "Responso iniziale: evoluzione esagramma 43 → 16. Evitare l'escalation militare cinetica nello Stretto; riattivare i canali sotterranei di mediazione (canale di Mascate)."
       },
       {
-        "ts": "2026-07-22T09:15:00",
-        "testo": "Aggiornamento: la revoca USA delle esenzioni petrolifere (luglio) irrigidisce il quadro economico. Il canale di Mascate resta congelato per l'instabilità della successione: la finestra diplomatica si stringe."
+        "ts": "2026-07-01T09:15:00",
+        "testo": "Aggiornamento: la revoca USA delle esenzioni petrolifere (1 luglio) irrigidisce il quadro economico. Il canale di Mascate resta congelato per l'instabilità della successione: la finestra diplomatica si stringe."
       },
       {
-        "ts": "2026-08-02T18:40:00",
+        "ts": "2026-07-10T18:40:00",
         "testo": "Nuova considerazione: l'IAEA conferma un breakout < 10 giorni. Cresce il peso del vettore Deterrenza Nucleare: priorità a una de-escalation verificabile prima del superamento di soglie irreversibili."
       }
     ]
   },
   "conclusioni": {
-    "aggiornato_il": "2026-08-02T18:40:00",
+    "aggiornato_il": "2026-07-10T18:40:00",
     "corrente": "L'elaborazione predittiva e multidimensionale del protocollo <strong class=\"highlight-strong\">AION 2.2</strong> evidenzia che la crisi iraniana del 2026 ha superato la soglia di linearità: la stabilità del Golfo Persico e la continuità del regime dipendono da cicli di retroazione incrociati che rendono obsolete le analisi a vettore singolo.<ul><li><strong class=\"highlight-strong\">Transizione di leadership blindata:</strong> la nomina lampo di <span class=\"highlight-strong\">Mojtaba Khamenei</span> (8 marzo 2026) sotto il controllo dei <span class=\"highlight-strong\">Pasdaran (IRGC)</span> ha consolidato una giunta militare-clericale, stabilizzata da oltre <span class=\"highlight-cyan\">134 esecuzioni</span> a giugno.</li><li><strong class=\"highlight-strong\">Circuito valuta-stretto-deterrenza:</strong> con inflazione all'<span class=\"highlight-cyan\">88,6%</span>, Rial a <span class=\"highlight-cyan\">1,5M per USD</span> e la <span class=\"highlight-cyan\">revoca delle esenzioni petrolifere</span> (luglio), Teheran non ha risorse per una guerra cinetica prolungata: la pressione si sposta su cyber e minaccia dello Stretto per spingere il Brent oltre i <span class=\"highlight-strong\">100 USD</span>.</li><li><strong class=\"highlight-strong\">Svolta del malware poliglotta Rust:</strong> le campagne dell'APT <span class=\"highlight-rose\">MuddyWater</span> con <span class=\"highlight-rose\">RustyWater</span> confermano il cyber come braccio asimmetrico preferito prima della soglia cinetica.</li><li><strong class=\"highlight-amber\">Fattore aggiornato — soglia nucleare:</strong> l'IAEA stima ora un breakout a <span class=\"highlight-amber\">&lt;10 giorni</span> (Pickaxe Mountain, IR-6/IR-9): il vettore Deterrenza diventa il baricentro del rischio e restringe la finestra per una de-escalation verificabile.</li></ul>",
     "storia": [
       {
-        "ts": "2026-07-08T14:30:00",
+        "ts": "2026-06-12T14:30:00",
         "testo": "Sintesi iniziale: crisi non lineare; tre vettori dominanti (transizione di leadership, circuito valuta-stretto, malware poliglotta Rust)."
       },
       {
-        "ts": "2026-08-02T18:40:00",
+        "ts": "2026-07-10T18:40:00",
         "testo": "Conclusioni ricalibrate: il breakout nucleare < 10 giorni e la revoca delle esenzioni spostano il baricentro sul vettore Deterrenza; la finestra diplomatica si restringe."
       }
     ]
@@ -36,50 +36,50 @@
   "nodi": {
     "economy": [
       {
-        "ts": "2026-07-08T14:30:00",
-        "testo": "Inflazione all'88,6% (giugno); Rial oltre 1,5M per 1 USD sul mercato non ufficiale."
+        "ts": "2026-06-12T14:30:00",
+        "testo": "Inflazione all'88,6% (rilevazione di giugno); Rial oltre 1,5M per 1 USD sul mercato non ufficiale."
       },
       {
-        "ts": "2026-07-22T09:15:00",
+        "ts": "2026-07-01T09:15:00",
         "testo": "Gli USA revocano formalmente le esenzioni petrolifere concesse a giugno: flussi finanziari clandestini verso l'Asia congelati."
       }
     ],
     "nuclear": [
       {
-        "ts": "2026-07-08T14:30:00",
+        "ts": "2026-06-12T14:30:00",
         "testo": "Centrifughe IR-6/IR-9 installate a Fordow e Natanz; trasferimento infrastrutture a Pickaxe Mountain."
       },
       {
-        "ts": "2026-08-02T18:40:00",
+        "ts": "2026-07-10T18:40:00",
         "testo": "IAEA: tempo di breakout sceso sotto i 10 giorni. Rilevati test sismici e termici anomali nel Dasht-e Kavir."
       }
     ],
     "internal": [
       {
-        "ts": "2026-07-08T14:30:00",
-        "testo": "Successione lampo di Mojtaba Khamenei sotto controllo IRGC; oltre 134 esecuzioni nel solo giugno 2026."
+        "ts": "2026-06-12T14:30:00",
+        "testo": "Successione lampo di Mojtaba Khamenei sotto controllo IRGC; oltre 134 esecuzioni nel mese di giugno 2026."
       }
     ],
     "diplomacy": [
       {
-        "ts": "2026-07-08T14:30:00",
+        "ts": "2026-06-12T14:30:00",
         "testo": "Canale omanita di Mascate congelato per l'instabilità post-successione."
       },
       {
-        "ts": "2026-07-22T09:15:00",
+        "ts": "2026-07-01T09:15:00",
         "testo": "Cina e Russia bloccano lo snapback ONU con il veto al Consiglio di Sicurezza."
       }
     ],
     "cyber": [
       {
-        "ts": "2026-07-08T14:30:00",
+        "ts": "2026-06-12T14:30:00",
         "testo": "MuddyWater adotta il RAT 'RustyWater' in Rust (VEH anti-analisi); campagne false-flag ransomware."
       }
     ],
     "proxy": [],
     "oracle": [
       {
-        "ts": "2026-08-02T18:40:00",
+        "ts": "2026-07-10T18:40:00",
         "testo": "Sintesi ricalibrata: frizione asimmetrica costante nello Stretto per spingere il Brent oltre 100 USD/barile; nessuno scontro aperto USA-Iran atteso nel breve."
       }
     ]
