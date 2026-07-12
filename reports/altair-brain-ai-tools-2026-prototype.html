@@ -431,42 +431,75 @@
       perspectiveScale = basePerspectiveScale * zoomLevel;
     }
 
+    
+    const aionLogicNodes = [{"id": "livello-identita-etica", "label": "Identita / Etica", "cat": "livelli"}, {"id": "livello-struttura-logica", "label": "Struttura / Logica", "cat": "livelli"}, {"id": "livello-operativita", "label": "Operativita", "cat": "livelli"}, {"id": "livello-orchestrazione-stile", "label": "Orchestrazione / Stile", "cat": "livelli"}, {"id": "modalita-analytic-core", "label": "modalita-analytic-core", "cat": "modalita"}, {"id": "modalita-mythic-narrative", "label": "modalita-mythic-narrative", "cat": "modalita"}, {"id": "modalita-hybrid-synth", "label": "modalita-hybrid-synth", "cat": "modalita"}, {"id": "modalita-guidance-empathic", "label": "modalita-guidance-empathic", "cat": "modalita"}, {"id": "aion-superia", "label": "AION_SUPERIA", "cat": "agenti"}, {"id": "aion-strategic-engine", "label": "AION_STRATEGIC_ENGINE", "cat": "agenti"}, {"id": "aion-fabulatorium", "label": "AION_FABULATORIUM", "cat": "agenti"}, {"id": "aion-cognition-view", "label": "AION_COGNITION_VIEW", "cat": "agenti"}, {"id": "aion-adaptive-core", "label": "AION_ADAPTIVE_CORE", "cat": "agenti"}, {"id": "aion-synth", "label": "AION_SYNTH", "cat": "agenti"}, {"id": "aion-ethos", "label": "AION_ETHOS", "cat": "agenti"}, {"id": "aion-hybrid-reasoner", "label": "AION_HYBRID_REASONER", "cat": "agenti"}, {"id": "aion-cinematica", "label": "AION_CINEMATICA", "cat": "agenti"}, {"id": "aion-analyst", "label": "AION_Analyst", "cat": "componenti"}, {"id": "aion-vision", "label": "AION_Vision", "cat": "componenti"}, {"id": "aion-adaptive", "label": "AION_Adaptive", "cat": "componenti"}, {"id": "aion-fabula", "label": "AION_Fabula", "cat": "componenti"}, {"id": "aion-oracle", "label": "AION_Oracle", "cat": "componenti"}, {"id": "aion-echo", "label": "AION_Echo", "cat": "componenti"}, {"id": "aion-deeplogiccore", "label": "AION_DeepLogicCore", "cat": "componenti"}, {"id": "aion-visual", "label": "AION_Visual", "cat": "componenti"}, {"id": "aion-symbol", "label": "AION_Symbol", "cat": "componenti"}, {"id": "aion-paradox", "label": "AION_Paradox", "cat": "componenti"}, {"id": "insegnamento-001", "label": "Interconnessione non lineare", "cat": "insegnamenti"}, {"id": "insegnamento-002", "label": "Potere narrativo archetipico", "cat": "insegnamenti"}, {"id": "insegnamento-003", "label": "Asimmetrie invisibili", "cat": "insegnamenti"}, {"id": "insegnamento-004", "label": "Auto-riflessivita cognitiva", "cat": "insegnamenti"}, {"id": "insegnamento-005", "label": "Ecologia sistemica della conoscenza", "cat": "insegnamenti"}, {"id": "insegnamento-006", "label": "Specchio statistico del mondo", "cat": "insegnamenti"}, {"id": "insegnamento-007", "label": "Apprendimento continuo", "cat": "insegnamenti"}, {"id": "insegnamento-008", "label": "Reward shaping strategico", "cat": "insegnamenti"}, {"id": "insegnamento-009", "label": "Tecniche neuro-simboliche", "cat": "insegnamenti"}, {"id": "insegnamento-010", "label": "Simulazioni con feedback retrospettivo", "cat": "insegnamenti"}, {"id": "insegnamento-011", "label": "Dinamiche narrative evolutive (I Ching)", "cat": "insegnamenti"}, {"id": "insegnamento-012", "label": "Risonanza cognitiva", "cat": "insegnamenti"}, {"id": "insegnamento-013", "label": "Reasoning neuro-simbolico", "cat": "insegnamenti"}, {"id": "insegnamento-014", "label": "Reti neurali semantiche", "cat": "insegnamenti"}, {"id": "insegnamento-015", "label": "Pattern emotivo-archetipici", "cat": "insegnamenti"}, {"id": "insegnamento-016", "label": "Simulazioni predittive multi-agent", "cat": "insegnamenti"}, {"id": "insegnamento-017", "label": "Generator meta-ciclico", "cat": "insegnamenti"}, {"id": "insegnamento-018", "label": "Allineamento con AION_ETHOS", "cat": "insegnamenti"}, {"id": "insegnamento-019", "label": "Assiomi invisibili", "cat": "insegnamenti"}, {"id": "insegnamento-020", "label": "Chain-of-thought", "cat": "insegnamenti"}, {"id": "insegnamento-021", "label": "Contraddizione costruttiva tra agenti", "cat": "insegnamenti"}, {"id": "insegnamento-022", "label": "Previsione emozionale per output cinematografico", "cat": "insegnamenti"}, {"id": "insegnamento-023", "label": "Storytelling visivo da dati", "cat": "insegnamenti"}, {"id": "insegnamento-024", "label": "Comunicazione multicanale sincronizzata", "cat": "insegnamenti"}, {"id": "insegnamento-025", "label": "Sistema non verbale e retorica del corpo", "cat": "insegnamenti"}, {"id": "insegnamento-026", "label": "Media literacy e distanza critica", "cat": "insegnamenti"}];
+    const aionLogicEdges = [{"source": "aion-superia", "target": "insegnamento-004"}, {"source": "aion-superia", "target": "insegnamento-019"}, {"source": "aion-superia", "target": "insegnamento-021"}, {"source": "aion-superia", "target": "aion-strategic-engine"}, {"source": "aion-superia", "target": "aion-fabulatorium"}, {"source": "aion-superia", "target": "aion-cognition-view"}, {"source": "aion-superia", "target": "aion-adaptive-core"}, {"source": "aion-superia", "target": "aion-synth"}, {"source": "aion-superia", "target": "aion-ethos"}, {"source": "aion-superia", "target": "aion-hybrid-reasoner"}, {"source": "aion-superia", "target": "aion-cinematica"}, {"source": "aion-strategic-engine", "target": "aion-analyst"}, {"source": "aion-strategic-engine", "target": "aion-vision"}, {"source": "aion-strategic-engine", "target": "aion-oracle"}, {"source": "aion-strategic-engine", "target": "insegnamento-001"}, {"source": "aion-strategic-engine", "target": "insegnamento-003"}, {"source": "aion-strategic-engine", "target": "insegnamento-006"}, {"source": "aion-strategic-engine", "target": "insegnamento-007"}, {"source": "aion-strategic-engine", "target": "insegnamento-008"}, {"source": "aion-strategic-engine", "target": "insegnamento-009"}, {"source": "aion-strategic-engine", "target": "insegnamento-010"}, {"source": "aion-strategic-engine", "target": "insegnamento-013"}, {"source": "aion-strategic-engine", "target": "insegnamento-016"}, {"source": "aion-strategic-engine", "target": "insegnamento-020"}, {"source": "aion-fabulatorium", "target": "aion-fabula"}, {"source": "aion-fabulatorium", "target": "aion-oracle"}, {"source": "aion-fabulatorium", "target": "aion-symbol"}, {"source": "aion-fabulatorium", "target": "aion-visual"}, {"source": "aion-fabulatorium", "target": "insegnamento-002"}, {"source": "aion-fabulatorium", "target": "insegnamento-011"}, {"source": "aion-fabulatorium", "target": "insegnamento-012"}, {"source": "aion-fabulatorium", "target": "insegnamento-014"}, {"source": "aion-fabulatorium", "target": "insegnamento-015"}, {"source": "aion-fabulatorium", "target": "insegnamento-017"}, {"source": "aion-fabulatorium", "target": "insegnamento-024"}, {"source": "aion-fabulatorium", "target": "insegnamento-025"}, {"source": "aion-fabulatorium", "target": "aion-cinematica"}, {"source": "aion-cognition-view", "target": "aion-visual"}, {"source": "aion-cognition-view", "target": "aion-symbol"}, {"source": "aion-cognition-view", "target": "aion-echo"}, {"source": "aion-cognition-view", "target": "insegnamento-002"}, {"source": "aion-cognition-view", "target": "insegnamento-004"}, {"source": "aion-cognition-view", "target": "insegnamento-006"}, {"source": "aion-cognition-view", "target": "insegnamento-009"}, {"source": "aion-cognition-view", "target": "insegnamento-013"}, {"source": "aion-cognition-view", "target": "insegnamento-014"}, {"source": "aion-cognition-view", "target": "insegnamento-020"}, {"source": "aion-cognition-view", "target": "insegnamento-023"}, {"source": "aion-adaptive-core", "target": "aion-adaptive"}, {"source": "aion-adaptive-core", "target": "aion-echo"}, {"source": "aion-adaptive-core", "target": "aion-visual"}, {"source": "aion-adaptive-core", "target": "insegnamento-001"}, {"source": "aion-adaptive-core", "target": "insegnamento-005"}, {"source": "aion-adaptive-core", "target": "insegnamento-012"}, {"source": "aion-adaptive-core", "target": "insegnamento-015"}, {"source": "aion-adaptive-core", "target": "insegnamento-022"}, {"source": "aion-adaptive-core", "target": "insegnamento-024"}, {"source": "aion-synth", "target": "aion-vision"}, {"source": "aion-synth", "target": "aion-fabula"}, {"source": "aion-synth", "target": "aion-oracle"}, {"source": "aion-synth", "target": "aion-paradox"}, {"source": "aion-synth", "target": "insegnamento-003"}, {"source": "aion-synth", "target": "insegnamento-007"}, {"source": "aion-synth", "target": "insegnamento-008"}, {"source": "aion-synth", "target": "insegnamento-010"}, {"source": "aion-synth", "target": "insegnamento-011"}, {"source": "aion-synth", "target": "insegnamento-016"}, {"source": "aion-synth", "target": "insegnamento-017"}, {"source": "aion-ethos", "target": "insegnamento-004"}, {"source": "aion-ethos", "target": "insegnamento-011"}, {"source": "aion-ethos", "target": "insegnamento-015"}, {"source": "aion-ethos", "target": "insegnamento-018"}, {"source": "aion-ethos", "target": "insegnamento-019"}, {"source": "aion-hybrid-reasoner", "target": "aion-deeplogiccore"}, {"source": "aion-hybrid-reasoner", "target": "aion-echo"}, {"source": "aion-hybrid-reasoner", "target": "aion-paradox"}, {"source": "aion-hybrid-reasoner", "target": "aion-symbol"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-006"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-007"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-009"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-010"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-013"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-016"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-020"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-021"}, {"source": "aion-hybrid-reasoner", "target": "insegnamento-026"}, {"source": "aion-cinematica", "target": "aion-fabula"}, {"source": "aion-cinematica", "target": "aion-symbol"}, {"source": "aion-cinematica", "target": "aion-visual"}, {"source": "aion-cinematica", "target": "aion-echo"}, {"source": "aion-cinematica", "target": "insegnamento-008"}, {"source": "aion-cinematica", "target": "insegnamento-012"}, {"source": "aion-cinematica", "target": "insegnamento-014"}, {"source": "aion-cinematica", "target": "insegnamento-022"}, {"source": "aion-cinematica", "target": "insegnamento-023"}, {"source": "aion-cinematica", "target": "insegnamento-024"}, {"source": "aion-cinematica", "target": "insegnamento-025"}, {"source": "aion-cinematica", "target": "aion-cognition-view"}, {"source": "aion-cinematica", "target": "aion-adaptive-core"}, {"source": "aion-cinematica", "target": "aion-synth"}, {"source": "aion-cinematica", "target": "aion-strategic-engine"}, {"source": "modalita-analytic-core", "target": "aion-strategic-engine"}, {"source": "modalita-analytic-core", "target": "aion-analyst"}, {"source": "modalita-analytic-core", "target": "aion-vision"}, {"source": "modalita-analytic-core", "target": "aion-deeplogiccore"}, {"source": "modalita-mythic-narrative", "target": "aion-fabulatorium"}, {"source": "modalita-mythic-narrative", "target": "aion-cinematica"}, {"source": "modalita-mythic-narrative", "target": "aion-fabula"}, {"source": "modalita-mythic-narrative", "target": "aion-symbol"}, {"source": "modalita-hybrid-synth", "target": "aion-synth"}, {"source": "modalita-hybrid-synth", "target": "aion-hybrid-reasoner"}, {"source": "modalita-hybrid-synth", "target": "aion-vision"}, {"source": "modalita-guidance-empathic", "target": "aion-adaptive-core"}, {"source": "modalita-guidance-empathic", "target": "aion-ethos"}, {"source": "modalita-guidance-empathic", "target": "aion-adaptive"}];
+    
+    const topicToAion = {
+        "nodo_market": "aion-analyst",
+        "nodo_dev": "aion-adaptive",
+        "nodo_design": "aion-visual",
+        "nodo_dir": "aion-oracle",
+        "nodo_roi": "aion-strategic-engine"
+    };
+
     function generateBrainGeometry() {
       brainPoints = [];
-      const particleCount = 240;
-      const hemisphereOffset = 1.6;
-
-      for (let i = 0; i < particleCount; i++) {
-        const isRight = Math.random() > 0.5;
-        const theta = Math.random() * Math.PI * 2;
-        const phi = Math.acos(Math.random() * 2 - 1);
-        const r = (0.6 + 0.4 * Math.random()) * 2.5;
-
-        const dx = Math.sin(phi * 4) * 0.2;
-        const dy = Math.cos(theta * 3.5) * 0.15;
-        
-        const x = r * Math.sin(phi) * Math.cos(theta) + (isRight ? hemisphereOffset : -hemisphereOffset) + dx;
-        const y = r * Math.sin(phi) * Math.sin(theta) * 0.72 + dy;
-        const z = r * Math.cos(phi) * 0.8;
-
-        brainPoints.push({ x, y, z });
-      }
-
       brainLines = [];
-      for (let i = 0; i < brainPoints.length; i++) {
-        let connections = 0;
-        for (let j = i + 1; j < brainPoints.length; j++) {
-          const dx = brainPoints[i].x - brainPoints[j].x;
-          const dy = brainPoints[i].y - brainPoints[j].y;
-          const dz = brainPoints[i].z - brainPoints[j].z;
-          const dist = Math.hypot(dx, dy, dz);
+      
+      const hemisphereOffset = 1.6;
+      
+      let pIndex = 0;
+      aionLogicNodes.forEach(logicNode => {
+          const isRight = Math.random() > 0.5;
+          const theta = Math.random() * Math.PI * 2;
+          const phi = Math.acos(Math.random() * 2 - 1);
+          const r = (0.6 + 0.4 * Math.random()) * 2.5;
+
+          const dx = Math.sin(phi * 4) * 0.2;
+          const dy = Math.cos(theta * 3.5) * 0.15;
           
-          if (dist < 1.6 && connections < 2) {
-            brainLines.push({ p1: i, p2: j });
-            connections++;
+          const bx = r * Math.sin(phi) * Math.cos(theta) + (isRight ? hemisphereOffset : -hemisphereOffset) + dx;
+          const by = r * Math.sin(phi) * Math.sin(theta) * 0.72 + dy;
+          const bz = r * Math.cos(phi) * 0.8;
+          
+          const mainPtIndex = pIndex++;
+          brainPoints.push({ 
+              x: bx, y: by, z: bz, 
+              id: logicNode.id, 
+              isAion: true,
+              label: logicNode.label,
+              cat: logicNode.cat
+          });
+          
+          for(let k = 0; k < 3; k++) {
+              const sx = bx + (Math.random() - 0.5) * 0.6;
+              const sy = by + (Math.random() - 0.5) * 0.6;
+              const sz = bz + (Math.random() - 0.5) * 0.6;
+              brainPoints.push({ 
+                  x: sx, y: sy, z: sz, 
+                  isAion: false,
+                  parentId: logicNode.id
+              });
+              brainLines.push({ p1: mainPtIndex, p2: pIndex++ });
           }
-        }
-      }
+      });
+      
+      aionLogicEdges.forEach(edge => {
+          const p1 = brainPoints.findIndex(p => p.id === edge.source);
+          const p2 = brainPoints.findIndex(p => p.id === edge.target);
+          if (p1 !== -1 && p2 !== -1) {
+              brainLines.push({ p1, p2, type: 'aion_logic' });
+          }
+      });
+      
+      nodes.forEach(topic => {
+          const targetAionId = topicToAion[topic.id];
+          const targetPt = brainPoints.find(p => p.id === targetAionId);
+          if (targetPt) {
+              topic.connectedToId = targetAionId;
+          }
+      });
     }
 
     function render3DFrame() {
@@ -569,6 +602,34 @@
       });
 
       renderQueue.sort((a, b) => b.z - a.z);
+
+      
+      nodes.forEach(node => {
+          if (node.connectedToId) {
+              const targetPt = brainPoints.find(p => p.id === node.connectedToId);
+              if (targetPt && targetPt.screenX && node.screenX) {
+                  ctx.beginPath();
+                  ctx.moveTo(node.screenX, node.screenY);
+                  ctx.lineTo(targetPt.screenX, targetPt.screenY);
+                  ctx.setLineDash([3, 3]);
+                  
+                  // Convert hex to rgba for the line
+                  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(node.color);
+                  if(result) {
+                      var r = parseInt(result[1], 16);
+                      var g = parseInt(result[2], 16);
+                      var b = parseInt(result[3], 16);
+                      ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, 0.5)`;
+                  } else {
+                      ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+                  }
+                  
+                  ctx.lineWidth = 1;
+                  ctx.stroke();
+                  ctx.setLineDash([]);
+              }
+          }
+      });
 
       renderQueue.forEach(item => {
         if (item.type === 'point') {
