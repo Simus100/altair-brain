@@ -12,10 +12,19 @@ Logica fedele a raw/aion/aion-oracle.md (Sezione 1):
   rimanente (estensione coerente della regola 4, non nel testo originale);
   6 -> ignora il primo esagramma, consulta il secondo.
 
-Uso come modulo:  from tools.oracle_cast import cast_reading, get_hexagram
+DUE METODI:
+- cast_reading(seed)            lancio casuale/seedato (divinazione interattiva, skill /oracle)
+- attribute_reading(id, mobili) ATTRIBUZIONE DECISIONALE — metodo canonico per i REPORT:
+  l'esagramma primario si SCEGLIE in base all'argomento (vedi search_by_tags), le linee
+  mobili marcano i vettori in mutamento, il loro testo e il CONSIGLIO del cambiamento,
+  la mutazione produce l'esagramma di destinazione.
+
+Uso come modulo:  from tools.oracle_cast import cast_reading, attribute_reading, get_hexagram
 Uso da CLI:       python tools/oracle_cast.py [--seed N] [--question "..."]
+                  python tools/oracle_cast.py --attribuisci 43 --mobili 1,2,3,5
+                  python tools/oracle_cast.py --cerca "tensione decisione svolta"
 """
-import json, os, random, sys
+import json, os, random, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(ROOT, "engine", "iching.db.json")
@@ -109,14 +118,73 @@ def cast_reading(question: str = None, seed: int = None) -> dict:
     }
 
 
+def _lanci_from(binario, mobili):
+    """Deriva i 6 lanci da un esagramma SCELTO + linee mobili decise:
+    bit 1 (yang): mobile -> 9, stabile -> 7; bit 0 (yin): mobile -> 6, stabile -> 8."""
+    return [(9 if (i + 1) in mobili else 7) if b == "1" else (6 if (i + 1) in mobili else 8)
+            for i, b in enumerate(binario)]
+
+
+def attribute_reading(primario_id: int, mobili, question: str = None,
+                      motivazione: str = None) -> dict:
+    """ATTRIBUZIONE DECISIONALE (metodo canonico per i report).
+    Non si estrae a caso: l'esagramma primario e attribuito all'argomento; le linee
+    mobili sono i vettori in mutamento e il loro testo e il consiglio; la mutazione
+    delle mobili produce l'esagramma di destinazione (la direzione del cambiamento)."""
+    db = _load()
+    mobili = sorted({int(m) for m in mobili})
+    if any(m < 1 or m > 6 for m in mobili):
+        raise ValueError("linee mobili fuori range 1-6")
+    primo = _public(get_hexagram(primario_id))
+    lanci = _lanci_from(primo["binario"], set(mobili))
+    secondo = None
+    if mobili:
+        secondo = _public(get_hexagram(db["lookup_binario"][_to_binary(_mutate(lanci))]))
+    consiglio = [{"linea": n, "testo": primo["linee"][n - 1]["testo"]} for n in mobili]
+    return {
+        "metodo": "attribuzione decisionale",
+        "question": question,
+        "motivazione": motivazione,
+        "esagramma_primario": primo,
+        "linee_mobili": mobili,
+        "consiglio_linee": consiglio,
+        "esagramma_secondario": secondo,
+    }
+
+
+def search_by_tags(testo: str, top: int = 5) -> list:
+    """Suggerisce gli esagrammi da ATTRIBUIRE: match tra le parole dell'argomento e i
+    tag semantici del database (engine/iching.db.json). Deterministico, nessuna API."""
+    db = _load()
+    parole = set(re.findall(r"[a-zà-ù]{4,}", (testo or "").lower()))
+    punteggi = []
+    for e in db["esagrammi"]:
+        hits = [t for t in e["tag"] if any(p in t or t in p for p in parole)]
+        if hits:
+            punteggi.append({"id": e["id"], "nome": e["nome"], "simbolo": e["simbolo"],
+                             "score": len(hits), "tag_match": hits})
+    return sorted(punteggi, key=lambda x: -x["score"])[:top]
+
+
 if __name__ == "__main__":
     import argparse
-    ap = argparse.ArgumentParser(description="Lancio I Ching (AION_Oracle)")
+    ap = argparse.ArgumentParser(description="AION_Oracle: lancio (divinazione) o attribuzione decisionale (report)")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--question", default=None)
     ap.add_argument("--hexagram", type=int, default=None, help="mostra solo la scheda di un esagramma")
+    ap.add_argument("--attribuisci", type=int, default=None, help="id esagramma attribuito decisionalmente")
+    ap.add_argument("--mobili", default="", help="linee mobili decise, es. 1,2,3,5")
+    ap.add_argument("--motivazione", default=None, help="perche questo esagramma per questo argomento")
+    ap.add_argument("--cerca", default=None, help="suggerisci esagrammi per tag dall'argomento")
     a = ap.parse_args()
-    out = get_hexagram(a.hexagram) if a.hexagram else cast_reading(a.question, a.seed)
-    json.dump({k: v for k, v in out.items() if not k.startswith("_")} if a.hexagram else out,
-              sys.stdout, ensure_ascii=False, indent=2)
+    if a.cerca:
+        out = search_by_tags(a.cerca)
+    elif a.attribuisci:
+        mob = [int(x) for x in a.mobili.split(",") if x.strip()] if a.mobili else []
+        out = attribute_reading(a.attribuisci, mob, a.question, a.motivazione)
+    elif a.hexagram:
+        out = {k: v for k, v in get_hexagram(a.hexagram).items()}
+    else:
+        out = cast_reading(a.question, a.seed)
+    json.dump(out, sys.stdout, ensure_ascii=False, indent=2)
     print()

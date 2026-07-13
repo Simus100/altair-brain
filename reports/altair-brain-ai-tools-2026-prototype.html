@@ -286,9 +286,13 @@
     .ul-conf.media  { color:#fde68a; background:rgba(251,191,36,.10); border:1px solid rgba(251,191,36,.3); }
     .ul-conf.bassa  { color:#fda4af; background:rgba(244,63,94,.10); border:1px solid rgba(244,63,94,.3); }
     /* cast oracolare verificabile nel box del responso */
-    .vl-cast { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:14px; padding:10px 14px; border:1px dashed rgba(251,191,36,.35); border-radius:8px; font-size:.72rem; color:var(--text-muted); }
-    .vl-cast .hex { font-size:1.15rem; color:var(--color-gold); line-height:1; }
-    .vl-cast code { font-size:.66rem; color:#a5b4fc; background:rgba(99,102,241,.10); border:1px solid rgba(99,102,241,.25); border-radius:5px; padding:2px 7px; }
+    .vl-cast { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:14px; padding:10px 14px; border:1px dashed rgba(251,191,36,.35); border-radius:8px; font-size:.74rem; color:var(--text-muted); }
+    .vl-cast .hex { font-size:1.2rem; color:var(--color-gold); line-height:1; }
+    .vl-cast strong { color:var(--text-main); font-weight:700; }
+    .vl-motiv { margin-top:10px; font-size:.78rem; color:var(--text-muted); font-style:italic; line-height:1.55; }
+    .vl-lines { margin-top:12px; }
+    .vl-line { font-size:.8rem; color:var(--text-main); line-height:1.5; padding:6px 10px; margin-bottom:6px; border-left:2px solid var(--color-gold); background:rgba(251,191,36,.05); border-radius:0 6px 6px 0; }
+    .vl-line-n { font-weight:800; color:var(--color-gold); font-size:.68rem; letter-spacing:.05em; }
 
   </style>
 </head>
@@ -1025,24 +1029,40 @@
       var host = document.getElementById('box-conclusions'); if (!host) return;
       var conclText = host.querySelector('.conclusions-text');
 
-      /* 1. Responso in aggiornamento, SOPRA le conclusioni */
+      /* 1. Responso in aggiornamento — ordine canonico: SOTTO le conclusioni,
+         in coda al box (le Conclusioni aggiornate aprono, il Responso chiude) */
       var v = DB.verdetto || {};
       var vbox = document.getElementById('verdict-live');
       if (!vbox) {
         vbox = document.createElement('div'); vbox.id = 'verdict-live'; vbox.className = 'verdict-live';
-        if (conclText) host.insertBefore(vbox, conclText); else host.appendChild(vbox);
+        vbox.style.marginTop = '22px';
+        host.appendChild(vbox);
       }
-      /* cast oracolare verificabile: seed registrato = chiunque puo riprodurre il lancio */
+      /* ATTRIBUZIONE ORACOLARE: l'esagramma non e estratto a caso, e ATTRIBUITO
+         decisionalmente all'argomento; le linee mobili marcano i vettori in
+         mutamento e il loro testo e il consiglio del cambiamento. */
       var castHtml = '';
       if (v.cast) {
         var c2 = v.cast;
+        var mob = (c2.linee_mobili || []).join('\u00AA, ') + (c2.linee_mobili && c2.linee_mobili.length ? '\u00AA' : '');
         castHtml = '<div class="vl-cast">' +
           '<span class="hex">' + (c2.primario.simbolo || '') + '</span>' +
-          '<span>' + c2.primario.id + ' ' + c2.primario.nome + ' \u2192 </span>' +
+          '<span><strong>' + c2.primario.id + ' ' + c2.primario.nome + '</strong> \u2192 </span>' +
           '<span class="hex">' + (c2.secondario ? c2.secondario.simbolo : '') + '</span>' +
-          '<span>' + (c2.secondario ? c2.secondario.id + ' ' + c2.secondario.nome : '') + '</span>' +
-          '<span>\u00B7 lancio [' + c2.lanci.join(', ') + '] \u00B7 seme ' + c2.seed + '</span>' +
-          '<span>\u00B7 riproducibile: <code>' + (c2.verifica || '') + '</code></span></div>';
+          '<span><strong>' + (c2.secondario ? c2.secondario.id + ' ' + c2.secondario.nome : '') + '</strong></span>' +
+          (mob ? '<span>\u00B7 linee mobili: ' + mob + '</span>' : '') +
+          '<span>\u00B7 attribuzione decisionale AION_Oracle</span></div>';
+        if (c2.motivazione) {
+          castHtml += '<div class="vl-motiv">' + c2.motivazione + '</div>';
+        }
+        if (c2.consiglio_linee && c2.consiglio_linee.length) {
+          /* il cuore del metodo: le linee mobili come consiglio operativo */
+          castHtml += '<div class="vl-lines"><div class="ul-title" style="margin-bottom:8px;">\u268D Il consiglio delle linee mobili</div>' +
+            c2.consiglio_linee.map(function (l) {
+              return '<div class="vl-line"><span class="vl-line-n">' + l.linea + '\u00AA' +
+                     (l.vettore ? ' \u00B7 ' + l.vettore : '') + '</span> ' + l.testo + '</div>';
+            }).join('') + '</div>';
+        }
       }
       vbox.innerHTML = '<div class="vl-badge"><span class="vl-dot"></span>\u4DEA Responso in aggiornamento \u00B7 ' + fmt((v.storia && v.storia.length ? v.storia[v.storia.length-1].ts : DB.aggiornato_il)) + '</div>' +
         '<div class="vl-current">' + (v.corrente || '') + '</div>' + castHtml +

@@ -27,15 +27,7 @@
       }
     ],
     "cast": {
-      "seed": 1023,
-      "lanci": [
-        9,
-        9,
-        9,
-        7,
-        9,
-        8
-      ],
+      "metodo": "attribuzione decisionale",
       "primario": {
         "id": 43,
         "nome": "Lo Straripamento",
@@ -46,8 +38,36 @@
         "nome": "L'Entusiasmo",
         "simbolo": "䷏"
       },
-      "regola": "4 linee mobili: si sceglie la piu alta fissa",
-      "verifica": "python tools/oracle_cast.py --seed 1023"
+      "linee_mobili": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "motivazione": "Il 43 (Lo Straripamento) è attribuito allo stato del caso: la tensione ha raggiunto il limite critico (breakout nucleare <10 giorni, pressione sullo Stretto) e chiede risolutezza senza ricorso immediato alle armi. Le linee mobili marcano i quattro vettori in mutamento; la loro trasformazione conduce al 16 (L'Entusiasmo): canalizzare lo slancio con saggezza, senza escalation cinetica.",
+      "consiglio_linee": [
+        {
+          "linea": 1,
+          "vettore": "Economia",
+          "testo": "Identifica ciò che ti frena e agisci."
+        },
+        {
+          "linea": 2,
+          "vettore": "Cyber",
+          "testo": "Non farti travolgere da un impulso distruttivo."
+        },
+        {
+          "linea": 3,
+          "vettore": "Nucleare",
+          "testo": "La chiarezza d'obiettivo riduce i rischi."
+        },
+        {
+          "linea": 5,
+          "vettore": "Diplomazia",
+          "testo": "Non abusare del tuo slancio."
+        }
+      ],
+      "verifica": "python tools/oracle_cast.py --attribuisci 43 --mobili 1,2,3,5"
     }
   },
   "conclusioni": {

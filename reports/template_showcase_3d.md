@@ -814,10 +814,13 @@ reports/<caso>-prototype.html             living report GENERATO (mai editarlo a
   "aggiornato_il": "YYYY-MM-DDTHH:MM:SS",
   "verdetto": {
     "corrente": "Responso attuale dell'Oracolo (HTML consentito)",
-    "cast": { "seed": 1023, "lanci": [9,9,9,7,9,8],
+    "cast": { "metodo": "attribuzione decisionale",
               "primario": {"id": 43, "nome": "...", "simbolo": "䷪"},
               "secondario": {"id": 16, "nome": "...", "simbolo": "䷏"},
-              "regola": "...", "verifica": "python tools/oracle_cast.py --seed 1023" },
+              "linee_mobili": [1,2,3,5],
+              "motivazione": "perché QUESTO esagramma per QUESTO argomento",
+              "consiglio_linee": [ {"linea": 1, "vettore": "Economia", "testo": "..."} ],
+              "verifica": "python tools/oracle_cast.py --attribuisci 43 --mobili 1,2,3,5" },
     "storia": [ { "ts": "YYYY-MM-DDTHH:MM:SS", "testo": "Considerazione datata",
                   "fonte": "IAEA", "autore": "AION_SUPERIA", "confidenza": "alta" } ]
   },
@@ -835,8 +838,14 @@ reports/<caso>-prototype.html             living report GENERATO (mai editarlo a
 Regole: gli `id_nodo` DEVONO coincidere con gli id di `nodes`/`nodeIntelligence` (Sez. 1);
 timestamp ISO locali e MAI futuri; il JSON è la fonte di verità, l'HTML uno specchio.
 Campi opzionali per voce: `fonte` (citazione), `autore` (firma), `confidenza`
-(alta|media|bassa — mostrata come pill colorata). Il `cast` del verdetto rende il
-responso RIPRODUCIBILE (seed registrato, generato da tools/oracle_cast.py: mai a mano).
+(alta|media|bassa — mostrata come pill colorata).
+
+**PRINCIPIO DELL'ORACOLO NEI REPORT — attribuzione, non estrazione.** L'esagramma
+primario NON si estrae a caso: si ATTRIBUISCE decisionalmente all'argomento
+(candidati via `python tools/oracle_cast.py --cerca "parole dell'argomento"`, match
+sui tag semantici del DB). Le linee mobili si scelgono mappando i VETTORI del caso
+in mutamento; il loro testo è il CONSIGLIO del cambiamento; la mutazione produce
+l'esagramma di destinazione (calcolo: `--attribuisci <id> --mobili <n,n>`).
 La sezione `conclusioni` è opzionale: se assente, il builder lascia intatte quelle
 statiche della fonte. I nodi con update entro 7 giorni dall'ultimo aggiornamento
 mostrano un beacon lampeggiante col conteggio nella label HUD del cervello 3D.
@@ -848,9 +857,11 @@ mostrano un beacon lampeggiante col conteggio nella label HUD del cervello 3D.
   recente dell'intero database.
 - **Console del nodo** (al clic): 1) 🕒 Cronologia Aggiornamenti (timeline, più
   recente in alto con marcatore `ULTIMO`), 2) analisi del vettore, 3) Oracolo AION.
-- **Box conclusioni**: 1) ䷪ *Responso in aggiornamento* (corrente + data + Evoluzione
-  del Responso), SOPRA a 2) *Conclusioni Strategiche* pilotate dal database (badge
-  "aggiornate il", testo corrente, timeline Evoluzione delle Conclusioni).
+- **Box conclusioni (ordine canonico)**: 1) *Conclusioni Strategiche aggiornate*
+  IN ALTO (badge "aggiornate il", testo corrente dal database, timeline Evoluzione
+  delle Conclusioni); 2) ䷪ *Responso in aggiornamento* IN BASSO, a chiusura
+  (corrente + attribuzione oracolare con consiglio delle linee mobili + Evoluzione
+  del Responso). Le conclusioni aprono, il responso chiude.
 
 ### 3.4 Generazione e aggiornamento (tool del repo, deterministici, no API)
 

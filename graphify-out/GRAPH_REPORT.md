@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-13)
 
 ## Corpus Check
-- 154 files · ~123,572 words
+- 154 files · ~124,789 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1071 nodes · 1366 edges · 123 communities (116 shown, 7 thin omitted)
+- 1077 nodes · 1376 edges · 123 communities (116 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `164d506e`
+- Built from commit: `f90a72a5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -124,6 +124,7 @@
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
 - [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 121|Community 121]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -135,7 +136,7 @@
 7. `server/ — esposizione del second brain via FastAPI` - 9 edges
 8. `$ref` - 8 edges
 9. `_safe()` - 8 edges
-10. `1. 乾 Il Creativo (Qián) ䷀` - 8 edges
+10. `attribute_reading()` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
@@ -155,16 +156,16 @@ Cohesion: 0.06
 Nodes (37): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+29 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.10
+Cohesion: 0.06
 Nodes (24): BaseModel, Request, Response, affected(), capture(), CaptureReq, _err(), explain() (+16 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.12
-Nodes (32): Exception, Path, area_graph_path(), BrainError, capture(), graph_query(), graphify_available(), health_info() (+24 more)
+Cohesion: 0.10
+Nodes (38): Exception, Path, area_graph_path(), BrainError, capture(), graph_query(), graphify_available(), health_info() (+30 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.11
-Nodes (11): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamento 001 - Interconnessione non lineare, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche, Insegnamento 010 - Simulazioni con feedback retrospettivo, Insegnamento 013 - Reasoning neuro-simbolico (+3 more)
+Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
@@ -175,8 +176,8 @@ Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (16): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_COGNITION_VIEW, AION_Echo, AION_FABULATORIUM, AION_Symbol, AION_Visual (+8 more)
+Cohesion: 0.14
+Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -184,7 +185,7 @@ Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.17
-Nodes (8): AION_ETHOS, Insegnamenti attivi di AION, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 011 - Dinamiche narrative evolutive (I Ching), Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili
+Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
 
 ### Community 9 - "Community 9"
 Cohesion: 0.20
@@ -219,8 +220,8 @@ Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.22
-Nodes (7): AION_SUPERIA, AION - modello di pensiero, Livello Identita / Etica, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.27
+Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
 
 ### Community 19 - "Community 19"
 Cohesion: 0.18
@@ -491,8 +492,8 @@ Cohesion: 0.25
 Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 86 - "Community 86"
-Cohesion: 0.20
-Nodes (5): AION_Paradox, AION_SYNTH, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 008 - Reward shaping strategico, Insegnamento 016 - Simulazioni predittive multi-agent
+Cohesion: 0.25
+Nodes (4): AION_Paradox, AION_SYNTH, Insegnamento 008 - Reward shaping strategico, Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.29
@@ -558,6 +559,10 @@ Nodes (3): items, type, dominanti
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
+### Community 121 - "Community 121"
+Cohesion: 0.17
+Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
+
 ## Knowledge Gaps
 - **689 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+684 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -566,17 +571,17 @@ Nodes (3): items, type, orchestra
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
+- **Why does `27. 頤 Gli Angoli della Bocca (Yí) ䷚` connect `Community 40` to `Community 13`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `16. 豫 L'Entusiasmo (Yù) ䷏` connect `Community 28` to `Community 13`?**
+- **Why does `56. 旅 Il Viandante (Lǚ) ䷷` connect `Community 72` to `Community 13`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `57. 巽 Il Vento (Xùn) ䷸` connect `Community 73` to `Community 13`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 13`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _701 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _704 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.10483870967741936 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06376811594202898 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.11746031746031746 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10104529616724739 - nodes in this community are weakly interconnected._

@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "164d506e9439c0bdbe1da26ec1b8f3cd0579d704",
+ "built_at_commit": "f90a72a58a270e81fd5c95c2779e18b194092574",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -1649,7 +1649,7 @@
    "label": "3.3 Layout della forma live (ordine vincolante)",
    "file_type": "document",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L833",
+   "source_location": "L853",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_3_3_layout_della_forma_live_ordine_vincolante",
    "community": 88,
@@ -1659,7 +1659,7 @@
    "label": "3.4 Generazione e aggiornamento (tool del repo, deterministici, no API)",
    "file_type": "document",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L844",
+   "source_location": "L866",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_3_4_generazione_e_aggiornamento_tool_del_repo_deterministici_no_api",
    "community": 88,
@@ -1669,7 +1669,7 @@
    "label": "3.5 Istanziare un nuovo report live (checklist per agenti)",
    "file_type": "document",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L859",
+   "source_location": "L882",
    "_origin": "ast",
    "id": "reports_template_showcase_3d_3_5_istanziare_un_nuovo_report_live_checklist_per_agenti",
    "community": 88,
@@ -2844,7 +2844,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tests_test_api",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_api.py"
   },
   {
@@ -2854,7 +2854,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tests_test_api_test_alias_non_versionati",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_alias_non_versionati()"
   },
   {
@@ -2864,7 +2864,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tests_test_api_test_auth_richiesta_e_constant_time_ok",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_auth_richiesta_e_constant_time_ok()"
   },
   {
@@ -2874,7 +2874,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "tests_test_api_test_capture_vuoto_e_troppo_grande",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_capture_vuoto_e_troppo_grande()"
   },
   {
@@ -2884,7 +2884,7 @@
    "source_location": "L108",
    "_origin": "ast",
    "id": "tests_test_api_test_feedback_node_injection_rejected",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_feedback_node_injection_rejected()"
   },
   {
@@ -2894,7 +2894,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tests_test_api_test_health_pubblico_e_ricco",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_health_pubblico_e_ricco()"
   },
   {
@@ -2904,7 +2904,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_flusso_completo",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_inbox_flusso_completo()"
   },
   {
@@ -2914,7 +2914,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_inbox_path_traversal_respinto()"
   },
   {
@@ -2924,7 +2924,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_deterministico_con_seed",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_oracle_deterministico_con_seed()"
   },
   {
@@ -2934,7 +2934,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_hexagram_lookup_re_wen",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_oracle_hexagram_lookup_re_wen()"
   },
   {
@@ -2944,7 +2944,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tests_test_api_test_query_area_invalida",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_query_area_invalida()"
   },
   {
@@ -2954,7 +2954,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tests_test_api_test_query_degrada_o_funziona",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_query_degrada_o_funziona()"
   },
   {
@@ -2964,7 +2964,7 @@
    "source_location": "L117",
    "_origin": "ast",
    "id": "tests_test_api_test_rate_limiter_uses_client_host",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_rate_limiter_uses_client_host()"
   },
   {
@@ -2974,7 +2974,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "tests_test_api_test_route_deterministico",
-   "community": 121,
+   "community": 1,
    "norm_label": "test_route_deterministico()"
   },
   {
@@ -3148,10 +3148,20 @@
    "norm_label": "oracle_cast.py"
   },
   {
+   "label": "attribute_reading()",
+   "file_type": "code",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L128",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_attribute_reading",
+   "community": 2,
+   "norm_label": "attribute_reading()"
+  },
+  {
    "label": "cast_reading()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L79",
+   "source_location": "L88",
    "_origin": "ast",
    "id": "tools_oracle_cast_cast_reading",
    "community": 2,
@@ -3161,7 +3171,7 @@
    "label": "_focus_line()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L52",
+   "source_location": "L61",
    "_origin": "ast",
    "id": "tools_oracle_cast_focus_line",
    "community": 2,
@@ -3171,17 +3181,27 @@
    "label": "get_hexagram()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L34",
+   "source_location": "L43",
    "_origin": "ast",
    "id": "tools_oracle_cast_get_hexagram",
    "community": 2,
    "norm_label": "get_hexagram()"
   },
   {
+   "label": "_lanci_from()",
+   "file_type": "code",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L121",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_lanci_from",
+   "community": 2,
+   "norm_label": "_lanci_from()"
+  },
+  {
    "label": "_load()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L25",
+   "source_location": "L34",
    "_origin": "ast",
    "id": "tools_oracle_cast_load",
    "community": 2,
@@ -3191,7 +3211,7 @@
    "label": "_mutate()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L47",
+   "source_location": "L56",
    "_origin": "ast",
    "id": "tools_oracle_cast_mutate",
    "community": 2,
@@ -3201,27 +3221,67 @@
    "label": "_public()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L75",
+   "source_location": "L84",
    "_origin": "ast",
    "id": "tools_oracle_cast_public",
    "community": 2,
    "norm_label": "_public()"
   },
   {
+   "label": "Deriva i 6 lanci da un esagramma SCELTO + linee mobili decise:     bit 1 (yang):",
+   "file_type": "rationale",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L122",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_rationale_122",
+   "community": 2,
+   "norm_label": "deriva i 6 lanci da un esagramma scelto + linee mobili decise:     bit 1 (yang):"
+  },
+  {
+   "label": "ATTRIBUZIONE DECISIONALE (metodo canonico per i report).     Non si estrae a cas",
+   "file_type": "rationale",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L130",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_rationale_130",
+   "community": 2,
+   "norm_label": "attribuzione decisionale (metodo canonico per i report).     non si estrae a cas"
+  },
+  {
+   "label": "Suggerisce gli esagrammi da ATTRIBUIRE: match tra le parole dell'argomento e i",
+   "file_type": "rationale",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L156",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_rationale_156",
+   "community": 2,
+   "norm_label": "suggerisce gli esagrammi da attribuire: match tra le parole dell'argomento e i"
+  },
+  {
    "label": "Applica le regole di selezione della linea da interpretare. Ritorna (posizione,",
    "file_type": "rationale",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L53",
+   "source_location": "L62",
    "_origin": "ast",
-   "id": "tools_oracle_cast_rationale_53",
+   "id": "tools_oracle_cast_rationale_62",
    "community": 2,
    "norm_label": "applica le regole di selezione della linea da interpretare. ritorna (posizione,"
+  },
+  {
+   "label": "search_by_tags()",
+   "file_type": "code",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L155",
+   "_origin": "ast",
+   "id": "tools_oracle_cast_search_by_tags",
+   "community": 2,
+   "norm_label": "search_by_tags()"
   },
   {
    "label": "_to_binary()",
    "file_type": "code",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L42",
+   "source_location": "L51",
    "_origin": "ast",
    "id": "tools_oracle_cast_to_binary",
    "community": 2,
@@ -5043,7 +5103,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L833",
+   "source_location": "L853",
    "weight": 1.0,
    "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
    "target": "reports_template_showcase_3d_3_3_layout_della_forma_live_ordine_vincolante",
@@ -5053,7 +5113,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L844",
+   "source_location": "L866",
    "weight": 1.0,
    "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
    "target": "reports_template_showcase_3d_3_4_generazione_e_aggiornamento_tool_del_repo_deterministici_no_api",
@@ -5063,7 +5123,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "reports/template_showcase_3d.md",
-   "source_location": "L859",
+   "source_location": "L882",
    "weight": 1.0,
    "source": "reports_template_showcase_3d_3_estensione_living_report_report_che_si_aggiorna",
    "target": "reports_template_showcase_3d_3_5_istanziare_un_nuovo_report_live_checklist_per_agenti",
@@ -7049,7 +7109,17 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L79",
+   "source_location": "L128",
+   "weight": 1.0,
+   "source": "tools_oracle_cast",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L88",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_cast_reading",
@@ -7059,7 +7129,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L52",
+   "source_location": "L61",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_focus_line",
@@ -7069,7 +7139,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L34",
+   "source_location": "L43",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_get_hexagram",
@@ -7079,7 +7149,17 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L25",
+   "source_location": "L121",
+   "weight": 1.0,
+   "source": "tools_oracle_cast",
+   "target": "tools_oracle_cast_lanci_from",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L34",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_load",
@@ -7089,7 +7169,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L47",
+   "source_location": "L56",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_mutate",
@@ -7099,7 +7179,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L75",
+   "source_location": "L84",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_public",
@@ -7109,10 +7189,141 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L42",
+   "source_location": "L155",
+   "weight": 1.0,
+   "source": "tools_oracle_cast",
+   "target": "tools_oracle_cast_search_by_tags",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L51",
    "weight": 1.0,
    "source": "tools_oracle_cast",
    "target": "tools_oracle_cast_to_binary",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L138",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_get_hexagram",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L139",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_lanci_from",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L134",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_load",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L142",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_mutate",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L138",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_public",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L142",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_attribute_reading",
+   "target": "tools_oracle_cast_to_binary",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L103",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_cast_reading",
+   "target": "tools_oracle_cast_focus_line",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L96",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_cast_reading",
+   "target": "tools_oracle_cast_get_hexagram",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L89",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_cast_reading",
+   "target": "tools_oracle_cast_load",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L100",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_cast_reading",
+   "target": "tools_oracle_cast_mutate",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L96",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_cast_reading",
+   "target": "tools_oracle_cast_public",
    "confidence_score": 1.0
   },
   {
@@ -7123,61 +7334,6 @@
    "source_location": "L94",
    "weight": 1.0,
    "source": "tools_oracle_cast_cast_reading",
-   "target": "tools_oracle_cast_focus_line",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "calls",
-   "context": "call",
-   "confidence": "EXTRACTED",
-   "source_file": "tools/oracle_cast.py",
-   "source_location": "L87",
-   "weight": 1.0,
-   "source": "tools_oracle_cast_cast_reading",
-   "target": "tools_oracle_cast_get_hexagram",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "calls",
-   "context": "call",
-   "confidence": "EXTRACTED",
-   "source_file": "tools/oracle_cast.py",
-   "source_location": "L80",
-   "weight": 1.0,
-   "source": "tools_oracle_cast_cast_reading",
-   "target": "tools_oracle_cast_load",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "calls",
-   "context": "call",
-   "confidence": "EXTRACTED",
-   "source_file": "tools/oracle_cast.py",
-   "source_location": "L91",
-   "weight": 1.0,
-   "source": "tools_oracle_cast_cast_reading",
-   "target": "tools_oracle_cast_mutate",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "calls",
-   "context": "call",
-   "confidence": "EXTRACTED",
-   "source_file": "tools/oracle_cast.py",
-   "source_location": "L87",
-   "weight": 1.0,
-   "source": "tools_oracle_cast_cast_reading",
-   "target": "tools_oracle_cast_public",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "calls",
-   "context": "call",
-   "confidence": "EXTRACTED",
-   "source_file": "tools/oracle_cast.py",
-   "source_location": "L85",
-   "weight": 1.0,
-   "source": "tools_oracle_cast_cast_reading",
    "target": "tools_oracle_cast_to_binary",
    "confidence_score": 1.0
   },
@@ -7186,7 +7342,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L35",
+   "source_location": "L44",
    "weight": 1.0,
    "source": "tools_oracle_cast_get_hexagram",
    "target": "tools_oracle_cast_load",
@@ -7196,10 +7352,51 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/oracle_cast.py",
-   "source_location": "L53",
+   "source_location": "L122",
    "weight": 1.0,
-   "source": "tools_oracle_cast_rationale_53",
+   "source": "tools_oracle_cast_rationale_122",
+   "target": "tools_oracle_cast_lanci_from",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L130",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_rationale_130",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L156",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_rationale_156",
+   "target": "tools_oracle_cast_search_by_tags",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L62",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_rationale_62",
    "target": "tools_oracle_cast_focus_line",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/oracle_cast.py",
+   "source_location": "L158",
+   "weight": 1.0,
+   "source": "tools_oracle_cast_search_by_tags",
+   "target": "tools_oracle_cast_load",
    "confidence_score": 1.0
   },
   {
