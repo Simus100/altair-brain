@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "e0fc8867ae43a3872473b7e468b640aec0ae0359",
+ "built_at_commit": "1e5391bc0ea8676c95597fcd3cb8975fb0825ae6",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -3026,6 +3026,16 @@
    "id": "tools_apply_bridges",
    "community": 116,
    "norm_label": "apply_bridges.py"
+  },
+  {
+   "label": "apply_procedural_iran.py",
+   "file_type": "code",
+   "source_file": "tools/apply_procedural_iran.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tools_apply_procedural_iran",
+   "community": 120,
+   "norm_label": "apply_procedural_iran.py"
   },
   {
    "label": "build_area_graphs.py",
