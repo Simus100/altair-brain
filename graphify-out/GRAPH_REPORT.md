@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-13)
 
 ## Corpus Check
-- 152 files · ~115,732 words
+- 154 files · ~123,572 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1070 nodes · 1363 edges · 122 communities (115 shown, 7 thin omitted)
+- 1071 nodes · 1366 edges · 123 communities (116 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1e5391bc`
+- Built from commit: `164d506e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -148,7 +148,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (122 total, 7 thin omitted)
+## Communities (123 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -566,11 +566,11 @@ Nodes (3): items, type, orchestra
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `14. 大有 Il Possesso Grande (Dà Yǒu) ䷍` connect `Community 26` to `Community 13`?**
+- **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `16. 豫 L'Entusiasmo (Yù) ䷏` connect `Community 28` to `Community 13`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `28. 大過 La Preponderanza del Grande (Dà Guò) ䷛` connect `Community 41` to `Community 13`?**
+- **Why does `57. 巽 Il Vento (Xùn) ䷸` connect `Community 73` to `Community 13`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
   _701 weakly-connected nodes found - possible documentation gaps or missing edges._

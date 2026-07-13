@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "1e5391bc0ea8676c95597fcd3cb8975fb0825ae6",
+ "built_at_commit": "164d506e9439c0bdbe1da26ec1b8f3cd0579d704",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -3286,6 +3286,16 @@
    "id": "tools_report_build",
    "community": 17,
    "norm_label": "report_build.py"
+  },
+  {
+   "label": "report_new.py",
+   "file_type": "code",
+   "source_file": "tools/report_new.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tools_report_new",
+   "community": 122,
+   "norm_label": "report_new.py"
   },
   {
    "label": "report_update.py",

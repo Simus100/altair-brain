@@ -59,6 +59,17 @@ CSS = """
     .live-dot { width:7px; height:7px; border-radius:50%; background: var(--color-rose); animation: live-pulse 1.6s ease-in-out infinite; }
     @keyframes live-pulse { 0%,100% { box-shadow: 0 0 4px var(--color-rose); opacity: 1; } 50% { box-shadow: 0 0 12px var(--color-rose), 0 0 20px rgba(244,63,94,.4); opacity: .6; } }
     .live-date { display:inline-block; vertical-align:middle; margin-left:10px; font-size:.62rem; font-weight:700; letter-spacing:.05em; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+    /* metadati editoriali per voce di timeline: fonte, autore, confidenza */
+    .ul-meta { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:5px; font-size:.62rem; color:#64748b; }
+    .ul-meta .m { display:inline-flex; align-items:center; gap:4px; }
+    .ul-conf { font-weight:800; letter-spacing:.06em; text-transform:uppercase; border-radius:999px; padding:1px 8px; font-size:.56rem; }
+    .ul-conf.alta   { color:#86efac; background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.35); }
+    .ul-conf.media  { color:#fde68a; background:rgba(251,191,36,.10); border:1px solid rgba(251,191,36,.3); }
+    .ul-conf.bassa  { color:#fda4af; background:rgba(244,63,94,.10); border:1px solid rgba(244,63,94,.3); }
+    /* cast oracolare verificabile nel box del responso */
+    .vl-cast { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:14px; padding:10px 14px; border:1px dashed rgba(251,191,36,.35); border-radius:8px; font-size:.72rem; color:var(--text-muted); }
+    .vl-cast .hex { font-size:1.15rem; color:var(--color-gold); line-height:1; }
+    .vl-cast code { font-size:.66rem; color:#a5b4fc; background:rgba(99,102,241,.10); border:1px solid rgba(99,102,241,.25); border-radius:5px; padding:2px 7px; }
 """
 
 FEATURE = """
@@ -72,13 +83,21 @@ FEATURE = """
       var p = function (n) { return String(n).padStart(2, '0'); };
       return p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
     }
+    function meta(u) {
+      /* riga dei metadati editoriali: fonte citata, firma, confidenza */
+      var parts = [];
+      if (u.fonte) parts.push('<span class="m">\\uD83D\\uDCCE ' + u.fonte + '</span>');
+      if (u.autore) parts.push('<span class="m">\\u270D\\uFE0E ' + u.autore + '</span>');
+      if (u.confidenza) parts.push('<span class="ul-conf ' + u.confidenza + '">conf. ' + u.confidenza + '</span>');
+      return parts.length ? '<div class="ul-meta">' + parts.join('') + '</div>' : '';
+    }
     function timeline(items) {
       if (!items || !items.length) return '<div class="ul-empty">Nessun aggiornamento registrato.</div>';
       return items.slice().reverse().map(function (u, i) {
         var latest = i === 0;
         return '<div class="ul-item' + (latest ? ' latest' : '') + '">' +
                '<div class="ul-time">' + fmt(u.ts) + (latest ? ' <span class="ul-new">ULTIMO</span>' : '') + '</div>' +
-               '<div class="ul-text">' + u.testo + '</div></div>';
+               '<div class="ul-text">' + u.testo + '</div>' + meta(u) + '</div>';
       }).join('');
     }
     function title(label, items) {
@@ -126,9 +145,42 @@ FEATURE = """
       h1.appendChild(dt);
     }
 
+    /* --- FRESCHEZZA 3D: beacon lampeggiante sui nodi con update recenti ---
+       Un nodo e "fresco" se il suo ultimo aggiornamento cade entro FRESH_DAYS
+       dall'ultimo aggiornamento globale del report (freschezza relativa: regge
+       anche per scenari con date proprie). Patcha le label HUD dell'array
+       globale `nodes` del template 3D; il render loop le ridisegna a ogni frame,
+       quindi il toggle periodico del simbolo produce il lampeggio. */
+    function markFreshNodes() {
+      try {
+        if (typeof nodes === 'undefined' || !DB.nodi) return;
+        var FRESH_DAYS = 7;
+        var last = new Date(latestTs()).getTime();
+        var fresh = {};                             /* id -> numero update recenti */
+        Object.keys(DB.nodi).forEach(function (id) {
+          var n = DB.nodi[id].filter(function (u) {
+            return last - new Date(u.ts).getTime() <= FRESH_DAYS * 86400000;
+          }).length;
+          if (n > 0) fresh[id] = n;
+        });
+        var base = {};                              /* label originali, per il toggle */
+        nodes.forEach(function (n) { base[n.id] = n.label; });
+        var on = true;
+        function paint() {
+          nodes.forEach(function (n) {
+            if (fresh[n.id]) n.label = base[n.id] + (on ? ' \\u25C9' : ' \\u25CB') + fresh[n.id];
+          });
+          on = !on;
+        }
+        paint();
+        setInterval(paint, 900);
+      } catch (e) { /* il template 3D non espone `nodes`: nessun beacon, nessun danno */ }
+    }
+
     /* --- CONCLUSIONI: responso SOPRA + testo pilotato dal database --- */
     function renderLiving() {
       renderLiveTitle();
+      markFreshNodes();
       var host = document.getElementById('box-conclusions'); if (!host) return;
       var conclText = host.querySelector('.conclusions-text');
 
@@ -139,8 +191,20 @@ FEATURE = """
         vbox = document.createElement('div'); vbox.id = 'verdict-live'; vbox.className = 'verdict-live';
         if (conclText) host.insertBefore(vbox, conclText); else host.appendChild(vbox);
       }
+      /* cast oracolare verificabile: seed registrato = chiunque puo riprodurre il lancio */
+      var castHtml = '';
+      if (v.cast) {
+        var c2 = v.cast;
+        castHtml = '<div class="vl-cast">' +
+          '<span class="hex">' + (c2.primario.simbolo || '') + '</span>' +
+          '<span>' + c2.primario.id + ' ' + c2.primario.nome + ' \\u2192 </span>' +
+          '<span class="hex">' + (c2.secondario ? c2.secondario.simbolo : '') + '</span>' +
+          '<span>' + (c2.secondario ? c2.secondario.id + ' ' + c2.secondario.nome : '') + '</span>' +
+          '<span>\\u00B7 lancio [' + c2.lanci.join(', ') + '] \\u00B7 seme ' + c2.seed + '</span>' +
+          '<span>\\u00B7 riproducibile: <code>' + (c2.verifica || '') + '</code></span></div>';
+      }
       vbox.innerHTML = '<div class="vl-badge"><span class="vl-dot"></span>\\u4DEA Responso in aggiornamento \\u00B7 ' + fmt((v.storia && v.storia.length ? v.storia[v.storia.length-1].ts : DB.aggiornato_il)) + '</div>' +
-        '<div class="vl-current">' + (v.corrente || '') + '</div>' +
+        '<div class="vl-current">' + (v.corrente || '') + '</div>' + castHtml +
         '<div style="margin-top:18px;">' + title('Evoluzione del Responso', v.storia) + timeline(v.storia) + '</div>';
 
       /* 2. Conclusioni Strategiche pilotate dal database */

@@ -25,6 +25,11 @@ g.add_argument("--conclusions", action="store_true", help="aggiorna le Conclusio
 ap.add_argument("--text", required=True, help="testo dell'aggiornamento")
 ap.add_argument("--ts", default=None, help="timestamp ISO (default: adesso)")
 ap.add_argument("--set-current", default=None, help="(con --verdict/--conclusions) nuovo testo corrente (HTML)")
+# metadati editoriali: la timeline li mostra come fonte citata, firma e confidenza
+ap.add_argument("--fonte", default=None, help="fonte citata (es. 'IAEA')")
+ap.add_argument("--autore", default=None, help="firma (es. 'AION_SUPERIA' o il tuo nome)")
+ap.add_argument("--confidenza", default=None, choices=["alta", "media", "bassa"],
+                help="livello di confidenza editoriale")
 a = ap.parse_args()
 
 db_path = os.path.join(ROOT, "reports", "data", f"{a.report}.updates.json")
@@ -37,6 +42,10 @@ with open(db_path, encoding="utf-8") as f:
 
 ts = a.ts or datetime.datetime.now().replace(microsecond=0).isoformat()
 entry = {"ts": ts, "testo": a.text}
+for k in ("fonte", "autore", "confidenza"):
+    v = getattr(a, k)
+    if v:
+        entry[k] = v
 
 if a.verdict:
     db.setdefault("verdetto", {}).setdefault("storia", []).append(entry)
