@@ -814,7 +814,12 @@ reports/<caso>-prototype.html             living report GENERATO (mai editarlo a
   "aggiornato_il": "YYYY-MM-DDTHH:MM:SS",
   "verdetto": {
     "corrente": "Responso attuale dell'Oracolo (HTML consentito)",
-    "storia": [ { "ts": "YYYY-MM-DDTHH:MM:SS", "testo": "Considerazione datata" } ]
+    "cast": { "seed": 1023, "lanci": [9,9,9,7,9,8],
+              "primario": {"id": 43, "nome": "...", "simbolo": "䷪"},
+              "secondario": {"id": 16, "nome": "...", "simbolo": "䷏"},
+              "regola": "...", "verifica": "python tools/oracle_cast.py --seed 1023" },
+    "storia": [ { "ts": "YYYY-MM-DDTHH:MM:SS", "testo": "Considerazione datata",
+                  "fonte": "IAEA", "autore": "AION_SUPERIA", "confidenza": "alta" } ]
   },
   "conclusioni": {
     "aggiornato_il": "YYYY-MM-DDTHH:MM:SS",
@@ -829,6 +834,12 @@ reports/<caso>-prototype.html             living report GENERATO (mai editarlo a
 
 Regole: gli `id_nodo` DEVONO coincidere con gli id di `nodes`/`nodeIntelligence` (Sez. 1);
 timestamp ISO locali e MAI futuri; il JSON è la fonte di verità, l'HTML uno specchio.
+Campi opzionali per voce: `fonte` (citazione), `autore` (firma), `confidenza`
+(alta|media|bassa — mostrata come pill colorata). Il `cast` del verdetto rende il
+responso RIPRODUCIBILE (seed registrato, generato da tools/oracle_cast.py: mai a mano).
+La sezione `conclusioni` è opzionale: se assente, il builder lascia intatte quelle
+statiche della fonte. I nodi con update entro 7 giorni dall'ultimo aggiornamento
+mostrano un beacon lampeggiante col conteggio nella label HUD del cervello 3D.
 
 ### 3.3 Layout della forma live (ordine vincolante)
 
@@ -845,7 +856,8 @@ timestamp ISO locali e MAI futuri; il JSON è la fonte di verità, l'HTML uno sp
 
 ```bash
 python tools/report_build.py  --report <caso>    # sorgente + DB -> living report
-python tools/report_update.py --report <caso> --node <id> --text "..."
+python tools/report_new.py    --caso <caso> --titolo "..."   # scaffolding conforme
+python tools/report_update.py --report <caso> --node <id> --text "..." \n       [--fonte "IAEA"] [--autore "AION_SUPERIA"] [--confidenza alta|media|bassa]
 python tools/report_update.py --report <caso> --verdict     --text "..." [--set-current "..."]
 python tools/report_update.py --report <caso> --conclusions --text "..." [--set-current "..."]
 ```
