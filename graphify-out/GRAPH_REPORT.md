@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-07-13)
+# Graph Report - altair-brain  (2026-07-15)
 
 ## Corpus Check
-- 154 files · ~125,416 words
+- 154 files · ~126,365 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1077 nodes · 1379 edges · 123 communities (116 shown, 7 thin omitted)
+- 1077 nodes · 1376 edges · 123 communities (116 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `99f494db`
+- Built from commit: `44fd28cc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

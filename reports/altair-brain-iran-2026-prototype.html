@@ -1207,64 +1207,238 @@
   <script type="application/json" id="updates-db">{
   "report": "altair-brain-iran-2026",
   "titolo": "Caso Iran 2026 — AION NEXUS Report",
-  "aggiornato_il": "2026-07-12T21:30:00",
+  "aggiornato_il": "2026-07-14T18:00:00",
   "verdetto": {
     "corrente": "Il Cervello Centrale AION attribuisce allo stato del caso l'esagramma <strong>6 (Il Conflitto)</strong>: la guerra è ripresa, ma nessuna delle parti può ottenere una vittoria decisiva — gli USA non hanno una via militare alla resa di Teheran, e Teheran brucia la propria unica leva (Hormuz) più in fretta di quanto la sfrutti. L'unica linea che muta è la <strong>quarta: la conciliazione</strong>. Il MoU del 17 giugno ha già dimostrato che il canale omanita funziona: la raccomandazione è ricostruirlo con clausole di passaggio a Hormuz <strong>verificabili</strong> (non il vago \"massimo sforzo\" che ha fatto collassare la tregua) e waiver petroliferi scaglionati e reversibili. La destinazione del mutamento è il <strong>59 (La Dissoluzione)</strong>: sciogliere la durezza prima che l'incognita nucleare — 440,9 kg di uranio al 60% non tracciati — trovi una casa.",
     "cast": {
       "metodo": "attribuzione decisionale",
-      "primario": {"id": 6, "nome": "Il Conflitto", "simbolo": "䷅"},
-      "secondario": {"id": 59, "nome": "La Dissoluzione", "simbolo": "䷺"},
-      "linee_mobili": [4],
+      "primario": {
+        "id": 6,
+        "nome": "Il Conflitto",
+        "simbolo": "䷅"
+      },
+      "secondario": {
+        "id": 59,
+        "nome": "La Dissoluzione",
+        "simbolo": "䷺"
+      },
+      "linee_mobili": [
+        4
+      ],
       "motivazione": "Il 6 (Il Conflitto) è attribuito allo stato verificato del caso: cessate il fuoco collassato l'8 luglio, scambi di colpi in corso, ma nessun knockout possibile per nessuna delle parti (CNN, 9 lug). Delle sei linee, una sola è realmente in mutamento: la quarta — la conciliazione — perché il canale negoziale ha già funzionato una volta (MoU 17 giu) ed è l'unico vettore con un precedente di successo. La sua mutazione conduce al 59 (La Dissoluzione): lo scioglimento delle durezze.",
       "consiglio_linee": [
-        {"linea": 4, "vettore": "Diplomazia", "testo": "Cerca una conciliazione, se possibile."}
+        {
+          "linea": 4,
+          "vettore": "Diplomazia",
+          "testo": "Cerca una conciliazione, se possibile."
+        }
       ],
       "verifica": "python tools/oracle_cast.py --attribuisci 6 --mobili 4"
     },
     "storia": [
-      {"ts": "2026-06-17T18:00:00", "testo": "Il MoU dei 14 punti apre la de-escalation: attribuzione provvisoria orientata al 24 (Il Ritorno) — il rientro sul percorso negoziale è possibile.", "fonte": "CNN (testo integrale del MoU)", "autore": "AION_SUPERIA", "confidenza": "media"},
-      {"ts": "2026-06-23T09:00:00", "testo": "I waiver petroliferi USA (60 giorni) muovono ~40M di barili: la via economica alla stabilizzazione funziona. Confidenza sulla tenuta della tregua rivista al rialzo.", "fonte": "CNBC · Al Jazeera", "autore": "AION_STRATEGIC_ENGINE", "confidenza": "media"},
-      {"ts": "2026-07-08T22:00:00", "testo": "Collasso: dopo gli attacchi iraniani a navi commerciali nello Stretto, Trump dichiara finito il cessate il fuoco; strike su 80 obiettivi, sanzioni reimposte, blocco navale riattivato. Il caso rientra nel Conflitto.", "fonte": "CNN · Al Jazeera · ABC News", "autore": "AION_SUPERIA", "confidenza": "alta"},
-      {"ts": "2026-07-12T21:30:00", "testo": "Attribuzione ricalibrata sui fatti verificati: 6 (Il Conflitto) con la sola 4ª linea mobile — la conciliazione — verso il 59 (La Dissoluzione). Il precedente del MoU dimostra che la via d'uscita esiste ed è già stata percorsa.", "fonte": "sintesi multi-fonte (CNN, Al Jazeera, ISIS, IAEA, Iran HRM)", "autore": "AION_SUPERIA", "confidenza": "alta"}
+      {
+        "ts": "2026-06-17T18:00:00",
+        "testo": "Il MoU dei 14 punti apre la de-escalation: attribuzione provvisoria orientata al 24 (Il Ritorno) — il rientro sul percorso negoziale è possibile.",
+        "fonte": "CNN (testo integrale del MoU)",
+        "autore": "AION_SUPERIA",
+        "confidenza": "media"
+      },
+      {
+        "ts": "2026-06-23T09:00:00",
+        "testo": "I waiver petroliferi USA (60 giorni) muovono ~40M di barili: la via economica alla stabilizzazione funziona. Confidenza sulla tenuta della tregua rivista al rialzo.",
+        "fonte": "CNBC · Al Jazeera",
+        "autore": "AION_STRATEGIC_ENGINE",
+        "confidenza": "media"
+      },
+      {
+        "ts": "2026-07-08T22:00:00",
+        "testo": "Collasso: dopo gli attacchi iraniani a navi commerciali nello Stretto, Trump dichiara finito il cessate il fuoco; strike su 80 obiettivi, sanzioni reimposte, blocco navale riattivato. Il caso rientra nel Conflitto.",
+        "fonte": "CNN · Al Jazeera · ABC News",
+        "autore": "AION_SUPERIA",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-12T21:30:00",
+        "testo": "Attribuzione ricalibrata sui fatti verificati: 6 (Il Conflitto) con la sola 4ª linea mobile — la conciliazione — verso il 59 (La Dissoluzione). Il precedente del MoU dimostra che la via d'uscita esiste ed è già stata percorsa.",
+        "fonte": "sintesi multi-fonte (CNN, Al Jazeera, ISIS, IAEA, Iran HRM)",
+        "autore": "AION_SUPERIA",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-14T18:00:00",
+        "testo": "Ricalibrazione post-escalation: l'attacco alle petroliere UAE con una vittima e la ripresa a ~140 obiettivi spostano il caso più a fondo nel Conflitto; la mossa del pedaggio Hormuz (poi ritirata) mostra un tentativo USA di monetizzare la crisi anziché risolverla. La linea mobile resta la quarta, ma il margine per la conciliazione si restringe a ogni giorno che passa senza un canale negoziale riattivato.",
+        "fonte": "CNN · UAE MoD · CNBC · Al Jazeera",
+        "autore": "AION_SUPERIA",
+        "confidenza": "alta"
+      }
     ]
   },
   "conclusioni": {
-    "aggiornato_il": "2026-07-12T21:30:00",
+    "aggiornato_il": "2026-07-14T18:00:00",
     "corrente": "Il fact-checking multi-fonte del protocollo <strong class=\"highlight-strong\">AION 2.2</strong> (12 luglio 2026) restituisce un quadro a quattro assi:<ul><li><strong class=\"highlight-strong\">Transizione blindata, legittimità fragile:</strong> la successione dinastica di <span class=\"highlight-strong\">Mojtaba Khamenei</span> (annunciata il 9 marzo) ha retto grazie ai Pasdaran, ma un leader <em>mai apparso in pubblico</em> dal giorno dell'ascesa e <span class=\"highlight-cyan\">141 esecuzioni in un solo mese</span> raccontano un potere che si regge sulla paura, non sul consenso <em>(TIME · Iran HRM)</em>.</li><li><strong class=\"highlight-strong\">Economia oltre la soglia:</strong> inflazione all'<span class=\"highlight-cyan\">88,6%</span>, rial a <span class=\"highlight-cyan\">~1,7M per dollaro</span>: la revoca dei waiver (8 luglio) ha chiuso l'unica valvola dopo appena 16 giorni — la pressione interna diventerà insostenibile entro l'autunno <em>(SCI · CNBC · CNN)</em>.</li><li><strong class=\"highlight-amber\">Il paradosso nucleare:</strong> la capacità di arricchimento è distrutta (\"nessuna via identificabile al weapon-grade per la prima volta in 20 anni\"), ma <span class=\"highlight-amber\">440,9 kg di uranio al 60% restano non contabilizzati</span> con gli ispettori IAEA al buio da febbraio: l'incognita ha sostituito il conto alla rovescia — ed è peggio <em>(ISIS · IAEA)</em>.</li><li><strong class=\"highlight-strong\">Hormuz, la leva che si consuma:</strong> lo Stretto è chiuso de facto (6 transiti contro 18-22), ma il Brent resta sui <span class=\"highlight-cyan\">79$</span>: il mercato sconta la de-escalation. Ogni giorno di blocco costa a Teheran più di quanto renda <em>(Al Jazeera · The National)</em>.</li></ul>",
     "storia": [
-      {"ts": "2026-06-17T18:00:00", "testo": "Prima sintesi post-MoU: tregua fragile ma reale; i vettori economia e diplomazia in miglioramento, interno e nucleare stabili-critici.", "autore": "AION_SUPERIA", "confidenza": "media"},
-      {"ts": "2026-07-08T23:00:00", "testo": "Ricalibrate sul collasso del cessate il fuoco: il baricentro torna sul binomio Hormuz-economia; rischio escalation regionale (Bahrain, Kuwait, Giordania).", "fonte": "CNN · Al Jazeera", "autore": "AION_SUPERIA", "confidenza": "alta"},
-      {"ts": "2026-07-12T21:30:00", "testo": "Riscrittura fact-checked integrale: corretto il quadro nucleare (capacità distrutta + stock fantasma, non breakout imminente), esecuzioni a 141 (giugno), Brent a ~79$ (non >100$), parabola completa del MoU documentata con fonti primarie.", "fonte": "verifica multi-fonte (12 lug)", "autore": "AION_SUPERIA + redazione", "confidenza": "alta"}
+      {
+        "ts": "2026-06-17T18:00:00",
+        "testo": "Prima sintesi post-MoU: tregua fragile ma reale; i vettori economia e diplomazia in miglioramento, interno e nucleare stabili-critici.",
+        "autore": "AION_SUPERIA",
+        "confidenza": "media"
+      },
+      {
+        "ts": "2026-07-08T23:00:00",
+        "testo": "Ricalibrate sul collasso del cessate il fuoco: il baricentro torna sul binomio Hormuz-economia; rischio escalation regionale (Bahrain, Kuwait, Giordania).",
+        "fonte": "CNN · Al Jazeera",
+        "autore": "AION_SUPERIA",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-12T21:30:00",
+        "testo": "Riscrittura fact-checked integrale: corretto il quadro nucleare (capacità distrutta + stock fantasma, non breakout imminente), esecuzioni a 141 (giugno), Brent a ~79$ (non >100$), parabola completa del MoU documentata con fonti primarie.",
+        "fonte": "verifica multi-fonte (12 lug)",
+        "autore": "AION_SUPERIA + redazione",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-14T18:00:00",
+        "testo": "Aggiornamento del 14 luglio: l'escalation ha superato la soglia già critica del 12 luglio. Iran colpisce due petroliere UAE in acque omanite (1 morto, 8 feriti) dopo la terza ondata di raid USA in una settimana (~140 obiettivi); il Brent segna il balzo giornaliero più forte in sei anni (+9,59%, 83,30$). Trump risponde annunciando — poi ritirando — un pedaggio unilaterale del 20% su Hormuz, scelta bollata come illegale dall'IMO e come \"pirateria\" da Lula: un segnale che Washington cerca leva economica più che soluzione diplomatica. Il canale omanita che aveva prodotto il MoU di giugno resta silente: la finestra di conciliazione, già stretta, si sta richiudendo.",
+        "fonte": "CNN · UAE MoD · CNBC · Al Jazeera · Washington Times",
+        "autore": "AION_SUPERIA + redazione",
+        "confidenza": "alta"
+      }
     ]
   },
   "nodi": {
     "economy": [
-      {"ts": "2026-06-23T09:00:00", "testo": "Il Tesoro USA concede waiver petroliferi per 60 giorni (fino al 21 agosto): l'Iran esporta ~40M di barili dal 15 giugno, potenziale di 3 mld$.", "fonte": "CNBC · US Treasury", "autore": "AION_Analyst", "confidenza": "alta"},
-      {"ts": "2026-06-30T10:00:00", "testo": "Inflazione tendenziale di giugno: 88,6% (Centro Statistico) / 83,1% (Banca Centrale), +5,9% congiunturale. Rial a ~1,72M per USD dal post-raid.", "fonte": "SCI · CBI · Euronews", "autore": "AION_Analyst", "confidenza": "alta"},
-      {"ts": "2026-07-08T22:30:00", "testo": "Sanzioni petrolifere reimposte e blocco navale riattivato: la parentesi economica della tregua si chiude dopo 16 giorni.", "fonte": "CNN · CENTCOM", "autore": "AION_Analyst", "confidenza": "alta"}
+      {
+        "ts": "2026-06-23T09:00:00",
+        "testo": "Il Tesoro USA concede waiver petroliferi per 60 giorni (fino al 21 agosto): l'Iran esporta ~40M di barili dal 15 giugno, potenziale di 3 mld$.",
+        "fonte": "CNBC · US Treasury",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-06-30T10:00:00",
+        "testo": "Inflazione tendenziale di giugno: 88,6% (Centro Statistico) / 83,1% (Banca Centrale), +5,9% congiunturale. Rial a ~1,72M per USD dal post-raid.",
+        "fonte": "SCI · CBI · Euronews",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-08T22:30:00",
+        "testo": "Sanzioni petrolifere reimposte e blocco navale riattivato: la parentesi economica della tregua si chiude dopo 16 giorni.",
+        "fonte": "CNN · CENTCOM",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-13T14:00:00",
+        "testo": "Il Brent balza del 9,59% a 83,30$/barile, il massimo dal 12 giugno e il rialzo giornaliero più forte in oltre sei anni: il mercato smette di scontare la de-escalation dopo l'attacco alle petroliere.",
+        "fonte": "mercati (Brent ICE) · CNN",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      }
     ],
     "nuclear": [
-      {"ts": "2026-06-10T12:00:00", "testo": "Analisi ISIS sui rapporti IAEA: programma di centrifughe distrutto dai raid (giu 2025 + feb 2026), nessuna via identificabile al weapon-grade; ma 440,9 kg di HEU al 60% non contabilizzati.", "fonte": "Institute for Science and International Security", "autore": "AION_STRATEGIC_ENGINE", "confidenza": "alta"},
-      {"ts": "2026-07-12T20:00:00", "testo": "Quadro confermato: IAEA senza accesso dal 28 febbraio, perdita quasi totale del monitoraggio. Nessuna stima di breakout è metodologicamente possibile: il rischio è l'incognita, non il countdown.", "fonte": "IAEA GOV/2026/8 · ISIS", "autore": "AION_STRATEGIC_ENGINE", "confidenza": "alta"}
+      {
+        "ts": "2026-06-10T12:00:00",
+        "testo": "Analisi ISIS sui rapporti IAEA: programma di centrifughe distrutto dai raid (giu 2025 + feb 2026), nessuna via identificabile al weapon-grade; ma 440,9 kg di HEU al 60% non contabilizzati.",
+        "fonte": "Institute for Science and International Security",
+        "autore": "AION_STRATEGIC_ENGINE",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-12T20:00:00",
+        "testo": "Quadro confermato: IAEA senza accesso dal 28 febbraio, perdita quasi totale del monitoraggio. Nessuna stima di breakout è metodologicamente possibile: il rischio è l'incognita, non il countdown.",
+        "fonte": "IAEA GOV/2026/8 · ISIS",
+        "autore": "AION_STRATEGIC_ENGINE",
+        "confidenza": "alta"
+      }
     ],
     "internal": [
-      {"ts": "2026-03-09T12:00:00", "testo": "Mojtaba Khamenei annunciato terza Guida Suprema dopo il voto dell'Assemblea degli Esperti (3-8 marzo), sotto un Consiglio interim e la pressione dei Pasdaran: la successione dinastica infrange il tabù repubblicano.", "fonte": "Al Jazeera · Carnegie · Washington Post", "autore": "AION_Analyst", "confidenza": "alta"},
-      {"ts": "2026-07-04T18:00:00", "testo": "Report Iran HRM di giugno: 141 esecuzioni (132 mai annunciate), almeno 370 nel semestre; giustiziati 5 prigionieri politici delle proteste di gennaio (moharebeh).", "fonte": "Iran HRM · IHRNGO · Amnesty", "autore": "AION_Analyst", "confidenza": "alta"},
-      {"ts": "2026-07-05T20:00:00", "testo": "Funerale-vetrina di una settimana per Ali Khamenei: il nuovo leader non è mai apparso in pubblico dall'ascesa — la continuità è proiettata, non incarnata.", "fonte": "TIME", "autore": "AION_Vision", "confidenza": "alta"}
+      {
+        "ts": "2026-03-09T12:00:00",
+        "testo": "Mojtaba Khamenei annunciato terza Guida Suprema dopo il voto dell'Assemblea degli Esperti (3-8 marzo), sotto un Consiglio interim e la pressione dei Pasdaran: la successione dinastica infrange il tabù repubblicano.",
+        "fonte": "Al Jazeera · Carnegie · Washington Post",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-04T18:00:00",
+        "testo": "Report Iran HRM di giugno: 141 esecuzioni (132 mai annunciate), almeno 370 nel semestre; giustiziati 5 prigionieri politici delle proteste di gennaio (moharebeh).",
+        "fonte": "Iran HRM · IHRNGO · Amnesty",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-05T20:00:00",
+        "testo": "Funerale-vetrina di una settimana per Ali Khamenei: il nuovo leader non è mai apparso in pubblico dall'ascesa — la continuità è proiettata, non incarnata.",
+        "fonte": "TIME",
+        "autore": "AION_Vision",
+        "confidenza": "alta"
+      }
     ],
     "diplomacy": [
-      {"ts": "2026-06-17T18:00:00", "testo": "Firmato il MoU dei 14 punti (60 giorni): negoziato in Svizzera, Witkoff-Araghchi, messaggi via mediatori omaniti. Vance: \"base molto buona per l'accordo finale\".", "fonte": "CNN (testo integrale) · Al Jazeera", "autore": "AION_Vision", "confidenza": "alta"},
-      {"ts": "2026-07-08T22:00:00", "testo": "Trump dichiara finito il cessate il fuoco dopo gli attacchi iraniani a navi nello Stretto: il punto debole era la clausola Hormuz (solo \"massimo sforzo\", con porta aperta a tariffe future).", "fonte": "CNN · ABC News", "autore": "AION_Vision", "confidenza": "alta"}
+      {
+        "ts": "2026-06-17T18:00:00",
+        "testo": "Firmato il MoU dei 14 punti (60 giorni): negoziato in Svizzera, Witkoff-Araghchi, messaggi via mediatori omaniti. Vance: \"base molto buona per l'accordo finale\".",
+        "fonte": "CNN (testo integrale) · Al Jazeera",
+        "autore": "AION_Vision",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-08T22:00:00",
+        "testo": "Trump dichiara finito il cessate il fuoco dopo gli attacchi iraniani a navi nello Stretto: il punto debole era la clausola Hormuz (solo \"massimo sforzo\", con porta aperta a tariffe future).",
+        "fonte": "CNN · ABC News",
+        "autore": "AION_Vision",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-14T12:00:00",
+        "testo": "Trump annuncia un pedaggio del 20% su tutto il carico in transito a Hormuz e la ripresa del blocco navale iraniano, definendo gli USA \"custodi dello Stretto\"; l'IMO (ONU) lo respinge come privo di base legale, Lula lo bolla \"pirateria\". Il giorno dopo Trump fa marcia indietro sui pedaggi, mantenendo il blocco e puntando a farsi rimborsare tramite accordi di investimento dei Paesi del Golfo.",
+        "fonte": "CNBC · Al Jazeera · Washington Times",
+        "autore": "AION_Vision",
+        "confidenza": "alta"
+      }
     ],
     "cyber": [
-      {"ts": "2026-01-20T12:00:00", "testo": "MuddyWater (MOIS) lancia RustyWater: RAT in Rust via spear-phishing su settori diplomatico, marittimo, finanziario e telecom del Medio Oriente (Operation Olalampo).", "fonte": "The Hacker News · CloudSEK", "autore": "AION_Analyst", "confidenza": "alta"},
-      {"ts": "2026-07-10T15:00:00", "testo": "Con la capacità cinetica degradata, il vettore cyber resta il principale strumento di rappresaglia asimmetrica a basso costo: attesa intensificazione su infrastrutture marittime e finanziarie del Golfo.", "fonte": "CSO Online · valutazione AION", "autore": "AION_Vision", "confidenza": "media"}
+      {
+        "ts": "2026-01-20T12:00:00",
+        "testo": "MuddyWater (MOIS) lancia RustyWater: RAT in Rust via spear-phishing su settori diplomatico, marittimo, finanziario e telecom del Medio Oriente (Operation Olalampo).",
+        "fonte": "The Hacker News · CloudSEK",
+        "autore": "AION_Analyst",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-10T15:00:00",
+        "testo": "Con la capacità cinetica degradata, il vettore cyber resta il principale strumento di rappresaglia asimmetrica a basso costo: attesa intensificazione su infrastrutture marittime e finanziarie del Golfo.",
+        "fonte": "CSO Online · valutazione AION",
+        "autore": "AION_Vision",
+        "confidenza": "media"
+      }
     ],
     "proxy": [
-      {"ts": "2026-07-12T14:00:00", "testo": "Rappresaglia regionale: droni e missili iraniani su siti legati agli USA in Bahrain, Kuwait e Giordania; Teheran dichiara il passaggio di Hormuz \"non possibile\". Traffico crollato a ~6 transiti/giorno (da 18-22).", "fonte": "Al Jazeera · The National", "autore": "AION_STRATEGIC_ENGINE", "confidenza": "alta"}
+      {
+        "ts": "2026-07-12T14:00:00",
+        "testo": "Rappresaglia regionale: droni e missili iraniani su siti legati agli USA in Bahrain, Kuwait e Giordania; Teheran dichiara il passaggio di Hormuz \"non possibile\". Traffico crollato a ~6 transiti/giorno (da 18-22).",
+        "fonte": "Al Jazeera · The National",
+        "autore": "AION_STRATEGIC_ENGINE",
+        "confidenza": "alta"
+      },
+      {
+        "ts": "2026-07-13T09:00:00",
+        "testo": "Nuova ondata di scontri: gli USA colpiscono circa 140 obiettivi militari iraniani (terza ondata della settimana). L'Iran dichiara chiuso lo Stretto di Hormuz e lancia due missili da crociera contro le petroliere Al-Bahiya e Mombasa (battenti interessi UAE) in acque territoriali omanite: un marittimo indiano ucciso, 6 indiani e 2 ucraini feriti, entrambe le navi incendiate.",
+        "fonte": "CNN · UAE Ministry of Defense · The Hill",
+        "autore": "AION_STRATEGIC_ENGINE",
+        "confidenza": "alta"
+      }
     ],
     "oracle": [
-      {"ts": "2026-07-12T21:00:00", "testo": "Sintesi: nessun knockout possibile; il mercato prezza la de-escalation (Brent ~79$ nonostante Hormuz chiuso); la leva dello Stretto si consuma. La via d'uscita ha un precedente: il MoU ha retto tre settimane.", "fonte": "CNN · Al Jazeera · analisi AION", "autore": "AION_SUPERIA", "confidenza": "media"}
+      {
+        "ts": "2026-07-12T21:00:00",
+        "testo": "Sintesi: nessun knockout possibile; il mercato prezza la de-escalation (Brent ~79$ nonostante Hormuz chiuso); la leva dello Stretto si consuma. La via d'uscita ha un precedente: il MoU ha retto tre settimane.",
+        "fonte": "CNN · Al Jazeera · analisi AION",
+        "autore": "AION_SUPERIA",
+        "confidenza": "media"
+      }
     ]
   }
 }</script>
