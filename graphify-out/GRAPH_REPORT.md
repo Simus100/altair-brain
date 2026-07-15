@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-07-15)
 
 ## Corpus Check
-- 154 files · ~127,915 words
+- 154 files · ~129,337 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1077 nodes · 1376 edges · 123 communities (116 shown, 7 thin omitted)
+- 1077 nodes · 1379 edges · 122 communities (115 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8f75ea99`
+- Built from commit: `8fbce5ce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -124,7 +124,6 @@
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
 - [[_COMMUNITY_Community 111|Community 111]]
-- [[_COMMUNITY_Community 121|Community 121]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -149,7 +148,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (123 total, 7 thin omitted)
+## Communities (122 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -165,19 +164,19 @@ Nodes (38): Exception, Path, area_graph_path(), BrainError, capture(), graph_que
 
 ### Community 3 - "Community 3"
 Cohesion: 0.11
-Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
+Nodes (11): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamento 001 - Interconnessione non lineare, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche, Insegnamento 010 - Simulazioni con feedback retrospettivo, Insegnamento 013 - Reasoning neuro-simbolico (+3 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
+Cohesion: 0.13
+Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.16
 Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.10
+Nodes (16): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_COGNITION_VIEW, AION_Echo, AION_FABULATORIUM, AION_Symbol, AION_Visual (+8 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
@@ -185,7 +184,7 @@ Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
+Nodes (8): AION_ETHOS, Insegnamenti attivi di AION, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 011 - Dinamiche narrative evolutive (I Ching), Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili
 
 ### Community 9 - "Community 9"
 Cohesion: 0.20
@@ -197,7 +196,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.14
@@ -216,12 +215,12 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.21
-Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
+Cohesion: 0.16
+Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.22
+Nodes (7): AION_SUPERIA, AION - modello di pensiero, Livello Identita / Etica, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
 
 ### Community 19 - "Community 19"
 Cohesion: 0.18
@@ -492,8 +491,8 @@ Cohesion: 0.25
 Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 86 - "Community 86"
-Cohesion: 0.25
-Nodes (4): AION_Paradox, AION_SYNTH, Insegnamento 008 - Reward shaping strategico, Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
+Cohesion: 0.20
+Nodes (5): AION_Paradox, AION_SYNTH, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 008 - Reward shaping strategico, Insegnamento 016 - Simulazioni predittive multi-agent
 
 ### Community 87 - "Community 87"
 Cohesion: 0.29
@@ -558,10 +557,6 @@ Nodes (3): items, type, dominanti
 ### Community 103 - "Community 103"
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
-
-### Community 121 - "Community 121"
-Cohesion: 0.17
-Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ## Knowledge Gaps
 - **689 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+684 more)

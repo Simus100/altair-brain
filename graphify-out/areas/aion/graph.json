@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "8f75ea99758a1bbc2864e3bca1395294d0e99451",
+ "built_at_commit": "8fbce5cee675cad0a14bebb76f4822854141b439",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -5362,7 +5362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_adaptive",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion-adaptive.md"
   },
   {
@@ -5372,7 +5372,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_adaptive_aion_adaptive",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion_adaptive"
   },
   {
@@ -5382,7 +5382,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_adaptive_core",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion-adaptive-core.md"
   },
   {
@@ -5392,7 +5392,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_adaptive_core_aion_adaptive_core",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion_adaptive_core"
   },
   {
@@ -5422,7 +5422,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_cinematica",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion-cinematica.md"
   },
   {
@@ -5432,7 +5432,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_cinematica_aion_cinematica",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion_cinematica"
   },
   {
@@ -5482,7 +5482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_echo",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion-echo.md"
   },
   {
@@ -5492,7 +5492,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_echo_aion_echo",
-   "community": 121,
+   "community": 6,
    "norm_label": "aion_echo"
   },
   {
@@ -5762,7 +5762,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamenti",
-   "community": 3,
+   "community": 8,
    "norm_label": "insegnamenti.md"
   },
   {
@@ -5772,7 +5772,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamenti_insegnamenti_attivi_di_aion",
-   "community": 3,
+   "community": 8,
    "norm_label": "insegnamenti attivi di aion"
   },
   {
@@ -5822,7 +5822,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_003",
-   "community": 3,
+   "community": 86,
    "norm_label": "insegnamento-003.md"
   },
   {
@@ -5832,7 +5832,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_003_insegnamento_003_asimmetrie_invisibili",
-   "community": 3,
+   "community": 86,
    "norm_label": "insegnamento 003 - asimmetrie invisibili"
   },
   {
@@ -5862,7 +5862,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_005",
-   "community": 121,
+   "community": 8,
    "norm_label": "insegnamento-005.md"
   },
   {
@@ -5872,7 +5872,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_005_insegnamento_005_ecologia_sistemica_della_conoscenza",
-   "community": 121,
+   "community": 8,
    "norm_label": "insegnamento 005 - ecologia sistemica della conoscenza"
   },
   {
@@ -5982,7 +5982,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_011",
-   "community": 86,
+   "community": 8,
    "norm_label": "insegnamento-011.md"
   },
   {
@@ -5992,7 +5992,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_011_insegnamento_011_dinamiche_narrative_evolutive_i_ching",
-   "community": 86,
+   "community": 8,
    "norm_label": "insegnamento 011 - dinamiche narrative evolutive (i ching)"
   },
   {
@@ -6002,7 +6002,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_012",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento-012.md"
   },
   {
@@ -6012,7 +6012,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_012_insegnamento_012_risonanza_cognitiva",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento 012 - risonanza cognitiva"
   },
   {
@@ -6082,7 +6082,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_016",
-   "community": 3,
+   "community": 86,
    "norm_label": "insegnamento-016.md"
   },
   {
@@ -6092,7 +6092,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_016_insegnamento_016_simulazioni_predittive_multi_agent",
-   "community": 3,
+   "community": 86,
    "norm_label": "insegnamento 016 - simulazioni predittive multi-agent"
   },
   {
@@ -6202,7 +6202,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_022",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento-022.md"
   },
   {
@@ -6212,7 +6212,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_022_insegnamento_022_previsione_emozionale_per_output_cinematografico",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento 022 - previsione emozionale per output cinematografico"
   },
   {
@@ -6242,7 +6242,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_024",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento-024.md"
   },
   {
@@ -6252,7 +6252,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_024_insegnamento_024_comunicazione_multicanale_sincronizzata",
-   "community": 121,
+   "community": 6,
    "norm_label": "insegnamento 024 - comunicazione multicanale sincronizzata"
   },
   {
@@ -6302,7 +6302,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica",
-   "community": 8,
+   "community": 18,
    "norm_label": "livello-identita-etica.md"
   },
   {
@@ -6312,7 +6312,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica_livello_identita_etica",
-   "community": 8,
+   "community": 18,
    "norm_label": "livello identita / etica"
   },
   {

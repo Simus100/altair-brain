@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "8f75ea99758a1bbc2864e3bca1395294d0e99451",
+ "built_at_commit": "8fbce5cee675cad0a14bebb76f4822854141b439",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -482,7 +482,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 11,
+   "community": 16,
    "norm_label": "minitems"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 11,
+   "community": 16,
    "norm_label": "type"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 4,
+   "community": 16,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 4,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 4,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 11,
+   "community": 16,
    "norm_label": "componenti"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 4,
+   "community": 11,
    "norm_label": "modalita"
   },
   {
