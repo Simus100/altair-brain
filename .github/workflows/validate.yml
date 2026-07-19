@@ -8,20 +8,48 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read   # default minimo; il job di backup chiede write per conto suo
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Actions pinnate a SHA (i tag sono riassegnabili: supply chain)
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5   # v4.3.1
         with:
           fetch-depth: 2   # serve il commit precedente per l'anti-regressione del grafo
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065   # v5.6.0
         with:
           python-version: "3.12"
 
       - name: Dipendenze di verifica
         run: pip install -q jsonschema fastapi httpx pytest
+
+      # Governance repo multi-agente: .claude/ e .agents/ contengono hook ESEGUIBILI
+      # sulla macchina di chi apre il repo. Ogni modifica deve essere deliberata:
+      # il commit che li tocca deve dichiararlo con [hooks-ok] nel messaggio.
+      - name: Guardia hook eseguibili (.claude/ e .agents/)
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --quiet HEAD~1 HEAD -- .claude/ .agents/; then
+            MSG="$(git log -1 --format=%B)"
+            if [[ "$MSG" != *"[hooks-ok]"* ]]; then
+              echo "::error::modifica a .claude/ o .agents/ (codice eseguibile) senza marcatore [hooks-ok] nel messaggio di commit — rivedi e ricommitta dichiarandola"
+              git diff --stat HEAD~1 HEAD -- .claude/ .agents/
+              exit 1
+            fi
+          fi
+          echo "hook: nessuna modifica non dichiarata"
+
+      # Audit CVE sulle dipendenze pinnate (informativo: non blocca, ma resta visibile
+      # nel log CI; promuovere a bloccante quando il flusso è rodato)
+      - name: pip-audit dipendenze server (avviso CVE)
+        continue-on-error: true
+        run: |
+          pip install -q pip-audit
+          pip-audit -r server/requirements.txt --strict
 
       - name: Sintassi Python (server + tools + tests)
         run: python -m compileall -q server tools tests
@@ -88,3 +116,21 @@ jobs:
             exit 1
           fi
           echo "LF ok"
+
+  # Rete di sicurezza: il branch `backup` punta SEMPRE all'ultimo commit di main
+  # che ha passato l'intera validazione. Se main viene corrotto (push errato,
+  # regressione, riscrittura), backup conserva l'ultimo stato certificato buono.
+  backup:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5   # v4.3.1
+        with:
+          fetch-depth: 0   # servono tutti gli oggetti per aggiornare il ref remoto
+      - name: Aggiorna branch backup all'ultimo main validato
+        run: |
+          git push --force origin HEAD:backup
+          echo "backup -> $(git rev-parse --short HEAD)"

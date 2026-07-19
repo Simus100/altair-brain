@@ -118,5 +118,35 @@ Serve una volta: `pip install mcp`. Da quel momento quell'AI ha i tool
 1. **Mai modificare `wiki/` a mano** — si genera da `engine/aion.model.json`.
 2. **Un solo comando per rigenerare tutto:** `python tools/rebuild_all.py`.
 3. **Il token è un segreto**: mai committarlo, mai condividerlo in chat pubbliche.
-4. **Il repo deve restare PRIVATO** su GitHub.
+4. **Il repo è PUBBLICO per scelta** (decisione del 19/07/2026): quindi in git vanno
+   SOLO contenuti pubblicabili — mai dati personali, credenziali o note private.
+   Ciò che è privato vive fuori dal repo (`~/altair-data`, dischi locali).
 5. Per qualsiasi lavoro nuovo, l'agente deve leggere prima `ROADMAP.md`.
+6. **`.claude/` e `.agents/` contengono codice eseguibile** (hook): ogni modifica va
+   dichiarata nel messaggio di commit col marcatore `[hooks-ok]`, o la CI la respinge.
+
+---
+
+## Disaster recovery — ricostruire tutto da zero
+
+Il sistema è progettato per rinascere da un clone. Se il PC muore, la VPS brucia, o
+main viene corrotto:
+
+1. **Recupero del repo** (3 copie esistenti): clone da GitHub (`main`), oppure il
+   branch **`backup`** — che punta sempre all'ultimo commit che ha passato TUTTA la
+   validazione CI (`git checkout backup`) — oppure un clone locale/VPS esistente.
+2. **Strumenti**: Python 3.12+, `pipx install graphifyy`, `pip install -r
+   server/requirements.txt` (versioni pinnate = ricostruzione identica).
+3. **Rigenerazione**: `python tools/rebuild_all.py` ricrea wiki, DB oracle, grafo,
+   sottografi, viste. Tutto il generato rinasce dalle fonti (`raw/`, `engine/`).
+4. **Dati fuori repo** (`~/altair-data`: feedback, catture, lezioni VPS): ripristina
+   dall'ultimo `~/backups/altair-data_*.tar.gz` (7 copie locali) o dalla copia
+   off-site rclone se configurata (`ALTAIR_RCLONE_REMOTE`).
+5. **Se sparisse graphify da PyPI**: il brain resta leggibile (è tutto testo);
+   query/grafo si perdono ma nessun contenuto. Sorgente upstream:
+   github.com/safishamsi/graphify.
+
+**Test di restore (ogni ~3 mesi):** scompatta l'ultimo tar di `~/altair-data` in una
+cartella temporanea e verifica che i file si aprano; clona il repo in una cartella
+nuova e lancia `python tools/rebuild_all.py`. Un backup mai ripristinato non è un
+backup: è una speranza.

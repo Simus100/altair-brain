@@ -51,15 +51,16 @@ motore `engine/` + skill `/aion` + feedback loop); le altre 4 macroaree sono vuo
 
 ---
 
-## PRIORITÀ 0 — Repo privato (azione umana, 2 minuti) ⚠️
+## Visibilità del repo — DECISIONE PRESA: resta PUBBLICO (2026-07-19)
 
-**Stato: DA FARE — richiede l'utente, non l'agente.**
-Il repo `Simus100/altair-brain` è PUBBLICO (verificato 2026-07-01): chiunque può
-leggerlo. Conterrà dati personali → va reso privato: GitHub → Settings → General →
-Danger Zone → Change visibility → Private.
-Effetti: la deploy key della VPS continua a funzionare; la CI resta gratuita
-(2000 min/mese); GitHub Pages non è più disponibile (le viste le serve già l'API
-con `/views/extended` e `/views/compact`).
+**L'utente ha scelto di tenere il repo pubblico.** Conseguenze vincolanti per ogni
+agente che scrive qui:
+- in git vanno SOLO contenuti pubblicabili: MAI dati personali, credenziali, note
+  private (quelli vivono fuori repo: `~/altair-data`, dischi locali);
+- ogni push è pubblicazione permanente (fork/mirror/cache): non esiste "rimuovere dopo";
+- mitigazioni attive: branch `backup` auto-aggiornato all'ultimo main CI-verde
+  (job `backup` in validate.yml), guardia CI su modifiche a `.claude/`/`.agents/`
+  (marcatore `[hooks-ok]` obbligatorio), dipendenze pinnate + pip-audit.
 
 ---
 
@@ -280,6 +281,18 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
 ---
 
 ## Completato (storico, per orientamento)
+
+- **Hardening 2026-07-19** (da revisione architetturale + best practice web):
+  branch `backup` = ultimo main validato (job CI dedicato, force-update post-validate);
+  guardia CI su `.claude/`/`.agents/` (codice eseguibile: commit col marcatore
+  `[hooks-ok]` o CI rossa); dipendenze server PINNATE (fastapi 0.139.0, uvicorn
+  0.49.0, mcp 1.28.1) + step `pip-audit` informativo; GitHub Actions pinnate a SHA;
+  off-site opzionale nel backup VPS (`ALTAIR_RCLONE_REMOTE`, no-op se assente);
+  `tests/test_tools.py` (8 golden test: attribuzione oracle, cast seedato, ricerca
+  tag, round-trip report_update); GUIDA.md: sezione Disaster recovery + test di
+  restore trimestrale + regole d'oro aggiornate (repo pubblico per scelta).
+  NON fatto deliberatamente: branch protection su main (bloccherebbe i push diretti
+  degli agenti Jules/Antigravity), prototype fuori da git (il sito li consuma).
 
 - **Impl 1 — Cattura da ovunque** (2026-07-01): `POST /v1/capture`, `GET /v1/inbox`,
   `/v1/inbox/{id}`, `/v1/inbox/{id}/done` (anti path-traversal, limite 100KB);

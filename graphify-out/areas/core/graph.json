@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "8fbce5cee675cad0a14bebb76f4822854141b439",
+ "built_at_commit": "f6b1acf2336310c579ce59e6bfd68e051f297a3a",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -482,7 +482,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 16,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 16,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 16,
+   "community": 4,
    "norm_label": "items"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 11,
+   "community": 4,
    "norm_label": "minitems"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 11,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 16,
+   "community": 11,
    "norm_label": "componenti"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 11,
+   "community": 4,
    "norm_label": "modalita"
   },
   {
@@ -1296,6 +1296,16 @@
    "norm_label": "cos'e, in un minuto"
   },
   {
+   "label": "Disaster recovery — ricostruire tutto da zero",
+   "file_type": "document",
+   "source_file": "GUIDA.md",
+   "source_location": "L130",
+   "_origin": "ast",
+   "id": "guida_disaster_recovery_ricostruire_tutto_da_zero",
+   "community": 12,
+   "norm_label": "disaster recovery — ricostruire tutto da zero"
+  },
+  {
    "label": "GUIDA — come usare il tuo second brain (per umani, zero tecnicismi)",
    "file_type": "document",
    "source_file": "GUIDA.md",
@@ -1344,16 +1354,6 @@
    "id": "guida_se_qualcosa_va_storto",
    "community": 12,
    "norm_label": "se qualcosa va storto"
-  },
-  {
-   "label": "Path",
-   "file_type": "code",
-   "source_file": "",
-   "source_location": "",
-   "_origin": "ast",
-   "id": "path",
-   "community": 2,
-   "norm_label": "path"
   },
   {
    "label": "README.md",
@@ -1759,7 +1759,7 @@
    "label": "Completato (storico, per orientamento)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L282",
+   "source_location": "L283",
    "_origin": "ast",
    "id": "roadmap_completato_storico_per_orientamento",
    "community": 14,
@@ -1779,7 +1779,7 @@
    "label": "DOPO che le macroaree saranno popolate (non prima)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L264",
+   "source_location": "L265",
    "_origin": "ast",
    "id": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
    "community": 14,
@@ -1789,7 +1789,7 @@
    "label": "✅ IMPLEMENTAZIONE 1 — Cattura da ovunque — COMPLETATA (vedi Completato)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L66",
+   "source_location": "L67",
    "_origin": "ast",
    "id": "roadmap_implementazione_1_cattura_da_ovunque_completata_vedi_completato",
    "community": 14,
@@ -1799,7 +1799,7 @@
    "label": "✅ IMPLEMENTAZIONE 2 — Server MCP — COMPLETATA (vedi Completato)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L112",
+   "source_location": "L113",
    "_origin": "ast",
    "id": "roadmap_implementazione_2_server_mcp_completata_vedi_completato",
    "community": 14,
@@ -1809,7 +1809,7 @@
    "label": "✅ IMPLEMENTAZIONE 3 — Oracle eseguibile — COMPLETATA (vedi Completato)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L148",
+   "source_location": "L149",
    "_origin": "ast",
    "id": "roadmap_implementazione_3_oracle_eseguibile_completata_vedi_completato",
    "community": 14,
@@ -1819,7 +1819,7 @@
    "label": "✅ IMPLEMENTAZIONE 4 — Guardie di qualita — COMPLETATA (vedi Completato)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L189",
+   "source_location": "L190",
    "_origin": "ast",
    "id": "roadmap_implementazione_4_guardie_di_qualita_completata_vedi_completato",
    "community": 14,
@@ -1829,21 +1829,11 @@
    "label": "✅ INFRASTRUTTURA 2.0 — COMPLETATA 2026-07-01 (vedi Completato; le spec restano come riferimento)",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L206",
+   "source_location": "L207",
    "_origin": "ast",
    "id": "roadmap_infrastruttura_2_0_completata_2026_07_01_vedi_completato_le_spec_restano_come_riferimento",
    "community": 14,
    "norm_label": "✅ infrastruttura 2.0 — completata 2026-07-01 (vedi completato; le spec restano come riferimento)"
-  },
-  {
-   "label": "PRIORITÀ 0 — Repo privato (azione umana, 2 minuti) ⚠️",
-   "file_type": "document",
-   "source_file": "ROADMAP.md",
-   "source_location": "L54",
-   "_origin": "ast",
-   "id": "roadmap_priorità_0_repo_privato_azione_umana_2_minuti",
-   "community": 14,
-   "norm_label": "priorita 0 — repo privato (azione umana, 2 minuti) ⚠️"
   },
   {
    "label": "Regole vincolanti (violarle rompe il sistema)",
@@ -1869,11 +1859,21 @@
    "label": "Storico precedente",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L316",
+   "source_location": "L329",
    "_origin": "ast",
    "id": "roadmap_storico_precedente",
    "community": 14,
    "norm_label": "storico precedente"
+  },
+  {
+   "label": "Visibilità del repo — DECISIONE PRESA: resta PUBBLICO (2026-07-19)",
+   "file_type": "document",
+   "source_file": "ROADMAP.md",
+   "source_location": "L54",
+   "_origin": "ast",
+   "id": "roadmap_visibilità_del_repo_decisione_presa_resta_pubblico_2026_07_19",
+   "community": 14,
+   "norm_label": "visibilita del repo — decisione presa: resta pubblico (2026-07-19)"
   },
   {
    "label": "app.py",
@@ -2384,6 +2384,16 @@
    "id": "server_brain_core_oracle_hexagram",
    "community": 2,
    "norm_label": "oracle_hexagram()"
+  },
+  {
+   "label": "Path",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "server_brain_core_py_path",
+   "community": 2,
+   "norm_label": "path"
   },
   {
    "label": "Ritorna (output, area_usata). area=None -> router; 'full' -> grafo completo.",
@@ -2978,6 +2988,176 @@
    "norm_label": "test_route_deterministico()"
   },
   {
+   "label": "test_tools.py",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tests_test_tools",
+   "community": 39,
+   "norm_label": "test_tools.py"
+  },
+  {
+   "label": "_mini_repo()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L66",
+   "_origin": "ast",
+   "id": "tests_test_tools_mini_repo",
+   "community": 39,
+   "norm_label": "_mini_repo()"
+  },
+  {
+   "label": "Path",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "tests_test_tools_py_path",
+   "community": 39,
+   "norm_label": "path"
+  },
+  {
+   "label": "6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran.",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L26",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_26",
+   "community": 39,
+   "norm_label": "6 (il conflitto) + 4a linea mobile -> 59 (la dissoluzione). caso iran."
+  },
+  {
+   "label": "43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile.",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_35",
+   "community": 39,
+   "norm_label": "43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile."
+  },
+  {
+   "label": "Stesso seed -> stessa lettura (verificabilita).",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L52",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_52",
+   "community": 39,
+   "norm_label": "stesso seed -> stessa lettura (verificabilita)."
+  },
+  {
+   "label": "La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'.",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L59",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_59",
+   "community": 39,
+   "norm_label": "la selezione decisionale trova il 43 per l'argomento 'decisione/svolta'."
+  },
+  {
+   "label": "Copia minima del layout repo: tools/report_update.py + report finto.",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L67",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_67",
+   "community": 39,
+   "norm_label": "copia minima del layout repo: tools/report_update.py + report finto."
+  },
+  {
+   "label": "_run_update()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L83",
+   "_origin": "ast",
+   "id": "tests_test_tools_run_update",
+   "community": 39,
+   "norm_label": "_run_update()"
+  },
+  {
+   "label": "test_attribuzione_43_quattro_mobili_da_16()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L34",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
+   "community": 39,
+   "norm_label": "test_attribuzione_43_quattro_mobili_da_16()"
+  },
+  {
+   "label": "test_attribuzione_6_linea4_da_59()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L25",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_attribuzione_6_linea4_da_59",
+   "community": 39,
+   "norm_label": "test_attribuzione_6_linea4_da_59()"
+  },
+  {
+   "label": "test_attribuzione_senza_mobili_e_range()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L41",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_attribuzione_senza_mobili_e_range",
+   "community": 39,
+   "norm_label": "test_attribuzione_senza_mobili_e_range()"
+  },
+  {
+   "label": "test_cast_seedato_riproducibile()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L51",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_cast_seedato_riproducibile",
+   "community": 39,
+   "norm_label": "test_cast_seedato_riproducibile()"
+  },
+  {
+   "label": "test_report_update_nodo_e_sync_prototipo()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L90",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
+   "community": 39,
+   "norm_label": "test_report_update_nodo_e_sync_prototipo()"
+  },
+  {
+   "label": "test_report_update_nodo_inesistente_fallisce()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L115",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_report_update_nodo_inesistente_fallisce",
+   "community": 39,
+   "norm_label": "test_report_update_nodo_inesistente_fallisce()"
+  },
+  {
+   "label": "test_report_update_verdict_set_current()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L106",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_report_update_verdict_set_current",
+   "community": 39,
+   "norm_label": "test_report_update_verdict_set_current()"
+  },
+  {
+   "label": "test_ricerca_tag_suggerisce_43()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L58",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_ricerca_tag_suggerisce_43",
+   "community": 39,
+   "norm_label": "test_ricerca_tag_suggerisce_43()"
+  },
+  {
    "label": "altair_compact_view.py",
    "file_type": "code",
    "source_file": "tools/altair_compact_view.py",
@@ -3144,7 +3324,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_oracle_cast",
-   "community": 2,
+   "community": 39,
    "norm_label": "oracle_cast.py"
   },
   {
@@ -3154,7 +3334,7 @@
    "source_location": "L128",
    "_origin": "ast",
    "id": "tools_oracle_cast_attribute_reading",
-   "community": 2,
+   "community": 39,
    "norm_label": "attribute_reading()"
   },
   {
@@ -3164,7 +3344,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "tools_oracle_cast_cast_reading",
-   "community": 2,
+   "community": 39,
    "norm_label": "cast_reading()"
   },
   {
@@ -3174,7 +3354,7 @@
    "source_location": "L61",
    "_origin": "ast",
    "id": "tools_oracle_cast_focus_line",
-   "community": 2,
+   "community": 39,
    "norm_label": "_focus_line()"
   },
   {
@@ -3184,7 +3364,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "tools_oracle_cast_get_hexagram",
-   "community": 2,
+   "community": 39,
    "norm_label": "get_hexagram()"
   },
   {
@@ -3194,7 +3374,7 @@
    "source_location": "L121",
    "_origin": "ast",
    "id": "tools_oracle_cast_lanci_from",
-   "community": 2,
+   "community": 39,
    "norm_label": "_lanci_from()"
   },
   {
@@ -3204,7 +3384,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tools_oracle_cast_load",
-   "community": 2,
+   "community": 39,
    "norm_label": "_load()"
   },
   {
@@ -3214,7 +3394,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "tools_oracle_cast_mutate",
-   "community": 2,
+   "community": 39,
    "norm_label": "_mutate()"
   },
   {
@@ -3224,7 +3404,7 @@
    "source_location": "L84",
    "_origin": "ast",
    "id": "tools_oracle_cast_public",
-   "community": 2,
+   "community": 39,
    "norm_label": "_public()"
   },
   {
@@ -3234,7 +3414,7 @@
    "source_location": "L122",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_122",
-   "community": 2,
+   "community": 39,
    "norm_label": "deriva i 6 lanci da un esagramma scelto + linee mobili decise:     bit 1 (yang):"
   },
   {
@@ -3244,7 +3424,7 @@
    "source_location": "L130",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_130",
-   "community": 2,
+   "community": 39,
    "norm_label": "attribuzione decisionale (metodo canonico per i report).     non si estrae a cas"
   },
   {
@@ -3254,7 +3434,7 @@
    "source_location": "L156",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_156",
-   "community": 2,
+   "community": 39,
    "norm_label": "suggerisce gli esagrammi da attribuire: match tra le parole dell'argomento e i"
   },
   {
@@ -3264,7 +3444,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_62",
-   "community": 2,
+   "community": 39,
    "norm_label": "applica le regole di selezione della linea da interpretare. ritorna (posizione,"
   },
   {
@@ -3274,7 +3454,7 @@
    "source_location": "L155",
    "_origin": "ast",
    "id": "tools_oracle_cast_search_by_tags",
-   "community": 2,
+   "community": 39,
    "norm_label": "search_by_tags()"
   },
   {
@@ -3284,7 +3464,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "tools_oracle_cast_to_binary",
-   "community": 2,
+   "community": 39,
    "norm_label": "_to_binary()"
   },
   {
@@ -4723,6 +4903,16 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
+   "source_location": "L130",
+   "weight": 1.0,
+   "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
+   "target": "guida_disaster_recovery_ricostruire_tutto_da_zero",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "GUIDA.md",
    "source_location": "L92",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
@@ -5173,7 +5363,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L316",
+   "source_location": "L329",
    "weight": 1.0,
    "source": "roadmap_completato_storico_per_orientamento",
    "target": "roadmap_storico_precedente",
@@ -5183,7 +5373,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L282",
+   "source_location": "L283",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_completato_storico_per_orientamento",
@@ -5203,7 +5393,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L264",
+   "source_location": "L265",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_dopo_che_le_macroaree_saranno_popolate_non_prima",
@@ -5213,7 +5403,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L66",
+   "source_location": "L67",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_implementazione_1_cattura_da_ovunque_completata_vedi_completato",
@@ -5223,7 +5413,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L112",
+   "source_location": "L113",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_implementazione_2_server_mcp_completata_vedi_completato",
@@ -5233,7 +5423,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L148",
+   "source_location": "L149",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_implementazione_3_oracle_eseguibile_completata_vedi_completato",
@@ -5243,7 +5433,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L189",
+   "source_location": "L190",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_implementazione_4_guardie_di_qualita_completata_vedi_completato",
@@ -5253,20 +5443,10 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L206",
+   "source_location": "L207",
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_infrastruttura_2_0_completata_2026_07_01_vedi_completato_le_spec_restano_come_riferimento",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "ROADMAP.md",
-   "source_location": "L54",
-   "weight": 1.0,
-   "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
-   "target": "roadmap_priorità_0_repo_privato_azione_umana_2_minuti",
    "confidence_score": 1.0
   },
   {
@@ -5277,6 +5457,16 @@
    "weight": 1.0,
    "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
    "target": "roadmap_regole_vincolanti_violarle_rompe_il_sistema",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "ROADMAP.md",
+   "source_location": "L54",
+   "weight": 1.0,
+   "source": "roadmap_roadmap_guida_alle_prossime_implementazioni",
+   "target": "roadmap_visibilità_del_repo_decisione_presa_resta_pubblico_2026_07_19",
    "confidence_score": 1.0
   },
   {
@@ -6105,17 +6295,6 @@
    "confidence_score": 1.0
   },
   {
-   "relation": "references",
-   "context": "return_type",
-   "confidence": "EXTRACTED",
-   "source_file": "server/brain_core.py",
-   "source_location": "L86",
-   "weight": 1.0,
-   "source": "server_brain_core_area_graph_path",
-   "target": "path",
-   "confidence_score": 1.0
-  },
-  {
    "relation": "calls",
    "context": "call",
    "confidence": "EXTRACTED",
@@ -6124,6 +6303,17 @@
    "weight": 1.0,
    "source": "server_brain_core_area_graph_path",
    "target": "server_brain_core_brainerror",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "context": "return_type",
+   "confidence": "EXTRACTED",
+   "source_file": "server/brain_core.py",
+   "source_location": "L86",
+   "weight": 1.0,
+   "source": "server_brain_core_area_graph_path",
+   "target": "server_brain_core_py_path",
    "confidence_score": 1.0
   },
   {
@@ -6220,7 +6410,7 @@
    "source_location": "L36",
    "weight": 1.0,
    "source": "server_brain_core_graphify_available",
-   "target": "path",
+   "target": "server_brain_core_py_path",
    "confidence_score": 1.0
   },
   {
@@ -6308,7 +6498,7 @@
    "source_location": "L66",
    "weight": 1.0,
    "source": "server_brain_core_lessons_text",
-   "target": "path",
+   "target": "server_brain_core_py_path",
    "confidence_score": 1.0
   },
   {
@@ -6453,17 +6643,6 @@
    "confidence_score": 1.0
   },
   {
-   "relation": "references",
-   "context": "return_type",
-   "confidence": "EXTRACTED",
-   "source_file": "server/brain_core.py",
-   "source_location": "L150",
-   "weight": 1.0,
-   "source": "server_brain_core_safe_inbox_file",
-   "target": "path",
-   "confidence_score": 1.0
-  },
-  {
    "relation": "calls",
    "context": "call",
    "confidence": "EXTRACTED",
@@ -6472,6 +6651,17 @@
    "weight": 1.0,
    "source": "server_brain_core_safe_inbox_file",
    "target": "server_brain_core_brainerror",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "context": "return_type",
+   "confidence": "EXTRACTED",
+   "source_file": "server/brain_core.py",
+   "source_location": "L150",
+   "weight": 1.0,
+   "source": "server_brain_core_safe_inbox_file",
+   "target": "server_brain_core_py_path",
    "confidence_score": 1.0
   },
   {
@@ -7023,6 +7213,332 @@
    "weight": 1.0,
    "source": "tests_test_api",
    "target": "tests_test_api_test_route_deterministico",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L66",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_mini_repo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L83",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_run_update",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L34",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L25",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_attribuzione_6_linea4_da_59",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L41",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_attribuzione_senza_mobili_e_range",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L51",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_cast_seedato_riproducibile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L90",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L115",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_report_update_nodo_inesistente_fallisce",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L106",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_report_update_verdict_set_current",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L58",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_ricerca_tag_suggerisce_43",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports_from",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_oracle_cast",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_oracle_cast_cast_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_oracle_cast_search_by_tags",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "context": "return_type",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L66",
+   "weight": 1.0,
+   "source": "tests_test_tools_mini_repo",
+   "target": "tests_test_tools_py_path",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L26",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_26",
+   "target": "tests_test_tools_test_attribuzione_6_linea4_da_59",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_35",
+   "target": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L52",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_52",
+   "target": "tests_test_tools_test_cast_seedato_riproducibile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L59",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_59",
+   "target": "tests_test_tools_test_ricerca_tag_suggerisce_43",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L67",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_67",
+   "target": "tests_test_tools_mini_repo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "context": "parameter_type",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L83",
+   "weight": 1.0,
+   "source": "tests_test_tools_run_update",
+   "target": "tests_test_tools_py_path",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L36",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L27",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_attribuzione_6_linea4_da_59",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L42",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_attribuzione_senza_mobili_e_range",
+   "target": "tools_oracle_cast_attribute_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L53",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_cast_seedato_riproducibile",
+   "target": "tools_oracle_cast_cast_reading",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L91",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
+   "target": "tests_test_tools_mini_repo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L92",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
+   "target": "tests_test_tools_run_update",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L116",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_report_update_nodo_inesistente_fallisce",
+   "target": "tests_test_tools_mini_repo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L107",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_report_update_verdict_set_current",
+   "target": "tests_test_tools_mini_repo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L108",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_report_update_verdict_set_current",
+   "target": "tests_test_tools_run_update",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L60",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_ricerca_tag_suggerisce_43",
+   "target": "tools_oracle_cast_search_by_tags",
    "confidence_score": 1.0
   },
   {

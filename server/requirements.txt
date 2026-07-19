@@ -1,4 +1,7 @@
-fastapi>=0.110
-uvicorn[standard]>=0.29
+# Versioni PINNATE (supply chain): aggiornamenti deliberati, mai impliciti.
+# Per aggiornare: cambia il pin, esegui i test locali, poi commit. La CI fa
+# pip-audit su questo file a ogni push (avviso su CVE note).
+fastapi==0.139.0
+uvicorn[standard]==0.49.0
 # server MCP locale (facoltativo sulla VPS, necessario per mcp_server.py)
-mcp>=1.0
+mcp==1.28.1

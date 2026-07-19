@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1783975867.6236367,
-    "ast_hash": "0c898e6d312b6a9fdb2d751f5a20e4b9",
+    "mtime": 1784494420.2836022,
+    "ast_hash": "17b8fef06a3a9f05680aaff978c4d4a6",
     "semantic_hash": ""
   },
   "areas.json": {
@@ -25,7 +25,7 @@
     "semantic_hash": ""
   },
   "engine/iching.db.json": {
-    "mtime": 1784141989.7187004,
+    "mtime": 1784494751.178674,
     "ast_hash": "0afa903ce634c8c50f624541638ec2f5",
     "semantic_hash": ""
   },
@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "server/backup_data.sh": {
-    "mtime": 1782941780.6810102,
-    "ast_hash": "9567d101a3bf3476e93ac7a9579e6c05",
+    "mtime": 1784494515.7678435,
+    "ast_hash": "750f3d8fba39dcbb18901135baeec2ce",
     "semantic_hash": ""
   },
   "server/bootstrap.sh": {
@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/validate.yml": {
-    "mtime": 1783527930.6183472,
-    "ast_hash": "b11f91f028963e60ade504d4e2e3b9f1",
+    "mtime": 1784494503.745421,
+    "ast_hash": "01fd9ad8fa4cff184df2d750804dd6b8",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "GUIDA.md": {
-    "mtime": 1782942085.8889074,
-    "ast_hash": "bea91f267c9e6673c8b8253281f3b5df",
+    "mtime": 1784494698.9311397,
+    "ast_hash": "41798fa114d1da802811808a01553c10",
     "semantic_hash": ""
   },
   "README.md": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "ROADMAP.md": {
-    "mtime": 1782942619.1773436,
-    "ast_hash": "1e05e8b4643847d6c97d4cbd53c1d3b6",
+    "mtime": 1784494720.9532132,
+    "ast_hash": "2360fb965fd32d8c5535f316b6c5687b",
     "semantic_hash": ""
   },
   "engine/aion-reasoner.md": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "server/requirements.txt": {
-    "mtime": 1782941815.7181718,
-    "ast_hash": "153801700746e72b79a0fae0255a6e4c",
+    "mtime": 1784494492.4501853,
+    "ast_hash": "da5fd5309a8e0b3906fc3cb915d2ab80",
     "semantic_hash": ""
   },
   "tools/README.md": {
@@ -435,277 +435,277 @@
     "semantic_hash": ""
   },
   "wiki/aion/aion-adaptive-core.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "5dc9b63c76ef000043b112a7e98b102a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-adaptive.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2528863,
     "ast_hash": "fbe32c6b59ba30ee399e4f1711f9dd99",
     "semantic_hash": ""
   },
   "wiki/aion/aion-analyst.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2513776,
     "ast_hash": "f2855ff85d4be191fc5d4313d9311986",
     "semantic_hash": ""
   },
   "wiki/aion/aion-cinematica.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2513776,
     "ast_hash": "e5fc909b8e2724013ef4d542e3e23828",
     "semantic_hash": ""
   },
   "wiki/aion/aion-cognition-view.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "64e0305883c3fb58f8a5681b5f5d6c38",
     "semantic_hash": ""
   },
   "wiki/aion/aion-deeplogiccore.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2534053,
     "ast_hash": "8c0180cbf9e83c0aae99f4f73ca13cf4",
     "semantic_hash": ""
   },
   "wiki/aion/aion-echo.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2534053,
     "ast_hash": "fb8c1488fe2638139f5f6a23ff6d2485",
     "semantic_hash": ""
   },
   "wiki/aion/aion-ethos.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "7523879b05adbc4faac94b81d3fd58a2",
     "semantic_hash": ""
   },
   "wiki/aion/aion-fabula.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2528863,
     "ast_hash": "aebd91fd14d5460fd6758f230ec19a9e",
     "semantic_hash": ""
   },
   "wiki/aion/aion-fabulatorium.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "1039ca1676af060859df5c3785a4e08a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-hybrid-reasoner.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "9eb03ca11b69f9c0489dad3f019f6f7c",
     "semantic_hash": ""
   },
   "wiki/aion/aion-oracle.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2534053,
     "ast_hash": "7f7a6ca5b1d086501b4bb30c8831246a",
     "semantic_hash": ""
   },
   "wiki/aion/aion-paradox.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2544086,
     "ast_hash": "32a37c0018b961b50f6f890560361920",
     "semantic_hash": ""
   },
   "wiki/aion/aion-strategic-engine.md": {
-    "mtime": 1784141988.8999,
+    "mtime": 1784494750.2513776,
     "ast_hash": "046d4ebe1ed478cab4c5333c0b1cf44d",
     "semantic_hash": ""
   },
   "wiki/aion/aion-superia.md": {
-    "mtime": 1784141988.8999,
+    "mtime": 1784494750.2513776,
     "ast_hash": "ede98f237a3fc24633129b4a02fe98c1",
     "semantic_hash": ""
   },
   "wiki/aion/aion-symbol.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2544086,
     "ast_hash": "a611b1fa811fcc4a40dc73299f5bbb5b",
     "semantic_hash": ""
   },
   "wiki/aion/aion-synth.md": {
-    "mtime": 1784141988.9008996,
+    "mtime": 1784494750.2513776,
     "ast_hash": "5f1a79c0f491feb0be99c85660b91c38",
     "semantic_hash": ""
   },
   "wiki/aion/aion-vision.md": {
-    "mtime": 1784141988.9019156,
+    "mtime": 1784494750.2528863,
     "ast_hash": "6a4abe611be3b196c9bf96c457928603",
     "semantic_hash": ""
   },
   "wiki/aion/aion-visual.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2534053,
     "ast_hash": "191879ecd7d113551d389866daeb3319",
     "semantic_hash": ""
   },
   "wiki/aion/index.md": {
-    "mtime": 1784141988.9082913,
+    "mtime": 1784494750.2589152,
     "ast_hash": "10cd996b60bcd491545eccf64920881a",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamenti.md": {
-    "mtime": 1784141988.9082913,
+    "mtime": 1784494750.2579145,
     "ast_hash": "6cf99dd8ce0fb4873d2703d309a47515",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-001.md": {
-    "mtime": 1784141988.9042397,
+    "mtime": 1784494750.2554078,
     "ast_hash": "95c603db0a62f30b3331335f3a958ab0",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-002.md": {
-    "mtime": 1784141988.9042397,
+    "mtime": 1784494750.2554078,
     "ast_hash": "7d2bb906b2f20cd7e3f2d7856648a62c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-003.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "7e4fa551d564ce646e8c0c5f049eb165",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-004.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "31916293526bc8e4e3fb1f86b238442c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-005.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "d15f183de10a034004b90a1ba17db32d",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-006.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "7e7aa260a909e41950ffe3d3231f05f9",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-007.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "4ca92616768759f9a65c4995af4f8b5a",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-008.md": {
-    "mtime": 1784141988.9052439,
+    "mtime": 1784494750.2554078,
     "ast_hash": "a0f3e476bb777b3dec68124e26af28ca",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-009.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2554078,
     "ast_hash": "b8644efc164a47d1a2fc99232918e351",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-010.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2554078,
     "ast_hash": "686322131e7a9e8a2ed213e1529fd92c",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-011.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2554078,
     "ast_hash": "742874ad9fa2bb2439e47b819990c07f",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-012.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2569108,
     "ast_hash": "a2ab4a63c5b6efdbbf501cb0acaaa4f6",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-013.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2569108,
     "ast_hash": "566393c10d9cb47d9b66130ca2266325",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-014.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2569108,
     "ast_hash": "5c3492e067ab03a415a1704a121d8dc4",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-015.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2569108,
     "ast_hash": "f354908c993cd558ecce3434571e51f8",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-016.md": {
-    "mtime": 1784141988.906248,
+    "mtime": 1784494750.2569108,
     "ast_hash": "3948819692eca41e8ecac4bd1fce31b3",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-017.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2569108,
     "ast_hash": "359e6bc7976a520429eb578deb4956ff",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-018.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2569108,
     "ast_hash": "bcf2a0821eebec3e03d1677b47a38227",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-019.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "e6e13d9369042cd5eb875acd13a132ea",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-020.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "5384a1e31d4890fefd05bb963602b5d6",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-021.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "f148e87d0a2a85dbb605c8de1de2d00d",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-022.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "d3e29321c34c0c7093e4d8fc79e6e20b",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-023.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "5d113aead9e5b77b1d0c27fcaa18f958",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-024.md": {
-    "mtime": 1784141988.907283,
+    "mtime": 1784494750.2579145,
     "ast_hash": "dca5255e7b1b0404fcb7ade4c803d3d2",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-025.md": {
-    "mtime": 1784141988.9082913,
+    "mtime": 1784494750.2579145,
     "ast_hash": "20b5180c1780cbf62184b4b7c9296ad4",
     "semantic_hash": ""
   },
   "wiki/aion/insegnamento-026.md": {
-    "mtime": 1784141988.9082913,
+    "mtime": 1784494750.2579145,
     "ast_hash": "565221562ac89195e4d541cc7eaebcc1",
     "semantic_hash": ""
   },
   "wiki/aion/livello-identita-etica.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2544086,
     "ast_hash": "457e270654f37246ffc17de9521ffacb",
     "semantic_hash": ""
   },
   "wiki/aion/livello-operativita.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2544086,
     "ast_hash": "45bef2aa3280c944fd6585a7cbe3cdb0",
     "semantic_hash": ""
   },
   "wiki/aion/livello-orchestrazione-stile.md": {
-    "mtime": 1784141988.9038987,
+    "mtime": 1784494750.2544086,
     "ast_hash": "3cdf802179be9f0a1f8c4f42ff111832",
     "semantic_hash": ""
   },
   "wiki/aion/livello-struttura-logica.md": {
-    "mtime": 1784141988.9028974,
+    "mtime": 1784494750.2544086,
     "ast_hash": "08dcff2e5780bb1d2aba95e09174864e",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-analytic-core.md": {
-    "mtime": 1784141988.9038987,
+    "mtime": 1784494750.2544086,
     "ast_hash": "fc2aa83c267692401195bd3dd86c0301",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-guidance-empathic.md": {
-    "mtime": 1784141988.9042397,
+    "mtime": 1784494750.2554078,
     "ast_hash": "09d4028297ee60c9cc92adffe521ea62",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-hybrid-synth.md": {
-    "mtime": 1784141988.9042397,
+    "mtime": 1784494750.2554078,
     "ast_hash": "0510a41d0641ec4195c71e579ab187e5",
     "semantic_hash": ""
   },
   "wiki/aion/modalita-mythic-narrative.md": {
-    "mtime": 1784141988.9042397,
+    "mtime": 1784494750.2544086,
     "ast_hash": "b1c27f6ec7f6f5badb71b837369ad227",
     "semantic_hash": ""
   },
@@ -922,6 +922,11 @@
   "reports/altair-brain-ai-tools-2026.html": {
     "mtime": 1783882878.1089003,
     "ast_hash": "1a49c3e50e935c928c1c7a960ab2997a",
+    "semantic_hash": ""
+  },
+  "tests/test_tools.py": {
+    "mtime": 1784494544.476345,
+    "ast_hash": "0524a5acdabb64e2e60b002ce0581bbf",
     "semantic_hash": ""
   }
 }
