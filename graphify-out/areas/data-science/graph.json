@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "f6b1acf2336310c579ce59e6bfd68e051f297a3a",
+ "built_at_commit": "92f9501f0114da7bcd1ab87da3816a22cd8ce26f",
  "nodes": [
   {
    "label": "README.md",
@@ -1446,6 +1446,16 @@
    "source": "wiki_data_science_framework_domande_analitiche",
    "target": "wiki_data_science_metodi",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_index",
+   "target": "raw_data_science_readme",
+   "relation": "derived_from",
+   "nota": "l'area data-science e scritta a mano: il README grezzo indicizza le note di metodo da cui deriva",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "references",

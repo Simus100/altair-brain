@@ -1,0 +1,65 @@
+{
+  "description": "Golden set di valutazione del brain (P9). Domande REALI con i nodi che devono restare presenti e connessi nel grafo. Se una pagina viene rinominata, cancellata o si scollega, il test CI lo rileva subito invece che tra sei mesi. Equivalente dei benchmark DMR/LOCOMO della letteratura, ma sul corpus di questo brain.",
+  "convenzione": {
+    "attesi": "percorsi file relativi (match esatto su source_file) — stabili piu delle label",
+    "max_hops": "distanza massima ammessa tra i nodi-file attesi nel grafo non orientato",
+    "aggiungere": "quando aggiungi conoscenza importante, aggiungi qui una domanda che la interroga"
+  },
+  "max_hops": 4,
+  "queries": [
+    {
+      "domanda": "Chi orchestra il ragionamento in AION e quale gate etico e sempre attivo?",
+      "attesi": ["wiki/aion/aion-superia.md", "wiki/aion/aion-ethos.md"],
+      "note": "orchestrazione + vincolo di identita: il cuore del modello"
+    },
+    {
+      "domanda": "Come funziona l'oracolo I Ching e da dove nasce il database degli esagrammi?",
+      "attesi": ["wiki/aion/aion-oracle.md", "raw/aion/aion-oracle.md"],
+      "note": "catena fonte grezza -> pagina curata (regola della fonte unica)"
+    },
+    {
+      "domanda": "Quali sono le modalita di ragionamento e il motore strategico di AION?",
+      "attesi": ["wiki/aion/aion-strategic-engine.md", "wiki/aion/aion-hybrid-reasoner.md"],
+      "note": "componenti di ragionamento"
+    },
+    {
+      "domanda": "Come si struttura un'analisi dati dalla domanda al report?",
+      "attesi": [
+        "wiki/data-science/workflow-analisi-dati.md",
+        "wiki/data-science/framework-domande-analitiche.md",
+        "wiki/data-science/struttura-report-analisi.md"
+      ],
+      "note": "il metodo trasferibile: il valore dell'area data-science"
+    },
+    {
+      "domanda": "Quali controlli di qualita si fanno sui dati prima di analizzarli?",
+      "attesi": ["wiki/data-science/controlli-qualita-dati.md", "wiki/data-science/data-cleaning.md"],
+      "note": "qualita del dato"
+    },
+    {
+      "domanda": "Come si individuano gli outlier con i quartili?",
+      "attesi": ["wiki/data-science/quartili-outlier.md", "wiki/data-science/analisi-esplorativa.md"],
+      "note": "metodo statistico concreto documentato dai project work"
+    },
+    {
+      "domanda": "Quali progetti reali documentano la metodologia di analisi?",
+      "attesi": ["wiki/data-science/progetti.md", "wiki/data-science/progetto-olist-ecommerce.md"],
+      "note": "casi applicati"
+    },
+    {
+      "domanda": "Che rapporto c'e tra la narrazione di AION e lo storytelling dei dati?",
+      "attesi": ["wiki/aion/aion-fabulatorium.md", "wiki/data-science/data-storytelling.md"],
+      "note": "PONTE INTERCAMPO curato (engine/bridges.json): se si rompe, le aree si isolano"
+    },
+    {
+      "domanda": "Come si collega l'agente analista di AION all'analisi esplorativa?",
+      "attesi": ["wiki/aion/aion-analyst.md", "wiki/data-science/analisi-esplorativa.md"],
+      "note": "secondo ponte intercampo curato"
+    },
+    {
+      "domanda": "Da dove si parte per orientarsi nelle due aree del brain?",
+      "attesi": ["wiki/aion/index.md", "wiki/data-science/index.md"],
+      "note": "gli indici sono le Maps of Content: devono restare raggiungibili"
+    }
+  ]
+}

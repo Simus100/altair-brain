@@ -25,6 +25,10 @@ macroaree del brain, poi rigenera e pubblica.
 4. **Pubblica:** commit con messaggio descrittivo + push.
 5. **Archivia le note processate:** locali → spostale in `raw/_inbox/archive/`
    (creala se manca); remote → `POST /v1/inbox/{id}/done`.
+6. **Registra la lezione** (ultimo passo): `python tools/lesson_log.py --skill triage
+   --domanda "smistamento di N note" --esito utile --nodi "<aree toccate>"
+   --nota "<criterio di smistamento non ovvio, o ambiguita incontrata>"`.
+   Serve alla volta dopo: le ambiguita ricorrenti diventano regole.
 
 ## Vincoli
 - Non inventare contenuti: smisti, non riscrivi (piccole correzioni di battitura ok).

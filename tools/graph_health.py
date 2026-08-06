@@ -72,6 +72,13 @@ orphans = [i for i in adj if not adj[i]
 if orphans:
     problems.append(f"nodi isolati (grado 0) in wiki/ o engine/: {len(orphans)} — es. {orphans[:5]}")
 
+# TRACCIABILITA: ogni arco deve dichiarare da quale file nasce. Senza questo
+# invariante il grafo degrada in silenzio (archi non piu attribuibili a una fonte).
+untraced = [i for i, e in enumerate(g["links"]) if not e.get("source_file")]
+if untraced:
+    esempi = [f"#{i} {g['links'][i].get('relation','?')}" for i in untraced[:5]]
+    problems.append(f"archi senza source_file: {len(untraced)} — es. {esempi}")
+
 # anti-regressione vs commit precedente
 prev_ref = os.environ.get("ALTAIR_PREV_REF", "HEAD~1")
 try:

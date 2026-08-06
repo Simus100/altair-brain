@@ -1,16 +1,16 @@
-# Graph Report - altair-brain  (2026-07-19)
+# Graph Report - altair-brain  (2026-08-06)
 
 ## Corpus Check
-- 155 files · ~130,556 words
+- 162 files · ~133,635 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1095 nodes · 1408 edges · 121 communities (114 shown, 7 thin omitted)
+- 1120 nodes · 1431 edges · 130 communities (119 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f6b1acf2`
+- Built from commit: `92f9501f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -97,6 +97,7 @@
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
 - [[_COMMUNITY_Community 86|Community 86]]
@@ -123,6 +124,14 @@
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
 - [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 121|Community 121]]
+- [[_COMMUNITY_Community 123|Community 123]]
+- [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 125|Community 125]]
+- [[_COMMUNITY_Community 126|Community 126]]
+- [[_COMMUNITY_Community 127|Community 127]]
+- [[_COMMUNITY_Community 128|Community 128]]
+- [[_COMMUNITY_Community 129|Community 129]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BrainError` - 14 edges
@@ -151,7 +160,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (121 total, 7 thin omitted)
+## Communities (130 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -205,10 +214,6 @@ Nodes (14): minItems, type, minItems, type, type, properties, componenti, livell
 Cohesion: 0.13
 Nodes (14): 1. Aggiungere conoscenza (dal PC), 2. Catturare un'idea dal telefono (o ovunque), 3. Interrogare il brain, 4. Consultare l'oracolo (I Ching), 5. Far imparare il brain, 6. Vedere il grafo, Collegare altre AI al brain, Cos'è, in un minuto (+6 more)
 
-### Community 13 - "Community 13"
-Cohesion: 0.31
-Nodes (7): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
-
 ### Community 14 - "Community 14"
 Cohesion: 0.15
 Nodes (12): Completato (storico, per orientamento), Contesto in 10 righe, DOPO che le macroaree saranno popolate (non prima), ✅ IMPLEMENTAZIONE 1 — Cattura da ovunque — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 2 — Server MCP — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 3 — Oracle eseguibile — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 4 — Guardie di qualita — COMPLETATA (vedi Completato), ✅ INFRASTRUTTURA 2.0 — COMPLETATA 2026-07-01 (vedi Completato; le spec restano come riferimento) (+4 more)
@@ -246,8 +251,8 @@ Cohesion: 0.25
 Nodes (8): 11. 泰 La Pace (Tài) ䷊, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 24 - "Community 24"
-Cohesion: 0.06
-Nodes (32): 12. 否 Il Ristagno (Pǐ) ䷋, 26. 大畜 La Forza Domatrice del Grande (Dà Chù) ䷙, 3. 屯 Difficoltà Iniziale (Zhūn) ䷂, 7. 師 L'Esercito (Shī) ䷆, Giudizio, Giudizio, Giudizio, Giudizio (+24 more)
+Cohesion: 0.25
+Nodes (8): 12. 否 Il Ristagno (Pǐ) ䷋, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 25 - "Community 25"
 Cohesion: 0.25
@@ -347,7 +352,7 @@ Nodes (8): 34. 大壯 La Potenza del Grande (Dà Zhuàng) ䷡, Giudizio, Immagin
 
 ### Community 49 - "Community 49"
 Cohesion: 0.25
-Nodes (8): 35. 晉 Il Progresso (Jìn) ䷢, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+Nodes (8): 26. 大畜 La Forza Domatrice del Grande (Dà Chù) ䷙, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 50 - "Community 50"
 Cohesion: 0.25
@@ -447,7 +452,7 @@ Nodes (8): 57. 巽 Il Vento (Xùn) ䷸, Giudizio, Immagine, Interpretazione Mode
 
 ### Community 74 - "Community 74"
 Cohesion: 0.25
-Nodes (8): 58. 兌 Il Sereno (Duì) ䷹, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+Nodes (8): 3. 屯 Difficoltà Iniziale (Zhūn) ䷂, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 75 - "Community 75"
 Cohesion: 0.25
@@ -455,7 +460,7 @@ Nodes (8): 59. 渙 La Dissoluzione (Huàn) ䷺, Giudizio, Immagine, Interpretazi
 
 ### Community 76 - "Community 76"
 Cohesion: 0.25
-Nodes (8): 5. 需 L'Attesa (Xū) ䷄, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+Nodes (8): 7. 師 L'Esercito (Shī) ䷆, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 77 - "Community 77"
 Cohesion: 0.25
@@ -481,6 +486,10 @@ Nodes (8): 64. 未濟 Prima del Compimento (Wèi Jì) ䷿, Giudizio, Immagine, I
 Cohesion: 0.25
 Nodes (8): 6. 訟 Il Conflitto (Sòng) ䷅, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
+### Community 83 - "Community 83"
+Cohesion: 0.27
+Nodes (8): brain(), _distanza(), _norm(), Grafo caricato una volta: indice file->nodi e adiacenza non orientata., BFS multi-sorgente: minima distanza tra due insiemi di nodi (None se irraggiungi, Il golden set stesso non deve impoverirsi: presidio contro la sua erosione., test_golden_query_ha_risposta_nel_grafo(), test_golden_set_e_significativo()
+
 ### Community 84 - "Community 84"
 Cohesion: 0.25
 Nodes (8): 8. 比 La Coesione (Bǐ) ䷇, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
@@ -503,7 +512,7 @@ Nodes (12): 1. Schema Dati (JSON Payload), 2. Blueprint del File HTML (`template
 
 ### Community 89 - "Community 89"
 Cohesion: 0.33
-Nodes (5): Apprendimento, Come procedere, Output atteso, Skill: ragionamento AION, Vincoli
+Nodes (5): Apprendimento (obbligatorio, ultimo passo), Come procedere, Output atteso, Skill: ragionamento AION, Vincoli
 
 ### Community 90 - "Community 90"
 Cohesion: 0.40
@@ -557,22 +566,42 @@ Nodes (3): items, type, dominanti
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
+### Community 121 - "Community 121"
+Cohesion: 0.25
+Nodes (8): 35. 晉 Il Progresso (Jìn) ䷢, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 123 - "Community 123"
+Cohesion: 0.25
+Nodes (8): 58. 兌 Il Sereno (Duì) ䷹, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 124 - "Community 124"
+Cohesion: 0.25
+Nodes (8): 5. 需 L'Attesa (Xū) ䷄, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 125 - "Community 125"
+Cohesion: 0.29
+Nodes (6): SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
+
+### Community 126 - "Community 126"
+Cohesion: 0.40
+Nodes (4): Lezioni apprese — memoria operativa del brain, Lezioni recenti, Sintesi, Tentativi (da confermare)
+
 ## Knowledge Gaps
-- **690 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+685 more)
+- **693 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+688 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `25. 無妄 L'Innocenza (Wú Wàng) ䷘` connect `Community 38` to `Community 13`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `13. 同人 La Comunità (Tóng Rén) ䷌` connect `Community 25` to `Community 13`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `54. 歸妹 La Ragazza che Si Sposa (Guī Mèi) ䷵` connect `Community 70` to `Community 13`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `51. 震 Il Tuono (Zhèn) ䷲` connect `Community 67` to `Community 125`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `10. 履 Il Procedere (Lǚ) ䷉` connect `Community 22` to `Community 125`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `46. 升 L'Ascendere (Shēng) ䷭` connect `Community 61` to `Community 125`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _710 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _719 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

@@ -14,7 +14,9 @@ REPO = Path(os.environ.get("ALTAIR_REPO_DIR", Path(__file__).resolve().parent.pa
 GRAPHIFY = os.environ.get("GRAPHIFY_BIN", "graphify")
 TIMEOUT = int(os.environ.get("ALTAIR_CMD_TIMEOUT", "120"))
 MEMORY_DIR = Path(os.environ.get("ALTAIR_MEMORY_DIR", REPO / "graphify-out" / "memory"))
-LESSONS = Path(os.environ.get("ALTAIR_LESSONS", REPO / "graphify-out" / "reflections" / "LESSONS.md"))
+# Digest curato (generato da tools/lessons_digest.py, fonde skill + sessioni graphify).
+# Override esplicito con ALTAIR_LESSONS; fallback storico su graphify-out/reflections.
+LESSONS = Path(os.environ.get("ALTAIR_LESSONS", REPO / "engine" / "LESSONS.md"))
 INBOX_DIR = Path(os.environ.get("ALTAIR_INBOX_DIR", REPO / "raw" / "_inbox"))
 UPDATE_SCRIPT = Path(os.environ.get("ALTAIR_UPDATE_SCRIPT", REPO / "server" / "update_brain.sh"))
 

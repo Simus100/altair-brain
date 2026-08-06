@@ -1,0 +1,113 @@
+{
+  "description": "Registro della PROVENIENZA: da quale fonte grezza nasce ogni pagina curata. Senza questo, raw/ e wiki/ restano due isole scollegate nel grafo (verificato: 0 archi tra i due strati prima dell'introduzione di questo registro) e la catena fonte -> conoscenza esiste solo nella documentazione. Applicato al grafo da tools/apply_provenance.py.",
+  "convenzione": {
+    "ancoraggi_area": "l'indice di un'area curata dichiara i documenti grezzi da cui l'area nasce: cuce i due strati in un unico componente connesso",
+    "mappe_dirette": "quale nota grezza sta dietro a quale singola pagina (precisione fine)",
+    "nota": "i file dichiarati ma non presenti nel grafo vengono segnalati, non fanno fallire la pipeline. graphify indicizza solo .md: le note .txt/.docx non sono nodi (limite noto, vedi ROADMAP)"
+  },
+  "ancoraggi_area": [
+    {
+      "indice": "wiki/aion/index.md",
+      "fonti": [
+        "raw/aion/aion-framework.md",
+        "raw/aion/aion-agents.md",
+        "raw/aion/aion-components.md",
+        "raw/aion/aion-description.md",
+        "raw/aion/aion-manifest.md",
+        "raw/aion/aion-oracle.md"
+      ],
+      "nota": "wiki/aion e GENERATA da engine/aion.model.json (fonte unica), che a sua volta distilla questi sei documenti grezzi originali"
+    },
+    {
+      "indice": "wiki/data-science/index.md",
+      "fonti": ["raw/data-science/README.md"],
+      "nota": "l'area data-science e scritta a mano: il README grezzo indicizza le note di metodo da cui deriva"
+    }
+  ],
+  "mappe_dirette": [
+    {
+      "wiki": "wiki/aion/aion-oracle.md",
+      "fonti": ["raw/aion/aion-oracle.md"],
+      "nota": "la pagina curata dell'oracolo e il documento grezzo con la sequenza di Re Wen da cui nasce engine/iching.db.json"
+    },
+    {
+      "wiki": "wiki/data-science/quartili-outlier.md",
+      "fonti": ["raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/data-driven-culture.md",
+      "fonti": ["raw/data-science/Data culture.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/intelligenza-artificiale.md",
+      "fonti": ["raw/data-science/AI introduzione.txt", "raw/data-science/Quarta rivoluzione indusriale.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/normalizzazione-decimali.md",
+      "fonti": ["raw/data-science/normalizzare numeri decimali con errori.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/prompt-engineering.md",
+      "fonti": ["raw/data-science/prompt engineering/prompt engineering base.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/data-storytelling.md",
+      "fonti": ["raw/data-science/storytelling.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/mongodb.md",
+      "fonti": [
+        "raw/data-science/MongoDB/installazione.txt",
+        "raw/data-science/MongoDB/utilizzo tramite CMD.txt",
+        "raw/data-science/MongoDB/integrazione con python.txt",
+        "raw/data-science/MongoDB/beanie e python per MongoDB.txt"
+      ]
+    },
+    {
+      "wiki": "wiki/data-science/sql.md",
+      "fonti": ["raw/data-science/Sql/sql appunti.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/algebra-relazionale.md",
+      "fonti": ["raw/data-science/Sql/Teoria algebra relazionale.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/progettazione-database.md",
+      "fonti": ["raw/data-science/Sql/Progettazione DB.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/progetto-social-media.md",
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/progetto-hotel-booking.md",
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/progetto-olist-ecommerce.md",
+      "fonti": ["raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/progetto-insurance.md",
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.txt",
+        "raw/data-science/PROJECT WORK/Insurance Analysis/2 analisi preliminare.txt"
+      ]
+    },
+    {
+      "wiki": "wiki/data-science/python-pandas.md",
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.txt"]
+    },
+    {
+      "wiki": "wiki/data-science/struttura-report-analisi.md",
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/linee guida.txt",
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/APPUNTI PER REPORT.txt"
+      ]
+    },
+    {
+      "wiki": "wiki/data-science/power-bi.md",
+      "fonti": ["raw/data-science/microsoft data analytics.txt"]
+    }
+  ]
+}

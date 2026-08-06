@@ -85,6 +85,13 @@
       "size": 10
     },
     {
+      "id": "eng:LESSONS.md",
+      "label": "LESSONS.md",
+      "layer": "engine",
+      "kind": "dato",
+      "size": 8
+    },
+    {
       "id": "eng:aion-reasoner.md",
       "label": "aion-reasoner.md",
       "layer": "engine",
@@ -196,6 +203,11 @@
     {
       "source": "fase:1",
       "target": "raw:web-design",
+      "kind": "has"
+    },
+    {
+      "source": "fase:3",
+      "target": "eng:LESSONS.md",
       "kind": "has"
     },
     {

@@ -21,8 +21,10 @@ Consulenza decisionale simbolica secondo il componente AION_Oracle.
    trasformazione alla domanda concreta dell'utente. Sii evocativo ma ancorato:
    niente predizioni assolute, offri una lettura strategica (leve, rischi, tempi).
 5. Cita sempre: numero e nome dei due esagrammi, le linee mobili e la regola applicata.
-6. A fine lettura proponi di registrare l'esito con `graphify save-result` quando
-   l'utente sapra se la lettura e stata utile.
+6. **Registra sempre la lettura** (ultimo passo, tiene vivo il brain):
+   `python tools/lesson_log.py --skill oracle --domanda "<la domanda posta>"
+   --esito utile --nodi "<esagrammi citati>" --nota "<la lettura in una frase>"`.
+   Se l'utente tornera a dire com'e andata, registra una seconda voce con l'esito reale.
 
 ## Vincoli
 - Il lancio e SOLO via tools/oracle_cast.py (lookup Re Wen corretto): mai inventare

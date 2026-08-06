@@ -47,10 +47,13 @@ for b in bridges:
         continue
     if (ia, ib) in existing or (ib, ia) in existing:
         continue
+    # source_file: ogni arco deve dichiarare la propria origine (invariante di
+    # graph_health). Per i ponti l'origine e il registro che li dichiara.
     g["links"].append({
         "source": ia, "target": ib, "relation": "bridge",
         "concetto": b.get("concetto", ""), "confidence": "CURATED",
         "confidence_score": 1.0, "weight": 1.0,
+        "source_file": "engine/bridges.json",
     })
     existing.add((ia, ib))
     added += 1

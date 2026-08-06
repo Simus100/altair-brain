@@ -28,6 +28,17 @@ Una risposta nel preset SFO piu adatto (EXEC_SUMMARY / TABLE / JSON / STEP / COD
 passata per il filtro di chiarezza, con in testa una riga:
 `Modalita: [...] · Agenti: [...]`.
 
-## Apprendimento
-Se la risposta e significativa, proponi di registrarla con
-`graphify save-result` (outcome useful|dead_end|corrected) per il miglioramento nel tempo.
+## Apprendimento (obbligatorio, ultimo passo)
+Chiudi SEMPRE registrando la lezione — e il passo che tiene vivo il brain:
+
+```
+python tools/lesson_log.py --skill aion --domanda "<cosa si chiedeva>" \
+  --esito utile|vicolo-cieco|corretto|aperto \
+  --nodi "<nodi/pagine che sono serviti, CSV>" \
+  --nota "<cosa ricordare la prossima volta>" --tag "<parole chiave>"
+```
+
+Un solo comando, nessuna API. Il digest (`tools/lessons_digest.py`, incluso in
+`rebuild_all.py`) trasforma le registrazioni in `engine/LESSONS.md`, che il passo 0
+del reasoner rilegge alla sessione successiva: cio che si e rivelato utile piu volte
+diventa un ancoraggio, cio che non ha portato a nulla resta segnato come vicolo cieco.
