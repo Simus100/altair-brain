@@ -103,8 +103,20 @@ jobs:
       - name: Relazioni wiki (nessun wikilink rotto)
         run: python tools/check_wikilinks.py
 
-      - name: Salute del grafo (coesione + anti-regressione)
+      - name: Salute del grafo (coesione + anti-regressione + tracciabilita archi)
         run: python tools/graph_health.py
+
+      # Osservabilita: non bloccano, ma lasciano traccia nel log di ogni push.
+      - name: Freschezza e validita della conoscenza (informativo)
+        continue-on-error: true
+        run: python tools/freshness_report.py
+
+      - name: Metriche del brain coerenti col grafo
+        run: |
+          python tools/graph_metrics.py
+          if ! git diff --quiet -- metrics/; then
+            echo "::warning::metrics/graph_metrics.csv non era aggiornato (rigenerato ora)"
+          fi
 
       - name: Test API (sicurezza, oracle, inbox, degradazione)
         run: python -m pytest tests/ -q

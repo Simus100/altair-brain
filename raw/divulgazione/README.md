@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: divulgazione
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Divulgazione
 
 Macroarea del second brain. Materiale grezzo su **divulgazione**: comunicazione, scrittura,

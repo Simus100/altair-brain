@@ -1,3 +1,10 @@
+---
+date: 2026-07-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Metodi e concetti (data science)
 
 Il 'come' dell'analista: metodi trasferibili (applicabili a qualsiasi dataset) e concetti.

@@ -1,3 +1,10 @@
+---
+date: 2026-07-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Visualizzazione efficace dei dati
 
 Scelta del grafico giusto per il messaggio (anello per quote, colonne in pila 100% per confronti di composizione, colonne per confronti tra categorie). Base tecnica dello [[data-storytelling]] e della [[struttura-report-analisi]].

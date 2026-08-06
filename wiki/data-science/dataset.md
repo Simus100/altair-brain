@@ -1,3 +1,10 @@
+---
+date: 2026-07-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Dataset e file di dati (fuori dal repo)
 
 I file di dati pesanti dei progetti (Excel, Power BI, CSV, ZIP, immagini, PDF) NON sono nel brain: sono stati spostati fuori dal repo, sul disco locale, in `../altair-brain-data/data-science/` (cartella sorella di altair-brain). Il brain contiene la CONOSCENZA e la METODOLOGIA, non i dati. Struttura conservata:

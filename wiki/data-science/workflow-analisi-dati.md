@@ -1,3 +1,10 @@
+---
+date: 2026-07-08
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Workflow di analisi dati (end-to-end)
 
 Il metodo ripetibile per analizzare QUALSIASI dataset, ricavato dai project work reali. Sette fasi:

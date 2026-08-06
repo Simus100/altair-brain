@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: aion
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 - AION ORACLE - Componente I Ching
 
    Ruolo: Consulenza decisionale, adattamento strategico, generazione di scenari.

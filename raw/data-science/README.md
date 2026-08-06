@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Data science
 
 Macroarea del second brain. Materiale grezzo su **data science**: machine learning, statistica,

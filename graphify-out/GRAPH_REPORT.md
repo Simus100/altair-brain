@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-06)
 
 ## Corpus Check
-- 162 files · ~133,635 words
+- 165 files · ~136,266 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1120 nodes · 1431 edges · 130 communities (119 shown, 11 thin omitted)
+- 1144 nodes · 1456 edges · 132 communities (121 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `92f9501f`
+- Built from commit: `81ca8abe`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -132,18 +132,19 @@
 - [[_COMMUNITY_Community 127|Community 127]]
 - [[_COMMUNITY_Community 128|Community 128]]
 - [[_COMMUNITY_Community 129|Community 129]]
+- [[_COMMUNITY_Community 130|Community 130]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `BrainError` - 14 edges
-2. `_err()` - 13 edges
-3. `attribute_reading()` - 12 edges
-4. `cast_reading()` - 11 edges
-5. `ROADMAP — guida alle prossime implementazioni` - 11 edges
-6. `Altair Brain` - 10 edges
-7. `Pipeline (9 passi)` - 10 edges
-8. `server/ — esposizione del second brain via FastAPI` - 9 edges
-9. `$ref` - 8 edges
-10. `_safe()` - 8 edges
+1. `bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>` - 72 edges
+2. `BrainError` - 14 edges
+3. `_err()` - 13 edges
+4. `attribute_reading()` - 12 edges
+5. `cast_reading()` - 11 edges
+6. `ROADMAP — guida alle prossime implementazioni` - 11 edges
+7. `Altair Brain` - 10 edges
+8. `Pipeline (9 passi)` - 10 edges
+9. `server/ — esposizione del second brain via FastAPI` - 9 edges
+10. `$ref` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
@@ -160,7 +161,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (130 total, 11 thin omitted)
+## Communities (132 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -214,6 +215,10 @@ Nodes (14): minItems, type, minItems, type, type, properties, componenti, livell
 Cohesion: 0.13
 Nodes (14): 1. Aggiungere conoscenza (dal PC), 2. Catturare un'idea dal telefono (o ovunque), 3. Interrogare il brain, 4. Consultare l'oracolo (I Ching), 5. Far imparare il brain, 6. Vedere il grafo, Collegare altre AI al brain, Cos'è, in un minuto (+6 more)
 
+### Community 13 - "Community 13"
+Cohesion: 0.39
+Nodes (5): Ciclo computazionale semplificato – AION_NeurosSpike, AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
+
 ### Community 14 - "Community 14"
 Cohesion: 0.15
 Nodes (12): Completato (storico, per orientamento), Contesto in 10 righe, DOPO che le macroaree saranno popolate (non prima), ✅ IMPLEMENTAZIONE 1 — Cattura da ovunque — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 2 — Server MCP — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 3 — Oracle eseguibile — COMPLETATA (vedi Completato), ✅ IMPLEMENTAZIONE 4 — Guardie di qualita — COMPLETATA (vedi Completato), ✅ INFRASTRUTTURA 2.0 — COMPLETATA 2026-07-01 (vedi Completato; le spec restano come riferimento) (+4 more)
@@ -240,7 +245,7 @@ Nodes (9): Componenti, Custom GPT (ChatGPT Actions), Deploy, Dipendenza: graphif
 
 ### Community 21 - "Community 21"
 Cohesion: 0.25
-Nodes (6): AGENTS.md — regole di altair-brain per gli agenti, Aggiungere una nuova macroarea, Front-matter standard (consigliato per ogni nota), Macroaree attive, raw/ — materiale grezzo per macroarea, Regole
+Nodes (6): AGENTS.md — regole di altair-brain per gli agenti, Aggiungere una nuova macroarea, Front-matter standard (convenzione del brain), Macroaree attive, raw/ — materiale grezzo per macroarea, Regole
 
 ### Community 22 - "Community 22"
 Cohesion: 0.25
@@ -311,8 +316,8 @@ Cohesion: 0.25
 Nodes (8): 25. 無妄 L'Innocenza (Wú Wàng) ䷘, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 39 - "Community 39"
-Cohesion: 0.12
-Nodes (30): _mini_repo(), Path, 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., Copia minima del layout repo: tools/report_update.py + report finto., _run_update() (+22 more)
+Cohesion: 0.09
+Nodes (38): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile. (+30 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.25
@@ -535,8 +540,8 @@ Cohesion: 0.50
 Nodes (3): Procedura, Skill: triage dell'inbox, Vincoli
 
 ### Community 95 - "Community 95"
-Cohesion: 0.50
-Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
+Cohesion: 0.39
+Nodes (6): area_di(), costruisci(), data_primo_commit(), Data del primo commit che introduce il file: deterministica e verificabile., Front-matter minimo e onesto: solo cio che si puo dedurre con certezza., rel()
 
 ### Community 96 - "Community 96"
 Cohesion: 0.50
@@ -580,7 +585,7 @@ Nodes (8): 5. 需 L'Attesa (Xū) ䷄, Giudizio, Immagine, Interpretazione Modern
 
 ### Community 125 - "Community 125"
 Cohesion: 0.29
-Nodes (6): SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
+Nodes (7): bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
 
 ### Community 126 - "Community 126"
 Cohesion: 0.40
@@ -594,14 +599,14 @@ Nodes (4): Lezioni apprese — memoria operativa del brain, Lezioni recenti, Sin
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `51. 震 Il Tuono (Zhèn) ䷲` connect `Community 67` to `Community 125`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `10. 履 Il Procedere (Lǚ) ䷉` connect `Community 22` to `Community 125`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `46. 升 L'Ascendere (Shēng) ䷭` connect `Community 61` to `Community 125`?**
+- **Why does `bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>` connect `Community 125` to `Community 13`, `Community 22`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 44`, `Community 45`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`, `Community 75`, `Community 76`, `Community 77`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 82`, `Community 84`, `Community 85`, `Community 91`, `Community 121`, `Community 123`, `Community 124`?**
+  _High betweenness centrality (0.226) - this node is a cross-community bridge._
+- **Why does `48. 井 Il Pozzo (Jǐng) ䷯` connect `Community 63` to `Community 125`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `7. 師 L'Esercito (Shī) ䷆` connect `Community 76` to `Community 125`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _719 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _726 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

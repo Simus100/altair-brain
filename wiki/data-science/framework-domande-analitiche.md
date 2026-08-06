@@ -1,3 +1,10 @@
+---
+date: 2026-07-08
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Framework delle domande analitiche
 
 Come passare dai dati alle domande giuste (astratto dai project work). Sequenza tipica, ogni domanda con una variabile, un confronto e una narrativa interpretativa:

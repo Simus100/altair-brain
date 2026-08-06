@@ -1,3 +1,10 @@
+---
+date: 2026-07-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Progetto: Analisi dati social media
 
 Analisi dell'impatto dei social (uso quotidiano, sonno) in [[excel]], report su Looker Studio.

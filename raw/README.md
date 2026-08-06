@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: generale
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # raw/ — materiale grezzo per macroarea
 
 Questa cartella contiene il materiale grezzo del second brain, **diviso per macroarea**. Ogni
@@ -16,18 +23,40 @@ L'elenco canonico vive in [`../areas.json`](../areas.json). Allo stato attuale:
 | `divulgazione/` | Divulgazione | Comunicazione, scrittura, contenuti |
 | `web-design/` | Web design | UI/UX, front-end, design system |
 
-## Front-matter standard (consigliato per ogni nota)
+## Front-matter standard (convenzione del brain)
 
 ```yaml
 ---
-date: 2026-07-01T12:00:00
-source: dove l'hai presa (libro, url, tua riflessione)
+date: 2026-07-01           # quando la nota entra nel brain
+area: data-science         # macroarea (coincide con la cartella)
+source: libro/url/riflessione propria
 tags: [parola-chiave, altra]
+reviewed: 2026-07-19       # ultima verifica umana -> guida il freshness SLA
 ---
 ```
 
-Prepara provenienza e futura ricerca semantica. Le note catturate via `/capture` lo
-hanno gia. La cartella `_inbox/` e la cassetta di cattura: smistala con la skill `/triage`.
+Campi **opzionali** per i fatti che invecchiano (bi-temporalita, modello Zep):
+
+```yaml
+confidence: alta | media | bassa
+valid_from: 2026-06-17     # da quando il fatto e vero nel mondo
+valid_until: 2026-07-08    # quando ha smesso di esserlo
+superseded_by: raw/area/nota-che-lo-rimpiazza.md
+```
+
+**Regola d'oro della bi-temporalita:** un fatto che smette di essere vero **non si
+cancella**, si marca con `valid_until` e si indica cosa lo sostituisce. La storia
+resta consultabile, la verita corrente e sempre identificabile. Vale anche per
+l'inbox (si archivia, non si elimina) e per i report living (le timeline).
+
+**Strumenti:**
+- `python tools/add_frontmatter.py --apply` aggiunge i campi mancanti (idempotente,
+  non sovrascrive nulla, e si rifiuta di toccare gli strati GENERATI come `wiki/aion/`);
+- `python tools/freshness_report.py` elenca cosa e scaduto e cosa va ri-verificato.
+
+**Freschezza (SLA di default):** attualita 30 giorni · metodo 365 giorni · principi
+nessuna scadenza · resto 180 giorni. Le note catturate via `/capture` hanno gia il
+front-matter. La cartella `_inbox/` e la cassetta di cattura: smistala con `/triage`.
 
 ## Regole
 

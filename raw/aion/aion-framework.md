@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: aion
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 - AION - FRAMEWORK MODULARE 
 - Versione: 5 
 - Data di aggiornamento: 10 Agosto 2025

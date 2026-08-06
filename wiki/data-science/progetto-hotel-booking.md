@@ -1,3 +1,10 @@
+---
+date: 2026-07-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Progetto: Analisi prenotazioni hotel
 
 Analisi di un dataset di prenotazioni alberghiere in [[excel]] con prototipo in [[python-pandas]].

@@ -10,7 +10,8 @@ Esegue in ordine l'intera pipeline del brain:
   5. sottografi per area     (tools/build_area_graphs.py)
   6. vista compatta          (tools/altair_compact_view.py)
   7. lezioni consolidate     (tools/lessons_digest.py)
-  8. salute del grafo        (tools/graph_health.py)
+  8. metriche nel tempo      (tools/graph_metrics.py)
+  9. salute del grafo        (tools/graph_health.py)
 
 Uso:  python tools/rebuild_all.py        (poi: git add -A && commit && push)
 Exit 0 = tutto ok; 1 = un passo e fallito (i successivi non vengono eseguiti).
@@ -30,6 +31,7 @@ STEPS = [
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
     ("lezioni consolidate", [PY, "tools/lessons_digest.py"]),
+    ("metriche del brain", [PY, "tools/graph_metrics.py"]),
     ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
     ("salute del grafo", [PY, "tools/graph_health.py"]),
 ]

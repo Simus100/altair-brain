@@ -1,3 +1,10 @@
+---
+date: 2026-07-08
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Controlli di qualita dei dati (data quality)
 
 Batteria di controlli applicata PRIMA di ogni analisi (da Insurance, Social Media, Hotel). Si documenta in fogli dedicati (data_cleaning, data_logic) e si chiude con una validazione.

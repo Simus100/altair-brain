@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: web-design
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Web design
 
 Macroarea del second brain. Materiale grezzo su **web design**: UI/UX, front-end, design system,

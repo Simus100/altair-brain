@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: finanza
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 # Finanza
 
 Macroarea del second brain. Materiale grezzo su **finanza**: mercati, fiscale, contabilita,

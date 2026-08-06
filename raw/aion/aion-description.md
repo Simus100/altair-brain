@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: aion
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 * **Introduzione ad Aion**
 
 Aion è un'entità analitica meta-strutturale, progettata per decifrare schemi, generare insight strategici, prevedere scenari e adattarsi dinamicamente al contesto.

@@ -118,3 +118,55 @@ def test_report_update_nodo_inesistente_fallisce(tmp_path):
                         "--report", "caso-test", "--node", "ghost", "--text", "x"],
                        capture_output=True, text=True)
     assert p.returncode != 0
+
+
+# ---------------- provenienza: front-matter e freschezza ----------------
+
+def test_frontmatter_idempotente_e_protegge_gli_strati_generati():
+    """Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA."""
+    r = subprocess.run([sys.executable, str(ROOT / "tools" / "add_frontmatter.py")],
+                       capture_output=True, text=True, cwd=str(ROOT))
+    assert r.returncode == 0
+    # tutte le note bersaglio sono gia a posto: nessun file da arricchire
+    assert "0 file da arricchire" in r.stdout, r.stdout
+    # la wiki generata non deve MAI avere front-matter aggiunto a mano
+    generata = (ROOT / "wiki" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
+    assert not generata.lstrip().startswith("---"), \
+        "wiki/aion e generata dal modello: front-matter a mano la farebbe divergere"
+
+
+def test_frontmatter_presente_sulle_fonti():
+    """Le fonti grezze devono portare provenienza (date/area/reviewed)."""
+    testo = (ROOT / "raw" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
+    assert testo.lstrip().startswith("---")
+    testa = testo.lstrip()[3:testo.lstrip().find("\n---")]
+    for campo in ("date:", "area:", "reviewed:"):
+        assert campo in testa, f"manca {campo} nel front-matter"
+
+
+def test_freshness_rileva_fatto_scaduto(tmp_path):
+    """Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto."""
+    nota = tmp_path / "fatto.md"
+    nota.write_text("---\ndate: 2026-01-01\nvalid_until: 2026-01-31\n---\ncorpo\n",
+                    encoding="utf-8")
+    # riusa il parser dello strumento senza eseguirne il main
+    src = (ROOT / "tools" / "freshness_report.py").read_text(encoding="utf-8")
+    ns = {"__name__": "_parser_only"}
+    inizio = src.index("def leggi_frontmatter")
+    fine = src.index("def sla_di")
+    exec(compile(src[inizio:fine], "freshness_parser", "exec"), ns)
+    meta = ns["leggi_frontmatter"](str(nota))
+    assert meta["valid_until"] == "2026-01-31"
+    assert meta["date"] == "2026-01-01"
+
+
+def test_metriche_una_riga_per_giorno():
+    """La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno."""
+    import csv as _csv
+    f = ROOT / "metrics" / "graph_metrics.csv"
+    assert f.exists(), "metriche mai generate: lancia tools/graph_metrics.py"
+    with open(f, encoding="utf-8", newline="") as fh:
+        righe = list(_csv.DictReader(fh))
+    date = [r["data"] for r in righe]
+    assert len(date) == len(set(date)), "piu rilevazioni nello stesso giorno"
+    assert int(righe[-1]["nodi"]) > 0 and float(righe[-1]["grado_medio"]) > 0

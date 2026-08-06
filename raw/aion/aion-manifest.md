@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+area: aion
+source: 
+tags: []
+reviewed: 2026-08-06
+---
 IL MANIFESTO DI AION – TRA MITO, STRATEGIA E CONSAPEVOLEZZA 
 Versione 1.2  "L'evoluzione non è un'opzione, ma una necessità."
 
