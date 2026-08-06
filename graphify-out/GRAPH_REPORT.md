@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-06)
 
 ## Corpus Check
-- 170 files · ~168,712 words
+- 171 files · ~170,015 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1187 nodes · 1515 edges · 134 communities (123 shown, 11 thin omitted)
+- 1193 nodes · 1520 edges · 135 communities (124 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d6d4e3c0`
+- Built from commit: `3c100180`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -142,9 +142,9 @@
 5. `attribute_reading()` - 12 edges
 6. `cast_reading()` - 11 edges
 7. `ROADMAP — guida alle prossime implementazioni` - 11 edges
-8. `Altair Brain` - 10 edges
-9. `Pipeline (9 passi)` - 10 edges
-10. `_safe()` - 9 edges
+8. `GUIDA — come usare il tuo second brain (per umani, zero tecnicismi)` - 10 edges
+9. `Altair Brain` - 10 edges
+10. `Pipeline (9 passi)` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `search()` --calls--> `cerca()`  [EXTRACTED]
@@ -161,7 +161,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (134 total, 11 thin omitted)
+## Communities (135 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -180,8 +180,8 @@ Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.13
-Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
+Cohesion: 0.11
+Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.14
@@ -205,11 +205,11 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.13
-Nodes (14): 1. Aggiungere conoscenza (dal PC), 2. Catturare un'idea dal telefono (o ovunque), 3. Interrogare il brain, 4. Consultare l'oracolo (I Ching), 5. Far imparare il brain, 6. Vedere il grafo, Collegare altre AI al brain, Cos'è, in un minuto (+6 more)
+Cohesion: 0.12
+Nodes (16): 1. Aggiungere conoscenza (dal PC), 2. Catturare un'idea dal telefono (o ovunque), 3. Interrogare il brain — due modi diversi, usali entrambi, 4. Consultare l'oracolo (I Ching), 5. Far imparare il brain, 6. Vedere il grafo e la salute del brain, Catturare una fonte dal web, Collegare altre AI al brain (+8 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.39
@@ -224,8 +224,8 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.16
-Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
+Cohesion: 0.21
+Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
 ### Community 18 - "Community 18"
 Cohesion: 0.12
@@ -524,8 +524,8 @@ Cohesion: 0.40
 Nodes (5): Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 3:  ## Utilizzo Narrativo dell'I Ching:, Spunti di Trama:, Tensioni e Svolte:
 
 ### Community 92 - "Community 92"
-Cohesion: 0.50
-Nodes (3): graphify, Roadmap, Viste del grafo (processo standard)
+Cohesion: 0.29
+Nodes (6): Due motori di ricerca (usa quello giusto), graphify, Memoria operativa, Provenienza (non negoziabile sui report), Roadmap, Viste del grafo (processo standard)
 
 ### Community 93 - "Community 93"
 Cohesion: 0.50
@@ -592,7 +592,7 @@ Cohesion: 0.25
 Nodes (7): normalizza(), Minuscolo senza accenti: 'analisi' e 'Analisí' devono coincidere., Il front-matter e metadato, non contenuto: non deve inquinare il ranking., Frammenti per titolo markdown; per i .txt, blocchi separati da righe vuote., spezza(), togli_frontmatter(), tokenizza()
 
 ## Knowledge Gaps
-- **693 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+688 more)
+- **698 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+693 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -600,13 +600,13 @@ Nodes (7): normalizza(), Minuscolo senza accenti: 'analisi' e 'Analisí' devono 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>` connect `Community 125` to `Community 13`, `Community 22`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 44`, `Community 45`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`, `Community 75`, `Community 76`, `Community 77`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 82`, `Community 84`, `Community 85`, `Community 91`, `Community 121`, `Community 123`, `Community 124`?**
-  _High betweenness centrality (0.220) - this node is a cross-community bridge._
-- **Why does `13. 同人 La Comunità (Tóng Rén) ䷌` connect `Community 25` to `Community 125`?**
+  _High betweenness centrality (0.219) - this node is a cross-community bridge._
+- **Why does `12. 否 Il Ristagno (Pǐ) ䷋` connect `Community 24` to `Community 125`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `14. 大有 Il Possesso Grande (Dà Yǒu) ䷍` connect `Community 26` to `Community 125`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 32` to `Community 125`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _739 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _744 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

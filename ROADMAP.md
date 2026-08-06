@@ -282,6 +282,35 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
 
 ## Completato (storico, per orientamento)
 
+- **Upgrade P1-P10 2026-08-06** (da revisione architetturale + letteratura scientifica:
+  A-MEM arXiv 2502.12110, Zep arXiv 2501.13956, hybrid search RRF, freshness SLA):
+  - **P1 memoria operativa**: `tools/lesson_log.py` (JSONL append-only) +
+    `lessons_digest.py` -> `engine/LESSONS.md` (ancoraggi consolidati vs tentativi vs
+    vicoli ciechi). Le 3 skill registrano da sole. Il loop era MORTO: 1 sessione in 20gg.
+  - **P3 tracciabilita**: invariante `source_file` su ogni arco in `graph_health.py`.
+  - **P9 golden set**: `tests/golden_queries.json` + `test_golden.py` (10 domande, i
+    file attesi devono esistere ED essere connessi entro 4 salti; legge graph.json,
+    nessuna dipendenza da graphify in CI).
+  - **P8 provenienza**: `engine/provenance.json` + `apply_provenance.py`. Ha risolto un
+    difetto STRUTTURALE trovato dal golden set: raw/ e wiki/ erano due isole (0 archi).
+    `check_provenance.py` verifica che le affermazioni con dati abbiano la fonte.
+  - **P2/P5 front-matter e bi-temporalita**: `add_frontmatter.py` (idempotente, si
+    RIFIUTA di toccare gli strati generati), `freshness_report.py` (SLA per famiglia),
+    convenzione `valid_until`/`superseded_by` in `raw/README.md`.
+  - **P6 metriche**: `graph_metrics.py` -> `metrics/graph_metrics.csv`, una riga/giorno.
+  - **P4 ricerca ibrida**: `build_search_index.py` (BM25 puro Python, indice committato,
+    1197 frammenti da 133 file) + `search.py` (fusione RRF) + `/v1/search` + MCP
+    `brain_search`. Semantico opzionale via `build_dense_index.py`.
+  - **P7 proposte di link**: `link_suggest.py` — propone, non scrive mai.
+  - **P10**: workflow `graphify add` documentato in GUIDA.md (con cautela repo pubblico).
+  - 44 test verdi, pipeline a 12 passi, CI a 18 step.
+
+  **LIMITE NOTO EMERSO**: graphify indicizza **solo .md**. Le 23 note `.txt` di
+  `raw/data-science/` (430KB: i project work, la metodologia reale) NON sono nodi del
+  grafo — contribuiscono 4 nodi su 1187. Mitigato: l'indice di ricerca le copre
+  (516 frammenti). **Decisione aperta per l'utente**: convertire `.txt` -> `.md`
+  (rinomina, contenuto identico) le renderebbe anche navigabili nel grafo.
+
 - **Hardening 2026-07-19** (da revisione architetturale + best practice web):
   branch `backup` = ultimo main validato (job CI dedicato, force-update post-validate);
   guardia CI su `.claude/`/`.agents/` (codice eseguibile: commit col marcatore

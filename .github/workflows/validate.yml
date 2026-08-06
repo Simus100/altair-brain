@@ -119,6 +119,9 @@ jobs:
         continue-on-error: true
         run: python tools/freshness_report.py
 
+      - name: Provenienza delle affermazioni (report bloccanti)
+        run: python tools/check_provenance.py --strict
+
       - name: Metriche del brain coerenti col grafo
         run: |
           python tools/graph_metrics.py

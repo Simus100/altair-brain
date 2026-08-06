@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **3** · sessioni graphify: **1**
-- esiti: 1 utili · 0 vicoli ciechi · 2 correzioni · 0 aperte
-- skill piu attive: report (1), oracle (1), manuale (1)
-- temi ricorrenti: report (2), living (1), editoriale (1), oracolo (1), attribuzione (1), verifica (1), browser (1), metodo (1)
+- lezioni registrate: **6** · sessioni graphify: **1**
+- esiti: 2 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
+- skill piu attive: manuale (4), report (1), oracle (1)
+- temi ricorrenti: report (2), metodo (2), living (1), editoriale (1), oracolo (1), attribuzione (1), verifica (1), browser (1)
 
 ## Tentativi (da confermare)
 
@@ -18,9 +18,18 @@ _Visti una volta sola: verifica prima di farci affidamento._
 
 - `6` — 1× utile
 - `59` — 1× utile
+- `test_golden.py` — 1× utile
+- `apply_provenance.py` — 1× utile
+- `graph_metrics.py` — 1× utile
 
 ## Lezioni recenti
 
+- **2026-08-06** _((manuale, utile))_ — il golden set ha trovato in 1 minuto un difetto strutturale invisibile da mesi (raw e wiki con 0 archi tra loro): una misura scritta prima delle feature vale piu di dieci feature
+  - contesto: come accorgersi che due strati del brain sono scollegati
+- **2026-08-06** _((manuale, corretto))_ — graphify indicizza SOLO .md: 430KB di note .txt in raw/data-science erano invisibili al brain (4 nodi su 1187). Verificare sempre COSA entra nel grafo, non dare per scontato che tutto il corpus ci sia
+  - contesto: quale formato indicizza graphify
+- **2026-08-06** _((manuale, corretto))_ — una riga che inizia con '#' dentro il front-matter viene letta come titolo markdown e diventa un nodo spurio: testare su UN file e misurare il delta del grafo prima di propagare a 50
+  - contesto: aggiungere metadati alle note senza rompere il grafo
 - **2026-08-06** _((oracle, utile))_ — l'attribuzione decisionale (--attribuisci) e piu difendibile del lancio casuale in un prodotto editoriale: il seme non spiega nulla al lettore, la motivazione si
   - contesto: quale esagramma per uno stato di conflitto senza vincitore possibile
 - **2026-08-06** _((manuale, corretto))_ — grep sul sorgente non prova che il browser mostri il contenuto: servono server locale + lettura del DOM renderizzato (file:// e bloccato nel sandbox)

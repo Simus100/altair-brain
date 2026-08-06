@@ -43,12 +43,27 @@ Authorization: Bearer IL-TUO-TOKEN
 La nota finisce nell'inbox della VPS. Al prossimo "smista l'inbox" dal PC, l'agente la
 recupera, la classifica nell'area giusta e la archivia.
 
-### 3. Interrogare il brain
-- **Dall'agente:** chiedi e basta ("cosa sa il brain su X?") — usa il grafo da solo.
-  Per un ragionamento profondo in stile AION: `/aion <domanda>`.
-- **Da terminale:** `graphify query "domanda"` (aggiungi `--graph graphify-out/areas/aion/graph.json` per una sola area).
-- **Da altri dispositivi:** `GET /v1/query?q=...` con il token (il **router** sceglie
-  da solo l'area giusta; l'area usata è nell'header `X-Altair-Area`).
+### 3. Interrogare il brain — due modi diversi, usali entrambi
+
+Il brain ha **due motori complementari**. Sapere quale usare fa la differenza:
+
+| Cerchi… | Usa | Perché |
+|---|---|---|
+| un **nome preciso** o come sono collegate le cose | `graphify query "..."` | naviga la **struttura**: nodi e relazioni |
+| un **concetto**, con parole tue | `python tools/search.py "..."` | cerca nel **testo**, anche nelle note `.txt` che il grafo non vede |
+
+- **Dall'agente:** chiedi e basta ("cosa sa il brain su X?"). Per un ragionamento
+  profondo in stile AION: `/aion <domanda>`.
+- **Da terminale:**
+  - struttura → `graphify query "domanda"` (`--graph graphify-out/areas/aion/graph.json` per una sola area)
+  - contenuto → `python tools/search.py "domanda" --area data-science --top 5`
+- **Da altri dispositivi:** `GET /v1/query?q=...` (grafo, con router automatico) e
+  `GET /v1/search?q=...` (contenuto). Entrambi col token.
+
+> La ricerca funziona subito in modalità **lessicale** (BM25, nessuna dipendenza).
+> Vuoi anche quella **semantica** (trova per significato, con parole diverse)?
+> `pip install sentence-transformers` e poi `python tools/build_dense_index.py`:
+> da quel momento i due motori si fondono da soli. Sono ~2 GB: è una tua scelta.
 
 ### 4. Consultare l'oracolo (I Ching)
 Dall'agente: `/oracle <la tua domanda strategica>` — lancio reale (matematica corretta
@@ -56,15 +71,53 @@ di Re Wen), linee mobili, esagramma di trasformazione, lettura in stile AION.
 Da API: `POST /v1/oracle` con `{"question": "..."}`.
 
 ### 5. Far imparare il brain
-Quando una risposta è stata utile (o sbagliata), dillo all'agente:
-> registra questo esito come utile / vicolo cieco / corretto
+Le skill (`/aion`, `/oracle`, `/triage`) **registrano da sole** la lezione a fine
+esecuzione. Puoi farlo anche a mano:
 
-Si accumula in `LESSONS.md` e il protocollo AION lo consulta a ogni ragionamento (passo 0).
+```bash
+python tools/lesson_log.py --skill manuale --domanda "cosa cercavo" --esito utile --nota "cosa ricordare"
+```
 
-### 6. Vedere il grafo
+Gli esiti sono `utile`, `vicolo-cieco`, `corretto`, `aperto`. Tutto confluisce in
+`engine/LESSONS.md`: ciò che si è rivelato utile **più di una volta** diventa un
+*ancoraggio consolidato*, ciò che non ha portato a nulla resta segnato come vicolo
+cieco. Il protocollo AION lo rilegge a ogni ragionamento (passo 0).
+
+### 6. Vedere il grafo e la salute del brain
 - `graphify-out/graph.html` = vista estesa (tutti i nodi)
 - `graphify-out/graph-compact.html` = vista compatta (il sistema come processo a 5 fasi)
 - Da remoto: `GET /v1/views/compact` con il token.
+- `metrics/graph_metrics.csv` = **come sta cambiando il brain nel tempo**: se il
+  `grado_medio` scende mentre i nodi salgono, stai accumulando note scollegate.
+
+---
+
+## Manutenzione (ogni tanto, non tutti i giorni)
+
+| Comando | Cosa ti dice | Quando |
+|---|---|---|
+| `python tools/freshness_report.py` | cosa è scaduto e cosa non verifichi da troppo | ogni mese |
+| `python tools/check_provenance.py` | affermazioni con numeri e senza fonte | prima di pubblicare un report |
+| `python tools/link_suggest.py` | collegamenti mancanti tra pagine affini | dopo aver aggiunto note |
+| `python tools/add_frontmatter.py` | note senza provenienza (anteprima; `--apply` per scrivere) | dopo un import |
+
+Nessuno di questi modifica le note da solo: **propongono**, decidi tu. `link_suggest`
+in particolare non scrive mai — un collegamento sbagliato messo in automatico
+sporcherebbe il corpus in silenzio.
+
+## Catturare una fonte dal web
+
+```bash
+graphify add https://esempio.it/articolo --author "Autore" --contributor "io"
+```
+
+Scarica la pagina in `raw/`, la attribuisce e aggiorna il grafo: la fonte diventa un
+nodo invece di un link destinato a morire. Poi aggiungi la provenienza con
+`python tools/add_frontmatter.py --apply` e rigenera con `rebuild_all`.
+
+> ⚠️ Il repo è **pubblico**: quello che scarichi diventa pubblico anche lui. Usa questo
+> comando solo per contenuti che puoi ridistribuire, e controlla sempre cosa è entrato
+> prima di fare push.
 
 ---
 

@@ -25,9 +25,32 @@ Il sistema produce DUE viste affiancate del grafo:
   ritorno. Collassa il rumore (es. i 64 esagrammi in un nodo). Deterministica, no API.
 
 Workflow dopo ogni modifica: **`python tools/rebuild_all.py`** (un comando: wiki dal
-modello, validazioni, DB oracle, grafo, sottografi per area, viste, salute). Poi commit.
+modello, validazioni, DB oracle, grafo, ponti, provenienza, sottografi, viste, indice
+di ricerca, lezioni, metriche, salute). Poi commit.
 Regole: la wiki e GENERATA da `engine/aion.model.json` (mai editarla a mano); il DB
-oracle e GENERATO da `raw/aion/aion-oracle.md`.
+oracle e GENERATO da `raw/aion/aion-oracle.md`; l'indice di ricerca e GENERATO dal corpus.
+
+## Due motori di ricerca (usa quello giusto)
+
+- **Struttura** → `graphify query "..."` : nodi e relazioni. Prima scelta per orientarsi.
+- **Contenuto** → `python tools/search.py "..."` : BM25 sul testo, **inclusi i .txt che
+  graphify non indicizza** (le note di `raw/data-science/` sono visibili solo qui).
+  Endpoint `/v1/search`, tool MCP `brain_search`. Semantico opzionale: vedi
+  `tools/build_dense_index.py`.
+
+## Memoria operativa
+
+Chiudi ogni lavoro significativo registrando la lezione:
+`python tools/lesson_log.py --skill <nome> --domanda "..." --esito utile|vicolo-cieco|corretto|aperto --nota "..."`.
+Confluisce in `engine/LESSONS.md` (passo 0 del reasoner). E il meccanismo che rende il
+brain capace di migliorare: saltarlo lo lascia fermo.
+
+## Provenienza (non negoziabile sui report)
+
+Ogni affermazione con numeri o date porta la sua fonte. `engine/provenance.json` cuce
+la catena fonte->conoscenza nel grafo; `tools/check_provenance.py` verifica i report.
+Front-matter delle note: `date/area/source/tags/reviewed` (+ `valid_until`/`superseded_by`
+per i fatti che invecchiano: si invalidano, **non si cancellano**). Vedi `raw/README.md`.
 
 La CI (`.github/workflows/validate.yml`) ripete questi controlli su ogni push: i
 consumatori (VPS, dispositivi) ricevono solo un brain valido.

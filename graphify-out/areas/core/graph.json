@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "d6d4e3c0c7edc0c87a197816734f8b706377bcf4",
+ "built_at_commit": "3c1001802167e1f77a566a4e10ad544ca63b2cb7",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -86,6 +86,16 @@
    "norm_label": "claude.md"
   },
   {
+   "label": "Due motori di ricerca (usa quello giusto)",
+   "file_type": "document",
+   "source_file": "CLAUDE.md",
+   "source_location": "L33",
+   "_origin": "ast",
+   "id": "claude_due_motori_di_ricerca_usa_quello_giusto",
+   "community": 92,
+   "norm_label": "due motori di ricerca (usa quello giusto)"
+  },
+  {
    "label": "graphify",
    "file_type": "document",
    "source_file": "CLAUDE.md",
@@ -94,6 +104,26 @@
    "id": "claude_graphify",
    "community": 92,
    "norm_label": "graphify"
+  },
+  {
+   "label": "Memoria operativa",
+   "file_type": "document",
+   "source_file": "CLAUDE.md",
+   "source_location": "L41",
+   "_origin": "ast",
+   "id": "claude_memoria_operativa",
+   "community": 92,
+   "norm_label": "memoria operativa"
+  },
+  {
+   "label": "Provenienza (non negoziabile sui report)",
+   "file_type": "document",
+   "source_file": "CLAUDE.md",
+   "source_location": "L48",
+   "_origin": "ast",
+   "id": "claude_provenienza_non_negoziabile_sui_report",
+   "community": 92,
+   "norm_label": "provenienza (non negoziabile sui report)"
   },
   {
    "label": "Roadmap",
@@ -532,7 +562,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 16,
+   "community": 11,
    "norm_label": "minitems"
   },
   {
@@ -542,7 +572,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 16,
+   "community": 11,
    "norm_label": "type"
   },
   {
@@ -792,7 +822,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 16,
+   "community": 4,
    "norm_label": "items"
   },
   {
@@ -802,7 +832,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 11,
+   "community": 4,
    "norm_label": "minitems"
   },
   {
@@ -812,7 +842,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 11,
+   "community": 4,
    "norm_label": "type"
   },
   {
@@ -892,7 +922,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 16,
+   "community": 11,
    "norm_label": "componenti"
   },
   {
@@ -982,7 +1012,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 11,
+   "community": 4,
    "norm_label": "modalita"
   },
   {
@@ -1286,20 +1316,20 @@
    "norm_label": "2. catturare un'idea dal telefono (o ovunque)"
   },
   {
-   "label": "3. Interrogare il brain",
+   "label": "3. Interrogare il brain — due modi diversi, usali entrambi",
    "file_type": "document",
    "source_file": "GUIDA.md",
    "source_location": "L46",
    "_origin": "ast",
-   "id": "guida_3_interrogare_il_brain",
+   "id": "guida_3_interrogare_il_brain_due_modi_diversi_usali_entrambi",
    "community": 12,
-   "norm_label": "3. interrogare il brain"
+   "norm_label": "3. interrogare il brain — due modi diversi, usali entrambi"
   },
   {
    "label": "4. Consultare l'oracolo (I Ching)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L53",
+   "source_location": "L68",
    "_origin": "ast",
    "id": "guida_4_consultare_l_oracolo_i_ching",
    "community": 12,
@@ -1309,27 +1339,37 @@
    "label": "5. Far imparare il brain",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L58",
+   "source_location": "L73",
    "_origin": "ast",
    "id": "guida_5_far_imparare_il_brain",
    "community": 12,
    "norm_label": "5. far imparare il brain"
   },
   {
-   "label": "6. Vedere il grafo",
+   "label": "6. Vedere il grafo e la salute del brain",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L64",
+   "source_location": "L86",
    "_origin": "ast",
-   "id": "guida_6_vedere_il_grafo",
+   "id": "guida_6_vedere_il_grafo_e_la_salute_del_brain",
    "community": 12,
-   "norm_label": "6. vedere il grafo"
+   "norm_label": "6. vedere il grafo e la salute del brain"
+  },
+  {
+   "label": "Catturare una fonte dal web",
+   "file_type": "document",
+   "source_file": "GUIDA.md",
+   "source_location": "L108",
+   "_origin": "ast",
+   "id": "guida_catturare_una_fonte_dal_web",
+   "community": 12,
+   "norm_label": "catturare una fonte dal web"
   },
   {
    "label": "Collegare altre AI al brain",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L71",
+   "source_location": "L124",
    "_origin": "ast",
    "id": "guida_collegare_altre_ai_al_brain",
    "community": 12,
@@ -1349,7 +1389,7 @@
    "label": "Disaster recovery — ricostruire tutto da zero",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L130",
+   "source_location": "L183",
    "_origin": "ast",
    "id": "guida_disaster_recovery_ricostruire_tutto_da_zero",
    "community": 12,
@@ -1369,7 +1409,7 @@
    "label": "La VPS (il brain sempre acceso)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L92",
+   "source_location": "L145",
    "_origin": "ast",
    "id": "guida_la_vps_il_brain_sempre_acceso",
    "community": 12,
@@ -1389,17 +1429,27 @@
    "label": "Le regole d'oro (non dimenticarle)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L116",
+   "source_location": "L169",
    "_origin": "ast",
    "id": "guida_le_regole_d_oro_non_dimenticarle",
    "community": 12,
    "norm_label": "le regole d'oro (non dimenticarle)"
   },
   {
+   "label": "Manutenzione (ogni tanto, non tutti i giorni)",
+   "file_type": "document",
+   "source_file": "GUIDA.md",
+   "source_location": "L95",
+   "_origin": "ast",
+   "id": "guida_manutenzione_ogni_tanto_non_tutti_i_giorni",
+   "community": 12,
+   "norm_label": "manutenzione (ogni tanto, non tutti i giorni)"
+  },
+  {
    "label": "Se qualcosa va storto",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L103",
+   "source_location": "L156",
    "_origin": "ast",
    "id": "guida_se_qualcosa_va_storto",
    "community": 12,
@@ -1909,7 +1959,7 @@
    "label": "Storico precedente",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L329",
+   "source_location": "L358",
    "_origin": "ast",
    "id": "roadmap_storico_precedente",
    "community": 14,
@@ -3868,6 +3918,16 @@
    "norm_label": "tokenizza()"
   },
   {
+   "label": "check_provenance.py",
+   "file_type": "code",
+   "source_file": "tools/check_provenance.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tools_check_provenance",
+   "community": 134,
+   "norm_label": "check_provenance.py"
+  },
+  {
    "label": "check_wikilinks.py",
    "file_type": "code",
    "source_file": "tools/check_wikilinks.py",
@@ -4513,10 +4573,40 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "CLAUDE.md",
+   "source_location": "L33",
+   "weight": 1.0,
+   "source": "claude",
+   "target": "claude_due_motori_di_ricerca_usa_quello_giusto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "CLAUDE.md",
    "source_location": "L7",
    "weight": 1.0,
    "source": "claude",
    "target": "claude_graphify",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "CLAUDE.md",
+   "source_location": "L41",
+   "weight": 1.0,
+   "source": "claude",
+   "target": "claude_memoria_operativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "CLAUDE.md",
+   "source_location": "L48",
+   "weight": 1.0,
+   "source": "claude",
+   "target": "claude_provenienza_non_negoziabile_sui_report",
    "confidence_score": 1.0
   },
   {
@@ -5833,7 +5923,17 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L71",
+   "source_location": "L108",
+   "weight": 1.0,
+   "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
+   "target": "guida_catturare_una_fonte_dal_web",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "GUIDA.md",
+   "source_location": "L124",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_collegare_altre_ai_al_brain",
@@ -5853,7 +5953,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L130",
+   "source_location": "L183",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_disaster_recovery_ricostruire_tutto_da_zero",
@@ -5863,7 +5963,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L92",
+   "source_location": "L145",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_la_vps_il_brain_sempre_acceso",
@@ -5883,7 +5983,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L116",
+   "source_location": "L169",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_le_regole_d_oro_non_dimenticarle",
@@ -5893,7 +5993,17 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L103",
+   "source_location": "L95",
+   "weight": 1.0,
+   "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
+   "target": "guida_manutenzione_ogni_tanto_non_tutti_i_giorni",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "GUIDA.md",
+   "source_location": "L156",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_se_qualcosa_va_storto",
@@ -5926,14 +6036,14 @@
    "source_location": "L46",
    "weight": 1.0,
    "source": "guida_le_6_cose_che_farai_più_spesso",
-   "target": "guida_3_interrogare_il_brain",
+   "target": "guida_3_interrogare_il_brain_due_modi_diversi_usali_entrambi",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L53",
+   "source_location": "L68",
    "weight": 1.0,
    "source": "guida_le_6_cose_che_farai_più_spesso",
    "target": "guida_4_consultare_l_oracolo_i_ching",
@@ -5943,7 +6053,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L58",
+   "source_location": "L73",
    "weight": 1.0,
    "source": "guida_le_6_cose_che_farai_più_spesso",
    "target": "guida_5_far_imparare_il_brain",
@@ -5953,10 +6063,10 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L64",
+   "source_location": "L86",
    "weight": 1.0,
    "source": "guida_le_6_cose_che_farai_più_spesso",
-   "target": "guida_6_vedere_il_grafo",
+   "target": "guida_6_vedere_il_grafo_e_la_salute_del_brain",
    "confidence_score": 1.0
   },
   {
@@ -6313,7 +6423,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L329",
+   "source_location": "L358",
    "weight": 1.0,
    "source": "roadmap_completato_storico_per_orientamento",
    "target": "roadmap_storico_precedente",
