@@ -160,6 +160,50 @@ def test_freshness_rileva_fatto_scaduto(tmp_path):
     assert meta["date"] == "2026-01-01"
 
 
+# ---------------- ricerca ibrida ----------------
+
+def test_ricerca_trova_il_contenuto_giusto():
+    """BM25 deve portare in cima la pagina che tratta davvero l'argomento."""
+    from tools.search import cerca
+    r = cerca("quartili outlier IQR valori anomali", top=5)
+    assert r, "nessun risultato: indice mancante o rotto"
+    assert any("quartili-outlier" in x["file"] for x in r[:3]), \
+        f"risultato atteso non nei primi 3: {[x['file'] for x in r[:3]]}"
+
+
+def test_ricerca_copre_i_txt_invisibili_al_grafo():
+    """Il valore aggiunto dell'indice: graphify indicizza solo .md, questo no."""
+    import json as _json
+    idx = _json.loads((ROOT / "engine" / "search_index.json").read_text(encoding="utf-8"))
+    txt = {d["file"] for d in idx["documenti"] if d["file"].endswith(".txt")}
+    assert len(txt) >= 10, f"le note .txt non sono indicizzate ({len(txt)})"
+
+
+def test_ricerca_filtro_area_e_limite():
+    from tools.search import cerca
+    r = cerca("analisi dei dati", top=3, area="data-science")
+    assert len(r) <= 3
+    assert all(x["area"] == "data-science" for x in r)
+
+
+def test_ricerca_query_senza_risultati_non_esplode():
+    from tools.search import cerca
+    assert cerca("zzzqwertyxyzinesistente", top=5) == []
+
+
+def test_indice_coerente_col_corpus():
+    """L'indice committato deve essere quello che il corpus produce ora."""
+    import json as _json
+    f = ROOT / "engine" / "search_index.json"
+    prima = f.read_text(encoding="utf-8")
+    subprocess.run([sys.executable, str(ROOT / "tools" / "build_search_index.py")],
+                   capture_output=True, text=True, cwd=str(ROOT), check=True)
+    assert f.read_text(encoding="utf-8") == prima, \
+        "indice non aggiornato: rigenera con tools/build_search_index.py"
+    idx = _json.loads(prima)
+    assert idx["n_documenti"] == len(idx["documenti"]) > 100
+
+
 def test_metriche_una_riga_per_giorno():
     """La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno."""
     import csv as _csv

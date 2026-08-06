@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-06)
 
 ## Corpus Check
-- 165 files · ~136,266 words
+- 170 files · ~168,712 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1144 nodes · 1456 edges · 132 communities (121 shown, 11 thin omitted)
+- 1187 nodes · 1515 edges · 134 communities (123 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `81ca8abe`
+- Built from commit: `d6d4e3c0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,6 @@
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
@@ -133,75 +132,72 @@
 - [[_COMMUNITY_Community 128|Community 128]]
 - [[_COMMUNITY_Community 129|Community 129]]
 - [[_COMMUNITY_Community 130|Community 130]]
+- [[_COMMUNITY_Community 132|Community 132]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>` - 72 edges
-2. `BrainError` - 14 edges
-3. `_err()` - 13 edges
-4. `attribute_reading()` - 12 edges
-5. `cast_reading()` - 11 edges
-6. `ROADMAP — guida alle prossime implementazioni` - 11 edges
-7. `Altair Brain` - 10 edges
-8. `Pipeline (9 passi)` - 10 edges
-9. `server/ — esposizione del second brain via FastAPI` - 9 edges
-10. `$ref` - 8 edges
+2. `BrainError` - 15 edges
+3. `_err()` - 14 edges
+4. `cerca()` - 13 edges
+5. `attribute_reading()` - 12 edges
+6. `cast_reading()` - 11 edges
+7. `ROADMAP — guida alle prossime implementazioni` - 11 edges
+8. `Altair Brain` - 10 edges
+9. `Pipeline (9 passi)` - 10 edges
+10. `_safe()` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `search()` --calls--> `cerca()`  [EXTRACTED]
+  server/brain_core.py → tools/search.py
 - `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
   server/brain_core.py → tools/oracle_cast.py
 - `oracle_hexagram()` --calls--> `get_hexagram()`  [EXTRACTED]
   server/brain_core.py → tools/oracle_cast.py
 - `test_attribuzione_senza_mobili_e_range()` --calls--> `attribute_reading()`  [EXTRACTED]
   tests/test_tools.py → tools/oracle_cast.py
-- `test_attribuzione_6_linea4_da_59()` --calls--> `attribute_reading()`  [EXTRACTED]
-  tests/test_tools.py → tools/oracle_cast.py
-- `test_attribuzione_43_quattro_mobili_da_16()` --calls--> `attribute_reading()`  [EXTRACTED]
-  tests/test_tools.py → tools/oracle_cast.py
+- `test_ricerca_filtro_area_e_limite()` --calls--> `cerca()`  [EXTRACTED]
+  tests/test_tools.py → tools/search.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (132 total, 11 thin omitted)
+## Communities (134 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
 Nodes (37): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+29 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.06
-Nodes (24): BaseModel, Request, Response, affected(), capture(), CaptureReq, _err(), explain() (+16 more)
+Cohesion: 0.10
+Nodes (26): BaseModel, Request, Response, affected(), capture(), CaptureReq, _err(), explain() (+18 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.16
-Nodes (24): Exception, area_graph_path(), BrainError, capture(), graph_query(), graphify_available(), health_info(), inbox_done() (+16 more)
+Cohesion: 0.15
+Nodes (27): Exception, area_graph_path(), BrainError, capture(), graph_query(), graphify_available(), health_info(), inbox_done() (+19 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
+Cohesion: 0.13
+Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.16
-Nodes (17): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+9 more)
+Cohesion: 0.14
+Nodes (19): brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query(), brain_reasoner() (+11 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.12
+Nodes (10): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 017 - Generator meta-ciclico (+2 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
 Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
-### Community 8 - "Community 8"
-Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
-
 ### Community 9 - "Community 9"
-Cohesion: 0.20
-Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
+Cohesion: 0.24
+Nodes (7): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Modalita [ANALYTIC_CORE]
 
 ### Community 10 - "Community 10"
 Cohesion: 0.13
@@ -209,7 +205,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.13
@@ -228,12 +224,12 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.21
-Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
+Cohesion: 0.16
+Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.12
+Nodes (12): AION_ETHOS, AION_SUPERIA, AION - modello di pensiero, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica, Livello Orchestrazione / Stile (+4 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.18
@@ -316,8 +312,8 @@ Cohesion: 0.25
 Nodes (8): 25. 無妄 L'Innocenza (Wú Wàng) ䷘, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 39 - "Community 39"
-Cohesion: 0.09
-Nodes (38): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile. (+30 more)
+Cohesion: 0.05
+Nodes (57): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto., BM25 deve portare in cima la pagina che tratta davvero l'argomento., Il valore aggiunto dell'indice: graphify indicizza solo .md, questo no., L'indice committato deve essere quello che il corpus produce ora. (+49 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.25
@@ -591,6 +587,10 @@ Nodes (7): bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_b
 Cohesion: 0.40
 Nodes (4): Lezioni apprese — memoria operativa del brain, Lezioni recenti, Sintesi, Tentativi (da confermare)
 
+### Community 132 - "Community 132"
+Cohesion: 0.25
+Nodes (7): normalizza(), Minuscolo senza accenti: 'analisi' e 'Analisí' devono coincidere., Il front-matter e metadato, non contenuto: non deve inquinare il ranking., Frammenti per titolo markdown; per i .txt, blocchi separati da righe vuote., spezza(), togli_frontmatter(), tokenizza()
+
 ## Knowledge Gaps
 - **693 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+688 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -600,16 +600,16 @@ Nodes (4): Lezioni apprese — memoria operativa del brain, Lezioni recenti, Sin
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `bi-temporalita (opzionale): valid_until: YYYY-MM-DD  ·  superseded_by: <file>` connect `Community 125` to `Community 13`, `Community 22`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 44`, `Community 45`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`, `Community 75`, `Community 76`, `Community 77`, `Community 78`, `Community 79`, `Community 80`, `Community 81`, `Community 82`, `Community 84`, `Community 85`, `Community 91`, `Community 121`, `Community 123`, `Community 124`?**
-  _High betweenness centrality (0.226) - this node is a cross-community bridge._
-- **Why does `48. 井 Il Pozzo (Jǐng) ䷯` connect `Community 63` to `Community 125`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **Why does `7. 師 L'Esercito (Shī) ䷆` connect `Community 76` to `Community 125`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+  _High betweenness centrality (0.220) - this node is a cross-community bridge._
+- **Why does `13. 同人 La Comunità (Tóng Rén) ䷌` connect `Community 25` to `Community 125`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `14. 大有 Il Possesso Grande (Dà Yǒu) ䷍` connect `Community 26` to `Community 125`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _726 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _739 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.061088485746019994 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.06376811594202898 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.11375661375661375 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09803921568627451 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.14532019704433496 - nodes in this community are weakly interconnected._

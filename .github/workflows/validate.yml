@@ -100,6 +100,14 @@ jobs:
           print(f"{len(files)} file JSON validi")
           EOF
 
+      - name: Indice di ricerca coerente col corpus (fonte unica)
+        run: |
+          python tools/build_search_index.py
+          if ! git diff --quiet -- engine/search_index.json; then
+            echo "::error::engine/search_index.json non coerente col corpus — rigenera con tools/build_search_index.py"
+            exit 1
+          fi
+
       - name: Relazioni wiki (nessun wikilink rotto)
         run: python tools/check_wikilinks.py
 

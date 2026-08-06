@@ -166,6 +166,18 @@ def affected(x: str = Query(..., min_length=1), depth: int = Query(2, ge=1, le=5
         raise _err(e)
 
 
+# ---------------- ricerca nel contenuto (ibrida BM25 + semantica) ----------------
+@api.get("/search", dependencies=[Depends(auth)])
+def search(q: str = Query(..., min_length=2), top: int = Query(8, ge=1, le=50),
+           area: str = Query(None, pattern="^[a-z0-9-]+$")):
+    """Cerca nel CONTENUTO delle note (graphify naviga la struttura, questa il testo).
+    Copre anche i .txt che il grafo non indicizza."""
+    try:
+        return core.search(q, top=top, area=area)
+    except core.BrainError as e:
+        raise _err(e)
+
+
 # ---------------- oracle (AION_Oracle eseguibile) ----------------
 class OracleReq(BaseModel):
     question: str | None = None

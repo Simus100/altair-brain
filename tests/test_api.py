@@ -144,3 +144,30 @@ def test_rate_limiter_uses_client_host():
     finally:
         app_module.RATE_LIMIT = old_limit
         app_module._buckets.clear()
+
+
+def test_search_richiede_token_e_valida_input():
+    assert client.get("/v1/search", params={"q": "test"}).status_code == 401
+    # area fuori dal pattern: respinta dalla validazione, non arriva al core
+    assert client.get("/v1/search", params={"q": "x", "area": "../etc"},
+                      headers=AUTH).status_code == 422
+    # query troppo corta
+    assert client.get("/v1/search", params={"q": "a"}, headers=AUTH).status_code == 422
+
+
+def test_search_trova_nel_contenuto():
+    r = client.get("/v1/search", params={"q": "quartili outlier", "top": 3}, headers=AUTH)
+    assert r.status_code == 200, r.text
+    d = r.json()
+    assert d["n"] <= 3 and d["risultati"]
+    assert any("quartili" in x["file"] for x in d["risultati"])
+    # ogni risultato porta con se la provenienza
+    for x in d["risultati"]:
+        assert x["file"] and x["area"] and "estratto" in x
+
+
+def test_search_filtro_area():
+    r = client.get("/v1/search", params={"q": "analisi", "area": "data-science", "top": 5},
+                   headers=AUTH)
+    assert r.status_code == 200
+    assert all(x["area"] == "data-science" for x in r.json()["risultati"])

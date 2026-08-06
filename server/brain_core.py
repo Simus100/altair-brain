@@ -122,6 +122,23 @@ def graph_query(q: str, budget: int = 2000, area: str = None) -> tuple:
     return run_graphify(args), used
 
 
+# ---------------- ricerca ibrida (BM25 + semantico opzionale) ----------------
+def search(q: str, top: int = 8, area: str = None) -> dict:
+    """Ricerca nel CONTENUTO (complementare a graphify, che naviga la struttura).
+    Include i .txt che il grafo non indicizza. Degrada con grazia se l'indice manca."""
+    if area and not _SAFE_AREA.match(area):
+        raise BrainError(400, "Nome area non valido.")
+    top = max(1, min(int(top or 8), 50))
+    try:
+        from tools.search import cerca
+    except Exception as e:
+        raise BrainError(503, f"ricerca non disponibile: {e}")
+    if not (REPO / "engine" / "search_index.json").exists():
+        raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
+    risultati = cerca(q, top=top, area=area)
+    return {"query": q, "area": area, "n": len(risultati), "risultati": risultati}
+
+
 # ---------------- oracle ----------------
 def oracle_cast(question: str = None, seed=None) -> dict:
     if seed is not None:

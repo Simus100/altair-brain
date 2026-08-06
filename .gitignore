@@ -2,6 +2,10 @@
 *.key
 **/secrets.*
 graphify-out/cache/
+# Indice semantico: grande e ricostruibile (tools/build_dense_index.py).
+# L'indice lessicale BM25 (engine/search_index.json) invece STA in git: e piccolo,
+# deterministico e serve ai consumatori senza dipendenze.
+graphify-out/search/
 __pycache__/
 *.pyc
 .pytest_cache/

@@ -41,6 +41,22 @@ def brain_query(q: str, area: str = "", budget: int = 2000) -> str:
 
 
 @mcp.tool()
+def brain_search(q: str, top: int = 8, area: str = "") -> str:
+    """Cerca nel CONTENUTO delle note (BM25 + semantico se attivo). Complementare a
+    brain_query, che naviga la struttura: questa legge il testo, inclusi i .txt che
+    il grafo non indicizza. Usala quando cerchi un concetto, non un nome preciso."""
+    def run():
+        r = core.search(q, top=top, area=(area or None))
+        if not r["risultati"]:
+            return f"Nessun risultato per {q!r}."
+        righe = [f"{len(r['risultati'])} risultati per {q!r}:"]
+        for i, x in enumerate(r["risultati"], 1):
+            righe.append(f"{i}. [{x['area']}] {x['titolo']} — {x['file']}\n   {x['estratto']}")
+        return "\n".join(righe)
+    return _safe(run)
+
+
+@mcp.tool()
 def brain_explain(x: str) -> str:
     """Spiega un nodo del grafo e i suoi collegamenti (graphify explain)."""
     return _safe(core.run_graphify, ["explain", x])
