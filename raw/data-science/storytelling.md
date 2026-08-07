@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 Ecco gli appunti sistemati e impaginati in modo chiaro e logico, pronti per essere utilizzati in un file di testo o come guida per una presentazione.
 
 ---

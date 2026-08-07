@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 1. IMPORTAZIONE E PULIZIA DE I DATI:
 
 ----------

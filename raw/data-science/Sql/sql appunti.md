@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 SQL è un linguaggio per database relazionali inventato da ibm. 
 
 Le istruzioni sono poche e semplici:

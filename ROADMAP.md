@@ -305,11 +305,14 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
   - **P10**: workflow `graphify add` documentato in GUIDA.md (con cautela repo pubblico).
   - 44 test verdi, pipeline a 12 passi, CI a 18 step.
 
-  **LIMITE NOTO EMERSO**: graphify indicizza **solo .md**. Le 23 note `.txt` di
-  `raw/data-science/` (430KB: i project work, la metodologia reale) NON sono nodi del
-  grafo — contribuiscono 4 nodi su 1187. Mitigato: l'indice di ricerca le copre
-  (516 frammenti). **Decisione aperta per l'utente**: convertire `.txt` -> `.md`
-  (rinomina, contenuto identico) le renderebbe anche navigabili nel grafo.
+  **LIMITE RISOLTO (2026-08-06)**: graphify indicizza solo `.md`, quindi le 23 note
+  `.txt` di `raw/data-science/` (la metodologia dei project work) erano fuori dal
+  grafo (4 nodi). Convertite con `git mv` (storia preservata, contenuto identico):
+  `raw/data-science` passa a **55 nodi**, gli archi di provenienza da 8 a 31 (le
+  mappe dirette del registro ora agganciano davvero). Adeguata anche la granularita
+  dell'indice: le note in prosa senza titoli markdown vengono spezzate a blocchi,
+  altrimenti finirebbero in un frammento unico e BM25 penalizza i documenti lunghi.
+  **Regola d'ora in poi: le note grezze si scrivono in `.md`** (vedi raw/README.md).
 
 - **Hardening 2026-07-19** (da revisione architetturale + best practice web):
   branch `backup` = ultimo main validato (job CI dedicato, force-update post-validate);

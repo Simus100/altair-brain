@@ -77,10 +77,16 @@ def togli_frontmatter(testo):
 
 
 def spezza(testo, rel):
-    """Frammenti per titolo markdown; per i .txt, blocchi separati da righe vuote.
-    Ogni frammento conserva il titolo piu vicino: e il suo contesto."""
+    """Frammenti per titolo markdown quando ci sono titoli; altrimenti blocchi separati
+    da righe vuote. Ogni frammento conserva il titolo piu vicino: e il suo contesto.
+
+    GRANULARITA: molte note grezze sono prosa senza titoli. Spezzarle per titolo le
+    lascerebbe in un blocco unico, e BM25 penalizza i documenti lunghi (la frequenza
+    dei termini e normalizzata sulla lunghezza): una nota intera diventa un pagliaio.
+    Con i blocchi si recupera la precisione del recupero."""
     pezzi = []
-    if rel.endswith(".md"):
+    ha_titoli = any(r.startswith("#") for r in testo.splitlines())
+    if rel.endswith(".md") and ha_titoli:
         titolo, buffer = "", []
         for riga in testo.splitlines():
             if riga.startswith("#"):

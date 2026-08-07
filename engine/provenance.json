@@ -32,82 +32,82 @@
     },
     {
       "wiki": "wiki/data-science/quartili-outlier.md",
-      "fonti": ["raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.txt"]
+      "fonti": ["raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md"]
     },
     {
       "wiki": "wiki/data-science/data-driven-culture.md",
-      "fonti": ["raw/data-science/Data culture.txt"]
+      "fonti": ["raw/data-science/Data culture.md"]
     },
     {
       "wiki": "wiki/data-science/intelligenza-artificiale.md",
-      "fonti": ["raw/data-science/AI introduzione.txt", "raw/data-science/Quarta rivoluzione indusriale.txt"]
+      "fonti": ["raw/data-science/AI introduzione.md", "raw/data-science/Quarta rivoluzione indusriale.md"]
     },
     {
       "wiki": "wiki/data-science/normalizzazione-decimali.md",
-      "fonti": ["raw/data-science/normalizzare numeri decimali con errori.txt"]
+      "fonti": ["raw/data-science/normalizzare numeri decimali con errori.md"]
     },
     {
       "wiki": "wiki/data-science/prompt-engineering.md",
-      "fonti": ["raw/data-science/prompt engineering/prompt engineering base.txt"]
+      "fonti": ["raw/data-science/prompt engineering/prompt engineering base.md"]
     },
     {
       "wiki": "wiki/data-science/data-storytelling.md",
-      "fonti": ["raw/data-science/storytelling.txt"]
+      "fonti": ["raw/data-science/storytelling.md"]
     },
     {
       "wiki": "wiki/data-science/mongodb.md",
       "fonti": [
-        "raw/data-science/MongoDB/installazione.txt",
-        "raw/data-science/MongoDB/utilizzo tramite CMD.txt",
-        "raw/data-science/MongoDB/integrazione con python.txt",
-        "raw/data-science/MongoDB/beanie e python per MongoDB.txt"
+        "raw/data-science/MongoDB/installazione.md",
+        "raw/data-science/MongoDB/utilizzo tramite CMD.md",
+        "raw/data-science/MongoDB/integrazione con python.md",
+        "raw/data-science/MongoDB/beanie e python per MongoDB.md"
       ]
     },
     {
       "wiki": "wiki/data-science/sql.md",
-      "fonti": ["raw/data-science/Sql/sql appunti.txt"]
+      "fonti": ["raw/data-science/Sql/sql appunti.md"]
     },
     {
       "wiki": "wiki/data-science/algebra-relazionale.md",
-      "fonti": ["raw/data-science/Sql/Teoria algebra relazionale.txt"]
+      "fonti": ["raw/data-science/Sql/Teoria algebra relazionale.md"]
     },
     {
       "wiki": "wiki/data-science/progettazione-database.md",
-      "fonti": ["raw/data-science/Sql/Progettazione DB.txt"]
+      "fonti": ["raw/data-science/Sql/Progettazione DB.md"]
     },
     {
       "wiki": "wiki/data-science/progetto-social-media.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.txt"]
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md"]
     },
     {
       "wiki": "wiki/data-science/progetto-hotel-booking.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.txt"]
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md"]
     },
     {
       "wiki": "wiki/data-science/progetto-olist-ecommerce.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.txt"]
+      "fonti": ["raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.md"]
     },
     {
       "wiki": "wiki/data-science/progetto-insurance.md",
       "fonti": [
-        "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.txt",
-        "raw/data-science/PROJECT WORK/Insurance Analysis/2 analisi preliminare.txt"
+        "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.md",
+        "raw/data-science/PROJECT WORK/Insurance Analysis/2 analisi preliminare.md"
       ]
     },
     {
       "wiki": "wiki/data-science/python-pandas.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.txt"]
+      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md"]
     },
     {
       "wiki": "wiki/data-science/struttura-report-analisi.md",
       "fonti": [
-        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/linee guida.txt",
-        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/APPUNTI PER REPORT.txt"
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/linee guida.md",
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/APPUNTI PER REPORT.md"
       ]
     },
     {
       "wiki": "wiki/data-science/power-bi.md",
-      "fonti": ["raw/data-science/microsoft data analytics.txt"]
+      "fonti": ["raw/data-science/microsoft data analytics.md"]
     }
   ]
 }

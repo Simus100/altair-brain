@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 Possiamo usare il RB system tramite shell del sistema operativo. 
 
 *I comandi del cmd verranno identificati con il simbolo % all'inizio.

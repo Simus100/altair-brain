@@ -3,8 +3,418 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "05619311341f259a95a3b846acccc1509e476d0c",
+ "built_at_commit": "a9894f123456d5ec0884cde4a703b506eab96721",
  "nodes": [
+  {
+   "label": "AI introduzione.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/AI introduzione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_ai_introduzione",
+   "community": 138,
+   "norm_label": "ai introduzione.md"
+  },
+  {
+   "label": "CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_calcolo_quartile_e_individuazione_outlier",
+   "community": 139,
+   "norm_label": "calcolo quartile e individuazione outlier.md"
+  },
+  {
+   "label": "Data culture.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture",
+   "community": 8,
+   "norm_label": "data culture.md"
+  },
+  {
+   "label": "1. Definizione degli Obiettivi (Goal Setting)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L22",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_1_definizione_degli_obiettivi_goal_setting",
+   "community": 8,
+   "norm_label": "1. definizione degli obiettivi (goal setting)"
+  },
+  {
+   "label": "1. I 6 Pilastri della Data Driven Culture",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L18",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "community": 8,
+   "norm_label": "1. i 6 pilastri della data driven culture"
+  },
+  {
+   "label": "2. Il Contesto Tecnologico e i Vantaggi",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L69",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_2_il_contesto_tecnologico_e_i_vantaggi",
+   "community": 8,
+   "norm_label": "2. il contesto tecnologico e i vantaggi"
+  },
+  {
+   "label": "2. Raccolta e Gestione dei Dati (Data Governance)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L29",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_2_raccolta_e_gestione_dei_dati_data_governance",
+   "community": 8,
+   "norm_label": "2. raccolta e gestione dei dati (data governance)"
+  },
+  {
+   "label": "3. Case Studies: Successi e Fallimenti",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L88",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_3_case_studies_successi_e_fallimenti",
+   "community": 8,
+   "norm_label": "3. case studies: successi e fallimenti"
+  },
+  {
+   "label": "3. Strumenti di Analisi e Visualizzazione (Tech Stack)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L37",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_3_strumenti_di_analisi_e_visualizzazione_tech_stack",
+   "community": 8,
+   "norm_label": "3. strumenti di analisi e visualizzazione (tech stack)"
+  },
+  {
+   "label": "4. Cultura della Collaborazione (Data Democratization)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L44",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_4_cultura_della_collaborazione_data_democratization",
+   "community": 8,
+   "norm_label": "4. cultura della collaborazione (data democratization)"
+  },
+  {
+   "label": "4. Livelli di Analisi (Business Intelligence)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L105",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_4_livelli_di_analisi_business_intelligence",
+   "community": 8,
+   "norm_label": "4. livelli di analisi (business intelligence)"
+  },
+  {
+   "label": "5. Decision Making Basato sui Dati",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L53",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_5_decision_making_basato_sui_dati",
+   "community": 8,
+   "norm_label": "5. decision making basato sui dati"
+  },
+  {
+   "label": "5. Workflow di Implementazione",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L115",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_5_workflow_di_implementazione",
+   "community": 8,
+   "norm_label": "5. workflow di implementazione"
+  },
+  {
+   "label": "6. Cultura dell'Esplorazione e Innovazione",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L60",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_6_cultura_dell_esplorazione_e_innovazione",
+   "community": 8,
+   "norm_label": "6. cultura dell'esplorazione e innovazione"
+  },
+  {
+   "label": "6. Questioni Strategiche da Approfondire (FAQ & Checklist)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L144",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_6_questioni_strategiche_da_approfondire_faq_checklist",
+   "community": 8,
+   "norm_label": "6. questioni strategiche da approfondire (faq & checklist)"
+  },
+  {
+   "label": "Cautionary Tale (Fallimento)",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L99",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_cautionary_tale_fallimento",
+   "community": 8,
+   "norm_label": "cautionary tale (fallimento)"
+  },
+  {
+   "label": "Data Driven Culture: Guida Strategica e Operativa",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L12",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "community": 8,
+   "norm_label": "data driven culture: guida strategica e operativa"
+  },
+  {
+   "label": "I Vantaggi Competitivi",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L78",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_i_vantaggi_competitivi",
+   "community": 8,
+   "norm_label": "i vantaggi competitivi"
+  },
+  {
+   "label": "Perché ora? I driver del cambiamento",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L71",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_perché_ora_i_driver_del_cambiamento",
+   "community": 8,
+   "norm_label": "perche ora? i driver del cambiamento"
+  },
+  {
+   "label": "Prossimo passo utile",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L172",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_prossimo_passo_utile",
+   "community": 8,
+   "norm_label": "prossimo passo utile"
+  },
+  {
+   "label": "Success Stories",
+   "file_type": "document",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L90",
+   "_origin": "ast",
+   "id": "raw_data_science_data_culture_success_stories",
+   "community": 8,
+   "norm_label": "success stories"
+  },
+  {
+   "label": "microsoft data analytics.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/microsoft data analytics.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_microsoft_data_analytics",
+   "community": 140,
+   "norm_label": "microsoft data analytics.md"
+  },
+  {
+   "label": "beanie e python per MongoDB.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/MongoDB/beanie e python per MongoDB.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_mongodb_beanie_e_python_per_mongodb",
+   "community": 141,
+   "norm_label": "beanie e python per mongodb.md"
+  },
+  {
+   "label": "installazione.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/MongoDB/installazione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_mongodb_installazione",
+   "community": 142,
+   "norm_label": "installazione.md"
+  },
+  {
+   "label": "integrazione con python.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/MongoDB/integrazione con python.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_mongodb_integrazione_con_python",
+   "community": 143,
+   "norm_label": "integrazione con python.md"
+  },
+  {
+   "label": "utilizzo tramite CMD.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/MongoDB/utilizzo tramite CMD.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_mongodb_utilizzo_tramite_cmd",
+   "community": 144,
+   "norm_label": "utilizzo tramite cmd.md"
+  },
+  {
+   "label": "normalizzare numeri decimali con errori.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/normalizzare numeri decimali con errori.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_normalizzare_numeri_decimali_con_errori",
+   "community": 145,
+   "norm_label": "normalizzare numeri decimali con errori.md"
+  },
+  {
+   "label": "Documentazione.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_social_media_documentazione",
+   "community": 146,
+   "norm_label": "documentazione.md"
+  },
+  {
+   "label": "DOCUMENTAZIONE.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_documentazione",
+   "community": 147,
+   "norm_label": "documentazione.md"
+  },
+  {
+   "label": "API PANDAS.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "community": 137,
+   "norm_label": "api pandas.md"
+  },
+  {
+   "label": "Install dependencies as needed:",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_install_dependencies_as_needed",
+   "community": 137,
+   "norm_label": "install dependencies as needed:"
+  },
+  {
+   "label": "Load the latest version",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L16",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_load_the_latest_version",
+   "community": 137,
+   "norm_label": "load the latest version"
+  },
+  {
+   "label": "pip install kagglehub[pandas-datasets]",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L9",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_pip_install_kagglehub_pandas_datasets",
+   "community": 137,
+   "norm_label": "pip install kagglehub[pandas-datasets]"
+  },
+  {
+   "label": "Set the path to the file you'd like to load",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L13",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_set_the_path_to_the_file_you_d_like_to_load",
+   "community": 137,
+   "norm_label": "set the path to the file you'd like to load"
+  },
+  {
+   "label": "APPUNTI PER REPORT.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/APPUNTI PER REPORT.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_report_appunti_per_report",
+   "community": 148,
+   "norm_label": "appunti per report.md"
+  },
+  {
+   "label": "linee guida.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/report/linee guida.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_prenotazioni_hotel_report_linee_guida",
+   "community": 149,
+   "norm_label": "linee guida.md"
+  },
+  {
+   "label": "LINEE GUIDA.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_brazilian_e_commerce_olist_linee_guida",
+   "community": 150,
+   "norm_label": "linee guida.md"
+  },
+  {
+   "label": "1 data processing.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_insurance_analysis_1_data_processing",
+   "community": 151,
+   "norm_label": "1 data processing.md"
+  },
+  {
+   "label": "2 analisi preliminare.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Insurance Analysis/2 analisi preliminare.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_insurance_analysis_2_analisi_preliminare",
+   "community": 152,
+   "norm_label": "2 analisi preliminare.md"
+  },
+  {
+   "label": "prompt engineering base.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/prompt engineering/prompt engineering base.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_prompt_engineering_prompt_engineering_base",
+   "community": 153,
+   "norm_label": "prompt engineering base.md"
+  },
+  {
+   "label": "Quarta rivoluzione indusriale.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/Quarta rivoluzione indusriale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_quarta_rivoluzione_indusriale",
+   "community": 154,
+   "norm_label": "quarta rivoluzione indusriale.md"
+  },
   {
    "label": "README.md",
    "file_type": "document",
@@ -44,6 +454,106 @@
    "id": "raw_data_science_readme_note",
    "community": 96,
    "norm_label": "note"
+  },
+  {
+   "label": "Progettazione DB.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/Sql/Progettazione DB.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_sql_progettazione_db",
+   "community": 155,
+   "norm_label": "progettazione db.md"
+  },
+  {
+   "label": "sql appunti.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/Sql/sql appunti.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_sql_sql_appunti",
+   "community": 156,
+   "norm_label": "sql appunti.md"
+  },
+  {
+   "label": "Teoria algebra relazionale.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/Sql/Teoria algebra relazionale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_sql_teoria_algebra_relazionale",
+   "community": 157,
+   "norm_label": "teoria algebra relazionale.md"
+  },
+  {
+   "label": "storytelling.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling",
+   "community": 136,
+   "norm_label": "storytelling.md"
+  },
+  {
+   "label": "1. Il Primo Passo: Creare una Connessione Emotiva",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_1_il_primo_passo_creare_una_connessione_emotiva",
+   "community": 136,
+   "norm_label": "1. il primo passo: creare una connessione emotiva"
+  },
+  {
+   "label": "2. Le Componenti Fondamentali della Presentazione",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L31",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
+   "community": 136,
+   "norm_label": "2. le componenti fondamentali della presentazione"
+  },
+  {
+   "label": "Fase 1: Raccolta, Pulizia e Preparazione dei Dati",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_fase_1_raccolta_pulizia_e_preparazione_dei_dati",
+   "community": 136,
+   "norm_label": "fase 1: raccolta, pulizia e preparazione dei dati"
+  },
+  {
+   "label": "Fase 2: Identificazione e Analisi del Pubblico",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L45",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_fase_2_identificazione_e_analisi_del_pubblico",
+   "community": 136,
+   "norm_label": "fase 2: identificazione e analisi del pubblico"
+  },
+  {
+   "label": "Fase 3: Struttura Narrativa della Presentazione",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L55",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_fase_3_struttura_narrativa_della_presentazione",
+   "community": 136,
+   "norm_label": "fase 3: struttura narrativa della presentazione"
+  },
+  {
+   "label": "Lo Storytelling con i Dati: Una Guida per Presentazioni Efficaci",
+   "file_type": "document",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L12",
+   "_origin": "ast",
+   "id": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
+   "community": 136,
+   "norm_label": "lo storytelling con i dati: una guida per presentazioni efficaci"
   },
   {
    "label": "algebra-relazionale.md",
@@ -790,6 +1300,226 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L12",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture",
+   "target": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L22",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_1_definizione_degli_obiettivi_goal_setting",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L29",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_2_raccolta_e_gestione_dei_dati_data_governance",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L37",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_3_strumenti_di_analisi_e_visualizzazione_tech_stack",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L44",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_4_cultura_della_collaborazione_data_democratization",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L53",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_5_decision_making_basato_sui_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L60",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "target": "raw_data_science_data_culture_6_cultura_dell_esplorazione_e_innovazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L78",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_2_il_contesto_tecnologico_e_i_vantaggi",
+   "target": "raw_data_science_data_culture_i_vantaggi_competitivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L71",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_2_il_contesto_tecnologico_e_i_vantaggi",
+   "target": "raw_data_science_data_culture_perché_ora_i_driver_del_cambiamento",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L99",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_3_case_studies_successi_e_fallimenti",
+   "target": "raw_data_science_data_culture_cautionary_tale_fallimento",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L90",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_3_case_studies_successi_e_fallimenti",
+   "target": "raw_data_science_data_culture_success_stories",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L172",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_6_questioni_strategiche_da_approfondire_faq_checklist",
+   "target": "raw_data_science_data_culture_prossimo_passo_utile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L18",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_1_i_6_pilastri_della_data_driven_culture",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L69",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_2_il_contesto_tecnologico_e_i_vantaggi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L88",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_3_case_studies_successi_e_fallimenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L105",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_4_livelli_di_analisi_business_intelligence",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L115",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_5_workflow_di_implementazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/Data culture.md",
+   "source_location": "L144",
+   "weight": 1.0,
+   "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
+   "target": "raw_data_science_data_culture_6_questioni_strategiche_da_approfondire_faq_checklist",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_install_dependencies_as_needed",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_load_the_latest_version",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L9",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_pip_install_kagglehub_pandas_datasets",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas_set_the_path_to_the_file_you_d_like_to_load",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "raw/data-science/README.md",
    "source_location": "L8",
    "weight": 1.0,
@@ -816,6 +1546,76 @@
    "source": "raw_data_science_readme_data_science",
    "target": "raw_data_science_readme_note",
    "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L12",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling",
+   "target": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
+   "target": "raw_data_science_storytelling_fase_1_raccolta_pulizia_e_preparazione_dei_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L45",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
+   "target": "raw_data_science_storytelling_fase_2_identificazione_e_analisi_del_pubblico",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L55",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
+   "target": "raw_data_science_storytelling_fase_3_struttura_narrativa_della_presentazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
+   "target": "raw_data_science_storytelling_1_il_primo_passo_creare_una_connessione_emotiva",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/storytelling.md",
+   "source_location": "L31",
+   "weight": 1.0,
+   "source": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
+   "target": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_algebra_relazionale",
+   "target": "raw_data_science_sql_teoria_algebra_relazionale",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "contains",
@@ -1078,6 +1878,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_data_driven_culture",
+   "target": "raw_data_science_data_culture",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/data-driven-culture.md",
@@ -1116,6 +1926,16 @@
    "source": "wiki_data_science_data_driven_culture",
    "target": "wiki_data_science_tipi_di_analisi",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_data_storytelling",
+   "target": "raw_data_science_storytelling",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "contains",
@@ -1558,6 +2378,26 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_intelligenza_artificiale",
+   "target": "raw_data_science_ai_introduzione",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_intelligenza_artificiale",
+   "target": "raw_data_science_quarta_rivoluzione_indusriale",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/intelligenza-artificiale.md",
@@ -1718,6 +2558,46 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_mongodb",
+   "target": "raw_data_science_mongodb_beanie_e_python_per_mongodb",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_mongodb",
+   "target": "raw_data_science_mongodb_installazione",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_mongodb",
+   "target": "raw_data_science_mongodb_integrazione_con_python",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_mongodb",
+   "target": "raw_data_science_mongodb_utilizzo_tramite_cmd",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/mongodb.md",
@@ -1746,6 +2626,16 @@
    "source": "wiki_data_science_mongodb",
    "target": "wiki_data_science_strumenti",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_normalizzazione_decimali",
+   "target": "raw_data_science_normalizzare_numeri_decimali_con_errori",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "references",
@@ -1818,6 +2708,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_power_bi",
+   "target": "raw_data_science_microsoft_data_analytics",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/power-bi.md",
@@ -1876,6 +2776,16 @@
    "source": "wiki_data_science_power_bi",
    "target": "wiki_data_science_visualizzazione_dati",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_progettazione_database",
+   "target": "raw_data_science_sql_progettazione_db",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "contains",
@@ -1956,6 +2866,16 @@
    "source": "wiki_data_science_progetti",
    "target": "wiki_data_science_progetto_social_media",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_progetto_hotel_booking",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_documentazione",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "references",
@@ -2048,6 +2968,26 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "raw_data_science_project_work_insurance_analysis_1_data_processing",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_progetto_insurance",
+   "target": "raw_data_science_project_work_insurance_analysis_2_analisi_preliminare",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-insurance.md",
@@ -2138,6 +3078,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_progetto_olist_ecommerce",
+   "target": "raw_data_science_project_work_brazilian_e_commerce_olist_linee_guida",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
@@ -2218,6 +3168,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_progetto_social_media",
+   "target": "raw_data_science_project_work_analisi_dati_social_media_documentazione",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetto-social-media.md",
@@ -2288,6 +3248,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_prompt_engineering",
+   "target": "raw_data_science_prompt_engineering_prompt_engineering_base",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/prompt-engineering.md",
@@ -2296,6 +3266,16 @@
    "source": "wiki_data_science_prompt_engineering",
    "target": "wiki_data_science_prompt_engineering_prompt_engineering",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_python_pandas",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "references",
@@ -2338,6 +3318,16 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_quartili_outlier",
+   "target": "raw_data_science_calcolo_quartile_e_individuazione_outlier",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/quartili-outlier.md",
@@ -2346,6 +3336,16 @@
    "source": "wiki_data_science_quartili_outlier",
    "target": "wiki_data_science_quartili_outlier_quartili_e_outlier_iqr",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_sql",
+   "target": "raw_data_science_sql_sql_appunti",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "contains",
@@ -2376,6 +3376,26 @@
    "source": "wiki_data_science_strumenti",
    "target": "wiki_data_science_strumenti_strumenti_data_science",
    "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_struttura_report_analisi",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_report_appunti_per_report",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_struttura_report_analisi",
+   "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_report_linee_guida",
+   "relation": "derived_from",
+   "nota": "",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "relation": "contains",

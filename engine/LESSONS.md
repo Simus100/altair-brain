@@ -7,10 +7,16 @@
 
 ## Sintesi
 
-- lezioni registrate: **6** · sessioni graphify: **1**
-- esiti: 2 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
-- skill piu attive: manuale (4), report (1), oracle (1)
-- temi ricorrenti: report (2), metodo (2), living (1), editoriale (1), oracolo (1), attribuzione (1), verifica (1), browser (1)
+- lezioni registrate: **7** · sessioni graphify: **1**
+- esiti: 3 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
+- skill piu attive: manuale (5), report (1), oracle (1)
+- temi ricorrenti: report (2), metodo (2), graphify (2), corpus (2), living (1), editoriale (1), oracolo (1), attribuzione (1)
+
+## Ancoraggi consolidati
+
+_Nodi utili in almeno 2 occasioni: punti di partenza affidabili._
+
+- `apply_provenance.py` — 2× utile
 
 ## Tentativi (da confermare)
 
@@ -19,11 +25,13 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `6` — 1× utile
 - `59` — 1× utile
 - `test_golden.py` — 1× utile
-- `apply_provenance.py` — 1× utile
 - `graph_metrics.py` — 1× utile
+- `build_search_index.py` — 1× utile
 
 ## Lezioni recenti
 
+- **2026-08-07** _((manuale, utile))_ — convertire .txt->.md con git mv ha portato raw/data-science da 4 a 55 nodi e la provenienza da 8 a 31 archi; ma attenzione: cambia anche la strategia di spezzettamento dell'indice (i .md si spezzano per titolo), quindi le note in prosa vanno spezzate a blocchi o collassano in un frammento unico
+  - contesto: rendere navigabili nel grafo le note grezze in .txt
 - **2026-08-06** _((manuale, utile))_ — il golden set ha trovato in 1 minuto un difetto strutturale invisibile da mesi (raw e wiki con 0 archi tra loro): una misura scritta prima delle feature vale piu di dieci feature
   - contesto: come accorgersi che due strati del brain sono scollegati
 - **2026-08-06** _((manuale, corretto))_ — graphify indicizza SOLO .md: 430KB di note .txt in raw/data-science erano invisibili al brain (4 nodi su 1187). Verificare sempre COSA entra nel grafo, non dare per scontato che tutto il corpus ci sia

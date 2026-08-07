@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 Ecco una riorganizzazione formale e strutturata dei tuoi appunti. Ho mantenuto tutte le informazioni originali, arricchendole con terminologia tecnica appropriata e collegamenti logici per creare un documento coeso e professionale, pronto per essere utilizzato come dispensa o piano strategico.
 
 ---

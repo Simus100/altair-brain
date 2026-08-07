@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "05619311341f259a95a3b846acccc1509e476d0c",
+ "built_at_commit": "a9894f123456d5ec0884cde4a703b506eab96721",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -1959,7 +1959,7 @@
    "label": "Storico precedente",
    "file_type": "document",
    "source_file": "ROADMAP.md",
-   "source_location": "L358",
+   "source_location": "L361",
    "_origin": "ast",
    "id": "roadmap_storico_precedente",
    "community": 14,
@@ -3014,7 +3014,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tests_test_api",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_api.py"
   },
   {
@@ -3024,7 +3024,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tests_test_api_test_alias_non_versionati",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_alias_non_versionati()"
   },
   {
@@ -3034,7 +3034,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tests_test_api_test_auth_richiesta_e_constant_time_ok",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_auth_richiesta_e_constant_time_ok()"
   },
   {
@@ -3044,7 +3044,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "tests_test_api_test_capture_vuoto_e_troppo_grande",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_capture_vuoto_e_troppo_grande()"
   },
   {
@@ -3054,7 +3054,7 @@
    "source_location": "L108",
    "_origin": "ast",
    "id": "tests_test_api_test_feedback_node_injection_rejected",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_feedback_node_injection_rejected()"
   },
   {
@@ -3064,7 +3064,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tests_test_api_test_health_pubblico_e_ricco",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_health_pubblico_e_ricco()"
   },
   {
@@ -3074,7 +3074,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_flusso_completo",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_inbox_flusso_completo()"
   },
   {
@@ -3084,7 +3084,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_inbox_path_traversal_respinto()"
   },
   {
@@ -3094,7 +3094,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_deterministico_con_seed",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_oracle_deterministico_con_seed()"
   },
   {
@@ -3104,7 +3104,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_hexagram_lookup_re_wen",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_oracle_hexagram_lookup_re_wen()"
   },
   {
@@ -3114,7 +3114,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tests_test_api_test_query_area_invalida",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_query_area_invalida()"
   },
   {
@@ -3124,7 +3124,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tests_test_api_test_query_degrada_o_funziona",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_query_degrada_o_funziona()"
   },
   {
@@ -3134,7 +3134,7 @@
    "source_location": "L117",
    "_origin": "ast",
    "id": "tests_test_api_test_rate_limiter_uses_client_host",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_rate_limiter_uses_client_host()"
   },
   {
@@ -3144,7 +3144,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "tests_test_api_test_route_deterministico",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_route_deterministico()"
   },
   {
@@ -3154,7 +3154,7 @@
    "source_location": "L169",
    "_origin": "ast",
    "id": "tests_test_api_test_search_filtro_area",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_search_filtro_area()"
   },
   {
@@ -3164,7 +3164,7 @@
    "source_location": "L149",
    "_origin": "ast",
    "id": "tests_test_api_test_search_richiede_token_e_valida_input",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_search_richiede_token_e_valida_input()"
   },
   {
@@ -3174,7 +3174,7 @@
    "source_location": "L158",
    "_origin": "ast",
    "id": "tests_test_api_test_search_trova_nel_contenuto",
-   "community": 8,
+   "community": 1,
    "norm_label": "test_search_trova_nel_contenuto()"
   },
   {
@@ -3348,22 +3348,22 @@
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
-   "label": "Il valore aggiunto dell'indice: graphify indicizza solo .md, questo no.",
+   "label": "Le note dei project work (ex .txt, convertite in .md) devono essere cercabili",
    "file_type": "rationale",
    "source_file": "tests/test_tools.py",
    "source_location": "L175",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_175",
    "community": 39,
-   "norm_label": "il valore aggiunto dell'indice: graphify indicizza solo .md, questo no."
+   "norm_label": "le note dei project work (ex .txt, convertite in .md) devono essere cercabili"
   },
   {
    "label": "L'indice committato deve essere quello che il corpus produce ora.",
    "file_type": "rationale",
    "source_file": "tests/test_tools.py",
-   "source_location": "L195",
+   "source_location": "L202",
    "_origin": "ast",
-   "id": "tests_test_tools_rationale_195",
+   "id": "tests_test_tools_rationale_202",
    "community": 39,
    "norm_label": "l'indice committato deve essere quello che il corpus produce ora."
   },
@@ -3371,9 +3371,9 @@
    "label": "La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno.",
    "file_type": "rationale",
    "source_file": "tests/test_tools.py",
-   "source_location": "L208",
+   "source_location": "L215",
    "_origin": "ast",
-   "id": "tests_test_tools_rationale_208",
+   "id": "tests_test_tools_rationale_215",
    "community": 39,
    "norm_label": "la serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno."
   },
@@ -3511,7 +3511,7 @@
    "label": "test_indice_coerente_col_corpus()",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
-   "source_location": "L194",
+   "source_location": "L201",
    "_origin": "ast",
    "id": "tests_test_tools_test_indice_coerente_col_corpus",
    "community": 39,
@@ -3521,7 +3521,7 @@
    "label": "test_metriche_una_riga_per_giorno()",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
-   "source_location": "L207",
+   "source_location": "L214",
    "_origin": "ast",
    "id": "tests_test_tools_test_metriche_una_riga_per_giorno",
    "community": 39,
@@ -3558,20 +3558,20 @@
    "norm_label": "test_report_update_verdict_set_current()"
   },
   {
-   "label": "test_ricerca_copre_i_txt_invisibili_al_grafo()",
+   "label": "test_ricerca_copre_le_note_grezze_di_metodo()",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
    "source_location": "L174",
    "_origin": "ast",
-   "id": "tests_test_tools_test_ricerca_copre_i_txt_invisibili_al_grafo",
+   "id": "tests_test_tools_test_ricerca_copre_le_note_grezze_di_metodo",
    "community": 39,
-   "norm_label": "test_ricerca_copre_i_txt_invisibili_al_grafo()"
+   "norm_label": "test_ricerca_copre_le_note_grezze_di_metodo()"
   },
   {
    "label": "test_ricerca_filtro_area_e_limite()",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
-   "source_location": "L182",
+   "source_location": "L189",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
    "community": 39,
@@ -3581,7 +3581,7 @@
    "label": "test_ricerca_query_senza_risultati_non_esplode()",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
-   "source_location": "L189",
+   "source_location": "L196",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
    "community": 39,
@@ -3861,7 +3861,7 @@
    "label": "raccogli_percorsi()",
    "file_type": "code",
    "source_file": "tools/build_search_index.py",
-   "source_location": "L127",
+   "source_location": "L133",
    "_origin": "ast",
    "id": "tools_build_search_index_raccogli_percorsi",
    "community": 132,
@@ -3888,14 +3888,14 @@
    "norm_label": "il front-matter e metadato, non contenuto: non deve inquinare il ranking."
   },
   {
-   "label": "Frammenti per titolo markdown; per i .txt, blocchi separati da righe vuote.",
+   "label": "Frammenti per titolo markdown quando ci sono titoli; altrimenti blocchi separati",
    "file_type": "rationale",
    "source_file": "tools/build_search_index.py",
    "source_location": "L80",
    "_origin": "ast",
    "id": "tools_build_search_index_rationale_80",
    "community": 132,
-   "norm_label": "frammenti per titolo markdown; per i .txt, blocchi separati da righe vuote."
+   "norm_label": "frammenti per titolo markdown quando ci sono titoli; altrimenti blocchi separati"
   },
   {
    "label": "spezza()",
@@ -6433,7 +6433,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "ROADMAP.md",
-   "source_location": "L358",
+   "source_location": "L361",
    "weight": 1.0,
    "source": "roadmap_completato_storico_per_orientamento",
    "target": "roadmap_storico_precedente",
@@ -8658,7 +8658,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L194",
+   "source_location": "L201",
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tests_test_tools_test_indice_coerente_col_corpus",
@@ -8668,7 +8668,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L207",
+   "source_location": "L214",
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tests_test_tools_test_metriche_una_riga_per_giorno",
@@ -8711,14 +8711,14 @@
    "source_location": "L174",
    "weight": 1.0,
    "source": "tests_test_tools",
-   "target": "tests_test_tools_test_ricerca_copre_i_txt_invisibili_al_grafo",
+   "target": "tests_test_tools_test_ricerca_copre_le_note_grezze_di_metodo",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L182",
+   "source_location": "L189",
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tests_test_tools_test_ricerca_filtro_area_e_limite",
@@ -8728,7 +8728,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L189",
+   "source_location": "L196",
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
@@ -8867,16 +8867,16 @@
    "source_location": "L175",
    "weight": 1.0,
    "source": "tests_test_tools_rationale_175",
-   "target": "tests_test_tools_test_ricerca_copre_i_txt_invisibili_al_grafo",
+   "target": "tests_test_tools_test_ricerca_copre_le_note_grezze_di_metodo",
    "confidence_score": 1.0
   },
   {
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L195",
+   "source_location": "L202",
    "weight": 1.0,
-   "source": "tests_test_tools_rationale_195",
+   "source": "tests_test_tools_rationale_202",
    "target": "tests_test_tools_test_indice_coerente_col_corpus",
    "confidence_score": 1.0
   },
@@ -8884,9 +8884,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L208",
+   "source_location": "L215",
    "weight": 1.0,
-   "source": "tests_test_tools_rationale_208",
+   "source": "tests_test_tools_rationale_215",
    "target": "tests_test_tools_test_metriche_una_riga_per_giorno",
    "confidence_score": 1.0
   },
@@ -9055,7 +9055,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L184",
+   "source_location": "L191",
    "weight": 1.0,
    "source": "tests_test_tools_test_ricerca_filtro_area_e_limite",
    "target": "tools_search_cerca",
@@ -9066,7 +9066,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
-   "source_location": "L191",
+   "source_location": "L198",
    "weight": 1.0,
    "source": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
    "target": "tools_search_cerca",
@@ -9302,7 +9302,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_search_index.py",
-   "source_location": "L127",
+   "source_location": "L133",
    "weight": 1.0,
    "source": "tools_build_search_index",
    "target": "tools_build_search_index_raccogli_percorsi",

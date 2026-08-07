@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 PULIZIA DEI DATI:
 
 Dopo aver importato il dataset e trasformato i dati in una tabella in Excel, ho effettuato una fase di data cleaning finalizzata a individuare eventuali valori mancanti, la presenza di outlier e a verificare la coerenza delle variabili categoriche.

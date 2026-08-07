@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 La nuova frontiera è il cloud computing. Storia del cloud. Permette alle aziende di ocncentrarsi sul servizio offerto piuttosto che sull'infrastruttura locale. può essere personalizzabile e utilizzare solo la potenza computazionale che serve.
 
 -il cloud computing è on demand (l'utente può richiedere e attivare autonomamente i servizi)

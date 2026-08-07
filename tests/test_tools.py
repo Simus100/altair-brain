@@ -171,12 +171,19 @@ def test_ricerca_trova_il_contenuto_giusto():
         f"risultato atteso non nei primi 3: {[x['file'] for x in r[:3]]}"
 
 
-def test_ricerca_copre_i_txt_invisibili_al_grafo():
-    """Il valore aggiunto dell'indice: graphify indicizza solo .md, questo no."""
+def test_ricerca_copre_le_note_grezze_di_metodo():
+    """Le note dei project work (ex .txt, convertite in .md) devono essere cercabili
+    con una granularita utile: non un blocco unico per nota."""
+    import collections
     import json as _json
     idx = _json.loads((ROOT / "engine" / "search_index.json").read_text(encoding="utf-8"))
-    txt = {d["file"] for d in idx["documenti"] if d["file"].endswith(".txt")}
-    assert len(txt) >= 10, f"le note .txt non sono indicizzate ({len(txt)})"
+    per_file = collections.Counter(
+        d["file"] for d in idx["documenti"]
+        if d["file"].startswith("raw/data-science/") and d["file"].endswith(".md"))
+    assert len(per_file) >= 20, f"note grezze data-science non indicizzate ({len(per_file)})"
+    # le note lunghe devono essere spezzate, non lasciate monolitiche
+    assert sum(per_file.values()) >= len(per_file) * 2, \
+        "granularita troppo grossa: quasi tutte le note stanno in un frammento solo"
 
 
 def test_ricerca_filtro_area_e_limite():

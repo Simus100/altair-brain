@@ -1,3 +1,10 @@
+---
+date: 2026-08-07
+area: data-science
+source: 
+tags: []
+reviewed: 2026-08-07
+---
 Per installare MongoDB possiamo usare docker. 
 
 Similmente a PostgreSql e MySQL si cerca l'immagine nella barra di ricerca ufficiale di Docker per MongoDB e si avvia run a new container. 
