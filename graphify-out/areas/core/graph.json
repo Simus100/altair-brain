@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "3c1001802167e1f77a566a4e10ad544ca63b2cb7",
+ "built_at_commit": "05619311341f259a95a3b846acccc1509e476d0c",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -459,7 +459,7 @@
    "label": "Lezioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L22",
+   "source_location": "L25",
    "_origin": "ast",
    "id": "engine_lessons_lezioni_recenti",
    "community": 126,
@@ -3858,6 +3858,16 @@
    "norm_label": "normalizza()"
   },
   {
+   "label": "raccogli_percorsi()",
+   "file_type": "code",
+   "source_file": "tools/build_search_index.py",
+   "source_location": "L127",
+   "_origin": "ast",
+   "id": "tools_build_search_index_raccogli_percorsi",
+   "community": 132,
+   "norm_label": "raccogli_percorsi()"
+  },
+  {
    "label": "Minuscolo senza accenti: 'analisi' e 'Analisí' devono coincidere.",
    "file_type": "rationale",
    "source_file": "tools/build_search_index.py",
@@ -4893,7 +4903,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L22",
+   "source_location": "L25",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_lezioni_recenti",
@@ -9286,6 +9296,16 @@
    "weight": 1.0,
    "source": "tools_build_search_index",
    "target": "tools_build_search_index_normalizza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_search_index.py",
+   "source_location": "L127",
+   "weight": 1.0,
+   "source": "tools_build_search_index",
+   "target": "tools_build_search_index_raccogli_percorsi",
    "confidence_score": 1.0
   },
   {

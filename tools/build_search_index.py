@@ -119,44 +119,54 @@ def spezza(testo, rel):
 
 
 # ---------------- raccolta del corpus ----------------
+# DETERMINISMO: l'indice e committato e la CI verifica che coincida con quello
+# rigenerato su Linux. os.walk NON garantisce l'ordine delle sottocartelle (dipende
+# dal filesystem: Windows e Linux danno ordini diversi), e l'ordine dei frammenti
+# finisce dentro il JSON. Si raccolgono quindi TUTTI i percorsi e si ordinano prima
+# di elaborarli: stesso corpus -> stesso indice, su qualunque macchina.
+def raccogli_percorsi():
+    trovati = []
+    for base in CARTELLE:
+        radice = os.path.join(ROOT, base)
+        if not os.path.isdir(radice):
+            continue
+        for root, dirs, files in os.walk(radice):
+            dirs[:] = sorted(d for d in dirs if d not in ESCLUDI and not d.startswith("."))
+            for f in files:
+                if f.endswith(ESTENSIONI):
+                    trovati.append(
+                        os.path.relpath(os.path.join(root, f), ROOT).replace("\\", "/"))
+    return sorted(trovati)
+
+
 documenti, postings, df = [], {}, {}
 
-for base in CARTELLE:
-    radice = os.path.join(ROOT, base)
-    if not os.path.isdir(radice):
+for rel in raccogli_percorsi():
+    testo = leggi(os.path.join(ROOT, rel))
+    if not testo:
         continue
-    for root, dirs, files in os.walk(radice):
-        dirs[:] = [d for d in dirs if d not in ESCLUDI and not d.startswith(".")]
-        for f in sorted(files):
-            if not f.endswith(ESTENSIONI):
-                continue
-            path = os.path.join(root, f)
-            rel = os.path.relpath(path, ROOT).replace("\\", "/")
-            testo = leggi(path)
-            if not testo:
-                continue
-            corpo, meta = togli_frontmatter(testo)
-            parti = rel.split("/")
-            area = parti[1] if len(parti) > 2 and parti[0] in ("raw", "wiki") else parti[0]
-            for titolo, frammento in spezza(corpo, rel):
-                idx = len(documenti)
-                token = tokenizza(titolo + " " + frammento)
-                if not token:
-                    continue
-                documenti.append({
-                    "file": rel,
-                    "titolo": titolo or os.path.basename(rel),
-                    "area": area,
-                    "estratto": re.sub(r"\s+", " ", frammento)[:280],
-                    "n_token": len(token),
-                    "tags": meta.get("tags", ""),
-                })
-                tf = {}
-                for t in token:
-                    tf[t] = tf.get(t, 0) + 1
-                for t, c in tf.items():
-                    postings.setdefault(t, []).append([idx, c])
-                    df[t] = df.get(t, 0) + 1
+    corpo, meta = togli_frontmatter(testo)
+    parti = rel.split("/")
+    area = parti[1] if len(parti) > 2 and parti[0] in ("raw", "wiki") else parti[0]
+    for titolo, frammento in spezza(corpo, rel):
+        idx = len(documenti)
+        token = tokenizza(titolo + " " + frammento)
+        if not token:
+            continue
+        documenti.append({
+            "file": rel,
+            "titolo": titolo or os.path.basename(rel),
+            "area": area,
+            "estratto": re.sub(r"\s+", " ", frammento)[:280],
+            "n_token": len(token),
+            "tags": meta.get("tags", ""),
+        })
+        tf = {}
+        for t in token:
+            tf[t] = tf.get(t, 0) + 1
+        for t, c in tf.items():
+            postings.setdefault(t, []).append([idx, c])
+            df[t] = df.get(t, 0) + 1
 
 N = len(documenti)
 avgdl = sum(d["n_token"] for d in documenti) / N if N else 0.0
