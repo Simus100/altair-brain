@@ -264,9 +264,66 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
 
 ## DOPO che le macroaree saranno popolate (non prima)
 
-- **Ricerca semantica locale**: `sentence-transformers` (gratuito) per un indice
-  embeddings di `raw/` e `wiki/` → endpoint `/search?q=` che trova per significato.
-  I ponti intercampo emergono anche senza nomi identici. Peso: modello ~100MB, ok VPS.
+- **Livello SEMANTICO della ricerca — GIA COSTRUITO, da ATTIVARE.**
+  *(non e piu da implementare: il codice c'e, manca solo la decisione sulla dipendenza)*
+
+  **Stato:** la ricerca ibrida e completa a meta. Il motore lessicale (BM25) e attivo
+  e committato; il motore semantico e scritto e si auto-rileva, ma resta inerte finche
+  manca la libreria. `tools/search.py` fonde le due classifiche con RRF `1/(60+rango)`
+  — solo posizioni, mai punteggi: BM25 e coseno vivono su scale incomparabili.
+
+  **Attivazione (2 comandi):**
+  ```
+  pip install sentence-transformers
+  python tools/build_dense_index.py
+  ```
+  Da quel momento `tools/search.py`, `/v1/search` e il tool MCP `brain_search` usano
+  entrambi i motori senza altre modifiche. L'indice denso e gitignorato (grande e
+  ricostruibile); il modello gira offline dopo il primo download → vincolo 1 rispettato.
+
+  **Costo reale:** ~2 GB su disco (sentence-transformers tira dentro PyTorch), non i
+  ~100MB stimati in origine. Per questo e una scelta esplicita e non una dipendenza:
+  senza, `cerca_denso()` ritorna lista vuota e la ricerca resta lessicale (stessa
+  degradazione controllata gia usata per graphify).
+
+  **Cosa aggiunge:** BM25 trova le PAROLE, il semantico il SIGNIFICATO. Cercando
+  "come capisco se i dati sono sporchi" oggi non si trova "controlli di qualita e
+  valori anomali" — nessuna parola in comune. I due motori sbagliano in modi opposti:
+  BM25 e insostituibile su sigle e codici (`IQR`, `CONTA.PIU.SE`, `postgress.sql`)
+  che il semantico diluisce; il semantico copre i sinonimi che BM25 non vede.
+
+  **Effetto collaterale prezioso:** `tools/link_suggest.py` usa lo stesso indice, quindi
+  passerebbe da proporre collegamenti per parole condivise a proporli per affinita di
+  SIGNIFICATO. E li che possono emergere i **ponti intercampo**, oggi fermi a 0 proposte
+  perche aion e data-science usano vocabolari lontanissimi.
+
+  **Quando conviene farlo:** con una TERZA macroarea popolata. Con due aree e vocabolari
+  cosi distanti il guadagno e modesto e il costo su disco resta pieno.
+
+  **Come verificare che sia servito davvero** (non fidarsi dell'impressione):
+  1. prima dell'attivazione salva l'esito del golden set e la riga corrente di
+     `metrics/graph_metrics.csv`;
+  2. dopo, aggiungi al golden set 3-4 domande formulate con parole DIVERSE da quelle
+     scritte nelle note (e li che il lessicale fallisce): se passano solo col semantico
+     attivo, il guadagno e dimostrato;
+  3. rilancia `link_suggest.py` e conta le proposte **INTERCAMPO**: se restano 0, il
+     semantico non sta aiutando su questo corpus e la dipendenza non si ripaga.
+- **Accettare le proposte di collegamento** (`python tools/link_suggest.py`): ~53
+  proposte azionabili in attesa in `wiki/data-science/`. Accettarne una = aggiungere
+  il `[[wikilink]]` nella pagina di partenza e rilanciare `rebuild_all`. E il modo
+  diretto per far risalire il `grado_medio` in `metrics/graph_metrics.csv`, sceso a
+  2.54 dopo l'ingresso delle 23 note grezze (che ancora non citano nessuno).
+  Nota: le pagine di `wiki/aion/` sono ESCLUSE perche generate — li la relazione va
+  aggiunta in `engine/aion.model.json`, non nella pagina.
+
+- **Normalizzare i nomi in kebab-case** (facoltativo, cosmetico ma da convenzione):
+  `raw/data-science/` contiene nomi con spazi e maiuscole (`CALCOLO QUARTILE E
+  INDIVIDUAZIONE OUTLIER.md`, `PROJECT WORK/`), mentre `raw/README.md` prescrive
+  kebab-case ascii. Funziona tutto lo stesso — i nodi del grafo portano quei nomi
+  come etichette — ma un rename con `git mv` renderebbe le etichette leggibili e i
+  `[[wikilink]]` scrivibili senza spazi. Da fare in una passata sola, aggiornando
+  contestualmente `engine/provenance.json` (come gia fatto per .txt→.md).
+
 - **Scope per-area sui token**: più token, ognuno con lista di aree leggibili;
   il gate filtra i risultati per `source_file` prefix. Regola ponti: un nodo-ponte è
   visibile solo se il chiamante vede ENTRAMBE le aree che collega.

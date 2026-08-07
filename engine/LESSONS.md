@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **7** · sessioni graphify: **1**
-- esiti: 3 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
-- skill piu attive: manuale (5), report (1), oracle (1)
-- temi ricorrenti: report (2), metodo (2), graphify (2), corpus (2), living (1), editoriale (1), oracolo (1), attribuzione (1)
+- lezioni registrate: **8** · sessioni graphify: **1**
+- esiti: 4 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
+- skill piu attive: manuale (6), report (1), oracle (1)
+- temi ricorrenti: metodo (3), report (2), graphify (2), corpus (2), living (1), editoriale (1), oracolo (1), attribuzione (1)
 
 ## Ancoraggi consolidati
 
@@ -27,9 +27,13 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `test_golden.py` — 1× utile
 - `graph_metrics.py` — 1× utile
 - `build_search_index.py` — 1× utile
+- `ROADMAP.md` — 1× utile
+- `build_dense_index.py` — 1× utile
 
 ## Lezioni recenti
 
+- **2026-08-07** _((manuale, utile))_ — una voce di roadmap invecchia male se descrive come 'da costruire' cio che e gia costruito: va riscritta con lo STATO reale (fatto/da attivare), il costo vero misurato e il criterio per capire se e servita davvero
+  - contesto: dove registrare un miglioramento futuro gia progettato ma non attivato
 - **2026-08-07** _((manuale, utile))_ — convertire .txt->.md con git mv ha portato raw/data-science da 4 a 55 nodi e la provenienza da 8 a 31 archi; ma attenzione: cambia anche la strategia di spezzettamento dell'indice (i .md si spezzano per titolo), quindi le note in prosa vanno spezzate a blocchi o collassano in un frammento unico
   - contesto: rendere navigabili nel grafo le note grezze in .txt
 - **2026-08-06** _((manuale, utile))_ — il golden set ha trovato in 1 minuto un difetto strutturale invisibile da mesi (raw e wiki con 0 archi tra loro): una misura scritta prima delle feature vale piu di dieci feature
