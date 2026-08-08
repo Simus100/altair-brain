@@ -17,6 +17,9 @@ Uso:  python tools/freshness_report.py            (informativo, exit 0)
 """
 import argparse, datetime, os, sys
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from tools import frontmatter as fm  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OGGI = datetime.date.today()
 
@@ -34,26 +37,10 @@ SCANSIONA = ("raw/", "wiki/", "reports/")
 
 
 def leggi_frontmatter(path):
-    """Estrae le coppie chiave: valore del blocco --- iniziale. Volutamente semplice:
-    i campi della convenzione sono scalari o liste in linea, niente YAML annidato."""
-    try:
-        with open(path, encoding="utf-8") as f:
-            testo = f.read()
-    except (OSError, UnicodeDecodeError):
-        return None
-    if not testo.lstrip().startswith("---"):
-        return None
-    corpo = testo.lstrip()[3:]
-    fine = corpo.find("\n---")
-    if fine == -1:
-        return None
-    meta = {}
-    for riga in corpo[:fine].splitlines():
-        if ":" not in riga or riga.strip().startswith("#"):
-            continue
-        k, _, v = riga.partition(":")
-        meta[k.strip()] = v.strip()
-    return meta
+    """Delega al parser condiviso (tools/frontmatter): la regola del blocco
+    delimitato vive in un posto solo. Ritorna None se non c'e front-matter."""
+    meta, _ = fm.leggi(path)
+    return meta or None
 
 
 def sla_di(rel):

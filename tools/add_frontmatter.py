@@ -27,6 +27,8 @@ Uso:
 """
 import argparse, datetime, os, re, subprocess, sys
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Strati GENERATI: mai toccare a mano (fonte unica di verita).
@@ -58,8 +60,8 @@ def area_di(p):
     return parti[1] if len(parti) > 2 and parti[0] in ("raw", "wiki") else "generale"
 
 
-def ha_frontmatter(testo):
-    return testo.lstrip().startswith("---")
+# delega al parser condiviso: la regola "prima riga esattamente ---" e li, una volta sola
+from tools.frontmatter import ha_frontmatter  # noqa: E402
 
 
 def costruisci(path):

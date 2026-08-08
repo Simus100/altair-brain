@@ -145,19 +145,17 @@ def test_frontmatter_presente_sulle_fonti():
 
 
 def test_freshness_rileva_fatto_scaduto(tmp_path):
-    """Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto."""
+    """Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.
+    Ora il parser e condiviso (tools/frontmatter): non serve piu estrarlo a pezzi
+    dal sorgente dello strumento."""
+    from tools.frontmatter import leggi
     nota = tmp_path / "fatto.md"
     nota.write_text("---\ndate: 2026-01-01\nvalid_until: 2026-01-31\n---\ncorpo\n",
                     encoding="utf-8")
-    # riusa il parser dello strumento senza eseguirne il main
-    src = (ROOT / "tools" / "freshness_report.py").read_text(encoding="utf-8")
-    ns = {"__name__": "_parser_only"}
-    inizio = src.index("def leggi_frontmatter")
-    fine = src.index("def sla_di")
-    exec(compile(src[inizio:fine], "freshness_parser", "exec"), ns)
-    meta = ns["leggi_frontmatter"](str(nota))
+    meta, corpo = leggi(str(nota))
     assert meta["valid_until"] == "2026-01-31"
     assert meta["date"] == "2026-01-01"
+    assert corpo.strip() == "corpo"
 
 
 # ---------------- ricerca ibrida ----------------
@@ -425,3 +423,108 @@ def test_context_pack_deduplica_per_file():
     p = pacchetto("analisi dei dati e metodo", budget_token=3000)
     files = [f["file"] for f in p["frammenti"]]
     assert len(files) == len(set(files)), "stesso file piu volte: budget sprecato"
+
+
+# ---------------- parser front-matter condiviso (regressione reale) ----------------
+
+def test_frontmatter_non_confonde_una_riga_di_testo():
+    """Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata
+    per front-matter YAML perche il controllo era startswith('---'). Effetti a catena:
+    lo strumento di arricchimento la saltava, la freschezza non sapeva la data,
+    l'indice le mangiava l'inizio del contenuto."""
+    from tools.frontmatter import ha_frontmatter, dividi
+    testo = "--- FUNZIONI DI DATA_PROCESSING EXCEL ---\n\n1. STATISTICHE\n"
+    assert not ha_frontmatter(testo)
+    meta, corpo = dividi(testo)
+    assert meta == {} and corpo == testo, "contenuto alterato da un falso front-matter"
+
+
+def test_frontmatter_riconosce_il_blocco_valido():
+    from tools.frontmatter import ha_frontmatter, dividi
+    testo = "---\ndate: 2026-01-01\narea: x\n---\ncorpo vero\n"
+    assert ha_frontmatter(testo)
+    meta, corpo = dividi(testo)
+    assert meta == {"date": "2026-01-01", "area": "x"}
+    assert corpo.strip() == "corpo vero"
+
+
+def test_frontmatter_apertura_senza_chiusura():
+    from tools.frontmatter import ha_frontmatter
+    assert not ha_frontmatter("---\ndate: 2026-01-01\nmanca la chiusura\n")
+
+
+def test_tutte_le_note_raw_hanno_provenienza():
+    """Dopo la correzione del parser, nessuna nota deve restare scoperta."""
+    from tools.frontmatter import ha_frontmatter
+    scoperte = []
+    for base in (ROOT / "raw",):
+        for p in base.rglob("*.md"):
+            rel = p.relative_to(ROOT).as_posix()
+            if "_inbox" in rel:
+                continue
+            if not ha_frontmatter(p.read_text(encoding="utf-8")):
+                scoperte.append(rel)
+    assert not scoperte, f"note senza front-matter: {scoperte}"
+
+
+# ---------------- F8: riemersione ----------------
+
+def test_resurface_sceglie_con_criterio_e_esclude_i_generati():
+    from tools.resurface import candidati, scegli
+    c = candidati()
+    assert c, "nessun candidato"
+    assert not any(x["file"].startswith("wiki/aion/") for x in c), \
+        "proposta una pagina generata: la fonte e altrove"
+    s = scegli(c, 3)
+    assert len(s) == 3 and len({x["file"] for x in s}) == 3
+
+
+def test_resurface_premia_le_note_isolate_e_vecchie():
+    from tools.resurface import scegli
+    finti = [
+        {"file": f"raw/x/{i}.md", "giorni": g, "collegamenti": k,
+         "punteggio": g + (30 if k == 0 else 0), "titolo": "t", "area": "x",
+         "assaggio": "..."}
+        for i, (g, k) in enumerate([(5, 3), (5, 0), (400, 2)])
+    ]
+    ordinati = sorted(finti, key=lambda c: -c["punteggio"])
+    assert ordinati[0]["giorni"] == 400          # la piu vecchia in testa
+    assert ordinati[1]["collegamenti"] == 0      # poi l'isolata
+
+
+def test_resurface_segna_rivista(tmp_path, monkeypatch):
+    """--segna deve aggiornare 'reviewed' senza toccare il resto della nota."""
+    import tools.resurface as rs
+    nota = tmp_path / "n.md"
+    nota.write_text("---\ndate: 2026-01-01\nreviewed: 2026-01-01\n---\ncorpo\n",
+                    encoding="utf-8")
+    monkeypatch.setattr(rs, "ROOT", str(tmp_path))
+    rs.segna_rivista("n.md")
+    testo = nota.read_text(encoding="utf-8")
+    assert "reviewed: " in testo and "2026-01-01\nreviewed: 2026-01-01" not in testo
+    assert testo.rstrip().endswith("corpo")
+
+
+# ---------------- F7: raccolta dai report ----------------
+
+def test_report_harvest_estrae_fonti_e_metodo():
+    from tools.report_harvest import raccogli, componi
+    d = raccogli()
+    assert d["totali"] > 0, "nessuna affermazione raccolta dai report"
+    assert d["fonti"], "nessuna fonte estratta"
+    testo = componi(d)
+    assert testo.lstrip().startswith("---"), "la nota deve avere provenienza"
+    assert "Fonti su cui il brain ha costruito" in testo
+    # non deve riportare i FATTI (invecchiano): solo metodo e fonti
+    assert "Metodo oracolare" in testo
+
+
+def test_report_harvest_nota_presente_e_dichiarata():
+    """La nota raccolta deve esistere ED essere dichiarata nel registro di
+    provenienza: senza dichiarazione resta scollegata e il silo non si chiude."""
+    import json as _json
+    nota = ROOT / "raw" / "divulgazione" / "metodo-report-verificati.md"
+    assert nota.exists(), "nota di metodo non generata (report_harvest.py --apply)"
+    reg = _json.loads((ROOT / "engine" / "provenance.json").read_text(encoding="utf-8"))
+    dichiarati = {m["wiki"] for m in reg["mappe_dirette"]}
+    assert "raw/divulgazione/metodo-report-verificati.md" in dichiarati

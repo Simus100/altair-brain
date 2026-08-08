@@ -3,8 +3,68 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "5fdf126e1994c1c82ecbd87d6c1f8b716d77bc0f",
+ "built_at_commit": "b042612f30675f43e63c8b5413e9593437870bc7",
  "nodes": [
+  {
+   "label": "metodo-report-verificati.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati",
+   "community": 111,
+   "norm_label": "metodo-report-verificati.md"
+  },
+  {
+   "label": "Casi seguiti",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L47",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati_casi_seguiti",
+   "community": 111,
+   "norm_label": "casi seguiti"
+  },
+  {
+   "label": "Convenzioni editoriali in uso",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L37",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati_convenzioni_editoriali_in_uso",
+   "community": 111,
+   "norm_label": "convenzioni editoriali in uso"
+  },
+  {
+   "label": "Fonti su cui il brain ha costruito",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati_fonti_su_cui_il_brain_ha_costruito",
+   "community": 111,
+   "norm_label": "fonti su cui il brain ha costruito"
+  },
+  {
+   "label": "Metodo dei report verificati",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "community": 111,
+   "norm_label": "metodo dei report verificati"
+  },
+  {
+   "label": "Metodo oracolare nei report",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L53",
+   "_origin": "ast",
+   "id": "raw_divulgazione_metodo_report_verificati_metodo_oracolare_nei_report",
+   "community": 111,
+   "norm_label": "metodo oracolare nei report"
+  },
   {
    "label": "README.md",
    "file_type": "document",
@@ -47,6 +107,66 @@
   }
  ],
  "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati",
+   "target": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L61",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati",
+   "target": "raw_divulgazione_readme",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L47",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "target": "raw_divulgazione_metodo_report_verificati_casi_seguiti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L37",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "target": "raw_divulgazione_metodo_report_verificati_convenzioni_editoriali_in_uso",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "target": "raw_divulgazione_metodo_report_verificati_fonti_su_cui_il_brain_ha_costruito",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/metodo-report-verificati.md",
+   "source_location": "L53",
+   "weight": 1.0,
+   "source": "raw_divulgazione_metodo_report_verificati_metodo_dei_report_verificati",
+   "target": "raw_divulgazione_metodo_report_verificati_metodo_oracolare_nei_report",
+   "confidence_score": 1.0
+  },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",

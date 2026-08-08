@@ -17,7 +17,10 @@ SCELTE:
 
 Uso:  python tools/build_search_index.py     (parte di rebuild_all.py)
 """
-import json, math, os, re, unicodedata
+import json, math, os, re, sys, unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from tools import frontmatter as fm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "engine", "search_index.json")
@@ -61,19 +64,10 @@ def leggi(path):
 
 
 def togli_frontmatter(testo):
-    """Il front-matter e metadato, non contenuto: non deve inquinare il ranking."""
-    s = testo.lstrip()
-    if not s.startswith("---"):
-        return testo, {}
-    fine = s.find("\n---", 3)
-    if fine == -1:
-        return testo, {}
-    meta = {}
-    for riga in s[3:fine].splitlines():
-        if ":" in riga and not riga.strip().startswith("#"):
-            k, _, v = riga.partition(":")
-            meta[k.strip()] = v.strip()
-    return s[fine + 4:], meta
+    """Il front-matter e metadato, non contenuto: non deve inquinare il ranking.
+    Regola del blocco delimitato in tools/frontmatter, condivisa."""
+    meta, corpo = fm.dividi(testo)
+    return corpo, meta
 
 
 def spezza(testo, rel):

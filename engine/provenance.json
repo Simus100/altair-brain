@@ -26,6 +26,11 @@
   ],
   "mappe_dirette": [
     {
+      "wiki": "raw/divulgazione/metodo-report-verificati.md",
+      "fonti": ["reports/template_showcase_3d.md"],
+      "nota": "F7: la conoscenza di metodo estratta dai report pubblicati (tools/report_harvest.py). Chiude il silo misurato: prima reports/ non aveva ALCUN arco verso gli strati di conoscenza — produceva lavoro che non tornava mai indietro. Il campo 'wiki' qui ospita una nota grezza: la derivazione e cio che conta, non la cartella."
+    },
+    {
       "wiki": "wiki/aion/aion-oracle.md",
       "fonti": ["raw/aion/aion-oracle.md"],
       "nota": "la pagina curata dell'oracolo e il documento grezzo con la sequenza di Re Wen da cui nasce engine/iching.db.json"
