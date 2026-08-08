@@ -130,13 +130,16 @@ def search(q: str, top: int = 8, area: str = None) -> dict:
         raise BrainError(400, "Nome area non valido.")
     top = max(1, min(int(top or 8), 50))
     try:
-        from tools.search import cerca
+        from tools.search import cerca_con_diagnosi
     except Exception as e:
         raise BrainError(503, f"ricerca non disponibile: {e}")
     if not (REPO / "engine" / "search_index.json").exists():
         raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
-    risultati = cerca(q, top=top, area=area)
-    return {"query": q, "area": area, "n": len(risultati), "risultati": risultati}
+    esito = cerca_con_diagnosi(q, top=top, area=area)
+    # La diagnosi viaggia col risultato: chi consuma l'API deve poter sapere QUANTO
+    # fidarsi, non solo cosa e stato trovato.
+    return {"query": q, "area": area, "n": len(esito["risultati"]),
+            "diagnosi": esito["diagnosi"], "risultati": esito["risultati"]}
 
 
 # ---------------- oracle ----------------

@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "5d9f42f420e3392805465d6b6d7a291de13b8155",
+ "built_at_commit": "e2f1279b78df22639e3aa442299d7028b1b42c60",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -469,7 +469,7 @@
    "label": "Lezioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L31",
+   "source_location": "L33",
    "_origin": "ast",
    "id": "engine_lessons_lezioni_recenti",
    "community": 126,
@@ -2409,7 +2409,7 @@
    "label": "capture()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L183",
+   "source_location": "L186",
    "_origin": "ast",
    "id": "server_brain_core_capture",
    "community": 2,
@@ -2439,7 +2439,7 @@
    "label": "health_info()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L262",
+   "source_location": "L265",
    "_origin": "ast",
    "id": "server_brain_core_health_info",
    "community": 2,
@@ -2449,7 +2449,7 @@
    "label": "inbox_done()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L228",
+   "source_location": "L231",
    "_origin": "ast",
    "id": "server_brain_core_inbox_done",
    "community": 2,
@@ -2459,7 +2459,7 @@
    "label": "inbox_list()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L206",
+   "source_location": "L209",
    "_origin": "ast",
    "id": "server_brain_core_inbox_list",
    "community": 2,
@@ -2469,7 +2469,7 @@
    "label": "inbox_read()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L221",
+   "source_location": "L224",
    "_origin": "ast",
    "id": "server_brain_core_inbox_read",
    "community": 2,
@@ -2499,7 +2499,7 @@
    "label": "oracle_cast()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L143",
+   "source_location": "L146",
    "_origin": "ast",
    "id": "server_brain_core_oracle_cast",
    "community": 2,
@@ -2509,7 +2509,7 @@
    "label": "oracle_hexagram()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L156",
+   "source_location": "L159",
    "_origin": "ast",
    "id": "server_brain_core_oracle_hexagram",
    "community": 2,
@@ -2599,7 +2599,7 @@
    "label": "_safe_inbox_file()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L169",
+   "source_location": "L172",
    "_origin": "ast",
    "id": "server_brain_core_safe_inbox_file",
    "community": 2,
@@ -2609,7 +2609,7 @@
    "label": "save_feedback()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L239",
+   "source_location": "L242",
    "_origin": "ast",
    "id": "server_brain_core_save_feedback",
    "community": 2,
@@ -2629,7 +2629,7 @@
    "label": "_slug()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L178",
+   "source_location": "L181",
    "_origin": "ast",
    "id": "server_brain_core_slug",
    "community": 2,
@@ -2689,7 +2689,7 @@
    "label": "brain_explain()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L60",
+   "source_location": "L68",
    "_origin": "ast",
    "id": "server_mcp_server_brain_explain",
    "community": 5,
@@ -2699,7 +2699,7 @@
    "label": "brain_feedback()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L99",
+   "source_location": "L107",
    "_origin": "ast",
    "id": "server_mcp_server_brain_feedback",
    "community": 5,
@@ -2709,7 +2709,7 @@
    "label": "brain_lessons()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L84",
+   "source_location": "L92",
    "_origin": "ast",
    "id": "server_mcp_server_brain_lessons",
    "community": 5,
@@ -2719,7 +2719,7 @@
    "label": "brain_model()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L72",
+   "source_location": "L80",
    "_origin": "ast",
    "id": "server_mcp_server_brain_model",
    "community": 5,
@@ -2729,7 +2729,7 @@
    "label": "brain_oracle()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L90",
+   "source_location": "L98",
    "_origin": "ast",
    "id": "server_mcp_server_brain_oracle",
    "community": 5,
@@ -2739,7 +2739,7 @@
    "label": "brain_path()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L66",
+   "source_location": "L74",
    "_origin": "ast",
    "id": "server_mcp_server_brain_path",
    "community": 5,
@@ -2759,7 +2759,7 @@
    "label": "brain_reasoner()",
    "file_type": "code",
    "source_file": "server/mcp_server.py",
-   "source_location": "L78",
+   "source_location": "L86",
    "_origin": "ast",
    "id": "server_mcp_server_brain_reasoner",
    "community": 5,
@@ -2779,9 +2779,9 @@
    "label": "Registra l'esito di una risposta (useful|dead_end|corrected): il brain impara.",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L100",
+   "source_location": "L108",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_100",
+   "id": "server_mcp_server_rationale_108",
    "community": 5,
    "norm_label": "registra l'esito di una risposta (useful|dead_end|corrected): il brain impara."
   },
@@ -2809,9 +2809,9 @@
    "label": "Spiega un nodo del grafo e i suoi collegamenti (graphify explain).",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L61",
+   "source_location": "L69",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_61",
+   "id": "server_mcp_server_rationale_69",
    "community": 5,
    "norm_label": "spiega un nodo del grafo e i suoi collegamenti (graphify explain)."
   },
@@ -2819,9 +2819,9 @@
    "label": "Percorso piu breve tra due nodi del grafo (graphify path).",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L67",
+   "source_location": "L75",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_67",
+   "id": "server_mcp_server_rationale_75",
    "community": 5,
    "norm_label": "percorso piu breve tra due nodi del grafo (graphify path)."
   },
@@ -2829,9 +2829,9 @@
    "label": "Il modello di pensiero AION tipizzato (engine/aion.model.json).",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L73",
+   "source_location": "L81",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_73",
+   "id": "server_mcp_server_rationale_81",
    "community": 5,
    "norm_label": "il modello di pensiero aion tipizzato (engine/aion.model.json)."
   },
@@ -2839,9 +2839,9 @@
    "label": "Il protocollo di ragionamento AION a 9 passi (engine/aion-reasoner.md).",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L79",
+   "source_location": "L87",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_79",
+   "id": "server_mcp_server_rationale_87",
    "community": 5,
    "norm_label": "il protocollo di ragionamento aion a 9 passi (engine/aion-reasoner.md)."
   },
@@ -2849,9 +2849,9 @@
    "label": "Le lezioni apprese dal brain (LESSONS.md, feedback loop).",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L85",
+   "source_location": "L93",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_85",
+   "id": "server_mcp_server_rationale_93",
    "community": 5,
    "norm_label": "le lezioni apprese dal brain (lessons.md, feedback loop)."
   },
@@ -2859,9 +2859,9 @@
    "label": "Lancio I Ching (AION_Oracle eseguibile). seed >= 0 per un lancio riproducibile.",
    "file_type": "rationale",
    "source_file": "server/mcp_server.py",
-   "source_location": "L91",
+   "source_location": "L99",
    "_origin": "ast",
-   "id": "server_mcp_server_rationale_91",
+   "id": "server_mcp_server_rationale_99",
    "community": 5,
    "norm_label": "lancio i ching (aion_oracle eseguibile). seed >= 0 per un lancio riproducibile."
   },
@@ -3024,7 +3024,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tests_test_api",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_api.py"
   },
   {
@@ -3034,7 +3034,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "tests_test_api_test_alias_non_versionati",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_alias_non_versionati()"
   },
   {
@@ -3044,7 +3044,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tests_test_api_test_auth_richiesta_e_constant_time_ok",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_auth_richiesta_e_constant_time_ok()"
   },
   {
@@ -3054,7 +3054,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "tests_test_api_test_capture_vuoto_e_troppo_grande",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_capture_vuoto_e_troppo_grande()"
   },
   {
@@ -3064,7 +3064,7 @@
    "source_location": "L108",
    "_origin": "ast",
    "id": "tests_test_api_test_feedback_node_injection_rejected",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_feedback_node_injection_rejected()"
   },
   {
@@ -3074,7 +3074,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tests_test_api_test_health_pubblico_e_ricco",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_health_pubblico_e_ricco()"
   },
   {
@@ -3084,7 +3084,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_flusso_completo",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_inbox_flusso_completo()"
   },
   {
@@ -3094,7 +3094,7 @@
    "source_location": "L96",
    "_origin": "ast",
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_inbox_path_traversal_respinto()"
   },
   {
@@ -3104,7 +3104,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_deterministico_con_seed",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_oracle_deterministico_con_seed()"
   },
   {
@@ -3114,7 +3114,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tests_test_api_test_oracle_hexagram_lookup_re_wen",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_oracle_hexagram_lookup_re_wen()"
   },
   {
@@ -3124,7 +3124,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tests_test_api_test_query_area_invalida",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_query_area_invalida()"
   },
   {
@@ -3134,7 +3134,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "tests_test_api_test_query_degrada_o_funziona",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_query_degrada_o_funziona()"
   },
   {
@@ -3144,7 +3144,7 @@
    "source_location": "L117",
    "_origin": "ast",
    "id": "tests_test_api_test_rate_limiter_uses_client_host",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_rate_limiter_uses_client_host()"
   },
   {
@@ -3154,7 +3154,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "tests_test_api_test_route_deterministico",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_route_deterministico()"
   },
   {
@@ -3164,7 +3164,7 @@
    "source_location": "L169",
    "_origin": "ast",
    "id": "tests_test_api_test_search_filtro_area",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_search_filtro_area()"
   },
   {
@@ -3174,7 +3174,7 @@
    "source_location": "L149",
    "_origin": "ast",
    "id": "tests_test_api_test_search_richiede_token_e_valida_input",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_search_richiede_token_e_valida_input()"
   },
   {
@@ -3184,7 +3184,7 @@
    "source_location": "L158",
    "_origin": "ast",
    "id": "tests_test_api_test_search_trova_nel_contenuto",
-   "community": 54,
+   "community": 1,
    "norm_label": "test_search_trova_nel_contenuto()"
   },
   {
@@ -3354,7 +3354,7 @@
    "source_location": "L166",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_166",
-   "community": 39,
+   "community": 135,
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
@@ -3388,14 +3388,54 @@
    "norm_label": "la serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno."
   },
   {
+   "label": "Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L236",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_236",
+   "community": 161,
+   "norm_label": "il caso che conta: il corpus non ha la risposta e il sistema lo dichiara     inv"
+  },
+  {
+   "label": "Regressione: se query e indice filtrano stopword diverse, i termini scartati",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L253",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_253",
+   "community": 159,
+   "norm_label": "regressione: se query e indice filtrano stopword diverse, i termini scartati"
+  },
+  {
    "label": "6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran.",
    "file_type": "rationale",
    "source_file": "tests/test_tools.py",
    "source_location": "L26",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_26",
-   "community": 39,
+   "community": 54,
    "norm_label": "6 (il conflitto) + 4a linea mobile -> 59 (la dissoluzione). caso iran."
+  },
+  {
+   "label": "Una lezione registrata deve cambiare cio che si vede la volta dopo.",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L266",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_266",
+   "community": 135,
+   "norm_label": "una lezione registrata deve cambiare cio che si vede la volta dopo."
+  },
+  {
+   "label": "Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma",
+   "file_type": "rationale",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L276",
+   "_origin": "ast",
+   "id": "tests_test_tools_rationale_276",
+   "community": 160,
+   "norm_label": "prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma"
   },
   {
    "label": "43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile.",
@@ -3404,7 +3444,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_35",
-   "community": 39,
+   "community": 54,
    "norm_label": "43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile."
   },
   {
@@ -3414,7 +3454,7 @@
    "source_location": "L52",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_52",
-   "community": 39,
+   "community": 54,
    "norm_label": "stesso seed -> stessa lettura (verificabilita)."
   },
   {
@@ -3424,7 +3464,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_59",
-   "community": 39,
+   "community": 162,
    "norm_label": "la selezione decisionale trova il 43 per l'argomento 'decisione/svolta'."
   },
   {
@@ -3454,7 +3494,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
-   "community": 39,
+   "community": 54,
    "norm_label": "test_attribuzione_43_quattro_mobili_da_16()"
   },
   {
@@ -3464,7 +3504,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_6_linea4_da_59",
-   "community": 39,
+   "community": 54,
    "norm_label": "test_attribuzione_6_linea4_da_59()"
   },
   {
@@ -3484,8 +3524,38 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "tests_test_tools_test_cast_seedato_riproducibile",
-   "community": 39,
+   "community": 54,
    "norm_label": "test_cast_seedato_riproducibile()"
+  },
+  {
+   "label": "test_confidenza_alta_su_conoscenza_presente()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L228",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
+   "community": 161,
+   "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
+  },
+  {
+   "label": "test_confidenza_bassa_su_conoscenza_assente()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L235",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
+   "community": 161,
+   "norm_label": "test_confidenza_bassa_su_conoscenza_assente()"
+  },
+  {
+   "label": "test_confidenza_nessuna_fuori_dominio()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L245",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_confidenza_nessuna_fuori_dominio",
+   "community": 161,
+   "norm_label": "test_confidenza_nessuna_fuori_dominio()"
   },
   {
    "label": "test_freshness_rileva_fatto_scaduto()",
@@ -3526,6 +3596,26 @@
    "id": "tests_test_tools_test_indice_coerente_col_corpus",
    "community": 39,
    "norm_label": "test_indice_coerente_col_corpus()"
+  },
+  {
+   "label": "test_memoria_annota_ancoraggi_consolidati()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L265",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
+   "community": 135,
+   "norm_label": "test_memoria_annota_ancoraggi_consolidati()"
+  },
+  {
+   "label": "test_memoria_non_annota_per_nodi_numerici_corti()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L275",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
+   "community": 160,
+   "norm_label": "test_memoria_non_annota_per_nodi_numerici_corti()"
   },
   {
    "label": "test_metriche_una_riga_per_giorno()",
@@ -3584,7 +3674,7 @@
    "source_location": "L189",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
-   "community": 39,
+   "community": 135,
    "norm_label": "test_ricerca_filtro_area_e_limite()"
   },
   {
@@ -3594,7 +3684,7 @@
    "source_location": "L196",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
-   "community": 39,
+   "community": 135,
    "norm_label": "test_ricerca_query_senza_risultati_non_esplode()"
   },
   {
@@ -3604,7 +3694,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_tag_suggerisce_43",
-   "community": 39,
+   "community": 162,
    "norm_label": "test_ricerca_tag_suggerisce_43()"
   },
   {
@@ -3614,8 +3704,18 @@
    "source_location": "L165",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
-   "community": 39,
+   "community": 135,
    "norm_label": "test_ricerca_trova_il_contenuto_giusto()"
+  },
+  {
+   "label": "test_tokenizzazione_query_coerente_con_indice()",
+   "file_type": "code",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L252",
+   "_origin": "ast",
+   "id": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
+   "community": 159,
+   "norm_label": "test_tokenizzazione_query_coerente_con_indice()"
   },
   {
    "label": "add_frontmatter.py",
@@ -4154,7 +4254,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_link_suggest",
-   "community": 39,
+   "community": 135,
    "norm_label": "link_suggest.py"
   },
   {
@@ -4164,7 +4264,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_link_suggest_contenuto",
-   "community": 39,
+   "community": 135,
    "norm_label": "contenuto()"
   },
   {
@@ -4174,7 +4274,7 @@
    "source_location": "L57",
    "_origin": "ast",
    "id": "tools_link_suggest_link_esistenti",
-   "community": 39,
+   "community": 135,
    "norm_label": "link_esistenti()"
   },
   {
@@ -4184,7 +4284,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_link_suggest_pagine_wiki",
-   "community": 39,
+   "community": 135,
    "norm_label": "pagine_wiki()"
   },
   {
@@ -4194,7 +4294,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_oracle_cast",
-   "community": 39,
+   "community": 54,
    "norm_label": "oracle_cast.py"
   },
   {
@@ -4204,7 +4304,7 @@
    "source_location": "L128",
    "_origin": "ast",
    "id": "tools_oracle_cast_attribute_reading",
-   "community": 39,
+   "community": 54,
    "norm_label": "attribute_reading()"
   },
   {
@@ -4214,7 +4314,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "tools_oracle_cast_cast_reading",
-   "community": 39,
+   "community": 54,
    "norm_label": "cast_reading()"
   },
   {
@@ -4224,7 +4324,7 @@
    "source_location": "L61",
    "_origin": "ast",
    "id": "tools_oracle_cast_focus_line",
-   "community": 39,
+   "community": 54,
    "norm_label": "_focus_line()"
   },
   {
@@ -4234,7 +4334,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "tools_oracle_cast_get_hexagram",
-   "community": 39,
+   "community": 54,
    "norm_label": "get_hexagram()"
   },
   {
@@ -4244,7 +4344,7 @@
    "source_location": "L121",
    "_origin": "ast",
    "id": "tools_oracle_cast_lanci_from",
-   "community": 39,
+   "community": 54,
    "norm_label": "_lanci_from()"
   },
   {
@@ -4254,7 +4354,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tools_oracle_cast_load",
-   "community": 39,
+   "community": 54,
    "norm_label": "_load()"
   },
   {
@@ -4264,7 +4364,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "tools_oracle_cast_mutate",
-   "community": 39,
+   "community": 54,
    "norm_label": "_mutate()"
   },
   {
@@ -4274,7 +4374,7 @@
    "source_location": "L84",
    "_origin": "ast",
    "id": "tools_oracle_cast_public",
-   "community": 39,
+   "community": 54,
    "norm_label": "_public()"
   },
   {
@@ -4284,7 +4384,7 @@
    "source_location": "L122",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_122",
-   "community": 39,
+   "community": 54,
    "norm_label": "deriva i 6 lanci da un esagramma scelto + linee mobili decise:     bit 1 (yang):"
   },
   {
@@ -4294,7 +4394,7 @@
    "source_location": "L130",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_130",
-   "community": 39,
+   "community": 54,
    "norm_label": "attribuzione decisionale (metodo canonico per i report).     non si estrae a cas"
   },
   {
@@ -4304,7 +4404,7 @@
    "source_location": "L156",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_156",
-   "community": 39,
+   "community": 162,
    "norm_label": "suggerisce gli esagrammi da attribuire: match tra le parole dell'argomento e i"
   },
   {
@@ -4314,7 +4414,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_62",
-   "community": 39,
+   "community": 54,
    "norm_label": "applica le regole di selezione della linea da interpretare. ritorna (posizione,"
   },
   {
@@ -4324,7 +4424,7 @@
    "source_location": "L155",
    "_origin": "ast",
    "id": "tools_oracle_cast_search_by_tags",
-   "community": 39,
+   "community": 162,
    "norm_label": "search_by_tags()"
   },
   {
@@ -4334,7 +4434,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "tools_oracle_cast_to_binary",
-   "community": 39,
+   "community": 54,
    "norm_label": "_to_binary()"
   },
   {
@@ -4424,8 +4524,18 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_search",
-   "community": 39,
+   "community": 159,
    "norm_label": "search.py"
+  },
+  {
+   "label": "_annota_memoria()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L203",
+   "_origin": "ast",
+   "id": "tools_search_annota_memoria",
+   "community": 160,
+   "norm_label": "_annota_memoria()"
   },
   {
    "label": "_carica()",
@@ -4434,38 +4544,78 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_search_carica",
-   "community": 39,
+   "community": 159,
    "norm_label": "_carica()"
   },
   {
    "label": "cerca()",
    "file_type": "code",
    "source_file": "tools/search.py",
-   "source_location": "L100",
+   "source_location": "L229",
    "_origin": "ast",
    "id": "tools_search_cerca",
-   "community": 39,
+   "community": 135,
    "norm_label": "cerca()"
   },
   {
    "label": "cerca_bm25()",
    "file_type": "code",
    "source_file": "tools/search.py",
-   "source_location": "L48",
+   "source_location": "L52",
    "_origin": "ast",
    "id": "tools_search_cerca_bm25",
-   "community": 39,
+   "community": 159,
    "norm_label": "cerca_bm25()"
+  },
+  {
+   "label": "cerca_con_diagnosi()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L264",
+   "_origin": "ast",
+   "id": "tools_search_cerca_con_diagnosi",
+   "community": 161,
+   "norm_label": "cerca_con_diagnosi()"
   },
   {
    "label": "cerca_denso()",
    "file_type": "code",
    "source_file": "tools/search.py",
-   "source_location": "L69",
+   "source_location": "L73",
    "_origin": "ast",
    "id": "tools_search_cerca_denso",
-   "community": 39,
+   "community": 135,
    "norm_label": "cerca_denso()"
+  },
+  {
+   "label": "_corrisponde()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L188",
+   "_origin": "ast",
+   "id": "tools_search_corrisponde",
+   "community": 160,
+   "norm_label": "_corrisponde()"
+  },
+  {
+   "label": "diagnosi()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L124",
+   "_origin": "ast",
+   "id": "tools_search_diagnosi",
+   "community": 159,
+   "norm_label": "diagnosi()"
+  },
+  {
+   "label": "_memoria()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L171",
+   "_origin": "ast",
+   "id": "tools_search_memoria",
+   "community": 160,
+   "norm_label": "_memoria()"
   },
   {
    "label": "_normalizza()",
@@ -4474,58 +4624,128 @@
    "source_location": "L39",
    "_origin": "ast",
    "id": "tools_search_normalizza",
-   "community": 39,
+   "community": 159,
    "norm_label": "_normalizza()"
   },
   {
-   "label": "Ricerca ibrida. Ritorna una lista di risultati leggibili.",
+   "label": "Quali termini della domanda compaiono davvero nel documento.",
    "file_type": "rationale",
    "source_file": "tools/search.py",
-   "source_location": "L101",
+   "source_location": "L113",
    "_origin": "ast",
-   "id": "tools_search_rationale_101",
-   "community": 39,
-   "norm_label": "ricerca ibrida. ritorna una lista di risultati leggibili."
+   "id": "tools_search_rationale_113",
+   "community": 159,
+   "norm_label": "quali termini della domanda compaiono davvero nel documento."
+  },
+  {
+   "label": "Quanto fidarsi di questo recupero. Deterministico e motivato.      copertura   =",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L125",
+   "_origin": "ast",
+   "id": "tools_search_rationale_125",
+   "community": 159,
+   "norm_label": "quanto fidarsi di questo recupero. deterministico e motivato.      copertura   ="
+  },
+  {
+   "label": "Un nodo citato da una lezione si riferisce a questo risultato?      Prudenza vol",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L189",
+   "_origin": "ast",
+   "id": "tools_search_rationale_189",
+   "community": 160,
+   "norm_label": "un nodo citato da una lezione si riferisce a questo risultato?      prudenza vol"
+  },
+  {
+   "label": "Cosa dice l'esperienza passata su questo risultato.",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L204",
+   "_origin": "ast",
+   "id": "tools_search_rationale_204",
+   "community": 160,
+   "norm_label": "cosa dice l'esperienza passata su questo risultato."
+  },
+  {
+   "label": "Ricerca ibrida. Ritorna una lista di risultati, ognuno annotato con cio che",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L230",
+   "_origin": "ast",
+   "id": "tools_search_rationale_230",
+   "community": 135,
+   "norm_label": "ricerca ibrida. ritorna una lista di risultati, ognuno annotato con cio che"
+  },
+  {
+   "label": "Ricerca + valutazione della propria affidabilita (F1). E la forma che usano",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L265",
+   "_origin": "ast",
+   "id": "tools_search_rationale_265",
+   "community": 161,
+   "norm_label": "ricerca + valutazione della propria affidabilita (f1). e la forma che usano"
+  },
+  {
+   "label": "Stessa tokenizzazione usata in indicizzazione: la lista di stopword viaggia",
+   "file_type": "rationale",
+   "source_file": "tools/search.py",
+   "source_location": "L45",
+   "_origin": "ast",
+   "id": "tools_search_rationale_45",
+   "community": 159,
+   "norm_label": "stessa tokenizzazione usata in indicizzazione: la lista di stopword viaggia"
   },
   {
    "label": "Ranking BM25 classico. Ritorna [(indice_doc, punteggio)] decrescente.",
    "file_type": "rationale",
    "source_file": "tools/search.py",
-   "source_location": "L49",
+   "source_location": "L53",
    "_origin": "ast",
-   "id": "tools_search_rationale_49",
-   "community": 39,
+   "id": "tools_search_rationale_53",
+   "community": 159,
    "norm_label": "ranking bm25 classico. ritorna [(indice_doc, punteggio)] decrescente."
   },
   {
    "label": "Ranking semantico. Attivo solo se indice denso e libreria sono presenti.",
    "file_type": "rationale",
    "source_file": "tools/search.py",
-   "source_location": "L70",
+   "source_location": "L74",
    "_origin": "ast",
-   "id": "tools_search_rationale_70",
-   "community": 39,
+   "id": "tools_search_rationale_74",
+   "community": 135,
    "norm_label": "ranking semantico. attivo solo se indice denso e libreria sono presenti."
   },
   {
    "label": "Reciprocal Rank Fusion: fonde piu classifiche usando solo la posizione.",
    "file_type": "rationale",
    "source_file": "tools/search.py",
-   "source_location": "L92",
+   "source_location": "L96",
    "_origin": "ast",
-   "id": "tools_search_rationale_92",
-   "community": 39,
+   "id": "tools_search_rationale_96",
+   "community": 135,
    "norm_label": "reciprocal rank fusion: fonde piu classifiche usando solo la posizione."
   },
   {
    "label": "_rrf()",
    "file_type": "code",
    "source_file": "tools/search.py",
-   "source_location": "L91",
+   "source_location": "L95",
    "_origin": "ast",
    "id": "tools_search_rrf",
-   "community": 39,
+   "community": 135,
    "norm_label": "_rrf()"
+  },
+  {
+   "label": "_termini_del_documento()",
+   "file_type": "code",
+   "source_file": "tools/search.py",
+   "source_location": "L112",
+   "_origin": "ast",
+   "id": "tools_search_termini_del_documento",
+   "community": 159,
+   "norm_label": "_termini_del_documento()"
   },
   {
    "label": "_tokenizza()",
@@ -4534,7 +4754,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "tools_search_tokenizza",
-   "community": 39,
+   "community": 159,
    "norm_label": "_tokenizza()"
   },
   {
@@ -4923,7 +5143,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L31",
+   "source_location": "L33",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_lezioni_recenti",
@@ -7207,7 +7427,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L183",
+   "source_location": "L186",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_capture",
@@ -7237,7 +7457,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L262",
+   "source_location": "L265",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_health_info",
@@ -7247,7 +7467,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L228",
+   "source_location": "L231",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_inbox_done",
@@ -7257,7 +7477,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L206",
+   "source_location": "L209",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_inbox_list",
@@ -7267,7 +7487,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L221",
+   "source_location": "L224",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_inbox_read",
@@ -7297,7 +7517,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L143",
+   "source_location": "L146",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_oracle_cast",
@@ -7307,7 +7527,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L156",
+   "source_location": "L159",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_oracle_hexagram",
@@ -7357,7 +7577,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L169",
+   "source_location": "L172",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_safe_inbox_file",
@@ -7367,7 +7587,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L239",
+   "source_location": "L242",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_save_feedback",
@@ -7387,7 +7607,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L178",
+   "source_location": "L181",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_slug",
@@ -7408,7 +7628,7 @@
    "context": "import",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L150",
+   "source_location": "L153",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "tools_oracle_cast_cast_reading",
@@ -7419,7 +7639,7 @@
    "context": "import",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L158",
+   "source_location": "L161",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "tools_oracle_cast_get_hexagram",
@@ -7433,7 +7653,7 @@
    "source_location": "L133",
    "weight": 1.0,
    "source": "server_brain_core",
-   "target": "tools_search_cerca",
+   "target": "tools_search_cerca_con_diagnosi",
    "confidence_score": 1.0
   },
   {
@@ -7494,7 +7714,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L185",
+   "source_location": "L188",
    "weight": 1.0,
    "source": "server_brain_core_capture",
    "target": "server_brain_core_brainerror",
@@ -7505,7 +7725,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L192",
+   "source_location": "L195",
    "weight": 1.0,
    "source": "server_brain_core_capture",
    "target": "server_brain_core_slug",
@@ -7560,7 +7780,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L283",
+   "source_location": "L286",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_graphify_available",
@@ -7571,7 +7791,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L278",
+   "source_location": "L281",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_read_repo_json",
@@ -7582,7 +7802,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L284",
+   "source_location": "L287",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_valid_areas",
@@ -7593,7 +7813,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L231",
+   "source_location": "L234",
    "weight": 1.0,
    "source": "server_brain_core_inbox_done",
    "target": "server_brain_core_brainerror",
@@ -7604,7 +7824,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L229",
+   "source_location": "L232",
    "weight": 1.0,
    "source": "server_brain_core_inbox_done",
    "target": "server_brain_core_safe_inbox_file",
@@ -7615,7 +7835,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L214",
+   "source_location": "L217",
    "weight": 1.0,
    "source": "server_brain_core_inbox_list",
    "target": "server_brain_core_search",
@@ -7626,7 +7846,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L224",
+   "source_location": "L227",
    "weight": 1.0,
    "source": "server_brain_core_inbox_read",
    "target": "server_brain_core_brainerror",
@@ -7637,7 +7857,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L222",
+   "source_location": "L225",
    "weight": 1.0,
    "source": "server_brain_core_inbox_read",
    "target": "server_brain_core_safe_inbox_file",
@@ -7670,7 +7890,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L148",
+   "source_location": "L151",
    "weight": 1.0,
    "source": "server_brain_core_oracle_cast",
    "target": "server_brain_core_brainerror",
@@ -7681,7 +7901,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L153",
+   "source_location": "L156",
    "weight": 1.0,
    "source": "server_brain_core_oracle_cast",
    "target": "tools_oracle_cast_cast_reading",
@@ -7692,7 +7912,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L161",
+   "source_location": "L164",
    "weight": 1.0,
    "source": "server_brain_core_oracle_hexagram",
    "target": "server_brain_core_brainerror",
@@ -7703,7 +7923,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L159",
+   "source_location": "L162",
    "weight": 1.0,
    "source": "server_brain_core_oracle_hexagram",
    "target": "tools_oracle_cast_get_hexagram",
@@ -7810,7 +8030,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L171",
+   "source_location": "L174",
    "weight": 1.0,
    "source": "server_brain_core_safe_inbox_file",
    "target": "server_brain_core_brainerror",
@@ -7821,7 +8041,7 @@
    "context": "return_type",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L169",
+   "source_location": "L172",
    "weight": 1.0,
    "source": "server_brain_core_safe_inbox_file",
    "target": "server_brain_core_py_path",
@@ -7832,7 +8052,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L242",
+   "source_location": "L245",
    "weight": 1.0,
    "source": "server_brain_core_save_feedback",
    "target": "server_brain_core_brainerror",
@@ -7843,7 +8063,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L252",
+   "source_location": "L255",
    "weight": 1.0,
    "source": "server_brain_core_save_feedback",
    "target": "server_brain_core_run_graphify",
@@ -7868,7 +8088,7 @@
    "source_location": "L138",
    "weight": 1.0,
    "source": "server_brain_core_search",
-   "target": "tools_search_cerca",
+   "target": "tools_search_cerca_con_diagnosi",
    "confidence_score": 1.0
   },
   {
@@ -7906,7 +8126,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L60",
+   "source_location": "L68",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_explain",
@@ -7916,7 +8136,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L99",
+   "source_location": "L107",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_feedback",
@@ -7926,7 +8146,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L84",
+   "source_location": "L92",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_lessons",
@@ -7936,7 +8156,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L72",
+   "source_location": "L80",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_model",
@@ -7946,7 +8166,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L90",
+   "source_location": "L98",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_oracle",
@@ -7956,7 +8176,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L66",
+   "source_location": "L74",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_path",
@@ -7976,7 +8196,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L78",
+   "source_location": "L86",
    "weight": 1.0,
    "source": "server_mcp_server",
    "target": "server_mcp_server_brain_reasoner",
@@ -8007,7 +8227,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L62",
+   "source_location": "L70",
    "weight": 1.0,
    "source": "server_mcp_server_brain_explain",
    "target": "server_mcp_server_safe",
@@ -8018,7 +8238,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L101",
+   "source_location": "L109",
    "weight": 1.0,
    "source": "server_mcp_server_brain_feedback",
    "target": "server_mcp_server_safe",
@@ -8029,7 +8249,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L74",
+   "source_location": "L82",
    "weight": 1.0,
    "source": "server_mcp_server_brain_model",
    "target": "server_mcp_server_safe",
@@ -8040,7 +8260,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L95",
+   "source_location": "L103",
    "weight": 1.0,
    "source": "server_mcp_server_brain_oracle",
    "target": "server_mcp_server_safe",
@@ -8051,7 +8271,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L68",
+   "source_location": "L76",
    "weight": 1.0,
    "source": "server_mcp_server_brain_path",
    "target": "server_mcp_server_safe",
@@ -8073,7 +8293,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L80",
+   "source_location": "L88",
    "weight": 1.0,
    "source": "server_mcp_server_brain_reasoner",
    "target": "server_mcp_server_safe",
@@ -8084,7 +8304,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L56",
+   "source_location": "L64",
    "weight": 1.0,
    "source": "server_mcp_server_brain_search",
    "target": "server_mcp_server_safe",
@@ -8094,9 +8314,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L100",
+   "source_location": "L108",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_100",
+   "source": "server_mcp_server_rationale_108",
    "target": "server_mcp_server_brain_feedback",
    "confidence_score": 1.0
   },
@@ -8124,9 +8344,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L61",
+   "source_location": "L69",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_61",
+   "source": "server_mcp_server_rationale_69",
    "target": "server_mcp_server_brain_explain",
    "confidence_score": 1.0
   },
@@ -8134,9 +8354,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L67",
+   "source_location": "L75",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_67",
+   "source": "server_mcp_server_rationale_75",
    "target": "server_mcp_server_brain_path",
    "confidence_score": 1.0
   },
@@ -8144,9 +8364,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L73",
+   "source_location": "L81",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_73",
+   "source": "server_mcp_server_rationale_81",
    "target": "server_mcp_server_brain_model",
    "confidence_score": 1.0
   },
@@ -8154,9 +8374,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L79",
+   "source_location": "L87",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_79",
+   "source": "server_mcp_server_rationale_87",
    "target": "server_mcp_server_brain_reasoner",
    "confidence_score": 1.0
   },
@@ -8164,9 +8384,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L85",
+   "source_location": "L93",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_85",
+   "source": "server_mcp_server_rationale_93",
    "target": "server_mcp_server_brain_lessons",
    "confidence_score": 1.0
   },
@@ -8174,9 +8394,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/mcp_server.py",
-   "source_location": "L91",
+   "source_location": "L99",
    "weight": 1.0,
-   "source": "server_mcp_server_rationale_91",
+   "source": "server_mcp_server_rationale_99",
    "target": "server_mcp_server_brain_oracle",
    "confidence_score": 1.0
   },
@@ -8648,6 +8868,36 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
+   "source_location": "L228",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L235",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L245",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_confidenza_nessuna_fuori_dominio",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
    "source_location": "L147",
    "weight": 1.0,
    "source": "tests_test_tools",
@@ -8682,6 +8932,26 @@
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tests_test_tools_test_indice_coerente_col_corpus",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L265",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L275",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
    "confidence_score": 1.0
   },
   {
@@ -8775,6 +9045,16 @@
    "confidence_score": 1.0
   },
   {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L252",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
+   "confidence_score": 1.0
+  },
+  {
    "relation": "imports_from",
    "context": "import",
    "confidence": "EXTRACTED",
@@ -8827,6 +9107,39 @@
    "weight": 1.0,
    "source": "tests_test_tools",
    "target": "tools_search_cerca",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L229",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L278",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_search_corrisponde",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L256",
+   "weight": 1.0,
+   "source": "tests_test_tools",
+   "target": "tools_search_tokenizza",
    "confidence_score": 1.0
   },
   {
@@ -8914,10 +9227,50 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
+   "source_location": "L236",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_236",
+   "target": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L253",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_253",
+   "target": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
    "source_location": "L26",
    "weight": 1.0,
    "source": "tests_test_tools_rationale_26",
    "target": "tests_test_tools_test_attribuzione_6_linea4_da_59",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L266",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_266",
+   "target": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L276",
+   "weight": 1.0,
+   "source": "tests_test_tools_rationale_276",
+   "target": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
    "confidence_score": 1.0
   },
   {
@@ -9020,6 +9373,61 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
+   "source_location": "L230",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L239",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L247",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_confidenza_nessuna_fuori_dominio",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L268",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
+   "target": "tools_search_cerca",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L279",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
+   "target": "tools_search_corrisponde",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
    "source_location": "L91",
    "weight": 1.0,
    "source": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
@@ -9112,6 +9520,17 @@
    "weight": 1.0,
    "source": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
    "target": "tools_search_cerca",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_tools.py",
+   "source_location": "L259",
+   "weight": 1.0,
+   "source": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
+   "target": "tools_search_tokenizza",
    "confidence_score": 1.0
   },
   {
@@ -9909,6 +10328,16 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
+   "source_location": "L203",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_annota_memoria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
    "source_location": "L32",
    "weight": 1.0,
    "source": "tools_search",
@@ -9919,7 +10348,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L100",
+   "source_location": "L229",
    "weight": 1.0,
    "source": "tools_search",
    "target": "tools_search_cerca",
@@ -9929,7 +10358,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L48",
+   "source_location": "L52",
    "weight": 1.0,
    "source": "tools_search",
    "target": "tools_search_cerca_bm25",
@@ -9939,10 +10368,50 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L69",
+   "source_location": "L264",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L73",
    "weight": 1.0,
    "source": "tools_search",
    "target": "tools_search_cerca_denso",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L188",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_corrisponde",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L124",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L171",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_memoria",
    "confidence_score": 1.0
   },
   {
@@ -9959,10 +10428,20 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L91",
+   "source_location": "L95",
    "weight": 1.0,
    "source": "tools_search",
    "target": "tools_search_rrf",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L112",
+   "weight": 1.0,
+   "source": "tools_search",
+   "target": "tools_search_termini_del_documento",
    "confidence_score": 1.0
   },
   {
@@ -9980,7 +10459,40 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L102",
+   "source_location": "L210",
+   "weight": 1.0,
+   "source": "tools_search_annota_memoria",
+   "target": "tools_search_corrisponde",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L208",
+   "weight": 1.0,
+   "source": "tools_search_annota_memoria",
+   "target": "tools_search_memoria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L255",
+   "weight": 1.0,
+   "source": "tools_search_cerca",
+   "target": "tools_search_annota_memoria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L232",
    "weight": 1.0,
    "source": "tools_search_cerca",
    "target": "tools_search_carica",
@@ -9991,7 +10503,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L104",
+   "source_location": "L234",
    "weight": 1.0,
    "source": "tools_search_cerca",
    "target": "tools_search_cerca_bm25",
@@ -10002,7 +10514,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L105",
+   "source_location": "L235",
    "weight": 1.0,
    "source": "tools_search_cerca",
    "target": "tools_search_cerca_denso",
@@ -10013,7 +10525,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L109",
+   "source_location": "L239",
    "weight": 1.0,
    "source": "tools_search_cerca",
    "target": "tools_search_rrf",
@@ -10024,7 +10536,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L50",
+   "source_location": "L54",
    "weight": 1.0,
    "source": "tools_search_cerca_bm25",
    "target": "tools_search_carica",
@@ -10035,9 +10547,64 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L56",
+   "source_location": "L60",
    "weight": 1.0,
    "source": "tools_search_cerca_bm25",
+   "target": "tools_search_tokenizza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L268",
+   "weight": 1.0,
+   "source": "tools_search_cerca_con_diagnosi",
+   "target": "tools_search_cerca",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L269",
+   "weight": 1.0,
+   "source": "tools_search_cerca_con_diagnosi",
+   "target": "tools_search_cerca_bm25",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L269",
+   "weight": 1.0,
+   "source": "tools_search_cerca_con_diagnosi",
+   "target": "tools_search_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L143",
+   "weight": 1.0,
+   "source": "tools_search_diagnosi",
+   "target": "tools_search_termini_del_documento",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L136",
+   "weight": 1.0,
+   "source": "tools_search_diagnosi",
    "target": "tools_search_tokenizza",
    "confidence_score": 1.0
   },
@@ -10045,9 +10612,49 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L101",
+   "source_location": "L113",
    "weight": 1.0,
-   "source": "tools_search_rationale_101",
+   "source": "tools_search_rationale_113",
+   "target": "tools_search_termini_del_documento",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L125",
+   "weight": 1.0,
+   "source": "tools_search_rationale_125",
+   "target": "tools_search_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L189",
+   "weight": 1.0,
+   "source": "tools_search_rationale_189",
+   "target": "tools_search_corrisponde",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L204",
+   "weight": 1.0,
+   "source": "tools_search_rationale_204",
+   "target": "tools_search_annota_memoria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L230",
+   "weight": 1.0,
+   "source": "tools_search_rationale_230",
    "target": "tools_search_cerca",
    "confidence_score": 1.0
   },
@@ -10055,9 +10662,29 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L49",
+   "source_location": "L265",
    "weight": 1.0,
-   "source": "tools_search_rationale_49",
+   "source": "tools_search_rationale_265",
+   "target": "tools_search_cerca_con_diagnosi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L45",
+   "weight": 1.0,
+   "source": "tools_search_rationale_45",
+   "target": "tools_search_tokenizza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L53",
+   "weight": 1.0,
+   "source": "tools_search_rationale_53",
    "target": "tools_search_cerca_bm25",
    "confidence_score": 1.0
   },
@@ -10065,9 +10692,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L70",
+   "source_location": "L74",
    "weight": 1.0,
-   "source": "tools_search_rationale_70",
+   "source": "tools_search_rationale_74",
    "target": "tools_search_cerca_denso",
    "confidence_score": 1.0
   },
@@ -10075,9 +10702,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L92",
+   "source_location": "L96",
    "weight": 1.0,
-   "source": "tools_search_rationale_92",
+   "source": "tools_search_rationale_96",
    "target": "tools_search_rrf",
    "confidence_score": 1.0
   },
@@ -10086,7 +10713,29 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/search.py",
-   "source_location": "L45",
+   "source_location": "L114",
+   "weight": 1.0,
+   "source": "tools_search_termini_del_documento",
+   "target": "tools_search_carica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L47",
+   "weight": 1.0,
+   "source": "tools_search_tokenizza",
+   "target": "tools_search_carica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/search.py",
+   "source_location": "L48",
    "weight": 1.0,
    "source": "tools_search_tokenizza",
    "target": "tools_search_normalizza",

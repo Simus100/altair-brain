@@ -47,11 +47,19 @@ def brain_search(q: str, top: int = 8, area: str = "") -> str:
     il grafo non indicizza. Usala quando cerchi un concetto, non un nome preciso."""
     def run():
         r = core.search(q, top=top, area=(area or None))
+        d = r.get("diagnosi", {})
         if not r["risultati"]:
-            return f"Nessun risultato per {q!r}."
-        righe = [f"{len(r['risultati'])} risultati per {q!r}:"]
+            return f"Nessun risultato per {q!r}. {d.get('motivo', '')}"
+        righe = [f"{len(r['risultati'])} risultati per {q!r}",
+                 f"CONFIDENZA {d.get('confidenza', '?').upper()}: {d.get('motivo', '')}"]
+        if d.get("confidenza") in ("bassa", "nessuna"):
+            righe.append("(attenzione: il brain potrebbe non contenere questa "
+                         "conoscenza — non dedurne una risposta certa)")
         for i, x in enumerate(r["risultati"], 1):
-            righe.append(f"{i}. [{x['area']}] {x['titolo']} — {x['file']}\n   {x['estratto']}")
+            riga = f"{i}. [{x['area']}] {x['titolo']} — {x['file']}"
+            if x.get("memoria"):
+                riga += f"\n   memoria: {x['memoria']['nota']}"
+            righe.append(f"{riga}\n   {x['estratto']}")
         return "\n".join(righe)
     return _safe(run)
 

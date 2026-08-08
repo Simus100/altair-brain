@@ -221,3 +221,61 @@ def test_metriche_una_riga_per_giorno():
     date = [r["data"] for r in righe]
     assert len(date) == len(set(date)), "piu rilevazioni nello stesso giorno"
     assert int(righe[-1]["nodi"]) > 0 and float(righe[-1]["grado_medio"]) > 0
+
+
+# ---------------- F1: il recupero dichiara quanto fidarsi ----------------
+
+def test_confidenza_alta_su_conoscenza_presente():
+    from tools.search import cerca_con_diagnosi
+    d = cerca_con_diagnosi("quartili outlier IQR", top=3)["diagnosi"]
+    assert d["confidenza"] == "alta", d
+    assert d["copertura"] >= 0.6
+
+
+def test_confidenza_bassa_su_conoscenza_assente():
+    """Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara
+    invece di restituire il meno peggio in silenzio."""
+    from tools.search import cerca_con_diagnosi
+    d = cerca_con_diagnosi("analisi sentiment reti neurali convoluzionali transformer",
+                           top=3)["diagnosi"]
+    assert d["confidenza"] in ("bassa", "nessuna"), d
+    assert "non contiene" in d["motivo"] or "coperto" in d["motivo"]
+
+
+def test_confidenza_nessuna_fuori_dominio():
+    from tools.search import cerca_con_diagnosi
+    e = cerca_con_diagnosi("ricetta carbonara guanciale pecorino", top=3)
+    assert e["risultati"] == []
+    assert e["diagnosi"]["confidenza"] == "nessuna"
+
+
+def test_tokenizzazione_query_coerente_con_indice():
+    """Regressione: se query e indice filtrano stopword diverse, i termini scartati
+    in indicizzazione non sono trovabili e la copertura risulta falsata."""
+    import json as _json
+    from tools.search import _tokenizza
+    idx = _json.loads((ROOT / "engine" / "search_index.json").read_text(encoding="utf-8"))
+    assert idx.get("stopword"), "l'indice deve portare con se la lista di stopword"
+    assert _tokenizza("chi orchestra gli agenti del modello") == \
+        ["orchestra", "agenti", "modello"]
+
+
+# ---------------- F3: la memoria agisce sui risultati ----------------
+
+def test_memoria_annota_ancoraggi_consolidati():
+    """Una lezione registrata deve cambiare cio che si vede la volta dopo."""
+    from tools.search import cerca
+    r = cerca("chi orchestra gli agenti", top=5)
+    con_memoria = [x for x in r if x.get("memoria")]
+    assert con_memoria, "nessun risultato annotato: la memoria non sta agendo"
+    assert any(x["memoria"]["utile"] >= 2 and "consolidato" in x["memoria"]["nota"]
+               for x in con_memoria)
+
+
+def test_memoria_non_annota_per_nodi_numerici_corti():
+    """Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa
+    marchierebbe qualunque titolo che contiene quel carattere."""
+    from tools.search import _corrisponde
+    assert not _corrisponde("6", "capitolo-6-analisi", "Sezione 6 del report")
+    assert _corrisponde("6", "6", "")
+    assert _corrisponde("aion-superia", "aion-superia", "AION_SUPERIA")

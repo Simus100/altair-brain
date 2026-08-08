@@ -184,6 +184,11 @@ indice = {
                    "interrogato da tools/search.py e dall'endpoint /v1/search. "
                    "Include i .txt che graphify non indicizza.",
     "parametri": {"k1": 1.5, "b": 0.75},
+    # La lista viaggia CON l'indice: chi interroga deve filtrare esattamente come si e
+    # filtrato in indicizzazione. Tenerne due copie le fa divergere, e una domanda in
+    # linguaggio naturale finisce piena di termini che per costruzione non possono
+    # essere trovati — falsando la misura di copertura (difetto reale, gia occorso).
+    "stopword": sorted(STOP),
     "n_documenti": N,
     "avgdl": round(avgdl, 3),
     "documenti": documenti,

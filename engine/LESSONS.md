@@ -7,16 +7,17 @@
 
 ## Sintesi
 
-- lezioni registrate: **8** · sessioni graphify: **1**
-- esiti: 4 utili · 0 vicoli ciechi · 4 correzioni · 0 aperte
-- skill piu attive: manuale (6), report (1), oracle (1)
-- temi ricorrenti: metodo (3), report (2), graphify (2), corpus (2), living (1), editoriale (1), oracolo (1), attribuzione (1)
+- lezioni registrate: **11** · sessioni graphify: **1**
+- esiti: 6 utili · 1 vicoli ciechi · 4 correzioni · 0 aperte
+- skill piu attive: manuale (6), aion (3), report (1), oracle (1)
+- temi ricorrenti: metodo (4), report (2), graphify (2), limite (2), corpus (2), living (1), editoriale (1), oracolo (1)
 
 ## Ancoraggi consolidati
 
 _Nodi utili in almeno 2 occasioni: punti di partenza affidabili._
 
 - `apply_provenance.py` — 2× utile
+- `aion-superia` — 2× utile
 
 ## Tentativi (da confermare)
 
@@ -29,9 +30,23 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `build_search_index.py` — 1× utile
 - `ROADMAP.md` — 1× utile
 - `build_dense_index.py` — 1× utile
+- `aion-ethos` — 1× utile
+- `workflow-analisi-dati` — 1× utile
+
+## Vicoli ciechi
+
+_Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
+
+- `aion-cinematica` — 1× senza esito
 
 ## Lezioni recenti
 
+- **2026-08-08** _((aion, utile))_ — SUPERIA orchestra, ETHOS e sempre attivo come gate: partire da questi due orienta subito
+  - contesto: chi decide l'ordine di attivazione degli agenti
+- **2026-08-08** _((aion, utile))_ — il workflow in 7 fasi copre dall'import al report
+  - contesto: come si struttura un'analisi dati end-to-end
+- **2026-08-08** _((aion, vicolo-cieco))_ — descritto ma non eseguibile: non porta a nulla di operativo
+  - contesto: quale componente usare per la generazione cinematografica
 - **2026-08-07** _((manuale, utile))_ — una voce di roadmap invecchia male se descrive come 'da costruire' cio che e gia costruito: va riscritta con lo STATO reale (fatto/da attivare), il costo vero misurato e il criterio per capire se e servita davvero
   - contesto: dove registrare un miglioramento futuro gia progettato ma non attivato
 - **2026-08-07** _((manuale, utile))_ — convertire .txt->.md con git mv ha portato raw/data-science da 4 a 55 nodi e la provenienza da 8 a 31 archi; ma attenzione: cambia anche la strategia di spezzettamento dell'indice (i .md si spezzano per titolo), quindi le note in prosa vanno spezzate a blocchi o collassano in un frammento unico
