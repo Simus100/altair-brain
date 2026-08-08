@@ -4,6 +4,7 @@ area: divulgazione
 source: estratto dai report pubblicati (tools/report_harvest.py)
 tags: [metodo, report, fonti, verifica]
 reviewed: 2026-08-08
+generato_hash: PLACEHOLDER
 ---
 # Metodo dei report verificati
 

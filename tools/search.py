@@ -29,8 +29,28 @@ RRF_K = 60          # costante standard: attenua il peso delle prime posizioni
 _cache = {}
 
 
+def _fresco(chiave, path):
+    """Ricarica se il file su disco e cambiato.
+
+    DIFETTO REALE CORRETTO: la cache era a livello di modulo e non si invalidava mai.
+    Sulla VPS l'API resta accesa per settimane mentre l'auto-update sostituisce
+    l'indice via git: il processo continuava a servire quello caricato al primo
+    avvio. Aggravante: la diagnosi di confidenza avrebbe dichiarato 'alta' su un
+    corpus vecchio — un meccanismo nato per dire quanto fidarsi che mente con
+    sicurezza e peggio che non averlo.
+    """
+    try:
+        mtime = os.path.getmtime(path)
+    except OSError:
+        mtime = None
+    if _cache.get(chiave + "_mtime") != mtime:
+        _cache.pop(chiave, None)
+        _cache[chiave + "_mtime"] = mtime
+    return chiave in _cache
+
+
 def _carica():
-    if "idx" not in _cache:
+    if not _fresco("idx", INDICE):
         with open(INDICE, encoding="utf-8") as f:
             _cache["idx"] = json.load(f)
     return _cache["idx"]
@@ -161,17 +181,26 @@ def diagnosi(query, classifica_bm25):
                      if separazione < SEPARAZIONE_MIN else ""))
 
     return {"confidenza": livello, "copertura": round(copertura, 2),
-            "separazione": round(separazione, 2), "motivo": motivo}
+            "separazione": round(separazione, 2), "motivo": motivo,
+            # ONESTA DELLA MISURA: 'alta' significa che i termini della domanda sono
+            # coperti dal corpus, NON che la risposta sia corretta o aggiornata. Chi
+            # legge un'etichetta persuasiva tende a inferire affidabilita: la
+            # differenza va dichiarata, non lasciata intuire.
+            "misura": "copertura lessicale dei termini nel corpus — non correttezza, "
+                      "non aggiornamento: verificare sempre la fonte e la sua data"}
 
 
 # ---------------- F3: la memoria agisce sui risultati ----------------
 # Registrare una lezione non deve servire solo a rileggerla: deve cambiare cio che
 # vedi la volta dopo. Qui le lezioni ANNOTANO i risultati (non li filtrano mai:
 # nascondere un risultato per una lezione vecchia sarebbe peggio del problema).
+MAX_LEZIONI_IN_MEMORIA = 2000    # oltre, contano solo le piu recenti
+
+
 def _memoria():
-    if "lezioni" not in _cache:
+    path = os.path.join(ROOT, "engine", "lessons.jsonl")
+    if not _fresco("lezioni", path):
         voci = []
-        path = os.path.join(ROOT, "engine", "lessons.jsonl")
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
                 for riga in f:
@@ -181,7 +210,10 @@ def _memoria():
                             voci.append(json.loads(riga))
                         except json.JSONDecodeError:
                             continue
-        _cache["lezioni"] = voci
+        # Il registro e append-only e cresce senza limite: caricarlo tutto a ogni
+        # query si degraderebbe in silenzio. Le lezioni piu recenti sono anche le
+        # piu attendibili (il brain e cambiato da allora).
+        _cache["lezioni"] = voci[-MAX_LEZIONI_IN_MEMORIA:]
     return _cache["lezioni"]
 
 
@@ -197,7 +229,12 @@ def _corrisponde(nodo, base, etichetta):
         return False
     if len(n) < 4 or n.isdigit():
         return n == base
-    return n == base or n in etichetta or base in n
+    if n == base:
+        return True
+    # Niente sottostringa nuda: un nodo 'excel' marchierebbe ogni file col nome che
+    # lo contiene, attribuendo esperienza a note che non c'entrano. L'annotazione
+    # sarebbe credibile e falsa, che e il difetto peggiore per una memoria.
+    return re.search(rf"(?<![a-z0-9]){re.escape(n)}(?![a-z0-9])", etichetta) is not None
 
 
 def _annota_memoria(file_rel, titolo):

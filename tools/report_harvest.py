@@ -20,7 +20,7 @@ logica per cui data-science conserva il metodo e non i dataset.
 Uso:  python tools/report_harvest.py            (anteprima)
       python tools/report_harvest.py --apply    (scrive la nota)
 """
-import argparse, collections, datetime, glob, json, os, sys
+import argparse, collections, datetime, glob, hashlib, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEST = os.path.join(ROOT, "raw", "divulgazione", "metodo-report-verificati.md")
@@ -86,6 +86,7 @@ def componi(d):
         "source: estratto dai report pubblicati (tools/report_harvest.py)",
         "tags: [metodo, report, fonti, verifica]",
         f"reviewed: {oggi}",
+        "generato_hash: PLACEHOLDER",
         "---",
         "# Metodo dei report verificati",
         "",
@@ -150,6 +151,8 @@ def componi(d):
 def main():
     ap = argparse.ArgumentParser(description="Riporta nel brain il metodo dei report")
     ap.add_argument("--apply", action="store_true", help="scrive la nota (default: anteprima)")
+    ap.add_argument("--force", action="store_true",
+                    help="sovrascrive anche se la nota e stata modificata a mano")
     a = ap.parse_args()
 
     d = raccogli()
@@ -162,6 +165,22 @@ def main():
           f"{len(d['fonti'])} fonti distinte, "
           f"{d['con_fonte'] / d['totali'] * 100:.0f}% con provenienza.")
     if a.apply:
+        # NON sovrascrivere il lavoro umano. La nota vive in raw/, che e lo strato
+        # SORGENTE: e legittimo integrarla a mano. Rigenerarla alla cieca cancellerebbe
+        # quelle integrazioni senza dirlo — la contraddizione peggiore in un sistema
+        # che altrove distingue con cura cio che e generato da cio che e scritto.
+        if os.path.exists(DEST) and not a.force:
+            su_disco = open(DEST, encoding="utf-8").read()
+            m = re.search(r"^generato_hash:\s*(\w+)", su_disco, re.M)
+            atteso = hashlib.sha256(
+                re.sub(r"^generato_hash:.*$", "generato_hash: ", su_disco, flags=re.M)
+                .replace("generato_hash: ", "generato_hash: PLACEHOLDER")
+                .replace("generato_hash: PLACEHOLDER", "").encode()).hexdigest()[:16]
+            if m and m.group(1) != atteso:
+                print(f"  NON SOVRASCRITTA: {os.path.relpath(DEST, ROOT)} e stata")
+                print("  modificata a mano dopo l'ultima generazione (impronta diversa).")
+                print("  Integra i numeri nuovi a mano, oppure rilancia con --force.")
+                return
         os.makedirs(os.path.dirname(DEST), exist_ok=True)
         with open(DEST, "w", encoding="utf-8", newline="\n") as f:
             f.write(testo)

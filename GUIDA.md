@@ -100,6 +100,9 @@ cieco. Il protocollo AION lo rilegge a ogni ragionamento (passo 0).
 | `python tools/check_provenance.py` | affermazioni con numeri e senza fonte | prima di pubblicare un report |
 | `python tools/link_suggest.py` | collegamenti mancanti tra pagine affini | dopo aver aggiunto note |
 | `python tools/add_frontmatter.py` | note senza provenienza (anteprima; `--apply` per scrivere) | dopo un import |
+| `python tools/check_privacy.py` | cosa stai rendendo pubblico (email, segreti, concentrazione) | **prima di ogni push importante** |
+| `python tools/resurface.py` | 3 note da rilegge­re, priorita alle isolate | una volta a settimana |
+| `python tools/consolidate.py` | digest per area + cosa potare | una volta al mese |
 
 Nessuno di questi modifica le note da solo: **propongono**, decidi tu. `link_suggest`
 in particolare non scrive mai — un collegamento sbagliato messo in automatico
@@ -175,8 +178,12 @@ Serve una volta: `pip install mcp`. Da quel momento quell'AI ha i tool
    SOLO contenuti pubblicabili — mai dati personali, credenziali o note private.
    Ciò che è privato vive fuori dal repo (`~/altair-data`, dischi locali).
 5. Per qualsiasi lavoro nuovo, l'agente deve leggere prima `ROADMAP.md`.
-6. **`.claude/` e `.agents/` contengono codice eseguibile** (hook): ogni modifica va
-   dichiarata nel messaggio di commit col marcatore `[hooks-ok]`, o la CI la respinge.
+6. **Gli hook NON stanno in git.** Vivono in `.claude/settings.local.json` (ignorato):
+   in un repo pubblico un hook versionato eseguirebbe comandi sulla macchina di
+   chiunque lo cloni. L'esempio inerte e `.claude/settings.example.json`; per
+   attivarlo su una nuova macchina: `cp .claude/settings.example.json .claude/settings.local.json`.
+7. **`.agents/` resta versionato**: ogni modifica va dichiarata col marcatore
+   `[hooks-ok]` nel commit, o la CI la respinge.
 
 ---
 

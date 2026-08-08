@@ -24,3 +24,7 @@ raw/**/*.bkp
 raw/**/backup/
 raw/**/excell_old/
 test_env/
+
+# Hook eseguibili: attivi in locale, MAI versionati (repo pubblico).
+.claude/settings.local.json
+.claude/settings.json

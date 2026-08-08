@@ -84,6 +84,9 @@ def _grafo_per_file():
     return vicini
 
 
+# Il confronto e O(n^2): oltre questa soglia si guardano solo le pagine piu
+# connesse, che sono anche quelle dove i collegamenti mancanti pesano di piu.
+MAX_PAGINE_CONFRONTO = 800
 MIN_VICINI_COMUNI = 2      # un solo vicino condiviso e coincidenza, non segnale
 MIN_ADAMIC_ADAR = 1.0
 
@@ -100,6 +103,8 @@ def proposte_strutturali(vicini, area=None, esclusi=frozenset()):
               if f.startswith("wiki/") and f.endswith(".md")
               and os.path.splitext(os.path.basename(f))[0].lower() not in esclusi
               and (not area or f"/{area}/" in f)]
+    if len(pagine) > MAX_PAGINE_CONFRONTO:
+        pagine = sorted(pagine, key=lambda f: -len(vicini[f]))[:MAX_PAGINE_CONFRONTO]
     fuori = []
     for i, a in enumerate(pagine):
         for b in pagine[i + 1:]:

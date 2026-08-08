@@ -528,3 +528,80 @@ def test_report_harvest_nota_presente_e_dichiarata():
     reg = _json.loads((ROOT / "engine" / "provenance.json").read_text(encoding="utf-8"))
     dichiarati = {m["wiki"] for m in reg["mappe_dirette"]}
     assert "raw/divulgazione/metodo-report-verificati.md" in dichiarati
+
+
+# ---------------- correzioni di vulnerabilita e fallacie ----------------
+
+def test_cache_ricarica_se_indice_cambia():
+    """Vulnerabilita reale: la cache non si invalidava mai. Sulla VPS l'API resta
+    accesa per settimane mentre git sostituisce l'indice: serviva quello vecchio,
+    e F1 avrebbe dichiarato 'alta' su un corpus superato."""
+    import os as _os
+    from tools.search import cerca, _cache
+    cerca("quartili", top=1)
+    primo = _cache.get("idx_mtime")
+    _os.utime(ROOT / "engine" / "search_index.json", None)
+    cerca("quartili", top=1)
+    assert _cache.get("idx_mtime") != primo, "cache non invalidata al cambio del file"
+
+
+def test_lezioni_in_memoria_hanno_un_tetto():
+    from tools.search import MAX_LEZIONI_IN_MEMORIA
+    assert 100 <= MAX_LEZIONI_IN_MEMORIA <= 10000
+
+
+def test_diagnosi_dichiara_cosa_misura():
+    """Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La
+    differenza va scritta, non lasciata intuire."""
+    from tools.search import cerca_con_diagnosi
+    d = cerca_con_diagnosi("quartili outlier IQR", top=2)["diagnosi"]
+    assert "misura" in d and "non correttezza" in d["misura"]
+
+
+def test_memoria_non_attribuisce_per_sottostringa():
+    """Un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe
+    credibile e falsa, il difetto peggiore per una memoria."""
+    from tools.search import _corrisponde
+    assert not _corrisponde("sql", "postgresql", "postgresql")
+    assert not _corrisponde("excel", "excel-avanzato-2026", "corso")
+    assert _corrisponde("excel", "python-pandas", "uso di excel per la pulizia")
+    assert _corrisponde("excel", "excel", "excel")
+
+
+def test_hook_eseguibili_non_versionati():
+    """Repo PUBBLICO: hook versionati = codice shell eseguito sulla macchina di
+    chiunque cloni. Deve restare solo l'esempio inerte."""
+    import subprocess as _sp
+    tracciati = _sp.run(["git", "ls-files", ".claude/"], cwd=str(ROOT),
+                        capture_output=True, text=True).stdout.split()
+    assert ".claude/settings.json" not in tracciati, \
+        "settings.json e tornato in git: esegue shell su chi clona"
+    assert any("settings.example.json" in t for t in tracciati)
+
+
+def test_privacy_distingue_segreti_da_codice():
+    """Uno strumento che urla a ogni riga viene ignorato: deve riconoscere un
+    segreto letterale e tacere su 'TOKEN = os.environ.get(...)'."""
+    import re as _re
+    src = (ROOT / "tools" / "check_privacy.py").read_text(encoding="utf-8")
+    ns = {"re": _re}
+    exec(compile(src[src.index("SCHEMI = ["):src.index("# Falsi positivi")], "s", "exec"), ns)
+    def colpito(t):
+        for _, rx in ns["SCHEMI"]:
+            m = rx.search(t)
+            if m and not ns["PLACEHOLDER"].search(m.group(0)):
+                return True
+        return False
+    assert colpito('api_key = "sk-live-9f3a2b7c4d1e8f0a"')
+    assert not colpito('TOKEN = os.environ.get("ALTAIR_API_TOKEN")')
+    assert not colpito('token = tokenizza(titolo)')
+
+
+def test_harvest_non_sovrascrive_il_lavoro_umano():
+    """La nota vive in raw/ (strato sorgente): integrarla a mano e legittimo, e
+    rigenerarla alla cieca cancellerebbe quelle integrazioni senza dirlo."""
+    import re as _re
+    nota = ROOT / "raw" / "divulgazione" / "metodo-report-verificati.md"
+    testo = nota.read_text(encoding="utf-8")
+    assert _re.search(r"^generato_hash:\s*\w+", testo, _re.M), \
+        "manca l'impronta: senza, non si distingue il generato dal modificato"

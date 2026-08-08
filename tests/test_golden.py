@@ -146,15 +146,19 @@ def test_recall_complessivo_sopra_soglia():
         f"  domande senza risposta: {falliti}")
 
 
-def test_esclusioni_dal_recupero_sono_motivate():
+def test_esclusioni_dal_recupero_sono_motivate_e_limitate():
     """Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione
-    scritta: senza questo vincolo, marcare diventerebbe il modo piu' comodo per far
-    sparire un fallimento reale."""
+    scritta. Ma una motivazione si scrive per qualsiasi cosa: serve anche un TETTO,
+    altrimenti il presidio resta sociale e non tecnico — bastava escludere tutto per
+    avere il golden set sempre verde."""
     d = json.loads(GOLDEN.read_text(encoding="utf-8"))
-    for q in d["queries"]:
-        if not q.get("recupero_lessicale", True):
-            assert q.get("perche_non_lessicale"), \
-                f"esclusione non motivata: {q['domanda']}"
+    escluse = [q for q in d["queries"] if not q.get("recupero_lessicale", True)]
+    for q in escluse:
+        assert q.get("perche_non_lessicale"), f"esclusione non motivata: {q['domanda']}"
+    tetto = max(1, len(d["queries"]) // 5)          # al piu' il 20%
+    assert len(escluse) <= tetto, (
+        f"{len(escluse)} domande escluse su {len(d['queries'])} (tetto {tetto}): "
+        f"il golden set sta smettendo di misurare invece di segnalare un problema")
 
 
 def test_banco_semantico_e_ancora_un_banco():

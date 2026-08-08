@@ -122,6 +122,12 @@ jobs:
       - name: Provenienza delle affermazioni (report bloccanti)
         run: python tools/check_provenance.py --strict
 
+      # Repo PUBBLICO: ogni push e pubblicazione permanente (fork, mirror, cache).
+      # Informativo per scelta: decidere cosa e privato spetta all'autore, non alla CI.
+      - name: Cosa si sta pubblicando (informativo)
+        continue-on-error: true
+        run: python tools/check_privacy.py
+
       - name: Metriche del brain coerenti col grafo
         run: |
           python tools/graph_metrics.py
@@ -157,3 +163,18 @@ jobs:
         run: |
           git push --force origin HEAD:backup
           echo "backup -> $(git rev-parse --short HEAD)"
+
+      # RITENZIONE. `backup` si sovrascrive a ogni CI verde: protegge dal main
+      # INVALIDO, non dal main SBAGLIATO. Un errore di contenuto che passa la CI
+      # (un fatto errato, una nota cancellata per sbaglio) distrugge subito l'unico
+      # punto di ripristino. Un tag settimanale immutabile da profondita storica.
+      - name: Punto di ripristino settimanale (immutabile)
+        run: |
+          TAG="ripristino-$(date -u +%Y-w%V)"
+          if git ls-remote --exit-code --tags origin "$TAG" >/dev/null 2>&1; then
+            echo "$TAG esiste gia: la settimana e gia coperta"
+          else
+            git tag -a "$TAG" -m "ultimo main validato della settimana"
+            git push origin "$TAG"
+            echo "creato $TAG -> $(git rev-parse --short HEAD)"
+          fi

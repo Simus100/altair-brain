@@ -31,6 +31,7 @@ LEZIONI = os.path.join(ROOT, "engine", "lessons.jsonl")
 INDICE = os.path.join(ROOT, "engine", "search_index.json")
 OUT_DIR = os.path.join(ROOT, "engine", "digest")
 
+MAX_FILE_CONFRONTO = 1500   # oltre, il doppio ciclo non e piu accettabile
 SOGLIA_SIMILI = 0.55        # sovrapposizione di termini oltre cui due note si somigliano
 RECENTI_GIORNI = 30
 
@@ -138,7 +139,15 @@ def note_simili():
         for doc_id, _ in posting:
             per_file[idx["documenti"][doc_id]["file"]][d] += 1
 
-    files = [f for f in per_file if f.startswith(("raw/", "wiki/"))]
+    files = sorted(f for f in per_file if f.startswith(("raw/", "wiki/")))
+    # Il confronto e O(n^2): a 134 file e istantaneo, a 5.000 sono ~12M coppie e
+    # il consolidamento smetterebbe di essere "offline" per diventare "mai".
+    # Meglio dichiarare il limite che degradare in silenzio.
+    if len(files) > MAX_FILE_CONFRONTO:
+        print(f"  [nota] {len(files)} file: confronto delle note simili saltato "
+              f"(limite {MAX_FILE_CONFRONTO}). Serve un indice invertito, non un "
+              f"doppio ciclo.")
+        return []
     fuori = []
     for i, a in enumerate(files):
         ta = set(per_file[a])

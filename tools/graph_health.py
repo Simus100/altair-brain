@@ -129,6 +129,21 @@ try:
 except Exception as ex:
     print(f"[info] anti-regressione saltata: {ex}")
 
+# DIGEST STANTIO: engine/digest/ e l'unico artefatto generato SENZA controllo di
+# coerenza (contiene date e freschezza, quindi cambia col tempo per costruzione).
+# Senza almeno un controllo di eta puo divergere dal grafo in silenzio, ed e proprio
+# il file che un agente legge per orientarsi: sarebbe una mappa vecchia data per buona.
+_dig = os.path.join(ROOT, "engine", "digest")
+if os.path.isdir(_dig):
+    _files = [os.path.join(_dig, f) for f in os.listdir(_dig) if f.endswith(".json")]
+    if _files:
+        piu_vecchio = min(os.path.getmtime(f) for f in _files)
+        if piu_vecchio < os.path.getmtime(GRAPH) - 86400:
+            problems.append(
+                "engine/digest/ e piu vecchio del grafo di oltre un giorno: "
+                "rigenera con 'python tools/consolidate.py' (un agente lo legge "
+                "per orientarsi e si fiderebbe di una mappa superata)")
+
 if problems:
     print(f"GRAFO NON SANO — {len(problems)} problemi:")
     for p in problems:
