@@ -93,3 +93,96 @@ def test_golden_set_e_significativo():
     for q in d["queries"]:
         assert q.get("domanda") and len(q.get("attesi", [])) >= 2, \
             f"caso malformato: {q}"
+
+
+# ---------------- F2: il RECUPERO, non solo la struttura ----------------
+# I test sopra verificano che i file esistano e siano connessi nel grafo. Non
+# verificano che la RICERCA li trovi: si potrebbe rompere del tutto il ranking BM25
+# e restare verdi. Questo e il "context recall @N" della letteratura RAG (RAGAS),
+# in versione deterministica: nessun modello, solo la posizione nei risultati.
+
+RECALL_AT = 8          # entro quanti risultati deve comparire cio che serve
+RECALL_MINIMO = 0.70   # frazione di domande che deve trovare almeno un file atteso
+
+
+def _casi_recupero():
+    """Solo le domande a cui la ricerca LESSICALE puo' rispondere. Quelle marcate
+    'recupero_lessicale: false' restano nel golden set per il test di STRUTTURA, ma
+    non sono un metro per BM25: e' documentato il perche' caso per caso, cosi la
+    marcatura non puo' diventare un modo per nascondere regressioni vere."""
+    d = json.loads(GOLDEN.read_text(encoding="utf-8"))
+    return [q for q in d["queries"] if q.get("recupero_lessicale", True)]
+
+
+@pytest.mark.parametrize("caso", _casi_recupero(),
+                         ids=[q["domanda"][:45] for q in _casi_recupero()])
+def test_golden_query_il_recupero_trova_qualcosa_di_pertinente(caso):
+    """Per ogni domanda reale, la ricerca deve portare in superficie almeno uno dei
+    file attesi entro i primi N. Se fallisce, il ranking e regredito."""
+    from tools.search import cerca
+    trovati = {_norm(r["file"]) for r in cerca(caso["domanda"], top=RECALL_AT)}
+    attesi = {_norm(f) for f in caso["attesi"]}
+    assert trovati & attesi, (
+        f"recupero fallito: {caso['domanda']}\n"
+        f"  attesi (uno basta): {sorted(attesi)}\n"
+        f"  trovati nei primi {RECALL_AT}: {sorted(trovati)}")
+
+
+def test_recall_complessivo_sopra_soglia():
+    """Metrica aggregata: se scende sotto soglia, la qualita del recupero e calata
+    nel suo insieme, anche se i singoli casi passano per un pelo."""
+    from tools.search import cerca
+    casi = _casi_recupero()
+    successi, falliti = 0, []
+    for caso in casi:
+        trovati = {_norm(r["file"]) for r in cerca(caso["domanda"], top=RECALL_AT)}
+        if trovati & {_norm(f) for f in caso["attesi"]}:
+            successi += 1
+        else:
+            falliti.append(caso["domanda"][:50])
+    recall = successi / len(casi)
+    assert recall >= RECALL_MINIMO, (
+        f"context recall @{RECALL_AT} = {recall:.0%} (minimo {RECALL_MINIMO:.0%})\n"
+        f"  domande senza risposta: {falliti}")
+
+
+def test_esclusioni_dal_recupero_sono_motivate():
+    """Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione
+    scritta: senza questo vincolo, marcare diventerebbe il modo piu' comodo per far
+    sparire un fallimento reale."""
+    d = json.loads(GOLDEN.read_text(encoding="utf-8"))
+    for q in d["queries"]:
+        if not q.get("recupero_lessicale", True):
+            assert q.get("perche_non_lessicale"), \
+                f"esclusione non motivata: {q['domanda']}"
+
+
+def test_banco_semantico_e_ancora_un_banco():
+    """Le domande del banco semantico devono FALLIRE col solo lessicale: e' la loro
+    ragione d'essere. Se una iniziasse a passare, non misura piu' nulla e va
+    promossa a caso normale (oppure il semantico e' stato attivato: allora vanno
+    tutte spostate nel golden set principale)."""
+    from tools.search import cerca
+    d = json.loads(GOLDEN.read_text(encoding="utf-8"))
+    banco = d.get("banco_semantico", {}).get("queries", [])
+    assert len(banco) >= 3, "banco semantico troppo piccolo per decidere"
+    passano = []
+    for q in banco:
+        trovati = {_norm(r["file"]) for r in cerca(q["domanda"], top=RECALL_AT)}
+        if trovati & {_norm(f) for f in q["attesi"]}:
+            passano.append(q["domanda"][:45])
+    assert len(passano) <= len(banco) // 2, (
+        "il banco semantico non discrimina piu': queste passano gia' col lessicale "
+        f"e vanno promosse nel golden set principale -> {passano}")
+
+
+def test_confidenza_alta_sulle_domande_golden():
+    """Le domande golden interrogano conoscenza che il brain POSSIEDE: se il
+    valutatore di confidenza (F1) le giudica scarse, e tarato male."""
+    from tools.search import cerca_con_diagnosi
+    casi = _casi_recupero()
+    scarse = [c["domanda"][:45] for c in casi
+              if cerca_con_diagnosi(c["domanda"], top=5)["diagnosi"]["confidenza"]
+              in ("bassa", "nessuna")]
+    assert len(scarse) <= len(casi) * 0.3, (
+        f"F1 troppo pessimista su conoscenza presente: {scarse}")

@@ -59,7 +59,34 @@
     {
       "domanda": "Da dove si parte per orientarsi nelle due aree del brain?",
       "attesi": ["wiki/aion/index.md", "wiki/data-science/index.md"],
-      "note": "gli indici sono le Maps of Content: devono restare raggiungibili"
+      "note": "gli indici sono le Maps of Content: devono restare raggiungibili nel grafo",
+      "recupero_lessicale": false,
+      "perche_non_lessicale": "la domanda dice 'orientarsi', la pagina dice 'orientata': senza stemming sono termini diversi e BM25 non li collega (verificato: 'orientarsi' ha 0 posting)"
     }
-  ]
+  ],
+  "banco_semantico": {
+    "descrizione": "Domande formulate DELIBERATAMENTE con parole diverse da quelle scritte nelle note. La ricerca lessicale non puo' trovarle (verificato: tutte falliscono oggi). Servono a decidere con un dato, e non a impressione, se il livello semantico opzionale (tools/build_dense_index.py, ~2GB) si ripaga: quando sara' attivo, queste devono passare. Se non passano, la dipendenza va rimossa.",
+    "queries": [
+      {
+        "domanda": "come faccio a capire se un dato e inaffidabile",
+        "attesi": ["wiki/data-science/controlli-qualita-dati.md", "wiki/data-science/data-cleaning.md"],
+        "note": "'inaffidabile' non compare: le note parlano di qualita, valori anomali, coerenza"
+      },
+      {
+        "domanda": "chi tiene insieme il ragionamento e decide cosa attivare",
+        "attesi": ["wiki/aion/aion-superia.md"],
+        "note": "la pagina dice 'supervisore meta-strutturale' e 'orchestra': nessuna parola in comune"
+      },
+      {
+        "domanda": "che cosa impedisce al sistema di comportarsi male",
+        "attesi": ["wiki/aion/aion-ethos.md"],
+        "note": "la pagina parla di gate, identita, vincolo: mai di 'impedire' o 'comportarsi male'"
+      },
+      {
+        "domanda": "dove trovo il modo giusto di impostare uno studio sui numeri",
+        "attesi": ["wiki/data-science/workflow-analisi-dati.md"],
+        "note": "parafrasi totale di 'metodo ripetibile per analizzare un dataset'"
+      }
+    ]
+  }
 }

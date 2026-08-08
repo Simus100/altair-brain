@@ -279,3 +279,77 @@ def test_memoria_non_annota_per_nodi_numerici_corti():
     assert not _corrisponde("6", "capitolo-6-analisi", "Sezione 6 del report")
     assert _corrisponde("6", "6", "")
     assert _corrisponde("aion-superia", "aion-superia", "AION_SUPERIA")
+
+
+# ---------------- F4: predizione strutturale dei collegamenti (Adamic-Adar) ----------------
+
+def test_adamic_adar_formula_corretta():
+    """La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini
+    comuni. Ricalcolata a mano su un grafo minimo costruito ad arte."""
+    import math
+    from tools.link_suggest import proposte_strutturali
+    # a e b non collegati, con 2 vicini comuni (z1 grado 2, z2 grado 3)
+    vicini = {
+        "wiki/x/a.md": {"wiki/x/z1.md", "wiki/x/z2.md"},
+        "wiki/x/b.md": {"wiki/x/z1.md", "wiki/x/z2.md"},
+        "wiki/x/z1.md": {"wiki/x/a.md", "wiki/x/b.md"},
+        "wiki/x/z2.md": {"wiki/x/a.md", "wiki/x/b.md", "wiki/x/c.md"},
+        "wiki/x/c.md": {"wiki/x/z2.md"},
+    }
+    p = proposte_strutturali(vicini)
+    # nel grafo di prova anche z1/z2 condividono due vicini: e corretto che compaia
+    # anche quella coppia. Si verifica il valore ESATTO su quella attesa.
+    ab = next(x for x in p if {x["da"], x["a"]} == {"wiki/x/a.md", "wiki/x/b.md"})
+    atteso = 1 / math.log(2) + 1 / math.log(3)
+    assert abs(ab["punteggio"] - atteso) < 1e-9, (ab["punteggio"], atteso)
+    assert ab["comuni"] == 2
+
+
+def test_struttura_non_propone_coppie_gia_collegate():
+    from tools.link_suggest import proposte_strutturali
+    vicini = {
+        "wiki/x/a.md": {"wiki/x/b.md", "wiki/x/z.md"},
+        "wiki/x/b.md": {"wiki/x/a.md", "wiki/x/z.md"},
+        "wiki/x/z.md": {"wiki/x/a.md", "wiki/x/b.md"},
+    }
+    assert proposte_strutturali(vicini) == []
+
+
+def test_struttura_scarta_il_vicino_singolo():
+    """Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace."""
+    from tools.link_suggest import proposte_strutturali
+    vicini = {
+        "wiki/x/a.md": {"wiki/x/z.md"},
+        "wiki/x/b.md": {"wiki/x/z.md"},
+        "wiki/x/z.md": {"wiki/x/a.md", "wiki/x/b.md"},
+    }
+    assert proposte_strutturali(vicini) == []
+
+
+def test_struttura_esclude_gli_hub():
+    """Gli hub sono collegati a tutto per costruzione: la loro vicinanza non
+    significa parentela, e senza esclusione dominavano l'output (verificato)."""
+    from tools.link_suggest import proposte_strutturali, HUB
+    assert "index" in HUB
+    vicini = {
+        "wiki/x/a.md": {"wiki/x/index.md", "wiki/x/metodi.md"},
+        "wiki/x/b.md": {"wiki/x/index.md", "wiki/x/metodi.md"},
+        "wiki/x/index.md": {"wiki/x/a.md", "wiki/x/b.md"},
+        "wiki/x/metodi.md": {"wiki/x/a.md", "wiki/x/b.md"},
+    }
+    # i soli vicini comuni sono hub -> nessuna proposta
+    assert proposte_strutturali(vicini, esclusi=HUB) == []
+
+
+def test_struttura_sul_grafo_reale_e_pulita():
+    from tools.link_suggest import _grafo_per_file, proposte_strutturali, HUB
+    v = _grafo_per_file()
+    if not v:
+        import pytest as _p
+        _p.skip("grafo non disponibile")
+    s = proposte_strutturali(v, esclusi=HUB)
+    assert s, "nessuna proposta strutturale sul grafo reale"
+    assert all(p["comuni"] >= 2 for p in s)
+    assert all(p["a"] not in v[p["da"]] for p in s), "proposta una coppia gia collegata"
+    coppie = {tuple(sorted((p["da"], p["a"]))) for p in s}
+    assert len(coppie) == len(s), "coppie duplicate nei due versi"
