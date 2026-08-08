@@ -178,6 +178,23 @@ def search(q: str = Query(..., min_length=2), top: int = Query(8, ge=1, le=50),
         raise _err(e)
 
 
+@api.get("/context", dependencies=[Depends(auth)])
+def context(q: str = Query(..., min_length=2), budget: int = Query(2000, ge=200, le=12000),
+            area: str = Query(None, pattern="^[a-z0-9-]+$"),
+            formato: str = Query("json", pattern="^(json|testo)$")):
+    """Contesto assemblato per un LLM entro un budget di token: frammenti pertinenti,
+    vicinato nel grafo, lezioni gia apprese e diagnosi di affidabilita. Con
+    formato=testo restituisce il markdown pronto da incollare in un prompt."""
+    try:
+        p = core.context_pack(q, budget=budget, area=area)
+    except core.BrainError as e:
+        raise _err(e)
+    if formato == "testo":
+        from tools.context_pack import come_testo
+        return PlainTextResponse(come_testo(p))
+    return p
+
+
 # ---------------- oracle (AION_Oracle eseguibile) ----------------
 class OracleReq(BaseModel):
     question: str | None = None

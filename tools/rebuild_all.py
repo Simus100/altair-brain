@@ -33,6 +33,10 @@ STEPS = [
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
     ("indice di ricerca (BM25)", [PY, "tools/build_search_index.py"]),
     ("lezioni consolidate", [PY, "tools/lessons_digest.py"]),
+    # Consolidamento offline: precalcola i digest per area. Volutamente SENZA check
+    # di coerenza in CI, a differenza degli altri generati: contiene la data di
+    # generazione e la freschezza dei file, quindi cambia col tempo per costruzione.
+    ("consolidamento (digest per area)", [PY, "tools/consolidate.py", "--solo-proposte"]),
     ("metriche del brain", [PY, "tools/graph_metrics.py"]),
     ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
     ("salute del grafo", [PY, "tools/graph_health.py"]),

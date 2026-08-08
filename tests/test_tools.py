@@ -353,3 +353,75 @@ def test_struttura_sul_grafo_reale_e_pulita():
     assert all(p["a"] not in v[p["da"]] for p in s), "proposta una coppia gia collegata"
     coppie = {tuple(sorted((p["da"], p["a"]))) for p in s}
     assert len(coppie) == len(s), "coppie duplicate nei due versi"
+
+
+# ---------------- F5: consolidamento offline ----------------
+
+def test_consolidate_produce_digest_solo_per_aree_reali():
+    """_inbox e una cartella tecnica, non una macroarea: areas.json e il registro."""
+    import json as _json
+    from tools.consolidate import digest_per_area
+    d = digest_per_area()
+    assert d, "nessun digest generato"
+    reg = _json.loads((ROOT / "areas.json").read_text(encoding="utf-8"))
+    valide = {a["id"] for a in reg["areas"]}
+    assert set(d) <= valide, f"digest per non-aree: {set(d) - valide}"
+    for area, dati in d.items():
+        assert dati["file"] > 0 and "centrali" in dati
+
+
+def test_consolidate_ordina_per_grado_non_per_etichetta():
+    """Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da
+    spareggio e spacciava per 'centrale' il testo alfabeticamente maggiore."""
+    from tools.consolidate import digest_per_area
+    for dati in digest_per_area().values():
+        gradi = [c["grado"] for c in dati["centrali"]]
+        assert gradi == sorted(gradi, reverse=True), gradi
+
+
+def test_consolidate_rileva_lezioni_ridondanti():
+    from tools.consolidate import lezioni_ridondanti
+    voci = [
+        {"nodi": ["a", "b"], "esito": "utile", "nota": "prima"},
+        {"nodi": ["b", "a"], "esito": "utile", "nota": "identica"},
+        {"nodi": ["c"], "esito": "utile", "nota": "sola"},
+    ]
+    r = lezioni_ridondanti(voci)
+    assert len(r) == 1 and r[0]["occorrenze"] == 2
+    assert sorted(r[0]["nodi"]) == ["a", "b"]
+
+
+# ---------------- F6: pacchetto di contesto entro budget ----------------
+
+def test_context_pack_rispetta_il_budget_reale():
+    """Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare
+    l'impalcatura (titoli, percorsi) faceva sforare (misurato 982 vs 730 stimati)."""
+    from tools.context_pack import pacchetto, come_testo
+    for b in (300, 900, 2000):
+        p = pacchetto("controlli di qualita sui dati", budget_token=b)
+        reale = len(come_testo(p)) // 4
+        assert reale <= b, f"budget {b} sforato: {reale} token reali"
+
+
+def test_context_pack_non_riempie_con_riempitivo():
+    """Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace.
+    Piu contesto non significa risposte migliori (context rot)."""
+    from tools.context_pack import pacchetto
+    stretto = pacchetto("controlli di qualita sui dati", budget_token=900)
+    largo = pacchetto("controlli di qualita sui dati", budget_token=12000)
+    assert len(largo["frammenti"]) - len(stretto["frammenti"]) <= 8
+
+
+def test_context_pack_avverte_quando_non_sa():
+    from tools.context_pack import pacchetto
+    p = pacchetto("ricetta carbonara guanciale pecorino", budget_token=900)
+    assert p["diagnosi"]["confidenza"] in ("bassa", "nessuna")
+    assert p["avvertenze"], "nessuna avvertenza su conoscenza assente"
+    assert "certa" in " ".join(p["avvertenze"])
+
+
+def test_context_pack_deduplica_per_file():
+    from tools.context_pack import pacchetto
+    p = pacchetto("analisi dei dati e metodo", budget_token=3000)
+    files = [f["file"] for f in p["frammenti"]]
+    assert len(files) == len(set(files)), "stesso file piu volte: budget sprecato"

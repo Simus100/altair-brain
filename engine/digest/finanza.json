@@ -1,0 +1,33 @@
+{
+  "centrali": [
+    {
+      "dove": "raw/finanza/README.md",
+      "grado": 3,
+      "nodo": "Finanza"
+    },
+    {
+      "dove": "raw/finanza/README.md",
+      "grado": 1,
+      "nodo": "README.md"
+    },
+    {
+      "dove": "raw/finanza/README.md",
+      "grado": 1,
+      "nodo": "Ambito"
+    },
+    {
+      "dove": "raw/finanza/README.md",
+      "grado": 1,
+      "nodo": "Note"
+    }
+  ],
+  "file": 1,
+  "generato_il": "2026-08-08",
+  "modificati_di_recente": [
+    {
+      "file": "raw/finanza/README.md",
+      "giorni_fa": 2
+    }
+  ],
+  "nodi": 4
+}

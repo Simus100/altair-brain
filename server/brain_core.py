@@ -142,6 +142,22 @@ def search(q: str, top: int = 8, area: str = None) -> dict:
             "diagnosi": esito["diagnosi"], "risultati": esito["risultati"]}
 
 
+def context_pack(q: str, budget: int = 2000, area: str = None) -> dict:
+    """Pacchetto di contesto pronto per un LLM, entro un budget di token.
+    Assembla in un colpo cio che altrimenti l'agente monta a mano (e di solito male):
+    frammenti pertinenti deduplicati, vicinato nel grafo, lezioni applicabili,
+    diagnosi di affidabilita."""
+    if area and not _SAFE_AREA.match(area):
+        raise BrainError(400, "Nome area non valido.")
+    try:
+        from tools.context_pack import pacchetto
+    except Exception as e:
+        raise BrainError(503, f"pacchetto di contesto non disponibile: {e}")
+    if not (REPO / "engine" / "search_index.json").exists():
+        raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
+    return pacchetto(q, budget_token=budget, area=area)
+
+
 # ---------------- oracle ----------------
 def oracle_cast(question: str = None, seed=None) -> dict:
     if seed is not None:

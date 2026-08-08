@@ -1,0 +1,109 @@
+{
+  "centrali": [
+    {
+      "dove": "wiki/data-science/metodi.md",
+      "grado": 21,
+      "nodo": "metodi.md"
+    },
+    {
+      "dove": "wiki/data-science/workflow-analisi-dati.md",
+      "grado": 15,
+      "nodo": "workflow-analisi-dati.md"
+    },
+    {
+      "dove": "wiki/data-science/progetto-olist-ecommerce.md",
+      "grado": 14,
+      "nodo": "progetto-olist-ecommerce.md"
+    },
+    {
+      "dove": "wiki/data-science/progetto-insurance.md",
+      "grado": 13,
+      "nodo": "progetto-insurance.md"
+    },
+    {
+      "dove": "wiki/data-science/struttura-report-analisi.md",
+      "grado": 13,
+      "nodo": "struttura-report-analisi.md"
+    },
+    {
+      "dove": "wiki/data-science/controlli-qualita-dati.md",
+      "grado": 12,
+      "nodo": "controlli-qualita-dati.md"
+    },
+    {
+      "dove": "wiki/data-science/progetto-hotel-booking.md",
+      "grado": 12,
+      "nodo": "progetto-hotel-booking.md"
+    },
+    {
+      "dove": "wiki/data-science/data-storytelling.md",
+      "grado": 11,
+      "nodo": "data-storytelling.md"
+    },
+    {
+      "dove": "wiki/data-science/feature-engineering.md",
+      "grado": 11,
+      "nodo": "feature-engineering.md"
+    },
+    {
+      "dove": "wiki/data-science/framework-domande-analitiche.md",
+      "grado": 11,
+      "nodo": "framework-domande-analitiche.md"
+    },
+    {
+      "dove": "wiki/data-science/index.md",
+      "grado": 11,
+      "nodo": "index.md"
+    },
+    {
+      "dove": "wiki/data-science/strumenti.md",
+      "grado": 11,
+      "nodo": "strumenti.md"
+    }
+  ],
+  "file": 61,
+  "generato_il": "2026-08-08",
+  "modificati_di_recente": [
+    {
+      "file": "raw/data-science/AI introduzione.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/Data culture.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/MongoDB/beanie e python per MongoDB.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/MongoDB/installazione.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/MongoDB/integrazione con python.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/MongoDB/utilizzo tramite CMD.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md",
+      "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+      "giorni_fa": 1
+    }
+  ],
+  "nodi": 129
+}

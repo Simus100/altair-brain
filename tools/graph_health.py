@@ -79,6 +79,35 @@ if untraced:
     esempi = [f"#{i} {g['links'][i].get('relation','?')}" for i in untraced[:5]]
     problems.append(f"archi senza source_file: {len(untraced)} — es. {esempi}")
 
+# NODI FANTASMA: un titolo che nel file non esiste piu. Succede quando la cache di
+# graphify non si invalida dopo una modifica (caso reale: un nodo residuo aveva
+# accumulato 72 archi e risultava il piu centrale dell'area, distorcendo il grafo
+# senza che nessun altro controllo se ne accorgesse). Rimedio: rebuild pulito
+#   rm -rf graphify-out/cache graphify-out/graph.json graphify-out/manifest.json
+_cache_testi = {}
+fantasmi = []
+for n in nodes:
+    rel = sf[n["id"]]
+    etichetta = (n.get("label") or "").strip()
+    # solo i nodi-titolo dei markdown: hanno una riga precisa da ritrovare
+    if not rel.endswith(".md") or not etichetta or etichetta == os.path.basename(rel):
+        continue
+    if rel not in _cache_testi:
+        p = os.path.join(ROOT, rel)
+        try:
+            with open(p, encoding="utf-8") as fh:
+                _cache_testi[rel] = fh.read()
+        except OSError:
+            _cache_testi[rel] = None
+    testo = _cache_testi[rel]
+    if testo is not None and etichetta not in testo:
+        fantasmi.append(f"{rel}: '{etichetta[:50]}'")
+if fantasmi:
+    problems.append(
+        f"nodi fantasma (etichetta assente dal file sorgente): {len(fantasmi)} — "
+        f"es. {fantasmi[:3]}. Cache graphify stantia: rigenera con "
+        f"'rm -rf graphify-out/cache graphify-out/graph.json graphify-out/manifest.json'")
+
 # anti-regressione vs commit precedente
 prev_ref = os.environ.get("ALTAIR_PREV_REF", "HEAD~1")
 try:

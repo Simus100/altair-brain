@@ -65,6 +65,19 @@ def brain_search(q: str, top: int = 8, area: str = "") -> str:
 
 
 @mcp.tool()
+def brain_context(q: str, budget: int = 2000, area: str = "") -> str:
+    """Contesto PRONTO su un argomento, entro un budget di token: frammenti pertinenti,
+    cosa c'e intorno nel grafo, lezioni gia apprese e quanto fidarsi. Da preferire a
+    brain_query+brain_search quando serve capire un tema: assembla il contesto una
+    volta sola e con misura, invece di accumulare testo (piu contesto NON significa
+    risposte migliori: oltre una certa soglia le peggiora)."""
+    def run():
+        from tools.context_pack import come_testo
+        return come_testo(core.context_pack(q, budget=budget, area=(area or None)))
+    return _safe(run)
+
+
+@mcp.tool()
 def brain_explain(x: str) -> str:
     """Spiega un nodo del grafo e i suoi collegamenti (graphify explain)."""
     return _safe(core.run_graphify, ["explain", x])
