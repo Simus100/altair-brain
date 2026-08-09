@@ -174,7 +174,11 @@ jobs:
           if git ls-remote --exit-code --tags origin "$TAG" >/dev/null 2>&1; then
             echo "$TAG esiste gia: la settimana e gia coperta"
           else
-            git tag -a "$TAG" -m "ultimo main validato della settimana"
+            # Tag LEGGERO di proposito: quello annotato (-a -m) richiede un'identita
+            # git, che un checkout pulito in Actions non ha — ed e esattamente cosi
+            # che questo step e fallito al primo giro. Per un punto di ripristino
+            # l'annotazione non aggiunge nulla: conta il commit a cui punta.
+            git tag "$TAG"
             git push origin "$TAG"
             echo "creato $TAG -> $(git rev-parse --short HEAD)"
           fi
