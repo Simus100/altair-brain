@@ -189,6 +189,14 @@ def main():
     if not a.solo_proposte:
         digest = digest_per_area()
         os.makedirs(OUT_DIR, exist_ok=True)
+        # Pulizia dei digest orfani: un'area rimossa o rinominata lascerebbe il suo
+        # digest sul disco per sempre. Non e teoria — _inbox.json e sopravvissuto
+        # all'esclusione delle cartelle tecniche e faceva scattare la guardia
+        # anti-digest-stantio di graph_health, bloccando la pipeline.
+        for f in os.listdir(OUT_DIR):
+            if f.endswith(".json") and f[:-5] not in digest:
+                os.remove(os.path.join(OUT_DIR, f))
+                print(f"  rimosso digest orfano: {f}")
         for area, d in sorted(digest.items()):
             with open(os.path.join(OUT_DIR, f"{area}.json"), "w",
                       encoding="utf-8", newline="\n") as f:

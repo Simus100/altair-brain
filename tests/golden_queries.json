@@ -9,17 +9,26 @@
   "queries": [
     {
       "domanda": "Chi orchestra il ragionamento in AION e quale gate etico e sempre attivo?",
-      "attesi": ["wiki/aion/aion-superia.md", "wiki/aion/aion-ethos.md"],
+      "attesi": [
+        "wiki/aion/aion-superia.md",
+        "wiki/aion/aion-ethos.md"
+      ],
       "note": "orchestrazione + vincolo di identita: il cuore del modello"
     },
     {
       "domanda": "Come funziona l'oracolo I Ching e da dove nasce il database degli esagrammi?",
-      "attesi": ["wiki/aion/aion-oracle.md", "raw/aion/aion-oracle.md"],
+      "attesi": [
+        "wiki/aion/aion-oracle.md",
+        "raw/aion/aion-oracle.md"
+      ],
       "note": "catena fonte grezza -> pagina curata (regola della fonte unica)"
     },
     {
       "domanda": "Quali sono le modalita di ragionamento e il motore strategico di AION?",
-      "attesi": ["wiki/aion/aion-strategic-engine.md", "wiki/aion/aion-hybrid-reasoner.md"],
+      "attesi": [
+        "wiki/aion/aion-strategic-engine.md",
+        "wiki/aion/aion-hybrid-reasoner.md"
+      ],
       "note": "componenti di ragionamento"
     },
     {
@@ -33,35 +42,77 @@
     },
     {
       "domanda": "Quali controlli di qualita si fanno sui dati prima di analizzarli?",
-      "attesi": ["wiki/data-science/controlli-qualita-dati.md", "wiki/data-science/data-cleaning.md"],
+      "attesi": [
+        "wiki/data-science/controlli-qualita-dati.md",
+        "wiki/data-science/data-cleaning.md"
+      ],
       "note": "qualita del dato"
     },
     {
       "domanda": "Come si individuano gli outlier con i quartili?",
-      "attesi": ["wiki/data-science/quartili-outlier.md", "wiki/data-science/analisi-esplorativa.md"],
+      "attesi": [
+        "wiki/data-science/quartili-outlier.md",
+        "wiki/data-science/analisi-esplorativa.md"
+      ],
       "note": "metodo statistico concreto documentato dai project work"
     },
     {
       "domanda": "Quali progetti reali documentano la metodologia di analisi?",
-      "attesi": ["wiki/data-science/progetti.md", "wiki/data-science/progetto-olist-ecommerce.md"],
+      "attesi": [
+        "wiki/data-science/progetti.md",
+        "wiki/data-science/progetto-olist-ecommerce.md"
+      ],
       "note": "casi applicati"
     },
     {
       "domanda": "Che rapporto c'e tra la narrazione di AION e lo storytelling dei dati?",
-      "attesi": ["wiki/aion/aion-fabulatorium.md", "wiki/data-science/data-storytelling.md"],
+      "attesi": [
+        "wiki/aion/aion-fabulatorium.md",
+        "wiki/data-science/data-storytelling.md"
+      ],
       "note": "PONTE INTERCAMPO curato (engine/bridges.json): se si rompe, le aree si isolano"
     },
     {
       "domanda": "Come si collega l'agente analista di AION all'analisi esplorativa?",
-      "attesi": ["wiki/aion/aion-analyst.md", "wiki/data-science/analisi-esplorativa.md"],
+      "attesi": [
+        "wiki/aion/aion-analyst.md",
+        "wiki/data-science/analisi-esplorativa.md"
+      ],
       "note": "secondo ponte intercampo curato"
     },
     {
       "domanda": "Da dove si parte per orientarsi nelle due aree del brain?",
-      "attesi": ["wiki/aion/index.md", "wiki/data-science/index.md"],
+      "attesi": [
+        "wiki/aion/index.md",
+        "wiki/data-science/index.md"
+      ],
       "note": "gli indici sono le Maps of Content: devono restare raggiungibili nel grafo",
       "recupero_lessicale": false,
       "perche_non_lessicale": "la domanda dice 'orientarsi', la pagina dice 'orientata': senza stemming sono termini diversi e BM25 non li collega (verificato: 'orientarsi' ha 0 posting)"
+    },
+    {
+      "domanda": "Come si calibra lo stile della prosa in modo misurabile?",
+      "attesi": [
+        "wiki/creativita/styledna.md",
+        "wiki/creativita/stilometria.md"
+      ],
+      "note": "StyleDNA a 12 assi + verifica eseguibile: il cuore dell'area creativita"
+    },
+    {
+      "domanda": "Cosa fa suonare artificiale un testo scritto da un modello?",
+      "attesi": [
+        "wiki/creativita/anti-ai.md",
+        "wiki/creativita/carta-della-prosa.md"
+      ],
+      "note": "i due fallimenti opposti (genericita e manierismo) e la dottrina positiva"
+    },
+    {
+      "domanda": "Come si mantiene la coerenza di una storia lunga tra un capitolo e l'altro?",
+      "attesi": [
+        "wiki/creativita/stato-narrativo.md",
+        "wiki/creativita/fasi-editoriali.md"
+      ],
+      "note": "NST e Ledger PIP: la memoria narrativa"
     }
   ],
   "banco_semantico": {
@@ -69,22 +120,31 @@
     "queries": [
       {
         "domanda": "come faccio a capire se un dato e inaffidabile",
-        "attesi": ["wiki/data-science/controlli-qualita-dati.md", "wiki/data-science/data-cleaning.md"],
+        "attesi": [
+          "wiki/data-science/controlli-qualita-dati.md",
+          "wiki/data-science/data-cleaning.md"
+        ],
         "note": "'inaffidabile' non compare: le note parlano di qualita, valori anomali, coerenza"
       },
       {
         "domanda": "chi tiene insieme il ragionamento e decide cosa attivare",
-        "attesi": ["wiki/aion/aion-superia.md"],
+        "attesi": [
+          "wiki/aion/aion-superia.md"
+        ],
         "note": "la pagina dice 'supervisore meta-strutturale' e 'orchestra': nessuna parola in comune"
       },
       {
         "domanda": "che cosa impedisce al sistema di comportarsi male",
-        "attesi": ["wiki/aion/aion-ethos.md"],
+        "attesi": [
+          "wiki/aion/aion-ethos.md"
+        ],
         "note": "la pagina parla di gate, identita, vincolo: mai di 'impedire' o 'comportarsi male'"
       },
       {
         "domanda": "dove trovo il modo giusto di impostare uno studio sui numeri",
-        "attesi": ["wiki/data-science/workflow-analisi-dati.md"],
+        "attesi": [
+          "wiki/data-science/workflow-analisi-dati.md"
+        ],
         "note": "parafrasi totale di 'metodo ripetibile per analizzare un dataset'"
       }
     ]

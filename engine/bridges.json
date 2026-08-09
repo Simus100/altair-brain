@@ -4,21 +4,83 @@
   "bridges": [
     {
       "concetto": "storytelling / narrazione",
-      "from": {"area": "aion", "page": "aion-fabulatorium"},
-      "to": {"area": "data-science", "page": "data-storytelling"},
+      "from": {
+        "area": "aion",
+        "page": "aion-fabulatorium"
+      },
+      "to": {
+        "area": "data-science",
+        "page": "data-storytelling"
+      },
       "nota": "La narrazione simbolica di AION e lo storytelling con i dati condividono lo stesso principio: usare il racconto per rendere un messaggio memorabile e orientare le decisioni."
     },
     {
       "concetto": "analisi",
-      "from": {"area": "aion", "page": "aion-analyst"},
-      "to": {"area": "data-science", "page": "analisi-esplorativa"},
+      "from": {
+        "area": "aion",
+        "page": "aion-analyst"
+      },
+      "to": {
+        "area": "data-science",
+        "page": "analisi-esplorativa"
+      },
       "nota": "AION_Analyst (analisi strategica, validazione, insight) e l'analisi esplorativa dei dati sono lo stesso gesto cognitivo applicato a domini diversi."
     },
     {
       "concetto": "intelligenza artificiale / prompt",
-      "from": {"area": "aion", "page": "index"},
-      "to": {"area": "data-science", "page": "intelligenza-artificiale"},
+      "from": {
+        "area": "aion",
+        "page": "index"
+      },
+      "to": {
+        "area": "data-science",
+        "page": "intelligenza-artificiale"
+      },
       "nota": "AION e un modello di pensiero AI interrogabile via prompt; i fondamenti di IA e il prompt engineering della data science ne sono la base teorica."
+    },
+    {
+      "from": {
+        "area": "aion",
+        "page": "aion-fabulatorium"
+      },
+      "to": {
+        "area": "creativita",
+        "page": "carta-della-prosa"
+      },
+      "concetto": "narrazione simbolica / dottrina della prosa"
+    },
+    {
+      "from": {
+        "area": "aion",
+        "page": "livello-orchestrazione-stile"
+      },
+      "to": {
+        "area": "creativita",
+        "page": "styledna"
+      },
+      "concetto": "stile come livello orchestrato / stile come vettore"
+    },
+    {
+      "from": {
+        "area": "aion",
+        "page": "aion-cinematica"
+      },
+      "to": {
+        "area": "creativita",
+        "page": "granularita-scrittura"
+      },
+      "concetto": "regia narrativa / granularita di scena"
+    },
+    {
+      "from": {
+        "area": "data-science",
+        "page": "controlli-qualita-dati"
+      },
+      "to": {
+        "area": "creativita",
+        "page": "stilometria"
+      },
+      "concetto": "verifica di qualita: sui dati e sulla prosa"
     }
   ]
 }

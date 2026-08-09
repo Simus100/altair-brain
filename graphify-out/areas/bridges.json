@@ -16,6 +16,20 @@
    "area_target": "data-science"
   },
   {
+   "source": "wiki_aion_aion_cinematica",
+   "target": "wiki_creativita_granularita_scrittura",
+   "relation": "bridge",
+   "area_source": "aion",
+   "area_target": "creativita"
+  },
+  {
+   "source": "wiki_aion_aion_fabulatorium",
+   "target": "wiki_creativita_carta_della_prosa",
+   "relation": "bridge",
+   "area_source": "aion",
+   "area_target": "creativita"
+  },
+  {
    "source": "wiki_aion_aion_fabulatorium",
    "target": "wiki_data_science_data_storytelling",
    "relation": "bridge",
@@ -28,6 +42,20 @@
    "relation": "bridge",
    "area_source": "aion",
    "area_target": "data-science"
+  },
+  {
+   "source": "wiki_aion_livello_orchestrazione_stile",
+   "target": "wiki_creativita_styledna",
+   "relation": "bridge",
+   "area_source": "aion",
+   "area_target": "creativita"
+  },
+  {
+   "source": "wiki_data_science_controlli_qualita_dati",
+   "target": "wiki_creativita_stilometria",
+   "relation": "bridge",
+   "area_source": "data-science",
+   "area_target": "creativita"
   }
  ]
 }

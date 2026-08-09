@@ -85,6 +85,20 @@
       "size": 10
     },
     {
+      "id": "raw:creativita",
+      "label": "creativita (raw)",
+      "layer": "area:creativita",
+      "kind": "dato",
+      "size": 25
+    },
+    {
+      "id": "wiki:creativita",
+      "label": "creativita",
+      "layer": "area:creativita",
+      "kind": "dato",
+      "size": 18
+    },
+    {
       "id": "eng:LESSONS.md",
       "label": "LESSONS.md",
       "layer": "engine",
@@ -115,6 +129,13 @@
     {
       "id": "skill:oracle",
       "label": "/oracle",
+      "layer": "skill",
+      "kind": "dato",
+      "size": 9
+    },
+    {
+      "id": "skill:scrivi",
+      "label": "/scrivi",
       "layer": "skill",
       "kind": "dato",
       "size": 9
@@ -206,6 +227,21 @@
       "kind": "has"
     },
     {
+      "source": "fase:1",
+      "target": "raw:creativita",
+      "kind": "has"
+    },
+    {
+      "source": "fase:2",
+      "target": "wiki:creativita",
+      "kind": "has"
+    },
+    {
+      "source": "raw:creativita",
+      "target": "wiki:creativita",
+      "kind": "derive"
+    },
+    {
       "source": "fase:3",
       "target": "eng:LESSONS.md",
       "kind": "has"
@@ -232,6 +268,11 @@
     },
     {
       "source": "fase:4",
+      "target": "skill:scrivi",
+      "kind": "has"
+    },
+    {
+      "source": "fase:4",
       "target": "skill:triage",
       "kind": "has"
     },
@@ -252,12 +293,32 @@
     },
     {
       "source": "wiki:aion",
+      "target": "wiki:creativita",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:aion",
+      "target": "wiki:creativita",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:aion",
       "target": "wiki:data-science",
       "kind": "bridge"
     },
     {
       "source": "wiki:aion",
       "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:aion",
+      "target": "wiki:creativita",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:data-science",
+      "target": "wiki:creativita",
       "kind": "bridge"
     }
   ],
@@ -269,9 +330,10 @@
       "data-science",
       "finanza",
       "divulgazione",
-      "web-design"
+      "web-design",
+      "creativita"
     ],
-    "ponti_intercampo": 3,
+    "ponti_intercampo": 7,
     "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
   }
 }

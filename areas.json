@@ -36,6 +36,12 @@
       "label": "Web design",
       "description": "UI/UX, front-end, design system, accessibilita, prototipazione.",
       "status": "active"
+    },
+    {
+      "id": "creativita",
+      "label": "Creatività",
+      "description": "Scrittura creativa e produzione editoriale: BookForge — sistema per scrivere libri con l'AI. StyleDNA (vettore stilistico a 12 assi), verifica stilometrica eseguibile, protocolli anti-AI, psicologia del personaggio, continuita di collana, pubblicazione KDP.",
+      "status": "active"
     }
   ]
 }

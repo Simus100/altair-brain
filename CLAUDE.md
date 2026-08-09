@@ -55,5 +55,19 @@ per i fatti che invecchiano: si invalidano, **non si cancellano**). Vedi `raw/RE
 La CI (`.github/workflows/validate.yml`) ripete questi controlli su ogni push: i
 consumatori (VPS, dispositivi) ricevono solo un brain valido.
 
+## Scrittura (quando il brain produce prosa)
+
+Report, pagine curate, note lunghe: la prosa del brain segue la dottrina dell'area
+`creativita` (distillata da BookForge). **L'ordine non si inverte**: in stesura vale
+solo `wiki/creativita/carta-della-prosa.md` (imperativi positivi); l'elenco dei tic
+(`wiki/creativita/anti-ai.md`) si apre **in revisione**, mai durante il draft.
+
+Regola sovrana: *se una frase va riletta per essere capita, va riscritta piu semplice* —
+batte ogni altra regola. Verifica misurabile: `python tools/style_check.py <file>`
+oppure `--report <nome>`, che distingue la classe OGGETTIVA (anglicismi, ripetizioni:
+si correggono sempre) da quella INDIZIARIA (soglie e tic: solo segnalazione, l'orecchio
+batte i numeri).
+
 Skill del brain: `/aion` (ragionamento col modello di pensiero), `/triage` (smista
-l'inbox nelle macroaree), `/oracle` (I Ching eseguibile via tools/oracle_cast.py).
+l'inbox nelle macroaree), `/oracle` (I Ching eseguibile via tools/oracle_cast.py),
+`/scrivi` (scrittura e revisione con verifica stilometrica).

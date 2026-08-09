@@ -16,6 +16,11 @@
       "nodo": "progetto-olist-ecommerce.md"
     },
     {
+      "dove": "wiki/data-science/controlli-qualita-dati.md",
+      "grado": 13,
+      "nodo": "controlli-qualita-dati.md"
+    },
+    {
       "dove": "wiki/data-science/progetto-insurance.md",
       "grado": 13,
       "nodo": "progetto-insurance.md"
@@ -24,11 +29,6 @@
       "dove": "wiki/data-science/struttura-report-analisi.md",
       "grado": 13,
       "nodo": "struttura-report-analisi.md"
-    },
-    {
-      "dove": "wiki/data-science/controlli-qualita-dati.md",
-      "grado": 12,
-      "nodo": "controlli-qualita-dati.md"
     },
     {
       "dove": "wiki/data-science/progetto-hotel-booking.md",
@@ -62,47 +62,47 @@
     }
   ],
   "file": 61,
-  "generato_il": "2026-08-08",
+  "generato_il": "2026-08-09",
   "modificati_di_recente": [
     {
-      "file": "raw/data-science/AI introduzione.md",
+      "file": "raw/data-science/PROJECT WORK/Insurance Analysis/1 data processing.md",
       "giorni_fa": 1
+    },
+    {
+      "file": "raw/data-science/AI introduzione.md",
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/Data culture.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/MongoDB/beanie e python per MongoDB.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/MongoDB/installazione.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/MongoDB/integrazione con python.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/MongoDB/utilizzo tramite CMD.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     },
     {
       "file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md",
-      "giorni_fa": 1
-    },
-    {
-      "file": "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
-      "giorni_fa": 1
+      "giorni_fa": 2
     }
   ],
   "nodi": 129

@@ -12,12 +12,12 @@
     },
     {
       "dove": "wiki/aion/aion-cinematica.md",
-      "grado": 20,
+      "grado": 21,
       "nodo": "aion-cinematica.md"
     },
     {
       "dove": "wiki/aion/aion-fabulatorium.md",
-      "grado": 18,
+      "grado": 19,
       "nodo": "aion-fabulatorium.md"
     },
     {
@@ -51,18 +51,18 @@
       "nodo": "aion-cognition-view.md"
     },
     {
+      "dove": "wiki/aion/livello-orchestrazione-stile.md",
+      "grado": 15,
+      "nodo": "livello-orchestrazione-stile.md"
+    },
+    {
       "dove": "wiki/aion/aion-adaptive-core.md",
       "grado": 14,
       "nodo": "aion-adaptive-core.md"
-    },
-    {
-      "dove": "wiki/aion/livello-orchestrazione-stile.md",
-      "grado": 14,
-      "nodo": "livello-orchestrazione-stile.md"
     }
   ],
   "file": 62,
-  "generato_il": "2026-08-08",
+  "generato_il": "2026-08-09",
   "modificati_di_recente": [
     {
       "file": "wiki/aion/aion-adaptive-core.md",

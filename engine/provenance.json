@@ -20,44 +20,74 @@
     },
     {
       "indice": "wiki/data-science/index.md",
-      "fonti": ["raw/data-science/README.md"],
+      "fonti": [
+        "raw/data-science/README.md"
+      ],
       "nota": "l'area data-science e scritta a mano: il README grezzo indicizza le note di metodo da cui deriva"
+    },
+    {
+      "indice": "wiki/creativita/index.md",
+      "fonti": [
+        "raw/creativita/bookforge/scrittura.md",
+        "raw/creativita/bookforge/styledna.md",
+        "raw/creativita/bookforge/anti-ai.md",
+        "raw/creativita/bookforge/carta.md",
+        "raw/creativita/bookforge/fasi.md"
+      ],
+      "nota": "l'area creativita distilla il sistema BookForge: la wiki tiene il METODO trasferibile, i file grezzi restano la fonte canonica"
     }
   ],
   "mappe_dirette": [
     {
       "wiki": "raw/divulgazione/metodo-report-verificati.md",
-      "fonti": ["reports/template_showcase_3d.md"],
+      "fonti": [
+        "reports/template_showcase_3d.md"
+      ],
       "nota": "F7: la conoscenza di metodo estratta dai report pubblicati (tools/report_harvest.py). Chiude il silo misurato: prima reports/ non aveva ALCUN arco verso gli strati di conoscenza — produceva lavoro che non tornava mai indietro. Il campo 'wiki' qui ospita una nota grezza: la derivazione e cio che conta, non la cartella."
     },
     {
       "wiki": "wiki/aion/aion-oracle.md",
-      "fonti": ["raw/aion/aion-oracle.md"],
+      "fonti": [
+        "raw/aion/aion-oracle.md"
+      ],
       "nota": "la pagina curata dell'oracolo e il documento grezzo con la sequenza di Re Wen da cui nasce engine/iching.db.json"
     },
     {
       "wiki": "wiki/data-science/quartili-outlier.md",
-      "fonti": ["raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md"]
+      "fonti": [
+        "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/data-driven-culture.md",
-      "fonti": ["raw/data-science/Data culture.md"]
+      "fonti": [
+        "raw/data-science/Data culture.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/intelligenza-artificiale.md",
-      "fonti": ["raw/data-science/AI introduzione.md", "raw/data-science/Quarta rivoluzione indusriale.md"]
+      "fonti": [
+        "raw/data-science/AI introduzione.md",
+        "raw/data-science/Quarta rivoluzione indusriale.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/normalizzazione-decimali.md",
-      "fonti": ["raw/data-science/normalizzare numeri decimali con errori.md"]
+      "fonti": [
+        "raw/data-science/normalizzare numeri decimali con errori.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/prompt-engineering.md",
-      "fonti": ["raw/data-science/prompt engineering/prompt engineering base.md"]
+      "fonti": [
+        "raw/data-science/prompt engineering/prompt engineering base.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/data-storytelling.md",
-      "fonti": ["raw/data-science/storytelling.md"]
+      "fonti": [
+        "raw/data-science/storytelling.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/mongodb.md",
@@ -70,27 +100,39 @@
     },
     {
       "wiki": "wiki/data-science/sql.md",
-      "fonti": ["raw/data-science/Sql/sql appunti.md"]
+      "fonti": [
+        "raw/data-science/Sql/sql appunti.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/algebra-relazionale.md",
-      "fonti": ["raw/data-science/Sql/Teoria algebra relazionale.md"]
+      "fonti": [
+        "raw/data-science/Sql/Teoria algebra relazionale.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/progettazione-database.md",
-      "fonti": ["raw/data-science/Sql/Progettazione DB.md"]
+      "fonti": [
+        "raw/data-science/Sql/Progettazione DB.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/progetto-social-media.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md"]
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi Dati Social Media/Documentazione.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/progetto-hotel-booking.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md"]
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/DOCUMENTAZIONE.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/progetto-olist-ecommerce.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.md"]
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Brazilian E-Commerce Olist/LINEE GUIDA.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/progetto-insurance.md",
@@ -101,7 +143,9 @@
     },
     {
       "wiki": "wiki/data-science/python-pandas.md",
-      "fonti": ["raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md"]
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md"
+      ]
     },
     {
       "wiki": "wiki/data-science/struttura-report-analisi.md",
@@ -112,7 +156,70 @@
     },
     {
       "wiki": "wiki/data-science/power-bi.md",
-      "fonti": ["raw/data-science/microsoft data analytics.md"]
+      "fonti": [
+        "raw/data-science/microsoft data analytics.md"
+      ]
+    },
+    {
+      "wiki": "wiki/creativita/styledna.md",
+      "fonti": [
+        "raw/creativita/bookforge/styledna.md"
+      ],
+      "nota": "vettore stilistico a 12 assi, tetti di salute e protocollo di deroga"
+    },
+    {
+      "wiki": "wiki/creativita/anti-ai.md",
+      "fonti": [
+        "raw/creativita/bookforge/anti-ai.md"
+      ],
+      "nota": "i due fallimenti opposti e i tic da LLM"
+    },
+    {
+      "wiki": "wiki/creativita/carta-della-prosa.md",
+      "fonti": [
+        "raw/creativita/bookforge/carta.md",
+        "raw/creativita/bookforge/scrittura.md"
+      ],
+      "nota": "l'unica dottrina attiva in stesura"
+    },
+    {
+      "wiki": "wiki/creativita/stilometria.md",
+      "fonti": [
+        "raw/creativita/bookforge/stylometry.py"
+      ],
+      "nota": "la verifica eseguibile: motore importato da tools/style_check.py"
+    },
+    {
+      "wiki": "wiki/creativita/fasi-editoriali.md",
+      "fonti": [
+        "raw/creativita/bookforge/fasi.md",
+        "raw/creativita/bookforge/percorsi.md",
+        "raw/creativita/bookforge/kdp.md"
+      ],
+      "nota": "le sei fasi del processo"
+    },
+    {
+      "wiki": "wiki/creativita/granularita-scrittura.md",
+      "fonti": [
+        "raw/creativita/bookforge/scrittura.md"
+      ],
+      "nota": "le tre tacche capitolo/scena/beat"
+    },
+    {
+      "wiki": "wiki/creativita/stato-narrativo.md",
+      "fonti": [
+        "raw/creativita/bookforge/scrittura.md",
+        "raw/creativita/bookforge/stato-bsr.md",
+        "raw/creativita/bookforge/continuita.md"
+      ],
+      "nota": "NST, Ledger PIP e lettura a freddo"
+    },
+    {
+      "wiki": "wiki/creativita/psicologia-personaggio.md",
+      "fonti": [
+        "raw/creativita/bookforge/psicologia.md"
+      ],
+      "nota": "9 assi, Enneagramma, protocollo pre-scena"
     }
   ]
 }

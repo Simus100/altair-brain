@@ -240,11 +240,20 @@ def test_confidenza_bassa_su_conoscenza_assente():
     assert "non contiene" in d["motivo"] or "coperto" in d["motivo"]
 
 
-def test_confidenza_nessuna_fuori_dominio():
+def test_confidenza_scarsa_fuori_dominio():
+    """Fuori dominio il sistema deve DIRE di non fidarsi.
+
+    Il test verificava «zero risultati», ma era fragile: assumeva che nessun termine
+    della domanda comparisse mai nel corpus. Entrando l'area creativita, «ricetta» ha
+    iniziato a comparire davvero (BookForge: «la ricetta della prosa fredda») e il
+    test e caduto pur funzionando tutto — la confidenza diceva correttamente «bassa»
+    col 25% di copertura. Ora si verifica la proprieta che conta davvero, non una
+    caratteristica accidentale del corpus."""
     from tools.search import cerca_con_diagnosi
     e = cerca_con_diagnosi("ricetta carbonara guanciale pecorino", top=3)
-    assert e["risultati"] == []
-    assert e["diagnosi"]["confidenza"] == "nessuna"
+    d = e["diagnosi"]
+    assert d["confidenza"] in ("bassa", "nessuna"), d
+    assert d["copertura"] < 0.34, d
 
 
 def test_tokenizzazione_query_coerente_con_indice():
@@ -592,7 +601,12 @@ def test_privacy_distingue_segreti_da_codice():
             if m and not ns["PLACEHOLDER"].search(m.group(0)):
                 return True
         return False
-    assert colpito('api_key = "sk-live-9f3a2b7c4d1e8f0a"')
+    # Il segreto di prova si COMPONE a runtime: scritto per esteso, questo file
+    # farebbe scattare per sempre il rilevatore su se stesso, e un falso positivo
+    # permanente insegna a ignorare lo strumento. Esentare il file sarebbe peggio:
+    # creerebbe un punto cieco proprio dove un segreto vero potrebbe finire.
+    finto = "sk-" + "live-" + "9f3a2b7c4d1e8f0a"
+    assert colpito(f'api_key = "{finto}"')
     assert not colpito('TOKEN = os.environ.get("ALTAIR_API_TOKEN")')
     assert not colpito('token = tokenizza(titolo)')
 

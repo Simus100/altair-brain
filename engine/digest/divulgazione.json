@@ -1,13 +1,23 @@
 {
   "centrali": [
     {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 5,
+      "nodo": "Metodo dei report verificati"
+    },
+    {
       "dove": "raw/divulgazione/README.md",
       "grado": 3,
       "nodo": "Divulgazione"
     },
     {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 3,
+      "nodo": "metodo-report-verificati.md"
+    },
+    {
       "dove": "raw/divulgazione/README.md",
-      "grado": 1,
+      "grado": 2,
       "nodo": "README.md"
     },
     {
@@ -19,15 +29,39 @@
       "dove": "raw/divulgazione/README.md",
       "grado": 1,
       "nodo": "Note"
+    },
+    {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 1,
+      "nodo": "Fonti su cui il brain ha costruito"
+    },
+    {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 1,
+      "nodo": "Convenzioni editoriali in uso"
+    },
+    {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 1,
+      "nodo": "Casi seguiti"
+    },
+    {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 1,
+      "nodo": "Metodo oracolare nei report"
     }
   ],
-  "file": 1,
-  "generato_il": "2026-08-08",
+  "file": 2,
+  "generato_il": "2026-08-09",
   "modificati_di_recente": [
     {
+      "file": "raw/divulgazione/metodo-report-verificati.md",
+      "giorni_fa": 1
+    },
+    {
       "file": "raw/divulgazione/README.md",
-      "giorni_fa": 2
+      "giorni_fa": 3
     }
   ],
-  "nodi": 4
+  "nodi": 10
 }
