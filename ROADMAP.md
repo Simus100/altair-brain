@@ -337,6 +337,33 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
 
 ---
 
+## RIPARTIRE DA ZERO — leggi questo se non hai contesto
+
+Il brain e progettato perche una sessione nuova riprenda senza sapere nulla delle
+precedenti. In ordine:
+
+1. **`CLAUDE.md`** si carica da solo: pipeline, due motori di ricerca, memoria
+   operativa, regola di provenienza, dottrina di scrittura.
+2. **`engine/LESSONS.md`** — cosa si e gia imparato e cosa si e rivelato un vicolo
+   cieco. E il passo 0 del reasoner: leggilo prima di rispondere.
+3. **`engine/digest/<area>.json`** — mappa precalcolata di ogni area: nodi piu
+   centrali, cosa e cambiato di recente. Evita di ricostruirsela ogni volta.
+4. **`metrics/graph_metrics.csv`** — come sta cambiando il brain: se `grado_medio`
+   scende mentre i nodi salgono, si stanno accumulando note scollegate.
+5. Per orientarsi: `graphify query "..."` (struttura) e
+   `python tools/search.py "..."` (contenuto). Per un pacchetto pronto entro budget:
+   `python tools/context_pack.py "<argomento>" --budget 2000`.
+
+**Stato al 2026-08-09**: 5 aree registrate (aion e creativita dense, data-science
+popolata, finanza/divulgazione/web-design quasi vuote), 1602 nodi, 2115 archi,
+7 ponti intercampo, 103 test, CI a 21 step, tre livelli di ripristino
+(`backup` + tag settimanali `ripristino-AAAA-wNN`).
+
+**Cosa NON ricostruire da capo** (gia deciso, non riaprire): il repo resta pubblico
+per scelta dell'utente; niente branch protection su main (bloccherebbe gli agenti
+Jules/Antigravity); il livello semantico e opzionale e la sua utilita si misura col
+banco in `tests/golden_queries.json`, non a impressione.
+
 ## Completato (storico, per orientamento)
 
 - **Upgrade P1-P10 2026-08-06** (da revisione architetturale + letteratura scientifica:
