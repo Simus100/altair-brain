@@ -16,13 +16,27 @@ Rules:
 
 ## Viste del grafo (processo standard)
 
-Il sistema produce DUE viste affiancate del grafo:
-- **Vista estesa** — `graphify-out/graph.html`, generata da `graphify update .` (tutti i nodi).
+Il sistema produce TRE viste affiancate del grafo. Servono a domande diverse: se
+ne stai usando una per la domanda sbagliata, stai perdendo tempo.
+
+- **Vista estesa** — `graphify-out/graph.html`, generata da `graphify update .` (tutti
+  i nodi). Serve a *vedere tutto*; non serve a trovare niente.
 - **Vista compatta strutturale** — `graphify-out/graph-compact.html`, generata da
   `python tools/altair_compact_view.py` (estende graphify, non lo modifica). Mostra
   altair-brain come **processo a 5 fasi**: (1) Sorgenti `raw/` → (2) Modello `wiki/` →
   (3) Motore `engine/` → (4) Skill `/aion` → (5) Feedback `LESSONS`, con anello di
   ritorno. Collassa il rumore (es. i 64 esagrammi in un nodo). Deterministica, no API.
+  Serve a *spiegare* il sistema.
+- **Atlante 3D esplorabile** — `graphify-out/graph-atlas.html`, generato da
+  `python tools/build_atlas_view.py`. Serve a **navigare**: è la vista da aprire per
+  orientarsi in un'area che non conosci. Mostra i ~214 nodi-FILE (non i 1603 titoli
+  interni) in uno spazio dove **la posizione significa**:
+  *altezza* = strato del processo (fonti → sapere → motore → uso, gli stessi passi
+  della vista compatta), *spicchio* = macroarea (tutte della stessa ampiezza: le aree
+  vuote si vedono), *raggio* = centralità (gli hub vicino all'asse). Tasto `L` = lente
+  sul vicinato a 2 passi, doppio click = vola sul nodo. Canvas 2D scritto a mano:
+  nessuna libreria, funziona offline da `file://`, deterministico.
+  Le invarianti del layout sono verificate in `tests/test_atlas.py`.
 
 Workflow dopo ogni modifica: **`python tools/rebuild_all.py`** (un comando: wiki dal
 modello, validazioni, DB oracle, grafo, ponti, provenienza, sottografi, viste, indice

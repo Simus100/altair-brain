@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **15** · sessioni graphify: **1**
-- esiti: 9 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
+- lezioni registrate: **16** · sessioni graphify: **1**
+- esiti: 10 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
 - skill piu attive: manuale (9), aion (3), report (1), oracle (1), scrivi (1)
-- temi ricorrenti: metodo (5), report (2), verifica (2), graphify (2), limite (2), corpus (2), living (1), editoriale (1)
+- temi ricorrenti: metodo (5), verifica (3), report (2), grafo (2), graphify (2), limite (2), corpus (2), living (1)
 
 ## Ancoraggi consolidati
 
@@ -40,6 +40,9 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `style_check.py` — 1× utile
 - `carta-della-prosa` — 1× utile
 - `anti-ai` — 1× utile
+- `tools/build_atlas_view.py` — 1× utile
+- `tests/test_atlas.py` — 1× utile
+- `graphify-out/graph-atlas.html` — 1× utile
 
 ## Vicoli ciechi
 
@@ -49,6 +52,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-10** _((atlante-3d, utile))_ — In 3D la posizione deve SIGNIFICARE, altrimenti e' un gomitolo con una dimensione in piu: qui altezza=strato del processo, spicchio=area, raggio=centralita. Due difetti trovati solo misurando il canvas renderizzato, invisibili leggendo il codice: la scala era una costante tarata a mano (il disegno riempiva il 17% della vista) e la tela restava 0x0 se la finestra aveva larghezza 0 al caricamento. Verificare una vista guardando il sorgente non basta: misurare il bounding box dei pixel dipinti su piu risoluzioni.
+  - contesto: terza vista del grafo: rappresentazione 3D immersiva ed esplorabile
 - **2026-08-10** _((manuale, utile))_ — misurare PRIMA e DOPO su dati reali, e poi provare a SABOTARE il meccanismo: le relazioni I Ching non hanno fuso le community come ipotizzato (il beneficio vero era un altro), e l'anti-clobber di report_harvest sembrava funzionare finche non ho provato a modificare il file in coda
   - contesto: come si verifica che un miglioramento serva davvero
 - **2026-08-10** _((manuale, corretto))_ — i piu gravi sono quelli che rendono un componente CREDIBILE ma falso: cache mai invalidata che serviva indici vecchi mentre la confidenza diceva 'alta'; memoria che attribuiva esperienza per sottostringa (sql marchiava postgresql); nodo fantasma con grado 72 invisibile a 68 test
@@ -71,5 +76,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: come accorgersi che due strati del brain sono scollegati
 - **2026-08-06** _((manuale, corretto))_ — graphify indicizza SOLO .md: 430KB di note .txt in raw/data-science erano invisibili al brain (4 nodi su 1187). Verificare sempre COSA entra nel grafo, non dare per scontato che tutto il corpus ci sia
   - contesto: quale formato indicizza graphify
-- **2026-08-06** _((manuale, corretto))_ — una riga che inizia con '#' dentro il front-matter viene letta come titolo markdown e diventa un nodo spurio: testare su UN file e misurare il delta del grafo prima di propagare a 50
-  - contesto: aggiungere metadati alle note senza rompere il grafo

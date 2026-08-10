@@ -84,8 +84,12 @@ Gli esiti sono `utile`, `vicolo-cieco`, `corretto`, `aperto`. Tutto confluisce i
 cieco. Il protocollo AION lo rilegge a ogni ragionamento (passo 0).
 
 ### 6. Vedere il grafo e la salute del brain
-- `graphify-out/graph.html` = vista estesa (tutti i nodi)
+- `graphify-out/graph.html` = vista estesa (tutti i nodi) — serve a vedere tutto
 - `graphify-out/graph-compact.html` = vista compatta (il sistema come processo a 5 fasi)
+- `graphify-out/graph-atlas.html` = **atlante 3D esplorabile** — è quella da aprire per
+  orientarsi: altezza = strato (fonti → sapere → motore → uso), spicchio = macroarea,
+  distanza dall'asse = quanto un file è connesso. Doppio click per volare su un nodo,
+  `L` per isolare il suo vicinato a 2 passi.
 - Da remoto: `GET /v1/views/compact` con il token.
 - `metrics/graph_metrics.csv` = **come sta cambiando il brain nel tempo**: se il
   `grado_medio` scende mentre i nodi salgono, stai accumulando note scollegate.

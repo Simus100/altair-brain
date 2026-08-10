@@ -82,6 +82,16 @@ jobs:
             exit 1
           fi
 
+      # L'atlante e derivato al 100% da graph.json: se il grafo cambia e la vista
+      # no, chi la apre naviga una mappa vecchia senza alcun segnale che lo sia.
+      - name: Atlante 3D coerente col grafo
+        run: |
+          python tools/build_atlas_view.py
+          if ! git diff --quiet -- graphify-out/graph-atlas.html; then
+            echo "::error::graphify-out/graph-atlas.html non coerente con graph.json — rigenera con tools/build_atlas_view.py"
+            exit 1
+          fi
+
       - name: JSON validi
         run: |
           python - <<'EOF'

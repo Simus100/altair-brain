@@ -9,6 +9,7 @@ Esegue in ordine l'intera pipeline del brain:
   4. grafo                   (graphify update .)
   5. sottografi per area     (tools/build_area_graphs.py)
   6. vista compatta          (tools/altair_compact_view.py)
+  6b. vista atlante 3D       (tools/build_atlas_view.py)
   7. indice di ricerca BM25  (tools/build_search_index.py)
   8. lezioni consolidate     (tools/lessons_digest.py)
   9. metriche nel tempo      (tools/graph_metrics.py)
@@ -31,6 +32,7 @@ STEPS = [
     ("provenienza fonte->conoscenza", [PY, "tools/apply_provenance.py"]),
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
+    ("vista atlante 3D", [PY, "tools/build_atlas_view.py"]),
     ("indice di ricerca (BM25)", [PY, "tools/build_search_index.py"]),
     ("lezioni consolidate", [PY, "tools/lessons_digest.py"]),
     # Consolidamento offline: RIGENERA i digest per area (senza --solo-proposte, che

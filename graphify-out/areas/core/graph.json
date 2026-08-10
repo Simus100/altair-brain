@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "b80a420cf3e104c852d0ddc5b62ab3891ef59b94",
+ "built_at_commit": "fc39892130f9678fd33e2a4462576988fee5a30a",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -72,7 +72,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "basemodel",
-   "community": 1,
+   "community": 181,
    "norm_label": "basemodel"
   },
   {
@@ -89,7 +89,7 @@
    "label": "Due motori di ricerca (usa quello giusto)",
    "file_type": "document",
    "source_file": "CLAUDE.md",
-   "source_location": "L33",
+   "source_location": "L47",
    "_origin": "ast",
    "id": "claude_due_motori_di_ricerca_usa_quello_giusto",
    "community": 97,
@@ -109,7 +109,7 @@
    "label": "Memoria operativa",
    "file_type": "document",
    "source_file": "CLAUDE.md",
-   "source_location": "L41",
+   "source_location": "L55",
    "_origin": "ast",
    "id": "claude_memoria_operativa",
    "community": 97,
@@ -119,7 +119,7 @@
    "label": "Provenienza (non negoziabile sui report)",
    "file_type": "document",
    "source_file": "CLAUDE.md",
-   "source_location": "L48",
+   "source_location": "L62",
    "_origin": "ast",
    "id": "claude_provenienza_non_negoziabile_sui_report",
    "community": 97,
@@ -139,7 +139,7 @@
    "label": "Scrittura (quando il brain produce prosa)",
    "file_type": "document",
    "source_file": "CLAUDE.md",
-   "source_location": "L58",
+   "source_location": "L72",
    "_origin": "ast",
    "id": "claude_scrittura_quando_il_brain_produce_prosa",
    "community": 97,
@@ -1469,7 +1469,7 @@
    "label": "Catturare una fonte dal web",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L111",
+   "source_location": "L115",
    "_origin": "ast",
    "id": "guida_catturare_una_fonte_dal_web",
    "community": 12,
@@ -1479,7 +1479,7 @@
    "label": "Collegare altre AI al brain",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L127",
+   "source_location": "L131",
    "_origin": "ast",
    "id": "guida_collegare_altre_ai_al_brain",
    "community": 12,
@@ -1499,7 +1499,7 @@
    "label": "Disaster recovery — ricostruire tutto da zero",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L190",
+   "source_location": "L194",
    "_origin": "ast",
    "id": "guida_disaster_recovery_ricostruire_tutto_da_zero",
    "community": 12,
@@ -1519,7 +1519,7 @@
    "label": "La VPS (il brain sempre acceso)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L148",
+   "source_location": "L152",
    "_origin": "ast",
    "id": "guida_la_vps_il_brain_sempre_acceso",
    "community": 12,
@@ -1539,7 +1539,7 @@
    "label": "Le regole d'oro (non dimenticarle)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L172",
+   "source_location": "L176",
    "_origin": "ast",
    "id": "guida_le_regole_d_oro_non_dimenticarle",
    "community": 12,
@@ -1549,7 +1549,7 @@
    "label": "Manutenzione (ogni tanto, non tutti i giorni)",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L95",
+   "source_location": "L99",
    "_origin": "ast",
    "id": "guida_manutenzione_ogni_tanto_non_tutti_i_giorni",
    "community": 12,
@@ -1559,7 +1559,7 @@
    "label": "Se qualcosa va storto",
    "file_type": "document",
    "source_file": "GUIDA.md",
-   "source_location": "L159",
+   "source_location": "L163",
    "_origin": "ast",
    "id": "guida_se_qualcosa_va_storto",
    "community": 12,
@@ -1942,7 +1942,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "request",
-   "community": 1,
+   "community": 181,
    "norm_label": "request"
   },
   {
@@ -1952,7 +1952,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "response",
-   "community": 1,
+   "community": 181,
    "norm_label": "response"
   },
   {
@@ -2102,27 +2102,27 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_app",
-   "community": 1,
+   "community": 181,
    "norm_label": "app.py"
   },
   {
    "label": "admin_update()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L272",
+   "source_location": "L278",
    "_origin": "ast",
    "id": "server_app_admin_update",
-   "community": 1,
+   "community": 181,
    "norm_label": "admin_update()"
   },
   {
    "label": "affected()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L162",
+   "source_location": "L168",
    "_origin": "ast",
    "id": "server_app_affected",
-   "community": 1,
+   "community": 181,
    "norm_label": "affected()"
   },
   {
@@ -2132,7 +2132,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "server_app_areas",
-   "community": 1,
+   "community": 181,
    "norm_label": "areas()"
   },
   {
@@ -2142,37 +2142,37 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "server_app_auth",
-   "community": 1,
+   "community": 181,
    "norm_label": "auth()"
   },
   {
    "label": "capture()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L226",
+   "source_location": "L232",
    "_origin": "ast",
    "id": "server_app_capture",
-   "community": 1,
+   "community": 181,
    "norm_label": "capture()"
   },
   {
    "label": "CaptureReq",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L219",
+   "source_location": "L225",
    "_origin": "ast",
    "id": "server_app_capturereq",
-   "community": 1,
+   "community": 181,
    "norm_label": "capturereq"
   },
   {
    "label": "context()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L182",
+   "source_location": "L188",
    "_origin": "ast",
    "id": "server_app_context",
-   "community": 1,
+   "community": 181,
    "norm_label": "context()"
   },
   {
@@ -2182,27 +2182,27 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "server_app_err",
-   "community": 1,
+   "community": 181,
    "norm_label": "_err()"
   },
   {
    "label": "explain()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L155",
+   "source_location": "L161",
    "_origin": "ast",
    "id": "server_app_explain",
-   "community": 1,
+   "community": 181,
    "norm_label": "explain()"
   },
   {
    "label": "Feedback",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L252",
+   "source_location": "L258",
    "_origin": "ast",
    "id": "server_app_feedback",
-   "community": 1,
+   "community": 181,
    "norm_label": "feedback"
   },
   {
@@ -2212,7 +2212,7 @@
    "source_location": "L87",
    "_origin": "ast",
    "id": "server_app_file",
-   "community": 1,
+   "community": 181,
    "norm_label": "_file()"
   },
   {
@@ -2222,7 +2222,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "server_app_graph",
-   "community": 1,
+   "community": 181,
    "norm_label": "graph()"
   },
   {
@@ -2232,7 +2232,7 @@
    "source_location": "L111",
    "_origin": "ast",
    "id": "server_app_graph_compact",
-   "community": 1,
+   "community": 181,
    "norm_label": "graph_compact()"
   },
   {
@@ -2242,37 +2242,37 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "server_app_health",
-   "community": 1,
+   "community": 181,
    "norm_label": "health()"
   },
   {
    "label": "inbox_done()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L244",
+   "source_location": "L250",
    "_origin": "ast",
    "id": "server_app_inbox_done",
-   "community": 1,
+   "community": 181,
    "norm_label": "inbox_done()"
   },
   {
    "label": "inbox_list()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L233",
+   "source_location": "L239",
    "_origin": "ast",
    "id": "server_app_inbox_list",
-   "community": 1,
+   "community": 181,
    "norm_label": "inbox_list()"
   },
   {
    "label": "inbox_read()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L237",
+   "source_location": "L243",
    "_origin": "ast",
    "id": "server_app_inbox_read",
-   "community": 1,
+   "community": 181,
    "norm_label": "inbox_read()"
   },
   {
@@ -2282,7 +2282,7 @@
    "source_location": "L119",
    "_origin": "ast",
    "id": "server_app_lessons",
-   "community": 1,
+   "community": 181,
    "norm_label": "lessons()"
   },
   {
@@ -2292,57 +2292,57 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "server_app_model",
-   "community": 1,
+   "community": 181,
    "norm_label": "model()"
   },
   {
    "label": "oracle()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L204",
+   "source_location": "L210",
    "_origin": "ast",
    "id": "server_app_oracle",
-   "community": 1,
+   "community": 181,
    "norm_label": "oracle()"
   },
   {
    "label": "oracle_hexagram()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L211",
+   "source_location": "L217",
    "_origin": "ast",
    "id": "server_app_oracle_hexagram",
-   "community": 1,
+   "community": 181,
    "norm_label": "oracle_hexagram()"
   },
   {
    "label": "OracleReq",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L199",
+   "source_location": "L205",
    "_origin": "ast",
    "id": "server_app_oraclereq",
-   "community": 1,
+   "community": 181,
    "norm_label": "oraclereq"
   },
   {
    "label": "path()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L148",
+   "source_location": "L154",
    "_origin": "ast",
    "id": "server_app_path",
-   "community": 1,
+   "community": 181,
    "norm_label": "path()"
   },
   {
    "label": "query()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L137",
+   "source_location": "L143",
    "_origin": "ast",
    "id": "server_app_query",
-   "community": 1,
+   "community": 181,
    "norm_label": "query()"
   },
   {
@@ -2352,27 +2352,27 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "server_app_rate_limiter",
-   "community": 1,
+   "community": 181,
    "norm_label": "rate_limiter()"
   },
   {
    "label": "Cerca nel CONTENUTO delle note (graphify naviga la struttura, questa il testo).",
    "file_type": "rationale",
    "source_file": "server/app.py",
-   "source_location": "L173",
+   "source_location": "L179",
    "_origin": "ast",
-   "id": "server_app_rationale_173",
-   "community": 1,
+   "id": "server_app_rationale_179",
+   "community": 181,
    "norm_label": "cerca nel contenuto delle note (graphify naviga la struttura, questa il testo)."
   },
   {
    "label": "Contesto assemblato per un LLM entro un budget di token: frammenti pertinenti,",
    "file_type": "rationale",
    "source_file": "server/app.py",
-   "source_location": "L185",
+   "source_location": "L191",
    "_origin": "ast",
-   "id": "server_app_rationale_185",
-   "community": 1,
+   "id": "server_app_rationale_191",
+   "community": 181,
    "norm_label": "contesto assemblato per un llm entro un budget di token: frammenti pertinenti,"
   },
   {
@@ -2382,28 +2382,38 @@
    "source_location": "L98",
    "_origin": "ast",
    "id": "server_app_reasoner",
-   "community": 1,
+   "community": 181,
    "norm_label": "reasoner()"
   },
   {
    "label": "route()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L133",
+   "source_location": "L139",
    "_origin": "ast",
    "id": "server_app_route",
-   "community": 1,
+   "community": 181,
    "norm_label": "route()"
   },
   {
    "label": "search()",
    "file_type": "code",
    "source_file": "server/app.py",
-   "source_location": "L171",
+   "source_location": "L177",
    "_origin": "ast",
    "id": "server_app_search",
-   "community": 1,
+   "community": 181,
    "norm_label": "search()"
+  },
+  {
+   "label": "view_atlas()",
+   "file_type": "code",
+   "source_file": "server/app.py",
+   "source_location": "L131",
+   "_origin": "ast",
+   "id": "server_app_view_atlas",
+   "community": 181,
+   "norm_label": "view_atlas()"
   },
   {
    "label": "view_compact()",
@@ -2412,7 +2422,7 @@
    "source_location": "L127",
    "_origin": "ast",
    "id": "server_app_view_compact",
-   "community": 1,
+   "community": 181,
    "norm_label": "view_compact()"
   },
   {
@@ -2422,7 +2432,7 @@
    "source_location": "L123",
    "_origin": "ast",
    "id": "server_app_view_extended",
-   "community": 1,
+   "community": 181,
    "norm_label": "view_extended()"
   },
   {
@@ -3198,6 +3208,16 @@
    "norm_label": "test_api.py"
   },
   {
+   "label": "Le tre viste del grafo si scaricano solo col token. L'atlante deve essere     au",
+   "file_type": "rationale",
+   "source_file": "tests/test_api.py",
+   "source_location": "L177",
+   "_origin": "ast",
+   "id": "tests_test_api_rationale_177",
+   "community": 1,
+   "norm_label": "le tre viste del grafo si scaricano solo col token. l'atlante deve essere     au"
+  },
+  {
    "label": "test_alias_non_versionati()",
    "file_type": "code",
    "source_file": "tests/test_api.py",
@@ -3266,6 +3286,16 @@
    "id": "tests_test_api_test_inbox_path_traversal_respinto",
    "community": 1,
    "norm_label": "test_inbox_path_traversal_respinto()"
+  },
+  {
+   "label": "test_le_tre_viste_sono_servite_e_protette()",
+   "file_type": "code",
+   "source_file": "tests/test_api.py",
+   "source_location": "L176",
+   "_origin": "ast",
+   "id": "tests_test_api_test_le_tre_viste_sono_servite_e_protette",
+   "community": 1,
+   "norm_label": "test_le_tre_viste_sono_servite_e_protette()"
   },
   {
    "label": "test_oracle_deterministico_con_seed()",
@@ -3356,6 +3386,236 @@
    "id": "tests_test_api_test_search_trova_nel_contenuto",
    "community": 1,
    "norm_label": "test_search_trova_nel_contenuto()"
+  },
+  {
+   "label": "test_atlas.py",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tests_test_atlas",
+   "community": 164,
+   "norm_label": "test_atlas.py"
+  },
+  {
+   "label": "_angolo()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "tests_test_atlas_angolo",
+   "community": 164,
+   "norm_label": "_angolo()"
+  },
+  {
+   "label": "dati()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L31",
+   "_origin": "ast",
+   "id": "tests_test_atlas_dati",
+   "community": 164,
+   "norm_label": "dati()"
+  },
+  {
+   "label": "_delta_angolare()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L40",
+   "_origin": "ast",
+   "id": "tests_test_atlas_delta_angolare",
+   "community": 164,
+   "norm_label": "_delta_angolare()"
+  },
+  {
+   "label": "Gli archi 'derived_from' collegano una fonte al sapere che ne deriva:     devono",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L122",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_122",
+   "community": 164,
+   "norm_label": "gli archi 'derived_from' collegano una fonte al sapere che ne deriva:     devono"
+  },
+  {
+   "label": "Stesso grafo, stesso atlante. Senza questo, ogni rebuild sporca il diff     di g",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L133",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_133",
+   "community": 164,
+   "norm_label": "stesso grafo, stesso atlante. senza questo, ogni rebuild sporca il diff     di g"
+  },
+  {
+   "label": "Nessuna CDN, nessun font remoto, nessuna chiamata di rete: l'atlante deve     ap",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L141",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_141",
+   "community": 164,
+   "norm_label": "nessuna cdn, nessun font remoto, nessuna chiamata di rete: l'atlante deve     ap"
+  },
+  {
+   "label": "Angolo del nodo nel piano, normalizzato in [0, 2pi).",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L36",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_36",
+   "community": 164,
+   "norm_label": "angolo del nodo nel piano, normalizzato in [0, 2pi)."
+  },
+  {
+   "label": "Differenza angolare minima tra due angoli (il cerchio si richiude).",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L41",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_41",
+   "community": 164,
+   "norm_label": "differenza angolare minima tra due angoli (il cerchio si richiude)."
+  },
+  {
+   "label": "Nessun file resta fuori dall'atlante: una vista parziale e' peggio di     nessun",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L47",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_47",
+   "community": 164,
+   "norm_label": "nessun file resta fuori dall'atlante: una vista parziale e' peggio di     nessun"
+  },
+  {
+   "label": "La quota di un nodo deve stare nella fascia del suo strato. Il rilievo     inter",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L58",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_58",
+   "community": 164,
+   "norm_label": "la quota di un nodo deve stare nella fascia del suo strato. il rilievo     inter"
+  },
+  {
+   "label": "La regola dichiarata: raw->fonti, wiki->sapere, motore, uso.",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L67",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_67",
+   "community": 164,
+   "norm_label": "la regola dichiarata: raw->fonti, wiki->sapere, motore, uso."
+  },
+  {
+   "label": "Due nodi di aree diverse non possono trovarsi nello stesso settore: se     accad",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L82",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_82",
+   "community": 164,
+   "norm_label": "due nodi di aree diverse non possono trovarsi nello stesso settore: se     accad"
+  },
+  {
+   "label": "Il raggio deve essere monotono nel rango di centralita, dentro ogni     gruppo (",
+   "file_type": "rationale",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L94",
+   "_origin": "ast",
+   "id": "tests_test_atlas_rationale_94",
+   "community": 164,
+   "norm_label": "il raggio deve essere monotono nel rango di centralita, dentro ogni     gruppo ("
+  },
+  {
+   "label": "test_altezza_corrisponde_allo_strato()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L57",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_altezza_corrisponde_allo_strato",
+   "community": 164,
+   "norm_label": "test_altezza_corrisponde_allo_strato()"
+  },
+  {
+   "label": "test_archi_puntano_a_nodi_esistenti()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L112",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_archi_puntano_a_nodi_esistenti",
+   "community": 164,
+   "norm_label": "test_archi_puntano_a_nodi_esistenti()"
+  },
+  {
+   "label": "test_costruzione_deterministica()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L132",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_costruzione_deterministica",
+   "community": 164,
+   "norm_label": "test_costruzione_deterministica()"
+  },
+  {
+   "label": "test_i_nodi_connessi_stanno_piu_vicino_allasse()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L93",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_i_nodi_connessi_stanno_piu_vicino_allasse",
+   "community": 164,
+   "norm_label": "test_i_nodi_connessi_stanno_piu_vicino_allasse()"
+  },
+  {
+   "label": "test_la_provenienza_sale_di_uno_strato()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L121",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_la_provenienza_sale_di_uno_strato",
+   "community": 164,
+   "norm_label": "test_la_provenienza_sale_di_uno_strato()"
+  },
+  {
+   "label": "test_lo_strato_segue_la_cartella()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L66",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_lo_strato_segue_la_cartella",
+   "community": 164,
+   "norm_label": "test_lo_strato_segue_la_cartella()"
+  },
+  {
+   "label": "test_ogni_area_sta_nel_suo_spicchio()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L81",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_ogni_area_sta_nel_suo_spicchio",
+   "community": 164,
+   "norm_label": "test_ogni_area_sta_nel_suo_spicchio()"
+  },
+  {
+   "label": "test_ogni_file_del_grafo_ha_un_posto()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L46",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_ogni_file_del_grafo_ha_un_posto",
+   "community": 164,
+   "norm_label": "test_ogni_file_del_grafo_ha_un_posto()"
+  },
+  {
+   "label": "test_pagina_autosufficiente()",
+   "file_type": "code",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L140",
+   "_origin": "ast",
+   "id": "tests_test_atlas_test_pagina_autosufficiente",
+   "community": 164,
+   "norm_label": "test_pagina_autosufficiente()"
   },
   {
    "label": "test_golden.py",
@@ -3794,7 +4054,7 @@
    "source_location": "L164",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_164",
-   "community": 7,
+   "community": 186,
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
@@ -3834,7 +4094,7 @@
    "source_location": "L234",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_234",
-   "community": 25,
+   "community": 190,
    "norm_label": "il caso che conta: il corpus non ha la risposta e il sistema lo dichiara     inv"
   },
   {
@@ -3844,7 +4104,7 @@
    "source_location": "L244",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_244",
-   "community": 3,
+   "community": 190,
    "norm_label": "fuori dominio il sistema deve dire di non fidarsi.      il test verificava «zero"
   },
   {
@@ -3874,7 +4134,7 @@
    "source_location": "L273",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_273",
-   "community": 7,
+   "community": 186,
    "norm_label": "una lezione registrata deve cambiare cio che si vede la volta dopo."
   },
   {
@@ -3884,7 +4144,7 @@
    "source_location": "L283",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_283",
-   "community": 3,
+   "community": 191,
    "norm_label": "prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma"
   },
   {
@@ -3954,7 +4214,7 @@
    "source_location": "L404",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_404",
-   "community": 1,
+   "community": 5,
    "norm_label": "il budget vale sul testo consegnato, non sulla somma dei pezzi: ignorare     l'i"
   },
   {
@@ -4024,7 +4284,7 @@
    "source_location": "L545",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_545",
-   "community": 7,
+   "community": 186,
    "norm_label": "vulnerabilita reale: la cache non si invalidava mai. sulla vps l'api resta     a"
   },
   {
@@ -4034,7 +4294,7 @@
    "source_location": "L563",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_563",
-   "community": 25,
+   "community": 190,
    "norm_label": "fallacia: 'confidenza alta' verra letta come 'risposta corretta'. la     differe"
   },
   {
@@ -4044,7 +4304,7 @@
    "source_location": "L571",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_571",
-   "community": 3,
+   "community": 191,
    "norm_label": "un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi"
   },
   {
@@ -4154,7 +4414,7 @@
    "source_location": "L544",
    "_origin": "ast",
    "id": "tests_test_tools_test_cache_ricarica_se_indice_cambia",
-   "community": 7,
+   "community": 186,
    "norm_label": "test_cache_ricarica_se_indice_cambia()"
   },
   {
@@ -4174,7 +4434,7 @@
    "source_location": "L226",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
-   "community": 25,
+   "community": 190,
    "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
   },
   {
@@ -4184,7 +4444,7 @@
    "source_location": "L233",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
-   "community": 25,
+   "community": 190,
    "norm_label": "test_confidenza_bassa_su_conoscenza_assente()"
   },
   {
@@ -4194,7 +4454,7 @@
    "source_location": "L243",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_scarsa_fuori_dominio",
-   "community": 3,
+   "community": 190,
    "norm_label": "test_confidenza_scarsa_fuori_dominio()"
   },
   {
@@ -4264,7 +4524,7 @@
    "source_location": "L403",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_rispetta_il_budget_reale",
-   "community": 1,
+   "community": 5,
    "norm_label": "test_context_pack_rispetta_il_budget_reale()"
   },
   {
@@ -4274,7 +4534,7 @@
    "source_location": "L562",
    "_origin": "ast",
    "id": "tests_test_tools_test_diagnosi_dichiara_cosa_misura",
-   "community": 25,
+   "community": 190,
    "norm_label": "test_diagnosi_dichiara_cosa_misura()"
   },
   {
@@ -4384,7 +4644,7 @@
    "source_location": "L272",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
-   "community": 7,
+   "community": 186,
    "norm_label": "test_memoria_annota_ancoraggi_consolidati()"
   },
   {
@@ -4394,7 +4654,7 @@
    "source_location": "L282",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
-   "community": 3,
+   "community": 191,
    "norm_label": "test_memoria_non_annota_per_nodi_numerici_corti()"
   },
   {
@@ -4404,7 +4664,7 @@
    "source_location": "L570",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_attribuisce_per_sottostringa",
-   "community": 3,
+   "community": 191,
    "norm_label": "test_memoria_non_attribuisce_per_sottostringa()"
   },
   {
@@ -4434,7 +4694,7 @@
    "source_location": "L519",
    "_origin": "ast",
    "id": "tests_test_tools_test_report_harvest_estrae_fonti_e_metodo",
-   "community": 3,
+   "community": 192,
    "norm_label": "test_report_harvest_estrae_fonti_e_metodo()"
   },
   {
@@ -4494,7 +4754,7 @@
    "source_location": "L481",
    "_origin": "ast",
    "id": "tests_test_tools_test_resurface_sceglie_con_criterio_e_esclude_i_generati",
-   "community": 6,
+   "community": 15,
    "norm_label": "test_resurface_sceglie_con_criterio_e_esclude_i_generati()"
   },
   {
@@ -4524,7 +4784,7 @@
    "source_location": "L187",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
-   "community": 7,
+   "community": 186,
    "norm_label": "test_ricerca_filtro_area_e_limite()"
   },
   {
@@ -4534,7 +4794,7 @@
    "source_location": "L194",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
-   "community": 7,
+   "community": 186,
    "norm_label": "test_ricerca_query_senza_risultati_non_esplode()"
   },
   {
@@ -4554,7 +4814,7 @@
    "source_location": "L163",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
-   "community": 7,
+   "community": 186,
    "norm_label": "test_ricerca_trova_il_contenuto_giusto()"
   },
   {
@@ -4624,7 +4884,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_add_frontmatter",
-   "community": 95,
+   "community": 15,
    "norm_label": "add_frontmatter.py"
   },
   {
@@ -4634,7 +4894,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "tools_add_frontmatter_area_di",
-   "community": 95,
+   "community": 15,
    "norm_label": "area_di()"
   },
   {
@@ -4644,7 +4904,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tools_add_frontmatter_costruisci",
-   "community": 95,
+   "community": 15,
    "norm_label": "costruisci()"
   },
   {
@@ -4654,7 +4914,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "tools_add_frontmatter_data_primo_commit",
-   "community": 95,
+   "community": 15,
    "norm_label": "data_primo_commit()"
   },
   {
@@ -4664,7 +4924,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rationale_46",
-   "community": 95,
+   "community": 15,
    "norm_label": "data del primo commit che introduce il file: deterministica e verificabile."
   },
   {
@@ -4674,7 +4934,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rationale_68",
-   "community": 95,
+   "community": 15,
    "norm_label": "front-matter minimo e onesto: solo cio che si puo dedurre con certezza."
   },
   {
@@ -4684,7 +4944,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rel",
-   "community": 95,
+   "community": 15,
    "norm_label": "rel()"
   },
   {
@@ -4836,6 +5096,126 @@
    "id": "tools_build_area_graphs_area_of",
    "community": 129,
    "norm_label": "area_of()"
+  },
+  {
+   "label": "build_atlas_view.py",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view",
+   "community": 184,
+   "norm_label": "build_atlas_view.py"
+  },
+  {
+   "label": "area_di()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L106",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_area_di",
+   "community": 184,
+   "norm_label": "area_di()"
+  },
+  {
+   "label": "aree_canoniche()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L97",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_aree_canoniche",
+   "community": 184,
+   "norm_label": "aree_canoniche()"
+  },
+  {
+   "label": "carica()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L113",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_carica",
+   "community": 184,
+   "norm_label": "carica()"
+  },
+  {
+   "label": "costruisci()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L197",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_costruisci",
+   "community": 184,
+   "norm_label": "costruisci()"
+  },
+  {
+   "label": "disponi()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L154",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_disponi",
+   "community": 184,
+   "norm_label": "disponi()"
+  },
+  {
+   "label": "html()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L218",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_html",
+   "community": 184,
+   "norm_label": "html()"
+  },
+  {
+   "label": "main()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L781",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_main",
+   "community": 184,
+   "norm_label": "main()"
+  },
+  {
+   "label": "Assegna x,y,z. Deterministico: dipende solo dal grafo, mai dall'ordine di     it",
+   "file_type": "rationale",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L155",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_rationale_155",
+   "community": 184,
+   "norm_label": "assegna x,y,z. deterministico: dipende solo dal grafo, mai dall'ordine di     it"
+  },
+  {
+   "label": "Ordine delle aree preso dal router: la vista non inventa una tassonomia sua.",
+   "file_type": "rationale",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L98",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_rationale_98",
+   "community": 184,
+   "norm_label": "ordine delle aree preso dal router: la vista non inventa una tassonomia sua."
+  },
+  {
+   "label": "_rel()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L80",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_rel",
+   "community": 184,
+   "norm_label": "_rel()"
+  },
+  {
+   "label": "strato_di()",
+   "file_type": "code",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L84",
+   "_origin": "ast",
+   "id": "tools_build_atlas_view_strato_di",
+   "community": 184,
+   "norm_label": "strato_di()"
   },
   {
    "label": "build_dense_index.py",
@@ -5144,7 +5524,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_context_pack",
-   "community": 25,
+   "community": 5,
    "norm_label": "context_pack.py"
   },
   {
@@ -5154,7 +5534,7 @@
    "source_location": "L172",
    "_origin": "ast",
    "id": "tools_context_pack_come_testo",
-   "community": 1,
+   "community": 5,
    "norm_label": "come_testo()"
   },
   {
@@ -5164,7 +5544,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "tools_context_pack_lezioni_pertinenti",
-   "community": 25,
+   "community": 5,
    "norm_label": "_lezioni_pertinenti()"
   },
   {
@@ -5184,7 +5564,7 @@
    "source_location": "L173",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_173",
-   "community": 1,
+   "community": 5,
    "norm_label": "il pacchetto in forma leggibile, pronto da incollare in un prompt."
   },
   {
@@ -5204,7 +5584,7 @@
    "source_location": "L73",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_73",
-   "community": 25,
+   "community": 5,
    "norm_label": "le lezioni che riguardano cio che stiamo per dare in pasto al modello."
   },
   {
@@ -5778,14 +6158,24 @@
    "norm_label": "altair_compact_view.py — vista compatta strutturale"
   },
   {
-   "label": "Le due viste",
+   "label": "build_atlas_view.py — atlante 3D esplorabile",
    "file_type": "document",
    "source_file": "tools/README.md",
    "source_location": "L32",
    "_origin": "ast",
-   "id": "tools_readme_le_due_viste",
+   "id": "tools_readme_build_atlas_view_py_atlante_3d_esplorabile",
    "community": 116,
-   "norm_label": "le due viste"
+   "norm_label": "build_atlas_view.py — atlante 3d esplorabile"
+  },
+  {
+   "label": "Le tre viste",
+   "file_type": "document",
+   "source_file": "tools/README.md",
+   "source_location": "L55",
+   "_origin": "ast",
+   "id": "tools_readme_le_tre_viste",
+   "community": 116,
+   "norm_label": "le tre viste"
   },
   {
    "label": "tools/ — feature di supporto ad altair-brain",
@@ -5824,7 +6214,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_report_harvest",
-   "community": 3,
+   "community": 192,
    "norm_label": "report_harvest.py"
   },
   {
@@ -5834,7 +6224,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "tools_report_harvest_componi",
-   "community": 3,
+   "community": 192,
    "norm_label": "componi()"
   },
   {
@@ -5844,7 +6234,7 @@
    "source_location": "L151",
    "_origin": "ast",
    "id": "tools_report_harvest_main",
-   "community": 3,
+   "community": 192,
    "norm_label": "main()"
   },
   {
@@ -5854,7 +6244,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "tools_report_harvest_raccogli",
-   "community": 3,
+   "community": 192,
    "norm_label": "raccogli()"
   },
   {
@@ -5864,7 +6254,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "tools_report_harvest_voci",
-   "community": 3,
+   "community": 192,
    "norm_label": "_voci()"
   },
   {
@@ -5894,7 +6284,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_resurface",
-   "community": 6,
+   "community": 15,
    "norm_label": "resurface.py"
   },
   {
@@ -5904,7 +6294,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "tools_resurface_candidati",
-   "community": 6,
+   "community": 15,
    "norm_label": "candidati()"
   },
   {
@@ -5914,7 +6304,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "tools_resurface_frontmatter",
-   "community": 6,
+   "community": 15,
    "norm_label": "_frontmatter()"
   },
   {
@@ -5924,7 +6314,7 @@
    "source_location": "L40",
    "_origin": "ast",
    "id": "tools_resurface_gradi_per_file",
-   "community": 6,
+   "community": 15,
    "norm_label": "_gradi_per_file()"
   },
   {
@@ -5934,7 +6324,7 @@
    "source_location": "L127",
    "_origin": "ast",
    "id": "tools_resurface_main",
-   "community": 6,
+   "community": 15,
    "norm_label": "main()"
   },
   {
@@ -5944,7 +6334,7 @@
    "source_location": "L106",
    "_origin": "ast",
    "id": "tools_resurface_rationale_106",
-   "community": 6,
+   "community": 15,
    "norm_label": "aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda."
   },
   {
@@ -5954,7 +6344,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tools_resurface_rationale_36",
-   "community": 6,
+   "community": 15,
    "norm_label": "parser condiviso (tools/frontmatter)."
   },
   {
@@ -5964,7 +6354,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tools_resurface_rationale_41",
-   "community": 6,
+   "community": 15,
    "norm_label": "quanto e collegata ogni nota: le isolate sono quelle che si dimenticano prima."
   },
   {
@@ -5974,7 +6364,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_resurface_rationale_94",
-   "community": 6,
+   "community": 15,
    "norm_label": "le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base"
   },
   {
@@ -5984,7 +6374,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_resurface_scegli",
-   "community": 6,
+   "community": 15,
    "norm_label": "scegli()"
   },
   {
@@ -5994,7 +6384,7 @@
    "source_location": "L105",
    "_origin": "ast",
    "id": "tools_resurface_segna_rivista",
-   "community": 6,
+   "community": 15,
    "norm_label": "segna_rivista()"
   },
   {
@@ -6034,7 +6424,7 @@
    "source_location": "L266",
    "_origin": "ast",
    "id": "tools_search_cerca",
-   "community": 7,
+   "community": 186,
    "norm_label": "cerca()"
   },
   {
@@ -6054,7 +6444,7 @@
    "source_location": "L301",
    "_origin": "ast",
    "id": "tools_search_cerca_con_diagnosi",
-   "community": 25,
+   "community": 190,
    "norm_label": "cerca_con_diagnosi()"
   },
   {
@@ -6064,7 +6454,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_search_cerca_denso",
-   "community": 7,
+   "community": 186,
    "norm_label": "cerca_denso()"
   },
   {
@@ -6074,7 +6464,7 @@
    "source_location": "L220",
    "_origin": "ast",
    "id": "tools_search_corrisponde",
-   "community": 25,
+   "community": 191,
    "norm_label": "_corrisponde()"
   },
   {
@@ -6124,7 +6514,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "tools_search_rationale_116",
-   "community": 7,
+   "community": 186,
    "norm_label": "reciprocal rank fusion: fonde piu classifiche usando solo la posizione."
   },
   {
@@ -6154,7 +6544,7 @@
    "source_location": "L221",
    "_origin": "ast",
    "id": "tools_search_rationale_221",
-   "community": 25,
+   "community": 191,
    "norm_label": "un nodo citato da una lezione si riferisce a questo risultato?      prudenza vol"
   },
   {
@@ -6174,7 +6564,7 @@
    "source_location": "L267",
    "_origin": "ast",
    "id": "tools_search_rationale_267",
-   "community": 7,
+   "community": 186,
    "norm_label": "ricerca ibrida. ritorna una lista di risultati, ognuno annotato con cio che"
   },
   {
@@ -6184,7 +6574,7 @@
    "source_location": "L302",
    "_origin": "ast",
    "id": "tools_search_rationale_302",
-   "community": 25,
+   "community": 190,
    "norm_label": "ricerca + valutazione della propria affidabilita (f1). e la forma che usano"
   },
   {
@@ -6224,7 +6614,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_search_rationale_94",
-   "community": 7,
+   "community": 186,
    "norm_label": "ranking semantico. attivo solo se indice denso e libreria sono presenti."
   },
   {
@@ -6234,7 +6624,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "tools_search_rrf",
-   "community": 7,
+   "community": 186,
    "norm_label": "_rrf()"
   },
   {
@@ -6443,7 +6833,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "CLAUDE.md",
-   "source_location": "L33",
+   "source_location": "L47",
    "weight": 1.0,
    "source": "claude",
    "target": "claude_due_motori_di_ricerca_usa_quello_giusto",
@@ -6463,7 +6853,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "CLAUDE.md",
-   "source_location": "L41",
+   "source_location": "L55",
    "weight": 1.0,
    "source": "claude",
    "target": "claude_memoria_operativa",
@@ -6473,7 +6863,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "CLAUDE.md",
-   "source_location": "L48",
+   "source_location": "L62",
    "weight": 1.0,
    "source": "claude",
    "target": "claude_provenienza_non_negoziabile_sui_report",
@@ -6493,7 +6883,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "CLAUDE.md",
-   "source_location": "L58",
+   "source_location": "L72",
    "weight": 1.0,
    "source": "claude",
    "target": "claude_scrittura_quando_il_brain_produce_prosa",
@@ -7893,7 +8283,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L111",
+   "source_location": "L115",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_catturare_una_fonte_dal_web",
@@ -7903,7 +8293,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L127",
+   "source_location": "L131",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_collegare_altre_ai_al_brain",
@@ -7923,7 +8313,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L190",
+   "source_location": "L194",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_disaster_recovery_ricostruire_tutto_da_zero",
@@ -7933,7 +8323,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L148",
+   "source_location": "L152",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_la_vps_il_brain_sempre_acceso",
@@ -7953,7 +8343,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L172",
+   "source_location": "L176",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_le_regole_d_oro_non_dimenticarle",
@@ -7963,7 +8353,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L95",
+   "source_location": "L99",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_manutenzione_ogni_tanto_non_tutti_i_giorni",
@@ -7973,7 +8363,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "GUIDA.md",
-   "source_location": "L159",
+   "source_location": "L163",
    "weight": 1.0,
    "source": "guida_guida_come_usare_il_tuo_second_brain_per_umani_zero_tecnicismi",
    "target": "guida_se_qualcosa_va_storto",
@@ -8513,7 +8903,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L272",
+   "source_location": "L278",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_admin_update",
@@ -8523,7 +8913,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L162",
+   "source_location": "L168",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_affected",
@@ -8553,7 +8943,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L226",
+   "source_location": "L232",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_capture",
@@ -8563,7 +8953,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L219",
+   "source_location": "L225",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_capturereq",
@@ -8573,7 +8963,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L182",
+   "source_location": "L188",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_context",
@@ -8593,7 +8983,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L155",
+   "source_location": "L161",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_explain",
@@ -8603,7 +8993,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L261",
+   "source_location": "L267",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_feedback",
@@ -8653,7 +9043,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L244",
+   "source_location": "L250",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_inbox_done",
@@ -8663,7 +9053,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L233",
+   "source_location": "L239",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_inbox_list",
@@ -8673,7 +9063,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L237",
+   "source_location": "L243",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_inbox_read",
@@ -8703,7 +9093,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L204",
+   "source_location": "L210",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_oracle",
@@ -8713,7 +9103,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L211",
+   "source_location": "L217",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_oracle_hexagram",
@@ -8723,7 +9113,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L199",
+   "source_location": "L205",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_oraclereq",
@@ -8733,7 +9123,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L148",
+   "source_location": "L154",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_path",
@@ -8743,7 +9133,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L137",
+   "source_location": "L143",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_query",
@@ -8773,7 +9163,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L133",
+   "source_location": "L139",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_route",
@@ -8783,10 +9173,20 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L171",
+   "source_location": "L177",
    "weight": 1.0,
    "source": "server_app",
    "target": "server_app_search",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "server/app.py",
+   "source_location": "L131",
+   "weight": 1.0,
+   "source": "server_app",
+   "target": "server_app_view_atlas",
    "confidence_score": 1.0
   },
   {
@@ -8825,7 +9225,7 @@
    "context": "import",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L193",
+   "source_location": "L199",
    "weight": 1.0,
    "source": "server_app",
    "target": "tools_context_pack_come_testo",
@@ -8836,7 +9236,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L166",
+   "source_location": "L172",
    "weight": 1.0,
    "source": "server_app_affected",
    "target": "server_app_err",
@@ -8847,7 +9247,7 @@
    "context": "parameter_type",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L226",
+   "source_location": "L232",
    "weight": 1.0,
    "source": "server_app_capture",
    "target": "server_app_capturereq",
@@ -8858,7 +9258,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L230",
+   "source_location": "L236",
    "weight": 1.0,
    "source": "server_app_capture",
    "target": "server_app_err",
@@ -8868,7 +9268,7 @@
    "relation": "inherits",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L219",
+   "source_location": "L225",
    "weight": 1.0,
    "source": "server_app_capturereq",
    "target": "basemodel",
@@ -8879,7 +9279,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L191",
+   "source_location": "L197",
    "weight": 1.0,
    "source": "server_app_context",
    "target": "server_app_err",
@@ -8891,7 +9291,7 @@
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "server/app.py",
-   "source_location": "L194",
+   "source_location": "L200",
    "weight": 1.0,
    "source": "server_app_context",
    "target": "tools_context_pack_come_testo"
@@ -8912,7 +9312,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L159",
+   "source_location": "L165",
    "weight": 1.0,
    "source": "server_app_explain",
    "target": "server_app_err",
@@ -8922,7 +9322,7 @@
    "relation": "inherits",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L252",
+   "source_location": "L258",
    "weight": 1.0,
    "source": "server_app_feedback",
    "target": "basemodel",
@@ -8933,7 +9333,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L266",
+   "source_location": "L272",
    "weight": 1.0,
    "source": "server_app_feedback",
    "target": "server_app_err",
@@ -8977,7 +9377,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L248",
+   "source_location": "L254",
    "weight": 1.0,
    "source": "server_app_inbox_done",
    "target": "server_app_err",
@@ -8988,7 +9388,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L241",
+   "source_location": "L247",
    "weight": 1.0,
    "source": "server_app_inbox_read",
    "target": "server_app_err",
@@ -9010,7 +9410,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L208",
+   "source_location": "L214",
    "weight": 1.0,
    "source": "server_app_oracle",
    "target": "server_app_err",
@@ -9021,7 +9421,7 @@
    "context": "parameter_type",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L204",
+   "source_location": "L210",
    "weight": 1.0,
    "source": "server_app_oracle",
    "target": "server_app_oraclereq",
@@ -9032,7 +9432,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L215",
+   "source_location": "L221",
    "weight": 1.0,
    "source": "server_app_oracle_hexagram",
    "target": "server_app_err",
@@ -9042,7 +9442,7 @@
    "relation": "inherits",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L199",
+   "source_location": "L205",
    "weight": 1.0,
    "source": "server_app_oraclereq",
    "target": "basemodel",
@@ -9053,7 +9453,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L152",
+   "source_location": "L158",
    "weight": 1.0,
    "source": "server_app_path",
    "target": "server_app_err",
@@ -9064,7 +9464,7 @@
    "context": "parameter_type",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L137",
+   "source_location": "L143",
    "weight": 1.0,
    "source": "server_app_query",
    "target": "response",
@@ -9075,7 +9475,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L143",
+   "source_location": "L149",
    "weight": 1.0,
    "source": "server_app_query",
    "target": "server_app_err",
@@ -9096,9 +9496,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L173",
+   "source_location": "L179",
    "weight": 1.0,
-   "source": "server_app_rationale_173",
+   "source": "server_app_rationale_179",
    "target": "server_app_search",
    "confidence_score": 1.0
   },
@@ -9106,9 +9506,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L185",
+   "source_location": "L191",
    "weight": 1.0,
-   "source": "server_app_rationale_185",
+   "source": "server_app_rationale_191",
    "target": "server_app_context",
    "confidence_score": 1.0
   },
@@ -9128,10 +9528,21 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
-   "source_location": "L178",
+   "source_location": "L184",
    "weight": 1.0,
    "source": "server_app_search",
    "target": "server_app_err",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "server/app.py",
+   "source_location": "L134",
+   "weight": 1.0,
+   "source": "server_app_view_atlas",
+   "target": "server_app_file",
    "confidence_score": 1.0
   },
   {
@@ -10473,6 +10884,16 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_api.py",
+   "source_location": "L176",
+   "weight": 1.0,
+   "source": "tests_test_api",
+   "target": "tests_test_api_test_le_tre_viste_sono_servite_e_protette",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
    "source_location": "L65",
    "weight": 1.0,
    "source": "tests_test_api",
@@ -10557,6 +10978,258 @@
    "weight": 1.0,
    "source": "tests_test_api",
    "target": "tests_test_api_test_search_trova_nel_contenuto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
+   "source_location": "L177",
+   "weight": 1.0,
+   "source": "tests_test_api_rationale_177",
+   "target": "tests_test_api_test_le_tre_viste_sono_servite_e_protette",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_angolo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L31",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L40",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_delta_angolare",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L57",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_altezza_corrisponde_allo_strato",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L112",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_archi_puntano_a_nodi_esistenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L132",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_costruzione_deterministica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L93",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_i_nodi_connessi_stanno_piu_vicino_allasse",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L121",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_la_provenienza_sale_di_uno_strato",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L66",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_lo_strato_segue_la_cartella",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L81",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_ogni_area_sta_nel_suo_spicchio",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L46",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_ogni_file_del_grafo_ha_un_posto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L140",
+   "weight": 1.0,
+   "source": "tests_test_atlas",
+   "target": "tests_test_atlas_test_pagina_autosufficiente",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L122",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_122",
+   "target": "tests_test_atlas_test_la_provenienza_sale_di_uno_strato",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L133",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_133",
+   "target": "tests_test_atlas_test_costruzione_deterministica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L141",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_141",
+   "target": "tests_test_atlas_test_pagina_autosufficiente",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L36",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_36",
+   "target": "tests_test_atlas_angolo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L41",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_41",
+   "target": "tests_test_atlas_delta_angolare",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L47",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_47",
+   "target": "tests_test_atlas_test_ogni_file_del_grafo_ha_un_posto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L58",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_58",
+   "target": "tests_test_atlas_test_altezza_corrisponde_allo_strato",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L67",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_67",
+   "target": "tests_test_atlas_test_lo_strato_segue_la_cartella",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L82",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_82",
+   "target": "tests_test_atlas_test_ogni_area_sta_nel_suo_spicchio",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L94",
+   "weight": 1.0,
+   "source": "tests_test_atlas_rationale_94",
+   "target": "tests_test_atlas_test_i_nodi_connessi_stanno_piu_vicino_allasse",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L89",
+   "weight": 1.0,
+   "source": "tests_test_atlas_test_ogni_area_sta_nel_suo_spicchio",
+   "target": "tests_test_atlas_angolo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_atlas.py",
+   "source_location": "L89",
+   "weight": 1.0,
+   "source": "tests_test_atlas_test_ogni_area_sta_nel_suo_spicchio",
+   "target": "tests_test_atlas_delta_angolare",
    "confidence_score": 1.0
   },
   {
@@ -13043,6 +13716,204 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L106",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_area_di",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L97",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_aree_canoniche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L113",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_carica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L197",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_costruisci",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L154",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_disponi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L218",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_html",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L781",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_main",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L80",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_rel",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L84",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view",
+   "target": "tools_build_atlas_view_strato_di",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L128",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_carica",
+   "target": "tools_build_atlas_view_area_di",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L121",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_carica",
+   "target": "tools_build_atlas_view_rel",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L128",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_carica",
+   "target": "tools_build_atlas_view_strato_di",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L198",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_costruisci",
+   "target": "tools_build_atlas_view_aree_canoniche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L199",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_costruisci",
+   "target": "tools_build_atlas_view_carica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L200",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_costruisci",
+   "target": "tools_build_atlas_view_disponi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L784",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_main",
+   "target": "tools_build_atlas_view_costruisci",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L785",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_main",
+   "target": "tools_build_atlas_view_html",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L155",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_rationale_155",
+   "target": "tools_build_atlas_view_disponi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/build_atlas_view.py",
+   "source_location": "L98",
+   "weight": 1.0,
+   "source": "tools_build_atlas_view_rationale_98",
+   "target": "tools_build_atlas_view_aree_canoniche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "tools/build_iching_db.py",
    "source_location": "L62",
    "weight": 1.0,
@@ -14334,7 +15205,17 @@
    "source_location": "L32",
    "weight": 1.0,
    "source": "tools_readme_tools_feature_di_supporto_ad_altair_brain",
-   "target": "tools_readme_le_due_viste",
+   "target": "tools_readme_build_atlas_view_py_atlante_3d_esplorabile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tools/README.md",
+   "source_location": "L55",
+   "weight": 1.0,
+   "source": "tools_readme_tools_feature_di_supporto_ad_altair_brain",
+   "target": "tools_readme_le_tre_viste",
    "confidence_score": 1.0
   },
   {

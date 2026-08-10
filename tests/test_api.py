@@ -171,3 +171,17 @@ def test_search_filtro_area():
                    headers=AUTH)
     assert r.status_code == 200
     assert all(x["area"] == "data-science" for x in r.json()["risultati"])
+
+
+def test_le_tre_viste_sono_servite_e_protette():
+    """Le tre viste del grafo si scaricano solo col token. L'atlante deve essere
+    autosufficiente anche quando arriva dall'API: se un giorno gli venisse
+    aggiunta una CDN, un consumatore dietro firewall vedrebbe una pagina nera."""
+    for rotta in ("/v1/views/extended", "/v1/views/compact", "/v1/views/atlas"):
+        assert client.get(rotta).status_code == 401
+        r = client.get(rotta, headers=AUTH)
+        assert r.status_code == 200, rotta
+        assert r.headers["content-type"].startswith("text/html")
+
+    pagina = client.get("/v1/views/atlas", headers=AUTH).text
+    assert "https://" not in pagina and "<script src" not in pagina

@@ -127,6 +127,12 @@ def view_extended():
 def view_compact():
     return _file("graphify-out/graph-compact.html", "text/html")
 
+@api.get("/views/atlas", dependencies=[Depends(auth)])
+def view_atlas():
+    # Atlante 3D: pagina autosufficiente (nessuna CDN), quindi servirla da qui
+    # basta e avanza — non serve alcun asset di contorno.
+    return _file("graphify-out/graph-atlas.html", "text/html")
+
 
 # ---------------- graphify (router per-area) ----------------
 @api.get("/route", dependencies=[Depends(auth)])
