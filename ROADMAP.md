@@ -448,8 +448,11 @@ banco in `tests/golden_queries.json`, non a impressione.
   GENERATE) → `engine/` (modello tipizzato + reasoner 9 passi + skill `/aion`).
 - I Ching v. ristrutturata (`raw/aion/aion-oracle.md`) con lookup Re Wen corretto.
 - Feedback loop: `graphify save-result` → `reflect` → `LESSONS.md` (passo 0 del reasoner).
-- Due viste: estesa (`graph.html`) + compatta strutturale (`graph-compact.html`,
-  `tools/altair_compact_view.py`).
+- TRE viste del grafo, una per tipo di domanda: estesa (`graph.html`, *vedere tutto*),
+  compatta strutturale (`graph-compact.html`, `tools/altair_compact_view.py`,
+  *spiegare il sistema come processo*), atlante 3D esplorabile (`graph-atlas.html`,
+  `tools/build_atlas_view.py`, *navigare e orientarsi*: altezza=strato,
+  spicchio=area, raggio=centralita; invarianti in `tests/test_atlas.py`).
 - Fonte unica di verità + validatore (`tools/validate_model.py`) + CI.
 - Stack VPS: `server/` (FastAPI, bootstrap, systemd, Caddy, client di test),
   auto-update 3 giorni, layout 3 cartelle. Guida deploy: prompt in `server/README.md`.

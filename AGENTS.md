@@ -6,7 +6,7 @@
 - Ogni pagina wiki collega i concetti con `[[wikilink]]` (risolvono solo nella stessa cartella).
 - Non inventare contenuti: se `raw/` non basta, segnala cosa manca.
 - Nessuna API a pagamento e richiesta per il funzionamento del brain.
-- Dopo ogni modifica: `python tools/validate_model.py` (0 errori), `graphify update .`,
-  `python tools/altair_compact_view.py`. Poi commit.
+- Dopo ogni modifica: **`python tools/rebuild_all.py`** (un comando: validazione, grafo,
+  e le TRE viste — estesa, compatta, atlante 3D). Poi commit.
 - Per ragionare col modello di pensiero AION usa la skill `/aion`
   (protocollo: `engine/aion-reasoner.md`; modulo Velario INERTE, non aggirarlo).

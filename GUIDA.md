@@ -90,7 +90,7 @@ cieco. Il protocollo AION lo rilegge a ogni ragionamento (passo 0).
   orientarsi: altezza = strato (fonti → sapere → motore → uso), spicchio = macroarea,
   distanza dall'asse = quanto un file è connesso. Doppio click per volare su un nodo,
   `L` per isolare il suo vicinato a 2 passi.
-- Da remoto: `GET /v1/views/compact` con il token.
+- Da remoto: `GET /v1/views/compact` o `/v1/views/atlas` con il token.
 - `metrics/graph_metrics.csv` = **come sta cambiando il brain nel tempo**: se il
   `grado_medio` scende mentre i nodi salgono, stai accumulando note scollegate.
 

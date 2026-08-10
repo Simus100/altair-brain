@@ -34,7 +34,7 @@ il binario non e raggiungibile.
 | GET | `/v1/reasoner` | protocollo di ragionamento AION |
 | GET | `/v1/graph`, `?area=<id>`, `/v1/graph/compact` | grafo completo / per area / compatto |
 | GET | `/v1/areas` | aree disponibili + tabella di routing |
-| GET | `/v1/views/extended`, `/v1/views/compact` | le due viste HTML |
+| GET | `/v1/views/extended`, `/v1/views/compact`, `/v1/views/atlas` | le tre viste HTML (l'atlante è autosufficiente: nessuna CDN) |
 | GET | `/v1/lessons` | lezioni apprese |
 | GET | `/v1/route?q=` | decisione del router (trasparenza) |
 | GET | `/v1/query?q=&area=&budget=` | query (router automatico; header `X-Altair-Area`) |
