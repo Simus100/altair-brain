@@ -278,6 +278,34 @@ def save_feedback(question: str, answer: str, outcome: str = "useful",
 # ---------------- health ----------------
 _health_cache = {"mtime": None, "data": None}
 
+# Le TRE viste del grafo, dichiarate una volta sola e servite da /v1/health: un
+# consumatore le scopre senza leggere la documentazione, e soprattutto scopre se
+# una e' RIMASTA INDIETRO rispetto al grafo — una mappa vecchia non si annuncia.
+VISTE = (
+    ("extended", "graphify-out/graph.html",         "/v1/views/extended",
+     "vedere tutto: ogni nodo, nessuna riduzione"),
+    ("compact",  "graphify-out/graph-compact.html", "/v1/views/compact",
+     "spiegare il sistema come processo a 5 fasi"),
+    ("atlas",    "graphify-out/graph-atlas.html",   "/v1/views/atlas",
+     "navigare e orientarsi: 3D esplorabile, altezza=strato, spicchio=area, raggio=centralita"),
+)
+
+
+def views_info(graph_mtime) -> dict:
+    """Stato delle tre viste rispetto al grafo da cui derivano."""
+    fuori = {}
+    for nome, rel, rotta, serve_a in VISTE:
+        f = REPO / rel
+        voce = {"endpoint": rotta, "serve_a": serve_a, "presente": f.exists()}
+        if f.exists() and graph_mtime:
+            ritardo = int(graph_mtime - f.stat().st_mtime)
+            voce["aggiornata"] = ritardo <= 0
+            if ritardo > 0:                      # generata PRIMA dell'ultimo grafo
+                voce["indietro_di_secondi"] = ritardo
+        fuori[nome] = voce
+    return fuori
+
+
 def health_info() -> dict:
     gpath = REPO / "graphify-out" / "graph.json"
     mtime = gpath.stat().st_mtime if gpath.exists() else None
@@ -300,6 +328,6 @@ def health_info() -> dict:
         model = {"error": "modello mancante"}
     data = {"status": "ok", "service": "altair-brain", "api_version": "v1",
             "graphify": graphify_available(), "graph": graph, "model": model,
-            "areas": valid_areas()}
+            "areas": valid_areas(), "views": views_info(mtime)}
     _health_cache.update(mtime=mtime, data=data)
     return data

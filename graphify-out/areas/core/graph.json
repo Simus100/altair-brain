@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "fc39892130f9678fd33e2a4462576988fee5a30a",
+ "built_at_commit": "0ab010b23fc811b8f1fecfd3b3e5a17038b62665",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -559,7 +559,7 @@
    "label": "Lezioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L50",
+   "source_location": "L53",
    "_origin": "ast",
    "id": "engine_lessons_lezioni_recenti",
    "community": 98,
@@ -589,7 +589,7 @@
    "label": "Vicoli ciechi",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L44",
+   "source_location": "L47",
    "_origin": "ast",
    "id": "engine_lessons_vicoli_ciechi",
    "community": 98,
@@ -2589,7 +2589,7 @@
    "label": "health_info()",
    "file_type": "code",
    "source_file": "server/brain_core.py",
-   "source_location": "L281",
+   "source_location": "L309",
    "_origin": "ast",
    "id": "server_brain_core_health_info",
    "community": 2,
@@ -2706,6 +2706,16 @@
    "norm_label": "pacchetto di contesto pronto per un llm, entro un budget di token.     assembla"
   },
   {
+   "label": "Stato delle tre viste rispetto al grafo da cui derivano.",
+   "file_type": "rationale",
+   "source_file": "server/brain_core.py",
+   "source_location": "L295",
+   "_origin": "ast",
+   "id": "server_brain_core_rationale_295",
+   "community": 2,
+   "norm_label": "stato delle tre viste rispetto al grafo da cui derivano."
+  },
+  {
    "label": "Routing deterministico: match keyword per area. Nessun match -> grafo completo.",
    "file_type": "rationale",
    "source_file": "server/brain_core.py",
@@ -2804,6 +2814,16 @@
    "id": "server_brain_core_valid_areas",
    "community": 2,
    "norm_label": "valid_areas()"
+  },
+  {
+   "label": "views_info()",
+   "file_type": "code",
+   "source_file": "server/brain_core.py",
+   "source_location": "L294",
+   "_origin": "ast",
+   "id": "server_brain_core_views_info",
+   "community": 2,
+   "norm_label": "views_info()"
   },
   {
    "label": "client_example.py",
@@ -3218,6 +3238,26 @@
    "norm_label": "le tre viste del grafo si scaricano solo col token. l'atlante deve essere     au"
   },
   {
+   "label": "Un consumatore deve scoprire le tre viste dall'API, non dalla documentazione.",
+   "file_type": "rationale",
+   "source_file": "tests/test_api.py",
+   "source_location": "L191",
+   "_origin": "ast",
+   "id": "tests_test_api_rationale_191",
+   "community": 1,
+   "norm_label": "un consumatore deve scoprire le tre viste dall'api, non dalla documentazione."
+  },
+  {
+   "label": "Il segnale che conta davvero: una mappa vecchia non si annuncia da sola.     Con",
+   "file_type": "rationale",
+   "source_file": "tests/test_api.py",
+   "source_location": "L200",
+   "_origin": "ast",
+   "id": "tests_test_api_rationale_200",
+   "community": 1,
+   "norm_label": "il segnale che conta davvero: una mappa vecchia non si annuncia da sola.     con"
+  },
+  {
    "label": "test_alias_non_versionati()",
    "file_type": "code",
    "source_file": "tests/test_api.py",
@@ -3258,6 +3298,16 @@
    "norm_label": "test_feedback_node_injection_rejected()"
   },
   {
+   "label": "test_health_dichiara_le_tre_viste()",
+   "file_type": "code",
+   "source_file": "tests/test_api.py",
+   "source_location": "L190",
+   "_origin": "ast",
+   "id": "tests_test_api_test_health_dichiara_le_tre_viste",
+   "community": 1,
+   "norm_label": "test_health_dichiara_le_tre_viste()"
+  },
+  {
    "label": "test_health_pubblico_e_ricco()",
    "file_type": "code",
    "source_file": "tests/test_api.py",
@@ -3266,6 +3316,16 @@
    "id": "tests_test_api_test_health_pubblico_e_ricco",
    "community": 1,
    "norm_label": "test_health_pubblico_e_ricco()"
+  },
+  {
+   "label": "test_health_segnala_una_vista_rimasta_indietro()",
+   "file_type": "code",
+   "source_file": "tests/test_api.py",
+   "source_location": "L199",
+   "_origin": "ast",
+   "id": "tests_test_api_test_health_segnala_una_vista_rimasta_indietro",
+   "community": 1,
+   "norm_label": "test_health_segnala_una_vista_rimasta_indietro()"
   },
   {
    "label": "test_inbox_flusso_completo()",
@@ -4044,7 +4104,7 @@
    "source_location": "L148",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_148",
-   "community": 95,
+   "community": 15,
    "norm_label": "bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     ora il"
   },
   {
@@ -4054,7 +4114,7 @@
    "source_location": "L164",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_164",
-   "community": 186,
+   "community": 7,
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
@@ -4094,7 +4154,7 @@
    "source_location": "L234",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_234",
-   "community": 190,
+   "community": 3,
    "norm_label": "il caso che conta: il corpus non ha la risposta e il sistema lo dichiara     inv"
   },
   {
@@ -4104,7 +4164,7 @@
    "source_location": "L244",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_244",
-   "community": 190,
+   "community": 3,
    "norm_label": "fuori dominio il sistema deve dire di non fidarsi.      il test verificava «zero"
   },
   {
@@ -4114,7 +4174,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_26",
-   "community": 2,
+   "community": 6,
    "norm_label": "6 (il conflitto) + 4a linea mobile -> 59 (la dissoluzione). caso iran."
   },
   {
@@ -4124,7 +4184,7 @@
    "source_location": "L260",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_260",
-   "community": 25,
+   "community": 3,
    "norm_label": "regressione: se query e indice filtrano stopword diverse, i termini scartati"
   },
   {
@@ -4134,7 +4194,7 @@
    "source_location": "L273",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_273",
-   "community": 186,
+   "community": 7,
    "norm_label": "una lezione registrata deve cambiare cio che si vede la volta dopo."
   },
   {
@@ -4144,7 +4204,7 @@
    "source_location": "L283",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_283",
-   "community": 191,
+   "community": 3,
    "norm_label": "prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma"
   },
   {
@@ -4184,7 +4244,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_35",
-   "community": 2,
+   "community": 6,
    "norm_label": "43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile."
   },
   {
@@ -4234,7 +4294,7 @@
    "source_location": "L440",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_440",
-   "community": 95,
+   "community": 15,
    "norm_label": "difetto reale: una nota che inizia con '--- funzioni ... ---' veniva scambiata"
   },
   {
@@ -4244,7 +4304,7 @@
    "source_location": "L466",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_466",
-   "community": 95,
+   "community": 15,
    "norm_label": "dopo la correzione del parser, nessuna nota deve restare scoperta."
   },
   {
@@ -4264,7 +4324,7 @@
    "source_location": "L52",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_52",
-   "community": 2,
+   "community": 6,
    "norm_label": "stesso seed -> stessa lettura (verificabilita)."
   },
   {
@@ -4284,7 +4344,7 @@
    "source_location": "L545",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_545",
-   "community": 186,
+   "community": 7,
    "norm_label": "vulnerabilita reale: la cache non si invalidava mai. sulla vps l'api resta     a"
   },
   {
@@ -4294,7 +4354,7 @@
    "source_location": "L563",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_563",
-   "community": 190,
+   "community": 3,
    "norm_label": "fallacia: 'confidenza alta' verra letta come 'risposta corretta'. la     differe"
   },
   {
@@ -4304,7 +4364,7 @@
    "source_location": "L571",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_571",
-   "community": 191,
+   "community": 25,
    "norm_label": "un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi"
   },
   {
@@ -4324,7 +4384,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_59",
-   "community": 2,
+   "community": 6,
    "norm_label": "la selezione decisionale trova il 43 per l'argomento 'decisione/svolta'."
   },
   {
@@ -4384,7 +4444,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_43_quattro_mobili_da_16",
-   "community": 2,
+   "community": 6,
    "norm_label": "test_attribuzione_43_quattro_mobili_da_16()"
   },
   {
@@ -4394,7 +4454,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_6_linea4_da_59",
-   "community": 2,
+   "community": 6,
    "norm_label": "test_attribuzione_6_linea4_da_59()"
   },
   {
@@ -4404,7 +4464,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_senza_mobili_e_range",
-   "community": 2,
+   "community": 6,
    "norm_label": "test_attribuzione_senza_mobili_e_range()"
   },
   {
@@ -4414,7 +4474,7 @@
    "source_location": "L544",
    "_origin": "ast",
    "id": "tests_test_tools_test_cache_ricarica_se_indice_cambia",
-   "community": 186,
+   "community": 7,
    "norm_label": "test_cache_ricarica_se_indice_cambia()"
   },
   {
@@ -4424,7 +4484,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "tests_test_tools_test_cast_seedato_riproducibile",
-   "community": 2,
+   "community": 6,
    "norm_label": "test_cast_seedato_riproducibile()"
   },
   {
@@ -4434,7 +4494,7 @@
    "source_location": "L226",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
-   "community": 190,
+   "community": 3,
    "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
   },
   {
@@ -4444,7 +4504,7 @@
    "source_location": "L233",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
-   "community": 190,
+   "community": 3,
    "norm_label": "test_confidenza_bassa_su_conoscenza_assente()"
   },
   {
@@ -4454,7 +4514,7 @@
    "source_location": "L243",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_scarsa_fuori_dominio",
-   "community": 190,
+   "community": 3,
    "norm_label": "test_confidenza_scarsa_fuori_dominio()"
   },
   {
@@ -4534,7 +4594,7 @@
    "source_location": "L562",
    "_origin": "ast",
    "id": "tests_test_tools_test_diagnosi_dichiara_cosa_misura",
-   "community": 190,
+   "community": 3,
    "norm_label": "test_diagnosi_dichiara_cosa_misura()"
   },
   {
@@ -4544,7 +4604,7 @@
    "source_location": "L147",
    "_origin": "ast",
    "id": "tests_test_tools_test_freshness_rileva_fatto_scaduto",
-   "community": 95,
+   "community": 15,
    "norm_label": "test_freshness_rileva_fatto_scaduto()"
   },
   {
@@ -4554,7 +4614,7 @@
    "source_location": "L460",
    "_origin": "ast",
    "id": "tests_test_tools_test_frontmatter_apertura_senza_chiusura",
-   "community": 95,
+   "community": 15,
    "norm_label": "test_frontmatter_apertura_senza_chiusura()"
   },
   {
@@ -4574,7 +4634,7 @@
    "source_location": "L439",
    "_origin": "ast",
    "id": "tests_test_tools_test_frontmatter_non_confonde_una_riga_di_testo",
-   "community": 95,
+   "community": 15,
    "norm_label": "test_frontmatter_non_confonde_una_riga_di_testo()"
   },
   {
@@ -4594,7 +4654,7 @@
    "source_location": "L451",
    "_origin": "ast",
    "id": "tests_test_tools_test_frontmatter_riconosce_il_blocco_valido",
-   "community": 95,
+   "community": 15,
    "norm_label": "test_frontmatter_riconosce_il_blocco_valido()"
   },
   {
@@ -4644,7 +4704,7 @@
    "source_location": "L272",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
-   "community": 186,
+   "community": 7,
    "norm_label": "test_memoria_annota_ancoraggi_consolidati()"
   },
   {
@@ -4654,7 +4714,7 @@
    "source_location": "L282",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
-   "community": 191,
+   "community": 3,
    "norm_label": "test_memoria_non_annota_per_nodi_numerici_corti()"
   },
   {
@@ -4664,7 +4724,7 @@
    "source_location": "L570",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_attribuisce_per_sottostringa",
-   "community": 191,
+   "community": 25,
    "norm_label": "test_memoria_non_attribuisce_per_sottostringa()"
   },
   {
@@ -4754,7 +4814,7 @@
    "source_location": "L481",
    "_origin": "ast",
    "id": "tests_test_tools_test_resurface_sceglie_con_criterio_e_esclude_i_generati",
-   "community": 15,
+   "community": 180,
    "norm_label": "test_resurface_sceglie_con_criterio_e_esclude_i_generati()"
   },
   {
@@ -4784,7 +4844,7 @@
    "source_location": "L187",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
-   "community": 186,
+   "community": 7,
    "norm_label": "test_ricerca_filtro_area_e_limite()"
   },
   {
@@ -4794,7 +4854,7 @@
    "source_location": "L194",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
-   "community": 186,
+   "community": 7,
    "norm_label": "test_ricerca_query_senza_risultati_non_esplode()"
   },
   {
@@ -4804,7 +4864,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_tag_suggerisce_43",
-   "community": 2,
+   "community": 6,
    "norm_label": "test_ricerca_tag_suggerisce_43()"
   },
   {
@@ -4814,7 +4874,7 @@
    "source_location": "L163",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
-   "community": 186,
+   "community": 7,
    "norm_label": "test_ricerca_trova_il_contenuto_giusto()"
   },
   {
@@ -4864,7 +4924,7 @@
    "source_location": "L259",
    "_origin": "ast",
    "id": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
-   "community": 25,
+   "community": 3,
    "norm_label": "test_tokenizzazione_query_coerente_con_indice()"
   },
   {
@@ -4874,7 +4934,7 @@
    "source_location": "L465",
    "_origin": "ast",
    "id": "tests_test_tools_test_tutte_le_note_raw_hanno_provenienza",
-   "community": 95,
+   "community": 15,
    "norm_label": "test_tutte_le_note_raw_hanno_provenienza()"
   },
   {
@@ -5171,7 +5231,7 @@
    "label": "main()",
    "file_type": "code",
    "source_file": "tools/build_atlas_view.py",
-   "source_location": "L781",
+   "source_location": "L868",
    "_origin": "ast",
    "id": "tools_build_atlas_view_main",
    "community": 184,
@@ -5524,7 +5584,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_context_pack",
-   "community": 5,
+   "community": 25,
    "norm_label": "context_pack.py"
   },
   {
@@ -5544,7 +5604,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "tools_context_pack_lezioni_pertinenti",
-   "community": 5,
+   "community": 25,
    "norm_label": "_lezioni_pertinenti()"
   },
   {
@@ -5584,7 +5644,7 @@
    "source_location": "L73",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_73",
-   "community": 5,
+   "community": 25,
    "norm_label": "le lezioni che riguardano cio che stiamo per dare in pasto al modello."
   },
   {
@@ -5674,7 +5734,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_frontmatter",
-   "community": 95,
+   "community": 15,
    "norm_label": "frontmatter.py"
   },
   {
@@ -5684,7 +5744,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tools_frontmatter_dividi",
-   "community": 95,
+   "community": 15,
    "norm_label": "dividi()"
   },
   {
@@ -5694,7 +5754,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "tools_frontmatter_ha_frontmatter",
-   "community": 95,
+   "community": 15,
    "norm_label": "ha_frontmatter()"
   },
   {
@@ -5704,7 +5764,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "tools_frontmatter_leggi",
-   "community": 95,
+   "community": 15,
    "norm_label": "leggi()"
   },
   {
@@ -5714,7 +5774,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "tools_frontmatter_rationale_27",
-   "community": 95,
+   "community": 15,
    "norm_label": "vero solo per un blocco delimitato davvero: prima riga '---' e chiusura '---'."
   },
   {
@@ -5724,7 +5784,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "tools_frontmatter_rationale_35",
-   "community": 95,
+   "community": 15,
    "norm_label": "(meta, corpo). senza front-matter valido: ({}, testo intero)."
   },
   {
@@ -5734,7 +5794,7 @@
    "source_location": "L49",
    "_origin": "ast",
    "id": "tools_frontmatter_rationale_49",
-   "community": 95,
+   "community": 15,
    "norm_label": "(meta, corpo) da file. (none, '') se illeggibile."
   },
   {
@@ -5744,7 +5804,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "tools_frontmatter_righe",
-   "community": 95,
+   "community": 15,
    "norm_label": "_righe()"
   },
   {
@@ -5994,7 +6054,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_oracle_cast",
-   "community": 2,
+   "community": 6,
    "norm_label": "oracle_cast.py"
   },
   {
@@ -6004,7 +6064,7 @@
    "source_location": "L128",
    "_origin": "ast",
    "id": "tools_oracle_cast_attribute_reading",
-   "community": 2,
+   "community": 6,
    "norm_label": "attribute_reading()"
   },
   {
@@ -6014,7 +6074,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "tools_oracle_cast_cast_reading",
-   "community": 2,
+   "community": 6,
    "norm_label": "cast_reading()"
   },
   {
@@ -6024,7 +6084,7 @@
    "source_location": "L61",
    "_origin": "ast",
    "id": "tools_oracle_cast_focus_line",
-   "community": 2,
+   "community": 6,
    "norm_label": "_focus_line()"
   },
   {
@@ -6034,7 +6094,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "tools_oracle_cast_get_hexagram",
-   "community": 2,
+   "community": 6,
    "norm_label": "get_hexagram()"
   },
   {
@@ -6044,7 +6104,7 @@
    "source_location": "L121",
    "_origin": "ast",
    "id": "tools_oracle_cast_lanci_from",
-   "community": 2,
+   "community": 6,
    "norm_label": "_lanci_from()"
   },
   {
@@ -6054,7 +6114,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "tools_oracle_cast_load",
-   "community": 2,
+   "community": 6,
    "norm_label": "_load()"
   },
   {
@@ -6064,7 +6124,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "tools_oracle_cast_mutate",
-   "community": 2,
+   "community": 6,
    "norm_label": "_mutate()"
   },
   {
@@ -6074,7 +6134,7 @@
    "source_location": "L84",
    "_origin": "ast",
    "id": "tools_oracle_cast_public",
-   "community": 2,
+   "community": 6,
    "norm_label": "_public()"
   },
   {
@@ -6084,7 +6144,7 @@
    "source_location": "L122",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_122",
-   "community": 2,
+   "community": 6,
    "norm_label": "deriva i 6 lanci da un esagramma scelto + linee mobili decise:     bit 1 (yang):"
   },
   {
@@ -6094,7 +6154,7 @@
    "source_location": "L130",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_130",
-   "community": 2,
+   "community": 6,
    "norm_label": "attribuzione decisionale (metodo canonico per i report).     non si estrae a cas"
   },
   {
@@ -6104,7 +6164,7 @@
    "source_location": "L156",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_156",
-   "community": 2,
+   "community": 6,
    "norm_label": "suggerisce gli esagrammi da attribuire: match tra le parole dell'argomento e i"
   },
   {
@@ -6114,7 +6174,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "tools_oracle_cast_rationale_62",
-   "community": 2,
+   "community": 6,
    "norm_label": "applica le regole di selezione della linea da interpretare. ritorna (posizione,"
   },
   {
@@ -6124,7 +6184,7 @@
    "source_location": "L155",
    "_origin": "ast",
    "id": "tools_oracle_cast_search_by_tags",
-   "community": 2,
+   "community": 6,
    "norm_label": "search_by_tags()"
   },
   {
@@ -6134,7 +6194,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "tools_oracle_cast_to_binary",
-   "community": 2,
+   "community": 6,
    "norm_label": "_to_binary()"
   },
   {
@@ -6284,7 +6344,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_resurface",
-   "community": 15,
+   "community": 180,
    "norm_label": "resurface.py"
   },
   {
@@ -6294,7 +6354,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "tools_resurface_candidati",
-   "community": 15,
+   "community": 180,
    "norm_label": "candidati()"
   },
   {
@@ -6304,7 +6364,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "tools_resurface_frontmatter",
-   "community": 15,
+   "community": 180,
    "norm_label": "_frontmatter()"
   },
   {
@@ -6314,7 +6374,7 @@
    "source_location": "L40",
    "_origin": "ast",
    "id": "tools_resurface_gradi_per_file",
-   "community": 15,
+   "community": 180,
    "norm_label": "_gradi_per_file()"
   },
   {
@@ -6324,7 +6384,7 @@
    "source_location": "L127",
    "_origin": "ast",
    "id": "tools_resurface_main",
-   "community": 15,
+   "community": 180,
    "norm_label": "main()"
   },
   {
@@ -6334,7 +6394,7 @@
    "source_location": "L106",
    "_origin": "ast",
    "id": "tools_resurface_rationale_106",
-   "community": 15,
+   "community": 180,
    "norm_label": "aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda."
   },
   {
@@ -6344,7 +6404,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "tools_resurface_rationale_36",
-   "community": 15,
+   "community": 180,
    "norm_label": "parser condiviso (tools/frontmatter)."
   },
   {
@@ -6354,7 +6414,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tools_resurface_rationale_41",
-   "community": 15,
+   "community": 180,
    "norm_label": "quanto e collegata ogni nota: le isolate sono quelle che si dimenticano prima."
   },
   {
@@ -6364,7 +6424,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_resurface_rationale_94",
-   "community": 15,
+   "community": 180,
    "norm_label": "le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base"
   },
   {
@@ -6374,7 +6434,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_resurface_scegli",
-   "community": 15,
+   "community": 180,
    "norm_label": "scegli()"
   },
   {
@@ -6384,7 +6444,7 @@
    "source_location": "L105",
    "_origin": "ast",
    "id": "tools_resurface_segna_rivista",
-   "community": 15,
+   "community": 180,
    "norm_label": "segna_rivista()"
   },
   {
@@ -6424,7 +6484,7 @@
    "source_location": "L266",
    "_origin": "ast",
    "id": "tools_search_cerca",
-   "community": 186,
+   "community": 7,
    "norm_label": "cerca()"
   },
   {
@@ -6444,7 +6504,7 @@
    "source_location": "L301",
    "_origin": "ast",
    "id": "tools_search_cerca_con_diagnosi",
-   "community": 190,
+   "community": 25,
    "norm_label": "cerca_con_diagnosi()"
   },
   {
@@ -6454,7 +6514,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_search_cerca_denso",
-   "community": 186,
+   "community": 7,
    "norm_label": "cerca_denso()"
   },
   {
@@ -6464,7 +6524,7 @@
    "source_location": "L220",
    "_origin": "ast",
    "id": "tools_search_corrisponde",
-   "community": 191,
+   "community": 25,
    "norm_label": "_corrisponde()"
   },
   {
@@ -6514,7 +6574,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "tools_search_rationale_116",
-   "community": 186,
+   "community": 7,
    "norm_label": "reciprocal rank fusion: fonde piu classifiche usando solo la posizione."
   },
   {
@@ -6544,7 +6604,7 @@
    "source_location": "L221",
    "_origin": "ast",
    "id": "tools_search_rationale_221",
-   "community": 191,
+   "community": 25,
    "norm_label": "un nodo citato da una lezione si riferisce a questo risultato?      prudenza vol"
   },
   {
@@ -6564,7 +6624,7 @@
    "source_location": "L267",
    "_origin": "ast",
    "id": "tools_search_rationale_267",
-   "community": 186,
+   "community": 7,
    "norm_label": "ricerca ibrida. ritorna una lista di risultati, ognuno annotato con cio che"
   },
   {
@@ -6574,7 +6634,7 @@
    "source_location": "L302",
    "_origin": "ast",
    "id": "tools_search_rationale_302",
-   "community": 190,
+   "community": 25,
    "norm_label": "ricerca + valutazione della propria affidabilita (f1). e la forma che usano"
   },
   {
@@ -6614,7 +6674,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_search_rationale_94",
-   "community": 186,
+   "community": 7,
    "norm_label": "ranking semantico. attivo solo se indice denso e libreria sono presenti."
   },
   {
@@ -6624,7 +6684,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "tools_search_rrf",
-   "community": 186,
+   "community": 7,
    "norm_label": "_rrf()"
   },
   {
@@ -7243,7 +7303,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L50",
+   "source_location": "L53",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_lezioni_recenti",
@@ -7273,7 +7333,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L44",
+   "source_location": "L47",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_vicoli_ciechi",
@@ -9661,7 +9721,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L281",
+   "source_location": "L309",
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_health_info",
@@ -9825,6 +9885,16 @@
    "weight": 1.0,
    "source": "server_brain_core",
    "target": "server_brain_core_valid_areas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "server/brain_core.py",
+   "source_location": "L294",
+   "weight": 1.0,
+   "source": "server_brain_core",
+   "target": "server_brain_core_views_info",
    "confidence_score": 1.0
   },
   {
@@ -10017,7 +10087,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L302",
+   "source_location": "L330",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_graphify_available",
@@ -10028,7 +10098,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L297",
+   "source_location": "L325",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_read_repo_json",
@@ -10039,10 +10109,21 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "server/brain_core.py",
-   "source_location": "L303",
+   "source_location": "L331",
    "weight": 1.0,
    "source": "server_brain_core_health_info",
    "target": "server_brain_core_valid_areas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "server/brain_core.py",
+   "source_location": "L331",
+   "weight": 1.0,
+   "source": "server_brain_core_health_info",
+   "target": "server_brain_core_views_info",
    "confidence_score": 1.0
   },
   {
@@ -10194,6 +10275,16 @@
    "weight": 1.0,
    "source": "server_brain_core_rationale_146",
    "target": "server_brain_core_context_pack",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "server/brain_core.py",
+   "source_location": "L295",
+   "weight": 1.0,
+   "source": "server_brain_core_rationale_295",
+   "target": "server_brain_core_views_info",
    "confidence_score": 1.0
   },
   {
@@ -10854,10 +10945,30 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_api.py",
+   "source_location": "L190",
+   "weight": 1.0,
+   "source": "tests_test_api",
+   "target": "tests_test_api_test_health_dichiara_le_tre_viste",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
    "source_location": "L27",
    "weight": 1.0,
    "source": "tests_test_api",
    "target": "tests_test_api_test_health_pubblico_e_ricco",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
+   "source_location": "L199",
+   "weight": 1.0,
+   "source": "tests_test_api",
+   "target": "tests_test_api_test_health_segnala_una_vista_rimasta_indietro",
    "confidence_score": 1.0
   },
   {
@@ -10988,6 +11099,26 @@
    "weight": 1.0,
    "source": "tests_test_api_rationale_177",
    "target": "tests_test_api_test_le_tre_viste_sono_servite_e_protette",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
+   "source_location": "L191",
+   "weight": 1.0,
+   "source": "tests_test_api_rationale_191",
+   "target": "tests_test_api_test_health_dichiara_le_tre_viste",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_api.py",
+   "source_location": "L200",
+   "weight": 1.0,
+   "source": "tests_test_api_rationale_200",
+   "target": "tests_test_api_test_health_segnala_una_vista_rimasta_indietro",
    "confidence_score": 1.0
   },
   {
@@ -13777,7 +13908,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_atlas_view.py",
-   "source_location": "L781",
+   "source_location": "L868",
    "weight": 1.0,
    "source": "tools_build_atlas_view",
    "target": "tools_build_atlas_view_main",
@@ -13874,7 +14005,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_atlas_view.py",
-   "source_location": "L784",
+   "source_location": "L871",
    "weight": 1.0,
    "source": "tools_build_atlas_view_main",
    "target": "tools_build_atlas_view_costruisci",
@@ -13885,7 +14016,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_atlas_view.py",
-   "source_location": "L785",
+   "source_location": "L872",
    "weight": 1.0,
    "source": "tools_build_atlas_view_main",
    "target": "tools_build_atlas_view_html",

@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **16** · sessioni graphify: **1**
-- esiti: 10 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
-- skill piu attive: manuale (9), aion (3), report (1), oracle (1), scrivi (1)
-- temi ricorrenti: metodo (5), verifica (3), report (2), grafo (2), graphify (2), limite (2), corpus (2), living (1)
+- lezioni registrate: **17** · sessioni graphify: **1**
+- esiti: 11 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
+- skill piu attive: manuale (9), aion (3), atlante-3d (2), report (1), oracle (1)
+- temi ricorrenti: metodo (5), verifica (3), report (2), grafo (2), graphify (2), limite (2), corpus (2), visualizzazione (2)
 
 ## Ancoraggi consolidati
 
@@ -20,6 +20,7 @@ _Nodi utili in almeno 2 occasioni: punti di partenza affidabili._
 - `apply_provenance.py` — 2× utile
 - `graph_metrics.py` — 2× utile
 - `aion-superia` — 2× utile
+- `tools/build_atlas_view.py` — 2× utile
 
 ## Tentativi (da confermare)
 
@@ -40,9 +41,10 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `style_check.py` — 1× utile
 - `carta-della-prosa` — 1× utile
 - `anti-ai` — 1× utile
-- `tools/build_atlas_view.py` — 1× utile
 - `tests/test_atlas.py` — 1× utile
 - `graphify-out/graph-atlas.html` — 1× utile
+- `server/brain_core.py` — 1× utile
+- `tools/rebuild_all.py` — 1× utile
 
 ## Vicoli ciechi
 
@@ -52,6 +54,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-11** _((atlante-3d, utile))_ — Una vista non basta generarla: va DICHIARATA dove il brain si descrive (/v1/health, output di rebuild_all), altrimenti resta invisibile a chi non legge i doc. Health ora dice anche se una vista e rimasta indietro rispetto al grafo: una mappa vecchia non si annuncia da sola. Su fondo nero pieno un pannello nero perde il bordo e sparisce: le superfici vanno sollevate di un soffio sopra il fondo.
+  - contesto: atlante come terza vista dichiarata, fondo nero, navigazione
 - **2026-08-10** _((atlante-3d, utile))_ — In 3D la posizione deve SIGNIFICARE, altrimenti e' un gomitolo con una dimensione in piu: qui altezza=strato del processo, spicchio=area, raggio=centralita. Due difetti trovati solo misurando il canvas renderizzato, invisibili leggendo il codice: la scala era una costante tarata a mano (il disegno riempiva il 17% della vista) e la tela restava 0x0 se la finestra aveva larghezza 0 al caricamento. Verificare una vista guardando il sorgente non basta: misurare il bounding box dei pixel dipinti su piu risoluzioni.
   - contesto: terza vista del grafo: rappresentazione 3D immersiva ed esplorabile
 - **2026-08-10** _((manuale, utile))_ — misurare PRIMA e DOPO su dati reali, e poi provare a SABOTARE il meccanismo: le relazioni I Ching non hanno fuso le community come ipotizzato (il beneficio vero era un altro), e l'anti-clobber di report_harvest sembrava funzionare finche non ho provato a modificare il file in coda
@@ -74,5 +78,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: rendere navigabili nel grafo le note grezze in .txt
 - **2026-08-06** _((manuale, utile))_ — il golden set ha trovato in 1 minuto un difetto strutturale invisibile da mesi (raw e wiki con 0 archi tra loro): una misura scritta prima delle feature vale piu di dieci feature
   - contesto: come accorgersi che due strati del brain sono scollegati
-- **2026-08-06** _((manuale, corretto))_ — graphify indicizza SOLO .md: 430KB di note .txt in raw/data-science erano invisibili al brain (4 nodi su 1187). Verificare sempre COSA entra nel grafo, non dare per scontato che tutto il corpus ci sia
-  - contesto: quale formato indicizza graphify

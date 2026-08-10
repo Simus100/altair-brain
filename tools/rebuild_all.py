@@ -60,4 +60,14 @@ for name, cmd in STEPS:
 
 if failed:
     sys.exit(1)
-print("\n== TUTTO OK == Ora:  git add -A && git commit -m \"...\" && git push")
+
+# Le tre viste sono il volto del brain: dirle qui evita che qualcuno ne apra una
+# sola per anni senza sapere che le altre due rispondono a domande diverse.
+print("\n== TUTTO OK ==")
+print("Le TRE viste del grafo (aprile con doppio click):")
+for rel, serve_a in (("graphify-out/graph.html",         "vedere tutto"),
+                     ("graphify-out/graph-compact.html", "spiegare il sistema come processo"),
+                     ("graphify-out/graph-atlas.html",   "navigare e orientarsi (3D esplorabile)")):
+    peso = os.path.getsize(os.path.join(ROOT, rel)) // 1024 if os.path.exists(os.path.join(ROOT, rel)) else 0
+    print(f"  {rel:<34} {peso:>5} KB  — {serve_a}")
+print("\nOra:  git add -A && git commit -m \"...\" && git push")

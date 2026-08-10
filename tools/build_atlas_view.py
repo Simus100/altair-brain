@@ -226,11 +226,16 @@ MODELLO = r"""<!DOCTYPE html>
 <title>Altair Brain — Atlante 3D</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:radial-gradient(circle at 50% 42%,#0d1424 0%,#05070d 62%);color:#e2e8f0;
+/* Fondo nero pieno: il velo di profondita e i colori degli strati hanno il
+   contrasto massimo, e nulla compete con il disegno. */
+body{background:#000;color:#e2e8f0;
   font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
 canvas{display:block;cursor:grab;position:fixed;inset:0}canvas.presa{cursor:grabbing}
-.pan{position:fixed;background:rgba(9,13,23,.9);border:1px solid rgba(148,163,184,.2);
-  border-radius:13px;backdrop-filter:blur(14px);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+canvas.sposta{cursor:move}
+/* I pannelli stanno un soffio SOPRA il nero: su fondo nero pieno un pannello nero
+   non ha bordo visibile e l'ombra non lavora, quindi la superficie sparisce. */
+.pan{position:fixed;background:rgba(14,14,17,.9);border:1px solid rgba(148,163,184,.34);
+  border-radius:13px;backdrop-filter:blur(16px)}
 #capo{top:16px;left:16px;padding:14px 17px;max-width:318px}
 #capo h1{font-size:15px;font-weight:700;letter-spacing:.01em}
 #capo p{font-size:11.5px;color:#94a3b8;margin-top:7px;line-height:1.5}
@@ -244,7 +249,12 @@ canvas{display:block;cursor:grab;position:fixed;inset:0}canvas.presa{cursor:grab
 #cerca{width:100%;background:rgba(2,6,16,.8);border:1px solid rgba(148,163,184,.24);border-radius:8px;
   padding:8px 10px;color:#e2e8f0;font-size:12px;outline:none}
 #cerca:focus{border-color:#38bdf8;box-shadow:0 0 0 3px rgba(56,189,248,.12)}
-#esiti{font-size:10.5px;color:#64748b;margin-top:5px;min-height:13px}
+#conta-esiti{font-size:10.5px;color:#64748b;margin-top:5px;min-height:13px}
+#esiti{max-height:186px;overflow:auto;margin-top:4px}
+#esiti::-webkit-scrollbar{width:4px}#esiti::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+.esito{display:flex;align-items:center;gap:7px;padding:4px 6px;border-radius:6px;cursor:pointer;font-size:11.5px}
+.esito:hover{background:rgba(56,189,248,.12);color:#fff}
+.esito .dove{color:#64748b;font-size:9.5px;margin-left:auto;white-space:nowrap}
 .riga{display:flex;align-items:center;gap:8px;padding:3.5px 0;font-size:11.5px;cursor:pointer;user-select:none}
 .riga:hover{color:#fff}.riga.spenta{opacity:.3}.riga .num{margin-left:auto;color:#475569;font-size:10px}
 .bollo{width:9px;height:9px;border-radius:50%;flex:none}
@@ -255,7 +265,7 @@ canvas{display:block;cursor:grab;position:fixed;inset:0}canvas.presa{cursor:grab
 #det{left:16px;bottom:16px;width:378px;max-height:56vh;overflow:auto;padding:16px 18px;display:none}
 #det.aperto{display:block}
 #det::-webkit-scrollbar{width:5px}#det::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
-#det .nome{font-size:15.5px;font-weight:700;word-break:break-word;padding-right:22px}
+#det .nome{font-size:15.5px;font-weight:700;word-break:break-word;padding-right:58px}
 #det .via{font-size:10.5px;color:#64748b;margin-top:3px;font-family:ui-monospace,monospace;word-break:break-all}
 .etich{display:flex;gap:6px;flex-wrap:wrap;margin:11px 0 2px}
 .tag{font-size:10px;padding:2.5px 9px;border-radius:999px;border:1px solid rgba(148,163,184,.28);color:#cbd5e1}
@@ -266,10 +276,12 @@ canvas{display:block;cursor:grab;position:fixed;inset:0}canvas.presa{cursor:grab
 #det li .dove{color:#475569;font-size:10px}
 .chiudi{position:absolute;top:12px;right:14px;cursor:pointer;color:#64748b;font-size:18px;line-height:1}
 .chiudi:hover{color:#e2e8f0}
+.indietro{position:absolute;top:13px;right:40px;cursor:pointer;color:#64748b;font-size:15px;line-height:1;display:none}
+.indietro:hover{color:#38bdf8}
 #suggerimento{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:10.5px;color:#475569;
   text-align:center;pointer-events:none;white-space:nowrap}
 kbd{background:rgba(148,163,184,.14);border-radius:3px;padding:1.5px 5px;font-size:9.5px;color:#94a3b8}
-#nube{position:fixed;pointer-events:none;background:rgba(2,6,16,.94);border:1px solid rgba(148,163,184,.3);
+#nube{position:fixed;pointer-events:none;background:rgba(14,14,17,.96);border:1px solid rgba(148,163,184,.36);
   border-radius:7px;padding:5px 9px;font-size:11px;display:none;white-space:nowrap;z-index:9}
 #nube .sub{color:#64748b;font-size:10px}
 @media(max-width:820px){#cmd,#capo{display:none}#det{width:calc(100vw - 32px)}}
@@ -287,6 +299,7 @@ kbd{background:rgba(148,163,184,.14);border-radius:3px;padding:1.5px 5px;font-si
 <div class="pan" id="cmd">
   <h2>Cerca</h2>
   <input id="cerca" placeholder="nome file o area…" autocomplete="off" spellcheck="false">
+  <div id="conta-esiti"></div>
   <div id="esiti"></div>
   <h2>Strati</h2><div id="fStrati"></div>
   <h2>Aree</h2><div id="fAree"></div>
@@ -302,6 +315,7 @@ kbd{background:rgba(148,163,184,.14);border-radius:3px;padding:1.5px 5px;font-si
 </div>
 
 <div class="pan" id="det">
+  <span class="indietro" id="bIndietro" onclick="indietro()" title="torna al nodo precedente">&larr;</span>
   <span class="chiudi" onclick="chiudi()">&times;</span>
   <div class="nome" id="dNome"></div>
   <div class="via" id="dVia"></div>
@@ -310,9 +324,10 @@ kbd{background:rgba(148,163,184,.14);border-radius:3px;padding:1.5px 5px;font-si
 </div>
 
 <div id="nube"></div>
-<div id="suggerimento"><kbd>trascina</kbd> ruota · <kbd>rotella</kbd> zoom ·
-  <kbd>click</kbd> apri · <kbd>doppio click</kbd> vola al nodo ·
-  <kbd>L</kbd> lente · <kbd>R</kbd> rotazione · <kbd>Esc</kbd> chiudi</div>
+<div id="suggerimento"><kbd>trascina</kbd> ruota · <kbd>Shift+trascina</kbd> sposta ·
+  <kbd>rotella</kbd> zoom · <kbd>click</kbd> apri · <kbd>doppio click</kbd> vola ·
+  <kbd>[ ]</kbd> scorri i vicini · <kbd>Backspace</kbd> indietro ·
+  <kbd>L</kbd> lente · <kbd>0</kbd> ricentra · <kbd>Esc</kbd> chiudi</div>
 
 <script>
 "use strict";
@@ -605,17 +620,45 @@ function sotto(mx, my) {
   return vicino;
 }
 
+/* Spostamento laterale della camera. Le direzioni "destra" e "su" dello schermo
+   riespresse nel mondo sono le derivate della proiezione rispetto a x, y, z: con
+   due sole rotazioni si scrivono a mano e non serve invertire alcuna matrice. */
+function sposta(dx, dy) {
+  const s = scala / dist;                       // pixel per unita di mondo
+  const cy = Math.cos(angY), sy = Math.sin(angY);
+  const cx = Math.cos(angX), sx = Math.sin(angX);
+  const destra = {x: cy,       y: 0,  z: -sy};
+  const su     = {x: -sy * sx, y: cx, z: -cy * sx};
+  const a = -dx / s, b = dy / s;                // la scena segue il cursore
+  miraObiettivo = {
+    x: miraObiettivo.x + destra.x*a + su.x*b,
+    y: miraObiettivo.y + destra.y*a + su.y*b,
+    z: miraObiettivo.z + destra.z*a + su.z*b,
+  };
+}
+
 const nube = document.getElementById('nube');
+let spostando = false;
+tela.addEventListener('contextmenu', e => e.preventDefault());
 tela.addEventListener('mousedown', e => {
-  trascina = true; mosso = false; ux = e.clientX; uy = e.clientY; tela.classList.add('presa');
+  trascina = true; mosso = false; ux = e.clientX; uy = e.clientY;
+  spostando = e.shiftKey || e.button === 2;     // Shift o tasto destro = sposta
+  tela.classList.toggle('sposta', spostando);
+  tela.classList.toggle('presa', !spostando);
 });
-addEventListener('mouseup', () => { trascina = false; tela.classList.remove('presa'); });
+addEventListener('mouseup', () => {
+  trascina = false; spostando = false;
+  tela.classList.remove('presa', 'sposta');
+});
 addEventListener('mousemove', e => {
   mouse = {x: e.clientX, y: e.clientY};
   if (trascina) {
     if (Math.abs(e.clientX-ux) + Math.abs(e.clientY-uy) > 3) { mosso = true; rotante = false; segnaGira(); }
-    angY += (e.clientX - ux) * 0.0062;
-    angX = Math.max(-1.5, Math.min(1.5, angX + (e.clientY - uy) * 0.0062));
+    if (spostando) sposta(e.clientX - ux, e.clientY - uy);
+    else {
+      angY += (e.clientX - ux) * 0.0062;
+      angX = Math.max(-1.5, Math.min(1.5, angX + (e.clientY - uy) * 0.0062));
+    }
     ux = e.clientX; uy = e.clientY;
     nube.style.display = 'none';
     return;
@@ -672,6 +715,10 @@ addEventListener('keydown', e => {
   if (e.key === 'Escape') chiudi();
   else if (k === 'l') lente();
   else if (k === 'r') gira();
+  else if (e.key === 'Backspace') { e.preventDefault(); indietro(); }
+  else if (e.key === ']') scorriVicini(1);
+  else if (e.key === '[') scorriVicini(-1);
+  else if (e.key === '0') { miraObiettivo = {x:0, y:0, z:0}; distObiettivo = 14.0; }
   else if (k === '/') { e.preventDefault(); document.getElementById('cerca').focus(); }
   else if (e.key === 'ArrowLeft')  angY -= 0.09;
   else if (e.key === 'ArrowRight') angY += 0.09;
@@ -684,7 +731,16 @@ addEventListener('keydown', e => {
 /* --- Pannello di dettaglio ------------------------------------------------ */
 const esc = s => String(s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 
-function apri(i) {
+/* Navigare un grafo vuol dire poter tornare indietro. Senza cronologia, tre
+   click sui vicini e non sai piu' da dove sei partito — ed e' esattamente il
+   momento in cui una mappa smette di essere una mappa. */
+let storia = [], tornando = false;
+let ancoraGiro = null, giro = -1;   // nodo di cui si stanno scorrendo i vicini
+
+function apri(i, mantieniGiro) {
+  if (!mantieniGiro) { ancoraGiro = null; giro = -1; }
+  if (scelto !== null && scelto !== i && !tornando) storia.push(scelto);
+  document.getElementById('bIndietro').style.display = storia.length ? 'block' : 'none';
   scelto = i; insiemeLente = intorno(i, 2);
   const n = D.nodi[i], st = D.strati[n.s];
   document.getElementById('dNome').textContent = n.n;
@@ -721,9 +777,30 @@ function vola(i) {
   distObiettivo = Math.min(distObiettivo, 7.5);
   rotante = false; segnaGira();
 }
+function indietro() {
+  if (!storia.length) return;
+  const i = storia.pop();
+  tornando = true; apri(i); tornando = false;
+  vola(i);
+  document.getElementById('bIndietro').style.display = storia.length ? 'block' : 'none';
+}
+
+/* Scorrere i vicini di UN nodo, restando ancorati a lui: e' il modo per leggere
+   tutto cio' che tocca un file senza cercarne i pallini a occhio. */
+function scorriVicini(passo) {
+  const base = ancoraGiro !== null ? ancoraGiro : scelto;
+  if (base === null || !vicini[base].length) return;
+  const lista = vicini[base];
+  giro = (giro + passo + lista.length) % lista.length;
+  ancoraGiro = base;
+  const j = lista[giro].j;
+  apri(j, true); vola(j);
+}
+
 function chiudi() {
-  scelto = null; insiemeLente = null;
+  scelto = null; insiemeLente = null; storia = []; ancoraGiro = null; giro = -1;
   miraObiettivo = {x:0, y:0, z:0};
+  document.getElementById('bIndietro').style.display = 'none';
   document.getElementById('det').classList.remove('aperto');
 }
 
@@ -745,16 +822,26 @@ D.aree.forEach(a => {
 relUsate.forEach(r => interruttore(document.getElementById('fRel'), r,
   info(r).l, info(r).c, relAttive));
 
-const campo = document.getElementById('cerca'), esiti = document.getElementById('esiti');
-campo.addEventListener('input', e => {
-  filtro = e.target.value.trim().toLowerCase();
-  const trovati = D.nodi.filter(n => acceso(n) && combacia(n));
-  esiti.textContent = !filtro ? '' :
-    (trovati.length ? trovati.length + ' file — Invio per volarci' : 'nessun file');
-});
+const campo = document.getElementById('cerca');
+const esiti = document.getElementById('esiti'), contaEsiti = document.getElementById('conta-esiti');
+
+/* Un conteggio non basta a navigare: due file possono chiamarsi uguale (c'e' un
+   styledna.md tra le fonti e uno nel sapere) e "Invio" sceglierebbe a caso.
+   L'elenco mostra area e strato di ciascuno, e ci si va con un click. */
+function mostraEsiti() {
+  const trovati = D.nodi.map((n, i) => ({n, i})).filter(x => acceso(x.n) && combacia(x.n));
+  if (!filtro) { contaEsiti.textContent = ''; esiti.innerHTML = ''; return; }
+  if (!trovati.length) { contaEsiti.textContent = 'nessun file'; esiti.innerHTML = ''; return; }
+  contaEsiti.textContent = trovati.length + ' file' + (trovati.length > 40 ? ' — affina la ricerca' : '');
+  esiti.innerHTML = trovati.slice(0, 40).map(({n, i}) =>
+    `<div class="esito" onclick="apri(${i});vola(${i})">` +
+    `<span class="bollo" style="background:${n.c}"></span><span>${esc(n.n)}</span>` +
+    `<span class="dove">${esc(n.a)} · ${esc(D.strati[n.s].label.toLowerCase())}</span></div>`).join('');
+}
+campo.addEventListener('input', e => { filtro = e.target.value.trim().toLowerCase(); mostraEsiti(); });
 campo.addEventListener('keydown', e => {
-  if (e.key !== 'Enter') return;
-  const i = D.nodi.findIndex(n => acceso(n) && combacia(n) && filtro);
+  if (e.key !== 'Enter' || !filtro) return;
+  const i = D.nodi.findIndex(n => acceso(n) && combacia(n));
   if (i >= 0) { apri(i); vola(i); }
 });
 

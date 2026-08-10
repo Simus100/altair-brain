@@ -185,3 +185,24 @@ def test_le_tre_viste_sono_servite_e_protette():
 
     pagina = client.get("/v1/views/atlas", headers=AUTH).text
     assert "https://" not in pagina and "<script src" not in pagina
+
+
+def test_health_dichiara_le_tre_viste():
+    """Un consumatore deve scoprire le tre viste dall'API, non dalla documentazione."""
+    viste = client.get("/v1/health").json()["views"]
+    assert set(viste) == {"extended", "compact", "atlas"}
+    for nome, v in viste.items():
+        assert v["endpoint"] == f"/v1/views/{nome}"
+        assert v["serve_a"] and v["presente"] is True
+
+
+def test_health_segnala_una_vista_rimasta_indietro():
+    """Il segnale che conta davvero: una mappa vecchia non si annuncia da sola.
+    Con un grafo piu recente delle viste, tutte devono risultare NON aggiornate."""
+    import time as _t
+    import brain_core as _core
+    viste = _core.views_info(_t.time() + 3600)
+    assert viste, "nessuna vista dichiarata"
+    for v in viste.values():
+        assert v["aggiornata"] is False
+        assert v["indietro_di_secondi"] > 0
