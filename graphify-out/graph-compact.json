@@ -54,7 +54,7 @@
       "label": "data-science (raw)",
       "layer": "area:data-science",
       "kind": "dato",
-      "size": 19
+      "size": 20
     },
     {
       "id": "wiki:data-science",
@@ -68,21 +68,35 @@
       "label": "finanza (raw)",
       "layer": "area:finanza",
       "kind": "dato",
-      "size": 10
+      "size": 14
+    },
+    {
+      "id": "wiki:finanza",
+      "label": "finanza",
+      "layer": "area:finanza",
+      "kind": "dato",
+      "size": 14
     },
     {
       "id": "raw:divulgazione",
       "label": "divulgazione (raw)",
       "layer": "area:divulgazione",
       "kind": "dato",
-      "size": 12
+      "size": 14
+    },
+    {
+      "id": "wiki:divulgazione",
+      "label": "divulgazione",
+      "layer": "area:divulgazione",
+      "kind": "dato",
+      "size": 14
     },
     {
       "id": "raw:web-design",
       "label": "web-design (raw)",
       "layer": "area:web-design",
       "kind": "dato",
-      "size": 10
+      "size": 12
     },
     {
       "id": "raw:creativita",
@@ -217,9 +231,29 @@
       "kind": "has"
     },
     {
+      "source": "fase:2",
+      "target": "wiki:finanza",
+      "kind": "has"
+    },
+    {
+      "source": "raw:finanza",
+      "target": "wiki:finanza",
+      "kind": "derive"
+    },
+    {
       "source": "fase:1",
       "target": "raw:divulgazione",
       "kind": "has"
+    },
+    {
+      "source": "fase:2",
+      "target": "wiki:divulgazione",
+      "kind": "has"
+    },
+    {
+      "source": "raw:divulgazione",
+      "target": "wiki:divulgazione",
+      "kind": "derive"
     },
     {
       "source": "fase:1",
@@ -320,6 +354,71 @@
       "source": "wiki:data-science",
       "target": "wiki:creativita",
       "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:creativita",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:finanza",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:finanza",
+      "target": "wiki:divulgazione",
+      "kind": "bridge"
     }
   ],
   "meta": {
@@ -333,7 +432,7 @@
       "web-design",
       "creativita"
     ],
-    "ponti_intercampo": 7,
+    "ponti_intercampo": 20,
     "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
   }
 }

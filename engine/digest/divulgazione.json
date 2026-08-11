@@ -1,9 +1,44 @@
 {
   "centrali": [
     {
+      "dove": "wiki/divulgazione/onesta-argomentativa.md",
+      "grado": 11,
+      "nodo": "onesta-argomentativa.md"
+    },
+    {
+      "dove": "wiki/divulgazione/come-si-spiega.md",
+      "grado": 10,
+      "nodo": "come-si-spiega.md"
+    },
+    {
+      "dove": "wiki/divulgazione/corpus-universalis.md",
+      "grado": 8,
+      "nodo": "corpus-universalis.md"
+    },
+    {
+      "dove": "wiki/divulgazione/onesta-argomentativa.md",
+      "grado": 6,
+      "nodo": "Onestà argomentativa"
+    },
+    {
       "dove": "raw/divulgazione/metodo-report-verificati.md",
       "grado": 5,
       "nodo": "Metodo dei report verificati"
+    },
+    {
+      "dove": "wiki/divulgazione/come-si-spiega.md",
+      "grado": 5,
+      "nodo": "Come si spiega una cosa difficile"
+    },
+    {
+      "dove": "wiki/divulgazione/corpus-universalis.md",
+      "grado": 5,
+      "nodo": "Il corpus universalis.it"
+    },
+    {
+      "dove": "wiki/divulgazione/index.md",
+      "grado": 4,
+      "nodo": "index.md"
     },
     {
       "dove": "raw/divulgazione/README.md",
@@ -16,44 +51,51 @@
       "nodo": "metodo-report-verificati.md"
     },
     {
+      "dove": "raw/divulgazione/universalis-austerita.md",
+      "grado": 3,
+      "nodo": "universalis-austerita.md"
+    },
+    {
       "dove": "raw/divulgazione/README.md",
       "grado": 2,
       "nodo": "README.md"
-    },
-    {
-      "dove": "raw/divulgazione/README.md",
-      "grado": 1,
-      "nodo": "Ambito"
-    },
-    {
-      "dove": "raw/divulgazione/README.md",
-      "grado": 1,
-      "nodo": "Note"
-    },
-    {
-      "dove": "raw/divulgazione/metodo-report-verificati.md",
-      "grado": 1,
-      "nodo": "Fonti su cui il brain ha costruito"
-    },
-    {
-      "dove": "raw/divulgazione/metodo-report-verificati.md",
-      "grado": 1,
-      "nodo": "Convenzioni editoriali in uso"
-    },
-    {
-      "dove": "raw/divulgazione/metodo-report-verificati.md",
-      "grado": 1,
-      "nodo": "Casi seguiti"
-    },
-    {
-      "dove": "raw/divulgazione/metodo-report-verificati.md",
-      "grado": 1,
-      "nodo": "Metodo oracolare nei report"
     }
   ],
-  "file": 2,
+  "file": 10,
   "generato_il": "2026-08-11",
   "modificati_di_recente": [
+    {
+      "file": "raw/divulgazione/universalis-austerita.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "raw/divulgazione/universalis-davos-2026.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "raw/divulgazione/universalis-un-regalo.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "wiki/divulgazione/come-si-spiega.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "wiki/divulgazione/corpus-universalis.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "wiki/divulgazione/index.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "wiki/divulgazione/onesta-argomentativa.md",
+      "giorni_fa": 0
+    },
     {
       "file": "raw/divulgazione/metodo-report-verificati.md",
       "giorni_fa": 3
@@ -63,5 +105,5 @@
       "giorni_fa": 5
     }
   ],
-  "nodi": 10
+  "nodi": 39
 }

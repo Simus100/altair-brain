@@ -243,6 +243,54 @@
         "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md"
       ],
       "nota": "metodo estratto dai limiti che il project work ha dichiarato invece di aggirare (lotto assente, prezzo ambiguo, posizioni non plausibili)"
+    },
+    {
+      "wiki": "wiki/divulgazione/corpus-universalis.md",
+      "fonti": [
+        "raw/divulgazione/universalis-austerita.md",
+        "raw/divulgazione/universalis-davos-2026.md",
+        "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
+        "raw/divulgazione/universalis-un-regalo.md"
+      ],
+      "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito"
+    },
+    {
+      "wiki": "wiki/divulgazione/come-si-spiega.md",
+      "fonti": [
+        "raw/divulgazione/universalis-austerita.md",
+        "raw/finanza/universalis-spread.md",
+        "raw/finanza/universalis-charles-dow.md",
+        "raw/data-science/universalis-a-star-dijkstra.md"
+      ],
+      "nota": "i quattro dispositivi di chiarezza, ciascuno verificabile sull'articolo da cui e' estratto"
+    },
+    {
+      "wiki": "wiki/divulgazione/onesta-argomentativa.md",
+      "fonti": [
+        "raw/finanza/universalis-bolla-tech-ia.md",
+        "raw/finanza/universalis-oltre-il-costo-ia.md",
+        "raw/finanza/universalis-mercati.md",
+        "raw/finanza/universalis-spread.md",
+        "raw/finanza/universalis-agenzie-di-rating.md"
+      ],
+      "nota": "come non farsi credere piu' di quanto si sappia; include il caso della tesi rovesciata in cinque mesi"
+    },
+    {
+      "wiki": "wiki/finanza/analisi-tecnica-mercati.md",
+      "fonti": [
+        "raw/finanza/universalis-charles-dow.md",
+        "raw/finanza/universalis-mercati.md",
+        "raw/finanza/universalis-mercato-criptovalutario.md"
+      ],
+      "nota": "il corso in tre puntate, ottobre 2024 - maggio 2025"
+    },
+    {
+      "wiki": "wiki/finanza/economia-dell-ia.md",
+      "fonti": [
+        "raw/finanza/universalis-bolla-tech-ia.md",
+        "raw/finanza/universalis-oltre-il-costo-ia.md"
+      ],
+      "nota": "le due letture opposte dello stesso divario investimenti/ricavi; entrambe conservate"
     }
   ]
 }

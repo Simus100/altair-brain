@@ -56,6 +56,97 @@
    "relation": "bridge",
    "area_source": "data-science",
    "area_target": "creativita"
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "raw_data_science_universalis_a_star_dijkstra",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "data-science"
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "raw_finanza_universalis_charles_dow",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "raw_finanza_universalis_spread",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_creativita_carta_della_prosa",
+   "relation": "bridge",
+   "area_source": "divulgazione",
+   "area_target": "creativita"
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "relation": "bridge",
+   "area_source": "divulgazione",
+   "area_target": "data-science"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "raw_finanza_universalis_agenzie_di_rating",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "raw_finanza_universalis_bolla_tech_ia",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "raw_finanza_universalis_mercati",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "raw_finanza_universalis_oltre_il_costo_ia",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "raw_finanza_universalis_spread",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "wiki_data_science_limiti_dichiarati",
+   "relation": "bridge",
+   "area_source": "divulgazione",
+   "area_target": "data-science"
+  },
+  {
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "relation": "bridge",
+   "area_source": "finanza",
+   "area_target": "data-science"
+  },
+  {
+   "source": "wiki_finanza_economia_dell_ia",
+   "target": "wiki_divulgazione_onesta_argomentativa",
+   "relation": "bridge",
+   "area_source": "finanza",
+   "area_target": "divulgazione"
   }
  ]
 }

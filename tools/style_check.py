@@ -55,6 +55,13 @@ def testo_da_file(path):
         from tools.frontmatter import dividi
         _, grezzo = dividi(grezzo)
         grezzo = re.sub(r"```.*?```", " ", grezzo, flags=re.S)      # blocchi di codice
+        # Anche il codice IN RIGA e' identificatore, non prosa: un percorso di file
+        # ripetuto in un elenco veniva contato come ripetizione stilistica.
+        grezzo = re.sub(r"`[^`\n]+`", " ", grezzo)
+        # Le parole tra virgolette caporali sono di QUALCUN ALTRO. Chiedere di
+        # correggere un anglicismo dentro una citazione significa chiedere di
+        # falsificare la fonte.
+        grezzo = re.sub(r"«[^»]*»", " ", grezzo)
         grezzo = re.sub(r"^\s*[|#>\-*].*$", " ", grezzo, flags=re.M)  # tabelle, titoli, liste
         # Il BERSAGLIO di un wikilink e un identificatore, non una parola scelta da
         # chi scrive: tenerlo faceva contare 'feature-engineering' come anglicismo e

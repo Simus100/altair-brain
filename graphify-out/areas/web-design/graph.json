@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "web-design",
- "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
+ "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
  "nodes": [
   {
    "label": "README.md",
@@ -44,6 +44,46 @@
    "id": "raw_web_design_readme_web_design",
    "community": 113,
    "norm_label": "web design"
+  },
+  {
+   "label": "universalis-filesaver-js.md",
+   "file_type": "document",
+   "source_file": "raw/web-design/universalis-filesaver-js.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_web_design_universalis_filesaver_js",
+   "community": 212,
+   "norm_label": "universalis-filesaver-js.md"
+  },
+  {
+   "label": "Filesaver.js",
+   "file_type": "document",
+   "source_file": "raw/web-design/universalis-filesaver-js.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_web_design_universalis_filesaver_js_filesaver_js",
+   "community": 212,
+   "norm_label": "filesaver.js"
+  },
+  {
+   "label": "universalis-seo.md",
+   "file_type": "document",
+   "source_file": "raw/web-design/universalis-seo.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_web_design_universalis_seo",
+   "community": 213,
+   "norm_label": "universalis-seo.md"
+  },
+  {
+   "label": "SEO: come essere primi su Google per meritocrazia",
+   "file_type": "document",
+   "source_file": "raw/web-design/universalis-seo.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_web_design_universalis_seo_seo_come_essere_primi_su_google_per_meritocrazia",
+   "community": 213,
+   "norm_label": "seo: come essere primi su google per meritocrazia"
   }
  ],
  "links": [
@@ -75,6 +115,26 @@
    "weight": 1.0,
    "source": "raw_web_design_readme_web_design",
    "target": "raw_web_design_readme_note",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/web-design/universalis-filesaver-js.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_web_design_universalis_filesaver_js",
+   "target": "raw_web_design_universalis_filesaver_js_filesaver_js",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/web-design/universalis-seo.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_web_design_universalis_seo",
+   "target": "raw_web_design_universalis_seo_seo_come_essere_primi_su_google_per_meritocrazia",
    "confidence_score": 1.0
   }
  ]

@@ -129,6 +129,30 @@
         "wiki/data-science/controlli-qualita-dati.md"
       ],
       "note": "le due domande distinte: qualita del dato vs portata della conclusione"
+    },
+    {
+      "domanda": "Come si spiega una cosa difficile senza semplificarla in una bugia?",
+      "attesi": [
+        "wiki/divulgazione/come-si-spiega.md",
+        "wiki/divulgazione/onesta-argomentativa.md"
+      ],
+      "note": "il cuore dell'area divulgazione: dispositivi di chiarezza + onesta argomentativa"
+    },
+    {
+      "domanda": "Quali sono i tre principi della teoria di Dow e a cosa servono?",
+      "attesi": [
+        "wiki/finanza/analisi-tecnica-mercati.md",
+        "wiki/finanza/index.md"
+      ],
+      "note": "l'area finanza, prima vuota, ora risponde su un contenuto suo"
+    },
+    {
+      "domanda": "Cosa succede quando una tesi pubblicata cambia dopo pochi mesi?",
+      "attesi": [
+        "wiki/finanza/economia-dell-ia.md",
+        "wiki/divulgazione/onesta-argomentativa.md"
+      ],
+      "note": "bi-temporalita applicata alle proprie posizioni: si data, non si riscrive"
     }
   ],
   "banco_semantico": {

@@ -63,3 +63,21 @@ def test_gli_anglicismi_veri_vengono_ancora_visti(tmp_path):
     assert "OGGETTIVO" in righe, "la classe oggettiva non segnala piu' i calchi veri"
     for calco in ("team", "performante"):
         assert calco in righe, f"anglicismo non rilevato: {calco}"
+
+
+def test_il_codice_in_riga_non_e_prosa(tmp_path):
+    """Un percorso di file ripetuto tre volte in un elenco non e' una ripetizione
+    stilistica: e' lo stesso identificatore nominato tre volte."""
+    testo = sc.testo_da_file(_scrivi(
+        tmp_path, "La nota sta in `raw/finanza/universalis-spread.md` e va letta.\n"))
+    assert "universalis-spread" not in testo
+    assert "La nota sta in" in testo and "va letta" in testo
+
+
+def test_le_citazioni_non_sono_prosa_dell_autore(tmp_path):
+    """Chiedere di correggere un anglicismo dentro una citazione significa chiedere
+    di falsificare la fonte."""
+    testo = sc.testo_da_file(_scrivi(
+        tmp_path, "L'autore scrive: «il focus di questo corso e' il retail». Poi prosegue.\n"))
+    assert "focus" not in testo and "retail" not in testo
+    assert "L'autore scrive" in testo and "Poi prosegue" in testo

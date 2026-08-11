@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
+ "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
  "nodes": [
   {
    "label": "metodo-report-verificati.md",
@@ -104,6 +104,296 @@
    "id": "raw_divulgazione_readme_note",
    "community": 111,
    "norm_label": "note"
+  },
+  {
+   "label": "universalis-austerita.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-austerita.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_austerita",
+   "community": 200,
+   "norm_label": "universalis-austerita.md"
+  },
+  {
+   "label": "Austerità: analisi di una politica fallimentare",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-austerita.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_austerita_austerità_analisi_di_una_politica_fallimentare",
+   "community": 200,
+   "norm_label": "austerita: analisi di una politica fallimentare"
+  },
+  {
+   "label": "universalis-davos-2026.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-davos-2026.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_davos_2026",
+   "community": 201,
+   "norm_label": "universalis-davos-2026.md"
+  },
+  {
+   "label": "Davos 2026: Anno Zero",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-davos-2026.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_davos_2026_davos_2026_anno_zero",
+   "community": 201,
+   "norm_label": "davos 2026: anno zero"
+  },
+  {
+   "label": "universalis-nuovo-ordine-mondiale.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_nuovo_ordine_mondiale",
+   "community": 202,
+   "norm_label": "universalis-nuovo-ordine-mondiale.md"
+  },
+  {
+   "label": "Nuovo Ordine Mondiale — Difesa, Intelligenza Artificiale e Artico",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_nuovo_ordine_mondiale_nuovo_ordine_mondiale_difesa_intelligenza_artificiale_e_artico",
+   "community": 202,
+   "norm_label": "nuovo ordine mondiale — difesa, intelligenza artificiale e artico"
+  },
+  {
+   "label": "universalis-un-regalo.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-un-regalo.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_un_regalo",
+   "community": 203,
+   "norm_label": "universalis-un-regalo.md"
+  },
+  {
+   "label": "Un Regalo",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-un-regalo.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_un_regalo_un_regalo",
+   "community": 203,
+   "norm_label": "un regalo"
+  },
+  {
+   "label": "come-si-spiega.md",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega",
+   "community": 5,
+   "norm_label": "come-si-spiega.md"
+  },
+  {
+   "label": "Come si spiega una cosa difficile",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "community": 5,
+   "norm_label": "come si spiega una cosa difficile"
+  },
+  {
+   "label": "Il gruppo di controllo",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L54",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega_il_gruppo_di_controllo",
+   "community": 5,
+   "norm_label": "il gruppo di controllo"
+  },
+  {
+   "label": "L'esempio unico portato fino in fondo",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega_l_esempio_unico_portato_fino_in_fondo",
+   "community": 5,
+   "norm_label": "l'esempio unico portato fino in fondo"
+  },
+  {
+   "label": "La metafora che regge la struttura",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L42",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega_la_metafora_che_regge_la_struttura",
+   "community": 5,
+   "norm_label": "la metafora che regge la struttura"
+  },
+  {
+   "label": "La storia prima della teoria",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L28",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_come_si_spiega_la_storia_prima_della_teoria",
+   "community": 5,
+   "norm_label": "la storia prima della teoria"
+  },
+  {
+   "label": "corpus-universalis.md",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis",
+   "community": 5,
+   "norm_label": "corpus-universalis.md"
+  },
+  {
+   "label": "Cosa manca, dichiarato",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L48",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis_cosa_manca_dichiarato",
+   "community": 5,
+   "norm_label": "cosa manca, dichiarato"
+  },
+  {
+   "label": "Dove sono finiti, e perche'",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis_dove_sono_finiti_e_perche",
+   "community": 5,
+   "norm_label": "dove sono finiti, e perche'"
+  },
+  {
+   "label": "Freschezza",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L59",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis_freschezza",
+   "community": 5,
+   "norm_label": "freschezza"
+  },
+  {
+   "label": "I filoni",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L28",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis_i_filoni",
+   "community": 5,
+   "norm_label": "i filoni"
+  },
+  {
+   "label": "Il corpus universalis.it",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "community": 5,
+   "norm_label": "il corpus universalis.it"
+  },
+  {
+   "label": "index.md",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/index.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_index",
+   "community": 5,
+   "norm_label": "index.md"
+  },
+  {
+   "label": "Divulgazione",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/index.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_index_divulgazione",
+   "community": 5,
+   "norm_label": "divulgazione"
+  },
+  {
+   "label": "onesta-argomentativa.md",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa",
+   "community": 5,
+   "norm_label": "onesta-argomentativa.md"
+  },
+  {
+   "label": "Cercare il vincolo fisico sotto il fenomeno finanziario",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L46",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_cercare_il_vincolo_fisico_sotto_il_fenomeno_finanziario",
+   "community": 5,
+   "norm_label": "cercare il vincolo fisico sotto il fenomeno finanziario"
+  },
+  {
+   "label": "Chiudere con una domanda quando il giudizio spetta al lettore",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_chiudere_con_una_domanda_quando_il_giudizio_spetta_al_lettore",
+   "community": 5,
+   "norm_label": "chiudere con una domanda quando il giudizio spetta al lettore"
+  },
+  {
+   "label": "Dichiarare cosa si esclude",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L24",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_dichiarare_cosa_si_esclude",
+   "community": 5,
+   "norm_label": "dichiarare cosa si esclude"
+  },
+  {
+   "label": "Onestà argomentativa",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "community": 5,
+   "norm_label": "onesta argomentativa"
+  },
+  {
+   "label": "Rispondere per gradi quando la domanda e' binaria",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_rispondere_per_gradi_quando_la_domanda_e_binaria",
+   "community": 5,
+   "norm_label": "rispondere per gradi quando la domanda e' binaria"
+  },
+  {
+   "label": "Una tesi che cambia va tenuta, non riscritta",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L57",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_onesta_argomentativa_una_tesi_che_cambia_va_tenuta_non_riscritta",
+   "community": 5,
+   "norm_label": "una tesi che cambia va tenuta, non riscritta"
   }
  ],
  "links": [
@@ -195,6 +485,326 @@
    "weight": 1.0,
    "source": "raw_divulgazione_readme_divulgazione",
    "target": "raw_divulgazione_readme_note",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-austerita.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_austerita",
+   "target": "raw_divulgazione_universalis_austerita_austerità_analisi_di_una_politica_fallimentare",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-davos-2026.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_davos_2026",
+   "target": "raw_divulgazione_universalis_davos_2026_davos_2026_anno_zero",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_nuovo_ordine_mondiale",
+   "target": "raw_divulgazione_universalis_nuovo_ordine_mondiale_nuovo_ordine_mondiale_difesa_intelligenza_artificiale_e_artico",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-un-regalo.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_un_regalo",
+   "target": "raw_divulgazione_universalis_un_regalo_un_regalo",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "raw_divulgazione_universalis_austerita",
+   "relation": "derived_from",
+   "nota": "i quattro dispositivi di chiarezza, ciascuno verificabile sull'articolo da cui e' estratto",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_divulgazione_corpus_universalis",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L67",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_divulgazione_index",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L69",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "wiki_divulgazione_onesta_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L54",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "target": "wiki_divulgazione_come_si_spiega_il_gruppo_di_controllo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "target": "wiki_divulgazione_come_si_spiega_l_esempio_unico_portato_fino_in_fondo",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L42",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "target": "wiki_divulgazione_come_si_spiega_la_metafora_che_regge_la_struttura",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/come-si-spiega.md",
+   "source_location": "L28",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_come_si_spiega_come_si_spiega_una_cosa_difficile",
+   "target": "wiki_divulgazione_come_si_spiega_la_storia_prima_della_teoria",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "raw_divulgazione_universalis_austerita",
+   "relation": "derived_from",
+   "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "raw_divulgazione_universalis_davos_2026",
+   "relation": "derived_from",
+   "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "raw_divulgazione_universalis_nuovo_ordine_mondiale",
+   "relation": "derived_from",
+   "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "raw_divulgazione_universalis_un_regalo",
+   "relation": "derived_from",
+   "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L67",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "wiki_divulgazione_index",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "wiki_divulgazione_onesta_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L48",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "target": "wiki_divulgazione_corpus_universalis_cosa_manca_dichiarato",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "target": "wiki_divulgazione_corpus_universalis_dove_sono_finiti_e_perche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L59",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "target": "wiki_divulgazione_corpus_universalis_freschezza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L28",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
+   "target": "wiki_divulgazione_corpus_universalis_i_filoni",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/index.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_index",
+   "target": "wiki_divulgazione_index_divulgazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/index.md",
+   "source_location": "L25",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_index",
+   "target": "wiki_divulgazione_onesta_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L46",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_cercare_il_vincolo_fisico_sotto_il_fenomeno_finanziario",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_chiudere_con_una_domanda_quando_il_giudizio_spetta_al_lettore",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L24",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_dichiarare_cosa_si_esclude",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_rispondere_per_gradi_quando_la_domanda_e_binaria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/onesta-argomentativa.md",
+   "source_location": "L57",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_onesta_argomentativa_onestà_argomentativa",
+   "target": "wiki_divulgazione_onesta_argomentativa_una_tesi_che_cambia_va_tenuta_non_riscritta",
    "confidence_score": 1.0
   }
  ]

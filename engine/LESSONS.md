@@ -7,9 +7,9 @@
 
 ## Sintesi
 
-- lezioni registrate: **19** · sessioni graphify: **1**
-- esiti: 13 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
-- skill piu attive: manuale (9), aion (3), atlante-3d (3), report (1), oracle (1)
+- lezioni registrate: **20** · sessioni graphify: **1**
+- esiti: 14 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
+- skill piu attive: manuale (9), aion (3), atlante-3d (3), triage (2), report (1)
 - temi ricorrenti: metodo (5), verifica (3), visualizzazione (3), report (2), grafo (2), graphify (2), limite (2), corpus (2)
 
 ## Ancoraggi consolidati
@@ -55,6 +55,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-11** _((triage, utile))_ — Smistare per MATERIA invece che per categoria del sito ha riempito tre aree vuote: finanza 4->37 nodi, divulgazione 10->39, web-design 4->8. La guardia di coesione ha fermato la pipeline perche' le due note aggiunte in raw/aion non linkavano nulla: aggiungere file a un'area coesa senza collegarli la spezza in componenti, e nessuno se ne accorgerebbe guardando. Il verificatore stilometrico contava come prosa il codice in riga e il testo tra virgolette caporali: chiedeva di correggere un anglicismo DENTRO UNA CITAZIONE, cioe' di falsificare la fonte. Terzo caso della stessa classe di difetto dop
+  - contesto: ingerire 18 articoli pubblicati da un sito e smistarli per materia nel brain
 - **2026-08-11** _((triage, utile))_ — Ricalcolare i numeri dalla fonte invece di riprenderli dalla prosa: qui coincidevano, ma il controllo costa un minuto e rende citabile il risultato. Due difetti trovati usando le guardie del brain sul lavoro vero: style_check.py moriva su console cp1252 prima del verdetto (una freccia bastava) e contava il bersaglio dei wikilink come prosa, chiedendo di correggere il NOME di una pagina. Una classe 'correggi sempre' che segnala identificatori insegna a ignorarla. Nota strutturale: graphify indicizza solo .md, quindi una cartella di soli notebook/PDF non ha nodo e non puo reggere la provenienza:
   - contesto: elaborare il project work di analisi magazzino e inserirlo nella knowledge
 - **2026-08-11** _((atlante-3d, utile))_ — Un artefatto puo essere presente e comunque introvabile: graphify-out conteneva tre .html senza alcun indizio su quale aprire. La porta (index.html) dice a quale domanda risponde ogni vista PRIMA del click. Deterministica: i numeri vengono dal grafo, non dal peso dei file (che dipende dalla versione di graphify).
@@ -77,5 +79,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: come si struttura un'analisi dati end-to-end
 - **2026-08-08** _((aion, vicolo-cieco))_ — descritto ma non eseguibile: non porta a nulla di operativo
   - contesto: quale componente usare per la generazione cinematografica
-- **2026-08-07** _((manuale, utile))_ — una voce di roadmap invecchia male se descrive come 'da costruire' cio che e gia costruito: va riscritta con lo STATO reale (fatto/da attivare), il costo vero misurato e il criterio per capire se e servita davvero
-  - contesto: dove registrare un miglioramento futuro gia progettato ma non attivato

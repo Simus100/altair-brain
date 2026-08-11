@@ -31,6 +31,11 @@
       "nodo": "Antologia della voce — il modello positivo"
     },
     {
+      "dove": "wiki/creativita/carta-della-prosa.md",
+      "grado": 9,
+      "nodo": "carta-della-prosa.md"
+    },
+    {
       "dove": "wiki/creativita/fasi-editoriali.md",
       "grado": 9,
       "nodo": "fasi-editoriali.md"
@@ -51,19 +56,18 @@
       "nodo": "anti-ai.md"
     },
     {
-      "dove": "wiki/creativita/carta-della-prosa.md",
-      "grado": 8,
-      "nodo": "carta-della-prosa.md"
-    },
-    {
       "dove": "wiki/creativita/stilometria.md",
       "grado": 8,
       "nodo": "stilometria.md"
     }
   ],
-  "file": 22,
+  "file": 23,
   "generato_il": "2026-08-11",
   "modificati_di_recente": [
+    {
+      "file": "raw/creativita/universalis-enneagramma.md",
+      "giorni_fa": 0
+    },
     {
       "file": "raw/creativita/bookforge/anti-ai.md",
       "giorni_fa": 2
@@ -99,11 +103,7 @@
     {
       "file": "raw/creativita/bookforge/psicologia.md",
       "giorni_fa": 2
-    },
-    {
-      "file": "raw/creativita/bookforge/scrittura.md",
-      "giorni_fa": 2
     }
   ],
-  "nodi": 167
+  "nodi": 169
 }

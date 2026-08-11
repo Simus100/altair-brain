@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-11)
 
 ## Corpus Check
-- 240 files · ~232,446 words
+- 265 files · ~244,548 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1694 nodes · 2191 edges · 200 communities (187 shown, 13 thin omitted)
+- 1772 nodes · 2260 edges · 211 communities (181 shown, 30 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5feae90b`
+- Built from commit: `b658dc62`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -168,17 +168,28 @@
 - [[_COMMUNITY_Community 186|Community 186]]
 - [[_COMMUNITY_Community 187|Community 187]]
 - [[_COMMUNITY_Community 188|Community 188]]
-- [[_COMMUNITY_Community 189|Community 189]]
-- [[_COMMUNITY_Community 190|Community 190]]
-- [[_COMMUNITY_Community 191|Community 191]]
 - [[_COMMUNITY_Community 192|Community 192]]
 - [[_COMMUNITY_Community 193|Community 193]]
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
 - [[_COMMUNITY_Community 196|Community 196]]
 - [[_COMMUNITY_Community 197|Community 197]]
-- [[_COMMUNITY_Community 198|Community 198]]
 - [[_COMMUNITY_Community 199|Community 199]]
+- [[_COMMUNITY_Community 200|Community 200]]
+- [[_COMMUNITY_Community 201|Community 201]]
+- [[_COMMUNITY_Community 202|Community 202]]
+- [[_COMMUNITY_Community 203|Community 203]]
+- [[_COMMUNITY_Community 204|Community 204]]
+- [[_COMMUNITY_Community 205|Community 205]]
+- [[_COMMUNITY_Community 206|Community 206]]
+- [[_COMMUNITY_Community 207|Community 207]]
+- [[_COMMUNITY_Community 208|Community 208]]
+- [[_COMMUNITY_Community 209|Community 209]]
+- [[_COMMUNITY_Community 210|Community 210]]
+- [[_COMMUNITY_Community 211|Community 211]]
+- [[_COMMUNITY_Community 212|Community 212]]
+- [[_COMMUNITY_Community 213|Community 213]]
+- [[_COMMUNITY_Community 214|Community 214]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cerca()` - 20 edges
@@ -193,25 +204,25 @@
 10. `_safe()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `test_attribuzione_senza_mobili_e_range()` --calls--> `attribute_reading()`  [EXTRACTED]
-  tests/test_tools.py → tools/oracle_cast.py
-- `context()` --calls--> `come_testo()`  [EXTRACTED]
-  server/app.py → tools/context_pack.py
+- `test_ricerca_filtro_area_e_limite()` --calls--> `cerca()`  [EXTRACTED]
+  tests/test_tools.py → tools/search.py
+- `test_ricerca_query_senza_risultati_non_esplode()` --calls--> `cerca()`  [EXTRACTED]
+  tests/test_tools.py → tools/search.py
+- `test_confidenza_alta_su_conoscenza_presente()` --calls--> `cerca_con_diagnosi()`  [EXTRACTED]
+  tests/test_tools.py → tools/search.py
 - `search()` --calls--> `cerca_con_diagnosi()`  [EXTRACTED]
   server/brain_core.py → tools/search.py
 - `context_pack()` --calls--> `pacchetto()`  [EXTRACTED]
   server/brain_core.py → tools/context_pack.py
-- `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
-  server/brain_core.py → tools/oracle_cast.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (200 total, 13 thin omitted)
+## Communities (211 total, 30 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.18
-Nodes (13): Controlli di qualita dei dati (data quality), Data cleaning, Dataset e file di dati (fuori dal repo), Microsoft Excel, Feature engineering (colonne derivate), Data science, Progetti reali (data science), Progetto: Analisi prenotazioni hotel (+5 more)
+Cohesion: 0.05
+Nodes (51): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Cloud computing, Controlli di qualita dei dati (data quality), Data cleaning, Data-driven culture, Data storytelling (+43 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.09
@@ -222,20 +233,20 @@ Cohesion: 0.12
 Nodes (31): Exception, area_graph_path(), BrainError, capture(), context_pack(), graph_query(), graphify_available(), health_info() (+23 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.08
-Nodes (28): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., --segna deve aggiornare 'reviewed' senza toccare il resto della nota. (+20 more)
+Cohesion: 0.07
+Nodes (28): Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., --segna deve aggiornare 'reviewed' senza toccare il resto della nota., La nota raccolta deve esistere ED essere dichiarata nel registro di     provenie, Repo PUBBLICO: hook versionati = codice shell eseguito sulla macchina di     chi (+20 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.22
-Nodes (9): Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv, Fuori dominio il sistema deve DIRE di non fidarsi.      Il test verificava «zero, Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La     differe, test_confidenza_alta_su_conoscenza_presente(), test_confidenza_bassa_su_conoscenza_assente(), test_confidenza_scarsa_fuori_dominio(), test_diagnosi_dichiara_cosa_misura(), cerca_con_diagnosi() (+1 more)
+Cohesion: 0.11
+Nodes (17): Come si spiega una cosa difficile, Il gruppo di controllo, L'esempio unico portato fino in fondo, La metafora che regge la struttura, La storia prima della teoria, Cosa manca, dichiarato, Dove sono finiti, e perche', Freschezza (+9 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.14
-Nodes (22): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_cast_seedato_riproducibile(), test_ricerca_tag_suggerisce_43() (+14 more)
+Cohesion: 0.12
+Nodes (14): 1. Da dove viene l'analisi tecnica, 2. Cosa si scambia, 3. Il mercato criptovalutario, Analisi tecnica dei mercati (corso in tre parti), Come e' costruito il corso, Cosa se ne ricava, Gennaio 2026 — lo scarto è il sintomo di una bolla, Giugno 2026 — lo scarto è il costo di una transizione (+6 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.13
@@ -270,8 +281,8 @@ Cohesion: 0.12
 Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.17
-Nodes (15): Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata, Dopo la correzione del parser, nessuna nota deve restare scoperta., test_freshness_rileva_fatto_scaduto(), test_frontmatter_apertura_senza_chiusura(), test_frontmatter_non_confonde_una_riga_di_testo(), test_frontmatter_riconosce_il_blocco_valido(), test_tutte_le_note_raw_hanno_provenienza() (+7 more)
+Cohesion: 0.13
+Nodes (21): Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata, Dopo la correzione del parser, nessuna nota deve restare scoperta., test_freshness_rileva_fatto_scaduto(), test_frontmatter_apertura_senza_chiusura(), test_frontmatter_non_confonde_una_riga_di_testo(), test_frontmatter_riconosce_il_blocco_valido(), test_tutte_le_note_raw_hanno_provenienza() (+13 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.20
@@ -290,8 +301,8 @@ Cohesion: 0.14
 Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.31
-Nodes (7): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
+Cohesion: 0.23
+Nodes (9): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:, I Ching: 1. Consultazione (+1 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.15
@@ -310,8 +321,8 @@ Cohesion: 0.18
 Nodes (16): _inbox e una cartella tecnica, non una macroarea: areas.json e il registro., Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa, test_consolidate_ordina_per_grado_non_per_etichetta(), test_consolidate_produce_digest_solo_per_aree_reali(), test_consolidate_rileva_lezioni_ridondanti(), _carica_json(), conoscenza_stantia(), digest_per_area() (+8 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.20
-Nodes (15): Regressione: se query e indice filtrano stopword diverse, i termini scartati, test_tokenizzazione_query_coerente_con_indice(), _carica(), cerca_bm25(), diagnosi(), _fresco(), _memoria(), _normalizza() (+7 more)
+Cohesion: 0.14
+Nodes (21): Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma, Un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi, test_memoria_non_annota_per_nodi_numerici_corti(), test_memoria_non_attribuisce_per_sottostringa(), _annota_memoria(), _carica(), cerca_bm25(), _corrisponde() (+13 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.27
@@ -642,8 +653,8 @@ Cohesion: 0.50
 Nodes (3): Procedura, Skill: triage dell'inbox, Vincoli
 
 ### Community 109 - "Community 109"
-Cohesion: 0.14
-Nodes (11): Algebra relazionale, Docker, draw.io, Jupyter Notebook, MongoDB, PostgreSQL, Power BI, Progettazione di un database (+3 more)
+Cohesion: 0.13
+Nodes (23): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_attribuzione_senza_mobili_e_range(), test_cast_seedato_riproducibile() (+15 more)
 
 ### Community 110 - "Community 110"
 Cohesion: 0.50
@@ -675,7 +686,7 @@ Nodes (3): items, type, orchestra
 
 ### Community 163 - "Community 163"
 Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
+Nodes (12): BM25 deve portare in cima la pagina che tratta davvero l'argomento., Una lezione registrata deve cambiare cio che si vede la volta dopo., Vulnerabilita reale: la cache non si invalidava mai. Sulla VPS l'API resta     a, test_cache_ricarica_se_indice_cambia(), test_memoria_annota_ancoraggi_consolidati(), test_ricerca_trova_il_contenuto_giusto(), cerca(), cerca_denso() (+4 more)
 
 ### Community 164 - "Community 164"
 Cohesion: 0.08
@@ -738,12 +749,12 @@ Cohesion: 0.26
 Nodes (11): test_resurface_sceglie_con_criterio_e_esclude_i_generati(), candidati(), _frontmatter(), _gradi_per_file(), main(), Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda., Parser condiviso (tools/frontmatter)., Quanto e collegata ogni nota: le isolate sono quelle che si dimenticano prima. (+3 more)
 
 ### Community 181 - "Community 181"
-Cohesion: 0.09
-Nodes (29): BaseModel, Request, Response, affected(), capture(), CaptureReq, context(), _err() (+21 more)
+Cohesion: 0.08
+Nodes (33): BaseModel, Request, Response, affected(), capture(), CaptureReq, context(), _err() (+25 more)
 
 ### Community 182 - "Community 182"
-Cohesion: 0.17
-Nodes (8): Cloud computing, Data-driven culture, Data storytelling, Intelligenza artificiale (fondamenti), Metodi e concetti (data science), Normalizzazione dei decimali (ENG/ITA), Prompt engineering, Tipi di analisi dati
+Cohesion: 0.38
+Nodes (7): _mini_repo(), Path, Copia minima del layout repo: tools/report_update.py + report finto., _run_update(), test_report_update_nodo_e_sync_prototipo(), test_report_update_nodo_inesistente_fallisce(), test_report_update_verdict_set_current()
 
 ### Community 183 - "Community 183"
 Cohesion: 0.25
@@ -752,10 +763,6 @@ Nodes (7): Apprendimento (ultimo passo, obbligatorio), In stesura vale SOLO la C
 ### Community 184 - "Community 184"
 Cohesion: 0.29
 Nodes (11): area_di(), aree_canoniche(), carica(), costruisci(), disponi(), html(), main(), Assegna x,y,z. Deterministico: dipende solo dal grafo, mai dall'ordine di     it (+3 more)
-
-### Community 185 - "Community 185"
-Cohesion: 0.32
-Nodes (4): Analisi esplorativa (EDA), Analisi relazionale (confronti tra variabili), Framework delle domande analitiche, Visualizzazione efficace dei dati
 
 ### Community 186 - "Community 186"
 Cohesion: 0.33
@@ -769,69 +776,49 @@ Nodes (4): html(), main(), numeri(), Cosa contiene ciascuna vista, contato sul g
 Cohesion: 0.40
 Nodes (4): Avvertenze sulla fonte, Cosa c'e in `MACELLONI_SIMONE_Analisi Dati di magazzino/`, Il dato in breve, Project work — Analisi dati di magazzino
 
-### Community 189 - "Community 189"
-Cohesion: 0.40
-Nodes (5): Dove va scritto, I tre modi in cui un dato smette di poter rispondere, Il caso a parte: il dato che manca per attribuire una causa, Limiti dichiarati (cosa il dato non puo dire), Perche e un pezzo di metodo, non una premessa di cortesia
-
-### Community 190 - "Community 190"
-Cohesion: 0.40
-Nodes (5): Cosa e emerso, Cosa il dato NON poteva dire, Il metodo, in due passaggi separati, Progetto: Analisi dati di magazzino, Uscite
-
-### Community 191 - "Community 191"
-Cohesion: 0.40
-Nodes (5): Come si organizzano i notebook, Python / pandas, Ricette di analisi, Ricette di pulizia, Verifica finale
-
 ### Community 192 - "Community 192"
-Cohesion: 0.17
-Nodes (15): Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare     l'i, Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace., test_context_pack_avverte_quando_non_sa(), test_context_pack_deduplica_per_file(), test_context_pack_non_riempie_con_riempitivo(), test_context_pack_rispetta_il_budget_reale(), come_testo(), _lezioni_pertinenti() (+7 more)
+Cohesion: 0.21
+Nodes (11): Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace., test_context_pack_avverte_quando_non_sa(), test_context_pack_deduplica_per_file(), test_context_pack_non_riempie_con_riempitivo(), _lezioni_pertinenti(), pacchetto(), Cosa c'e intorno ai file trovati, secondo il grafo. Evita all'agente di     dove, Le lezioni che riguardano cio che stiamo per dare in pasto al modello. (+3 more)
 
 ### Community 193 - "Community 193"
-Cohesion: 0.14
-Nodes (14): BM25 deve portare in cima la pagina che tratta davvero l'argomento., Una lezione registrata deve cambiare cio che si vede la volta dopo., Vulnerabilita reale: la cache non si invalidava mai. Sulla VPS l'API resta     a, test_cache_ricarica_se_indice_cambia(), test_memoria_annota_ancoraggi_consolidati(), test_ricerca_filtro_area_e_limite(), test_ricerca_query_senza_risultati_non_esplode(), test_ricerca_trova_il_contenuto_giusto() (+6 more)
+Cohesion: 0.17
+Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
 
 ### Community 194 - "Community 194"
 Cohesion: 0.23
 Nodes (12): analizza(), analizza_via_cli(), carica_motore(), main(), Ripiego robusto: lo script come processo separato, sul suo contratto pubblico., Il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda., Importa lo script canonico di BookForge come modulo (una sola implementazione)., Estrae la PROSA da md/txt/html: i tag e il front-matter non sono scrittura. (+4 more)
 
 ### Community 195 - "Community 195"
-Cohesion: 0.33
-Nodes (8): Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc, Il codice non si giudica con le misure della scrittura: senza questo, un     not, Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia., _scrivi(), test_gli_anglicismi_veri_vengono_ancora_visti(), test_i_blocchi_di_codice_non_sono_prosa(), test_il_bersaglio_di_un_wikilink_non_e_prosa(), test_il_front_matter_non_e_prosa()
-
-### Community 196 - "Community 196"
-Cohesion: 0.25
-Nodes (8): Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma, Un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi, test_memoria_non_annota_per_nodi_numerici_corti(), test_memoria_non_attribuisce_per_sottostringa(), _annota_memoria(), _corrisponde(), Un nodo citato da una lezione si riferisce a questo risultato?      Prudenza vol, Cosa dice l'esperienza passata su questo risultato.
-
-### Community 197 - "Community 197"
-Cohesion: 0.48
-Nodes (6): area_di(), costruisci(), data_primo_commit(), Data del primo commit che introduce il file: deterministica e verificabile., Front-matter minimo e onesto: solo cio che si puo dedurre con certezza., rel()
-
-### Community 198 - "Community 198"
-Cohesion: 0.60
-Nodes (5): test_report_harvest_estrae_fonti_e_metodo(), componi(), main(), raccogli(), _voci()
+Cohesion: 0.23
+Nodes (12): Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc, Il codice non si giudica con le misure della scrittura: senza questo, un     not, Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia., Un percorso di file ripetuto tre volte in un elenco non e' una ripetizione     s, Chiedere di correggere un anglicismo dentro una citazione significa chiedere, _scrivi(), test_gli_anglicismi_veri_vengono_ancora_visti(), test_i_blocchi_di_codice_non_sono_prosa() (+4 more)
 
 ### Community 199 - "Community 199"
 Cohesion: 0.50
 Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
 
+### Community 214 - "Community 214"
+Cohesion: 0.25
+Nodes (8): Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv, Fuori dominio il sistema deve DIRE di non fidarsi.      Il test verificava «zero, Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La     differe, test_confidenza_bassa_su_conoscenza_assente(), test_confidenza_scarsa_fuori_dominio(), test_diagnosi_dichiara_cosa_misura(), cerca_con_diagnosi(), Ricerca + valutazione della propria affidabilita (F1). E la forma che usano
+
 ## Knowledge Gaps
-- **854 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+849 more)
+- **897 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+892 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `come_testo()` connect `Community 192` to `Community 8`, `Community 3`, `Community 181`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `8. 比 La Coesione (Bǐ) ䷇` connect `Community 93` to `Community 20`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `cerca_con_diagnosi()` connect `Community 5` to `Community 192`, `Community 193`, `Community 2`, `Community 3`, `Community 7`, `Community 25`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `come_testo()` connect `Community 181` to `Community 8`, `Community 3`, `Community 192`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `cerca_con_diagnosi()` connect `Community 214` to `Community 192`, `Community 2`, `Community 3`, `Community 163`, `Community 7`, `Community 25`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `dividi()` connect `Community 15` to `Community 194`, `Community 3`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _995 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1040 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12310606060606061 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.07741935483870968 - nodes in this community are weakly interconnected._

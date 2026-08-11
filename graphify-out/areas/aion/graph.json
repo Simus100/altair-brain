@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
+ "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -5356,6 +5356,46 @@
    "norm_label": "note"
   },
   {
+   "label": "universalis-i-ching-consultazione.md",
+   "file_type": "document",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_aion_universalis_i_ching_consultazione",
+   "community": 20,
+   "norm_label": "universalis-i-ching-consultazione.md"
+  },
+  {
+   "label": "I Ching: 1. Consultazione",
+   "file_type": "document",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_aion_universalis_i_ching_consultazione_i_ching_1_consultazione",
+   "community": 20,
+   "norm_label": "i ching: 1. consultazione"
+  },
+  {
+   "label": "universalis-i-ching-trigrammi.md",
+   "file_type": "document",
+   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_aion_universalis_i_ching_trigrammi",
+   "community": 20,
+   "norm_label": "universalis-i-ching-trigrammi.md"
+  },
+  {
+   "label": "I Ching: 2. Gli otto trigrammi",
+   "file_type": "document",
+   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_aion_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
+   "community": 20,
+   "norm_label": "i ching: 2. gli otto trigrammi"
+  },
+  {
    "label": "aion-adaptive.md",
    "file_type": "document",
    "source_file": "wiki/aion/aion-adaptive.md",
@@ -5502,7 +5542,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_ethos",
-   "community": 163,
+   "community": 193,
    "norm_label": "aion-ethos.md"
   },
   {
@@ -5512,7 +5552,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_aion_ethos_aion_ethos",
-   "community": 163,
+   "community": 193,
    "norm_label": "aion_ethos"
   },
   {
@@ -5842,7 +5882,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_004",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento-004.md"
   },
   {
@@ -5852,7 +5892,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_004_insegnamento_004_auto_riflessivita_cognitiva",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento 004 - auto-riflessivita cognitiva"
   },
   {
@@ -6062,7 +6102,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_015",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento-015.md"
   },
   {
@@ -6072,7 +6112,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_015_insegnamento_015_pattern_emotivo_archetipici",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento 015 - pattern emotivo-archetipici"
   },
   {
@@ -6122,7 +6162,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_018",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento-018.md"
   },
   {
@@ -6132,7 +6172,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_018_insegnamento_018_allineamento_con_aion_ethos",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento 018 - allineamento con aion_ethos"
   },
   {
@@ -6142,7 +6182,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_019",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento-019.md"
   },
   {
@@ -6152,7 +6192,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_insegnamento_019_insegnamento_019_assiomi_invisibili",
-   "community": 163,
+   "community": 193,
    "norm_label": "insegnamento 019 - assiomi invisibili"
   },
   {
@@ -6302,7 +6342,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica",
-   "community": 163,
+   "community": 193,
    "norm_label": "livello-identita-etica.md"
   },
   {
@@ -6312,7 +6352,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_aion_livello_identita_etica_livello_identita_etica",
-   "community": 163,
+   "community": 193,
    "norm_label": "livello identita / etica"
   },
   {
@@ -11945,6 +11985,76 @@
    "weight": 1.0,
    "source": "raw_aion_readme_aion_modello_di_pensiero",
    "target": "raw_aion_readme_note",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L46",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_consultazione",
+   "target": "raw_aion_aion_framework",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L43",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_consultazione",
+   "target": "raw_aion_aion_oracle",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_consultazione",
+   "target": "raw_aion_universalis_i_ching_consultazione_i_ching_1_consultazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
+   "source_location": "L45",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_consultazione",
+   "target": "raw_aion_universalis_i_ching_trigrammi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
+   "source_location": "L36",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_trigrammi",
+   "target": "raw_aion_aion_framework",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
+   "source_location": "L29",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_trigrammi",
+   "target": "raw_aion_aion_oracle",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_aion_universalis_i_ching_trigrammi",
+   "target": "raw_aion_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
    "confidence_score": 1.0
   },
   {
