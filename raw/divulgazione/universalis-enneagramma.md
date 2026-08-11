@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: creativita
+area: divulgazione
 source: https://www.universalis.it/filosofia/enneagramma
 tags: [enneagramma, personaggio, psicologia, tipologie]
 reviewed: 2026-08-11
@@ -10,10 +10,11 @@ reviewed: 2026-08-11
 Articolo proprio, pubblicato il **20 novembre 2020** su universalis.it (~2.300 parole,
 registro saggistico-divulgativo, didattico).
 
-**Perche' sta qui.** BookForge usa l'Enneagramma per costruire la psicologia dei
-personaggi (`wiki/creativita/psicologia-personaggio.md`). Questa nota e' la fonte
-divulgativa dello stesso sistema, scritta prima e in modo indipendente: serve a
-verificare che l'uso narrativo non abbia deformato il modello di partenza.
+**COSA NON E'.** Non e' una fonte della dottrina di scrittura del brain. L'area
+`creativita` ha la propria, distillata da BookForge, e resta separata: questa e'
+divulgazione, cioe' il modo in cui l'autore racconta l'Enneagramma a chi non lo
+conosce. Vale come esempio del suo modo di esporre un sistema, non come definizione
+operativa da applicare a un personaggio.
 
 **Tesi.** «L'enneagramma è uno strumento molto potente che offre la possibilità di
 interagire con nove visioni diverse della realtà.»
@@ -38,7 +39,6 @@ visioni del mondo.
 **Chiude** sul tipo 9: «Solitamente si adatta a ciò che le persone considerano giusto
 e tende a non vedere i problemi o comunque non affrontarli apertamente.»
 
-**Da verificare:** i nomi dei nove tipi qui usati vanno confrontati con quelli
-adottati in `wiki/creativita/psicologia-personaggio.md`. Due nomenclature diverse
-per lo stesso tipo, dentro lo stesso brain, sono un attrito che si paga a ogni
-consultazione.
+**Nota di lettura:** i nomi dei nove tipi qui usati sono quelli scelti dall'autore per
+un pubblico generalista e possono non coincidere con altre nomenclature. Vanno citati
+come sue, non come standard.

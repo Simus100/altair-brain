@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: data-science
+area: divulgazione
 source: https://www.universalis.it/informatica/a-dijkstra
 tags: [algoritmi, pathfinding, euristiche, grafi, javascript]
 reviewed: 2026-08-11
@@ -10,10 +10,10 @@ reviewed: 2026-08-11
 Articolo proprio, pubblicato il **20 novembre 2020** su universalis.it (~2.800 parole,
 registro tecnico-didattico, con codice JavaScript).
 
-**Perche' sta in data-science e non in informatica generica:** e' ricerca su grafo, la
-stessa famiglia di algoritmi che il brain usa per navigare se stesso (`graphify` fa
-BFS sul grafo della conoscenza). Il vocabolario di questa nota — nodo, costo,
-euristica, lista aperta — e' quello con cui si ragiona sul grafo del brain.
+**Cos'e' nel brain.** Divulgazione tecnica: un articolo che spiega un algoritmo a chi
+non lo conosce. Non e' documentazione del brain e non descrive come funziona
+`graphify` — sta qui come esempio del modo in cui l'autore rende comprensibile una
+materia formale.
 
 **Tesi/scopo.** «L'algoritmo di ricerca A* é stato sviluppato dallo "Stanford Research
 institute" ed ampiamente utilizzato nel pathfinding. Esso rappresenta un'estensione

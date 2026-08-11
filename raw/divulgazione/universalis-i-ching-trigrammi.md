@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: aion
+area: divulgazione
 source: https://www.universalis.it/filosofia/i-ching-gli-otto-trigrammi
 tags: [i-ching, trigrammi, bagua, esagrammi]
 reviewed: 2026-08-11
@@ -15,9 +15,13 @@ registro tecnico-descrittivo). Seconda puntata, dopo
 otto trigrammi seguendo uno schema fisso. Va usato come materiale di riferimento, non
 come fonte di tesi.
 
+**COSA NON E'.** Non e' una fonte dell'oracolo del brain. Quella catena parte da
+`raw/aion/aion-oracle.md` ed e' impersonale per costruzione: qui siamo nella
+divulgazione, cioe' nel modo in cui l'autore racconta la materia.
+
 **Apre** con la regola che tiene insieme il sistema: «Ogni esagramma si compone di un
 trigramma inferiore ed uno superiore.» E' la ragione combinatoria dei 64 esagrammi
-(8 × 8) su cui poggia il database in `engine/iching.db.json`.
+(8 × 8).
 
 **Gli otto trigrammi nominati**, con la terminologia tradizionale tradotta in
 italiano: **Qian, Kun, Zhen, Kan, Gen, Sun, Li, Dui**.
@@ -25,12 +29,9 @@ italiano: **Qian, Kun, Zhen, Kan, Gen, Sun, Li, Dui**.
 Nessuna fonte bibliografica citata. Termina con la descrizione di Dui, senza chiusura
 formale.
 
-**Uso previsto nel brain:** verificare che i nomi e l'ordine dei trigrammi qui
-esposti coincidano con quelli del database generato da [[aion-oracle]]. Se
-divergessero, e' un disallineamento tra la fonte divulgativa pubblicata e la fonte
-eseguibile — vale la pena saperlo prima che lo noti un lettore.
+**Uso previsto:** materiale di riferimento sulla nomenclatura tradizionale, e esempio
+di forma breve nel corpus dell'autore — una tavola, non un saggio.
 
 Collegati:
-- [[aion-oracle]] — la fonte eseguibile: 64 esagrammi, linee mobili, lookup Re Wen
 - [[universalis-i-ching-consultazione]] — la prima puntata
-- [[aion-framework]]
+- [[README]]

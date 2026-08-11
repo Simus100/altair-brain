@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "89cd274b216474d07479616e46ea6f6fa76525cd",
+ "built_at_commit": "f0e540f5dfda041a9eae395d3aa5f4ecbf911f85",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -5354,46 +5354,6 @@
    "id": "raw_aion_readme_note",
    "community": 199,
    "norm_label": "note"
-  },
-  {
-   "label": "universalis-i-ching-consultazione.md",
-   "file_type": "document",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L1",
-   "_origin": "ast",
-   "id": "raw_aion_universalis_i_ching_consultazione",
-   "community": 20,
-   "norm_label": "universalis-i-ching-consultazione.md"
-  },
-  {
-   "label": "I Ching: 1. Consultazione",
-   "file_type": "document",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L8",
-   "_origin": "ast",
-   "id": "raw_aion_universalis_i_ching_consultazione_i_ching_1_consultazione",
-   "community": 20,
-   "norm_label": "i ching: 1. consultazione"
-  },
-  {
-   "label": "universalis-i-ching-trigrammi.md",
-   "file_type": "document",
-   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
-   "source_location": "L1",
-   "_origin": "ast",
-   "id": "raw_aion_universalis_i_ching_trigrammi",
-   "community": 20,
-   "norm_label": "universalis-i-ching-trigrammi.md"
-  },
-  {
-   "label": "I Ching: 2. Gli otto trigrammi",
-   "file_type": "document",
-   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
-   "source_location": "L8",
-   "_origin": "ast",
-   "id": "raw_aion_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
-   "community": 20,
-   "norm_label": "i ching: 2. gli otto trigrammi"
   },
   {
    "label": "aion-adaptive.md",
@@ -11985,76 +11945,6 @@
    "weight": 1.0,
    "source": "raw_aion_readme_aion_modello_di_pensiero",
    "target": "raw_aion_readme_note",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L46",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_consultazione",
-   "target": "raw_aion_aion_framework",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L43",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_consultazione",
-   "target": "raw_aion_aion_oracle",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L8",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_consultazione",
-   "target": "raw_aion_universalis_i_ching_consultazione_i_ching_1_consultazione",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-consultazione.md",
-   "source_location": "L45",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_consultazione",
-   "target": "raw_aion_universalis_i_ching_trigrammi",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
-   "source_location": "L36",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_trigrammi",
-   "target": "raw_aion_aion_framework",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
-   "source_location": "L29",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_trigrammi",
-   "target": "raw_aion_aion_oracle",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/aion/universalis-i-ching-trigrammi.md",
-   "source_location": "L8",
-   "weight": 1.0,
-   "source": "raw_aion_universalis_i_ching_trigrammi",
-   "target": "raw_aion_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
    "confidence_score": 1.0
   },
   {

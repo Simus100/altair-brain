@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: aion
+area: divulgazione
 source: https://www.universalis.it/filosofia/i-ching
 tags: [i-ching, oracolo, esagrammi, linee-mobili, sincronicita]
 reviewed: 2026-08-11
@@ -11,18 +11,20 @@ Articolo proprio, pubblicato il **20 giugno 2022** su universalis.it (~2.200 par
 registro divulgativo-tecnico). Prima puntata, insieme a
 `universalis-i-ching-trigrammi.md`.
 
-**Perche' sta qui.** Il brain ha gia' l'oracolo eseguibile (`aion-oracle.md`,
-`engine/iching.db.json`, `tools/oracle_cast.py`). Questa nota e' la fonte *esterna e
-divulgativa* dello stesso sistema: dove il materiale interno definisce il meccanismo,
-qui c'e' il modo in cui l'autore lo spiega a chi non lo conosce.
+**COSA NON E'.** Non e' una fonte dell'oracolo del brain e non va usata come tale.
+L'oracolo eseguibile ha la sua fonte unica e impersonale in `raw/aion/aion-oracle.md`,
+da cui e' generato `engine/iching.db.json`: quella catena resta separata da qui e non
+va incrociata. Questa e' **divulgazione** — il modo in cui l'autore spiega l'I Ching a
+chi non lo conosce — e vale come esempio del suo modo di scrivere e di ragionare, non
+come definizione del sistema.
 
 **Tesi.** «L'I Ching deve essere consultato formulando domande che riguardano la
 propria posizione individuale riguardo una situazione o una circostanza.»
 
 **Il punto che conta piu' di tutti:** l'oracolo «non rivela magicamente il futuro, ma
-permette di individuare la giusta condotta». E' la stessa premessa su cui poggia
-l'attribuzione decisionale implementata in `tools/oracle_cast.py`: le linee mobili si
-leggono come vettori di cambiamento, non come previsione.
+permette di individuare la giusta condotta». Le linee mobili sono lette come vettori di
+cambiamento, non come previsione — ed e' la stessa idea che attraversa tutto il corpus
+dell'autore: interessano le regole che orientano una condotta, non le profezie.
 
 - Sessantaquattro esagrammi, linee spezzate o chiuse che esprimono **yin** e **yang**.
 - Riferimento storico: Re Wu, dinastia Zhou (~1046 a.C.).
@@ -40,7 +42,5 @@ mobili sono percio' strutturalmente piu' rare — il che spiega perche' un respo
 molte linee mobili sia un evento raro e non un caso qualsiasi.
 
 Collegati:
-- [[aion-oracle]] — la fonte eseguibile dello stesso sistema, da cui e' generato
-  `engine/iching.db.json`
 - [[universalis-i-ching-trigrammi]] — la seconda puntata
-- [[aion-framework]]
+- [[README]]

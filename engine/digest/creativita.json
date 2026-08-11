@@ -61,13 +61,9 @@
       "nodo": "stilometria.md"
     }
   ],
-  "file": 23,
+  "file": 22,
   "generato_il": "2026-08-11",
   "modificati_di_recente": [
-    {
-      "file": "raw/creativita/universalis-enneagramma.md",
-      "giorni_fa": 0
-    },
     {
       "file": "raw/creativita/bookforge/anti-ai.md",
       "giorni_fa": 2
@@ -103,7 +99,11 @@
     {
       "file": "raw/creativita/bookforge/psicologia.md",
       "giorni_fa": 2
+    },
+    {
+      "file": "raw/creativita/bookforge/scrittura.md",
+      "giorni_fa": 2
     }
   ],
-  "nodi": 169
+  "nodi": 167
 }

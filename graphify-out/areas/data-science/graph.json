@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "89cd274b216474d07479616e46ea6f6fa76525cd",
+ "built_at_commit": "f0e540f5dfda041a9eae395d3aa5f4ecbf911f85",
  "nodes": [
   {
    "label": "AI introduzione.md",
@@ -604,26 +604,6 @@
    "id": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
    "community": 99,
    "norm_label": "lo storytelling con i dati: una guida per presentazioni efficaci"
-  },
-  {
-   "label": "universalis-a-star-dijkstra.md",
-   "file_type": "document",
-   "source_file": "raw/data-science/universalis-a-star-dijkstra.md",
-   "source_location": "L1",
-   "_origin": "ast",
-   "id": "raw_data_science_universalis_a_star_dijkstra",
-   "community": 197,
-   "norm_label": "universalis-a-star-dijkstra.md"
-  },
-  {
-   "label": "A* | Dijkstra",
-   "file_type": "document",
-   "source_file": "raw/data-science/universalis-a-star-dijkstra.md",
-   "source_location": "L8",
-   "_origin": "ast",
-   "id": "raw_data_science_universalis_a_star_dijkstra_a_dijkstra",
-   "community": 197,
-   "norm_label": "a* | dijkstra"
   },
   {
    "label": "algebra-relazionale.md",
@@ -1945,16 +1925,6 @@
    "weight": 1.0,
    "source": "raw_data_science_storytelling_lo_storytelling_con_i_dati_una_guida_per_presentazioni_efficaci",
    "target": "raw_data_science_storytelling_2_le_componenti_fondamentali_della_presentazione",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/data-science/universalis-a-star-dijkstra.md",
-   "source_location": "L8",
-   "weight": 1.0,
-   "source": "raw_data_science_universalis_a_star_dijkstra",
-   "target": "raw_data_science_universalis_a_star_dijkstra_a_dijkstra",
    "confidence_score": 1.0
   },
   {

@@ -95,18 +95,6 @@
       "nota": "Dichiarare cosa si esclude e' la stessa disciplina applicata a due mestieri: in analisi decide fin dove arriva una conclusione, in scrittura dice al lettore cosa non trovera'."
     },
     {
-      "concetto": "il caso contrario come prova",
-      "from": {
-        "area": "divulgazione",
-        "page": "come-si-spiega"
-      },
-      "to": {
-        "area": "data-science",
-        "page": "framework-domande-analitiche"
-      },
-      "nota": "Il gruppo di controllo (l'Islanda che rifiuta l'austerita') trasforma un elenco di prove in un argomento: e' la stessa funzione che ha una domanda di controllo in un'analisi."
-    },
-    {
       "concetto": "prosa e architettura della spiegazione",
       "from": {
         "area": "divulgazione",
@@ -129,18 +117,6 @@
         "page": "onesta-argomentativa"
       },
       "nota": "La coppia di articoli in cui la tesi si rovescia in cinque mesi e' insieme un contenuto di finanza e il caso di studio del metodo: una tesi che cambia si data, non si riscrive."
-    },
-    {
-      "concetto": "cercare la smentita prima di credere al segnale",
-      "from": {
-        "area": "finanza",
-        "page": "analisi-tecnica-mercati"
-      },
-      "to": {
-        "area": "data-science",
-        "page": "controlli-qualita-dati"
-      },
-      "nota": "Il terzo principio di Dow (gli indici si devono confermare a vicenda) chiede di cercare la conferma indipendente prima di fidarsi: e' il controllo di coerenza applicato ai mercati."
     }
   ]
 }

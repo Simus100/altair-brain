@@ -11,11 +11,6 @@
       "nodo": "workflow-analisi-dati.md"
     },
     {
-      "dove": "wiki/data-science/controlli-qualita-dati.md",
-      "grado": 16,
-      "nodo": "controlli-qualita-dati.md"
-    },
-    {
       "dove": "wiki/data-science/progetto-magazzino.md",
       "grado": 16,
       "nodo": "progetto-magazzino.md"
@@ -31,19 +26,24 @@
       "nodo": "struttura-report-analisi.md"
     },
     {
+      "dove": "wiki/data-science/controlli-qualita-dati.md",
+      "grado": 15,
+      "nodo": "controlli-qualita-dati.md"
+    },
+    {
       "dove": "wiki/data-science/feature-engineering.md",
       "grado": 14,
       "nodo": "feature-engineering.md"
     },
     {
-      "dove": "wiki/data-science/framework-domande-analitiche.md",
-      "grado": 14,
-      "nodo": "framework-domande-analitiche.md"
-    },
-    {
       "dove": "wiki/data-science/progetto-olist-ecommerce.md",
       "grado": 14,
       "nodo": "progetto-olist-ecommerce.md"
+    },
+    {
+      "dove": "wiki/data-science/framework-domande-analitiche.md",
+      "grado": 13,
+      "nodo": "framework-domande-analitiche.md"
     },
     {
       "dove": "wiki/data-science/progetto-insurance.md",
@@ -61,15 +61,11 @@
       "nodo": "index.md"
     }
   ],
-  "file": 66,
+  "file": 65,
   "generato_il": "2026-08-11",
   "modificati_di_recente": [
     {
       "file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
-      "giorni_fa": 0
-    },
-    {
-      "file": "raw/data-science/universalis-a-star-dijkstra.md",
       "giorni_fa": 0
     },
     {
@@ -103,7 +99,11 @@
     {
       "file": "raw/data-science/AI introduzione.md",
       "giorni_fa": 4
+    },
+    {
+      "file": "raw/data-science/CALCOLO QUARTILE E INDIVIDUAZIONE OUTLIER.md",
+      "giorni_fa": 4
     }
   ],
-  "nodi": 159
+  "nodi": 157
 }

@@ -2,7 +2,7 @@
   "centrali": [
     {
       "dove": "raw/aion/aion-oracle.md",
-      "grado": 81,
+      "grado": 79,
       "nodo": "aion-oracle.md"
     },
     {
@@ -61,17 +61,9 @@
       "nodo": "aion-adaptive-core.md"
     }
   ],
-  "file": 64,
+  "file": 62,
   "generato_il": "2026-08-11",
   "modificati_di_recente": [
-    {
-      "file": "raw/aion/universalis-i-ching-consultazione.md",
-      "giorni_fa": 0
-    },
-    {
-      "file": "raw/aion/universalis-i-ching-trigrammi.md",
-      "giorni_fa": 0
-    },
     {
       "file": "wiki/aion/aion-adaptive-core.md",
       "giorni_fa": 0
@@ -103,7 +95,15 @@
     {
       "file": "wiki/aion/aion-ethos.md",
       "giorni_fa": 0
+    },
+    {
+      "file": "wiki/aion/aion-fabula.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "wiki/aion/aion-fabulatorium.md",
+      "giorni_fa": 0
     }
   ],
-  "nodi": 649
+  "nodi": 645
 }

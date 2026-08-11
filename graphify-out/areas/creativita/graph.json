@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "creativita",
- "built_at_commit": "89cd274b216474d07479616e46ea6f6fa76525cd",
+ "built_at_commit": "f0e540f5dfda041a9eae395d3aa5f4ecbf911f85",
  "nodes": [
   {
    "label": "anti-ai.md",
@@ -1204,26 +1204,6 @@
    "id": "raw_creativita_bookforge_stylometry_tokenize_words",
    "community": 166,
    "norm_label": "tokenize_words()"
-  },
-  {
-   "label": "universalis-enneagramma.md",
-   "file_type": "document",
-   "source_file": "raw/creativita/universalis-enneagramma.md",
-   "source_location": "L1",
-   "_origin": "ast",
-   "id": "raw_creativita_universalis_enneagramma",
-   "community": 196,
-   "norm_label": "universalis-enneagramma.md"
-  },
-  {
-   "label": "Enneagramma: nozioni base",
-   "file_type": "document",
-   "source_file": "raw/creativita/universalis-enneagramma.md",
-   "source_location": "L8",
-   "_origin": "ast",
-   "id": "raw_creativita_universalis_enneagramma_enneagramma_nozioni_base",
-   "community": 196,
-   "norm_label": "enneagramma: nozioni base"
   },
   {
    "label": "anti-ai.md",
@@ -2996,16 +2976,6 @@
    "weight": 1.0,
    "source": "raw_creativita_bookforge_stylometry_split_paragraphs",
    "target": "raw_creativita_bookforge_stylometry_split_sentences",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/creativita/universalis-enneagramma.md",
-   "source_location": "L8",
-   "weight": 1.0,
-   "source": "raw_creativita_universalis_enneagramma",
-   "target": "raw_creativita_universalis_enneagramma_enneagramma_nozioni_base",
    "confidence_score": 1.0
   },
   {

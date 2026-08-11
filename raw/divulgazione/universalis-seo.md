@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: web-design
+area: divulgazione
 source: https://www.universalis.it/informatica/seo-come-essere-primi-su-google-per-meritocrazia
 tags: [seo, contenuti, keyword, accessibilita, mobile]
 reviewed: 2026-08-11

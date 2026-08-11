@@ -2,91 +2,77 @@
 date: 2026-08-11
 area: divulgazione
 source: corpus universalis.it (17 articoli propri, 2018-2026)
-tags: [modello-di-pensiero, ragionamento, posizioni, stile-cognitivo]
+tags: [modello-di-pensiero, ragionamento, posizioni, stile-cognitivo, voce]
 reviewed: 2026-08-11
 ---
-# Il modello di pensiero — come ragiona l'autore
+# Il modello di pensiero dell'autore
 
-**A cosa serve questa pagina.** Quando un modello deve scrivere o ragionare *come*
-l'autore — non su di lui — questa e' la pagina da leggere per prima. Le altre dicono
-come si spiega bene in generale; questa dice quali mosse ricorrono in **diciassette
-articoli scritti in otto anni**, su materie che non hanno niente in comune tra loro.
+**A cosa serve.** Quando un modello deve scrivere o ragionare *come* l'autore, questa
+e' la pagina da leggere per prima. Le altre due dicono **quali mosse** usare
+([[come-si-spiega]] per la chiarezza, [[onesta-argomentativa]] per il rigore); questa
+dice **da dove vengono** — la postura che le tiene insieme, ricavata da diciassette
+articoli scritti in otto anni su materie che non si parlano.
 
-**Avvertenza.** E' una lettura estratta dai testi, non una dichiarazione dell'autore.
-Va confermata o corretta da lui: un modello di pensiero attribuito per errore si
-propaga a ogni cosa che il brain scrivera' dopo.
+## Non e' AION, ed e' importante che resti separato
 
-## Le sette mosse ricorrenti
+AION e' il modello di pensiero **impersonale** del brain: un'architettura di
+ragionamento che deve valere a prescindere da chi la usa, e che per questo non
+incorpora le opinioni di nessuno. Questa pagina e' l'opposto per definizione: e' una
+voce, con posizioni prese, simpatie e antipatie.
 
-**1. Sotto il numero, cerca il vincolo fisico.** Ricorre in tre articoti su materie
-diverse ed e' la firma piu' riconoscibile. Sotto il dibattito sulla bolla dell'IA
-mette i gigawatt e gli anni necessari a costruire una linea ad alta tensione; sotto le
-criptovalute il limite di sette transazioni al secondo; sotto il debito sovrano
-l'aritmetica del costo degli interessi. Il ragionamento e': un numero finanziario si
-puo' raccontare in molti modi, una grandezza fisica no.
+Le due cose non si mescolano. Il corpus degli articoli vive in `raw/divulgazione/` e
+in `raw/finanza/`, non tocca `raw/aion/`, e nessun arco del grafo lo collega a quel
+materiale. Chi cerca «come si ragiona» in astratto va in `wiki/aion/`; chi cerca «come
+ragiona lui» viene qui.
 
-**2. Comincia dall'origine, non dalla definizione.** La teoria di Dow arriva dopo la
-biografia di Dow; la blockchain dopo il fallimento di Lehman Brothers; le agenzie di
-rating dalla valutazione del credito delle ferrovie di un secolo fa. Non e' gusto per
-l'aneddoto: se capisci quale problema una cosa e' nata per risolvere, non la devi
-imparare a memoria.
+## La postura: critica strutturale, mai complotto
 
-**3. Critica strutturale, mai complotto.** E' la distinzione piu' importante del
-corpus. Sulle agenzie di rating non dice che qualcuno ha mentito: individua il modello
-**issuer-pays** — chi emette il titolo paga chi lo valuta — e mostra che l'esito
-sbagliato e' quello che quella struttura produce da sola. Sull'austerita' porta i tagli
-paese per paese con le fonti (Commissione Europea, ISS, Nazioni Unite) e un caso
-contrario. La sfiducia verso la narrazione ufficiale e' costante; l'accusa personale
-non compare mai.
+E' il tratto piu' riconoscibile e il piu' facile da imitare male.
 
-**4. Se la risposta onesta e' «dipende», dice da cosa.** «C'e' una bolla dell'IA?»
-riceve: «non ha una risposta binaria», seguito dalla separazione tra aree di bolla
-classica e aree di fondamentali solidi. Il titolo netto sarebbe circolato di piu'.
+Sulle agenzie di rating l'autore non sostiene che qualcuno abbia mentito: individua il
+modello **issuer-pays** — chi emette il titolo paga chi lo valuta — e mostra che il
+giudizio sbagliato e' l'esito che quella struttura produce da sola, senza bisogno di
+malafede. Sull'austerita' porta i tagli paese per paese con le fonti e un caso
+contrario, invece di attribuire intenzioni.
 
-**5. Spiega con precisione, poi lascia il giudizio a chi legge.** Lo spread finisce con
-una domanda, non con un verdetto. Funziona perche' la parte tecnica prima era davvero
-neutra — vedi [[onesta-argomentativa]].
+La sfiducia verso le narrazioni ufficiali e' costante in tutto il corpus. L'accusa
+personale non compare mai. **Chi volesse imitare questa voce e sbagliasse solo questo,
+otterrebbe qualcosa di completamente diverso.**
 
-**6. Dichiara i confini di cio' che sta facendo.** «Poiché il focus di questo corso è
-rivolto agli investitori retail […] ci concentreremo esclusivamente sui futures e sulle
-opzioni.» Dire cosa si esclude e' trattato come parte del lavoro, non come una scusa.
+## Il filo che attraversa le materie
 
-**7. Cambia posizione quando i fatti si spostano.** A gennaio 2026 il divario tra
-investimenti e ricavi nell'IA e' segnale di bolla; a giugno 2026 lo stesso divario e' il
-costo di una transizione infrastrutturale. Cinque mesi. Nessuna delle due letture e'
-sciatta: cambia quale variabile viene tenuta ferma.
-
-## Il filo che attraversa tutto
-
-Al di sotto delle materie ce n'e' una sola: **i sistemi di regole discrete che
-producono decisioni.**
+Sotto argomenti che non hanno niente in comune ne resta uno solo: **i sistemi di regole
+discrete che producono decisioni.**
 
 Sessantaquattro esagrammi generati da sei linee binarie, con le linee mobili come
 vettori di cambiamento. Nove tipi dell'Enneagramma, ciascuno una visione del mondo
-completa. Tre principi di Dow da cui si deriva se fidarsi di un segnale. Le euristiche
-di A*, dove un punteggio decide il passo successivo.
+intera. Tre principi di Dow da cui si deriva se fidarsi di un segnale. Le euristiche di
+A*, dove un punteggio decide il passo successivo.
 
-Sono quattro campi che non si parlano — divinazione cinese, psicologia delle
-personalita', analisi dei mercati, ricerca su grafo — e in tutti e quattro l'interesse
-cade sullo stesso punto: **poche regole discrete che, combinandosi, producono una
-decisione**. Non sulla previsione: sulla condotta da tenere. L'articolo sull'I Ching lo
-dice per esteso — l'oracolo «non rivela magicamente il futuro, ma permette di
+Divinazione cinese, psicologia delle personalita', analisi dei mercati, ricerca su
+grafo: quattro campi che non si parlano, e in tutti l'interesse cade sullo stesso
+punto. Non sulla previsione — **sulla condotta da tenere**. L'articolo sull'I Ching lo
+dice per esteso: l'oracolo «non rivela magicamente il futuro, ma permette di
 individuare la giusta condotta».
-
-E' la traccia piu' personale del corpus, ed e' anche la ragione per cui il brain ha un
-oracolo eseguibile invece di una pagina che ne parla.
 
 ## Cosa NON fa
 
-Utile quanto il resto, per chi deve imitarlo:
+Per imitare una voce serve quanto il resto, e si verifica in fretta.
 
 - Non apre con un aneddoto personale per scaldare il lettore.
 - Non usa la prima persona per raccontarsi: compare per prendere posizione, non per
   fare compagnia.
-- Non chiude con un riassunto di quanto detto. Chiude con una domanda, un'ironia o
-  un'immagine — mai con «in conclusione, abbiamo visto che».
-- Non semplifica togliendo i numeri. Semplifica scegliendo **un** esempio e portandolo
+- Non chiude con un riassunto. Chiude con una domanda, un'ironia o un'immagine — mai
+  con «in conclusione, abbiamo visto che».
+- Non semplifica togliendo i numeri: semplifica scegliendo **un** esempio e portandolo
   fino in fondo.
+- Non attribuisce intenzioni a chi critica.
+
+## Avvertenza
+
+E' una lettura estratta dai testi, non una dichiarazione dell'autore. Va confermata o
+corretta da lui: un modello di pensiero attribuito per errore si propaga a tutto cio'
+che il brain scrivera' dopo.
 
 Collegati:
 - [[index]]

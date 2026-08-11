@@ -54,7 +54,7 @@
       "label": "data-science (raw)",
       "layer": "area:data-science",
       "kind": "dato",
-      "size": 20
+      "size": 19
     },
     {
       "id": "wiki:data-science",
@@ -82,7 +82,7 @@
       "label": "divulgazione (raw)",
       "layer": "area:divulgazione",
       "kind": "dato",
-      "size": 13
+      "size": 15
     },
     {
       "id": "wiki:divulgazione",
@@ -96,7 +96,7 @@
       "label": "web-design (raw)",
       "layer": "area:web-design",
       "kind": "dato",
-      "size": 12
+      "size": 10
     },
     {
       "id": "raw:creativita",
@@ -357,11 +357,6 @@
     },
     {
       "source": "wiki:divulgazione",
-      "target": "wiki:data-science",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:divulgazione",
       "target": "wiki:finanza",
       "kind": "bridge"
     },
@@ -377,26 +372,6 @@
     },
     {
       "source": "wiki:divulgazione",
-      "target": "wiki:data-science",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:divulgazione",
-      "target": "wiki:aion",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:divulgazione",
-      "target": "wiki:creativita",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:divulgazione",
-      "target": "wiki:data-science",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:divulgazione",
       "target": "wiki:finanza",
       "kind": "bridge"
     },
@@ -452,11 +427,6 @@
     },
     {
       "source": "wiki:divulgazione",
-      "target": "wiki:data-science",
-      "kind": "bridge"
-    },
-    {
-      "source": "wiki:finanza",
       "target": "wiki:data-science",
       "kind": "bridge"
     },
@@ -477,7 +447,7 @@
       "web-design",
       "creativita"
     ],
-    "ponti_intercampo": 29,
+    "ponti_intercampo": 23,
     "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
   }
 }

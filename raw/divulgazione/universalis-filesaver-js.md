@@ -1,6 +1,6 @@
 ---
 date: 2026-08-11
-area: web-design
+area: divulgazione
 source: https://www.universalis.it/informatica/filesaver-js
 tags: [javascript, front-end, blob, download, api-browser]
 reviewed: 2026-08-11

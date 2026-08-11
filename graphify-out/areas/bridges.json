@@ -59,13 +59,6 @@
   },
   {
    "source": "wiki_divulgazione_come_si_spiega",
-   "target": "raw_data_science_universalis_a_star_dijkstra",
-   "relation": "derived_from",
-   "area_source": "divulgazione",
-   "area_target": "data-science"
-  },
-  {
-   "source": "wiki_divulgazione_come_si_spiega",
    "target": "raw_finanza_universalis_charles_dow",
    "relation": "derived_from",
    "area_source": "divulgazione",
@@ -84,34 +77,6 @@
    "relation": "bridge",
    "area_source": "divulgazione",
    "area_target": "creativita"
-  },
-  {
-   "source": "wiki_divulgazione_come_si_spiega",
-   "target": "wiki_data_science_framework_domande_analitiche",
-   "relation": "bridge",
-   "area_source": "divulgazione",
-   "area_target": "data-science"
-  },
-  {
-   "source": "wiki_divulgazione_modello_di_pensiero",
-   "target": "raw_aion_universalis_i_ching_consultazione",
-   "relation": "derived_from",
-   "area_source": "divulgazione",
-   "area_target": "aion"
-  },
-  {
-   "source": "wiki_divulgazione_modello_di_pensiero",
-   "target": "raw_creativita_universalis_enneagramma",
-   "relation": "derived_from",
-   "area_source": "divulgazione",
-   "area_target": "creativita"
-  },
-  {
-   "source": "wiki_divulgazione_modello_di_pensiero",
-   "target": "raw_data_science_universalis_a_star_dijkstra",
-   "relation": "derived_from",
-   "area_source": "divulgazione",
-   "area_target": "data-science"
   },
   {
    "source": "wiki_divulgazione_modello_di_pensiero",
@@ -195,13 +160,6 @@
    "target": "wiki_data_science_limiti_dichiarati",
    "relation": "bridge",
    "area_source": "divulgazione",
-   "area_target": "data-science"
-  },
-  {
-   "source": "wiki_finanza_analisi_tecnica_mercati",
-   "target": "wiki_data_science_controlli_qualita_dati",
-   "relation": "bridge",
-   "area_source": "finanza",
    "area_target": "data-science"
   },
   {

@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "89cd274b216474d07479616e46ea6f6fa76525cd",
+ "built_at_commit": "f0e540f5dfda041a9eae395d3aa5f4ecbf911f85",
  "nodes": [
   {
    "label": "metodo-report-verificati.md",
@@ -106,6 +106,26 @@
    "norm_label": "note"
   },
   {
+   "label": "universalis-a-star-dijkstra.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-a-star-dijkstra.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_a_star_dijkstra",
+   "community": 197,
+   "norm_label": "universalis-a-star-dijkstra.md"
+  },
+  {
+   "label": "A* | Dijkstra",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-a-star-dijkstra.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_a_star_dijkstra_a_dijkstra",
+   "community": 197,
+   "norm_label": "a* | dijkstra"
+  },
+  {
    "label": "universalis-austerita.md",
    "file_type": "document",
    "source_file": "raw/divulgazione/universalis-austerita.md",
@@ -146,6 +166,86 @@
    "norm_label": "davos 2026: anno zero"
   },
   {
+   "label": "universalis-enneagramma.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-enneagramma.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_enneagramma",
+   "community": 198,
+   "norm_label": "universalis-enneagramma.md"
+  },
+  {
+   "label": "Enneagramma: nozioni base",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-enneagramma.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_enneagramma_enneagramma_nozioni_base",
+   "community": 198,
+   "norm_label": "enneagramma: nozioni base"
+  },
+  {
+   "label": "universalis-filesaver-js.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-filesaver-js.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_filesaver_js",
+   "community": 203,
+   "norm_label": "universalis-filesaver-js.md"
+  },
+  {
+   "label": "Filesaver.js",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-filesaver-js.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_filesaver_js_filesaver_js",
+   "community": 203,
+   "norm_label": "filesaver.js"
+  },
+  {
+   "label": "universalis-i-ching-consultazione.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-i-ching-consultazione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_i_ching_consultazione",
+   "community": 111,
+   "norm_label": "universalis-i-ching-consultazione.md"
+  },
+  {
+   "label": "I Ching: 1. Consultazione",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-i-ching-consultazione.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_i_ching_consultazione_i_ching_1_consultazione",
+   "community": 111,
+   "norm_label": "i ching: 1. consultazione"
+  },
+  {
+   "label": "universalis-i-ching-trigrammi.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-i-ching-trigrammi.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_i_ching_trigrammi",
+   "community": 111,
+   "norm_label": "universalis-i-ching-trigrammi.md"
+  },
+  {
+   "label": "I Ching: 2. Gli otto trigrammi",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-i-ching-trigrammi.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
+   "community": 111,
+   "norm_label": "i ching: 2. gli otto trigrammi"
+  },
+  {
    "label": "universalis-nuovo-ordine-mondiale.md",
    "file_type": "document",
    "source_file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
@@ -164,6 +264,26 @@
    "id": "raw_divulgazione_universalis_nuovo_ordine_mondiale_nuovo_ordine_mondiale_difesa_intelligenza_artificiale_e_artico",
    "community": 202,
    "norm_label": "nuovo ordine mondiale — difesa, intelligenza artificiale e artico"
+  },
+  {
+   "label": "universalis-seo.md",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-seo.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_seo",
+   "community": 212,
+   "norm_label": "universalis-seo.md"
+  },
+  {
+   "label": "SEO: come essere primi su Google per meritocrazia",
+   "file_type": "document",
+   "source_file": "raw/divulgazione/universalis-seo.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_divulgazione_universalis_seo_seo_come_essere_primi_su_google_per_meritocrazia",
+   "community": 212,
+   "norm_label": "seo: come essere primi su google per meritocrazia"
   },
   {
    "label": "come-si-spiega.md",
@@ -239,27 +359,27 @@
    "label": "Cosa manca, dichiarato",
    "file_type": "document",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L48",
+   "source_location": "L58",
    "_origin": "ast",
    "id": "wiki_divulgazione_corpus_universalis_cosa_manca_dichiarato",
    "community": 5,
    "norm_label": "cosa manca, dichiarato"
   },
   {
-   "label": "Dove sono finiti, e perche'",
+   "label": "Dove stanno, e perche' solo in due aree",
    "file_type": "document",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
    "source_location": "L14",
    "_origin": "ast",
-   "id": "wiki_divulgazione_corpus_universalis_dove_sono_finiti_e_perche",
+   "id": "wiki_divulgazione_corpus_universalis_dove_stanno_e_perche_solo_in_due_aree",
    "community": 5,
-   "norm_label": "dove sono finiti, e perche'"
+   "norm_label": "dove stanno, e perche' solo in due aree"
   },
   {
    "label": "Freschezza",
    "file_type": "document",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L59",
+   "source_location": "L69",
    "_origin": "ast",
    "id": "wiki_divulgazione_corpus_universalis_freschezza",
    "community": 5,
@@ -269,7 +389,7 @@
    "label": "I filoni",
    "file_type": "document",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L28",
+   "source_location": "L35",
    "_origin": "ast",
    "id": "wiki_divulgazione_corpus_universalis_i_filoni",
    "community": 5,
@@ -316,44 +436,64 @@
    "norm_label": "modello-di-pensiero.md"
   },
   {
+   "label": "Avvertenza",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L71",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_avvertenza",
+   "community": 5,
+   "norm_label": "avvertenza"
+  },
+  {
    "label": "Cosa NON fa",
    "file_type": "document",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L79",
+   "source_location": "L58",
    "_origin": "ast",
    "id": "wiki_divulgazione_modello_di_pensiero_cosa_non_fa",
    "community": 5,
    "norm_label": "cosa non fa"
   },
   {
-   "label": "Il filo che attraversa tutto",
+   "label": "Il filo che attraversa le materie",
    "file_type": "document",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L59",
+   "source_location": "L42",
    "_origin": "ast",
-   "id": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_tutto",
+   "id": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_le_materie",
    "community": 5,
-   "norm_label": "il filo che attraversa tutto"
+   "norm_label": "il filo che attraversa le materie"
   },
   {
-   "label": "Il modello di pensiero — come ragiona l'autore",
+   "label": "Il modello di pensiero dell'autore",
    "file_type": "document",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
    "source_location": "L8",
    "_origin": "ast",
-   "id": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "id": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
    "community": 5,
-   "norm_label": "il modello di pensiero — come ragiona l'autore"
+   "norm_label": "il modello di pensiero dell'autore"
   },
   {
-   "label": "Le sette mosse ricorrenti",
+   "label": "La postura: critica strutturale, mai complotto",
    "file_type": "document",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L19",
+   "source_location": "L28",
    "_origin": "ast",
-   "id": "wiki_divulgazione_modello_di_pensiero_le_sette_mosse_ricorrenti",
+   "id": "wiki_divulgazione_modello_di_pensiero_la_postura_critica_strutturale_mai_complotto",
    "community": 5,
-   "norm_label": "le sette mosse ricorrenti"
+   "norm_label": "la postura: critica strutturale, mai complotto"
+  },
+  {
+   "label": "Non e' AION, ed e' importante che resti separato",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L16",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_non_e_aion_ed_e_importante_che_resti_separato",
+   "community": 5,
+   "norm_label": "non e' aion, ed e' importante che resti separato"
   },
   {
    "label": "onesta-argomentativa.md",
@@ -520,6 +660,16 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-a-star-dijkstra.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_a_star_dijkstra",
+   "target": "raw_divulgazione_universalis_a_star_dijkstra_a_dijkstra",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "raw/divulgazione/universalis-austerita.md",
    "source_location": "L8",
    "weight": 1.0,
@@ -540,12 +690,102 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-enneagramma.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_enneagramma",
+   "target": "raw_divulgazione_universalis_enneagramma_enneagramma_nozioni_base",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-filesaver-js.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_filesaver_js",
+   "target": "raw_divulgazione_universalis_filesaver_js_filesaver_js",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-i-ching-consultazione.md",
+   "source_location": "L46",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_i_ching_consultazione",
+   "target": "raw_divulgazione_readme",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-i-ching-consultazione.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_i_ching_consultazione",
+   "target": "raw_divulgazione_universalis_i_ching_consultazione_i_ching_1_consultazione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-i-ching-consultazione.md",
+   "source_location": "L45",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_i_ching_consultazione",
+   "target": "raw_divulgazione_universalis_i_ching_trigrammi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-i-ching-trigrammi.md",
+   "source_location": "L37",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_i_ching_trigrammi",
+   "target": "raw_divulgazione_readme",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-i-ching-trigrammi.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_i_ching_trigrammi",
+   "target": "raw_divulgazione_universalis_i_ching_trigrammi_i_ching_2_gli_otto_trigrammi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "raw/divulgazione/universalis-nuovo-ordine-mondiale.md",
    "source_location": "L10",
    "weight": 1.0,
    "source": "raw_divulgazione_universalis_nuovo_ordine_mondiale",
    "target": "raw_divulgazione_universalis_nuovo_ordine_mondiale_nuovo_ordine_mondiale_difesa_intelligenza_artificiale_e_artico",
    "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/divulgazione/universalis-seo.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_divulgazione_universalis_seo",
+   "target": "raw_divulgazione_universalis_seo_seo_come_essere_primi_su_google_per_meritocrazia",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_divulgazione_come_si_spiega",
+   "target": "raw_divulgazione_universalis_a_star_dijkstra",
+   "relation": "derived_from",
+   "nota": "i quattro dispositivi di chiarezza, ciascuno verificabile sull'articolo da cui e' estratto",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
   },
   {
    "source": "wiki_divulgazione_come_si_spiega",
@@ -681,7 +921,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L67",
+   "source_location": "L77",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis",
    "target": "wiki_divulgazione_index",
@@ -691,7 +931,17 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L35",
+   "source_location": "L28",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_corpus_universalis",
+   "target": "wiki_divulgazione_modello_di_pensiero",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/corpus-universalis.md",
+   "source_location": "L42",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis",
    "target": "wiki_divulgazione_onesta_argomentativa",
@@ -701,7 +951,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L48",
+   "source_location": "L58",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
    "target": "wiki_divulgazione_corpus_universalis_cosa_manca_dichiarato",
@@ -714,14 +964,14 @@
    "source_location": "L14",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
-   "target": "wiki_divulgazione_corpus_universalis_dove_sono_finiti_e_perche",
+   "target": "wiki_divulgazione_corpus_universalis_dove_stanno_e_perche_solo_in_due_aree",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L59",
+   "source_location": "L69",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
    "target": "wiki_divulgazione_corpus_universalis_freschezza",
@@ -731,7 +981,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/corpus-universalis.md",
-   "source_location": "L28",
+   "source_location": "L35",
    "weight": 1.0,
    "source": "wiki_divulgazione_corpus_universalis_il_corpus_universalis_it",
    "target": "wiki_divulgazione_corpus_universalis_i_filoni",
@@ -769,7 +1019,37 @@
   },
   {
    "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_divulgazione_universalis_a_star_dijkstra",
+   "relation": "derived_from",
+   "nota": "le mosse ricorrenti estratte da 17 articoli in 8 anni; e' una LETTURA dei testi, da confermare con l'autore",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
    "target": "raw_divulgazione_universalis_austerita",
+   "relation": "derived_from",
+   "nota": "le mosse ricorrenti estratte da 17 articoli in 8 anni; e' una LETTURA dei testi, da confermare con l'autore",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_divulgazione_universalis_enneagramma",
+   "relation": "derived_from",
+   "nota": "le mosse ricorrenti estratte da 17 articoli in 8 anni; e' una LETTURA dei testi, da confermare con l'autore",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_divulgazione_universalis_i_ching_consultazione",
    "relation": "derived_from",
    "nota": "le mosse ricorrenti estratte da 17 articoli in 8 anni; e' una LETTURA dei testi, da confermare con l'autore",
    "confidence": "CURATED",
@@ -781,20 +1061,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L93",
+   "source_location": "L12",
    "weight": 1.0,
    "source": "wiki_divulgazione_modello_di_pensiero",
    "target": "wiki_divulgazione_come_si_spiega",
-   "confidence_score": 1.0
-  },
-  {
-   "relation": "references",
-   "confidence": "EXTRACTED",
-   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L95",
-   "weight": 1.0,
-   "source": "wiki_divulgazione_modello_di_pensiero",
-   "target": "wiki_divulgazione_corpus_universalis",
    "confidence_score": 1.0
   },
   {
@@ -804,14 +1074,14 @@
    "source_location": "L8",
    "weight": 1.0,
    "source": "wiki_divulgazione_modello_di_pensiero",
-   "target": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
    "confidence_score": 1.0
   },
   {
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L48",
+   "source_location": "L12",
    "weight": 1.0,
    "source": "wiki_divulgazione_modello_di_pensiero",
    "target": "wiki_divulgazione_onesta_argomentativa",
@@ -821,9 +1091,19 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L79",
+   "source_location": "L71",
    "weight": 1.0,
-   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_avvertenza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L58",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
    "target": "wiki_divulgazione_modello_di_pensiero_cosa_non_fa",
    "confidence_score": 1.0
   },
@@ -831,20 +1111,30 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L59",
+   "source_location": "L42",
    "weight": 1.0,
-   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
-   "target": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_tutto",
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_le_materie",
    "confidence_score": 1.0
   },
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/modello-di-pensiero.md",
-   "source_location": "L19",
+   "source_location": "L28",
    "weight": 1.0,
-   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
-   "target": "wiki_divulgazione_modello_di_pensiero_le_sette_mosse_ricorrenti",
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_la_postura_critica_strutturale_mai_complotto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L16",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_dell_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_non_e_aion_ed_e_importante_che_resti_separato",
    "confidence_score": 1.0
   },
   {
