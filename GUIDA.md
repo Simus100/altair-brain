@@ -84,6 +84,8 @@ Gli esiti sono `utile`, `vicolo-cieco`, `corretto`, `aperto`. Tutto confluisce i
 cieco. Il protocollo AION lo rilegge a ogni ragionamento (passo 0).
 
 ### 6. Vedere il grafo e la salute del brain
+- **`graphify-out/index.html` = da qui si parte**: apre le tre viste e dice a quale
+  domanda risponde ciascuna. Se non sai quale ti serve, apri questa.
 - `graphify-out/graph.html` = vista estesa (tutti i nodi) — serve a vedere tutto
 - `graphify-out/graph-compact.html` = vista compatta (il sistema come processo a 5 fasi)
 - `graphify-out/graph-atlas.html` = **atlante 3D esplorabile** — è quella da aprire per

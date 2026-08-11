@@ -52,7 +52,22 @@ che ogni nodo stia nel suo strato e nel suo spicchio, che il raggio segua la
 centralità, che la provenienza resti verticale, e che la pagina non contenga
 dipendenze esterne.
 
+## build_views_index.py — la porta
+
+Chi apre `graphify-out/` trova tre file `.html` e nessun indizio su quale serva.
+`graphify-out/index.html` è la porta: apre le tre viste dicendo a quale domanda
+risponde ciascuna, **prima** del click. Link relativi: funziona anche da `file://`.
+
+```bash
+python tools/build_views_index.py
+```
+
+Deterministica — i numeri vengono dal grafo, non dall'orologio né dal peso dei file
+(che dipende dalla versione di graphify installata). La CI ne verifica la coerenza.
+
 ## Le tre viste
+
+Punto d'ingresso: **`graphify-out/index.html`**.
 
 | Vista | File | Generata da | Serve a |
 |-------|------|-------------|---------|

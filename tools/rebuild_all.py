@@ -33,6 +33,7 @@ STEPS = [
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
     ("vista atlante 3D", [PY, "tools/build_atlas_view.py"]),
+    ("porta delle viste (index)", [PY, "tools/build_views_index.py"]),
     ("indice di ricerca (BM25)", [PY, "tools/build_search_index.py"]),
     ("lezioni consolidate", [PY, "tools/lessons_digest.py"]),
     # Consolidamento offline: RIGENERA i digest per area (senza --solo-proposte, che
@@ -64,7 +65,8 @@ if failed:
 # Le tre viste sono il volto del brain: dirle qui evita che qualcuno ne apra una
 # sola per anni senza sapere che le altre due rispondono a domande diverse.
 print("\n== TUTTO OK ==")
-print("Le TRE viste del grafo (aprile con doppio click):")
+print("Apri  graphify-out/index.html  — la porta: dice a quale domanda risponde ogni vista.")
+print("Le TRE viste del grafo:")
 for rel, serve_a in (("graphify-out/graph.html",         "vedere tutto"),
                      ("graphify-out/graph-compact.html", "spiegare il sistema come processo"),
                      ("graphify-out/graph-atlas.html",   "navigare e orientarsi (3D esplorabile)")):

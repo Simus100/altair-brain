@@ -92,6 +92,14 @@ jobs:
             exit 1
           fi
 
+      - name: Porta delle viste coerente col grafo
+        run: |
+          python tools/build_views_index.py
+          if ! git diff --quiet -- graphify-out/index.html; then
+            echo "::error::graphify-out/index.html non coerente con graph.json — rigenera con tools/build_views_index.py"
+            exit 1
+          fi
+
       - name: JSON validi
         run: |
           python - <<'EOF'

@@ -19,6 +19,9 @@ Rules:
 Il sistema produce TRE viste affiancate del grafo. Servono a domande diverse: se
 ne stai usando una per la domanda sbagliata, stai perdendo tempo.
 
+**La porta è `graphify-out/index.html`** (generata da `tools/build_views_index.py`):
+apre le tre viste dicendo a quale domanda risponde ciascuna, prima del click.
+
 - **Vista estesa** — `graphify-out/graph.html`, generata da `graphify update .` (tutti
   i nodi). Serve a *vedere tutto*; non serve a trovare niente.
 - **Vista compatta strutturale** — `graphify-out/graph-compact.html`, generata da

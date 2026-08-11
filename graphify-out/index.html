@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Altair Brain — le tre viste del grafo</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#e2e8f0;
+  font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding:clamp(24px,6vw,72px);display:flex;justify-content:center}
+.foglio{width:100%;max-width:920px;display:flex;flex-direction:column;gap:30px}
+header h1{font-size:clamp(23px,3.4vw,31px);font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+header p{color:#94a3b8;margin-top:10px;max-width:62ch}
+header b{color:#cbd5e1;font-weight:600}
+.viste{display:flex;flex-direction:column;gap:14px}
+.vista{display:block;text-decoration:none;color:inherit;padding:20px 22px;border-radius:14px;
+  background:rgba(14,14,17,.9);border:1px solid rgba(148,163,184,.22);
+  border-left:3px solid var(--tinta);transition:border-color .16s,transform .16s}
+.vista:hover{border-color:var(--tinta);transform:translateX(3px)}
+.vista:focus-visible{border-color:var(--tinta);outline:2px solid var(--tinta);outline-offset:3px}
+.riga-alta{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.serve{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--tinta);font-weight:700}
+.conto{margin-left:auto;font-size:11px;color:#64748b;
+  font-family:ui-monospace,SFMono-Regular,monospace;font-variant-numeric:tabular-nums}
+.vista h2{font-size:19px;font-weight:700;margin:7px 0 8px}
+.vista p{color:#94a3b8;font-size:13.5px;max-width:66ch}
+.come{color:#64748b !important;font-size:12px !important;margin-top:9px !important}
+.file{display:inline-block;margin-top:12px;font-size:11px;color:#475569;
+  font-family:ui-monospace,SFMono-Regular,monospace}
+footer{border-top:1px solid rgba(148,163,184,.14);padding-top:18px;color:#64748b;font-size:12px}
+footer code{background:rgba(148,163,184,.12);border-radius:4px;padding:2px 7px;
+  font-family:ui-monospace,SFMono-Regular,monospace;color:#cbd5e1}
+footer .aree{margin-top:10px;line-height:1.9}
+footer b{color:#94a3b8;font-weight:600}
+@media(prefers-reduced-motion:reduce){.vista{transition:none}}
+</style></head><body>
+<div class="foglio">
+  <header>
+    <h1>Le tre viste del grafo</h1>
+    <p>Sono tre risposte a <b>tre domande diverse</b>. Aprire quella sbagliata per la
+       domanda che hai è il modo più comune di perderci tempo — qui sta scritto
+       prima del click.</p>
+  </header>
+  <div class="viste">
+    <a class="vista" href="graph-atlas.html" style="--tinta:#22d3ee">
+      <div class="riga-alta">
+        <span class="serve">navigare e orientarsi</span>
+        <span class="conto">217 file · 432 relazioni</span>
+      </div>
+      <h2>Atlante 3D</h2>
+      <p>Uno spazio dove la posizione significa: l'altezza è lo strato del processo, lo spicchio è la macroarea, la distanza dall'asse è quanto un file è connesso. È la vista da aprire quando devi entrare in un'area che non conosci.</p>
+      <p class="come">doppio click vola su un nodo · L isola il vicinato a 2 passi · [ ] scorrono i vicini · Backspace torna indietro</p>
+      <span class="file">graph-atlas.html</span>
+    </a>
+
+    <a class="vista" href="graph-compact.html" style="--tinta:#a855f7">
+      <div class="riga-alta">
+        <span class="serve">spiegare il sistema</span>
+        <span class="conto">22 nodi di processo</span>
+      </div>
+      <h2>Vista compatta</h2>
+      <p>Il brain ridotto al suo processo a cinque fasi — sorgenti, modello, motore, skill, feedback — con l'anello di ritorno. Collassa il rumore: i 64 esagrammi diventano un nodo solo.</p>
+      <p class="come">si legge in un minuto, non si esplora</p>
+      <span class="file">graph-compact.html</span>
+    </a>
+
+    <a class="vista" href="graph.html" style="--tinta:#f59e0b">
+      <div class="riga-alta">
+        <span class="serve">vedere tutto</span>
+        <span class="conto">1657 nodi · 2181 relazioni</span>
+      </div>
+      <h2>Vista estesa</h2>
+      <p>Ogni nodo, nessuna riduzione: anche i titoli interni di ogni file. Serve quando cerchi qualcosa che le altre due hanno collassato. La posizione qui non significa niente: è l'equilibrio di una simulazione fisica.</p>
+      <p class="come">pesante da caricare, lenta da percorrere</p>
+      <span class="file">graph.html</span>
+    </a>
+  </div>
+  <footer>
+    Generate da <code>python tools/rebuild_all.py</code> · grafo <code>74dc8f6</code>
+    <div class="aree"><b>impianto</b> 68 · <b>aion</b> 62 · <b>data-science</b> 61 · <b>creativita</b> 22 · <b>divulgazione</b> 2 · <b>finanza</b> 1 · <b>web-design</b> 1</div>
+  </footer>
+</div>
+</body></html>

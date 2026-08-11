@@ -149,3 +149,26 @@ def test_pagina_autosufficiente(tmp_path):
         assert vietato not in pagina, f"dipendenza esterna nella pagina: {vietato}"
     assert "__DATI__" not in pagina, "segnaposto dei dati non sostituito"
     assert "__R_MIN__" not in pagina and "__R_MAX__" not in pagina
+
+
+def test_la_porta_apre_le_tre_viste():
+    """graphify-out/index.html deve linkare file che esistono davvero: una porta
+    che si apre sul vuoto e' peggio di nessuna porta."""
+    indice = pytest.importorskip("tools.build_views_index")
+    subprocess.run([sys.executable, "tools/build_views_index.py"], cwd=ROOT, check=True,
+                   stdout=subprocess.DEVNULL)
+    pagina = open(indice.USCITA, encoding="utf-8").read()
+    for vista in indice.VISTE:
+        assert f'href="{vista["file"]}"' in pagina, f"{vista['file']} non linkato"
+        assert os.path.exists(os.path.join(ROOT, "graphify-out", vista["file"]))
+    # i link sono RELATIVI: la porta deve funzionare aperta da file://
+    assert "https://" not in pagina and "http://" not in pagina
+    # i numeri vengono dal grafo, non da un segnaposto
+    assert "216" in pagina or str(len(atlas.costruisci()["nodi"])) in pagina
+
+
+def test_la_porta_e_deterministica():
+    indice = pytest.importorskip("tools.build_views_index")
+    uno = indice.html(indice.numeri())
+    due = indice.html(indice.numeri())
+    assert uno == due
