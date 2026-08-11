@@ -93,6 +93,69 @@
    "area_target": "data-science"
   },
   {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_aion_universalis_i_ching_consultazione",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "aion"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_creativita_universalis_enneagramma",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "creativita"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_data_science_universalis_a_star_dijkstra",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "data-science"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_agenzie_di_rating",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_bolla_tech_ia",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_charles_dow",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_mercato_criptovalutario",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_oltre_il_costo_ia",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_finanza_universalis_spread",
+   "relation": "derived_from",
+   "area_source": "divulgazione",
+   "area_target": "finanza"
+  },
+  {
    "source": "wiki_divulgazione_onesta_argomentativa",
    "target": "raw_finanza_universalis_agenzie_di_rating",
    "relation": "derived_from",

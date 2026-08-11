@@ -153,6 +153,14 @@
         "wiki/divulgazione/onesta-argomentativa.md"
       ],
       "note": "bi-temporalita applicata alle proprie posizioni: si data, non si riscrive"
+    },
+    {
+      "domanda": "Come ragiona l'autore e quali mosse ricorrono nei suoi articoli?",
+      "attesi": [
+        "wiki/divulgazione/modello-di-pensiero.md",
+        "wiki/divulgazione/index.md"
+      ],
+      "note": "la domanda che il brain NON sapeva reggere: il modello c'era nel corpus ma non era scritto"
     }
   ],
   "banco_semantico": {
@@ -186,6 +194,13 @@
           "wiki/data-science/workflow-analisi-dati.md"
         ],
         "note": "parafrasi totale di 'metodo ripetibile per analizzare un dataset'"
+      },
+      {
+        "domanda": "come ragiona e come costruisce un argomento",
+        "attesi": [
+          "wiki/divulgazione/modello-di-pensiero.md"
+        ],
+        "note": "verificato 2026-08-11: la ricerca lessicale restituisce materiale AION perche' 'costruisce' e 'argomento' sono frequenti nei 649 nodi di quell'area e sommergono la pagina giusta. La pagina ESISTE ed esce prima con i suoi termini ('mosse ricorrenti', 'vincolo fisico'). E' il caso tipico da livello semantico."
       }
     ]
   }

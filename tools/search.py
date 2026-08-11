@@ -308,6 +308,11 @@ def cerca_con_diagnosi(query, top=8, area=None):
 
 if __name__ == "__main__":
     import argparse
+    import sys as _sys
+    _sys.path.insert(0, ROOT)
+    from tools.console import usa_utf8
+    usa_utf8()      # gli estratti contengono il corpus: accenti, caporali, trattini
+
     ap = argparse.ArgumentParser(description="Ricerca ibrida nel second brain")
     ap.add_argument("query", help="cosa cerchi")
     ap.add_argument("--top", type=int, default=8)

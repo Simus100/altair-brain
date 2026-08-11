@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "2facdce98652a6055873d6a9a6acef49feac59ad",
+ "built_at_commit": "89cd274b216474d07479616e46ea6f6fa76525cd",
  "nodes": [
   {
    "label": "metodo-report-verificati.md",
@@ -304,6 +304,56 @@
    "id": "wiki_divulgazione_index_divulgazione",
    "community": 5,
    "norm_label": "divulgazione"
+  },
+  {
+   "label": "modello-di-pensiero.md",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero",
+   "community": 5,
+   "norm_label": "modello-di-pensiero.md"
+  },
+  {
+   "label": "Cosa NON fa",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L79",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_cosa_non_fa",
+   "community": 5,
+   "norm_label": "cosa non fa"
+  },
+  {
+   "label": "Il filo che attraversa tutto",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L59",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_tutto",
+   "community": 5,
+   "norm_label": "il filo che attraversa tutto"
+  },
+  {
+   "label": "Il modello di pensiero — come ragiona l'autore",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "community": 5,
+   "norm_label": "il modello di pensiero — come ragiona l'autore"
+  },
+  {
+   "label": "Le sette mosse ricorrenti",
+   "file_type": "document",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L19",
+   "_origin": "ast",
+   "id": "wiki_divulgazione_modello_di_pensiero_le_sette_mosse_ricorrenti",
+   "community": 5,
+   "norm_label": "le sette mosse ricorrenti"
   },
   {
    "label": "onesta-argomentativa.md",
@@ -701,10 +751,100 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/divulgazione/index.md",
-   "source_location": "L25",
+   "source_location": "L22",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_index",
+   "target": "wiki_divulgazione_modello_di_pensiero",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/index.md",
+   "source_location": "L28",
    "weight": 1.0,
    "source": "wiki_divulgazione_index",
    "target": "wiki_divulgazione_onesta_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "raw_divulgazione_universalis_austerita",
+   "relation": "derived_from",
+   "nota": "le mosse ricorrenti estratte da 17 articoli in 8 anni; e' una LETTURA dei testi, da confermare con l'autore",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L93",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "wiki_divulgazione_come_si_spiega",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L95",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "wiki_divulgazione_corpus_universalis",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L48",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero",
+   "target": "wiki_divulgazione_onesta_argomentativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L79",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_cosa_non_fa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L59",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_il_filo_che_attraversa_tutto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/divulgazione/modello-di-pensiero.md",
+   "source_location": "L19",
+   "weight": 1.0,
+   "source": "wiki_divulgazione_modello_di_pensiero_il_modello_di_pensiero_come_ragiona_l_autore",
+   "target": "wiki_divulgazione_modello_di_pensiero_le_sette_mosse_ricorrenti",
    "confidence_score": 1.0
   },
   {

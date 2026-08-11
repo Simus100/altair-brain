@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **20** · sessioni graphify: **1**
-- esiti: 14 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
-- skill piu attive: manuale (9), aion (3), atlante-3d (3), triage (2), report (1)
-- temi ricorrenti: metodo (5), verifica (3), visualizzazione (3), report (2), grafo (2), graphify (2), limite (2), corpus (2)
+- lezioni registrate: **21** · sessioni graphify: **1**
+- esiti: 14 utili · 1 vicoli ciechi · 6 correzioni · 0 aperte
+- skill piu attive: manuale (9), aion (3), atlante-3d (3), triage (3), report (1)
+- temi ricorrenti: metodo (5), verifica (4), visualizzazione (3), report (2), grafo (2), graphify (2), limite (2), corpus (2)
 
 ## Ancoraggi consolidati
 
@@ -55,6 +55,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-11** _((triage, corretto))_ — Avevo distillato il METODO (come si spiega, onesta argomentativa) credendo bastasse, ma alla prova 'come ragiona e come costruisce un argomento' il brain rispondeva con materiale AION: il modello era nel corpus e in nessuna pagina. Verificare con una domanda reale invece di fidarsi di aver scritto le pagine giuste. Resta un limite lessicale misurato: la domanda generica e' sommersa dai 649 nodi di aion, registrata nel banco semantico. Quarto tool colpito dal guasto cp1252: creato tools/console.py invece di ripetere la toppa.
+  - contesto: il brain sa restituire il modello di pensiero dell'autore?
 - **2026-08-11** _((triage, utile))_ — Smistare per MATERIA invece che per categoria del sito ha riempito tre aree vuote: finanza 4->37 nodi, divulgazione 10->39, web-design 4->8. La guardia di coesione ha fermato la pipeline perche' le due note aggiunte in raw/aion non linkavano nulla: aggiungere file a un'area coesa senza collegarli la spezza in componenti, e nessuno se ne accorgerebbe guardando. Il verificatore stilometrico contava come prosa il codice in riga e il testo tra virgolette caporali: chiedeva di correggere un anglicismo DENTRO UNA CITAZIONE, cioe' di falsificare la fonte. Terzo caso della stessa classe di difetto dop
   - contesto: ingerire 18 articoli pubblicati da un sito e smistarli per materia nel brain
 - **2026-08-11** _((triage, utile))_ — Ricalcolare i numeri dalla fonte invece di riprenderli dalla prosa: qui coincidevano, ma il controllo costa un minuto e rende citabile il risultato. Due difetti trovati usando le guardie del brain sul lavoro vero: style_check.py moriva su console cp1252 prima del verdetto (una freccia bastava) e contava il bersaglio dei wikilink come prosa, chiedendo di correggere il NOME di una pagina. Una classe 'correggi sempre' che segnala identificatori insegna a ignorarla. Nota strutturale: graphify indicizza solo .md, quindi una cartella di soli notebook/PDF non ha nodo e non puo reggere la provenienza:
@@ -77,5 +79,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: chi decide l'ordine di attivazione degli agenti
 - **2026-08-08** _((aion, utile))_ — il workflow in 7 fasi copre dall'import al report
   - contesto: come si struttura un'analisi dati end-to-end
-- **2026-08-08** _((aion, vicolo-cieco))_ — descritto ma non eseguibile: non porta a nulla di operativo
-  - contesto: quale componente usare per la generazione cinematografica

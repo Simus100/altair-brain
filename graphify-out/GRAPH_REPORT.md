@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-11)
 
 ## Corpus Check
-- 264 files · ~244,273 words
+- 266 files · ~245,707 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1770 nodes · 2259 edges · 212 communities (184 shown, 28 thin omitted)
+- 1778 nodes · 2273 edges · 211 communities (183 shown, 28 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2facdce9`
+- Built from commit: `89cd274b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -190,7 +190,6 @@
 - [[_COMMUNITY_Community 211|Community 211]]
 - [[_COMMUNITY_Community 212|Community 212]]
 - [[_COMMUNITY_Community 213|Community 213]]
-- [[_COMMUNITY_Community 214|Community 214]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cerca()` - 20 edges
@@ -205,6 +204,8 @@
 10. `_safe()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `test_attribuzione_senza_mobili_e_range()` --calls--> `attribute_reading()`  [EXTRACTED]
+  tests/test_tools.py → tools/oracle_cast.py
 - `context()` --calls--> `come_testo()`  [EXTRACTED]
   server/app.py → tools/context_pack.py
 - `search()` --calls--> `cerca_con_diagnosi()`  [EXTRACTED]
@@ -213,13 +214,11 @@
   server/brain_core.py → tools/context_pack.py
 - `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
   server/brain_core.py → tools/oracle_cast.py
-- `oracle_hexagram()` --calls--> `get_hexagram()`  [EXTRACTED]
-  server/brain_core.py → tools/oracle_cast.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (212 total, 28 thin omitted)
+## Communities (211 total, 28 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.18
@@ -234,24 +233,24 @@ Cohesion: 0.12
 Nodes (31): Exception, area_graph_path(), BrainError, capture(), context_pack(), graph_query(), graphify_available(), health_info() (+23 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.07
-Nodes (32): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., --segna deve aggiornare 'reviewed' senza toccare il resto della nota. (+24 more)
+Cohesion: 0.06
+Nodes (37): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv (+29 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
 Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.11
-Nodes (17): Come si spiega una cosa difficile, Il gruppo di controllo, L'esempio unico portato fino in fondo, La metafora che regge la struttura, La storia prima della teoria, Cosa manca, dichiarato, Dove sono finiti, e perche', Freschezza (+9 more)
+Cohesion: 0.10
+Nodes (21): Come si spiega una cosa difficile, Il gruppo di controllo, L'esempio unico portato fino in fondo, La metafora che regge la struttura, La storia prima della teoria, Cosa manca, dichiarato, Dove sono finiti, e perche', Freschezza (+13 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.12
 Nodes (14): 1. Da dove viene l'analisi tecnica, 2. Cosa si scambia, 3. Il mercato criptovalutario, Analisi tecnica dei mercati (corso in tre parti), Come e' costruito il corso, Cosa se ne ricava, Gennaio 2026 — lo scarto è il sintomo di una bolla, Giugno 2026 — lo scarto è il costo di una transizione (+6 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.08
-Nodes (32): brain(), _casi_recupero(), _distanza(), _norm(), Solo le domande a cui la ricerca LESSICALE puo' rispondere. Quelle marcate     ', Per ogni domanda reale, la ricerca deve portare in superficie almeno uno dei, Metrica aggregata: se scende sotto soglia, la qualita del recupero e calata, Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione (+24 more)
+Cohesion: 0.13
+Nodes (20): brain(), _casi_recupero(), _distanza(), _norm(), Solo le domande a cui la ricerca LESSICALE puo' rispondere. Quelle marcate     ', Per ogni domanda reale, la ricerca deve portare in superficie almeno uno dei, Metrica aggregata: se scende sotto soglia, la qualita del recupero e calata, Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione (+12 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.13
@@ -262,8 +261,8 @@ Cohesion: 0.11
 Nodes (18): 1. Definizione degli Obiettivi (Goal Setting), 1. I 6 Pilastri della Data Driven Culture, 2. Il Contesto Tecnologico e i Vantaggi, 2. Raccolta e Gestione dei Dati (Data Governance), 3. Case Studies: Successi e Fallimenti, 3. Strumenti di Analisi e Visualizzazione (Tech Stack), 4. Cultura della Collaborazione (Data Democratization), 4. Livelli di Analisi (Business Intelligence) (+10 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.15
-Nodes (17): La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini, Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace., Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif, test_adamic_adar_formula_corretta(), test_struttura_esclude_gli_hub(), test_struttura_non_propone_coppie_gia_collegate(), test_struttura_scarta_il_vicino_singolo(), test_struttura_sul_grafo_reale_e_pulita() (+9 more)
+Cohesion: 0.08
+Nodes (31): BM25 deve portare in cima la pagina che tratta davvero l'argomento., Una lezione registrata deve cambiare cio che si vede la volta dopo., La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini, Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace., Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif, Vulnerabilita reale: la cache non si invalidava mai. Sulla VPS l'API resta     a, test_adamic_adar_formula_corretta(), test_cache_ricarica_se_indice_cambia() (+23 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
@@ -283,7 +282,7 @@ Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.08
-Nodes (33): Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata, Dopo la correzione del parser, nessuna nota deve restare scoperta., test_freshness_rileva_fatto_scaduto(), test_frontmatter_apertura_senza_chiusura(), test_frontmatter_non_confonde_una_riga_di_testo(), test_frontmatter_riconosce_il_blocco_valido(), test_tutte_le_note_raw_hanno_provenienza() (+25 more)
+Nodes (35): Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata, Dopo la correzione del parser, nessuna nota deve restare scoperta., test_freshness_rileva_fatto_scaduto(), test_frontmatter_apertura_senza_chiusura(), test_frontmatter_non_confonde_una_riga_di_testo(), test_frontmatter_riconosce_il_blocco_valido(), test_tutte_le_note_raw_hanno_provenienza() (+27 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.20
@@ -322,8 +321,8 @@ Cohesion: 0.18
 Nodes (16): _inbox e una cartella tecnica, non una macroarea: areas.json e il registro., Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa, test_consolidate_ordina_per_grado_non_per_etichetta(), test_consolidate_produce_digest_solo_per_aree_reali(), test_consolidate_rileva_lezioni_ridondanti(), _carica_json(), conoscenza_stantia(), digest_per_area() (+8 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.11
-Nodes (27): Regressione: se query e indice filtrano stopword diverse, i termini scartati, Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma, Un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi, test_memoria_non_annota_per_nodi_numerici_corti(), test_memoria_non_attribuisce_per_sottostringa(), test_tokenizzazione_query_coerente_con_indice(), _lezioni_pertinenti(), Le lezioni che riguardano cio che stiamo per dare in pasto al modello. (+19 more)
+Cohesion: 0.10
+Nodes (30): Fuori dominio il sistema deve DIRE di non fidarsi.      Il test verificava «zero, Regressione: se query e indice filtrano stopword diverse, i termini scartati, Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma, Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La     differe, test_confidenza_alta_su_conoscenza_presente(), test_confidenza_scarsa_fuori_dominio(), test_diagnosi_dichiara_cosa_misura(), test_memoria_non_annota_per_nodi_numerici_corti() (+22 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.27
@@ -654,8 +653,8 @@ Cohesion: 0.50
 Nodes (3): Procedura, Skill: triage dell'inbox, Vincoli
 
 ### Community 109 - "Community 109"
-Cohesion: 0.13
-Nodes (23): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_attribuzione_senza_mobili_e_range(), test_cast_seedato_riproducibile() (+15 more)
+Cohesion: 0.14
+Nodes (22): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_cast_seedato_riproducibile(), test_ricerca_tag_suggerisce_43() (+14 more)
 
 ### Community 110 - "Community 110"
 Cohesion: 0.50
@@ -809,12 +808,8 @@ Nodes (12): Un [[wikilink]] punta a un identificatore, non a una parola scelta d
 Cohesion: 0.50
 Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
 
-### Community 214 - "Community 214"
-Cohesion: 0.22
-Nodes (9): Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv, Fuori dominio il sistema deve DIRE di non fidarsi.      Il test verificava «zero, Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La     differe, test_confidenza_alta_su_conoscenza_presente(), test_confidenza_bassa_su_conoscenza_assente(), test_confidenza_scarsa_fuori_dominio(), test_diagnosi_dichiara_cosa_misura(), cerca_con_diagnosi() (+1 more)
-
 ## Knowledge Gaps
-- **896 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+891 more)
+- **899 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+894 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -822,16 +817,16 @@ Nodes (9): Il caso che conta: il corpus NON ha la risposta e il sistema lo dichi
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `come_testo()` connect `Community 192` to `Community 8`, `Community 25`, `Community 3`, `Community 181`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `cerca_con_diagnosi()` connect `Community 214` to `Community 192`, `Community 2`, `Community 3`, `Community 7`, `Community 25`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `cerca_con_diagnosi()` connect `Community 25` to `Community 192`, `Community 2`, `Community 3`, `Community 7`, `Community 10`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Why does `18. 蠱 Il Lavoro sul Deterioramento (Gǔ) ䷑` connect `Community 39` to `Community 20`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **Why does `dividi()` connect `Community 15` to `Community 3`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _1039 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1043 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12310606060606061 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.0746031746031746 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06341463414634146 - nodes in this community are weakly interconnected._

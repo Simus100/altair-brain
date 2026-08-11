@@ -89,7 +89,7 @@
       "label": "divulgazione",
       "layer": "area:divulgazione",
       "kind": "dato",
-      "size": 14
+      "size": 15
     },
     {
       "id": "raw:web-design",
@@ -382,6 +382,51 @@
     },
     {
       "source": "wiki:divulgazione",
+      "target": "wiki:aion",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:creativita",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:data-science",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
+      "target": "wiki:finanza",
+      "kind": "bridge"
+    },
+    {
+      "source": "wiki:divulgazione",
       "target": "wiki:finanza",
       "kind": "bridge"
     },
@@ -432,7 +477,7 @@
       "web-design",
       "creativita"
     ],
-    "ponti_intercampo": 20,
+    "ponti_intercampo": 29,
     "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
   }
 }

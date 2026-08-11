@@ -19,6 +19,9 @@ Il materiale nasce da un corpus reale: diciotto articoli pubblicati su universal
 tra il 2018 e il 2026, mappati in [[corpus-universalis]]. I metodi non sono inventati
 a tavolino, sono estratti da testi che esistono e si possono rileggere.
 
+- [[modello-di-pensiero]] — **da leggere per prima** quando un modello deve ragionare
+  o scrivere *come* l'autore: le sette mosse che ricorrono in diciassette articoli e
+  otto anni, e il filo che le attraversa tutte.
 - [[come-si-spiega]] — i quattro dispositivi della chiarezza: l'esempio unico portato
   fino in fondo, la storia prima della teoria, la metafora che regge la struttura, il
   gruppo di controllo.
@@ -33,6 +36,7 @@ uno in `raw/creativita/` (Enneagramma), uno in `raw/data-science/` (A*). Tre are
 brain che erano quasi vuote ora hanno contenuto.
 
 Collegati:
+- [[modello-di-pensiero]]
 - [[come-si-spiega]]
 - [[onesta-argomentativa]]
 - [[corpus-universalis]]

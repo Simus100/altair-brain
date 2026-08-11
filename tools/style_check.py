@@ -180,14 +180,9 @@ def riassumi(d):
 
 
 def main():
-    # La console Windows parla cp1252: una freccia o un trattino lungo dentro un
-    # rilievo faceva morire il tool PRIMA del verdetto. Una guardia che si schianta
-    # sul contenuto che deve controllare non e una guardia.
-    for flusso in (sys.stdout, sys.stderr):
-        try:
-            flusso.reconfigure(encoding="utf-8", errors="replace")
-        except (AttributeError, ValueError):
-            pass                      # flusso rediretto o gia adeguato: si prosegue
+    sys.path.insert(0, ROOT)
+    from tools.console import usa_utf8
+    usa_utf8()      # vedi tools/console.py: quarto tool colpito dallo stesso guasto
 
     ap = argparse.ArgumentParser(description="Verifica stilometrica dei testi del brain")
     ap.add_argument("file", nargs="?", help="file da analizzare (md, txt, html)")
