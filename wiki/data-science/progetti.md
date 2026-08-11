@@ -14,5 +14,6 @@ Collegati:
 - [[progetto-hotel-booking]]
 - [[progetto-olist-ecommerce]]
 - [[progetto-insurance]]
+- [[progetto-magazzino]]
 - [[dataset]]
 - [[index]]

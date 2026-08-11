@@ -7,8 +7,8 @@
 
 ## Sintesi
 
-- lezioni registrate: **18** · sessioni graphify: **1**
-- esiti: 12 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
+- lezioni registrate: **19** · sessioni graphify: **1**
+- esiti: 13 utili · 1 vicoli ciechi · 5 correzioni · 0 aperte
 - skill piu attive: manuale (9), aion (3), atlante-3d (3), report (1), oracle (1)
 - temi ricorrenti: metodo (5), verifica (3), visualizzazione (3), report (2), grafo (2), graphify (2), limite (2), corpus (2)
 
@@ -55,6 +55,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-11** _((triage, utile))_ — Ricalcolare i numeri dalla fonte invece di riprenderli dalla prosa: qui coincidevano, ma il controllo costa un minuto e rende citabile il risultato. Due difetti trovati usando le guardie del brain sul lavoro vero: style_check.py moriva su console cp1252 prima del verdetto (una freccia bastava) e contava il bersaglio dei wikilink come prosa, chiedendo di correggere il NOME di una pagina. Una classe 'correggi sempre' che segnala identificatori insegna a ignorarla. Nota strutturale: graphify indicizza solo .md, quindi una cartella di soli notebook/PDF non ha nodo e non puo reggere la provenienza:
+  - contesto: elaborare il project work di analisi magazzino e inserirlo nella knowledge
 - **2026-08-11** _((atlante-3d, utile))_ — Un artefatto puo essere presente e comunque introvabile: graphify-out conteneva tre .html senza alcun indizio su quale aprire. La porta (index.html) dice a quale domanda risponde ogni vista PRIMA del click. Deterministica: i numeri vengono dal grafo, non dal peso dei file (che dipende dalla versione di graphify).
   - contesto: rendere trovabile la visualizzazione dentro la cartella del progetto
 - **2026-08-11** _((atlante-3d, utile))_ — Una vista non basta generarla: va DICHIARATA dove il brain si descrive (/v1/health, output di rebuild_all), altrimenti resta invisibile a chi non legge i doc. Health ora dice anche se una vista e rimasta indietro rispetto al grafo: una mappa vecchia non si annuncia da sola. Su fondo nero pieno un pannello nero perde il bordo e sparisce: le superfici vanno sollevate di un soffio sopra il fondo.
@@ -77,5 +79,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: quale componente usare per la generazione cinematografica
 - **2026-08-07** _((manuale, utile))_ — una voce di roadmap invecchia male se descrive come 'da costruire' cio che e gia costruito: va riscritta con lo STATO reale (fatto/da attivare), il costo vero misurato e il criterio per capire se e servita davvero
   - contesto: dove registrare un miglioramento futuro gia progettato ma non attivato
-- **2026-08-07** _((manuale, utile))_ — convertire .txt->.md con git mv ha portato raw/data-science da 4 a 55 nodi e la provenienza da 8 a 31 archi; ma attenzione: cambia anche la strategia di spezzettamento dell'indice (i .md si spezzano per titolo), quindi le note in prosa vanno spezzate a blocchi o collassano in un frammento unico
-  - contesto: rendere navigabili nel grafo le note grezze in .txt

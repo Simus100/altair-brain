@@ -144,8 +144,10 @@
     {
       "wiki": "wiki/data-science/python-pandas.md",
       "fonti": [
-        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md"
-      ]
+        "raw/data-science/PROJECT WORK/Analisi prenotazioni hotel/python prototype/API PANDAS.md",
+        "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md"
+      ],
+      "nota": "+ le ricette pandas verificate del project work magazzino (pulizia, np.select, quantili, crosstab): la pagina distilla DUE progetti."
     },
     {
       "wiki": "wiki/data-science/struttura-report-analisi.md",
@@ -220,6 +222,27 @@
         "raw/creativita/bookforge/psicologia.md"
       ],
       "nota": "9 assi, Enneagramma, protocollo pre-scena"
+    },
+    {
+      "wiki": "wiki/data-science/progetto-magazzino.md",
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md"
+      ],
+      "nota": "il caso: 990 prodotti, due notebook, dashboard. Numeri ricalcolati da dataset_finale.csv, non ripresi dalla prosa dei notebook."
+    },
+    {
+      "wiki": "wiki/data-science/indicatori-magazzino.md",
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md"
+      ],
+      "nota": "le 13 colonne derivate del secondo notebook, rese sistema riutilizzabile"
+    },
+    {
+      "wiki": "wiki/data-science/limiti-dichiarati.md",
+      "fonti": [
+        "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md"
+      ],
+      "nota": "metodo estratto dai limiti che il project work ha dichiarato invece di aggirare (lotto assente, prezzo ambiguo, posizioni non plausibili)"
     }
   ]
 }

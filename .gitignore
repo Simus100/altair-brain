@@ -28,3 +28,6 @@ test_env/
 # Hook eseguibili: attivi in locale, MAI versionati (repo pubblico).
 .claude/settings.local.json
 .claude/settings.json
+
+# Windows: file di sistema delle cartelle, nessuna informazione
+desktop.ini

@@ -56,7 +56,11 @@ def testo_da_file(path):
         _, grezzo = dividi(grezzo)
         grezzo = re.sub(r"```.*?```", " ", grezzo, flags=re.S)      # blocchi di codice
         grezzo = re.sub(r"^\s*[|#>\-*].*$", " ", grezzo, flags=re.M)  # tabelle, titoli, liste
-        grezzo = re.sub(r"\[\[([^\]]+)\]\]", r"\1", grezzo)          # wikilink
+        # Il BERSAGLIO di un wikilink e un identificatore, non una parola scelta da
+        # chi scrive: tenerlo faceva contare 'feature-engineering' come anglicismo e
+        # chiedeva di correggere il NOME di una pagina. Una classe "correggi sempre"
+        # che segnala nomi di file smette di essere obbedibile.
+        grezzo = re.sub(r"\[\[[^\]]+\]\]", " ", grezzo)
     return re.sub(r"[ \t]+", " ", grezzo).strip()
 
 
@@ -169,6 +173,15 @@ def riassumi(d):
 
 
 def main():
+    # La console Windows parla cp1252: una freccia o un trattino lungo dentro un
+    # rilievo faceva morire il tool PRIMA del verdetto. Una guardia che si schianta
+    # sul contenuto che deve controllare non e una guardia.
+    for flusso in (sys.stdout, sys.stderr):
+        try:
+            flusso.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass                      # flusso rediretto o gia adeguato: si prosegue
+
     ap = argparse.ArgumentParser(description="Verifica stilometrica dei testi del brain")
     ap.add_argument("file", nargs="?", help="file da analizzare (md, txt, html)")
     ap.add_argument("--report", help="analizza la prosa editoriale di un report living")

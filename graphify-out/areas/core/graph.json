@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "74dc8f6437330f9b971dd36b9c99d09b83b47dac",
+ "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -559,7 +559,7 @@
    "label": "Lezioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L55",
+   "source_location": "L56",
    "_origin": "ast",
    "id": "engine_lessons_lezioni_recenti",
    "community": 98,
@@ -589,7 +589,7 @@
    "label": "Vicoli ciechi",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L49",
+   "source_location": "L50",
    "_origin": "ast",
    "id": "engine_lessons_vicoli_ciechi",
    "community": 98,
@@ -672,7 +672,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 13,
+   "community": 19,
    "norm_label": "minitems"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 13,
+   "community": 19,
    "norm_label": "type"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 13,
+   "community": 18,
    "norm_label": "items"
   },
   {
@@ -942,7 +942,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 19,
+   "community": 18,
    "norm_label": "minitems"
   },
   {
@@ -952,7 +952,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 19,
+   "community": 18,
    "norm_label": "type"
   },
   {
@@ -1032,7 +1032,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 13,
+   "community": 19,
    "norm_label": "componenti"
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 19,
+   "community": 18,
    "norm_label": "modalita"
   },
   {
@@ -4078,6 +4078,96 @@
    "norm_label": "test_trova_tutti_i_nodi_esagramma()"
   },
   {
+   "label": "test_style_check.py",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "tests_test_style_check",
+   "community": 195,
+   "norm_label": "test_style_check.py"
+  },
+  {
+   "label": "Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc",
+   "file_type": "rationale",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L29",
+   "_origin": "ast",
+   "id": "tests_test_style_check_rationale_29",
+   "community": 195,
+   "norm_label": "un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc"
+  },
+  {
+   "label": "Il codice non si giudica con le misure della scrittura: senza questo, un     not",
+   "file_type": "rationale",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L45",
+   "_origin": "ast",
+   "id": "tests_test_style_check_rationale_45",
+   "community": 195,
+   "norm_label": "il codice non si giudica con le misure della scrittura: senza questo, un     not"
+  },
+  {
+   "label": "Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia.",
+   "file_type": "rationale",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L54",
+   "_origin": "ast",
+   "id": "tests_test_style_check_rationale_54",
+   "community": 195,
+   "norm_label": "il test che impedisce di 'sistemare' i falsi positivi accecando la guardia."
+  },
+  {
+   "label": "_scrivi()",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L21",
+   "_origin": "ast",
+   "id": "tests_test_style_check_scrivi",
+   "community": 195,
+   "norm_label": "_scrivi()"
+  },
+  {
+   "label": "test_gli_anglicismi_veri_vengono_ancora_visti()",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L53",
+   "_origin": "ast",
+   "id": "tests_test_style_check_test_gli_anglicismi_veri_vengono_ancora_visti",
+   "community": 195,
+   "norm_label": "test_gli_anglicismi_veri_vengono_ancora_visti()"
+  },
+  {
+   "label": "test_i_blocchi_di_codice_non_sono_prosa()",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L44",
+   "_origin": "ast",
+   "id": "tests_test_style_check_test_i_blocchi_di_codice_non_sono_prosa",
+   "community": 195,
+   "norm_label": "test_i_blocchi_di_codice_non_sono_prosa()"
+  },
+  {
+   "label": "test_il_bersaglio_di_un_wikilink_non_e_prosa()",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L28",
+   "_origin": "ast",
+   "id": "tests_test_style_check_test_il_bersaglio_di_un_wikilink_non_e_prosa",
+   "community": 195,
+   "norm_label": "test_il_bersaglio_di_un_wikilink_non_e_prosa()"
+  },
+  {
+   "label": "test_il_front_matter_non_e_prosa()",
+   "file_type": "code",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L38",
+   "_origin": "ast",
+   "id": "tests_test_style_check_test_il_front_matter_non_e_prosa",
+   "community": 195,
+   "norm_label": "test_il_front_matter_non_e_prosa()"
+  },
+  {
    "label": "test_tools.py",
    "file_type": "code",
    "source_file": "tests/test_tools.py",
@@ -4144,7 +4234,7 @@
    "source_location": "L164",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_164",
-   "community": 182,
+   "community": 193,
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
@@ -4184,7 +4274,7 @@
    "source_location": "L234",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_234",
-   "community": 185,
+   "community": 5,
    "norm_label": "il caso che conta: il corpus non ha la risposta e il sistema lo dichiara     inv"
   },
   {
@@ -4194,7 +4284,7 @@
    "source_location": "L244",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_244",
-   "community": 185,
+   "community": 5,
    "norm_label": "fuori dominio il sistema deve dire di non fidarsi.      il test verificava «zero"
   },
   {
@@ -4224,7 +4314,7 @@
    "source_location": "L273",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_273",
-   "community": 182,
+   "community": 193,
    "norm_label": "una lezione registrata deve cambiare cio che si vede la volta dopo."
   },
   {
@@ -4234,7 +4324,7 @@
    "source_location": "L283",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_283",
-   "community": 186,
+   "community": 196,
    "norm_label": "prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma"
   },
   {
@@ -4304,7 +4394,7 @@
    "source_location": "L404",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_404",
-   "community": 5,
+   "community": 192,
    "norm_label": "il budget vale sul testo consegnato, non sulla somma dei pezzi: ignorare     l'i"
   },
   {
@@ -4314,7 +4404,7 @@
    "source_location": "L414",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_414",
-   "community": 5,
+   "community": 192,
    "norm_label": "con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace."
   },
   {
@@ -4374,7 +4464,7 @@
    "source_location": "L545",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_545",
-   "community": 182,
+   "community": 193,
    "norm_label": "vulnerabilita reale: la cache non si invalidava mai. sulla vps l'api resta     a"
   },
   {
@@ -4384,7 +4474,7 @@
    "source_location": "L563",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_563",
-   "community": 185,
+   "community": 5,
    "norm_label": "fallacia: 'confidenza alta' verra letta come 'risposta corretta'. la     differe"
   },
   {
@@ -4394,7 +4484,7 @@
    "source_location": "L571",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_571",
-   "community": 186,
+   "community": 196,
    "norm_label": "un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi"
   },
   {
@@ -4504,7 +4594,7 @@
    "source_location": "L544",
    "_origin": "ast",
    "id": "tests_test_tools_test_cache_ricarica_se_indice_cambia",
-   "community": 182,
+   "community": 193,
    "norm_label": "test_cache_ricarica_se_indice_cambia()"
   },
   {
@@ -4524,7 +4614,7 @@
    "source_location": "L226",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
-   "community": 3,
+   "community": 5,
    "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
   },
   {
@@ -4534,7 +4624,7 @@
    "source_location": "L233",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
-   "community": 185,
+   "community": 5,
    "norm_label": "test_confidenza_bassa_su_conoscenza_assente()"
   },
   {
@@ -4544,7 +4634,7 @@
    "source_location": "L243",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_scarsa_fuori_dominio",
-   "community": 185,
+   "community": 5,
    "norm_label": "test_confidenza_scarsa_fuori_dominio()"
   },
   {
@@ -4584,7 +4674,7 @@
    "source_location": "L422",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_avverte_quando_non_sa",
-   "community": 5,
+   "community": 192,
    "norm_label": "test_context_pack_avverte_quando_non_sa()"
   },
   {
@@ -4594,7 +4684,7 @@
    "source_location": "L430",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_deduplica_per_file",
-   "community": 5,
+   "community": 192,
    "norm_label": "test_context_pack_deduplica_per_file()"
   },
   {
@@ -4604,7 +4694,7 @@
    "source_location": "L413",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_non_riempie_con_riempitivo",
-   "community": 5,
+   "community": 192,
    "norm_label": "test_context_pack_non_riempie_con_riempitivo()"
   },
   {
@@ -4614,7 +4704,7 @@
    "source_location": "L403",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_rispetta_il_budget_reale",
-   "community": 5,
+   "community": 192,
    "norm_label": "test_context_pack_rispetta_il_budget_reale()"
   },
   {
@@ -4624,7 +4714,7 @@
    "source_location": "L562",
    "_origin": "ast",
    "id": "tests_test_tools_test_diagnosi_dichiara_cosa_misura",
-   "community": 185,
+   "community": 5,
    "norm_label": "test_diagnosi_dichiara_cosa_misura()"
   },
   {
@@ -4734,7 +4824,7 @@
    "source_location": "L272",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
-   "community": 182,
+   "community": 193,
    "norm_label": "test_memoria_annota_ancoraggi_consolidati()"
   },
   {
@@ -4744,7 +4834,7 @@
    "source_location": "L282",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_annota_per_nodi_numerici_corti",
-   "community": 186,
+   "community": 196,
    "norm_label": "test_memoria_non_annota_per_nodi_numerici_corti()"
   },
   {
@@ -4754,7 +4844,7 @@
    "source_location": "L570",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_non_attribuisce_per_sottostringa",
-   "community": 186,
+   "community": 196,
    "norm_label": "test_memoria_non_attribuisce_per_sottostringa()"
   },
   {
@@ -4784,7 +4874,7 @@
    "source_location": "L519",
    "_origin": "ast",
    "id": "tests_test_tools_test_report_harvest_estrae_fonti_e_metodo",
-   "community": 192,
+   "community": 198,
    "norm_label": "test_report_harvest_estrae_fonti_e_metodo()"
   },
   {
@@ -4874,7 +4964,7 @@
    "source_location": "L187",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
-   "community": 3,
+   "community": 193,
    "norm_label": "test_ricerca_filtro_area_e_limite()"
   },
   {
@@ -4884,7 +4974,7 @@
    "source_location": "L194",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
-   "community": 3,
+   "community": 193,
    "norm_label": "test_ricerca_query_senza_risultati_non_esplode()"
   },
   {
@@ -4904,7 +4994,7 @@
    "source_location": "L163",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
-   "community": 182,
+   "community": 193,
    "norm_label": "test_ricerca_trova_il_contenuto_giusto()"
   },
   {
@@ -4974,7 +5064,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_add_frontmatter",
-   "community": 15,
+   "community": 197,
    "norm_label": "add_frontmatter.py"
   },
   {
@@ -4984,7 +5074,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "tools_add_frontmatter_area_di",
-   "community": 15,
+   "community": 197,
    "norm_label": "area_di()"
   },
   {
@@ -4994,7 +5084,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tools_add_frontmatter_costruisci",
-   "community": 15,
+   "community": 197,
    "norm_label": "costruisci()"
   },
   {
@@ -5004,7 +5094,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "tools_add_frontmatter_data_primo_commit",
-   "community": 15,
+   "community": 197,
    "norm_label": "data_primo_commit()"
   },
   {
@@ -5014,7 +5104,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rationale_46",
-   "community": 15,
+   "community": 197,
    "norm_label": "data del primo commit che introduce il file: deterministica e verificabile."
   },
   {
@@ -5024,7 +5114,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rationale_68",
-   "community": 15,
+   "community": 197,
    "norm_label": "front-matter minimo e onesto: solo cio che si puo dedurre con certezza."
   },
   {
@@ -5034,7 +5124,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tools_add_frontmatter_rel",
-   "community": 15,
+   "community": 197,
    "norm_label": "rel()"
   },
   {
@@ -5664,7 +5754,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_context_pack",
-   "community": 5,
+   "community": 192,
    "norm_label": "context_pack.py"
   },
   {
@@ -5674,7 +5764,7 @@
    "source_location": "L172",
    "_origin": "ast",
    "id": "tools_context_pack_come_testo",
-   "community": 5,
+   "community": 192,
    "norm_label": "come_testo()"
   },
   {
@@ -5684,7 +5774,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "tools_context_pack_lezioni_pertinenti",
-   "community": 5,
+   "community": 192,
    "norm_label": "_lezioni_pertinenti()"
   },
   {
@@ -5694,7 +5784,7 @@
    "source_location": "L87",
    "_origin": "ast",
    "id": "tools_context_pack_pacchetto",
-   "community": 5,
+   "community": 192,
    "norm_label": "pacchetto()"
   },
   {
@@ -5704,7 +5794,7 @@
    "source_location": "L173",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_173",
-   "community": 5,
+   "community": 192,
    "norm_label": "il pacchetto in forma leggibile, pronto da incollare in un prompt."
   },
   {
@@ -5714,7 +5804,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_46",
-   "community": 5,
+   "community": 192,
    "norm_label": "cosa c'e intorno ai file trovati, secondo il grafo. evita all'agente di     dove"
   },
   {
@@ -5724,7 +5814,7 @@
    "source_location": "L73",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_73",
-   "community": 5,
+   "community": 192,
    "norm_label": "le lezioni che riguardano cio che stiamo per dare in pasto al modello."
   },
   {
@@ -5734,7 +5824,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_88",
-   "community": 5,
+   "community": 192,
    "norm_label": "assembla il contesto migliore per questa domanda, entro il budget."
   },
   {
@@ -5744,7 +5834,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tools_context_pack_token",
-   "community": 5,
+   "community": 192,
    "norm_label": "_token()"
   },
   {
@@ -5754,7 +5844,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "tools_context_pack_vicinato",
-   "community": 5,
+   "community": 192,
    "norm_label": "_vicinato()"
   },
   {
@@ -6364,7 +6454,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_report_harvest",
-   "community": 192,
+   "community": 198,
    "norm_label": "report_harvest.py"
   },
   {
@@ -6374,7 +6464,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "tools_report_harvest_componi",
-   "community": 192,
+   "community": 198,
    "norm_label": "componi()"
   },
   {
@@ -6384,7 +6474,7 @@
    "source_location": "L151",
    "_origin": "ast",
    "id": "tools_report_harvest_main",
-   "community": 192,
+   "community": 198,
    "norm_label": "main()"
   },
   {
@@ -6394,7 +6484,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "tools_report_harvest_raccogli",
-   "community": 192,
+   "community": 198,
    "norm_label": "raccogli()"
   },
   {
@@ -6404,7 +6494,7 @@
    "source_location": "L29",
    "_origin": "ast",
    "id": "tools_report_harvest_voci",
-   "community": 192,
+   "community": 198,
    "norm_label": "_voci()"
   },
   {
@@ -6554,7 +6644,7 @@
    "source_location": "L240",
    "_origin": "ast",
    "id": "tools_search_annota_memoria",
-   "community": 186,
+   "community": 196,
    "norm_label": "_annota_memoria()"
   },
   {
@@ -6574,7 +6664,7 @@
    "source_location": "L266",
    "_origin": "ast",
    "id": "tools_search_cerca",
-   "community": 182,
+   "community": 193,
    "norm_label": "cerca()"
   },
   {
@@ -6594,7 +6684,7 @@
    "source_location": "L301",
    "_origin": "ast",
    "id": "tools_search_cerca_con_diagnosi",
-   "community": 185,
+   "community": 5,
    "norm_label": "cerca_con_diagnosi()"
   },
   {
@@ -6604,7 +6694,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_search_cerca_denso",
-   "community": 182,
+   "community": 193,
    "norm_label": "cerca_denso()"
   },
   {
@@ -6614,7 +6704,7 @@
    "source_location": "L220",
    "_origin": "ast",
    "id": "tools_search_corrisponde",
-   "community": 186,
+   "community": 196,
    "norm_label": "_corrisponde()"
   },
   {
@@ -6664,7 +6754,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "tools_search_rationale_116",
-   "community": 182,
+   "community": 193,
    "norm_label": "reciprocal rank fusion: fonde piu classifiche usando solo la posizione."
   },
   {
@@ -6694,7 +6784,7 @@
    "source_location": "L221",
    "_origin": "ast",
    "id": "tools_search_rationale_221",
-   "community": 186,
+   "community": 196,
    "norm_label": "un nodo citato da una lezione si riferisce a questo risultato?      prudenza vol"
   },
   {
@@ -6704,7 +6794,7 @@
    "source_location": "L241",
    "_origin": "ast",
    "id": "tools_search_rationale_241",
-   "community": 186,
+   "community": 196,
    "norm_label": "cosa dice l'esperienza passata su questo risultato."
   },
   {
@@ -6714,7 +6804,7 @@
    "source_location": "L267",
    "_origin": "ast",
    "id": "tools_search_rationale_267",
-   "community": 182,
+   "community": 193,
    "norm_label": "ricerca ibrida. ritorna una lista di risultati, ognuno annotato con cio che"
   },
   {
@@ -6724,7 +6814,7 @@
    "source_location": "L302",
    "_origin": "ast",
    "id": "tools_search_rationale_302",
-   "community": 185,
+   "community": 5,
    "norm_label": "ricerca + valutazione della propria affidabilita (f1). e la forma che usano"
   },
   {
@@ -6764,7 +6854,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_search_rationale_94",
-   "community": 182,
+   "community": 193,
    "norm_label": "ranking semantico. attivo solo se indice denso e libreria sono presenti."
   },
   {
@@ -6774,7 +6864,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "tools_search_rrf",
-   "community": 182,
+   "community": 193,
    "norm_label": "_rrf()"
   },
   {
@@ -6804,27 +6894,27 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_style_check",
-   "community": 15,
+   "community": 194,
    "norm_label": "style_check.py"
   },
   {
    "label": "analizza()",
    "file_type": "code",
    "source_file": "tools/style_check.py",
-   "source_location": "L82",
+   "source_location": "L86",
    "_origin": "ast",
    "id": "tools_style_check_analizza",
-   "community": 15,
+   "community": 194,
    "norm_label": "analizza()"
   },
   {
    "label": "analizza_via_cli()",
    "file_type": "code",
    "source_file": "tools/style_check.py",
-   "source_location": "L100",
+   "source_location": "L104",
    "_origin": "ast",
    "id": "tools_style_check_analizza_via_cli",
-   "community": 15,
+   "community": 194,
    "norm_label": "analizza_via_cli()"
   },
   {
@@ -6834,37 +6924,37 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_style_check_carica_motore",
-   "community": 15,
+   "community": 194,
    "norm_label": "carica_motore()"
   },
   {
    "label": "main()",
    "file_type": "code",
    "source_file": "tools/style_check.py",
-   "source_location": "L171",
+   "source_location": "L175",
    "_origin": "ast",
    "id": "tools_style_check_main",
-   "community": 15,
+   "community": 194,
    "norm_label": "main()"
   },
   {
    "label": "Ripiego robusto: lo script come processo separato, sul suo contratto pubblico.",
    "file_type": "rationale",
    "source_file": "tools/style_check.py",
-   "source_location": "L101",
+   "source_location": "L105",
    "_origin": "ast",
-   "id": "tools_style_check_rationale_101",
-   "community": 15,
+   "id": "tools_style_check_rationale_105",
+   "community": 194,
    "norm_label": "ripiego robusto: lo script come processo separato, sul suo contratto pubblico."
   },
   {
    "label": "Il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda.",
    "file_type": "rationale",
    "source_file": "tools/style_check.py",
-   "source_location": "L122",
+   "source_location": "L126",
    "_origin": "ast",
-   "id": "tools_style_check_rationale_122",
-   "community": 15,
+   "id": "tools_style_check_rationale_126",
+   "community": 194,
    "norm_label": "il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda."
   },
   {
@@ -6874,7 +6964,7 @@
    "source_location": "L33",
    "_origin": "ast",
    "id": "tools_style_check_rationale_33",
-   "community": 15,
+   "community": 194,
    "norm_label": "importa lo script canonico di bookforge come modulo (una sola implementazione)."
   },
   {
@@ -6884,27 +6974,27 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_style_check_rationale_46",
-   "community": 15,
+   "community": 194,
    "norm_label": "estrae la prosa da md/txt/html: i tag e il front-matter non sono scrittura."
   },
   {
    "label": "La prosa editoriale di un report living sta nel database, non nell'HTML.",
    "file_type": "rationale",
    "source_file": "tools/style_check.py",
-   "source_location": "L64",
+   "source_location": "L68",
    "_origin": "ast",
-   "id": "tools_style_check_rationale_64",
-   "community": 15,
+   "id": "tools_style_check_rationale_68",
+   "community": 194,
    "norm_label": "la prosa editoriale di un report living sta nel database, non nell'html."
   },
   {
    "label": "riassumi()",
    "file_type": "code",
    "source_file": "tools/style_check.py",
-   "source_location": "L121",
+   "source_location": "L125",
    "_origin": "ast",
    "id": "tools_style_check_riassumi",
-   "community": 15,
+   "community": 194,
    "norm_label": "riassumi()"
   },
   {
@@ -6914,17 +7004,17 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "tools_style_check_testo_da_file",
-   "community": 15,
+   "community": 194,
    "norm_label": "testo_da_file()"
   },
   {
    "label": "testo_da_report()",
    "file_type": "code",
    "source_file": "tools/style_check.py",
-   "source_location": "L63",
+   "source_location": "L67",
    "_origin": "ast",
    "id": "tools_style_check_testo_da_report",
-   "community": 15,
+   "community": 194,
    "norm_label": "testo_da_report()"
   },
   {
@@ -7393,7 +7483,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L55",
+   "source_location": "L56",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_lezioni_recenti",
@@ -7423,7 +7513,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L49",
+   "source_location": "L50",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_vicoli_ciechi",
@@ -12100,6 +12190,130 @@
   {
    "relation": "contains",
    "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L21",
+   "weight": 1.0,
+   "source": "tests_test_style_check",
+   "target": "tests_test_style_check_scrivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L53",
+   "weight": 1.0,
+   "source": "tests_test_style_check",
+   "target": "tests_test_style_check_test_gli_anglicismi_veri_vengono_ancora_visti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L44",
+   "weight": 1.0,
+   "source": "tests_test_style_check",
+   "target": "tests_test_style_check_test_i_blocchi_di_codice_non_sono_prosa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L28",
+   "weight": 1.0,
+   "source": "tests_test_style_check",
+   "target": "tests_test_style_check_test_il_bersaglio_di_un_wikilink_non_e_prosa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L38",
+   "weight": 1.0,
+   "source": "tests_test_style_check",
+   "target": "tests_test_style_check_test_il_front_matter_non_e_prosa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L29",
+   "weight": 1.0,
+   "source": "tests_test_style_check_rationale_29",
+   "target": "tests_test_style_check_test_il_bersaglio_di_un_wikilink_non_e_prosa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L45",
+   "weight": 1.0,
+   "source": "tests_test_style_check_rationale_45",
+   "target": "tests_test_style_check_test_i_blocchi_di_codice_non_sono_prosa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L54",
+   "weight": 1.0,
+   "source": "tests_test_style_check_rationale_54",
+   "target": "tests_test_style_check_test_gli_anglicismi_veri_vengono_ancora_visti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L55",
+   "weight": 1.0,
+   "source": "tests_test_style_check_test_gli_anglicismi_veri_vengono_ancora_visti",
+   "target": "tests_test_style_check_scrivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L47",
+   "weight": 1.0,
+   "source": "tests_test_style_check_test_i_blocchi_di_codice_non_sono_prosa",
+   "target": "tests_test_style_check_scrivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L32",
+   "weight": 1.0,
+   "source": "tests_test_style_check_test_il_bersaglio_di_un_wikilink_non_e_prosa",
+   "target": "tests_test_style_check_scrivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "calls",
+   "context": "call",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_style_check.py",
+   "source_location": "L39",
+   "weight": 1.0,
+   "source": "tests_test_style_check_test_il_front_matter_non_e_prosa",
+   "target": "tests_test_style_check_scrivi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
    "source_file": "tests/test_tools.py",
    "source_location": "L66",
    "weight": 1.0,
@@ -16243,7 +16457,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L82",
+   "source_location": "L86",
    "weight": 1.0,
    "source": "tools_style_check",
    "target": "tools_style_check_analizza",
@@ -16253,7 +16467,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L100",
+   "source_location": "L104",
    "weight": 1.0,
    "source": "tools_style_check",
    "target": "tools_style_check_analizza_via_cli",
@@ -16273,7 +16487,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L171",
+   "source_location": "L175",
    "weight": 1.0,
    "source": "tools_style_check",
    "target": "tools_style_check_main",
@@ -16283,7 +16497,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L121",
+   "source_location": "L125",
    "weight": 1.0,
    "source": "tools_style_check",
    "target": "tools_style_check_riassumi",
@@ -16303,7 +16517,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L63",
+   "source_location": "L67",
    "weight": 1.0,
    "source": "tools_style_check",
    "target": "tools_style_check_testo_da_report",
@@ -16314,7 +16528,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L83",
+   "source_location": "L87",
    "weight": 1.0,
    "source": "tools_style_check_analizza",
    "target": "tools_style_check_carica_motore",
@@ -16325,7 +16539,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L195",
+   "source_location": "L208",
    "weight": 1.0,
    "source": "tools_style_check_main",
    "target": "tools_style_check_analizza",
@@ -16336,7 +16550,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L197",
+   "source_location": "L210",
    "weight": 1.0,
    "source": "tools_style_check_main",
    "target": "tools_style_check_analizza_via_cli",
@@ -16347,7 +16561,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L203",
+   "source_location": "L216",
    "weight": 1.0,
    "source": "tools_style_check_main",
    "target": "tools_style_check_riassumi",
@@ -16358,7 +16572,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L187",
+   "source_location": "L200",
    "weight": 1.0,
    "source": "tools_style_check_main",
    "target": "tools_style_check_testo_da_file",
@@ -16369,7 +16583,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L183",
+   "source_location": "L196",
    "weight": 1.0,
    "source": "tools_style_check_main",
    "target": "tools_style_check_testo_da_report",
@@ -16379,9 +16593,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L101",
+   "source_location": "L105",
    "weight": 1.0,
-   "source": "tools_style_check_rationale_101",
+   "source": "tools_style_check_rationale_105",
    "target": "tools_style_check_analizza_via_cli",
    "confidence_score": 1.0
   },
@@ -16389,9 +16603,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L122",
+   "source_location": "L126",
    "weight": 1.0,
-   "source": "tools_style_check_rationale_122",
+   "source": "tools_style_check_rationale_126",
    "target": "tools_style_check_riassumi",
    "confidence_score": 1.0
   },
@@ -16419,9 +16633,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/style_check.py",
-   "source_location": "L64",
+   "source_location": "L68",
    "weight": 1.0,
-   "source": "tools_style_check_rationale_64",
+   "source": "tools_style_check_rationale_68",
    "target": "tools_style_check_testo_da_report",
    "confidence_score": 1.0
   },

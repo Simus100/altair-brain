@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "74dc8f6437330f9b971dd36b9c99d09b83b47dac",
+ "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
  "nodes": [
   {
    "label": "AI introduzione.md",
@@ -274,6 +274,56 @@
    "id": "raw_data_science_normalizzare_numeri_decimali_con_errori",
    "community": 141,
    "norm_label": "normalizzare numeri decimali con errori.md"
+  },
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "community": 188,
+   "norm_label": "readme.md"
+  },
+  {
+   "label": "Avvertenze sulla fonte",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L40",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_avvertenze_sulla_fonte",
+   "community": 188,
+   "norm_label": "avvertenze sulla fonte"
+  },
+  {
+   "label": "Cosa c'e in `MACELLONI_SIMONE_Analisi Dati di magazzino/`",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L20",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_cosa_c_e_in_macelloni_simone_analisi_dati_di_magazzino",
+   "community": 188,
+   "norm_label": "cosa c'e in `macelloni_simone_analisi dati di magazzino/`"
+  },
+  {
+   "label": "Il dato in breve",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L33",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_il_dato_in_breve",
+   "community": 188,
+   "norm_label": "il dato in breve"
+  },
+  {
+   "label": "Project work — Analisi dati di magazzino",
+   "file_type": "document",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_project_work_analisi_dati_di_magazzino",
+   "community": 188,
+   "norm_label": "project work — analisi dati di magazzino"
   },
   {
    "label": "Documentazione.md",
@@ -562,7 +612,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale",
-   "community": 0,
+   "community": 109,
    "norm_label": "algebra-relazionale.md"
   },
   {
@@ -572,7 +622,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale_algebra_relazionale",
-   "community": 0,
+   "community": 109,
    "norm_label": "algebra relazionale"
   },
   {
@@ -582,7 +632,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi-esplorativa.md"
   },
   {
@@ -592,7 +642,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa_analisi_esplorativa_eda",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi esplorativa (eda)"
   },
   {
@@ -602,7 +652,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi-relazionale.md"
   },
   {
@@ -612,7 +662,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale_analisi_relazionale_confronti_tra_variabili",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi relazionale (confronti tra variabili)"
   },
   {
@@ -622,7 +672,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing",
-   "community": 0,
+   "community": 182,
    "norm_label": "cloud-computing.md"
   },
   {
@@ -632,7 +682,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing_cloud_computing",
-   "community": 0,
+   "community": 182,
    "norm_label": "cloud computing"
   },
   {
@@ -682,7 +732,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-driven-culture.md"
   },
   {
@@ -692,7 +742,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture_data_driven_culture",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-driven culture"
   },
   {
@@ -702,7 +752,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-storytelling.md"
   },
   {
@@ -712,7 +762,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling_data_storytelling",
-   "community": 0,
+   "community": 182,
    "norm_label": "data storytelling"
   },
   {
@@ -742,7 +792,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_docker",
-   "community": 0,
+   "community": 109,
    "norm_label": "docker.md"
   },
   {
@@ -752,7 +802,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_docker_docker",
-   "community": 0,
+   "community": 109,
    "norm_label": "docker"
   },
   {
@@ -762,7 +812,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_drawio",
-   "community": 0,
+   "community": 109,
    "norm_label": "drawio.md"
   },
   {
@@ -772,7 +822,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_drawio_draw_io",
-   "community": 0,
+   "community": 109,
    "norm_label": "draw.io"
   },
   {
@@ -822,7 +872,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche",
-   "community": 0,
+   "community": 185,
    "norm_label": "framework-domande-analitiche.md"
   },
   {
@@ -832,7 +882,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche_framework_delle_domande_analitiche",
-   "community": 0,
+   "community": 185,
    "norm_label": "framework delle domande analitiche"
   },
   {
@@ -856,13 +906,83 @@
    "norm_label": "data science"
   },
   {
+   "label": "indicatori-magazzino.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino",
+   "community": 0,
+   "norm_label": "indicatori-magazzino.md"
+  },
+  {
+   "label": "Classificazioni per quantile",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L49",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_classificazioni_per_quantile",
+   "community": 186,
+   "norm_label": "classificazioni per quantile"
+  },
+  {
+   "label": "Indicatori di magazzino (colonne derivate)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "community": 186,
+   "norm_label": "indicatori di magazzino (colonne derivate)"
+  },
+  {
+   "label": "La regola generale",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L78",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_la_regola_generale",
+   "community": 186,
+   "norm_label": "la regola generale"
+  },
+  {
+   "label": "Rischio, cioe due indicatori che si parlano",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L63",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_rischio_cioe_due_indicatori_che_si_parlano",
+   "community": 186,
+   "norm_label": "rischio, cioe due indicatori che si parlano"
+  },
+  {
+   "label": "Stato delle scorte",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L17",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_stato_delle_scorte",
+   "community": 186,
+   "norm_label": "stato delle scorte"
+  },
+  {
+   "label": "Valore economico",
+   "file_type": "document",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L31",
+   "_origin": "ast",
+   "id": "wiki_data_science_indicatori_magazzino_valore_economico",
+   "community": 186,
+   "norm_label": "valore economico"
+  },
+  {
    "label": "intelligenza-artificiale.md",
    "file_type": "document",
    "source_file": "wiki/data-science/intelligenza-artificiale.md",
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale",
-   "community": 0,
+   "community": 182,
    "norm_label": "intelligenza-artificiale.md"
   },
   {
@@ -872,7 +992,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale_intelligenza_artificiale_fondamenti",
-   "community": 0,
+   "community": 182,
    "norm_label": "intelligenza artificiale (fondamenti)"
   },
   {
@@ -882,7 +1002,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter",
-   "community": 0,
+   "community": 109,
    "norm_label": "jupyter.md"
   },
   {
@@ -892,8 +1012,68 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter_jupyter_notebook",
-   "community": 0,
+   "community": 109,
    "norm_label": "jupyter notebook"
+  },
+  {
+   "label": "limiti-dichiarati.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati",
+   "community": 0,
+   "norm_label": "limiti-dichiarati.md"
+  },
+  {
+   "label": "Dove va scritto",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L58",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati_dove_va_scritto",
+   "community": 189,
+   "norm_label": "dove va scritto"
+  },
+  {
+   "label": "I tre modi in cui un dato smette di poter rispondere",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L25",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati_i_tre_modi_in_cui_un_dato_smette_di_poter_rispondere",
+   "community": 189,
+   "norm_label": "i tre modi in cui un dato smette di poter rispondere"
+  },
+  {
+   "label": "Il caso a parte: il dato che manca per attribuire una causa",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L48",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati_il_caso_a_parte_il_dato_che_manca_per_attribuire_una_causa",
+   "community": 189,
+   "norm_label": "il caso a parte: il dato che manca per attribuire una causa"
+  },
+  {
+   "label": "Limiti dichiarati (cosa il dato non puo dire)",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "community": 189,
+   "norm_label": "limiti dichiarati (cosa il dato non puo dire)"
+  },
+  {
+   "label": "Perche e un pezzo di metodo, non una premessa di cortesia",
+   "file_type": "document",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L17",
+   "_origin": "ast",
+   "id": "wiki_data_science_limiti_dichiarati_perche_e_un_pezzo_di_metodo_non_una_premessa_di_cortesia",
+   "community": 189,
+   "norm_label": "perche e un pezzo di metodo, non una premessa di cortesia"
   },
   {
    "label": "metodi.md",
@@ -902,7 +1082,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_metodi",
-   "community": 0,
+   "community": 182,
    "norm_label": "metodi.md"
   },
   {
@@ -912,7 +1092,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_metodi_metodi_e_concetti_data_science",
-   "community": 0,
+   "community": 182,
    "norm_label": "metodi e concetti (data science)"
   },
   {
@@ -922,7 +1102,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb",
-   "community": 0,
+   "community": 109,
    "norm_label": "mongodb.md"
   },
   {
@@ -932,7 +1112,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb_mongodb",
-   "community": 0,
+   "community": 109,
    "norm_label": "mongodb"
   },
   {
@@ -942,7 +1122,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali",
-   "community": 0,
+   "community": 182,
    "norm_label": "normalizzazione-decimali.md"
   },
   {
@@ -952,7 +1132,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali_normalizzazione_dei_decimali_eng_ita",
-   "community": 0,
+   "community": 182,
    "norm_label": "normalizzazione dei decimali (eng/ita)"
   },
   {
@@ -962,7 +1142,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql",
-   "community": 0,
+   "community": 109,
    "norm_label": "postgresql.md"
   },
   {
@@ -972,7 +1152,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql_postgresql",
-   "community": 0,
+   "community": 109,
    "norm_label": "postgresql"
   },
   {
@@ -982,7 +1162,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi",
-   "community": 0,
+   "community": 109,
    "norm_label": "power-bi.md"
   },
   {
@@ -992,7 +1172,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi_power_bi",
-   "community": 0,
+   "community": 109,
    "norm_label": "power bi"
   },
   {
@@ -1002,7 +1182,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database",
-   "community": 0,
+   "community": 109,
    "norm_label": "progettazione-database.md"
   },
   {
@@ -1012,7 +1192,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database_progettazione_di_un_database",
-   "community": 0,
+   "community": 109,
    "norm_label": "progettazione di un database"
   },
   {
@@ -1076,13 +1256,73 @@
    "norm_label": "progetto: insurance analysis"
   },
   {
+   "label": "progetto-magazzino.md",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino",
+   "community": 0,
+   "norm_label": "progetto-magazzino.md"
+  },
+  {
+   "label": "Cosa e emerso",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino_cosa_e_emerso",
+   "community": 190,
+   "norm_label": "cosa e emerso"
+  },
+  {
+   "label": "Cosa il dato NON poteva dire",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L59",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino_cosa_il_dato_non_poteva_dire",
+   "community": 190,
+   "norm_label": "cosa il dato non poteva dire"
+  },
+  {
+   "label": "Il metodo, in due passaggi separati",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L19",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino_il_metodo_in_due_passaggi_separati",
+   "community": 190,
+   "norm_label": "il metodo, in due passaggi separati"
+  },
+  {
+   "label": "Progetto: Analisi dati di magazzino",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "community": 190,
+   "norm_label": "progetto: analisi dati di magazzino"
+  },
+  {
+   "label": "Uscite",
+   "file_type": "document",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L79",
+   "_origin": "ast",
+   "id": "wiki_data_science_progetto_magazzino_uscite",
+   "community": 190,
+   "norm_label": "uscite"
+  },
+  {
    "label": "progetto-olist-ecommerce.md",
    "file_type": "document",
    "source_file": "wiki/data-science/progetto-olist-ecommerce.md",
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce",
-   "community": 0,
+   "community": 109,
    "norm_label": "progetto-olist-ecommerce.md"
   },
   {
@@ -1092,7 +1332,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce_progetto_brazilian_e_commerce_olist",
-   "community": 0,
+   "community": 109,
    "norm_label": "progetto: brazilian e-commerce (olist)"
   },
   {
@@ -1122,7 +1362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering",
-   "community": 0,
+   "community": 182,
    "norm_label": "prompt-engineering.md"
   },
   {
@@ -1132,7 +1372,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering_prompt_engineering",
-   "community": 0,
+   "community": 182,
    "norm_label": "prompt engineering"
   },
   {
@@ -1146,14 +1386,54 @@
    "norm_label": "python-pandas.md"
   },
   {
+   "label": "Come si organizzano i notebook",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas_come_si_organizzano_i_notebook",
+   "community": 191,
+   "norm_label": "come si organizzano i notebook"
+  },
+  {
    "label": "Python / pandas",
    "file_type": "document",
    "source_file": "wiki/data-science/python-pandas.md",
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_python_pandas",
-   "community": 0,
+   "community": 191,
    "norm_label": "python / pandas"
+  },
+  {
+   "label": "Ricette di analisi",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L70",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas_ricette_di_analisi",
+   "community": 191,
+   "norm_label": "ricette di analisi"
+  },
+  {
+   "label": "Ricette di pulizia",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L22",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas_ricette_di_pulizia",
+   "community": 191,
+   "norm_label": "ricette di pulizia"
+  },
+  {
+   "label": "Verifica finale",
+   "file_type": "document",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L104",
+   "_origin": "ast",
+   "id": "wiki_data_science_python_pandas_verifica_finale",
+   "community": 191,
+   "norm_label": "verifica finale"
   },
   {
    "label": "quartili-outlier.md",
@@ -1182,7 +1462,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_sql",
-   "community": 0,
+   "community": 109,
    "norm_label": "sql.md"
   },
   {
@@ -1192,7 +1472,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_sql_sql",
-   "community": 0,
+   "community": 109,
    "norm_label": "sql"
   },
   {
@@ -1202,7 +1482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti",
-   "community": 0,
+   "community": 109,
    "norm_label": "strumenti.md"
   },
   {
@@ -1212,7 +1492,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti_strumenti_data_science",
-   "community": 0,
+   "community": 109,
    "norm_label": "strumenti (data science)"
   },
   {
@@ -1242,7 +1522,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi",
-   "community": 0,
+   "community": 182,
    "norm_label": "tipi-di-analisi.md"
   },
   {
@@ -1252,7 +1532,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi_tipi_di_analisi_dati",
-   "community": 0,
+   "community": 182,
    "norm_label": "tipi di analisi dati"
   },
   {
@@ -1262,7 +1542,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati",
-   "community": 0,
+   "community": 185,
    "norm_label": "visualizzazione-dati.md"
   },
   {
@@ -1272,7 +1552,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
-   "community": 0,
+   "community": 185,
    "norm_label": "visualizzazione efficace dei dati"
   },
   {
@@ -1475,6 +1755,46 @@
    "weight": 1.0,
    "source": "raw_data_science_data_culture_data_driven_culture_guida_strategica_e_operativa",
    "target": "raw_data_science_data_culture_6_questioni_strategiche_da_approfondire_faq_checklist",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_project_work_analisi_dati_di_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L40",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_project_work_analisi_dati_di_magazzino",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_avvertenze_sulla_fonte",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_project_work_analisi_dati_di_magazzino",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_cosa_c_e_in_macelloni_simone_analisi_dati_di_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/data-science/PROJECT WORK/Analisi dati magazzino finale/README.md",
+   "source_location": "L33",
+   "weight": 1.0,
+   "source": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_project_work_analisi_dati_di_magazzino",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme_il_dato_in_breve",
    "confidence_score": 1.0
   },
   {
@@ -2331,10 +2651,10 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/index.md",
-   "source_location": "L13",
+   "source_location": "L10",
    "weight": 1.0,
    "source": "wiki_data_science_index",
-   "target": "wiki_data_science_metodi",
+   "target": "wiki_data_science_limiti_dichiarati",
    "confidence_score": 1.0
   },
   {
@@ -2344,6 +2664,16 @@
    "source_location": "L15",
    "weight": 1.0,
    "source": "wiki_data_science_index",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/index.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "wiki_data_science_index",
    "target": "wiki_data_science_progetti",
    "confidence_score": 1.0
   },
@@ -2351,7 +2681,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/index.md",
-   "source_location": "L14",
+   "source_location": "L16",
    "weight": 1.0,
    "source": "wiki_data_science_index",
    "target": "wiki_data_science_strumenti",
@@ -2375,6 +2705,156 @@
    "weight": 1.0,
    "source": "wiki_data_science_index",
    "target": "wiki_data_science_workflow_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "relation": "derived_from",
+   "nota": "le 13 colonne derivate del secondo notebook, rese sistema riutilizzabile",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L90",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L47",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_limiti_dichiarati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L92",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_progetto_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L89",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L56",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L91",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L49",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "target": "wiki_data_science_indicatori_magazzino_classificazioni_per_quantile",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L78",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "target": "wiki_data_science_indicatori_magazzino_la_regola_generale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L63",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "target": "wiki_data_science_indicatori_magazzino_rischio_cioe_due_indicatori_che_si_parlano",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "target": "wiki_data_science_indicatori_magazzino_stato_delle_scorte",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/indicatori-magazzino.md",
+   "source_location": "L31",
+   "weight": 1.0,
+   "source": "wiki_data_science_indicatori_magazzino_indicatori_di_magazzino_colonne_derivate",
+   "target": "wiki_data_science_indicatori_magazzino_valore_economico",
    "confidence_score": 1.0
   },
   {
@@ -2465,6 +2945,126 @@
    "weight": 1.0,
    "source": "wiki_data_science_jupyter",
    "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "relation": "derived_from",
+   "nota": "metodo estratto dai limiti che il project work ha dichiarato invece di aggirare (lotto assente, prezzo ambiguo, posizioni non plausibili)",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L69",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_framework_domande_analitiche",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L71",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_metodi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L28",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_progetto_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L23",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L70",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati",
+   "target": "wiki_data_science_workflow_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L58",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "target": "wiki_data_science_limiti_dichiarati_dove_va_scritto",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L25",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "target": "wiki_data_science_limiti_dichiarati_i_tre_modi_in_cui_un_dato_smette_di_poter_rispondere",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L48",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "target": "wiki_data_science_limiti_dichiarati_il_caso_a_parte_il_dato_che_manca_per_attribuire_una_causa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/limiti-dichiarati.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
+   "target": "wiki_data_science_limiti_dichiarati_perche_e_un_pezzo_di_metodo_non_una_premessa_di_cortesia",
    "confidence_score": 1.0
   },
   {
@@ -2851,6 +3451,16 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/progetti.md",
+   "source_location": "L17",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetti",
+   "target": "wiki_data_science_progetto_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetti.md",
    "source_location": "L15",
    "weight": 1.0,
    "source": "wiki_data_science_progetti",
@@ -3078,6 +3688,176 @@
    "confidence_score": 1.0
   },
   {
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "relation": "derived_from",
+   "nota": "il caso: 990 prodotti, due notebook, dashboard. Numeri ricalcolati da dataset_finale.csv, non ripresi dalla prosa dei notebook.",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L31",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_analisi_esplorativa",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L26",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L26",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L83",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_data_storytelling",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L99",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_dataset",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L32",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_jupyter",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L30",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_python_pandas",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L95",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L83",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_struttura_report_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L98",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino",
+   "target": "wiki_data_science_workflow_analisi_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "target": "wiki_data_science_progetto_magazzino_cosa_e_emerso",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L59",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "target": "wiki_data_science_progetto_magazzino_cosa_il_dato_non_poteva_dire",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L19",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "target": "wiki_data_science_progetto_magazzino_il_metodo_in_due_passaggi_separati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/progetto-magazzino.md",
+   "source_location": "L79",
+   "weight": 1.0,
+   "source": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
+   "target": "wiki_data_science_progetto_magazzino_uscite",
+   "confidence_score": 1.0
+  },
+  {
    "source": "wiki_data_science_progetto_olist_ecommerce",
    "target": "raw_data_science_project_work_brazilian_e_commerce_olist_linee_guida",
    "relation": "derived_from",
@@ -3269,9 +4049,19 @@
   },
   {
    "source": "wiki_data_science_python_pandas",
+   "target": "raw_data_science_project_work_analisi_dati_magazzino_finale_readme",
+   "relation": "derived_from",
+   "nota": "+ le ricette pandas verificate del project work magazzino (pulizia, np.select, quantili, crosstab): la pagina distilla DUE progetti.",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_data_science_python_pandas",
    "target": "raw_data_science_project_work_analisi_prenotazioni_hotel_python_prototype_api_pandas",
    "relation": "derived_from",
-   "nota": "",
+   "nota": "+ le ricette pandas verificate del project work magazzino (pulizia, np.select, quantili, crosstab): la pagina distilla DUE progetti.",
    "confidence": "CURATED",
    "confidence_score": 1.0,
    "weight": 1.0,
@@ -3281,7 +4071,7 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/python-pandas.md",
-   "source_location": "L16",
+   "source_location": "L116",
    "weight": 1.0,
    "source": "wiki_data_science_python_pandas",
    "target": "wiki_data_science_analisi_esplorativa",
@@ -3291,10 +4081,40 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/python-pandas.md",
-   "source_location": "L15",
+   "source_location": "L24",
    "weight": 1.0,
    "source": "wiki_data_science_python_pandas",
    "target": "wiki_data_science_controlli_qualita_dati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L24",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_data_cleaning",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L117",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_feature_engineering",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L121",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_normalizzazione_decimali",
    "confidence_score": 1.0
   },
   {
@@ -3311,10 +4131,60 @@
    "relation": "references",
    "confidence": "EXTRACTED",
    "source_file": "wiki/data-science/python-pandas.md",
-   "source_location": "L13",
+   "source_location": "L120",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas",
+   "target": "wiki_data_science_quartili_outlier",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L112",
    "weight": 1.0,
    "source": "wiki_data_science_python_pandas",
    "target": "wiki_data_science_strumenti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas_python_pandas",
+   "target": "wiki_data_science_python_pandas_come_si_organizzano_i_notebook",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L70",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas_python_pandas",
+   "target": "wiki_data_science_python_pandas_ricette_di_analisi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L22",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas_python_pandas",
+   "target": "wiki_data_science_python_pandas_ricette_di_pulizia",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/data-science/python-pandas.md",
+   "source_location": "L104",
+   "weight": 1.0,
+   "source": "wiki_data_science_python_pandas_python_pandas",
+   "target": "wiki_data_science_python_pandas_verifica_finale",
    "confidence_score": 1.0
   },
   {

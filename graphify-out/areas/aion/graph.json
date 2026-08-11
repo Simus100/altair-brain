@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "74dc8f6437330f9b971dd36b9c99d09b83b47dac",
+ "built_at_commit": "5feae90bfd4a1a339728a6f126a46811104a7091",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -5322,7 +5322,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_aion_readme_aion_modello_di_pensiero",
-   "community": 109,
+   "community": 199,
    "norm_label": "aion — modello di pensiero"
   },
   {
@@ -5332,7 +5332,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_aion_readme_ambito",
-   "community": 109,
+   "community": 199,
    "norm_label": "ambito"
   },
   {
@@ -5342,7 +5342,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "raw_aion_readme_documenti_del_corpus_aion",
-   "community": 109,
+   "community": 199,
    "norm_label": "documenti del corpus aion"
   },
   {
@@ -5352,7 +5352,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "raw_aion_readme_note",
-   "community": 109,
+   "community": 199,
    "norm_label": "note"
   },
   {

@@ -113,6 +113,22 @@
         "wiki/creativita/fasi-editoriali.md"
       ],
       "note": "NST e Ledger PIP: la memoria narrativa"
+    },
+    {
+      "domanda": "Come si trasformano quantita e soglie di magazzino in indicatori che dicono cosa ordinare?",
+      "attesi": [
+        "wiki/data-science/indicatori-magazzino.md",
+        "wiki/data-science/progetto-magazzino.md"
+      ],
+      "note": "il sistema di colonne derivate e il caso da cui e estratto"
+    },
+    {
+      "domanda": "Cosa si fa quando un dataset e pulito ma non puo rispondere alla domanda?",
+      "attesi": [
+        "wiki/data-science/limiti-dichiarati.md",
+        "wiki/data-science/controlli-qualita-dati.md"
+      ],
+      "note": "le due domande distinte: qualita del dato vs portata della conclusione"
     }
   ],
   "banco_semantico": {
