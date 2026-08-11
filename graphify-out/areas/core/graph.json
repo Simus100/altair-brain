@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
+ "built_at_commit": "2facdce98652a6055873d6a9a6acef49feac59ad",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -4224,7 +4224,7 @@
    "source_location": "L66",
    "_origin": "ast",
    "id": "tests_test_tools_mini_repo",
-   "community": 182,
+   "community": 3,
    "norm_label": "_mini_repo()"
   },
   {
@@ -4234,7 +4234,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "tests_test_tools_py_path",
-   "community": 182,
+   "community": 3,
    "norm_label": "path"
   },
   {
@@ -4274,7 +4274,7 @@
    "source_location": "L164",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_164",
-   "community": 163,
+   "community": 7,
    "norm_label": "bm25 deve portare in cima la pagina che tratta davvero l'argomento."
   },
   {
@@ -4344,7 +4344,7 @@
    "source_location": "L260",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_260",
-   "community": 185,
+   "community": 25,
    "norm_label": "regressione: se query e indice filtrano stopword diverse, i termini scartati"
   },
   {
@@ -4354,7 +4354,7 @@
    "source_location": "L273",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_273",
-   "community": 163,
+   "community": 7,
    "norm_label": "una lezione registrata deve cambiare cio che si vede la volta dopo."
   },
   {
@@ -4434,7 +4434,7 @@
    "source_location": "L404",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_404",
-   "community": 181,
+   "community": 192,
    "norm_label": "il budget vale sul testo consegnato, non sulla somma dei pezzi: ignorare     l'i"
   },
   {
@@ -4504,7 +4504,7 @@
    "source_location": "L545",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_545",
-   "community": 163,
+   "community": 7,
    "norm_label": "vulnerabilita reale: la cache non si invalidava mai. sulla vps l'api resta     a"
   },
   {
@@ -4574,7 +4574,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_67",
-   "community": 182,
+   "community": 3,
    "norm_label": "copia minima del layout repo: tools/report_update.py + report finto."
   },
   {
@@ -4584,7 +4584,7 @@
    "source_location": "L83",
    "_origin": "ast",
    "id": "tests_test_tools_run_update",
-   "community": 182,
+   "community": 3,
    "norm_label": "_run_update()"
   },
   {
@@ -4634,7 +4634,7 @@
    "source_location": "L544",
    "_origin": "ast",
    "id": "tests_test_tools_test_cache_ricarica_se_indice_cambia",
-   "community": 163,
+   "community": 7,
    "norm_label": "test_cache_ricarica_se_indice_cambia()"
   },
   {
@@ -4654,7 +4654,7 @@
    "source_location": "L226",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
-   "community": 3,
+   "community": 214,
    "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
   },
   {
@@ -4744,7 +4744,7 @@
    "source_location": "L403",
    "_origin": "ast",
    "id": "tests_test_tools_test_context_pack_rispetta_il_budget_reale",
-   "community": 181,
+   "community": 192,
    "norm_label": "test_context_pack_rispetta_il_budget_reale()"
   },
   {
@@ -4864,7 +4864,7 @@
    "source_location": "L272",
    "_origin": "ast",
    "id": "tests_test_tools_test_memoria_annota_ancoraggi_consolidati",
-   "community": 163,
+   "community": 7,
    "norm_label": "test_memoria_annota_ancoraggi_consolidati()"
   },
   {
@@ -4934,7 +4934,7 @@
    "source_location": "L90",
    "_origin": "ast",
    "id": "tests_test_tools_test_report_update_nodo_e_sync_prototipo",
-   "community": 182,
+   "community": 3,
    "norm_label": "test_report_update_nodo_e_sync_prototipo()"
   },
   {
@@ -4944,7 +4944,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "tests_test_tools_test_report_update_nodo_inesistente_fallisce",
-   "community": 182,
+   "community": 3,
    "norm_label": "test_report_update_nodo_inesistente_fallisce()"
   },
   {
@@ -4954,7 +4954,7 @@
    "source_location": "L106",
    "_origin": "ast",
    "id": "tests_test_tools_test_report_update_verdict_set_current",
-   "community": 182,
+   "community": 3,
    "norm_label": "test_report_update_verdict_set_current()"
   },
   {
@@ -5004,7 +5004,7 @@
    "source_location": "L187",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_filtro_area_e_limite",
-   "community": 3,
+   "community": 7,
    "norm_label": "test_ricerca_filtro_area_e_limite()"
   },
   {
@@ -5014,7 +5014,7 @@
    "source_location": "L194",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_query_senza_risultati_non_esplode",
-   "community": 3,
+   "community": 7,
    "norm_label": "test_ricerca_query_senza_risultati_non_esplode()"
   },
   {
@@ -5034,7 +5034,7 @@
    "source_location": "L163",
    "_origin": "ast",
    "id": "tests_test_tools_test_ricerca_trova_il_contenuto_giusto",
-   "community": 163,
+   "community": 7,
    "norm_label": "test_ricerca_trova_il_contenuto_giusto()"
   },
   {
@@ -5084,7 +5084,7 @@
    "source_location": "L259",
    "_origin": "ast",
    "id": "tests_test_tools_test_tokenizzazione_query_coerente_con_indice",
-   "community": 185,
+   "community": 25,
    "norm_label": "test_tokenizzazione_query_coerente_con_indice()"
   },
   {
@@ -5794,7 +5794,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_context_pack",
-   "community": 192,
+   "community": 25,
    "norm_label": "context_pack.py"
   },
   {
@@ -5804,7 +5804,7 @@
    "source_location": "L172",
    "_origin": "ast",
    "id": "tools_context_pack_come_testo",
-   "community": 181,
+   "community": 192,
    "norm_label": "come_testo()"
   },
   {
@@ -5814,7 +5814,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "tools_context_pack_lezioni_pertinenti",
-   "community": 192,
+   "community": 25,
    "norm_label": "_lezioni_pertinenti()"
   },
   {
@@ -5834,7 +5834,7 @@
    "source_location": "L173",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_173",
-   "community": 181,
+   "community": 192,
    "norm_label": "il pacchetto in forma leggibile, pronto da incollare in un prompt."
   },
   {
@@ -5854,7 +5854,7 @@
    "source_location": "L73",
    "_origin": "ast",
    "id": "tools_context_pack_rationale_73",
-   "community": 192,
+   "community": 25,
    "norm_label": "le lezioni che riguardano cio che stiamo per dare in pasto al modello."
   },
   {
@@ -6704,7 +6704,7 @@
    "source_location": "L266",
    "_origin": "ast",
    "id": "tools_search_cerca",
-   "community": 163,
+   "community": 7,
    "norm_label": "cerca()"
   },
   {
@@ -6734,7 +6734,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_search_cerca_denso",
-   "community": 163,
+   "community": 7,
    "norm_label": "cerca_denso()"
   },
   {
@@ -6794,7 +6794,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "tools_search_rationale_116",
-   "community": 163,
+   "community": 25,
    "norm_label": "reciprocal rank fusion: fonde piu classifiche usando solo la posizione."
   },
   {
@@ -6844,7 +6844,7 @@
    "source_location": "L267",
    "_origin": "ast",
    "id": "tools_search_rationale_267",
-   "community": 163,
+   "community": 7,
    "norm_label": "ricerca ibrida. ritorna una lista di risultati, ognuno annotato con cio che"
   },
   {
@@ -6894,7 +6894,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "tools_search_rationale_94",
-   "community": 163,
+   "community": 7,
    "norm_label": "ranking semantico. attivo solo se indice denso e libreria sono presenti."
   },
   {
@@ -6904,7 +6904,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "tools_search_rrf",
-   "community": 163,
+   "community": 25,
    "norm_label": "_rrf()"
   },
   {
@@ -6934,7 +6934,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_style_check",
-   "community": 194,
+   "community": 15,
    "norm_label": "style_check.py"
   },
   {
@@ -6944,7 +6944,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "tools_style_check_analizza",
-   "community": 194,
+   "community": 15,
    "norm_label": "analizza()"
   },
   {
@@ -6954,7 +6954,7 @@
    "source_location": "L111",
    "_origin": "ast",
    "id": "tools_style_check_analizza_via_cli",
-   "community": 194,
+   "community": 15,
    "norm_label": "analizza_via_cli()"
   },
   {
@@ -6964,7 +6964,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "tools_style_check_carica_motore",
-   "community": 194,
+   "community": 15,
    "norm_label": "carica_motore()"
   },
   {
@@ -6974,7 +6974,7 @@
    "source_location": "L182",
    "_origin": "ast",
    "id": "tools_style_check_main",
-   "community": 194,
+   "community": 15,
    "norm_label": "main()"
   },
   {
@@ -6984,7 +6984,7 @@
    "source_location": "L112",
    "_origin": "ast",
    "id": "tools_style_check_rationale_112",
-   "community": 194,
+   "community": 15,
    "norm_label": "ripiego robusto: lo script come processo separato, sul suo contratto pubblico."
   },
   {
@@ -6994,7 +6994,7 @@
    "source_location": "L133",
    "_origin": "ast",
    "id": "tools_style_check_rationale_133",
-   "community": 194,
+   "community": 15,
    "norm_label": "il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda."
   },
   {
@@ -7004,7 +7004,7 @@
    "source_location": "L33",
    "_origin": "ast",
    "id": "tools_style_check_rationale_33",
-   "community": 194,
+   "community": 15,
    "norm_label": "importa lo script canonico di bookforge come modulo (una sola implementazione)."
   },
   {
@@ -7014,7 +7014,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "tools_style_check_rationale_46",
-   "community": 194,
+   "community": 15,
    "norm_label": "estrae la prosa da md/txt/html: i tag e il front-matter non sono scrittura."
   },
   {
@@ -7024,7 +7024,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "tools_style_check_rationale_75",
-   "community": 194,
+   "community": 15,
    "norm_label": "la prosa editoriale di un report living sta nel database, non nell'html."
   },
   {
@@ -7034,7 +7034,7 @@
    "source_location": "L132",
    "_origin": "ast",
    "id": "tools_style_check_riassumi",
-   "community": 194,
+   "community": 15,
    "norm_label": "riassumi()"
   },
   {
@@ -7044,7 +7044,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "tools_style_check_testo_da_file",
-   "community": 194,
+   "community": 15,
    "norm_label": "testo_da_file()"
   },
   {
@@ -7054,7 +7054,7 @@
    "source_location": "L74",
    "_origin": "ast",
    "id": "tools_style_check_testo_da_report",
-   "community": 194,
+   "community": 15,
    "norm_label": "testo_da_report()"
   },
   {

@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "divulgazione",
- "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
+ "built_at_commit": "2facdce98652a6055873d6a9a6acef49feac59ad",
  "nodes": [
   {
    "label": "metodo-report-verificati.md",
@@ -164,26 +164,6 @@
    "id": "raw_divulgazione_universalis_nuovo_ordine_mondiale_nuovo_ordine_mondiale_difesa_intelligenza_artificiale_e_artico",
    "community": 202,
    "norm_label": "nuovo ordine mondiale — difesa, intelligenza artificiale e artico"
-  },
-  {
-   "label": "universalis-un-regalo.md",
-   "file_type": "document",
-   "source_file": "raw/divulgazione/universalis-un-regalo.md",
-   "source_location": "L1",
-   "_origin": "ast",
-   "id": "raw_divulgazione_universalis_un_regalo",
-   "community": 203,
-   "norm_label": "universalis-un-regalo.md"
-  },
-  {
-   "label": "Un Regalo",
-   "file_type": "document",
-   "source_file": "raw/divulgazione/universalis-un-regalo.md",
-   "source_location": "L8",
-   "_origin": "ast",
-   "id": "raw_divulgazione_universalis_un_regalo_un_regalo",
-   "community": 203,
-   "norm_label": "un regalo"
   },
   {
    "label": "come-si-spiega.md",
@@ -518,16 +498,6 @@
    "confidence_score": 1.0
   },
   {
-   "relation": "contains",
-   "confidence": "EXTRACTED",
-   "source_file": "raw/divulgazione/universalis-un-regalo.md",
-   "source_location": "L8",
-   "weight": 1.0,
-   "source": "raw_divulgazione_universalis_un_regalo",
-   "target": "raw_divulgazione_universalis_un_regalo_un_regalo",
-   "confidence_score": 1.0
-  },
-  {
    "source": "wiki_divulgazione_come_si_spiega",
    "target": "raw_divulgazione_universalis_austerita",
    "relation": "derived_from",
@@ -640,16 +610,6 @@
   {
    "source": "wiki_divulgazione_corpus_universalis",
    "target": "raw_divulgazione_universalis_nuovo_ordine_mondiale",
-   "relation": "derived_from",
-   "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
-   "confidence": "CURATED",
-   "confidence_score": 1.0,
-   "weight": 1.0,
-   "source_file": "engine/provenance.json"
-  },
-  {
-   "source": "wiki_divulgazione_corpus_universalis",
-   "target": "raw_divulgazione_universalis_un_regalo",
    "relation": "derived_from",
    "nota": "la mappa del corpus: 18 articoli propri smistati per materia, non per categoria del sito",
    "confidence": "CURATED",

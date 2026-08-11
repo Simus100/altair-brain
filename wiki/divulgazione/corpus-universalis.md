@@ -16,7 +16,7 @@ nel brain ci sono le note-fonte, **smistate per materia** e non per categoria de
 | Area del brain | Articoli | Ragione |
 |---|---|---|
 | `raw/finanza/` | 8 | mercati, strumenti, rating, debito, economia dell'IA |
-| `raw/divulgazione/` | 4 | geopolitica e politiche pubbliche: divulgazione pura |
+| `raw/divulgazione/` | 3 | geopolitica e politiche pubbliche: divulgazione pura |
 | `raw/aion/` | 2 | I Ching — stesso oggetto dell'oracolo eseguibile del brain |
 | `raw/web-design/` | 2 | SEO e JavaScript lato client |
 | `raw/creativita/` | 1 | Enneagramma — stesso modello usato per i personaggi |
@@ -50,9 +50,9 @@ il brain gia' usa altrove in forma eseguibile.
 - La pagina `universalis.it/articoli` che raccoglie tutto **risponde HTTP 500**: la
   ricognizione e' passata dalle quattro categorie. Se un articolo non fosse elencato in
   nessuna categoria, non sarebbe stato visto.
-- L'attribuzione di *Un Regalo* e' **da chiarire**: il testo cita «Geko Arrogante» come
-  autore originale. Finche' non e' risolta, quel pezzo non va usato come esempio dello
-  stile proprio.
+- Un articolo della categoria filosofia (*Un Regalo*, 21 febbraio 2021) e' **escluso
+  per scelta**: il testo indica «Geko Arrogante» come autore originale, quindi non e'
+  materiale proprio. Diciassette note su diciotto articoli censiti.
 - Le date di pubblicazione vengono dagli elenchi di categoria, non dal corpo degli
   articoli, che non le riporta.
 

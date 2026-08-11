@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "b658dc6261e5bddd402f88ed3138cb695f36c354",
+ "built_at_commit": "2facdce98652a6055873d6a9a6acef49feac59ad",
  "nodes": [
   {
    "label": "AI introduzione.md",
@@ -632,7 +632,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale",
-   "community": 0,
+   "community": 163,
    "norm_label": "algebra-relazionale.md"
   },
   {
@@ -642,7 +642,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale_algebra_relazionale",
-   "community": 0,
+   "community": 163,
    "norm_label": "algebra relazionale"
   },
   {
@@ -652,7 +652,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi-esplorativa.md"
   },
   {
@@ -662,7 +662,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa_analisi_esplorativa_eda",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi esplorativa (eda)"
   },
   {
@@ -672,7 +672,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi-relazionale.md"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale_analisi_relazionale_confronti_tra_variabili",
-   "community": 0,
+   "community": 185,
    "norm_label": "analisi relazionale (confronti tra variabili)"
   },
   {
@@ -692,7 +692,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing",
-   "community": 0,
+   "community": 182,
    "norm_label": "cloud-computing.md"
   },
   {
@@ -702,7 +702,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing_cloud_computing",
-   "community": 0,
+   "community": 182,
    "norm_label": "cloud computing"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-driven-culture.md"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture_data_driven_culture",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-driven culture"
   },
   {
@@ -772,7 +772,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling",
-   "community": 0,
+   "community": 182,
    "norm_label": "data-storytelling.md"
   },
   {
@@ -782,7 +782,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling_data_storytelling",
-   "community": 0,
+   "community": 182,
    "norm_label": "data storytelling"
   },
   {
@@ -812,7 +812,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_docker",
-   "community": 0,
+   "community": 163,
    "norm_label": "docker.md"
   },
   {
@@ -822,7 +822,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_docker_docker",
-   "community": 0,
+   "community": 163,
    "norm_label": "docker"
   },
   {
@@ -832,7 +832,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_drawio",
-   "community": 0,
+   "community": 163,
    "norm_label": "drawio.md"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_drawio_draw_io",
-   "community": 0,
+   "community": 163,
    "norm_label": "draw.io"
   },
   {
@@ -892,7 +892,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche",
-   "community": 0,
+   "community": 185,
    "norm_label": "framework-domande-analitiche.md"
   },
   {
@@ -902,7 +902,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche_framework_delle_domande_analitiche",
-   "community": 0,
+   "community": 185,
    "norm_label": "framework delle domande analitiche"
   },
   {
@@ -1002,7 +1002,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale",
-   "community": 0,
+   "community": 182,
    "norm_label": "intelligenza-artificiale.md"
   },
   {
@@ -1012,7 +1012,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale_intelligenza_artificiale_fondamenti",
-   "community": 0,
+   "community": 182,
    "norm_label": "intelligenza artificiale (fondamenti)"
   },
   {
@@ -1022,7 +1022,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter",
-   "community": 0,
+   "community": 163,
    "norm_label": "jupyter.md"
   },
   {
@@ -1032,7 +1032,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter_jupyter_notebook",
-   "community": 0,
+   "community": 163,
    "norm_label": "jupyter notebook"
   },
   {
@@ -1052,7 +1052,7 @@
    "source_location": "L58",
    "_origin": "ast",
    "id": "wiki_data_science_limiti_dichiarati_dove_va_scritto",
-   "community": 0,
+   "community": 189,
    "norm_label": "dove va scritto"
   },
   {
@@ -1062,7 +1062,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "wiki_data_science_limiti_dichiarati_i_tre_modi_in_cui_un_dato_smette_di_poter_rispondere",
-   "community": 0,
+   "community": 189,
    "norm_label": "i tre modi in cui un dato smette di poter rispondere"
   },
   {
@@ -1072,7 +1072,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "wiki_data_science_limiti_dichiarati_il_caso_a_parte_il_dato_che_manca_per_attribuire_una_causa",
-   "community": 0,
+   "community": 189,
    "norm_label": "il caso a parte: il dato che manca per attribuire una causa"
   },
   {
@@ -1082,7 +1082,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_limiti_dichiarati_limiti_dichiarati_cosa_il_dato_non_puo_dire",
-   "community": 0,
+   "community": 189,
    "norm_label": "limiti dichiarati (cosa il dato non puo dire)"
   },
   {
@@ -1092,7 +1092,7 @@
    "source_location": "L17",
    "_origin": "ast",
    "id": "wiki_data_science_limiti_dichiarati_perche_e_un_pezzo_di_metodo_non_una_premessa_di_cortesia",
-   "community": 0,
+   "community": 189,
    "norm_label": "perche e un pezzo di metodo, non una premessa di cortesia"
   },
   {
@@ -1102,7 +1102,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_metodi",
-   "community": 0,
+   "community": 182,
    "norm_label": "metodi.md"
   },
   {
@@ -1112,7 +1112,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_metodi_metodi_e_concetti_data_science",
-   "community": 0,
+   "community": 182,
    "norm_label": "metodi e concetti (data science)"
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb",
-   "community": 0,
+   "community": 163,
    "norm_label": "mongodb.md"
   },
   {
@@ -1132,7 +1132,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb_mongodb",
-   "community": 0,
+   "community": 163,
    "norm_label": "mongodb"
   },
   {
@@ -1142,7 +1142,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali",
-   "community": 0,
+   "community": 182,
    "norm_label": "normalizzazione-decimali.md"
   },
   {
@@ -1152,7 +1152,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali_normalizzazione_dei_decimali_eng_ita",
-   "community": 0,
+   "community": 182,
    "norm_label": "normalizzazione dei decimali (eng/ita)"
   },
   {
@@ -1162,7 +1162,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql",
-   "community": 0,
+   "community": 163,
    "norm_label": "postgresql.md"
   },
   {
@@ -1172,7 +1172,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql_postgresql",
-   "community": 0,
+   "community": 163,
    "norm_label": "postgresql"
   },
   {
@@ -1182,7 +1182,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi",
-   "community": 0,
+   "community": 163,
    "norm_label": "power-bi.md"
   },
   {
@@ -1192,7 +1192,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi_power_bi",
-   "community": 0,
+   "community": 163,
    "norm_label": "power bi"
   },
   {
@@ -1202,7 +1202,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database",
-   "community": 0,
+   "community": 163,
    "norm_label": "progettazione-database.md"
   },
   {
@@ -1212,7 +1212,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database_progettazione_di_un_database",
-   "community": 0,
+   "community": 163,
    "norm_label": "progettazione di un database"
   },
   {
@@ -1292,7 +1292,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_magazzino_cosa_e_emerso",
-   "community": 0,
+   "community": 190,
    "norm_label": "cosa e emerso"
   },
   {
@@ -1302,7 +1302,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_magazzino_cosa_il_dato_non_poteva_dire",
-   "community": 0,
+   "community": 190,
    "norm_label": "cosa il dato non poteva dire"
   },
   {
@@ -1312,7 +1312,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_magazzino_il_metodo_in_due_passaggi_separati",
-   "community": 0,
+   "community": 190,
    "norm_label": "il metodo, in due passaggi separati"
   },
   {
@@ -1322,7 +1322,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_magazzino_progetto_analisi_dati_di_magazzino",
-   "community": 0,
+   "community": 190,
    "norm_label": "progetto: analisi dati di magazzino"
   },
   {
@@ -1332,7 +1332,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_magazzino_uscite",
-   "community": 0,
+   "community": 190,
    "norm_label": "uscite"
   },
   {
@@ -1342,7 +1342,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce",
-   "community": 0,
+   "community": 163,
    "norm_label": "progetto-olist-ecommerce.md"
   },
   {
@@ -1352,7 +1352,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce_progetto_brazilian_e_commerce_olist",
-   "community": 0,
+   "community": 163,
    "norm_label": "progetto: brazilian e-commerce (olist)"
   },
   {
@@ -1382,7 +1382,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering",
-   "community": 0,
+   "community": 182,
    "norm_label": "prompt-engineering.md"
   },
   {
@@ -1392,7 +1392,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering_prompt_engineering",
-   "community": 0,
+   "community": 182,
    "norm_label": "prompt engineering"
   },
   {
@@ -1412,7 +1412,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_come_si_organizzano_i_notebook",
-   "community": 0,
+   "community": 191,
    "norm_label": "come si organizzano i notebook"
   },
   {
@@ -1422,7 +1422,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_python_pandas",
-   "community": 0,
+   "community": 191,
    "norm_label": "python / pandas"
   },
   {
@@ -1432,7 +1432,7 @@
    "source_location": "L70",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_ricette_di_analisi",
-   "community": 0,
+   "community": 191,
    "norm_label": "ricette di analisi"
   },
   {
@@ -1442,7 +1442,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_ricette_di_pulizia",
-   "community": 0,
+   "community": 191,
    "norm_label": "ricette di pulizia"
   },
   {
@@ -1452,7 +1452,7 @@
    "source_location": "L104",
    "_origin": "ast",
    "id": "wiki_data_science_python_pandas_verifica_finale",
-   "community": 0,
+   "community": 191,
    "norm_label": "verifica finale"
   },
   {
@@ -1482,7 +1482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_sql",
-   "community": 0,
+   "community": 163,
    "norm_label": "sql.md"
   },
   {
@@ -1492,7 +1492,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_sql_sql",
-   "community": 0,
+   "community": 163,
    "norm_label": "sql"
   },
   {
@@ -1502,7 +1502,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti",
-   "community": 0,
+   "community": 163,
    "norm_label": "strumenti.md"
   },
   {
@@ -1512,7 +1512,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti_strumenti_data_science",
-   "community": 0,
+   "community": 163,
    "norm_label": "strumenti (data science)"
   },
   {
@@ -1542,7 +1542,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi",
-   "community": 0,
+   "community": 182,
    "norm_label": "tipi-di-analisi.md"
   },
   {
@@ -1552,7 +1552,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi_tipi_di_analisi_dati",
-   "community": 0,
+   "community": 182,
    "norm_label": "tipi di analisi dati"
   },
   {
@@ -1562,7 +1562,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati",
-   "community": 0,
+   "community": 185,
    "norm_label": "visualizzazione-dati.md"
   },
   {
@@ -1572,7 +1572,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
-   "community": 0,
+   "community": 185,
    "norm_label": "visualizzazione efficace dei dati"
   },
   {
