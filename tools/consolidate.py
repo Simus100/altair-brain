@@ -24,6 +24,17 @@ Uso:  python tools/consolidate.py            (rigenera i digest, elenca le propo
 import argparse, collections, datetime, json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
 sys.path.insert(0, ROOT)
 
 GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")

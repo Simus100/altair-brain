@@ -31,11 +31,31 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Strati GENERATI: mai toccare a mano (fonte unica di verita).
-GENERATI = ("wiki/aion/",)
-# Dove ha senso avere provenienza: le fonti e le pagine scritte a mano.
-TARGET = ("raw/", "wiki/data-science/")
-SALTA = ("raw/_inbox/",)          # transito: vivranno altrove dopo il triage
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
+
+sys.path.insert(0, ROOT)
+from tools.frontmatter import STRATI_GENERATI as GENERATI   # noqa: E402
+
+# Dove ha senso avere provenienza: TUTTE le fonti e TUTTE le pagine scritte a mano.
+# Prima erano elencate a mano ("raw/", "wiki/data-science/"): ogni macroarea nuova
+# — divulgazione, finanza, creativita — restava fuori senza che nessuno lo notasse.
+# Ora la regola e' per sottrazione: tutto, tranne gli strati generati e il transito.
+# 'reports/' incluso: freshness_report gli assegna un SLA di 30 giorni, quindi ne
+# controlla la scadenza — ma senza front-matter non puo' sapere da quando contare.
+TARGET = ("raw/", "wiki/", "reports/")
+# Transito: le note dell'inbox vivranno altrove dopo il triage. Il README della
+# cartella no: e' documentazione stabile e va trattato come tale.
+SALTA = ("raw/_inbox/",)
+SALTA_ECCEZIONI = ("raw/_inbox/README.md",)
 
 
 def rel(p):
@@ -107,7 +127,7 @@ for p in sorted(candidati):
     if any(r.startswith(g) for g in GENERATI):
         rifiutati.append(r)
         continue
-    if any(r.startswith(s) for s in SALTA):
+    if any(r.startswith(s) for s in SALTA) and r not in SALTA_ECCEZIONI:
         continue
     testo = open(p, encoding="utf-8").read()
     if ha_frontmatter(testo):

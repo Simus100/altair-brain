@@ -21,6 +21,17 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools import frontmatter as fm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
 OGGI = datetime.date.today()
 
 # Quanti giorni prima che una nota vada RI-VERIFICATA, per famiglia di conoscenza.
@@ -110,9 +121,24 @@ if da_riverificare:
 else:
     print("Da ri-verificare: nessuna (tutto entro l'SLA).")
 
-if senza_meta:
-    print(f"\nSenza front-matter: {len(senza_meta)} file "
+# Distinzione necessaria: i file degli strati GENERATI non possono avere front-matter
+# scritto a mano (divergerebbero dal generatore) e la loro provenienza e' gia'
+# dichiarata a livello di strato. Contarli insieme agli altri produceva un numero
+# allarmante e un consiglio ESEGUIBILE SOLO IN PARTE: add_frontmatter.py si rifiuta
+# di toccarli. Un rapporto che suggerisce un comando destinato a non fare nulla
+# insegna a ignorare i rapporti.
+esenti = [s for s in senza_meta if fm.e_generato(s)]
+mancanti = [s for s in senza_meta if not fm.e_generato(s)]
+
+if mancanti:
+    print(f"\nSenza front-matter: {len(mancanti)} file "
           f"(aggiungilo con tools/add_frontmatter.py --apply)")
+    for s in mancanti[:10]:
+        print("  -", s)
+if esenti:
+    print(f"\nEsenti per costruzione: {len(esenti)} file negli strati generati "
+          f"({', '.join(fm.STRATI_GENERATI)}) — provenienza dichiarata a livello di "
+          f"strato in engine/provenance.json, non file per file.")
 
 if rotti:
     print(f"\nPROBLEMI ({len(rotti)}):")

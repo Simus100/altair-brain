@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **22** · sessioni graphify: **1**
-- esiti: 14 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
-- skill piu attive: manuale (9), triage (4), aion (3), atlante-3d (3), report (1)
-- temi ricorrenti: metodo (5), verifica (4), visualizzazione (3), report (2), grafo (2), graphify (2), limite (2), corpus (2)
+- lezioni registrate: **24** · sessioni graphify: **1**
+- esiti: 16 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
+- skill piu attive: manuale (9), triage (5), aion (3), atlante-3d (3), oracle (2)
+- temi ricorrenti: metodo (5), verifica (4), visualizzazione (3), guardie (3), report (2), oracolo (2), grafo (2), graphify (2)
 
 ## Ancoraggi consolidati
 
@@ -55,6 +55,10 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 ## Lezioni recenti
 
+- **2026-08-12** _((triage, utile))_ — Al quinto caso non si tappa il tool: si chiude la classe. 30 tool su 34 erano esposti allo stesso UnicodeEncodeError. Ma rendere OBBLIGATORIO l'import della protezione ha rotto report_update in un mini-repo senza console.py: una protezione facoltativa che impedisce l'avvio e' peggio del guasto che previene, quindi l'import va reso non fatale. Trovata anche un'incoerenza a monte: freshness_report consigliava add_frontmatter --apply su 57 file, ma il tool ne toccava zero (55 in strato generato, 2 fuori copertura). Un rapporto che consiglia un comando inutile insegna a ignorare i rapporti. E TARG
+  - contesto: chiudere la classe di guasto della console e verificare tutto il sistema
+- **2026-08-12** _((oracle, utile))_ — Tuono che erompe dalla terra: l'energia e' reale e viene dal basso, ma la linea 6 avverte di non farsi travolgere e la trasformazione porta a 23, dove 'non e' propizio andare in alcun luogo'. La condotta indicata e' disciplinare la scarica emotiva con l'esperienza (linea 4), non cavalcarla.
+  - contesto: Che condotta tenere davanti a una confluenza di eventi che non controllo: eclissi, terremoti, caldo estremo, eruzioni
 - **2026-08-11** _((triage, corretto))_ — Avevo messo due articoli divulgativi in raw/aion con wikilink verso aion-oracle: quattro archi dal materiale d'opinione al modello impersonale. AION deve valere a prescindere da chi lo usa, quindi non puo' incorporare la voce di nessuno. Il corpus ora vive in due sole aree: divulgazione (dove la soggettivita' e' dichiarata) e finanza (dove il contenuto e' materia verificabile). Regola resa eseguibile con 8 test invece che affidata alla memoria. Tolta anche la ridondanza: modello-di-pensiero rielencava 5 mosse su 7 gia' scritte altrove, ora rimanda invece di ripetere.
   - contesto: gli articoli d'opinione non devono contaminare AION, che e' impersonale
 - **2026-08-11** _((triage, corretto))_ — Avevo distillato il METODO (come si spiega, onesta argomentativa) credendo bastasse, ma alla prova 'come ragiona e come costruisce un argomento' il brain rispondeva con materiale AION: il modello era nel corpus e in nessuna pagina. Verificare con una domanda reale invece di fidarsi di aver scritto le pagine giuste. Resta un limite lessicale misurato: la domanda generica e' sommersa dai 649 nodi di aion, registrata nel banco semantico. Quarto tool colpito dal guasto cp1252: creato tools/console.py invece di ripetere la toppa.
@@ -75,7 +79,3 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
   - contesto: quali difetti sfuggono a test e CI
 - **2026-08-10** _((manuale, utile))_ — sei passi: nome ASCII (l'API valida ^[a-z0-9-]+$ e rifiuterebbe gli accenti), areas.json, keyword nel router, wiki curata col METODO non copie, provenienza wiki->raw, ponti intercampo. I wikilink NON attraversano le cartelle: tra aree si usano i bridges
   - contesto: come si integra una nuova macroarea nel brain
-- **2026-08-10** _((scrivi, utile))_ — l'ordine e vincolante: in stesura solo la Carta (imperativi positivi), l'elenco dei tic si apre SOLO in revisione — un regolamento attivo durante il draft produce scrittura difensiva. Poi perizia eseguibile e budget di 10 interventi: la revisione illimitata toglie i difetti e la vita insieme
-  - contesto: come evitare che la prosa del brain suoni artificiale
-- **2026-08-08** _((aion, utile))_ — SUPERIA orchestra, ETHOS e sempre attivo come gate: partire da questi due orienta subito
-  - contesto: chi decide l'ordine di attivazione degli agenti

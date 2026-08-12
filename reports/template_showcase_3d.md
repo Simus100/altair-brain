@@ -1,3 +1,10 @@
+---
+date: 2026-07-10
+area: generale
+source: 
+tags: []
+reviewed: 2026-08-12
+---
 # Schema di Template per Dashboard Neurale 3D (Altair-Brain)
 
 Questo documento definisce il template riproducibile e lo schema dati per generare al volo una console geopolitica/strategica 3D interattiva, sprovvista di dipendenze WebGL esterne. Graphify e futuri agenti possono utilizzare questa struttura per istanziare visualizzazioni 3D per qualsiasi argomento strategico.

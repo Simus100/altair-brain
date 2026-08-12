@@ -20,7 +20,19 @@ Uso:  python tools/graph_metrics.py   (parte di rebuild_all.py)
 """
 import collections, csv, datetime, json, os, subprocess
 
+import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
 GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
 OUT_DIR = os.path.join(ROOT, "metrics")
 OUT = os.path.join(OUT_DIR, "graph_metrics.csv")

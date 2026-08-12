@@ -1,3 +1,10 @@
+---
+date: 2026-07-01
+area: _inbox
+source: 
+tags: []
+reviewed: 2026-08-12
+---
 # _inbox — cassetta di cattura
 
 Cartella tecnica (NON e una macroarea): qui finiscono le note grezze in attesa di

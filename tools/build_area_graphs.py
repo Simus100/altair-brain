@@ -17,7 +17,19 @@ Uso:  python tools/build_area_graphs.py
 """
 import json, os, shutil
 
+import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
 GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
 AREAS = os.path.join(ROOT, "areas.json")
 OUTDIR = os.path.join(ROOT, "graphify-out", "areas")

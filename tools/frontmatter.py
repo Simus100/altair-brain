@@ -19,6 +19,21 @@ Una riga che contiene altro oltre ai trattini e testo, non un delimitatore.
 """
 
 
+# Strati GENERATI da una fonte unica: il front-matter NON va scritto qui a mano,
+# perche' farebbe divergere la pagina dal suo generatore. La provenienza di questi
+# file e' dichiarata a livello di strato in engine/provenance.json (ancoraggi_area),
+# non file per file — quindi la loro assenza di front-matter non e' una mancanza.
+# La costante vive qui, accanto alla regola che governa: chi segnala i file "senza
+# front-matter" deve poterli distinguere, altrimenti consiglia un'azione impossibile.
+STRATI_GENERATI = ("wiki/aion/",)
+
+
+def e_generato(percorso) -> bool:
+    """Vero se il file appartiene a uno strato generato (esente da front-matter)."""
+    p = str(percorso).replace("\\", "/")
+    return any(g.rstrip("/") + "/" in p for g in STRATI_GENERATI)
+
+
 def _righe(testo):
     return (testo or "").lstrip("﻿").splitlines()
 

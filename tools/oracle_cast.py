@@ -168,6 +168,13 @@ def search_by_tags(testo: str, top: int = 5) -> list:
 
 if __name__ == "__main__":
     import argparse
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
     ap = argparse.ArgumentParser(description="AION_Oracle: lancio (divinazione) o attribuzione decisionale (report)")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--question", default=None)

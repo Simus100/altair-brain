@@ -181,8 +181,11 @@ def riassumi(d):
 
 def main():
     sys.path.insert(0, ROOT)
-    from tools.console import usa_utf8
-    usa_utf8()      # vedi tools/console.py: quarto tool colpito dallo stesso guasto
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool      # vedi tools/console.py: quarto tool colpito dallo stesso guasto
 
     ap = argparse.ArgumentParser(description="Verifica stilometrica dei testi del brain")
     ap.add_argument("file", nargs="?", help="file da analizzare (md, txt, html)")

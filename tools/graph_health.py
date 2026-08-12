@@ -15,6 +15,17 @@ Exit 0 = sano; 1 = problemi. Uso:  python tools/graph_health.py
 import json, os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
 GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
 SHRINK_TOLERANCE = 0.20
 MIN_BASELINE = 50
