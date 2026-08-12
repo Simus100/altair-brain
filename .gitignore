@@ -31,3 +31,6 @@ test_env/
 
 # Windows: file di sistema delle cartelle, nessuna informazione
 desktop.ini
+
+# artefatti di compilazione dentro lo scheletro generato
+core/**/__pycache__/

@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "aion",
- "built_at_commit": "97209f99d38f4c6a915128924c1ce3924091ed31",
+ "built_at_commit": "87e9135d18b1a3b2e2b9e32c05d47dc2d15bfed6",
  "nodes": [
   {
    "label": "aion-agents.md",
@@ -722,7 +722,7 @@
    "source_location": "L125",
    "_origin": "ast",
    "id": "raw_aion_aion_oracle_ambientazioni_e_atmosfere",
-   "community": 130,
+   "community": 20,
    "norm_label": "ambientazioni e atmosfere:"
   },
   {
@@ -732,7 +732,7 @@
    "source_location": "L122",
    "_origin": "ast",
    "id": "raw_aion_aion_oracle_caratterizzazione_dei_personaggi",
-   "community": 130,
+   "community": 20,
    "norm_label": "caratterizzazione dei personaggi"
   },
   {
@@ -3992,7 +3992,7 @@
    "source_location": "L115",
    "_origin": "ast",
    "id": "raw_aion_aion_oracle_sezione_3_utilizzo_narrativo_dell_i_ching",
-   "community": 130,
+   "community": 20,
    "norm_label": "sezione 3:  ## utilizzo narrativo dell'i ching:"
   },
   {
@@ -4012,7 +4012,7 @@
    "source_location": "L119",
    "_origin": "ast",
    "id": "raw_aion_aion_oracle_spunti_di_trama",
-   "community": 130,
+   "community": 20,
    "norm_label": "spunti di trama:"
   },
   {
@@ -5302,7 +5302,7 @@
    "source_location": "L128",
    "_origin": "ast",
    "id": "raw_aion_aion_oracle_tensioni_e_svolte",
-   "community": 130,
+   "community": 20,
    "norm_label": "tensioni e svolte:"
   },
   {
@@ -5322,7 +5322,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_aion_readme_aion_modello_di_pensiero",
-   "community": 20,
+   "community": 314,
    "norm_label": "aion — modello di pensiero"
   },
   {
@@ -5332,7 +5332,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_aion_readme_ambito",
-   "community": 20,
+   "community": 314,
    "norm_label": "ambito"
   },
   {
@@ -5342,7 +5342,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "raw_aion_readme_documenti_del_corpus_aion",
-   "community": 20,
+   "community": 314,
    "norm_label": "documenti del corpus aion"
   },
   {
@@ -5352,7 +5352,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "raw_aion_readme_note",
-   "community": 20,
+   "community": 314,
    "norm_label": "note"
   },
   {

@@ -1,0 +1,3931 @@
+{
+  "schema_version": 1,
+  "fonte": "raw/aion/aion-oracle.md",
+  "nota": "ID secondo la sequenza di Re Wen: usare lookup_binario, MAI binario+1. Valori linee: 6=yin mobile, 7=yang stabile, 8=yin stabile, 9=yang mobile.",
+  "lookup_binario": {
+    "000000": 2,
+    "000001": 23,
+    "000010": 8,
+    "000011": 20,
+    "000100": 16,
+    "000101": 35,
+    "000110": 45,
+    "000111": 12,
+    "001000": 15,
+    "001001": 52,
+    "001010": 39,
+    "001011": 53,
+    "001100": 62,
+    "001101": 56,
+    "001110": 31,
+    "001111": 33,
+    "010000": 7,
+    "010001": 4,
+    "010010": 29,
+    "010011": 59,
+    "010100": 40,
+    "010101": 64,
+    "010110": 47,
+    "010111": 6,
+    "011000": 46,
+    "011001": 18,
+    "011010": 48,
+    "011011": 57,
+    "011100": 32,
+    "011101": 50,
+    "011110": 28,
+    "011111": 44,
+    "100000": 24,
+    "100001": 27,
+    "100010": 3,
+    "100011": 42,
+    "100100": 51,
+    "100101": 21,
+    "100110": 17,
+    "100111": 25,
+    "101000": 36,
+    "101001": 22,
+    "101010": 63,
+    "101011": 37,
+    "101100": 55,
+    "101101": 30,
+    "101110": 49,
+    "101111": 13,
+    "110000": 19,
+    "110001": 41,
+    "110010": 60,
+    "110011": 61,
+    "110100": 54,
+    "110101": 38,
+    "110110": 58,
+    "110111": 10,
+    "111000": 11,
+    "111001": 26,
+    "111010": 5,
+    "111011": 9,
+    "111100": 34,
+    "111101": 14,
+    "111110": 43,
+    "111111": 1
+  },
+  "trigrammi": [
+    {
+      "simbolo": "☰",
+      "nome": "Cielo",
+      "hanzi": "乾",
+      "pinyin": "Qián",
+      "attributo": "Forza, Creatività",
+      "elemento": "Metallo",
+      "famiglia": "Padre",
+      "binario": "111"
+    },
+    {
+      "simbolo": "☷",
+      "nome": "Terra",
+      "hanzi": "坤",
+      "pinyin": "Kūn",
+      "attributo": "Ricettività, Devozione",
+      "elemento": "Terra",
+      "famiglia": "Madre",
+      "binario": "000"
+    },
+    {
+      "simbolo": "☳",
+      "nome": "Tuono",
+      "hanzi": "震",
+      "pinyin": "Zhèn",
+      "attributo": "Movimento, Incitamento",
+      "elemento": "Legno",
+      "famiglia": "Primo Figlio",
+      "binario": "100"
+    },
+    {
+      "simbolo": "☵",
+      "nome": "Acqua",
+      "hanzi": "坎",
+      "pinyin": "Kǎn",
+      "attributo": "Pericolo, Profondità",
+      "elemento": "Acqua",
+      "famiglia": "Secondo Figlio",
+      "binario": "010"
+    },
+    {
+      "simbolo": "☶",
+      "nome": "Montagna",
+      "hanzi": "艮",
+      "pinyin": "Gèn",
+      "attributo": "Arresto, Quiete",
+      "elemento": "Terra",
+      "famiglia": "Terzo Figlio",
+      "binario": "001"
+    },
+    {
+      "simbolo": "☴",
+      "nome": "Vento",
+      "hanzi": "巽",
+      "pinyin": "Xùn",
+      "attributo": "Penetrazione, Dolcezza",
+      "elemento": "Legno",
+      "famiglia": "Prima Figlia",
+      "binario": "011"
+    },
+    {
+      "simbolo": "☲",
+      "nome": "Fuoco",
+      "hanzi": "離",
+      "pinyin": "Lí",
+      "attributo": "Aderenza, Chiarezza",
+      "elemento": "Fuoco",
+      "famiglia": "Seconda Figlia",
+      "binario": "101"
+    },
+    {
+      "simbolo": "☱",
+      "nome": "Lago",
+      "hanzi": "兌",
+      "pinyin": "Duì",
+      "attributo": "Gioia, Serenità",
+      "elemento": "Metallo",
+      "famiglia": "Terza Figlia",
+      "binario": "110"
+    }
+  ],
+  "esagrammi": [
+    {
+      "id": 1,
+      "hanzi": "乾",
+      "nome": "Il Creativo",
+      "pinyin": "Qián",
+      "simbolo": "䷀",
+      "binario": "111111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 2,
+        "rovesciato": 1,
+        "nucleare": 1
+      },
+      "tag": [
+        "leadership",
+        "iniziativa",
+        "potere",
+        "determinazione",
+        "ambizione",
+        "forza creatrice",
+        "cielo"
+      ],
+      "giudizio": "Il Creativo opera sublime riuscita, propizio per la perseveranza.",
+      "immagine": "Il moto del Cielo è pieno di potenza. Così il nobile rende sé stesso forte e instancabile.",
+      "interpretazione": "Energia pura e forza iniziatrice. Il potere di plasmare la realtà con determinazione. Sii ambizioso, prendi l'iniziativa, ma non diventare arrogante.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "L'impeto iniziale va calibrato: prudenza nel fare il primo passo."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Cooperazione e saggezza nel consolidare la propria forza."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Attenzione all'eccesso di fiducia, rischi di superare i limiti."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Crescita armoniosa, ma serve una base solida."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Leadership ispirata; mantieni una visione lungimirante."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Evita la tracotanza finale; la vetta non deve farti perdere l'umiltà."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "hanzi": "坤",
+      "nome": "Il Ricettivo",
+      "pinyin": "Kūn",
+      "simbolo": "䷁",
+      "binario": "000000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 1,
+        "rovesciato": 2,
+        "nucleare": 2
+      },
+      "tag": [
+        "ricettività",
+        "adattamento",
+        "flessibilità",
+        "strategia passiva",
+        "terra",
+        "sostegno",
+        "devozione"
+      ],
+      "giudizio": "Il Ricettivo opera sublime riuscita, propizia attraverso la perseveranza di una cavalla. Il nobile ha dove andare.",
+      "immagine": "Lo stato della Terra è la devozione ricettiva. Così il nobile porta con ampiezza di carattere il mondo esterno.",
+      "interpretazione": "L'arte della strategia passiva. La flessibilità e la capacità di adattarsi alla situazione sono fondamentali. Non tutto va forzato: il flusso naturale è spesso il migliore.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Riconosci i tuoi limiti iniziali, resta aperto."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Avanza con calma; ricettività costruttiva."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non confondere la modestia con la sottomissione."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Sfrutta il potenziale di chi ti circonda."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Salda le fondamenta per una crescita duratura."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Evita l'eccessiva passività, agisci con coraggio."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "hanzi": "屯",
+      "nome": "Difficoltà Iniziale",
+      "pinyin": "Zhūn",
+      "simbolo": "䷂",
+      "binario": "100010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 50,
+        "rovesciato": 4,
+        "nucleare": 23
+      },
+      "tag": [
+        "inizio",
+        "caos",
+        "ostacoli",
+        "costruzione",
+        "resilienza",
+        "organizzazione",
+        "nascita"
+      ],
+      "giudizio": "Difficoltà Iniziale. Sublime riuscita, propizia per la perseveranza. Non si deve intraprendere nulla; è propizio istituire aiutanti.",
+      "immagine": "Nuvole e tuono: l'immagine della Difficoltà Iniziale. Così il nobile porta ordine con la separazione e la struttura.",
+      "interpretazione": "Inizio turbolento, caos creativo. Gli ostacoli sono normali nelle fasi iniziali, ma ciò che costruisci ora diventerà solido in futuro. Resisti, organizza e avanza.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Il caos iniziale dev'essere fronteggiato con lucidità."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Piccoli passi costruiscono la base per il successo."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non perdere tempo con preoccupazioni inutili, agisci."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Sviluppa una strategia concreta, non solo idee astratte."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Lavora in squadra, condividi responsabilità."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Concludi la fase caotica prima di passare oltre."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "hanzi": "蒙",
+      "nome": "L'Inesperienza",
+      "pinyin": "Méng",
+      "simbolo": "䷃",
+      "binario": "010001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 49,
+        "rovesciato": 3,
+        "nucleare": 24
+      },
+      "tag": [
+        "apprendimento",
+        "crescita",
+        "inesperienza",
+        "mentore",
+        "umiltà",
+        "educazione",
+        "giovinezza"
+      ],
+      "giudizio": "L'Inesperienza ha riuscita. Non sono io a cercare il giovane folle, è il giovane folle a cercare me. Alla prima consultazione rispondo. Perseveranza propizia.",
+      "immagine": "Ai piedi della montagna sgorga una sorgente: l'immagine della Giovinezza. Così il nobile alimenta il suo carattere con azione risoluta.",
+      "interpretazione": "Crescita e apprendimento. Non temere di essere all'inizio di un percorso. Accetta i consigli, sii umile e impara velocemente.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Curiosità e volontà di imparare sono essenziali."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Individua una guida o un mentore."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non farti bloccare dall'insicurezza; sperimenta."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Equilibrio tra teoria e pratica."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Fai tesoro di errori e consigli."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Evita l'arroganza di chi crede di sapere tutto."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "hanzi": "需",
+      "nome": "L'Attesa",
+      "pinyin": "Xū",
+      "simbolo": "䷄",
+      "binario": "111010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 35,
+        "rovesciato": 6,
+        "nucleare": 38
+      },
+      "tag": [
+        "pazienza",
+        "attesa",
+        "tempo",
+        "strategia",
+        "preparazione",
+        "nutrimento",
+        "fiducia"
+      ],
+      "giudizio": "L'Attesa. Se sei veritiero, hai luce e riuscita. La perseveranza reca salute. È propizio attraversare la grande acqua.",
+      "immagine": "Nuvole salgono nel cielo: l'immagine dell'Attesa. Così il nobile mangia, beve, è lieto e di buon umore.",
+      "interpretazione": "Il tempo giusto non è sempre adesso. Pazienza strategica: a volte è meglio aspettare il momento giusto piuttosto che forzare una situazione.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non forzare gli eventi, ma preparati."
+        },
+        {
+          "notazione": "九二",
+          "testo": "La calma iniziale favorisce la crescita futura."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita l'impulsività; il tempo non è ancora maturo."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Mantieni alta la concentrazione in vista di sviluppi imminenti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Quando si presenta l'occasione, coglila con decisione."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Troppa attesa può portare all'inazione."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "hanzi": "訟",
+      "nome": "Il Conflitto",
+      "pinyin": "Sòng",
+      "simbolo": "䷅",
+      "binario": "010111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 36,
+        "rovesciato": 5,
+        "nucleare": 37
+      },
+      "tag": [
+        "conflitto",
+        "tensione",
+        "negoziazione",
+        "ritiro",
+        "giustizia",
+        "dispute",
+        "compromesso"
+      ],
+      "giudizio": "Il Conflitto. Sei veritiero e vieni ostacolato. Fermarsi a metà porta salute. Portare le cose alla fine reca sciagura. È propizio vedere il grande uomo. Non è propizio attraversare la grande acqua.",
+      "immagine": "Cielo e acqua vanno in direzioni opposte: l'immagine del Conflitto. Così il nobile, in tutti gli affari, considera attentamente l'inizio.",
+      "interpretazione": "La tensione esiste, ma devi scegliere se combattere o ritirarti con intelligenza. Se la battaglia non porta vantaggi, lasciala andare.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Non scatenare la guerra finché non sei pronto."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Chiarisci la natura del conflitto, trova alleati."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita una lotta estenuante senza scopi precisi."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Cerca una conciliazione, se possibile."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Agisci con fermezza, ma rispetta i limiti."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Un conflitto protratto rischia di logorarti."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "hanzi": "師",
+      "nome": "L'Esercito",
+      "pinyin": "Shī",
+      "simbolo": "䷆",
+      "binario": "010000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 13,
+        "rovesciato": 8,
+        "nucleare": 24
+      },
+      "tag": [
+        "disciplina",
+        "strategia",
+        "organizzazione",
+        "leadership",
+        "risorse",
+        "coordinazione",
+        "esercito"
+      ],
+      "giudizio": "L'Esercito. L'esercito ha bisogno di perseveranza e di un uomo forte. Salute, senza macchia.",
+      "immagine": "Nel mezzo della terra c'è acqua: l'immagine dell'Esercito. Così il nobile accresce le sue moltitudini essendo generoso verso il popolo.",
+      "interpretazione": "Disciplina e strategia. Un piano ben organizzato porta alla vittoria. Agisci con coordinazione, gestisci le risorse con saggezza.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Definisci ruoli e gerarchie con chiarezza."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Un esercito efficace ha obiettivi condivisi."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non sprecare risorse; valuta rischi e vantaggi."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Coordinati con chi dirige le operazioni."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Leadership autorevole e giusta."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Evita dispersioni e diserzioni, mantieni coesione."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "hanzi": "比",
+      "nome": "La Coesione",
+      "pinyin": "Bǐ",
+      "simbolo": "䷇",
+      "binario": "000010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 14,
+        "rovesciato": 7,
+        "nucleare": 23
+      },
+      "tag": [
+        "unione",
+        "collaborazione",
+        "fiducia",
+        "alleanza",
+        "legame",
+        "comunità",
+        "coesione"
+      ],
+      "giudizio": "La Coesione reca salute. Esamina l'oracolo ancora una volta per verificare se possiedi sublimità, durata e perseveranza; allora non c'è macchia.",
+      "immagine": "Sulla terra c'è acqua: l'immagine della Coesione. Così gli antichi re fondavano i loro stati e coltivavano relazioni con i feudatari.",
+      "interpretazione": "Unione e collaborazione. I legami forti creano successo. Circondati di persone che condividono la tua visione.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Cerca affinità con chi condivide i tuoi valori."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non imporre l'unione; coltivala."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Se c'è discordia, trova un terreno comune."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Rafforza la fiducia reciproca."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Un leader coeso ispira la squadra."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Evita di isolarti, mantieni l'armonia."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "hanzi": "小畜",
+      "nome": "La Forza Domata dal Piccolo",
+      "pinyin": "Xiǎo Chù",
+      "simbolo": "䷈",
+      "binario": "111011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 16,
+        "rovesciato": 10,
+        "nucleare": 38
+      },
+      "tag": [
+        "dettagli",
+        "pazienza",
+        "piccoli passi",
+        "tatto",
+        "moderazione",
+        "influenza sottile",
+        "contenimento"
+      ],
+      "giudizio": "La Forza Domata dal Piccolo ha riuscita. Nubi dense, nessuna pioggia dalle nostre regioni a occidente.",
+      "immagine": "Il vento soffia in cielo: l'immagine della Forza Domata dal Piccolo. Così il nobile raffina le manifestazioni esteriori della sua natura.",
+      "interpretazione": "Piccole forze possono guidare grandi eventi. Procedi con tatto e attenzione ai dettagli.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non sottovalutare l'importanza dei dettagli."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Consolidati progressi, passo dopo passo."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Troppa ambizione può rompere l'equilibrio."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Una minima correzione di rotta può avere grandi effetti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Focalizzati sulle soluzioni più semplici."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Riconosci quando è il momento di espandersi."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "hanzi": "履",
+      "nome": "Il Procedere",
+      "pinyin": "Lǚ",
+      "simbolo": "䷉",
+      "binario": "110111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 15,
+        "rovesciato": 9,
+        "nucleare": 37
+      },
+      "tag": [
+        "prudenza",
+        "condotta",
+        "rispetto",
+        "coraggio",
+        "integrità",
+        "cammino",
+        "prova"
+      ],
+      "giudizio": "Il Procedere. Pestare la coda della tigre. Essa non morde l'uomo. Riuscita.",
+      "immagine": "In alto il cielo, in basso il lago: l'immagine del Procedere. Così il nobile distingue alto e basso e consolida il senso del popolo.",
+      "interpretazione": "Cammina con attenzione e rispetto. La prudenza ti aiuterà a superare gli ostacoli.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Parti con piccoli passi, la fretta è nemica."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Mantieni integrità anche se la via è stretta."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita la superficialità; ogni passo conta."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Affronta la paura con coraggio misurato."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Procedere con dignità porta fiducia."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Superata la prova, non dimenticare l'umiltà."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "hanzi": "泰",
+      "nome": "La Pace",
+      "pinyin": "Tài",
+      "simbolo": "䷊",
+      "binario": "111000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 12,
+        "rovesciato": 12,
+        "nucleare": 54
+      },
+      "tag": [
+        "armonia",
+        "equilibrio",
+        "pace",
+        "prosperità",
+        "unione degli opposti",
+        "crescita",
+        "fioritura"
+      ],
+      "giudizio": "La Pace. Il piccolo se ne va, il grande viene. Salute e riuscita.",
+      "immagine": "Cielo e terra si uniscono: l'immagine della Pace. Così il sovrano divide e compie il corso di cielo e terra, amministra e ordina i doni di cielo e terra, e così assiste il popolo.",
+      "interpretazione": "Armonia tra forze opposte. Un periodo favorevole di equilibrio e crescita.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "All'inizio, sii sicuro dei tuoi principi."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Lavora per una collaborazione equilibrata."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita conflitti interni prima che diventino gravi."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Resta vigile: la pace può essere fragile."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Se la leadership è saggia, la comunità prospera."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Quando la pace si esaurisce, prepara nuove strategie."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "hanzi": "否",
+      "nome": "Il Ristagno",
+      "pinyin": "Pǐ",
+      "simbolo": "䷋",
+      "binario": "000111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 11,
+        "rovesciato": 11,
+        "nucleare": 53
+      },
+      "tag": [
+        "blocco",
+        "stagnazione",
+        "riflessione",
+        "preparazione",
+        "resistenza",
+        "declino",
+        "separazione"
+      ],
+      "giudizio": "Il Ristagno. Persone malvagie non favoriscono la perseveranza del nobile. Il grande se ne va, il piccolo viene.",
+      "immagine": "Cielo e terra non si uniscono: l'immagine del Ristagno. Così il nobile si ritrae nella propria virtù per sfuggire alle difficoltà.",
+      "interpretazione": "Blocco e difficoltà. Quando tutto si ferma, usa il tempo per riflettere e prepararti.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Non arrenderti subito; cerca una soluzione."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Mantieni la calma quando tutto sembra fermo."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita di lamentarti, agisci su ciò che puoi."
+        },
+        {
+          "notazione": "九四",
+          "testo": "La trasformazione inizia dall'interno."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Trova risorse alternative, sii creativo."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Il ristagno non è eterno; preparati al cambiamento."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "hanzi": "同人",
+      "nome": "La Comunità",
+      "pinyin": "Tóng Rén",
+      "simbolo": "䷌",
+      "binario": "101111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 7,
+        "rovesciato": 14,
+        "nucleare": 44
+      },
+      "tag": [
+        "comunità",
+        "unità",
+        "collaborazione",
+        "inclusione",
+        "visione comune",
+        "fratellanza",
+        "apertura"
+      ],
+      "giudizio": "Comunità con gli uomini all'aperto. Riuscita. È propizio attraversare la grande acqua. Propizia è la perseveranza del nobile.",
+      "immagine": "Cielo e fuoco insieme: l'immagine della Comunità. Così il nobile organizza i clan e distingue le cose.",
+      "interpretazione": "La forza dell'unità. Collaborare con gli altri porta vantaggi a lungo termine.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Inizia creando connessioni sincere."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Ascolta tutti i membri, favorisci l'inclusione."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Risolvi i dissidi con dialogo aperto."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Condividi obiettivi chiari e comuni."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Guida con l'esempio, stimola l'appartenenza."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non trascurare la diversità di prospettive."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "hanzi": "大有",
+      "nome": "Il Possesso Grande",
+      "pinyin": "Dà Yǒu",
+      "simbolo": "䷍",
+      "binario": "111101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 8,
+        "rovesciato": 13,
+        "nucleare": 43
+      },
+      "tag": [
+        "abbondanza",
+        "successo",
+        "generosità",
+        "responsabilità",
+        "ricchezza",
+        "influenza",
+        "prosperità"
+      ],
+      "giudizio": "Il Possesso Grande. Sublime riuscita.",
+      "immagine": "Il fuoco alto nel cielo: l'immagine del Possesso Grande. Così il nobile reprime il male e promuove il bene, obbedendo alla volontà benevola del cielo.",
+      "interpretazione": "Successo e abbondanza. Usa la tua influenza con saggezza.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non ostentare troppo ciò che possiedi."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Condividi risorse, crea prosperità collettiva."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita sprechi e investimenti avventati."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Mantieni l'equilibrio tra potere e umiltà."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Un leader munifico favorisce fiducia."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Grande possesso implica grandi responsabilità."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "hanzi": "謙",
+      "nome": "La Modestia",
+      "pinyin": "Qiān",
+      "simbolo": "䷎",
+      "binario": "001000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 10,
+        "rovesciato": 16,
+        "nucleare": 40
+      },
+      "tag": [
+        "umiltà",
+        "modestia",
+        "efficacia",
+        "discrezione",
+        "merito",
+        "semplicità",
+        "equilibrio"
+      ],
+      "giudizio": "La Modestia crea riuscita. Il nobile porta le cose a compimento.",
+      "immagine": "Dentro la terra c'è una montagna: l'immagine della Modestia. Così il nobile riduce ciò che è troppo e accresce ciò che è troppo poco. Pesa le cose e le rende uguali.",
+      "interpretazione": "L'umiltà apre più porte del vanto. Mantieni un profilo basso e sii efficace.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Non confondere modestia con debolezza."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Riconosci i tuoi meriti ma senza arroganza."
+        },
+        {
+          "notazione": "九三",
+          "testo": "I troppi onori possono intralciare la crescita."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Collabora in silenzio, i risultati parleranno."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Grande influenza si ottiene con discrezione."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Rimani umile anche al culmine del successo."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "hanzi": "豫",
+      "nome": "L'Entusiasmo",
+      "pinyin": "Yù",
+      "simbolo": "䷏",
+      "binario": "000100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 9,
+        "rovesciato": 15,
+        "nucleare": 39
+      },
+      "tag": [
+        "entusiasmo",
+        "ispirazione",
+        "motivazione",
+        "energia",
+        "azione",
+        "musica",
+        "slancio"
+      ],
+      "giudizio": "L'Entusiasmo. È propizio istituire aiutanti e far marciare eserciti.",
+      "immagine": "Il tuono erompe dalla terra con fragore: l'immagine dell'Entusiasmo. Così gli antichi re facevano musica per onorare il merito e la offrivano con magnificenza al Dio Supremo.",
+      "interpretazione": "Energia e ispirazione. Se credi in qualcosa, agisci con convinzione.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Convoglia l'energia iniziale con scopo chiaro."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Motiva chi ti sta vicino; l'entusiasmo è contagioso."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Dosalo bene, evitando sbandate."
+        },
+        {
+          "notazione": "九四",
+          "testo": "L'ispirazione cresce con l'esperienza."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Guida gli altri con passione ed empatia."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Non lasciarti travolgere dall'euforia."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "hanzi": "隨",
+      "nome": "Il Seguimento",
+      "pinyin": "Suí",
+      "simbolo": "䷐",
+      "binario": "100110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 18,
+        "rovesciato": 18,
+        "nucleare": 53
+      },
+      "tag": [
+        "adattamento",
+        "flusso",
+        "seguire",
+        "flessibilità",
+        "contesto",
+        "apprendimento",
+        "servizio"
+      ],
+      "giudizio": "Il Seguimento ha sublime riuscita. Propizia è la perseveranza. Nessuna macchia.",
+      "immagine": "Nel mezzo del lago c'è il tuono: l'immagine del Seguimento. Così il nobile al crepuscolo entra in casa per riposare e ristorarsi.",
+      "interpretazione": "Adattarsi al flusso è a volte la migliore strategia.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Seguire non vuol dire perdere la propria identità."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Cerca di capire il contesto prima di agire."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non seguire ciecamente chi non condivide i tuoi valori."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Impara dai maestri, poi crea la tua via."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Collaborazione equilibrata, scambio reciproco."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Se la rotta non funziona più, cerca nuove direzioni."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "hanzi": "蠱",
+      "nome": "Il Lavoro sul Deterioramento",
+      "pinyin": "Gǔ",
+      "simbolo": "䷑",
+      "binario": "011001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 17,
+        "rovesciato": 17,
+        "nucleare": 54
+      },
+      "tag": [
+        "riparazione",
+        "rinnovamento",
+        "correzione",
+        "decadimento",
+        "responsabilità",
+        "restauro",
+        "purificazione"
+      ],
+      "giudizio": "Il Lavoro sul Deterioramento ha sublime riuscita. È propizio attraversare la grande acqua. Prima dell'inizio: tre giorni. Dopo l'inizio: tre giorni.",
+      "immagine": "Ai piedi della montagna soffia il vento: l'immagine del Deterioramento. Così il nobile scuote il popolo e ne rinforza lo spirito.",
+      "interpretazione": "Correggi errori passati e rinnova ciò che è rotto.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Riconosci il problema alla radice."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Affronta il deterioramento con costanza."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita soluzioni superficiali, agisci in profondità."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Coordinati con chi può aiutarti a riparare."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Quando la guarigione procede, rafforza il risultato."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non ripetere gli stessi errori."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "hanzi": "臨",
+      "nome": "L'Avvicinamento",
+      "pinyin": "Lín",
+      "simbolo": "䷒",
+      "binario": "110000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 33,
+        "rovesciato": 20,
+        "nucleare": 24
+      },
+      "tag": [
+        "espansione",
+        "opportunità",
+        "azione",
+        "avvicinamento",
+        "crescita",
+        "apertura",
+        "tempismo"
+      ],
+      "giudizio": "L'Avvicinamento ha sublime riuscita. Propizia è la perseveranza. Quando giunge l'ottavo mese, c'è sciagura.",
+      "immagine": "Al di sopra del lago c'è la terra: l'immagine dell'Avvicinamento. Così il nobile è inesauribile nel suo proposito di insegnare e illimitato nel tollerare e proteggere il popolo.",
+      "interpretazione": "Espansione e opportunità. È il momento giusto per agire.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Inizia a fare passi verso l'obiettivo."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Mostra apertura e dialogo."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non forzare troppo la crescita, bilancia le risorse."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Collabora con chi ti offre chance di sviluppo."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Fase di consolidamento prima del grande salto."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Preparati a un cambio di rotta se necessario."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "hanzi": "觀",
+      "nome": "La Contemplazione",
+      "pinyin": "Guān",
+      "simbolo": "䷓",
+      "binario": "000011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 34,
+        "rovesciato": 19,
+        "nucleare": 23
+      },
+      "tag": [
+        "osservazione",
+        "riflessione",
+        "contemplazione",
+        "visione",
+        "comprensione",
+        "meditazione",
+        "ispirazione"
+      ],
+      "giudizio": "La Contemplazione. L'abluzione è avvenuta, ma non ancora l'offerta. Pieni di fiducia guardano in alto verso di lui.",
+      "immagine": "Il vento soffia sulla terra: l'immagine della Contemplazione. Così gli antichi re visitavano le regioni del mondo, contemplavano il popolo e impartivano istruzione.",
+      "interpretazione": "Osserva prima di agire. La comprensione profonda precede la strategia vincente.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Metti da parte pregiudizi, osserva con mente aperta."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Rifletti sulle dinamiche prima di decidere."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non restare bloccato in troppa analisi."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Condividi la tua visione con chi può supportarti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "La contemplazione deve sfociare in un piano concreto."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Se hai compreso a fondo, agisci con saggezza."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "hanzi": "噬嗑",
+      "nome": "Il Morso che Spezza",
+      "pinyin": "Shì Kè",
+      "simbolo": "䷔",
+      "binario": "100101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 48,
+        "rovesciato": 22,
+        "nucleare": 39
+      },
+      "tag": [
+        "giustizia",
+        "decisione",
+        "fermezza",
+        "risoluzione",
+        "azione decisa",
+        "legge",
+        "chiarezza"
+      ],
+      "giudizio": "Il Morso che Spezza ha riuscita. È propizio lasciare che la giustizia sia amministrata.",
+      "immagine": "Tuono e lampo: l'immagine del Morso che Spezza. Così gli antichi re chiarivano le pene e rafforzavano le leggi.",
+      "interpretazione": "A volte serve una spinta decisa per risolvere tensioni e contrasti. Agisci con fermezza e giustizia.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Affronta il problema all'origine, non procrastinare."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Verifica i fatti prima di passare all'azione."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non eccedere nella severità, mantieni l'equilibrio."
+        },
+        {
+          "notazione": "九四",
+          "testo": "La chiarezza d'intenti accelera la risoluzione."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Giustizia e compassione possono coesistere."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Una volta risolta la tensione, evita recriminazioni."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "hanzi": "賁",
+      "nome": "La Grazia",
+      "pinyin": "Bì",
+      "simbolo": "䷕",
+      "binario": "101001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 47,
+        "rovesciato": 21,
+        "nucleare": 40
+      },
+      "tag": [
+        "bellezza",
+        "eleganza",
+        "forma",
+        "armonia",
+        "estetica",
+        "stile",
+        "raffinatezza"
+      ],
+      "giudizio": "La Grazia ha riuscita. In piccole cose è propizio intraprendere qualcosa.",
+      "immagine": "Ai piedi della montagna c'è il fuoco: l'immagine della Grazia. Così il nobile procede per schiarire le faccende correnti, ma non osa decidere in questo modo questioni controverse.",
+      "interpretazione": "Valorizza bellezza ed eleganza. Anche i dettagli estetici favoriscono armonia e coesione.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Semplicità autentica, non appariscenza vuota."
+        },
+        {
+          "notazione": "六二",
+          "testo": "La grazia interiore conta più di quella esteriore."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Non cedere all'estetica fine a se stessa."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Un tocco di stile può risolvere tensioni."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Armonizza forma e sostanza."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Resta fedele ai valori anche nella bellezza."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "hanzi": "剝",
+      "nome": "Il Disgregarsi",
+      "pinyin": "Bō",
+      "simbolo": "䷖",
+      "binario": "000001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 43,
+        "rovesciato": 24,
+        "nucleare": 2
+      },
+      "tag": [
+        "disgregazione",
+        "instabilità",
+        "transizione",
+        "smantellamento",
+        "accettazione",
+        "crisi",
+        "trasformazione"
+      ],
+      "giudizio": "Il Disgregarsi. Non è propizio andare in alcun luogo.",
+      "immagine": "La montagna poggia sulla terra: l'immagine del Disgregarsi. Così quelli in alto possono assicurare la loro posizione solo mediante munificenza verso quelli in basso.",
+      "interpretazione": "Fase di smantellamento e instabilità. Accetta la transizione e prepara la ricostruzione.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Se le fondamenta cedono, agisci subito."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non farti travolgere, conserva ciò che vale."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Attenzione a chi cerca di sfruttare la crisi."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Riduci al minimo le perdite."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Sii pronto a ricostruire su nuove basi."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Dopo la disgregazione, il cambiamento è necessario."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "hanzi": "復",
+      "nome": "Il Ritorno",
+      "pinyin": "Fù",
+      "simbolo": "䷗",
+      "binario": "100000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 44,
+        "rovesciato": 23,
+        "nucleare": 2
+      },
+      "tag": [
+        "ritorno",
+        "rinascita",
+        "rinnovo",
+        "ciclo",
+        "ricominciare",
+        "essenza",
+        "svolta"
+      ],
+      "giudizio": "Il Ritorno. Riuscita. Uscita e ingresso senza errore. Amici vengono senza macchia. La via va e viene. Al settimo giorno viene il ritorno. È propizio avere dove andare.",
+      "immagine": "Il tuono dentro la terra: l'immagine del Ritorno. Così gli antichi re al solstizio d'inverno chiudevano i passi. Mercanti e viandanti non si spostavano, e il sovrano non visitava le regioni.",
+      "interpretazione": "Rientro graduale su un percorso positivo. Ritorna all'essenza, recupera energie e obiettivi.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Avvio del ritorno, fai il primo passo con fiducia."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Se hai deviato, correggi la rotta senza timori."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non ripetere vecchi errori, agisci su basi rinnovate."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Ritrova alleati e relazioni autentiche."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Usa il ritorno per imparare dal passato."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Il ritorno si compie; non guardare indietro con rimpianto."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "hanzi": "無妄",
+      "nome": "L'Innocenza",
+      "pinyin": "Wú Wàng",
+      "simbolo": "䷘",
+      "binario": "100111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 46,
+        "rovesciato": 26,
+        "nucleare": 53
+      },
+      "tag": [
+        "innocenza",
+        "sincerità",
+        "autenticità",
+        "spontaneità",
+        "purezza",
+        "verità",
+        "naturalezza"
+      ],
+      "giudizio": "L'Innocenza. Sublime riuscita. Propizia è la perseveranza. Chi non è com'è, ha sciagura, e non è propizio intraprendere alcunché.",
+      "immagine": "Sotto il cielo scorre il tuono. Tutte le cose raggiungono lo stato naturale dell'innocenza. Così gli antichi re, ricchi di virtù e in armonia con il tempo, nutrivano tutti gli esseri.",
+      "interpretazione": "Sincerità e autenticità portano chiarezza. Agisci con spontaneità, senza secondi fini.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Mantieni cuore puro all'inizio, evita calcoli eccessivi."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Se sei sincero, attrarrai sostegno."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non trasformare l'innocenza in ingenuità."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Proteggi la tua genuinità dai cinismi esterni."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Onestà e trasparenza costruiscono fiducia."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non abusare della fiducia altrui."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "hanzi": "大畜",
+      "nome": "La Forza Domatrice del Grande",
+      "pinyin": "Dà Chù",
+      "simbolo": "䷙",
+      "binario": "111001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 45,
+        "rovesciato": 25,
+        "nucleare": 54
+      },
+      "tag": [
+        "contenimento",
+        "accumulo",
+        "strategia",
+        "potenza",
+        "controllo",
+        "saggezza",
+        "riserva"
+      ],
+      "giudizio": "La Forza Domatrice del Grande. Propizia è la perseveranza. Non mangiare in casa reca salute. È propizio attraversare la grande acqua.",
+      "immagine": "Il cielo dentro la montagna: l'immagine della Forza Domatrice del Grande. Così il nobile apprende le parole e le gesta del passato, per rafforzare il suo carattere.",
+      "interpretazione": "Trattenere l'energia per un uso mirato. Crea una strategia prima di sprigionare la tua potenza.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non dissipare le tue forze in inizi inutili."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Canalizza l'energia in obiettivi precisi."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita esplosioni incontrollate, resta focalizzato."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Preparati a un salto qualitativo."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Grande potere gestito con saggezza."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non trattenere troppo a lungo, l'energia va rilasciata."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "hanzi": "頤",
+      "nome": "Gli Angoli della Bocca",
+      "pinyin": "Yí",
+      "simbolo": "䷚",
+      "binario": "100001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 28,
+        "rovesciato": 27,
+        "nucleare": 2
+      },
+      "tag": [
+        "nutrimento",
+        "cura",
+        "alimentazione",
+        "corpo",
+        "mente",
+        "spirito",
+        "sostentamento"
+      ],
+      "giudizio": "Gli Angoli della Bocca. Perseveranza reca salute. Osserva la nutrizione, e ciò di cui una persona cerca di riempire la propria bocca.",
+      "immagine": "Ai piedi della montagna scorre il tuono: l'immagine della Nutrizione. Così il nobile fa attenzione alle sue parole ed è temperante nel mangiare e nel bere.",
+      "interpretazione": "Nutrimento e cura, sia fisica che spirituale. Ciò che introduci (idee, cibo, energie) influisce sul tuo essere.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Curare la base: corpo e mente."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Cerca risorse sane, evita eccessi."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non ingurgitare ciecamente informazioni o sostanze."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Condividi nutrimento e conoscenza."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Una dieta equilibrata crea stabilità."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Evita l'avidità, coltiva generosità."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "hanzi": "大過",
+      "nome": "La Preponderanza del Grande",
+      "pinyin": "Dà Guò",
+      "simbolo": "䷛",
+      "binario": "011110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 27,
+        "rovesciato": 28,
+        "nucleare": 1
+      },
+      "tag": [
+        "eccesso",
+        "sovraccarico",
+        "responsabilità",
+        "pressione",
+        "transizione critica",
+        "peso",
+        "riorganizzazione"
+      ],
+      "giudizio": "La Preponderanza del Grande. La trave maestra si incurva fino al punto di rottura. È propizio avere dove andare. Riuscita.",
+      "immagine": "Il lago sommerge gli alberi: l'immagine della Preponderanza del Grande. Così il nobile, quando sta solo, è senza preoccupazioni, e se deve rinunciare al mondo, è imperterrito.",
+      "interpretazione": "Situazione carica di responsabilità. Se il peso è eccessivo, crea sostegni o riorganizza le risorse.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Se senti troppo carico, chiedi aiuto."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Delegare con saggezza evita il collasso."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Non ignorare i segnali di stress eccessivo."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Rafforza la struttura prima che ceda."
+        },
+        {
+          "notazione": "九五",
+          "testo": "La leadership richiede stabilità."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Un eccesso di peso può spezzare ogni equilibrio."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "hanzi": "坎",
+      "nome": "L'Abissale",
+      "pinyin": "Kǎn",
+      "simbolo": "䷜",
+      "binario": "010010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 30,
+        "rovesciato": 29,
+        "nucleare": 27
+      },
+      "tag": [
+        "pericolo",
+        "abisso",
+        "sfida",
+        "profondità",
+        "perseveranza",
+        "acqua",
+        "coraggio"
+      ],
+      "giudizio": "L'Abissale ripetuto. Se sei veritiero hai riuscita nel cuore, e ciò che fai ha riuscita.",
+      "immagine": "L'acqua fluisce e raggiunge la meta: l'immagine dell'Abissale ripetuto. Così il nobile cammina in costante virtù e pratica l'insegnamento.",
+      "interpretazione": "Fase di pericolo o complessità. Mantieni la calma e affronta gli ostacoli uno alla volta.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Non farti travolgere dalle paure iniziali."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Fiducia e perseveranza anche nel buio."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita l'ostinazione in situazioni critiche."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Alleati con chi sa nuotare in acque tempestose."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Mantieni la rotta, la fine dell'abisso arriverà."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Superata la prova, ricorda cosa hai imparato."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "hanzi": "離",
+      "nome": "L'Aderente",
+      "pinyin": "Lí",
+      "simbolo": "䷝",
+      "binario": "101101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 29,
+        "rovesciato": 30,
+        "nucleare": 28
+      },
+      "tag": [
+        "fuoco",
+        "chiarezza",
+        "passione",
+        "illuminazione",
+        "visione",
+        "aderenza",
+        "luce"
+      ],
+      "giudizio": "L'Aderente. Propizia è la perseveranza. Essa reca riuscita. Curare la vacca reca salute.",
+      "immagine": "La chiarezza si leva due volte: l'immagine del Fuoco. Così il grande uomo, perpetuando questa chiarezza, illumina le quattro regioni del mondo.",
+      "interpretazione": "Passione e illuminazione. Segui la tua visione con intensità, ma gestisci bene la tua energia.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "L'inizio del fuoco va sorvegliato, per evitare incendi."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Alimenta la fiamma con costanza, non con esplosioni."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Troppa irruenza può bruciare opportunità."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Usa la luce per fare chiarezza, ma non accecare gli altri."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Il calore giusto scalda e ispira."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Se il fuoco divampa, trova un modo per contenerlo."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "hanzi": "咸",
+      "nome": "L'Attrazione",
+      "pinyin": "Xián",
+      "simbolo": "䷞",
+      "binario": "001110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 41,
+        "rovesciato": 32,
+        "nucleare": 44
+      },
+      "tag": [
+        "attrazione",
+        "influenza",
+        "sintonia",
+        "relazione",
+        "reciprocità",
+        "empatia",
+        "connessione"
+      ],
+      "giudizio": "L'Attrazione. Riuscita. Propizia è la perseveranza. Prendere in moglie una fanciulla reca salute.",
+      "immagine": "Sulla montagna c'è un lago: l'immagine dell'Attrazione. Così il nobile, in virtù della sua apertura, accoglie gli uomini.",
+      "interpretazione": "Influenza reciproca e sintonia. Coltiva relazioni positive e collabora per un vantaggio comune.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Un primo contatto sincero crea fiducia."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non manipolare i sentimenti altrui."
+        },
+        {
+          "notazione": "九三",
+          "testo": "L'attrazione deve essere reciproca e genuina."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Costruisci un legame su valori condivisi."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Apriti all'empatia e alla comprensione."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Evita dipendenze emotive o relazionali."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "hanzi": "恆",
+      "nome": "La Durata",
+      "pinyin": "Héng",
+      "simbolo": "䷟",
+      "binario": "011100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 42,
+        "rovesciato": 31,
+        "nucleare": 43
+      },
+      "tag": [
+        "durata",
+        "perseveranza",
+        "costanza",
+        "stabilità",
+        "coerenza",
+        "continuità",
+        "fedeltà"
+      ],
+      "giudizio": "La Durata. Riuscita. Nessuna macchia. Propizia è la perseveranza. È propizio avere dove andare.",
+      "immagine": "Tuono e vento: l'immagine della Durata. Così il nobile sta saldo e non cambia direzione.",
+      "interpretazione": "Stabilità e perseveranza nel tempo. Se la direzione è giusta, insisti con coerenza.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Poniti basi solide fin dall'inizio."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non scoraggiarti per piccoli ritardi."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita cambi di rotta continui, mantieni la costanza."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Aggiorna la strategia senza tradire i principi."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Riconosci i risultati raggiunti, ma continua."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Troppa rigidità può essere controproducente."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "hanzi": "遯",
+      "nome": "La Ritirata",
+      "pinyin": "Dùn",
+      "simbolo": "䷠",
+      "binario": "001111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 19,
+        "rovesciato": 34,
+        "nucleare": 44
+      },
+      "tag": [
+        "ritirata",
+        "strategia",
+        "distacco",
+        "prudenza",
+        "preparazione",
+        "saggezza",
+        "arretramento"
+      ],
+      "giudizio": "La Ritirata. Riuscita. In piccole cose è propizia la perseveranza.",
+      "immagine": "Sotto il cielo c'è la montagna: l'immagine della Ritirata. Così il nobile tiene a distanza l'uomo inferiore, non con ira ma con riserbo.",
+      "interpretazione": "In certi casi, ritirarsi è una mossa strategica. Allontanati dal conflitto per preparare il passo successivo.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Riconosci i segnali prima di rimanere intrappolato."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non ritirarti per paura, ma per scelta."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Pianifica il ritiro in modo ordinato, senza caos."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Usa il tempo guadagnato per riorganizzarti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Un ritiro dignitoso può prevenire disastri."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Conclusa la ritirata, valuta come ripartire."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "hanzi": "大壯",
+      "nome": "La Potenza del Grande",
+      "pinyin": "Dà Zhuàng",
+      "simbolo": "䷡",
+      "binario": "111100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 20,
+        "rovesciato": 33,
+        "nucleare": 43
+      },
+      "tag": [
+        "potenza",
+        "forza",
+        "leadership",
+        "etica",
+        "rispetto",
+        "grandezza",
+        "autorità"
+      ],
+      "giudizio": "La Potenza del Grande. Propizia è la perseveranza.",
+      "immagine": "Il tuono alto nel cielo: l'immagine della Potenza del Grande. Così il nobile non calca un sentiero che non corrisponda all'ordine.",
+      "interpretazione": "Forza manifesta e leadership. Usa il tuo potere con etica e rispetto.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non ostentare forza quando non necessario."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Fonda la potenza su principi saldi."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita imposizioni brutali, cerca l'adesione."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Una leadership illuminata ottiene fiducia."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Dimostra fermezza nel rispetto degli altri."
+        },
+        {
+          "notazione": "上六",
+          "testo": "La potenza eccessiva può portare a resistenze."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "hanzi": "晉",
+      "nome": "Il Progresso",
+      "pinyin": "Jìn",
+      "simbolo": "䷢",
+      "binario": "000101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 5,
+        "rovesciato": 36,
+        "nucleare": 39
+      },
+      "tag": [
+        "progresso",
+        "avanzamento",
+        "successo",
+        "fiducia",
+        "obiettivi",
+        "luce",
+        "promozione"
+      ],
+      "giudizio": "Il Progresso. Il potente principe viene onorato con cavalli in gran numero. In un singolo giorno è ricevuto tre volte in udienza.",
+      "immagine": "Il sole si leva sopra la terra: l'immagine del Progresso. Così il nobile illumina egli stesso le sue luminose virtù.",
+      "interpretazione": "Avanzamento costante e miglioramento. Definisci obiettivi chiari e affrontali con fiducia.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Inizia con slancio, ma pianifica i passi."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Cerca alleanze che condividano la tua visione."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non lasciarti distrarre dal timore di fallire."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Ogni traguardo intermedio va consolidato."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Celebra i successi, ma resta concentrato."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Se il progresso rallenta, rivaluta la strategia."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "hanzi": "明夷",
+      "nome": "L'Ottenebramento della Luce",
+      "pinyin": "Míng Yí",
+      "simbolo": "䷣",
+      "binario": "101000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 6,
+        "rovesciato": 35,
+        "nucleare": 40
+      },
+      "tag": [
+        "oscurità",
+        "protezione",
+        "resilienza",
+        "astuzia",
+        "speranza",
+        "luce interiore",
+        "avversità"
+      ],
+      "giudizio": "L'Ottenebramento della Luce. Nelle avversità è propizio essere perseveranti.",
+      "immagine": "La luce è sprofondata nella terra: l'immagine dell'Ottenebramento della Luce. Così il nobile vive con la grande moltitudine: vela il suo splendore eppure rimane luminoso.",
+      "interpretazione": "Temporanea oscurità o ostacoli esterni. Proteggi la tua luce interiore, presto tornerà a splendere.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non disperare alle prime ombre."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Conserva la speranza in una fase difficile."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita scontri diretti se sei in svantaggio."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Coltiva la luce dentro di te, in attesa."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Usa l'astuzia se la forza non basta."
+        },
+        {
+          "notazione": "上六",
+          "testo": "La luce riemergerà; abbi fiducia."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "hanzi": "家人",
+      "nome": "La Casata",
+      "pinyin": "Jiā Rén",
+      "simbolo": "䷤",
+      "binario": "101011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 40,
+        "rovesciato": 38,
+        "nucleare": 64
+      },
+      "tag": [
+        "famiglia",
+        "coesione",
+        "ruoli",
+        "valori",
+        "organizzazione",
+        "relazioni",
+        "armonia domestica"
+      ],
+      "giudizio": "La Casata. Propizia è la perseveranza della donna.",
+      "immagine": "Il vento esce dal fuoco: l'immagine della Casata. Così il nobile ha sostanza nelle sue parole e durata nella sua condotta di vita.",
+      "interpretazione": "Coesione familiare o di gruppo. Organizza e fai leva sui valori comuni per rafforzare le relazioni.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Cura le basi affettive e organizzative."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Rispetta i ruoli e le competenze."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita gerarchie oppressive, favorisci collaborazione."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Un clima sereno aumenta la produttività."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Valori condivisi uniscono il gruppo."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non trascurare la dimensione emotiva."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "hanzi": "睽",
+      "nome": "L'Opposizione",
+      "pinyin": "Kuí",
+      "simbolo": "䷥",
+      "binario": "110101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 39,
+        "rovesciato": 37,
+        "nucleare": 63
+      },
+      "tag": [
+        "opposizione",
+        "contrasto",
+        "divergenza",
+        "mediazione",
+        "rispetto",
+        "dualità",
+        "tensione"
+      ],
+      "giudizio": "L'Opposizione. In piccole cose, salute.",
+      "immagine": "In alto il fuoco, in basso il lago: l'immagine dell'Opposizione. Così il nobile, in mezzo a tutte le comunanze, mantiene la sua individualità.",
+      "interpretazione": "Differenze inconciliabili o visioni opposte. Rispetta i contrasti e cerca un terreno neutro se possibile.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non esasperare le divergenze."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Ascolta il punto di vista altrui."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Se il conflitto è insanabile, mantieni dignità."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Prova a trovare un punto comune."
+        },
+        {
+          "notazione": "六五",
+          "testo": "La mediazione richiede pazienza."
+        },
+        {
+          "notazione": "上九",
+          "testo": "A volte è necessario accettare la distanza."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "hanzi": "蹇",
+      "nome": "L'Impedimento",
+      "pinyin": "Jiǎn",
+      "simbolo": "䷦",
+      "binario": "001010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 38,
+        "rovesciato": 40,
+        "nucleare": 64
+      },
+      "tag": [
+        "ostacolo",
+        "blocco",
+        "alternativa",
+        "alleanza",
+        "cambio prospettiva",
+        "impedimento",
+        "sfida"
+      ],
+      "giudizio": "L'Impedimento. È propizio il sud-ovest. Non è propizio il nord-est. È propizio vedere il grande uomo. La perseveranza reca salute.",
+      "immagine": "Sulla montagna c'è l'acqua: l'immagine dell'Impedimento. Così il nobile volge la propria persona verso l'interno e coltiva la sua virtù.",
+      "interpretazione": "Blocco su un percorso. Cambia prospettiva o alleati con altri per superare lo stallo.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Individua la natura del blocco."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non scoraggiarti, cerca soluzioni creative."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Non combattere gli ostacoli frontalmente se non serve."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Trova un aiuto esterno."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Sfrutta la pausa per rivedere il piano."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Superato l'impedimento, concentra gli sforzi."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "hanzi": "解",
+      "nome": "La Liberazione",
+      "pinyin": "Xiè",
+      "simbolo": "䷧",
+      "binario": "010100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 37,
+        "rovesciato": 39,
+        "nucleare": 63
+      },
+      "tag": [
+        "liberazione",
+        "sollievo",
+        "rinnovamento",
+        "azione rapida",
+        "perdono",
+        "nuovo inizio",
+        "scioglimento"
+      ],
+      "giudizio": "La Liberazione. Il sud-ovest è propizio. Se non c'è più alcun luogo dove andare, il ritorno reca salute. Se c'è ancora un luogo dove andare, la rapidità reca salute.",
+      "immagine": "Tuono e pioggia si sciolgono: l'immagine della Liberazione. Così il nobile perdona gli errori e rimette le colpe.",
+      "interpretazione": "Dopo le tensioni, arriva la soluzione. Agisci con prontezza e lascia andare il peso del passato.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Sciogli le prime catene, inizia il rilascio."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Fai chiarezza sui tuoi obiettivi."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non tornare a condizioni che ti opprimono."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Approfitta della libertà per riorganizzarti."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Accompagna la liberazione con il rinnovamento."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Trasforma la vittoria in un nuovo inizio."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "hanzi": "損",
+      "nome": "La Diminuzione",
+      "pinyin": "Sǔn",
+      "simbolo": "䷨",
+      "binario": "110001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 31,
+        "rovesciato": 42,
+        "nucleare": 24
+      },
+      "tag": [
+        "riduzione",
+        "essenzialità",
+        "minimalismo",
+        "efficienza",
+        "sacrificio",
+        "semplicità",
+        "economia"
+      ],
+      "giudizio": "La Diminuzione. Se sei veritiero, sublime salute senza macchia. Si può essere perseveranti. È propizio intraprendere qualcosa. Come compierlo? Due piccole ciotole possono essere usate per il sacrificio.",
+      "immagine": "Ai piedi della montagna c'è il lago: l'immagine della Diminuzione. Così il nobile frena la sua ira e reprime i suoi istinti.",
+      "interpretazione": "Taglia il superfluo e riduci gli eccessi. Un approccio minimalista ti rafforza.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Parti dalle spese e risorse meno utili."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non confondere essenzialità con povertà."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Bilancia la rinuncia con la necessità."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Una riduzione mirata genera efficienza."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Comunica chiaramente i motivi della riduzione."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Diminuisci per crescere in modo sostenibile."
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "hanzi": "益",
+      "nome": "L'Accrescimento",
+      "pinyin": "Yì",
+      "simbolo": "䷩",
+      "binario": "100011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 32,
+        "rovesciato": 41,
+        "nucleare": 23
+      },
+      "tag": [
+        "crescita",
+        "investimento",
+        "opportunità",
+        "espansione",
+        "generosità",
+        "sviluppo",
+        "beneficio"
+      ],
+      "giudizio": "L'Accrescimento. È propizio intraprendere qualcosa. È propizio attraversare la grande acqua.",
+      "immagine": "Vento e tuono: l'immagine dell'Accrescimento. Così il nobile, quando vede il bene, lo imita; quando ha dei difetti, se ne libera.",
+      "interpretazione": "Investire e aumentare le risorse. Sfrutta le opportunità di crescita con prudenza e impegno.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Inizia con piccoli incrementi."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Diversifica gli investimenti."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita crescite troppo repentine e instabili."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Collabora con chi può potenziare i tuoi sforzi."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Mantieni una visione a lungo termine."
+        },
+        {
+          "notazione": "上九",
+          "testo": "L'accrescimento eccessivo può essere controproducente."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "hanzi": "夬",
+      "nome": "Lo Straripamento",
+      "pinyin": "Guài",
+      "simbolo": "䷪",
+      "binario": "111110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "relazioni": {
+        "opposto": 23,
+        "rovesciato": 44,
+        "nucleare": 1
+      },
+      "tag": [
+        "determinazione",
+        "rottura",
+        "decisione",
+        "affermazione",
+        "superamento",
+        "barriera",
+        "svolta"
+      ],
+      "giudizio": "Lo Straripamento. Bisogna annunciare la cosa con risolutezza alla corte del re. Sia proclamata in verità. Pericolo. È necessario avvertire la propria città. Non è propizio ricorrere alle armi. È propizio intraprendere qualcosa.",
+      "immagine": "Il lago è salito al cielo: l'immagine dello Straripamento. Così il nobile dispensa ricchezze verso il basso e rifugge dal riposare sulla sua virtù.",
+      "interpretazione": "Necessità di affermarsi e rompere le barriere. Agisci con decisione, ma mantieni lucidità.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Identifica ciò che ti frena e agisci."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non farti travolgere da un impulso distruttivo."
+        },
+        {
+          "notazione": "九三",
+          "testo": "La chiarezza d'obiettivo riduce i rischi."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Unisci forze per superare ostacoli."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Non abusare del tuo slancio."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Dopo aver straripato, riporta l'ordine."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "hanzi": "姤",
+      "nome": "Il Farsi Incontro",
+      "pinyin": "Gòu",
+      "simbolo": "䷫",
+      "binario": "011111",
+      "trigramma_sup": {
+        "simbolo": "☰",
+        "nome": "Cielo"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 24,
+        "rovesciato": 43,
+        "nucleare": 1
+      },
+      "tag": [
+        "incontro",
+        "imprevisto",
+        "opportunità",
+        "valutazione",
+        "cautela",
+        "novità",
+        "sorpresa"
+      ],
+      "giudizio": "Il Farsi Incontro. La fanciulla è potente. Non bisogna sposare una tale fanciulla.",
+      "immagine": "Sotto il cielo c'è il vento: l'immagine del Farsi Incontro. Così il principe, nel diffondere i suoi ordini, si rivolge a tutte le regioni.",
+      "interpretazione": "Arrivo di un fattore imprevisto. Potrebbe essere un'opportunità o una sfida; valuta con attenzione.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Preparati all'imprevisto con mentalità aperta."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non respingere subito l'elemento nuovo."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Se è rischioso, gestiscilo con cautela."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Un incontro fortunato può portare grandi cambiamenti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Evita di farti soggiogare dalle novità."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Se non si integra, meglio congedarlo."
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "hanzi": "萃",
+      "nome": "La Raccolta",
+      "pinyin": "Cuì",
+      "simbolo": "䷬",
+      "binario": "000110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "relazioni": {
+        "opposto": 26,
+        "rovesciato": 46,
+        "nucleare": 53
+      },
+      "tag": [
+        "raccolta",
+        "unità",
+        "obiettivo",
+        "convergenza",
+        "risorse",
+        "comunità",
+        "concentrazione"
+      ],
+      "giudizio": "La Raccolta. Riuscita. Il re si avvicina al suo tempio. È propizio vedere il grande uomo. Questo reca riuscita. Propizia è la perseveranza. Portare grandi offerte crea salute. È propizio intraprendere qualcosa.",
+      "immagine": "Sulla terra c'è il lago: l'immagine della Raccolta. Così il nobile rinnova le sue armi per affrontare l'imprevisto.",
+      "interpretazione": "Radunare persone e risorse intorno a un obiettivo. L'unità fa la forza.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Inizia coinvolgendo chi ti è più vicino."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Crea un obiettivo chiaro e condiviso."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita la frammentazione di interessi."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Premia chi contribuisce attivamente."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Mantieni coesione con comunicazione continua."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Una raccolta ben strutturata produce risultati duraturi."
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "hanzi": "升",
+      "nome": "L'Ascendere",
+      "pinyin": "Shēng",
+      "simbolo": "䷭",
+      "binario": "011000",
+      "trigramma_sup": {
+        "simbolo": "☷",
+        "nome": "Terra"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 25,
+        "rovesciato": 45,
+        "nucleare": 54
+      },
+      "tag": [
+        "ascesa",
+        "progresso",
+        "crescita graduale",
+        "consolidamento",
+        "determinazione",
+        "scalata",
+        "avanzamento"
+      ],
+      "giudizio": "L'Ascendere ha sublime riuscita. Bisogna vedere il grande uomo. Non temere! Una spedizione verso sud reca salute.",
+      "immagine": "Dentro la terra cresce il legno: l'immagine dell'Ascendere. Così il nobile, con devozione e dedizione, accumula piccole cose per farne di elevate e grandi.",
+      "interpretazione": "Graduale ascesa e progresso sicuro. Ogni passo consolidato ti avvicina alla vetta.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Fai il primo gradino con determinazione."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non trascurare i dettagli mentre sali."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita salti troppo ampi, rischi di cadere."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Chiedi supporto a chi è già più in alto."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Consolidare ogni tappa rafforza il percorso."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Raggiunta la vetta, valuta come proseguire."
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "hanzi": "困",
+      "nome": "L'Esaurimento",
+      "pinyin": "Kùn",
+      "simbolo": "䷮",
+      "binario": "010110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 22,
+        "rovesciato": 48,
+        "nucleare": 37
+      },
+      "tag": [
+        "esaurimento",
+        "oppressione",
+        "recupero",
+        "priorità",
+        "resilienza",
+        "stanchezza",
+        "resistenza"
+      ],
+      "giudizio": "L'Esaurimento. Riuscita. Perseveranza. Il grande uomo opera salute. Nessuna macchia. Se uno ha qualcosa da dire, non gli si crede.",
+      "immagine": "Nel lago non c'è acqua: l'immagine dell'Esaurimento. Così il nobile mette in gioco la sua vita per seguire la sua volontà.",
+      "interpretazione": "Sensazione di oppressione o mancanza di forze. Focalizzati sul recupero e sulla definizione di priorità.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Riconosci la stanchezza e concediti una pausa."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non perdere la speranza, cerca sostegno."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita di incupirti nella sfiducia."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Un piccolo aiuto può riaccendere energie."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Riorganizza i tuoi obiettivi."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Dopo l'esaurimento, riparti con slancio nuovo."
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "hanzi": "井",
+      "nome": "Il Pozzo",
+      "pinyin": "Jǐng",
+      "simbolo": "䷯",
+      "binario": "011010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 21,
+        "rovesciato": 47,
+        "nucleare": 38
+      },
+      "tag": [
+        "fonte",
+        "radici",
+        "valori",
+        "essenza",
+        "profondità",
+        "risorsa",
+        "tradizione"
+      ],
+      "giudizio": "Il Pozzo. Si può cambiare la città, ma non si può cambiare il pozzo. Esso non diminuisce né aumenta. Vengono e vanno ad attingere al pozzo.",
+      "immagine": "Sopra il legno c'è l'acqua: l'immagine del Pozzo. Così il nobile incoraggia il popolo al lavoro e lo esorta ad aiutarsi reciprocamente.",
+      "interpretazione": "La fonte vitale, le radici profonde. Ricorda i tuoi valori essenziali e attingi a essi.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Se il pozzo è secco, ripulisci le fondamenta."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Mantieni accessibile la tua fonte interiore."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita sprechi, conserva ciò che è prezioso."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Condividi l'acqua con chi ne ha bisogno."
+        },
+        {
+          "notazione": "九五",
+          "testo": "La profondità del pozzo riflette la tua."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Non dimenticare di rinnovarlo regolarmente."
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "hanzi": "革",
+      "nome": "Il Sovvertimento",
+      "pinyin": "Gé",
+      "simbolo": "䷰",
+      "binario": "101110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 4,
+        "rovesciato": 50,
+        "nucleare": 44
+      },
+      "tag": [
+        "rivoluzione",
+        "cambiamento",
+        "rinnovamento",
+        "coraggio",
+        "trasformazione radicale",
+        "riforma",
+        "sovvertimento"
+      ],
+      "giudizio": "Il Sovvertimento. Nel tuo giorno vieni creduto. Sublime riuscita, propizia per la perseveranza. Il pentimento svanisce.",
+      "immagine": "Nel lago c'è il fuoco: l'immagine del Sovvertimento. Così il nobile ordina il computo del tempo e chiarisce le stagioni.",
+      "interpretazione": "Rivoluzione e cambiamento radicale. Agisci con coraggio per rinnovare lo status quo.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Pianifica il sovvertimento, non agire in modo impulsivo."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Cerca consenso prima di ribaltare tutto."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Distinguere tra rivoluzione costruttiva e distruttiva."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Coordinati con alleati fidati."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Guida il cambiamento con visione ampia."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Dopo il sovvertimento, stabilizza il nuovo ordine."
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "hanzi": "鼎",
+      "nome": "Il Crogiolo",
+      "pinyin": "Dǐng",
+      "simbolo": "䷱",
+      "binario": "011101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 3,
+        "rovesciato": 49,
+        "nucleare": 43
+      },
+      "tag": [
+        "trasformazione",
+        "alchimia",
+        "creazione",
+        "raffinamento",
+        "cultura",
+        "nutrimento spirituale",
+        "sacro"
+      ],
+      "giudizio": "Il Crogiolo. Sublime salute. Riuscita.",
+      "immagine": "Sopra il legno c'è il fuoco: l'immagine del Crogiolo. Così il nobile consolida il destino rettificando la posizione.",
+      "interpretazione": "Trasformazione e alchimia interiore. Dai valore a ciò che hai e trasmutalo in qualcosa di migliore.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Definisci gli elementi base del cambiamento."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Scalda il crogiolo con costanza e passione."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Non abbandonare il processo a metà."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Filtra ciò che è impuro, raffina la materia."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Una trasformazione riuscita richiede tempo."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Raggiunta la nuova forma, sfruttala al meglio."
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "hanzi": "震",
+      "nome": "Il Tuono",
+      "pinyin": "Zhèn",
+      "simbolo": "䷲",
+      "binario": "100100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "relazioni": {
+        "opposto": 57,
+        "rovesciato": 52,
+        "nucleare": 39
+      },
+      "tag": [
+        "shock",
+        "imprevisto",
+        "reazione",
+        "risveglio",
+        "scossa",
+        "tuono",
+        "prontezza"
+      ],
+      "giudizio": "Il Tuono. Riuscita. Lo Shock viene — oh, oh! Parole ridenti — ha, ha! Il Tuono spaventa per cento miglia, ma egli non lascia cadere il cucchiaio sacrificale e il calice.",
+      "immagine": "Tuono continuato: l'immagine dello Shock. Così il nobile con timore e tremore rettifica la propria vita ed esamina se stesso.",
+      "interpretazione": "Evento improvviso e dirompente. Sii pronto a reagire in modo rapido ed efficace.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non farti trovare impreparato: anticipa."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Il timore può essere un alleato se ti mantiene vigile."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non perdere la calma nel caos."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Dopo lo shock, organizza una risposta."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Impara dall'imprevisto per migliorare."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Superato il tuono, ritrova la serenità."
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "hanzi": "艮",
+      "nome": "L'Arresto",
+      "pinyin": "Gèn",
+      "simbolo": "䷳",
+      "binario": "001001",
+      "trigramma_sup": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 58,
+        "rovesciato": 51,
+        "nucleare": 40
+      },
+      "tag": [
+        "quiete",
+        "meditazione",
+        "arresto",
+        "calma",
+        "concentrazione",
+        "introspezione",
+        "pausa"
+      ],
+      "giudizio": "L'Arresto. Tenere fermo il dorso cosicché egli non senta più il proprio corpo. Va nel suo cortile e non vede il suo popolo. Nessuna macchia.",
+      "immagine": "Montagne una sopra l'altra: l'immagine dell'Arresto. Così il nobile non va coi suoi pensieri oltre la propria posizione.",
+      "interpretazione": "Calma e meditazione. Fermarsi per un po' può aiutare a ritrovare chiarezza e concentrazione.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Una sosta precoce può prevenire errori."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non scambiare l'arresto per pigrizia."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Rivedi gli obiettivi prima di ripartire."
+        },
+        {
+          "notazione": "六四",
+          "testo": "L'immobilità temporanea ricarica energia."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Medita sulle prossime mosse."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Troppa stasi può diventare stagnazione."
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "hanzi": "漸",
+      "nome": "Lo Sviluppo",
+      "pinyin": "Jiàn",
+      "simbolo": "䷴",
+      "binario": "001011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 54,
+        "rovesciato": 54,
+        "nucleare": 64
+      },
+      "tag": [
+        "sviluppo",
+        "gradualità",
+        "crescita organica",
+        "pazienza",
+        "radici",
+        "maturazione",
+        "costanza"
+      ],
+      "giudizio": "Lo Sviluppo. La fanciulla viene data in sposa. Salute. Propizia è la perseveranza.",
+      "immagine": "Sulla montagna c'è un albero: l'immagine dello Sviluppo. Così il nobile dimora in dignità e virtù per migliorare i costumi.",
+      "interpretazione": "Crescita costante e armoniosa, come un albero che mette radici profonde. Costruisci passo dopo passo.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Metti radici solide all'inizio."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Cresci gradualmente, evita salti bruschi."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Cura le basi per reggere le sfide future."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Espanditi in modo ordinato."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Rafforza i rami mentre ti allunghi."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Compimento: ora puoi dare frutti."
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "hanzi": "歸妹",
+      "nome": "La Ragazza che Si Sposa",
+      "pinyin": "Guī Mèi",
+      "simbolo": "䷵",
+      "binario": "110100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 53,
+        "rovesciato": 53,
+        "nucleare": 63
+      },
+      "tag": [
+        "adattamento",
+        "integrazione",
+        "nuovi legami",
+        "ruolo",
+        "transizione",
+        "identità",
+        "diplomazia"
+      ],
+      "giudizio": "La Ragazza che Si Sposa. Imprese recano sciagura. Nulla che sia propizio.",
+      "immagine": "Sopra il lago c'è il tuono: l'immagine della Ragazza che Si Sposa. Così il nobile comprende il transitorio alla luce dell'eternità della fine.",
+      "interpretazione": "Situazione di adattamento a un contesto più ampio. Accetta i ruoli e impara dai nuovi legami.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Comprendi la nuova realtà con umiltà."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non temere di imparare costumi diversi."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Mantenere la propria essenza nelle relazioni."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Usa la diplomazia per integrarti."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Equilibrio tra adattamento e identità."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Consolidati in un ruolo maturo e stabile."
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "hanzi": "豐",
+      "nome": "L'Abbondanza",
+      "pinyin": "Fēng",
+      "simbolo": "䷶",
+      "binario": "101100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 59,
+        "rovesciato": 56,
+        "nucleare": 28
+      },
+      "tag": [
+        "abbondanza",
+        "prosperità",
+        "pienezza",
+        "fortuna",
+        "concretizzare",
+        "raccolta",
+        "apice"
+      ],
+      "giudizio": "L'Abbondanza ha riuscita. Il re la raggiunge. Non essere triste. Sii come il sole a mezzogiorno.",
+      "immagine": "Tuono e lampo vengono entrambi: l'immagine dell'Abbondanza. Così il nobile decide le cause giudiziarie e applica le pene.",
+      "interpretazione": "Fortuna, prosperità e pienezza. Sfrutta il periodo favorevole per concretizzare progetti.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Prepara il terreno per raccogliere i frutti."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Condividi la prosperità, rafforza le relazioni."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita l'euforia e mantieni organizzazione."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Approfondisci le opportunità."
+        },
+        {
+          "notazione": "六五",
+          "testo": "Difendi la tua abbondanza con equilibrio."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Se saturi, pianifica la continuità."
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "hanzi": "旅",
+      "nome": "Il Viandante",
+      "pinyin": "Lǚ",
+      "simbolo": "䷷",
+      "binario": "001101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 60,
+        "rovesciato": 55,
+        "nucleare": 28
+      },
+      "tag": [
+        "viaggio",
+        "mobilità",
+        "adattamento",
+        "distacco",
+        "flessibilità",
+        "esplorazione",
+        "straniero"
+      ],
+      "giudizio": "Il Viandante. Riuscita attraverso la piccolezza. La perseveranza del viandante reca salute.",
+      "immagine": "Sulla montagna c'è il fuoco: l'immagine del Viandante. Così il nobile è chiaro e cauto nell'applicare le pene e non protrae i processi.",
+      "interpretazione": "Mobilità e distacco. Essere stranieri in un nuovo ambiente insegna flessibilità e spirito di adattamento.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Preparati alle differenze culturali."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Non portare troppi bagagli, mantieni leggerezza."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Rispetta le usanze locali senza rinunciare a te stesso."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Cerca alleanze tra i \"nativi\"."
+        },
+        {
+          "notazione": "六五",
+          "testo": "L'esperienza del viaggio arricchisce interiormente."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Quando è ora di ripartire, fallo con gratitudine."
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "hanzi": "巽",
+      "nome": "Il Vento",
+      "pinyin": "Xùn",
+      "simbolo": "䷸",
+      "binario": "011011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "relazioni": {
+        "opposto": 51,
+        "rovesciato": 58,
+        "nucleare": 38
+      },
+      "tag": [
+        "penetrazione",
+        "influenza graduale",
+        "costanza",
+        "persuasione",
+        "vento",
+        "pazienza",
+        "dolcezza"
+      ],
+      "giudizio": "Il Mite. Riuscita attraverso la piccolezza. È propizio avere dove andare. È propizio vedere il grande uomo.",
+      "immagine": "Venti che si susseguono: l'immagine del Dolcemente Penetrante. Così il nobile diffonde i suoi ordini e porta a termine i suoi affari.",
+      "interpretazione": "Influenza graduale e costante. Come una brezza che modella il paesaggio, agisci con pazienza.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Un impatto lieve, ma costante, può produrre grandi effetti."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Evita azioni improvvise, preferisci la persuasione."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Aggira gli ostacoli piuttosto che affrontarli di petto."
+        },
+        {
+          "notazione": "六四",
+          "testo": "La costanza genera cambiamenti profondi."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Non disperdere le tue energie, concentrale."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Se il vento diventa tempesta, ricalibra la direzione."
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "hanzi": "兌",
+      "nome": "Il Sereno",
+      "pinyin": "Duì",
+      "simbolo": "䷹",
+      "binario": "110110",
+      "trigramma_sup": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 52,
+        "rovesciato": 57,
+        "nucleare": 37
+      },
+      "tag": [
+        "gioia",
+        "comunicazione",
+        "fiducia",
+        "ottimismo",
+        "dialogo",
+        "serenità",
+        "condivisione"
+      ],
+      "giudizio": "Il Sereno. Riuscita. Propizia è la perseveranza.",
+      "immagine": "Laghi che poggiano l'uno sull'altro: l'immagine del Sereno. Così il nobile si unisce ai suoi amici per discutere e per esercitarsi.",
+      "interpretazione": "Gioia condivisa e comunicazione aperta. Crea un clima di fiducia e collaborazione.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Inizia con un sorriso, apri il dialogo."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non abusare dell'ottimismo, sii realistico."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Evita chi tenta di spegnere la tua serenità."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Favorisci scambi costruttivi con gli altri."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Condividi le tue idee in modo empatico."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Troppa euforia può generare superficialità."
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "hanzi": "渙",
+      "nome": "La Dissoluzione",
+      "pinyin": "Huàn",
+      "simbolo": "䷺",
+      "binario": "010011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 55,
+        "rovesciato": 60,
+        "nucleare": 27
+      },
+      "tag": [
+        "dissoluzione",
+        "superamento",
+        "chiarezza",
+        "trasparenza",
+        "scioglimento",
+        "liberazione",
+        "fluidità"
+      ],
+      "giudizio": "La Dissoluzione. Riuscita. Il re si avvicina al suo tempio. È propizio attraversare la grande acqua. Propizia è la perseveranza.",
+      "immagine": "Il vento soffia sull'acqua: l'immagine della Dissoluzione. Così gli antichi re offrivano sacrifici al Signore e costruivano templi.",
+      "interpretazione": "Superare barriere e incomprensioni. Sciogli i blocchi emotivi o relazionali per ritrovare chiarezza.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Individua la fonte dell'incomprensione."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non temere la trasparenza, porta liberazione."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Agisci con decisione, ma con tatto."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Un aiuto esterno può accelerare la dissoluzione."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Colloquio aperto per diradare nebbie."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Quando il blocco si scioglie, costruisci su basi rinnovate."
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "hanzi": "節",
+      "nome": "La Limitazione",
+      "pinyin": "Jié",
+      "simbolo": "䷻",
+      "binario": "110010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 56,
+        "rovesciato": 59,
+        "nucleare": 27
+      },
+      "tag": [
+        "limitazione",
+        "confini",
+        "disciplina",
+        "equilibrio",
+        "regole",
+        "moderazione",
+        "struttura"
+      ],
+      "giudizio": "La Limitazione. Riuscita. La limitazione amara non deve essere praticata con perseveranza.",
+      "immagine": "Sopra il lago c'è l'acqua: l'immagine della Limitazione. Così il nobile crea numero e misura e indaga la natura della virtù e della retta condotta.",
+      "interpretazione": "Fissare confini e regole per mantenere l'equilibrio. L'autodisciplina rafforza il potenziale.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Stabilisci i limiti minimi di sicurezza."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Non esagerare con le restrizioni, serve flessibilità."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Adatta i confini man mano che cresci."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Rispetta i tuoi stessi limiti."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Una regola chiara semplifica le relazioni."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Troppa rigidità genera ribellione."
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "hanzi": "中孚",
+      "nome": "La Veracità Interiore",
+      "pinyin": "Zhōng Fú",
+      "simbolo": "䷼",
+      "binario": "110011",
+      "trigramma_sup": {
+        "simbolo": "☴",
+        "nome": "Vento"
+      },
+      "trigramma_inf": {
+        "simbolo": "☱",
+        "nome": "Lago"
+      },
+      "relazioni": {
+        "opposto": 62,
+        "rovesciato": 61,
+        "nucleare": 27
+      },
+      "tag": [
+        "verità",
+        "sincerità",
+        "autenticità",
+        "fiducia",
+        "trasparenza",
+        "integrità",
+        "cuore"
+      ],
+      "giudizio": "La Veracità Interiore. Porci e pesci. Salute! È propizio attraversare la grande acqua. Propizia è la perseveranza.",
+      "immagine": "Sopra il lago c'è il vento: l'immagine della Veracità Interiore. Così il nobile discute le cause penali per ritardare le esecuzioni capitali.",
+      "interpretazione": "Trasparenza e sincerità totale. Quando sei autentico, attrai relazioni e risultati genuini.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Inizia dall'onestà con te stesso."
+        },
+        {
+          "notazione": "九二",
+          "testo": "La verità costruisce fiducia reciproca."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non temere il giudizio altrui se sei sincero."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Un cuore limpido ispira rispetto."
+        },
+        {
+          "notazione": "九五",
+          "testo": "La veracità guida decisioni illuminate."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Non tornare mai all'inganno."
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "hanzi": "小過",
+      "nome": "La Preponderanza del Piccolo",
+      "pinyin": "Xiǎo Guò",
+      "simbolo": "䷽",
+      "binario": "001100",
+      "trigramma_sup": {
+        "simbolo": "☳",
+        "nome": "Tuono"
+      },
+      "trigramma_inf": {
+        "simbolo": "☶",
+        "nome": "Montagna"
+      },
+      "relazioni": {
+        "opposto": 61,
+        "rovesciato": 62,
+        "nucleare": 28
+      },
+      "tag": [
+        "dettagli",
+        "precisione",
+        "piccoli passi",
+        "cura",
+        "attenzione",
+        "minuzie",
+        "cautela"
+      ],
+      "giudizio": "La Preponderanza del Piccolo. Riuscita. Propizia è la perseveranza. Si possono fare piccole cose, non si possono fare grandi cose. L'uccello in volo porta il messaggio: non è bene tendere verso l'alto, è bene rimanere in basso. Grande salute!",
+      "immagine": "Sulla montagna c'è il tuono: l'immagine della Preponderanza del Piccolo. Così il nobile, nella sua condotta, dà preponderanza alla riverenza; nel lutto, dà preponderanza al dolore; nelle sue spese, dà preponderanza alla parsimonia.",
+      "interpretazione": "È il momento di curare i dettagli. Piccoli passi accurati portano a grandi obiettivi.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Anche il più piccolo errore può pesare."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Raffina ogni mossa, procedi con pazienza."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Non sottovalutare l'impatto delle minuzie."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Unisci piccoli sforzi per un risultato solido."
+        },
+        {
+          "notazione": "六五",
+          "testo": "La precisione è la tua forza."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Se la situazione evolve, adatta i dettagli."
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "hanzi": "既濟",
+      "nome": "Dopo il Compimento",
+      "pinyin": "Jì Jì",
+      "simbolo": "䷾",
+      "binario": "101010",
+      "trigramma_sup": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "trigramma_inf": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "relazioni": {
+        "opposto": 64,
+        "rovesciato": 64,
+        "nucleare": 64
+      },
+      "tag": [
+        "compimento",
+        "equilibrio raggiunto",
+        "vigilanza",
+        "consolidamento",
+        "ciclo",
+        "completamento",
+        "transizione"
+      ],
+      "giudizio": "Dopo il Compimento. Riuscita nelle piccole cose. Propizia è la perseveranza. All'inizio salute, alla fine disordine.",
+      "immagine": "L'acqua sopra il fuoco: l'immagine dello stato di Dopo il Compimento. Così il nobile riflette sulla sventura e se ne premunisce in anticipo.",
+      "interpretazione": "Un ciclo si chiude, ma occorre vigilanza per evitare passi falsi. Mantieni la qualità raggiunta.",
+      "linee": [
+        {
+          "notazione": "初九",
+          "testo": "Non rilassarti troppo presto."
+        },
+        {
+          "notazione": "六二",
+          "testo": "Ricalibra le risorse per la nuova fase."
+        },
+        {
+          "notazione": "九三",
+          "testo": "Evita di scivolare nell'autocompiacimento."
+        },
+        {
+          "notazione": "六四",
+          "testo": "Resta aperto a miglioramenti ulteriori."
+        },
+        {
+          "notazione": "九五",
+          "testo": "Consolidare il successo è un atto di responsabilità."
+        },
+        {
+          "notazione": "上六",
+          "testo": "Pronto a un nuovo inizio, non fermarti."
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "hanzi": "未濟",
+      "nome": "Prima del Compimento",
+      "pinyin": "Wèi Jì",
+      "simbolo": "䷿",
+      "binario": "010101",
+      "trigramma_sup": {
+        "simbolo": "☲",
+        "nome": "Fuoco"
+      },
+      "trigramma_inf": {
+        "simbolo": "☵",
+        "nome": "Acqua"
+      },
+      "relazioni": {
+        "opposto": 63,
+        "rovesciato": 63,
+        "nucleare": 63
+      },
+      "tag": [
+        "incompiuto",
+        "preparazione",
+        "ultimo miglio",
+        "pazienza",
+        "sforzo finale",
+        "nuovo ciclo",
+        "potenziale"
+      ],
+      "giudizio": "Prima del Compimento. Riuscita. Ma se la piccola volpe, quando ha quasi compiuto la traversata, si bagna la coda, non c'è nulla che sia propizio.",
+      "immagine": "Il fuoco sopra l'acqua: l'immagine dello stato di Prima del Compimento. Così il nobile è cauto nel distinguere le cose, affinché ciascuna trovi il suo posto.",
+      "interpretazione": "La meta è vicina, ma ancora incompiuta. Preparati con cura per il finale o per un nuovo inizio.",
+      "linee": [
+        {
+          "notazione": "初六",
+          "testo": "Un approccio affrettato può rovinare tutto."
+        },
+        {
+          "notazione": "九二",
+          "testo": "Controlla i dettagli e verifica la preparazione."
+        },
+        {
+          "notazione": "六三",
+          "testo": "Non scoraggiarti per un ultimo ostacolo."
+        },
+        {
+          "notazione": "九四",
+          "testo": "Cerca aiuto se sei in dubbio."
+        },
+        {
+          "notazione": "六五",
+          "testo": "La tensione pre-finale può essere superata con metodo."
+        },
+        {
+          "notazione": "上九",
+          "testo": "Concluso l'obiettivo, si apre un nuovo ciclo."
+        }
+      ]
+    }
+  ]
+}

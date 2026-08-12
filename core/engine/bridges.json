@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "descrizione": "Ponti intercampo CURATI tra macroaree. I wikilink non attraversano le cartelle: i ponti si dichiarano qui.",
+  "bridges": []
+}

@@ -4,20 +4,27 @@
   "convention": {
     "id": "kebab-case ascii, nessuno spazio; coincide col nome della cartella in raw/<id>/",
     "bridge": "i concetti condivisi tra aree, scritti con lo stesso nome esatto, vengono fusi dal grafo e diventano ponti intercampo",
-    "status": "active | draft | archived"
+    "status": "active | draft | archived",
+    "generata_da": "se presente, wiki/<id>/ e GENERATA da questo file: niente front-matter a mano",
+    "sla_giorni": "giorni prima che una nota vada ri-verificata; null = non scade",
+    "coesa": "true = l'area deve restare un solo componente connesso nel grafo"
   },
   "areas": [
     {
       "id": "aion",
       "label": "AION",
       "description": "Modello di pensiero AION: framework concettuale, principi, struttura e applicazioni.",
-      "status": "active"
+      "status": "active",
+      "generata_da": "engine/aion.model.json",
+      "sla_giorni": null,
+      "coesa": true
     },
     {
       "id": "data-science",
       "label": "Data science",
       "description": "Machine learning, statistica, analisi dati, MLOps, strumenti e metodi.",
-      "status": "active"
+      "status": "active",
+      "sla_giorni": 365
     },
     {
       "id": "finanza",

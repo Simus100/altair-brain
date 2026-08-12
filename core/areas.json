@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "description": "Registro delle macroaree. Fonte di verita unica per scaffolding, router e gate di sicurezza. Aggiungere un'area = una voce qui + la cartella raw/<id>/.",
+  "convention": {
+    "id": "kebab-case ascii, nessuno spazio; coincide con raw/<id>/",
+    "status": "active | draft | archived",
+    "sla_giorni": "giorni prima che una nota vada ri-verificata; null = non scade",
+    "coesa": "true = l'area deve restare un solo componente connesso nel grafo",
+    "generata_da": "se presente, wiki/<id>/ e GENERATA da questo file"
+  },
+  "areas": [
+    {
+      "id": "esempio",
+      "label": "Esempio",
+      "description": "Sostituisci questa voce con la tua prima macroarea.",
+      "status": "draft",
+      "sla_giorni": 180
+    }
+  ]
+}

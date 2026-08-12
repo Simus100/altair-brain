@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "descrizione": "Tabella di routing: decide QUALE sottografo interrogare. Deterministica (match keyword, case-insensitive, substring). Se nessuna area supera score 0 si usa il grafo completo.",
+  "regola_ponti": "un nodo-ponte tra due aree e visibile solo a chi puo leggere ENTRAMBE le aree",
+  "aree": {
+    "esempio": {
+      "descrizione": "Sostituisci con la tua area.",
+      "keywords": [
+        "esempio",
+        "prova"
+      ]
+    }
+  }
+}

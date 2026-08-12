@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **28** · sessioni graphify: **1**
-- esiti: 20 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
-- skill piu attive: manuale (11), triage (7), aion (3), atlante-3d (3), oracle (2)
-- temi ricorrenti: metodo (5), verifica (4), grafo (3), visualizzazione (3), guardie (3), architettura (3), report (2), oracolo (2)
+- lezioni registrate: **29** · sessioni graphify: **1**
+- esiti: 21 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
+- skill piu attive: manuale (12), triage (7), aion (3), atlante-3d (3), oracle (2)
+- temi ricorrenti: metodo (5), verifica (4), grafo (3), visualizzazione (3), guardie (3), architettura (3), separazione (3), report (2)
 
 ## Ancoraggi consolidati
 
@@ -59,6 +59,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una correzione. Se non lo porta, non e qui._
 
+- **Quando** separi un motore riusabile da un brain personale → **genera l'export invece di copiarlo, e mettici una guardia che cerca contenuto personale: la copia diverge e la fuga non si vede a occhio**
+  - appiglio: `guardia: il test dell'export ha trovato 8 fughe (bookforge, iran, styledna, universalis) in tool e test che sembravano generici`
 - **Quando** progetti una memoria che si autoalimenta dagli output del modello → **pretendi un appiglio esterno per ogni regola e metti un tetto al prior: senza, degenera per autofagia o per context rot**
   - appiglio: `misura: il passo 0 leggeva un file di 495 byte fermo dal 1 luglio mentre il digest vero era 8.6 KB in engine/`
 - **Quando** aggiungi file a un'area con invariante di coesione (raw/aion) → **collegali con wikilink alle note esistenti PRIMA di rigenerare, o l'area si spezza**

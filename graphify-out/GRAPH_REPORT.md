@@ -1,16 +1,16 @@
 # Graph Report - altair-brain  (2026-08-12)
 
 ## Corpus Check
-- 270 files · ~251,583 words
+- 344 files · ~347,464 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1856 nodes · 2428 edges · 203 communities (175 shown, 28 thin omitted)
+- 3084 nodes · 3987 edges · 323 communities (289 shown, 34 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `97209f99`
+- Built from commit: `87e9135d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -147,6 +147,14 @@
 - [[_COMMUNITY_Community 130|Community 130]]
 - [[_COMMUNITY_Community 132|Community 132]]
 - [[_COMMUNITY_Community 133|Community 133]]
+- [[_COMMUNITY_Community 154|Community 154]]
+- [[_COMMUNITY_Community 156|Community 156]]
+- [[_COMMUNITY_Community 157|Community 157]]
+- [[_COMMUNITY_Community 158|Community 158]]
+- [[_COMMUNITY_Community 159|Community 159]]
+- [[_COMMUNITY_Community 160|Community 160]]
+- [[_COMMUNITY_Community 161|Community 161]]
+- [[_COMMUNITY_Community 162|Community 162]]
 - [[_COMMUNITY_Community 163|Community 163]]
 - [[_COMMUNITY_Community 164|Community 164]]
 - [[_COMMUNITY_Community 165|Community 165]]
@@ -178,10 +186,12 @@
 - [[_COMMUNITY_Community 191|Community 191]]
 - [[_COMMUNITY_Community 192|Community 192]]
 - [[_COMMUNITY_Community 193|Community 193]]
+- [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
 - [[_COMMUNITY_Community 196|Community 196]]
 - [[_COMMUNITY_Community 197|Community 197]]
 - [[_COMMUNITY_Community 198|Community 198]]
+- [[_COMMUNITY_Community 199|Community 199]]
 - [[_COMMUNITY_Community 200|Community 200]]
 - [[_COMMUNITY_Community 201|Community 201]]
 - [[_COMMUNITY_Community 202|Community 202]]
@@ -195,35 +205,144 @@
 - [[_COMMUNITY_Community 210|Community 210]]
 - [[_COMMUNITY_Community 211|Community 211]]
 - [[_COMMUNITY_Community 212|Community 212]]
+- [[_COMMUNITY_Community 213|Community 213]]
+- [[_COMMUNITY_Community 214|Community 214]]
+- [[_COMMUNITY_Community 215|Community 215]]
+- [[_COMMUNITY_Community 216|Community 216]]
+- [[_COMMUNITY_Community 217|Community 217]]
+- [[_COMMUNITY_Community 218|Community 218]]
+- [[_COMMUNITY_Community 219|Community 219]]
+- [[_COMMUNITY_Community 220|Community 220]]
+- [[_COMMUNITY_Community 221|Community 221]]
+- [[_COMMUNITY_Community 222|Community 222]]
+- [[_COMMUNITY_Community 223|Community 223]]
+- [[_COMMUNITY_Community 224|Community 224]]
+- [[_COMMUNITY_Community 225|Community 225]]
+- [[_COMMUNITY_Community 226|Community 226]]
+- [[_COMMUNITY_Community 227|Community 227]]
+- [[_COMMUNITY_Community 228|Community 228]]
+- [[_COMMUNITY_Community 229|Community 229]]
+- [[_COMMUNITY_Community 230|Community 230]]
+- [[_COMMUNITY_Community 231|Community 231]]
+- [[_COMMUNITY_Community 232|Community 232]]
+- [[_COMMUNITY_Community 233|Community 233]]
+- [[_COMMUNITY_Community 234|Community 234]]
+- [[_COMMUNITY_Community 235|Community 235]]
+- [[_COMMUNITY_Community 236|Community 236]]
+- [[_COMMUNITY_Community 237|Community 237]]
+- [[_COMMUNITY_Community 238|Community 238]]
+- [[_COMMUNITY_Community 239|Community 239]]
+- [[_COMMUNITY_Community 240|Community 240]]
+- [[_COMMUNITY_Community 241|Community 241]]
+- [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
+- [[_COMMUNITY_Community 244|Community 244]]
+- [[_COMMUNITY_Community 245|Community 245]]
+- [[_COMMUNITY_Community 246|Community 246]]
+- [[_COMMUNITY_Community 247|Community 247]]
+- [[_COMMUNITY_Community 248|Community 248]]
+- [[_COMMUNITY_Community 249|Community 249]]
+- [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 251|Community 251]]
+- [[_COMMUNITY_Community 252|Community 252]]
+- [[_COMMUNITY_Community 253|Community 253]]
+- [[_COMMUNITY_Community 254|Community 254]]
+- [[_COMMUNITY_Community 255|Community 255]]
+- [[_COMMUNITY_Community 256|Community 256]]
+- [[_COMMUNITY_Community 257|Community 257]]
+- [[_COMMUNITY_Community 258|Community 258]]
+- [[_COMMUNITY_Community 259|Community 259]]
+- [[_COMMUNITY_Community 260|Community 260]]
+- [[_COMMUNITY_Community 261|Community 261]]
+- [[_COMMUNITY_Community 262|Community 262]]
+- [[_COMMUNITY_Community 263|Community 263]]
+- [[_COMMUNITY_Community 264|Community 264]]
+- [[_COMMUNITY_Community 265|Community 265]]
+- [[_COMMUNITY_Community 266|Community 266]]
+- [[_COMMUNITY_Community 267|Community 267]]
+- [[_COMMUNITY_Community 268|Community 268]]
+- [[_COMMUNITY_Community 269|Community 269]]
+- [[_COMMUNITY_Community 270|Community 270]]
+- [[_COMMUNITY_Community 271|Community 271]]
+- [[_COMMUNITY_Community 272|Community 272]]
+- [[_COMMUNITY_Community 273|Community 273]]
+- [[_COMMUNITY_Community 274|Community 274]]
+- [[_COMMUNITY_Community 275|Community 275]]
+- [[_COMMUNITY_Community 276|Community 276]]
+- [[_COMMUNITY_Community 277|Community 277]]
+- [[_COMMUNITY_Community 278|Community 278]]
+- [[_COMMUNITY_Community 279|Community 279]]
+- [[_COMMUNITY_Community 280|Community 280]]
+- [[_COMMUNITY_Community 281|Community 281]]
+- [[_COMMUNITY_Community 282|Community 282]]
+- [[_COMMUNITY_Community 283|Community 283]]
+- [[_COMMUNITY_Community 284|Community 284]]
+- [[_COMMUNITY_Community 285|Community 285]]
+- [[_COMMUNITY_Community 286|Community 286]]
+- [[_COMMUNITY_Community 287|Community 287]]
+- [[_COMMUNITY_Community 288|Community 288]]
+- [[_COMMUNITY_Community 289|Community 289]]
+- [[_COMMUNITY_Community 290|Community 290]]
+- [[_COMMUNITY_Community 291|Community 291]]
+- [[_COMMUNITY_Community 292|Community 292]]
+- [[_COMMUNITY_Community 293|Community 293]]
+- [[_COMMUNITY_Community 294|Community 294]]
+- [[_COMMUNITY_Community 295|Community 295]]
+- [[_COMMUNITY_Community 296|Community 296]]
+- [[_COMMUNITY_Community 297|Community 297]]
+- [[_COMMUNITY_Community 298|Community 298]]
+- [[_COMMUNITY_Community 299|Community 299]]
+- [[_COMMUNITY_Community 300|Community 300]]
+- [[_COMMUNITY_Community 301|Community 301]]
+- [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
+- [[_COMMUNITY_Community 304|Community 304]]
+- [[_COMMUNITY_Community 305|Community 305]]
+- [[_COMMUNITY_Community 306|Community 306]]
+- [[_COMMUNITY_Community 307|Community 307]]
+- [[_COMMUNITY_Community 308|Community 308]]
+- [[_COMMUNITY_Community 309|Community 309]]
+- [[_COMMUNITY_Community 310|Community 310]]
+- [[_COMMUNITY_Community 312|Community 312]]
+- [[_COMMUNITY_Community 313|Community 313]]
+- [[_COMMUNITY_Community 314|Community 314]]
+- [[_COMMUNITY_Community 315|Community 315]]
+- [[_COMMUNITY_Community 316|Community 316]]
+- [[_COMMUNITY_Community 317|Community 317]]
+- [[_COMMUNITY_Community 318|Community 318]]
+- [[_COMMUNITY_Community 319|Community 319]]
+- [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
+- [[_COMMUNITY_Community 322|Community 322]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `usa_utf8()` - 37 edges
-2. `cerca()` - 20 edges
-3. `BrainError` - 16 edges
-4. `cerca_con_diagnosi()` - 16 edges
-5. `_err()` - 15 edges
-6. `pacchetto()` - 14 edges
-7. `dividi()` - 13 edges
-8. `attribute_reading()` - 12 edges
-9. `ROADMAP — guida alle prossime implementazioni` - 12 edges
-10. `analyze()` - 11 edges
+1. `usa_utf8()` - 73 edges
+2. `cerca()` - 28 edges
+3. `cerca_con_diagnosi()` - 25 edges
+4. `pacchetto()` - 21 edges
+5. `dividi()` - 18 edges
+6. `ha_frontmatter()` - 16 edges
+7. `attribute_reading()` - 16 edges
+8. `_err()` - 15 edges
+9. `BrainError` - 15 edges
+10. `_err()` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `test_confidenza_alta_su_conoscenza_presente()` --calls--> `cerca_con_diagnosi()`  [EXTRACTED]
-  tests/test_tools.py → tools/search.py
+- `testo_da_file()` --calls--> `dividi()`  [EXTRACTED]
+  core/plugins/scrittura/tools/style_check.py → tools/frontmatter.py
+- `main()` --calls--> `usa_utf8()`  [EXTRACTED]
+  core/plugins/scrittura/tools/style_check.py → tools/console.py
 - `context()` --calls--> `come_testo()`  [EXTRACTED]
-  server/app.py → tools/context_pack.py
+  core/server/app.py → tools/context_pack.py
 - `search()` --calls--> `cerca_con_diagnosi()`  [EXTRACTED]
-  server/brain_core.py → tools/search.py
+  core/server/brain_core.py → tools/search.py
 - `context_pack()` --calls--> `pacchetto()`  [EXTRACTED]
-  server/brain_core.py → tools/context_pack.py
-- `oracle_cast()` --calls--> `cast_reading()`  [EXTRACTED]
-  server/brain_core.py → tools/oracle_cast.py
+  core/server/brain_core.py → tools/context_pack.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (203 total, 28 thin omitted)
+## Communities (323 total, 34 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.18
@@ -238,8 +357,8 @@ Cohesion: 0.12
 Nodes (31): Exception, area_graph_path(), BrainError, capture(), context_pack(), graph_query(), graphify_available(), health_info() (+23 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.06
-Nodes (38): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno., Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv (+30 more)
+Cohesion: 0.05
+Nodes (43): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno. (+35 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
@@ -254,8 +373,8 @@ Cohesion: 0.12
 Nodes (14): 1. Da dove viene l'analisi tecnica, 2. Cosa si scambia, 3. Il mercato criptovalutario, Analisi tecnica dei mercati (corso in tre parti), Come e' costruito il corso, Cosa se ne ricava, Gennaio 2026 — lo scarto è il sintomo di una bolla, Giugno 2026 — lo scarto è il costo di una transizione (+6 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.07
-Nodes (34): brain(), _casi_recupero(), _distanza(), _norm(), Solo le domande a cui la ricerca LESSICALE puo' rispondere. Quelle marcate     ', Per ogni domanda reale, la ricerca deve portare in superficie almeno uno dei, Metrica aggregata: se scende sotto soglia, la qualita del recupero e calata, Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione (+26 more)
+Cohesion: 0.13
+Nodes (20): brain(), _casi_recupero(), _distanza(), _norm(), Solo le domande a cui la ricerca LESSICALE puo' rispondere. Quelle marcate     ', Per ogni domanda reale, la ricerca deve portare in superficie almeno uno dei, Metrica aggregata: se scende sotto soglia, la qualita del recupero e calata, Una domanda puo' essere esclusa dal metro lessicale SOLO con una motivazione (+12 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.13
@@ -266,8 +385,8 @@ Cohesion: 0.11
 Nodes (18): 1. Definizione degli Obiettivi (Goal Setting), 1. I 6 Pilastri della Data Driven Culture, 2. Il Contesto Tecnologico e i Vantaggi, 2. Raccolta e Gestione dei Dati (Data Governance), 3. Case Studies: Successi e Fallimenti, 3. Strumenti di Analisi e Visualizzazione (Tech Stack), 4. Cultura della Collaborazione (Data Democratization), 4. Livelli di Analisi (Business Intelligence) (+10 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.15
-Nodes (17): La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini, Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace., Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif, test_adamic_adar_formula_corretta(), test_struttura_esclude_gli_hub(), test_struttura_non_propone_coppie_gia_collegate(), test_struttura_scarta_il_vicino_singolo(), test_struttura_sul_grafo_reale_e_pulita() (+9 more)
+Cohesion: 0.10
+Nodes (25): La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini, Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace., Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif, test_adamic_adar_formula_corretta(), test_struttura_esclude_gli_hub(), test_struttura_non_propone_coppie_gia_collegate(), test_struttura_scarta_il_vicino_singolo(), test_struttura_sul_grafo_reale_e_pulita() (+17 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.14
@@ -286,8 +405,8 @@ Cohesion: 0.12
 Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.05
-Nodes (52): note_del_corpus(), Senza URL nel front-matter la nota non e' piu' risalibile all'articolo., Ogni nota-fonte del corpus, come percorso relativo con separatori POSIX., Opinione firmata: sta dove la soggettivita' e' dichiarata (divulgazione) o dove, La regola piu' importante, resa esplicita anche se implicata dalla precedente:, Un wikilink e' un arco del grafo: basta quello per collegare le due cose., La verifica che conta davvero: non l'intenzione, ma il grafo costruito., I ponti sono archi dichiarati a mano: la separazione va tenuta anche li'. (+44 more)
+Cohesion: 0.07
+Nodes (40): Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata, test_frontmatter_apertura_senza_chiusura(), test_frontmatter_non_confonde_una_riga_di_testo(), test_frontmatter_riconosce_il_blocco_valido(), area_di(), costruisci(), data_primo_commit(), Data del primo commit che introduce il file: deterministica e verificabile. (+32 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.20
@@ -306,8 +425,8 @@ Cohesion: 0.14
 Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.21
-Nodes (11): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:, AION — modello di pensiero (+3 more)
+Cohesion: 0.19
+Nodes (12): Ciclo computazionale semplificato – AION_NeurosSpike, Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen): (+4 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.15
@@ -322,12 +441,12 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 24 - "Community 24"
-Cohesion: 0.18
-Nodes (16): _inbox e una cartella tecnica, non una macroarea: areas.json e il registro., Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa, test_consolidate_ordina_per_grado_non_per_etichetta(), test_consolidate_produce_digest_solo_per_aree_reali(), test_consolidate_rileva_lezioni_ridondanti(), _carica_json(), conoscenza_stantia(), digest_per_area() (+8 more)
+Cohesion: 0.13
+Nodes (21): _inbox e una cartella tecnica, non una macroarea: areas.json e il registro., Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa, test_consolidate_ordina_per_grado_non_per_etichetta(), test_consolidate_produce_digest_solo_per_aree_reali(), test_consolidate_rileva_lezioni_ridondanti(), _inbox e una cartella tecnica, non una macroarea: areas.json e il registro., Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa, test_consolidate_ordina_per_grado_non_per_etichetta() (+13 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.14
-Nodes (23): Un nodo 'sql' non deve marchiare 'postgresql': l'annotazione sarebbe     credibi, test_memoria_non_attribuisce_per_sottostringa(), _lezioni_pertinenti(), Le lezioni che riguardano cio che stiamo per dare in pasto al modello., _annota_memoria(), _carica(), cerca_bm25(), cerca_con_diagnosi() (+15 more)
+Cohesion: 0.10
+Nodes (32): test_confidenza_alta_su_conoscenza_presente(), come_testo(), _lezioni_pertinenti(), pacchetto(), Il pacchetto in forma leggibile, pronto da incollare in un prompt., Cosa c'e intorno ai file trovati, secondo il grafo. Evita all'agente di     dove, Le lezioni che riguardano cio che stiamo per dare in pasto al modello., Assembla il contesto migliore per questa domanda, entro il budget. (+24 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.27
@@ -438,8 +557,8 @@ Cohesion: 0.25
 Nodes (8): 2. 坤 Il Ricettivo (Kūn) ䷁, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 53 - "Community 53"
-Cohesion: 0.13
-Nodes (23): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione). Caso Iran., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_attribuzione_senza_mobili_e_range(), test_cast_seedato_riproducibile() (+15 more)
+Cohesion: 0.09
+Nodes (32): 6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione)., 43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile., Stesso seed -> stessa lettura (verificabilita)., La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'., test_attribuzione_43_quattro_mobili_da_16(), test_attribuzione_6_linea4_da_59(), test_attribuzione_senza_mobili_e_range(), test_cast_seedato_riproducibile() (+24 more)
 
 ### Community 54 - "Community 54"
 Cohesion: 0.25
@@ -677,9 +796,13 @@ Nodes (3): Ambito, Finanza, Note
 Cohesion: 0.50
 Nodes (3): Ambito, Note, Web design
 
+### Community 114 - "Community 114"
+Cohesion: 0.07
+Nodes (9): collega(), Aggiunge un arco tra due FILE se entrambi sono nodi del grafo., collega(), Aggiunge un arco tra due FILE se entrambi sono nodi del grafo., Forza stdout/stderr in UTF-8, sostituendo cio' che non e' rappresentabile., usa_utf8(), _lista(), main() (+1 more)
+
 ### Community 115 - "Community 115"
-Cohesion: 0.67
-Nodes (3): _lista(), main(), CSV -> lista pulita. Rifiuta valori che iniziano con '-' (argument injection:
+Cohesion: 0.05
+Nodes (43): _mini_repo(), Path, Rilanciarlo non deve duplicare nulla, ne toccare la wiki GENERATA., Le fonti grezze devono portare provenienza (date/area/reviewed)., Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il, Le note dei project work (ex .txt, convertite in .md) devono essere cercabili, L'indice committato deve essere quello che il corpus produce ora., La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno. (+35 more)
 
 ### Community 116 - "Community 116"
 Cohesion: 0.33
@@ -692,6 +815,10 @@ Nodes (3): items, type, dominanti
 ### Community 118 - "Community 118"
 Cohesion: 0.67
 Nodes (3): items, type, orchestra
+
+### Community 122 - "Community 122"
+Cohesion: 0.09
+Nodes (28): affected(), capture(), CaptureReq, context(), _err(), explain(), _file(), graph() (+20 more)
 
 ### Community 123 - "Community 123"
 Cohesion: 0.67
@@ -706,8 +833,40 @@ Cohesion: 0.25
 Nodes (8): 62. 小過 La Preponderanza del Piccolo (Xiǎo Guò) ䷽, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 130 - "Community 130"
-Cohesion: 0.40
-Nodes (5): Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 3:  ## Utilizzo Narrativo dell'I Ching:, Spunti di Trama:, Tensioni e Svolte:
+Cohesion: 0.13
+Nodes (30): area_graph_path(), BrainError, capture(), context_pack(), graph_query(), graphify_available(), health_info(), inbox_done() (+22 more)
+
+### Community 154 - "Community 154"
+Cohesion: 0.07
+Nodes (31): BM25 deve portare in cima la pagina che tratta davvero l'argomento., Una lezione registrata deve cambiare cio che si vede la volta dopo., Vulnerabilita reale: la cache non si invalidava mai. Sulla VPS l'API resta     a, test_cache_ricarica_se_indice_cambia(), test_memoria_annota_ancoraggi_consolidati(), test_ricerca_filtro_area_e_limite(), test_ricerca_query_senza_risultati_non_esplode(), test_ricerca_trova_il_contenuto_giusto() (+23 more)
+
+### Community 156 - "Community 156"
+Cohesion: 0.08
+Nodes (22): _angolo(), _delta_angolare(), Gli archi 'derived_from' collegano una fonte al sapere che ne deriva:     devono, Stesso grafo, stesso atlante. Senza questo, ogni rebuild sporca il diff     di g, Nessuna CDN, nessun font remoto, nessuna chiamata di rete: l'atlante deve     ap, graphify-out/index.html deve linkare file che esistono davvero: una porta     ch, Angolo del nodo nel piano, normalizzato in [0, 2pi)., Differenza angolare minima tra due angoli (il cerchio si richiude). (+14 more)
+
+### Community 157 - "Community 157"
+Cohesion: 0.14
+Nodes (25): _annota_memoria(), _carica(), cerca(), cerca_bm25(), cerca_con_diagnosi(), cerca_denso(), _corrisponde(), diagnosi() (+17 more)
+
+### Community 158 - "Community 158"
+Cohesion: 0.09
+Nodes (6): Le tre viste del grafo si scaricano solo col token. L'atlante deve essere     au, Un consumatore deve scoprire le tre viste dall'API, non dalla documentazione., Il segnale che conta davvero: una mappa vecchia non si annuncia da sola.     Con, test_health_dichiara_le_tre_viste(), test_health_segnala_una_vista_rimasta_indietro(), test_le_tre_viste_sono_servite_e_protette()
+
+### Community 159 - "Community 159"
+Cohesion: 0.13
+Nodes (21): brain_context(), brain_explain(), brain_feedback(), brain_lessons(), brain_model(), brain_oracle(), brain_path(), brain_query() (+13 more)
+
+### Community 160 - "Community 160"
+Cohesion: 0.11
+Nodes (21): Prova eseguita: una registrazione senza appiglio non diventa regola., Un tipo di ancora fuori elenco non deve passare: altrimenti il vincolo     si ag, La difesa contro il pedaggio crescente su OGNI risposta., Un tetto che nessuno controlla non e un tetto., La proprieta' che rende il sistema durevole: l'esperienza si accumula nel     re, Una lezione che si rivela sbagliata non si cancella: si supera. La storia     re, Il difetto originale: produzione e consumo puntavano a due file diversi., Se una regola resta nel registro e non compare nel prior, l'anello e aperto: (+13 more)
+
+### Community 161 - "Community 161"
+Cohesion: 0.10
+Nodes (20): file_del_motore(), Generato due volte deve dare lo stesso risultato, altrimenti ogni rebuild     sp, La prima cosa che tocca chi riceve lo scheletro non puo' essere rotta., Un export che non compila e' peggio di nessun export., Tutto core/ tranne i plugin: quelli contengono materiale dichiarato., La guardia principale: lo scheletro dev'essere di chiunque., Niente note, niente pagine curate, niente report: solo le cartelle vuote., Il registro dell'esperienza parte a zero: e' l'esperienza di chi lo usera'. (+12 more)
+
+### Community 162 - "Community 162"
+Cohesion: 0.11
+Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
 
 ### Community 163 - "Community 163"
 Cohesion: 0.14
@@ -770,12 +929,12 @@ Cohesion: 0.40
 Nodes (4): Fase 1 — Questionario strategico → Scheda Strategica (`/scheda`), Fase 3 — Creazione indice (`/indice`), Fase 5 — Revisione (`/revisione`), Fasi: Scheda Strategica (1), Indice (3), Revisione (5)
 
 ### Community 180 - "Community 180"
-Cohesion: 0.26
-Nodes (11): test_resurface_sceglie_con_criterio_e_esclude_i_generati(), candidati(), _frontmatter(), _gradi_per_file(), main(), Le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base, Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda., Parser condiviso (tools/frontmatter). (+3 more)
+Cohesion: 0.24
+Nodes (12): test_resurface_sceglie_con_criterio_e_esclude_i_generati(), test_resurface_sceglie_con_criterio_e_esclude_i_generati(), candidati(), _frontmatter(), _gradi_per_file(), main(), Le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base, Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda. (+4 more)
 
 ### Community 181 - "Community 181"
 Cohesion: 0.09
-Nodes (29): BaseModel, Request, Response, affected(), capture(), CaptureReq, context(), _err() (+21 more)
+Nodes (26): affected(), capture(), CaptureReq, context(), _err(), explain(), _file(), graph() (+18 more)
 
 ### Community 182 - "Community 182"
 Cohesion: 0.17
@@ -818,40 +977,452 @@ Cohesion: 0.40
 Nodes (5): Come si organizzano i notebook, Python / pandas, Ricette di analisi, Ricette di pulizia, Verifica finale
 
 ### Community 192 - "Community 192"
-Cohesion: 0.17
-Nodes (13): Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare     l'i, Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace., test_context_pack_avverte_quando_non_sa(), test_context_pack_deduplica_per_file(), test_context_pack_non_riempie_con_riempitivo(), test_context_pack_rispetta_il_budget_reale(), come_testo(), pacchetto() (+5 more)
+Cohesion: 0.12
+Nodes (19): Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare     l'i, Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace., test_context_pack_avverte_quando_non_sa(), test_context_pack_deduplica_per_file(), test_context_pack_non_riempie_con_riempitivo(), test_context_pack_rispetta_il_budget_reale(), Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare     l'i, Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace. (+11 more)
 
 ### Community 193 - "Community 193"
 Cohesion: 0.17
 Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
+
+### Community 194 - "Community 194"
+Cohesion: 0.15
+Nodes (16): Regressione sui casi reali: sono i tre che hanno fallito davanti all'utente., REGRESSIONE VERA, trovata dai test: rendere obbligatorio l'import di     tools.c, L'invariante strutturale che corrisponde al test sopra., Ogni tool che puo' scrivere sullo standard output quando viene eseguito., Se questo scende a zero, il test si e' rotto in silenzio., L'invariante. Vale per i tool nuovi quanto per quelli vecchi., Deve attivarsi SOLO da riga di comando: se scattasse all'import,     riconfigure, La prova vera: un sottoprocesso con stdout cp1252 che stampa un hanzi.     Senza (+8 more)
 
 ### Community 195 - "Community 195"
 Cohesion: 0.23
 Nodes (12): Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc, Il codice non si giudica con le misure della scrittura: senza questo, un     not, Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia., Un percorso di file ripetuto tre volte in un elenco non e' una ripetizione     s, Chiedere di correggere un anglicismo dentro una citazione significa chiedere, _scrivi(), test_gli_anglicismi_veri_vengono_ancora_visti(), test_i_blocchi_di_codice_non_sono_prosa() (+4 more)
 
 ### Community 196 - "Community 196"
+Cohesion: 0.52
+Nodes (6): test_report_harvest_estrae_fonti_e_metodo(), test_report_harvest_estrae_fonti_e_metodo(), componi(), main(), raccogli(), _voci()
+
+### Community 199 - "Community 199"
+Cohesion: 0.12
+Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
+
+### Community 213 - "Community 213"
+Cohesion: 0.13
+Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica la richiesta, 2. DL_ICC — valuta la complessità, 3. MODALITÀ — scegli il registro, 4. ATTIVAZIONE AGENTI — orchestrazione (AION_SUPERIA), 5. COMPONENTI + INSEGNAMENTI, 6. GATE ETHOS — vincolo di identità (sempre attivo), 7. VALUTAZIONE INTERMODULARE (+6 more)
+
+### Community 214 - "Community 214"
+Cohesion: 0.27
+Nodes (14): attribute_reading(), cast_reading(), _focus_line(), get_hexagram(), _lanci_from(), _load(), _mutate(), _public() (+6 more)
+
+### Community 215 - "Community 215"
+Cohesion: 0.14
+Nodes (14): TARGET era un elenco a mano ('raw/', 'wiki/data-science/'): ogni macroarea     n, Tutti i .md di conoscenza privi di front-matter, per percorso POSIX., La regola vive in un posto solo: se qualcuno la duplica, divergera'., Se add_frontmatter ridefinisse la propria lista, le due divergerebbero     silen, Lo stato desiderato: tutto cio' che PUO' avere provenienza, ce l'ha., Il cuore della faccenda, verificato eseguendo davvero i due strumenti:     se la, La protezione non deve mai cedere: scrivere li' farebbe divergere la pagina, _senza_frontmatter() (+6 more)
+
+### Community 216 - "Community 216"
+Cohesion: 0.22
+Nodes (14): _db_doppia_relazione(), _db_minimo(), _grafo_minimo(), Sperimentale per scelta: rebuild_all.py non deve invocarlo di default., 3 esagrammi come nodi-file, nessuna relazione ancora nel grafo., 1 opposto a 2 (unica relazione reale, come nel DB vero); 11 con relazioni     au, Caso reale trovato sui 64 esagrammi veri (11/12, 17/18, 53/54, 63/64): due     e, DIFETTO REALE (trovato testando contro i 64 esagrammi veri, non ipotizzato): (+6 more)
+
+### Community 217 - "Community 217"
+Cohesion: 0.14
+Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
+
+### Community 218 - "Community 218"
+Cohesion: 0.31
+Nodes (7): Ciclo computazionale semplificato – AION_NeurosSpike, SEZIONE 0: ##  Struttura del Componente:, SEZIONE 1: ##  Funzionamento del Sistema (modo attivo):, SEZIONE 2:  ## Funzionamento Creativo e Autonomo:, SEZIONE 3.5: ## Riferimento Trigrammi — Gli 8 Trigrammi (Bāguà):, SEZIONE 3.6: ## Tabella di Lookup — Codifica Binaria → ID Esagramma (Sequenza di Re Wen):, SEZIONE 4: ## Database Oracle – 64 Esagrammi:
+
+### Community 219 - "Community 219"
+Cohesion: 0.23
+Nodes (12): Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc, Il codice non si giudica con le misure della scrittura: senza questo, un     not, Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia., Un percorso di file ripetuto tre volte in un elenco non e' una ripetizione     s, Chiedere di correggere un anglicismo dentro una citazione significa chiedere, _scrivi(), test_gli_anglicismi_veri_vengono_ancora_visti(), test_i_blocchi_di_codice_non_sono_prosa() (+4 more)
+
+### Community 220 - "Community 220"
+Cohesion: 0.23
+Nodes (12): analizza(), analizza_via_cli(), carica_motore(), main(), Ripiego robusto: lo script come processo separato, sul suo contratto pubblico., Il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda., Importa lo script canonico di BookForge come modulo (una sola implementazione)., Estrae la PROSA da md/txt/html: i tag e il front-matter non sono scrittura. (+4 more)
+
+### Community 221 - "Community 221"
+Cohesion: 0.23
+Nodes (12): analizza(), analizza_via_cli(), carica_motore(), main(), Ripiego robusto: lo script come processo separato, sul suo contratto pubblico., Il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda., Importa lo script canonico di BookForge come modulo (una sola implementazione)., Estrae la PROSA da md/txt/html: i tag e il front-matter non sono scrittura. (+4 more)
+
+### Community 222 - "Community 222"
+Cohesion: 0.17
+Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
+
+### Community 223 - "Community 223"
+Cohesion: 0.21
+Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
+
+### Community 224 - "Community 224"
+Cohesion: 0.29
+Nodes (11): area_di(), aree_canoniche(), carica(), costruisci(), disponi(), html(), main(), Ordine delle aree preso dal router: la vista non inventa una tassonomia sua. (+3 more)
+
+### Community 225 - "Community 225"
+Cohesion: 0.29
+Nodes (11): _carica_json(), conoscenza_stantia(), digest_per_area(), _lezioni(), lezioni_ridondanti(), main(), note_simili(), Stessa lezione registrata piu volte: stessi nodi e stesso esito. (+3 more)
+
+### Community 226 - "Community 226"
+Cohesion: 0.25
+Nodes (9): dividi(), e_generato(), ha_frontmatter(), leggi(), Vero se il file appartiene a uno strato generato (esente da front-matter)., Vero solo per un blocco delimitato davvero: prima riga '---' e chiusura '---'., (meta, corpo). Senza front-matter valido: ({}, testo intero)., (meta, corpo) da file. (None, '') se illeggibile. (+1 more)
+
+### Community 227 - "Community 227"
+Cohesion: 0.27
+Nodes (10): candidati(), _frontmatter(), _gradi_per_file(), main(), Le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base, Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda., Parser condiviso (tools/frontmatter)., Quanto e collegata ogni nota: le isolate sono quelle che si dimenticano prima. (+2 more)
+
+### Community 228 - "Community 228"
+Cohesion: 0.20
+Nodes (9): Componenti, Custom GPT (ChatGPT Actions), Deploy, Dipendenza: graphify (pacchetto Python), Endpoint (v1 — alias non versionati mantenuti), Notifiche di guasto + backup, server/ — esposizione del second brain via FastAPI, Server MCP (assistenti AI locali) (+1 more)
+
+### Community 229 - "Community 229"
+Cohesion: 0.22
+Nodes (7): normalizza(), Minuscolo senza accenti: 'analisi' e 'Analisí' devono coincidere., Il front-matter e metadato, non contenuto: non deve inquinare il ranking.     Re, Frammenti per titolo markdown quando ci sono titoli; altrimenti blocchi separati, spezza(), togli_frontmatter(), tokenizza()
+
+### Community 230 - "Community 230"
+Cohesion: 0.25
+Nodes (8): 10. 履 Il Procedere (Lǚ) ䷉, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 231 - "Community 231"
+Cohesion: 0.25
+Nodes (8): 11. 泰 La Pace (Tài) ䷊, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 232 - "Community 232"
+Cohesion: 0.25
+Nodes (8): 12. 否 Il Ristagno (Pǐ) ䷋, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 233 - "Community 233"
+Cohesion: 0.25
+Nodes (8): 13. 同人 La Comunità (Tóng Rén) ䷌, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 234 - "Community 234"
+Cohesion: 0.25
+Nodes (8): 14. 大有 Il Possesso Grande (Dà Yǒu) ䷍, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 235 - "Community 235"
+Cohesion: 0.25
+Nodes (8): 15. 謙 La Modestia (Qiān) ䷎, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 236 - "Community 236"
+Cohesion: 0.25
+Nodes (8): 16. 豫 L'Entusiasmo (Yù) ䷏, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 237 - "Community 237"
+Cohesion: 0.25
+Nodes (8): 17. 隨 Il Seguimento (Suí) ䷐, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 238 - "Community 238"
+Cohesion: 0.25
+Nodes (8): 18. 蠱 Il Lavoro sul Deterioramento (Gǔ) ䷑, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 239 - "Community 239"
+Cohesion: 0.25
+Nodes (8): 19. 臨 L'Avvicinamento (Lín) ䷒, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 240 - "Community 240"
+Cohesion: 0.25
+Nodes (8): 1. 乾 Il Creativo (Qián) ䷀, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 241 - "Community 241"
+Cohesion: 0.25
+Nodes (8): 20. 觀 La Contemplazione (Guān) ䷓, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 242 - "Community 242"
+Cohesion: 0.25
+Nodes (8): 21. 噬嗑 Il Morso che Spezza (Shì Kè) ䷔, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 243 - "Community 243"
+Cohesion: 0.25
+Nodes (8): 22. 賁 La Grazia (Bì) ䷕, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 244 - "Community 244"
+Cohesion: 0.25
+Nodes (8): 23. 剝 Il Disgregarsi (Bō) ䷖, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 245 - "Community 245"
+Cohesion: 0.25
+Nodes (8): 24. 復 Il Ritorno (Fù) ䷗, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 246 - "Community 246"
+Cohesion: 0.25
+Nodes (8): 25. 無妄 L'Innocenza (Wú Wàng) ䷘, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 247 - "Community 247"
+Cohesion: 0.25
+Nodes (8): 26. 大畜 La Forza Domatrice del Grande (Dà Chù) ䷙, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 248 - "Community 248"
+Cohesion: 0.25
+Nodes (8): 27. 頤 Gli Angoli della Bocca (Yí) ䷚, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 249 - "Community 249"
+Cohesion: 0.25
+Nodes (8): 28. 大過 La Preponderanza del Grande (Dà Guò) ䷛, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 250 - "Community 250"
+Cohesion: 0.25
+Nodes (8): 29. 坎 L'Abissale (Kǎn) ䷜, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 251 - "Community 251"
+Cohesion: 0.25
+Nodes (8): 2. 坤 Il Ricettivo (Kūn) ䷁, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 252 - "Community 252"
+Cohesion: 0.25
+Nodes (8): 30. 離 L'Aderente (Lí) ䷝, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 253 - "Community 253"
+Cohesion: 0.25
+Nodes (8): 31. 咸 L'Attrazione (Xián) ䷞, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 254 - "Community 254"
+Cohesion: 0.25
+Nodes (8): 32. 恆 La Durata (Héng) ䷟, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 255 - "Community 255"
+Cohesion: 0.25
+Nodes (8): 33. 遯 La Ritirata (Dùn) ䷠, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 256 - "Community 256"
+Cohesion: 0.25
+Nodes (8): 34. 大壯 La Potenza del Grande (Dà Zhuàng) ䷡, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 257 - "Community 257"
+Cohesion: 0.25
+Nodes (8): 35. 晉 Il Progresso (Jìn) ䷢, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 258 - "Community 258"
+Cohesion: 0.25
+Nodes (8): 36. 明夷 L'Ottenebramento della Luce (Míng Yí) ䷣, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 259 - "Community 259"
+Cohesion: 0.25
+Nodes (8): 37. 家人 La Casata (Jiā Rén) ䷤, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 260 - "Community 260"
+Cohesion: 0.25
+Nodes (8): 38. 睽 L'Opposizione (Kuí) ䷥, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 261 - "Community 261"
+Cohesion: 0.25
+Nodes (8): 39. 蹇 L'Impedimento (Jiǎn) ䷦, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 262 - "Community 262"
+Cohesion: 0.25
+Nodes (8): 3. 屯 Difficoltà Iniziale (Zhūn) ䷂, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 263 - "Community 263"
+Cohesion: 0.25
+Nodes (8): 40. 解 La Liberazione (Xiè) ䷧, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 264 - "Community 264"
+Cohesion: 0.25
+Nodes (8): 41. 損 La Diminuzione (Sǔn) ䷨, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 265 - "Community 265"
+Cohesion: 0.25
+Nodes (8): 42. 益 L'Accrescimento (Yì) ䷩, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 266 - "Community 266"
+Cohesion: 0.25
+Nodes (8): 43. 夬 Lo Straripamento (Guài) ䷪, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 267 - "Community 267"
+Cohesion: 0.25
+Nodes (8): 44. 姤 Il Farsi Incontro (Gòu) ䷫, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 268 - "Community 268"
+Cohesion: 0.25
+Nodes (8): 45. 萃 La Raccolta (Cuì) ䷬, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 269 - "Community 269"
+Cohesion: 0.25
+Nodes (8): 46. 升 L'Ascendere (Shēng) ䷭, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 270 - "Community 270"
+Cohesion: 0.25
+Nodes (8): 47. 困 L'Esaurimento (Kùn) ䷮, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 271 - "Community 271"
+Cohesion: 0.25
+Nodes (8): 48. 井 Il Pozzo (Jǐng) ䷯, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 272 - "Community 272"
+Cohesion: 0.25
+Nodes (8): 49. 革 Il Sovvertimento (Gé) ䷰, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 273 - "Community 273"
+Cohesion: 0.25
+Nodes (8): 4. 蒙 L'Inesperienza (Méng) ䷃, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 274 - "Community 274"
+Cohesion: 0.25
+Nodes (8): 50. 鼎 Il Crogiolo (Dǐng) ䷱, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 275 - "Community 275"
+Cohesion: 0.25
+Nodes (8): 51. 震 Il Tuono (Zhèn) ䷲, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 276 - "Community 276"
+Cohesion: 0.25
+Nodes (8): 52. 艮 L'Arresto (Gèn) ䷳, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 277 - "Community 277"
+Cohesion: 0.25
+Nodes (8): 53. 漸 Lo Sviluppo (Jiàn) ䷴, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 278 - "Community 278"
+Cohesion: 0.25
+Nodes (8): 54. 歸妹 La Ragazza che Si Sposa (Guī Mèi) ䷵, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 279 - "Community 279"
+Cohesion: 0.25
+Nodes (8): 55. 豐 L'Abbondanza (Fēng) ䷶, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 280 - "Community 280"
+Cohesion: 0.25
+Nodes (8): 56. 旅 Il Viandante (Lǚ) ䷷, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 281 - "Community 281"
+Cohesion: 0.25
+Nodes (8): 57. 巽 Il Vento (Xùn) ䷸, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 282 - "Community 282"
+Cohesion: 0.25
+Nodes (8): 58. 兌 Il Sereno (Duì) ䷹, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 283 - "Community 283"
+Cohesion: 0.25
+Nodes (8): 59. 渙 La Dissoluzione (Huàn) ䷺, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 284 - "Community 284"
+Cohesion: 0.25
+Nodes (8): 5. 需 L'Attesa (Xū) ䷄, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 285 - "Community 285"
+Cohesion: 0.25
+Nodes (8): 60. 節 La Limitazione (Jié) ䷻, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 286 - "Community 286"
+Cohesion: 0.25
+Nodes (8): 61. 中孚 La Veracità Interiore (Zhōng Fú) ䷼, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 287 - "Community 287"
+Cohesion: 0.25
+Nodes (8): 62. 小過 La Preponderanza del Piccolo (Xiǎo Guò) ䷽, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 288 - "Community 288"
+Cohesion: 0.25
+Nodes (8): 63. 既濟 Dopo il Compimento (Jì Jì) ䷾, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 289 - "Community 289"
+Cohesion: 0.25
+Nodes (8): 64. 未濟 Prima del Compimento (Wèi Jì) ䷿, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 290 - "Community 290"
+Cohesion: 0.25
+Nodes (8): 6. 訟 Il Conflitto (Sòng) ䷅, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 291 - "Community 291"
+Cohesion: 0.25
+Nodes (8): 7. 師 L'Esercito (Shī) ䷆, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 292 - "Community 292"
+Cohesion: 0.25
+Nodes (8): 8. 比 La Coesione (Bǐ) ䷇, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 293 - "Community 293"
+Cohesion: 0.25
+Nodes (8): 9. 小畜 La Forza Domata dal Piccolo (Xiǎo Chù) ䷈, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 294 - "Community 294"
+Cohesion: 0.25
+Nodes (7): Apprendimento (ultimo passo, obbligatorio), In stesura vale SOLO la Carta, L'ordine conta — non invertirlo, Per testi lunghi o seriali, Scrivi — prosa che vale la pena leggere, Se serve calibrare il registro, Solo DOPO aver scritto: la revisione
+
+### Community 295 - "Community 295"
+Cohesion: 0.43
+Nodes (7): aree_vuote(), _copia(), costruisci(), main(), Il registro delle aree diventa un ESEMPIO: una sola area di partenza.     Le reg, router_vuoto(), _scrivi()
+
+### Community 296 - "Community 296"
+Cohesion: 0.48
+Nodes (6): area_di(), costruisci(), data_primo_commit(), Data del primo commit che introduce il file: deterministica e verificabile., Front-matter minimo e onesto: solo cio che si puo dedurre con certezza., rel()
+
+### Community 297 - "Community 297"
+Cohesion: 0.33
+Nodes (5): Apprendimento (obbligatorio, ultimo passo), Come procedere, Output atteso, Skill: ragionamento AION, Vincoli
+
+### Community 299 - "Community 299"
+Cohesion: 0.33
+Nodes (5): altair_compact_view.py — vista compatta strutturale, build_atlas_view.py — atlante 3D esplorabile, build_views_index.py — la porta, Le tre viste, tools/ — feature di supporto ad altair-brain
+
+### Community 300 - "Community 300"
+Cohesion: 0.40
+Nodes (5): BaseModel, Feedback, Feedback, oracle(), OracleReq
+
+### Community 301 - "Community 301"
+Cohesion: 0.40
+Nodes (5): Ambientazioni e Atmosfere:, Caratterizzazione dei Personaggi, SEZIONE 3:  ## Utilizzo Narrativo dell'I Ching:, Spunti di Trama:, Tensioni e Svolte:
+
+### Community 302 - "Community 302"
+Cohesion: 0.40
+Nodes (4): core — scheletro di second brain, Cosa c'e dentro, Il plugin AION, Partenza
+
+### Community 303 - "Community 303"
 Cohesion: 0.60
-Nodes (5): test_report_harvest_estrae_fonti_e_metodo(), componi(), main(), raccogli(), _voci()
+Nodes (4): html(), main(), numeri(), Cosa contiene ciascuna vista, contato sul grafo vero.
+
+### Community 304 - "Community 304"
+Cohesion: 0.70
+Nodes (4): componi(), main(), raccogli(), _voci()
+
+### Community 305 - "Community 305"
+Cohesion: 0.50
+Nodes (3): Come lavorare in questo repo, Memoria operativa, Provenienza (non negoziabile)
+
+### Community 306 - "Community 306"
+Cohesion: 0.50
+Nodes (3): Procedura, Skill: triage dell'inbox, Vincoli
+
+### Community 307 - "Community 307"
+Cohesion: 0.50
+Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
+
+### Community 308 - "Community 308"
+Cohesion: 0.50
+Nodes (3): Procedura, Skill: AION_Oracle (I Ching eseguibile), Vincoli
+
+### Community 309 - "Community 309"
+Cohesion: 0.67
+Nodes (3): main(), I 64 nodi-esagramma nel testo grezzo: label 'N. hanzi Nome (pinyin) simbolo'., trova_nodi_esagramma()
+
+### Community 310 - "Community 310"
+Cohesion: 0.50
+Nodes (3): Front-matter standard, raw/ — materiale grezzo per macroarea, Regole
+
+### Community 312 - "Community 312"
+Cohesion: 0.67
+Nodes (3): _lista(), main(), CSV -> lista pulita. Rifiuta valori che iniziano con '-' (argument injection:
+
+### Community 314 - "Community 314"
+Cohesion: 0.50
+Nodes (4): AION — modello di pensiero, Ambito, Documenti del corpus AION, Note
+
+### Community 316 - "Community 316"
+Cohesion: 0.67
+Nodes (3): items, type, dominanti
+
+### Community 317 - "Community 317"
+Cohesion: 0.67
+Nodes (3): items, type, orchestra
 
 ## Knowledge Gaps
-- **902 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+897 more)
+- **1446 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+1441 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `come_testo()` connect `Community 192` to `Community 8`, `Community 25`, `Community 3`, `Community 181`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `usa_utf8()` connect `Community 114` to `Community 131`, `Community 132`, `Community 165`, `Community 133`, `Community 196`, `Community 106`, `Community 10`, `Community 187`, `Community 15`, `Community 115`, `Community 180`, `Community 53`, `Community 184`, `Community 24`, `Community 123`, `Community 29`, `Community 25`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `cerca_con_diagnosi()` connect `Community 25` to `Community 192`, `Community 2`, `Community 3`, `Community 7`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `usa_utf8()` connect `Community 114` to `Community 131`, `Community 132`, `Community 133`, `Community 10`, `Community 15`, `Community 24`, `Community 25`, `Community 154`, `Community 157`, `Community 29`, `Community 165`, `Community 295`, `Community 296`, `Community 298`, `Community 303`, `Community 304`, `Community 180`, `Community 309`, `Community 53`, `Community 311`, `Community 312`, `Community 313`, `Community 184`, `Community 315`, `Community 187`, `Community 318`, `Community 319`, `Community 196`, `Community 214`, `Community 220`, `Community 221`, `Community 224`, `Community 225`, `Community 227`, `Community 229`, `Community 106`, `Community 123`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `come_testo()` connect `Community 192` to `Community 3`, `Community 8`, `Community 115`, `Community 181`, `Community 25`, `Community 122`, `Community 159`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `cerca_con_diagnosi()` connect `Community 25` to `Community 192`, `Community 2`, `Community 3`, `Community 130`, `Community 7`, `Community 115`, `Community 154`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _1080 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1789 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12310606060606061 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05609756097560976 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04927536231884058 - nodes in this community are weakly interconnected._
