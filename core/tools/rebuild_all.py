@@ -64,6 +64,14 @@ for name, cmd in STEPS:
     if cmd[0] == "graphify" and shutil.which("graphify") is None:
         print(f"~~ {name}: SALTATO (graphify non installato: pipx install graphifyy)")
         continue
+    # Un passo il cui tool non c'e' viene SALTATO, non fa fallire la pipeline.
+    # Serve perche' il motore e modulare: i passi di un training (wiki dal modello,
+    # validazione, DB oracle) esistono solo se quel training e stato adottato.
+    # Senza questa regola lo scheletro non partiva nemmeno una volta — e falliva al
+    # primo passo, prima di dire qualsiasi cosa di utile.
+    if len(cmd) > 1 and cmd[0] == PY and not os.path.exists(os.path.join(ROOT, cmd[1])):
+        print(f"~~ {name}: SALTATO ({cmd[1]} non presente in questa installazione)")
+        continue
     print(f"== {name} ==")
     r = subprocess.run(cmd, cwd=ROOT)
     if r.returncode != 0:
