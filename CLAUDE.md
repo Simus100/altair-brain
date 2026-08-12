@@ -55,12 +55,44 @@ oracle e GENERATO da `raw/aion/aion-oracle.md`; l'indice di ricerca e GENERATO d
   Endpoint `/v1/search`, tool MCP `brain_search`. Semantico opzionale: vedi
   `tools/build_dense_index.py`.
 
-## Memoria operativa
+## Memoria operativa (come il brain impara dall'esperienza)
 
-Chiudi ogni lavoro significativo registrando la lezione:
-`python tools/lesson_log.py --skill <nome> --domanda "..." --esito utile|vicolo-cieco|corretto|aperto --nota "..."`.
-Confluisce in `engine/LESSONS.md` (passo 0 del reasoner). E il meccanismo che rende il
-brain capace di migliorare: saltarlo lo lascia fermo.
+Chiudi ogni lavoro significativo registrando cosa hai imparato. Confluisce in
+`engine/LESSONS.md`, che il reasoner legge al **passo 0, prima di ogni risposta**.
+
+**Due livelli, e la differenza conta.**
+
+*Osservazione* — contesto, conservato e cercabile, ma **non** entra nel prior:
+```bash
+python tools/lesson_log.py --skill <nome> --domanda "..." --esito utile|vicolo-cieco|corretto|aperto --nota "..."
+```
+
+*Regola operativa* — entra nel prior, e per farlo deve portare un **appiglio esterno**:
+```bash
+python tools/lesson_log.py --skill <nome> --domanda "..." \
+  --quando "il segnale che fa scattare la regola" \
+  --allora "cosa fare quando quel segnale compare" \
+  --ancora "test:… | errore:… | misura:… | utente:… | guardia:…"
+```
+
+**Perché l'appiglio è obbligatorio.** Un brain che impara dalla prosa che il modello ha
+scritto amplifica i propri errori a ogni giro. La difesa non è filtrare meglio: è
+pretendere che ogni regola nomini qualcosa di verificabile **fuori** dal discorso del
+modello — un test passato da rosso a verde, un comando fallito, un numero misurato, una
+correzione tua, una guardia che ha fermato qualcosa. Senza, resta osservazione.
+
+**Perché il formato è a tre campi.** Alla rilettura la domanda è sempre *«questa vale
+adesso?»*, e a quella risponde solo `--quando`. Un paragrafo di prosa la seppellisce.
+
+**Una regola sbagliata non si cancella, si supera:** `--supera <ts>`. Esce dal prior,
+resta nel registro — la stessa bi-temporalità delle note.
+
+**Il prior ha un tetto** (`MAX_KB` in `tools/lessons_digest.py`): viene letto prima di
+ogni risposta, quindi se crescesse senza limite degraderebbe ogni domanda. Il registro
+`engine/lessons.jsonl` cresce senza limiti, il prior no. Verificato da
+`tests/test_esperienza.py`, che controlla anche che ogni regola registrata arrivi
+davvero nel prior — l'anello era rimasto aperto per sei settimane senza che nulla lo
+segnalasse.
 
 ## Provenienza (non negoziabile sui report)
 

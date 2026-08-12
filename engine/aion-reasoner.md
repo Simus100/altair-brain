@@ -18,10 +18,17 @@ descritta in `raw/aion/aion-description.md` e `raw/aion/aion-framework.md`.
 Eseguire in ordine. Caricare `engine/aion.model.json` come modello.
 
 ### 0. MEMORIA — consulta le lezioni apprese
-Se esiste `graphify-out/reflections/LESSONS.md`, leggilo prima di rispondere: contiene
-le lezioni distillate dalle interazioni passate (nodi affidabili, vicoli ciechi,
-correzioni). Usalo come *prior* per orientare i passi seguenti. È il punto in cui il
-feedback rientra nel ragionamento.
+Leggi **`engine/LESSONS.md`** prima di rispondere: contiene le lezioni consolidate
+dalle interazioni passate (nodi affidabili, vicoli ciechi, correzioni). Usalo come
+*prior* per orientare i passi seguenti. È il punto in cui il feedback rientra nel
+ragionamento.
+
+> Il percorso è quello, e conta: `engine/LESSONS.md` è generato da
+> `tools/lessons_digest.py` a ogni `rebuild_all`. Questo passo puntava a
+> `graphify-out/reflections/LESSONS.md`, rimasto fermo per sei settimane mentre il
+> digest vero cresceva altrove: l'anello di apprendimento era scollegato **proprio nel
+> punto in cui doveva chiudersi**, e nulla lo segnalava. Ora un test lo verifica
+> (`tests/test_esperienza.py`).
 
 ### 1. INTAKE — classifica la richiesta
 Tramite la logica di `aion-analyst`, classifica la domanda:

@@ -35,7 +35,16 @@ MEM_DIR = os.path.join(ROOT, "graphify-out", "memory")
 OUT = os.path.join(ROOT, "engine", "LESSONS.md")
 
 SOGLIA_CONSOLIDATA = 2      # citazioni utili oltre le quali una lezione e affidabile
-RECENTI = 12                # quante lezioni mostrare per esteso
+RECENTI = 12                # quante osservazioni mostrare per esteso
+MAX_REGOLE = 25             # quante regole operative portare nel prior
+
+# TETTO DI CONTESTO — la seconda instabilita', dopo l'autofagia.
+# Questo file viene letto PRIMA DI OGNI RISPOSTA (passo 0 di engine/aion-reasoner.md).
+# Se cresce senza limite, ogni domanda paga un pedaggio crescente e la qualita' cala
+# ovunque: e' il fenomeno noto come context rot, e arriva senza sintomi.
+# La memoria di un sistema che dura non e' quella che ricorda tutto: e' quella che
+# resta della stessa dimensione mentre l'esperienza cresce.
+MAX_KB = 24                 # verificato da tests/test_esperienza.py
 
 
 def carica_jsonl(path):
@@ -116,14 +125,34 @@ if ciechi:
               "_Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._", ""]
     righe += [f"- `{n}` — {c}× senza esito" for n, c in ciechi.most_common(15)] + [""]
 
-note = [v for v in voci if v.get("nota")]
+# --- REGOLE OPERATIVE: la parte che il reasoner deve davvero usare ----------
+# Entrano SOLO le registrazioni con un'ancora esterna (vedi tools/lesson_log.py):
+# senza appiglio verificabile, il brain finirebbe per imparare dalla prosa che il
+# modello stesso ha scritto, amplificando i propri errori a ogni giro.
+# Una lezione superata resta nel registro ma esce da qui: la storia si conserva,
+# il prior no — e' la stessa bi-temporalita' delle note (valid_until/superseded_by).
+superate = {v["supera"] for v in voci if v.get("supera")}
+regole = [v for v in voci
+          if v.get("ancora") and v.get("allora") and v.get("ts") not in superate]
+regole.sort(key=lambda x: x.get("ts", ""), reverse=True)
+
+if regole:
+    righe += ["## Regole operative", "",
+              "_Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, "
+              "una correzione. Se non lo porta, non e qui._", ""]
+    for v in regole[:MAX_REGOLE]:
+        righe.append(f"- **Quando** {v.get('quando', '(sempre)')} → **{v['allora']}**")
+        righe.append(f"  - appiglio: `{v['ancora']}`")
+    righe.append("")
+
+note = [v for v in voci if v.get("nota") and not v.get("allora")]
 if note:
-    righe += ["## Lezioni recenti", ""]
+    righe += ["## Osservazioni recenti", "",
+              "_Senza appiglio esterno: contesto, non regole. Da verificare prima di "
+              "farci affidamento._", ""]
     for v in sorted(note, key=lambda x: x.get("ts", ""), reverse=True)[:RECENTI]:
         giorno = (v.get("ts") or "")[:10]
         righe.append(f"- **{giorno}** _(({v.get('skill', '?')}, {v.get('esito', '?')}))_ — {v['nota']}")
-        if v.get("domanda"):
-            righe.append(f"  - contesto: {v['domanda']}")
     righe.append("")
 
 if not voci and not sessioni:
@@ -134,5 +163,13 @@ if not voci and not sessioni:
 with open(OUT, "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(righe))
 
-print(f"LESSONS consolidate: {len(voci)} lezioni + {len(sessioni)} sessioni "
+peso_kb = os.path.getsize(OUT) / 1024
+print(f"LESSONS consolidate: {len(voci)} registrazioni + {len(sessioni)} sessioni "
       f"-> engine/LESSONS.md ({len(consolidati)} ancoraggi, {len(ciechi)} vicoli ciechi)")
+print(f"  regole operative (con appiglio): {len(regole)}"
+      f" · osservazioni (senza): {len(voci) - len(regole)}")
+print(f"  peso del prior: {peso_kb:.1f} KB / {MAX_KB} KB "
+      f"— letto prima di ogni risposta, quindi limitato per costruzione")
+if peso_kb > MAX_KB:
+    print(f"  ATTENZIONE: oltre il tetto. Abbassa MAX_REGOLE/RECENTI o supera le "
+          f"regole vecchie con --supera.")
