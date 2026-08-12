@@ -88,13 +88,33 @@ def test_il_motore_c_e_tutto():
     assert not mancanti, f"pezzi del motore assenti dallo scheletro: {mancanti}"
 
 
-def test_aion_e_un_plugin_non_il_motore():
-    """La scelta dichiarata: si parte senza modello di pensiero, o si adotta questo."""
-    assert (CORE / "plugins" / "aion").is_dir(), "il plugin AION non e stato esportato"
+def test_aion_e_un_training_non_il_motore():
+    """La distinzione che regge l'architettura: un TRAINING e' un imprinting — decide
+    *come* si ragiona, se ne adotta al massimo uno e si puo' non adottarne nessuno.
+    Un PLUGIN aggiunge una capacita' e non tocca il pensiero.
+    AION e' un training: metterlo tra i plugin sarebbe dire che e' uno strumento."""
+    assert (CORE / "training" / "aion").is_dir(), "il training AION non e stato esportato"
+    assert not (CORE / "plugins" / "aion").exists(), \
+        "AION sta tra i plugin: e' un imprinting, non uno strumento"
     assert not (CORE / "tools" / "oracle_cast.py").exists(), \
-        "l'oracolo sta nel motore: dovrebbe essere nel plugin"
+        "l'oracolo sta nel motore: appartiene al training"
     assert not (CORE / "engine" / "aion.model.json").exists(), \
-        "il modello di pensiero sta nel motore: dovrebbe essere nel plugin"
+        "il modello di pensiero sta nel motore: appartiene al training"
+    # il motore deve restare utilizzabile SENZA alcun training
+    assert (CORE / "tools" / "rebuild_all.py").exists()
+    assert (CORE / "training" / "README.md").exists(), \
+        "manca la spiegazione di cosa sia un training e come farsene uno"
+
+
+def test_l_onboarding_presenta_il_training_come_scelta():
+    """Il valore commerciale sta nel fatto che sia una SCELTA: se l'onboarding non
+    dice che si puo' rifiutare, il prodotto sembra imporre un modo di pensare."""
+    testo = (CORE / "onboarding.py").read_text(encoding="utf-8")
+    assert "TRAINING INIZIALE (opzionale)" in testo
+    assert "non sceglierne nessuno" in testo, \
+        "l'onboarding non dice che il training si puo' rifiutare"
+    assert "piu tardi" in testo or "quando vuoi" in testo, \
+        "l'onboarding non dice che si puo' adottare dopo"
 
 
 def test_lo_scheletro_e_deterministico():

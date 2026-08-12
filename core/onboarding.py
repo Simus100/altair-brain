@@ -50,16 +50,25 @@ def main():
         os.makedirs(os.path.join(ROOT, "raw", a["id"]), exist_ok=True)
         os.makedirs(os.path.join(ROOT, "wiki", a["id"]), exist_ok=True)
 
-    plugin = os.path.join(ROOT, "plugins", "aion")
-    if os.path.isdir(plugin):
-        print("\nIl plugin AION aggiunge un modello di pensiero con oracolo I Ching.")
-        if chiedi("Attivarlo? (s/n)", "n").lower().startswith("s"):
+    tr = os.path.join(ROOT, "training", "aion")
+    if os.path.isdir(tr):
+        print("\n-- TRAINING INIZIALE (opzionale) --")
+        print("Un training e un imprinting: il brain adotta un modo di ragionare gia")
+        print("formato, invece di partire senza. Non e uno strumento in piu.")
+        print("")
+        print("Disponibile: AION — modello di pensiero a livelli, quattro modalita di")
+        print("ragionamento, un gate etico sempre attivo, e un oracolo I Ching")
+        print("eseguibile per le decisioni. Aggiunge la macroarea 'aion'.")
+        print("")
+        print("Puoi non sceglierne nessuno: il motore funziona lo stesso e il modo di")
+        print("ragionare lo costruisci strada facendo. Si adotta anche piu tardi.")
+        if chiedi("Adottare il training AION? (s/n)", "n").lower().startswith("s"):
             for sotto, dest in (("engine", "engine"), ("tools", "tools"),
                                 ("skills", ".claude/skills")):
-                src = os.path.join(plugin, sotto)
+                src = os.path.join(tr, sotto)
                 if os.path.isdir(src):
                     shutil.copytree(src, os.path.join(ROOT, dest), dirs_exist_ok=True)
-            src_raw = os.path.join(plugin, "raw", "aion")
+            src_raw = os.path.join(tr, "raw", "aion")
             if os.path.isdir(src_raw):
                 shutil.copytree(src_raw, os.path.join(ROOT, "raw", "aion"),
                                 dirs_exist_ok=True)
@@ -68,11 +77,16 @@ def main():
                                  "status": "active", "sla_giorni": None,
                                  "coesa": True,
                                  "generata_da": "engine/aion.model.json"})
-            json.dump(reg, open(os.path.join(ROOT, "areas.json"), "w", encoding="utf-8"),
-                      ensure_ascii=False, indent=2)
-            print("  plugin AION attivato.")
+            router["aree"]["aion"] = {"descrizione": "Modello di pensiero AION.",
+                                      "keywords": ["aion", "oracolo", "esagramma",
+                                                   "modalita", "ragionamento"]}
+            for dati, dove in ((reg, "areas.json"), (router, "engine/router.json")):
+                json.dump(dati, open(os.path.join(ROOT, dove), "w", encoding="utf-8"),
+                          ensure_ascii=False, indent=2)
+            print("  training AION adottato: il brain parte con un modo di ragionare.")
         else:
-            print("  plugin AION non attivato (resta in plugins/, si attiva quando vuoi).")
+            print("  nessun training: il brain parte vuoto e impara dall'uso.")
+            print("  (resta in training/, si adotta quando vuoi)")
 
     print(f"\nFatto: {len(reg['areas'])} aree. Ora:  python tools/rebuild_all.py")
 

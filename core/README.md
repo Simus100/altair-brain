@@ -29,8 +29,13 @@ Chiede le tue macroaree e se attivare il plugin AION. Poi:
 python tools/rebuild_all.py
 ```
 
-## Il plugin AION
+## Training e plugin — due cose diverse
 
-`plugins/aion/` contiene un modello di pensiero completo con oracolo I Ching
-eseguibile. E **opzionale**: il motore funziona senza. L'onboarding chiede se
-attivarlo.
+- **`training/`** — un imprinting iniziale: un modo di ragionare gia formato che il
+  brain puo adottare. Se ne sceglie **al massimo uno**, o nessuno. Disponibile:
+  **aion**, modello di pensiero a livelli con oracolo I Ching eseguibile.
+- **`plugins/`** — capacita aggiuntive che non toccano il pensiero. Se ne attivano
+  quante se ne vuole.
+
+Senza training il motore funziona lo stesso: il modo di ragionare lo costruisci
+strada facendo, e l'anello delle lezioni lo registra man mano.

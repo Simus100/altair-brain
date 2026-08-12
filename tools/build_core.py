@@ -21,9 +21,14 @@ Se un tool ha bisogno di essere reso generico, si cambia il tool nel repo vivo (
 i test lo coprono) e core/ eredita. Una logica che esiste solo nell'export sarebbe
 codice senza guardie.
 
-AION E' UN PLUGIN. Non sta nel motore: sta in core/plugins/aion/, e l'onboarding
-chiede se attivarlo. Chi prende lo scheletro puo' partire senza modello di pensiero,
-o adottare questo.
+DUE COSE DIVERSE, E VANNO TENUTE DISTINTE.
+  - un TRAINING (core/training/) e' un imprinting iniziale: un modello di pensiero
+    completo — fonti grezze, modello tipizzato, protocollo di ragionamento — che il
+    brain ADOTTA COME PROPRIO MODO DI RAGIONARE. Se ne sceglie al massimo uno, in
+    fase di onboarding, e si puo' anche non sceglierne nessuno.
+  - un PLUGIN (core/plugins/) aggiunge una CAPACITA' senza toccare il pensiero: uno
+    strumento in piu'. Se ne possono attivare quanti se ne vuole.
+AION e' un training, non un plugin: non aggiunge un tool, decide come si ragiona.
 
 Uso:  python tools/build_core.py        -> core/
 """
@@ -47,7 +52,7 @@ CORE = os.path.join(ROOT, "core")
 # I tool del plugin AION implementano UN modello di pensiero: l'oracolo I Ching, la
 # generazione della wiki dal modello tipizzato, la validazione di quel modello.
 # Senza il plugin il motore funziona lo stesso — semplicemente non ragiona con AION.
-TOOL_PLUGIN_AION = {
+TOOL_TRAINING_AION = {
     "oracle_cast.py", "build_iching_db.py", "apply_iching_relations.py",
     "gen_wiki_from_model.py", "validate_model.py",
 }
@@ -73,14 +78,14 @@ TEST_ESCLUSI = {
     "test_core.py",
 }
 
-PLUGIN_AION_FILE = [
-    ("engine/aion.model.json", "plugins/aion/engine/aion.model.json"),
-    ("engine/aion-reasoner.md", "plugins/aion/engine/aion-reasoner.md"),
-    ("engine/schema/aion.model.schema.json", "plugins/aion/engine/schema/aion.model.schema.json"),
-    ("engine/iching.db.json", "plugins/aion/engine/iching.db.json"),
-    ("raw/aion", "plugins/aion/raw/aion"),
-    (".claude/skills/aion", "plugins/aion/skills/aion"),
-    (".claude/skills/oracle", "plugins/aion/skills/oracle"),
+TRAINING_AION_FILE = [
+    ("engine/aion.model.json", "training/aion/engine/aion.model.json"),
+    ("engine/aion-reasoner.md", "training/aion/engine/aion-reasoner.md"),
+    ("engine/schema/aion.model.schema.json", "training/aion/engine/schema/aion.model.schema.json"),
+    ("engine/iching.db.json", "training/aion/engine/iching.db.json"),
+    ("raw/aion", "training/aion/raw/aion"),
+    (".claude/skills/aion", "training/aion/skills/aion"),
+    (".claude/skills/oracle", "training/aion/skills/oracle"),
 ]
 SKILL_MOTORE = ["triage"]
 
@@ -151,13 +156,13 @@ def router_vuoto():
 def costruisci():
     if os.path.exists(CORE):
         shutil.rmtree(CORE)
-    conta = {"motore": 0, "plugin": 0, "guardie": 0}
+    conta = {"motore": 0, "training": 0, "plugin": 0, "guardie": 0}
 
     # 1. MOTORE: i tool, meno plugin ed esclusi
     for f in sorted(os.listdir(os.path.join(ROOT, "tools"))):
         if not f.endswith(".py") or f in TOOL_ESCLUSI:
             continue
-        if f in TOOL_PLUGIN_AION or f in TOOL_PLUGIN_SCRITTURA:
+        if f in TOOL_TRAINING_AION or f in TOOL_PLUGIN_SCRITTURA:
             continue
         conta["motore"] += _copia(f"tools/{f}", f"tools/{f}")
     _copia("tools/README.md", "tools/README.md")
@@ -172,11 +177,12 @@ def costruisci():
         _copia(f"server/{f}", f"server/{f}")
     _copia(".github/workflows/validate.yml", ".github/workflows/validate.yml")
 
-    # 4. PLUGIN AION
-    for src, dst in PLUGIN_AION_FILE:
-        conta["plugin"] += _copia(src, dst)
-    for f in sorted(TOOL_PLUGIN_AION):
-        conta["plugin"] += _copia(f"tools/{f}", f"plugins/aion/tools/{f}")
+    # 4. TRAINING AION: un imprinting, non uno strumento
+    for src, dst in TRAINING_AION_FILE:
+        conta["training"] += _copia(src, dst)
+    for f in sorted(TOOL_TRAINING_AION):
+        conta["training"] += _copia(f"tools/{f}", f"training/aion/tools/{f}")
+    _scrivi("training/README.md", TRAINING_README)
 
     # 5a. PLUGIN SCRITTURA: verifica stilometrica, inerte senza il suo engine
     for f in sorted(TOOL_PLUGIN_SCRITTURA):
@@ -236,6 +242,38 @@ non e infrastruttura, e chiamarlo tale sarebbe una promessa che non puo mantener
 
 Per attivarlo: copia `tools/` e `skills/` nelle cartelle corrispondenti, e metti il
 tuo engine di stilometria al percorso atteso.
+"""
+
+TRAINING_README = """# training — imprinting iniziale del brain
+
+Un **training** e un modo di ragionare gia formato che il brain puo adottare in fase
+di onboarding: fonti grezze, modello tipizzato, protocollo di ragionamento. Non e uno
+strumento in piu — decide *come* si pensa, non *cosa* si puo fare.
+
+Regole:
+
+- se ne adotta **al massimo uno**, e si puo non adottarne nessuno;
+- si sceglie all'onboarding, ma si puo adottare anche dopo;
+- una volta adottato diventa parte del brain: le sue fonti finiscono in `raw/`, il
+  suo protocollo in `engine/`, le sue skill fra le altre.
+
+## Disponibile
+
+**aion** — modello di pensiero a livelli con quattro modalita di ragionamento, un
+gate etico sempre attivo e un oracolo I Ching eseguibile usato per le decisioni.
+Aggiunge la macroarea `aion`.
+
+## Farne uno tuo
+
+Serve una cartella con la stessa forma: `raw/<id>/` con le fonti, `engine/` con il
+modello e il protocollo, `skills/` con le skill che lo invocano. L'onboarding lo
+propone se lo trova qui.
+
+## Senza training
+
+Il motore funziona lo stesso. Il modo di ragionare lo costruisci strada facendo, e
+l'anello delle lezioni lo registra man mano — con la differenza che parte da zero
+invece che da un imprinting.
 """
 
 RAW_README = """---
@@ -307,11 +345,16 @@ Chiede le tue macroaree e se attivare il plugin AION. Poi:
 python tools/rebuild_all.py
 ```
 
-## Il plugin AION
+## Training e plugin — due cose diverse
 
-`plugins/aion/` contiene un modello di pensiero completo con oracolo I Ching
-eseguibile. E **opzionale**: il motore funziona senza. L'onboarding chiede se
-attivarlo.
+- **`training/`** — un imprinting iniziale: un modo di ragionare gia formato che il
+  brain puo adottare. Se ne sceglie **al massimo uno**, o nessuno. Disponibile:
+  **aion**, modello di pensiero a livelli con oracolo I Ching eseguibile.
+- **`plugins/`** — capacita aggiuntive che non toccano il pensiero. Se ne attivano
+  quante se ne vuole.
+
+Senza training il motore funziona lo stesso: il modo di ragionare lo costruisci
+strada facendo, e l'anello delle lezioni lo registra man mano.
 """
 
 CLAUDE = """## Come lavorare in questo repo
@@ -398,16 +441,25 @@ def main():
         os.makedirs(os.path.join(ROOT, "raw", a["id"]), exist_ok=True)
         os.makedirs(os.path.join(ROOT, "wiki", a["id"]), exist_ok=True)
 
-    plugin = os.path.join(ROOT, "plugins", "aion")
-    if os.path.isdir(plugin):
-        print("\\nIl plugin AION aggiunge un modello di pensiero con oracolo I Ching.")
-        if chiedi("Attivarlo? (s/n)", "n").lower().startswith("s"):
+    tr = os.path.join(ROOT, "training", "aion")
+    if os.path.isdir(tr):
+        print("\\n-- TRAINING INIZIALE (opzionale) --")
+        print("Un training e un imprinting: il brain adotta un modo di ragionare gia")
+        print("formato, invece di partire senza. Non e uno strumento in piu.")
+        print("")
+        print("Disponibile: AION — modello di pensiero a livelli, quattro modalita di")
+        print("ragionamento, un gate etico sempre attivo, e un oracolo I Ching")
+        print("eseguibile per le decisioni. Aggiunge la macroarea 'aion'.")
+        print("")
+        print("Puoi non sceglierne nessuno: il motore funziona lo stesso e il modo di")
+        print("ragionare lo costruisci strada facendo. Si adotta anche piu tardi.")
+        if chiedi("Adottare il training AION? (s/n)", "n").lower().startswith("s"):
             for sotto, dest in (("engine", "engine"), ("tools", "tools"),
                                 ("skills", ".claude/skills")):
-                src = os.path.join(plugin, sotto)
+                src = os.path.join(tr, sotto)
                 if os.path.isdir(src):
                     shutil.copytree(src, os.path.join(ROOT, dest), dirs_exist_ok=True)
-            src_raw = os.path.join(plugin, "raw", "aion")
+            src_raw = os.path.join(tr, "raw", "aion")
             if os.path.isdir(src_raw):
                 shutil.copytree(src_raw, os.path.join(ROOT, "raw", "aion"),
                                 dirs_exist_ok=True)
@@ -416,11 +468,16 @@ def main():
                                  "status": "active", "sla_giorni": None,
                                  "coesa": True,
                                  "generata_da": "engine/aion.model.json"})
-            json.dump(reg, open(os.path.join(ROOT, "areas.json"), "w", encoding="utf-8"),
-                      ensure_ascii=False, indent=2)
-            print("  plugin AION attivato.")
+            router["aree"]["aion"] = {"descrizione": "Modello di pensiero AION.",
+                                      "keywords": ["aion", "oracolo", "esagramma",
+                                                   "modalita", "ragionamento"]}
+            for dati, dove in ((reg, "areas.json"), (router, "engine/router.json")):
+                json.dump(dati, open(os.path.join(ROOT, dove), "w", encoding="utf-8"),
+                          ensure_ascii=False, indent=2)
+            print("  training AION adottato: il brain parte con un modo di ragionare.")
         else:
-            print("  plugin AION non attivato (resta in plugins/, si attiva quando vuoi).")
+            print("  nessun training: il brain parte vuoto e impara dall'uso.")
+            print("  (resta in training/, si adotta quando vuoi)")
 
     print(f"\\nFatto: {len(reg['areas'])} aree. Ora:  python tools/rebuild_all.py")
 
@@ -436,8 +493,9 @@ def main():
     kb = sum(os.path.getsize(os.path.join(r, f))
              for r, _, fs in os.walk(CORE) for f in fs) / 1024
     print(f"core/ generato: {n} file, {kb:.0f} KB")
-    print(f"  motore: {conta['motore']} tool · guardie: {conta['guardie']} test "
-          f"· plugin aion: {conta['plugin']} file")
+    print(f"  motore: {conta['motore']} tool · guardie: {conta['guardie']} test")
+    print(f"  training aion: {conta['training']} file (opzionale) "
+          f"· plugin: {conta['plugin']} file")
     print("  nessuna nota, nessuna pagina curata, nessuna lezione: solo lo scheletro.")
     print("  partenza per chi lo riceve:  python onboarding.py")
 
