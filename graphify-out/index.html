@@ -31,11 +31,24 @@ footer code{background:rgba(148,163,184,.12);border-radius:4px;padding:2px 7px;
   font-family:ui-monospace,SFMono-Regular,monospace;color:#cbd5e1}
 footer .aree{margin-top:10px;line-height:1.9}
 footer b{color:#94a3b8;font-weight:600}
+.quale{color:#64748b !important;font-size:12px;margin-top:4px !important}
+.quale b{color:#22d3ee;font-weight:600}
+.brains{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:12px 16px;border-radius:12px;background:rgba(14,14,17,.9);
+  border:1px solid rgba(148,163,184,.22)}
+.brains .etichetta{font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:#64748b;font-weight:700;margin-right:4px}
+.brain{font-size:12px;padding:4px 11px;border-radius:999px;text-decoration:none;
+  color:#cbd5e1;border:1px solid rgba(148,163,184,.28)}
+.brain:hover{border-color:#22d3ee;color:#22d3ee}
+.brain:focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
+.brain.spento{color:#475569;border-style:dashed;cursor:default}
 @media(prefers-reduced-motion:reduce){.vista{transition:none}}
 </style></head><body>
 <div class="foglio">
   <header>
     <h1>Le tre viste del grafo</h1>
+    <p class="quale">stai guardando: <b>brain di riferimento</b></p>
     <p>Sono tre risposte a <b>tre domande diverse</b>. Aprire quella sbagliata per la
        domanda che hai è il modo più comune di perderci tempo — qui sta scritto
        prima del click.</p>
@@ -44,7 +57,7 @@ footer b{color:#94a3b8;font-weight:600}
     <a class="vista" href="graph-atlas.html" style="--tinta:#22d3ee">
       <div class="riga-alta">
         <span class="serve">navigare e orientarsi</span>
-        <span class="conto">258 file · 579 relazioni</span>
+        <span class="conto">258 file · 580 relazioni</span>
       </div>
       <h2>Atlante 3D</h2>
       <p>Uno spazio dove la posizione significa: l'altezza è lo strato del processo, lo spicchio è la macroarea, la distanza dall'asse è quanto un file è connesso. È la vista da aprire quando devi entrare in un'area che non conosci.</p>
@@ -66,7 +79,7 @@ footer b{color:#94a3b8;font-weight:600}
     <a class="vista" href="graph.html" style="--tinta:#f59e0b">
       <div class="riga-alta">
         <span class="serve">vedere tutto</span>
-        <span class="conto">1928 nodi · 2633 relazioni</span>
+        <span class="conto">1941 nodi · 2651 relazioni</span>
       </div>
       <h2>Vista estesa</h2>
       <p>Ogni nodo, nessuna riduzione: anche i titoli interni di ogni file. Serve quando cerchi qualcosa che le altre due hanno collassato. La posizione qui non significa niente: è l'equilibrio di una simulazione fisica.</p>
@@ -75,7 +88,7 @@ footer b{color:#94a3b8;font-weight:600}
     </a>
   </div>
   <footer>
-    Generate da <code>python tools/rebuild_all.py</code> · grafo <code>c2f08c5</code>
+    Generate da <code>python tools/rebuild_all.py</code> · grafo <code>e3f3566</code>
     <div class="aree"><b>impianto</b> 80 · <b>data-science</b> 65 · <b>aion</b> 62 · <b>creativita</b> 22 · <b>divulgazione</b> 16 · <b>finanza</b> 12 · <b>web-design</b> 1</div>
   </footer>
 </div>

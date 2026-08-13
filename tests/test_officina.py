@@ -143,3 +143,46 @@ def test_si_puo_creare_un_brain_e_sta_in_piedi(tmp_path):
     assert (istanza / "wiki" / "prova").is_dir()
     # l'inferenza vive in raw/ di OGNI brain, e parte vuota
     assert (istanza / "engine" / "lessons.jsonl").read_text(encoding="utf-8").strip() == ""
+
+
+def test_la_porta_dice_quale_brain_stai_guardando():
+    """Con un brain solo si intuisce; con due, una porta che non lo dice e' una
+    trappola — apri tre viste senza sapere di CHE COSA."""
+    porta = ROOT / "graphify-out" / "index.html"
+    if not porta.exists():
+        pytest.skip("porta non generata")
+    assert "stai guardando" in porta.read_text(encoding="utf-8")
+
+
+def test_il_selettore_compare_quando_ci_sono_altri_brain(tmp_path):
+    """La funzione che costruisce l'elenco deve reggere sia il caso a un brain
+    (nessun selettore, niente rumore) sia quello a piu' brain."""
+    import importlib
+    from tools import build_views_index as bvi
+    importlib.reload(bvi)
+    altri = bvi.altri_brain()
+    reg = json.loads((ROOT / "brains" / "brains.json").read_text(encoding="utf-8"))
+    assert len(altri) == len(reg["brains"]), \
+        "il selettore non elenca tutti i brain del registro"
+    for b in altri:
+        assert b["href"].startswith("../"), \
+            "il link a un altro brain deve essere RELATIVO: la porta si apre da file://"
+        assert "pronto" in b, "manca l'indicazione se il grafo di quel brain esiste"
+
+
+def test_un_brain_vergine_non_si_lamenta_al_primo_avvio(tmp_path):
+    """Un prodotto che al primo avvio segnala contenuto gia' scaduto insegna a
+    ignorare i suoi stessi rapporti. Il README di raw/ non deve portare una data
+    fissa: e' documentazione della cartella, non conoscenza che invecchia."""
+    core = ROOT / "core"
+    if not core.is_dir():
+        pytest.skip("core/ assente")
+    # Si guarda il SUO front-matter, non il testo: il README documenta la convenzione
+    # con un esempio che contiene 'date:' e 'reviewed:' — cercarli nel corpo darebbe
+    # un falso positivo sulla documentazione stessa.
+    from tools.frontmatter import leggi
+    meta, _ = leggi(core / "raw" / "README.md")
+    assert meta is not None, "il README dello scheletro non ha front-matter"
+    assert not ({"date", "reviewed"} & set(meta)), \
+        (f"il README dello scheletro invecchia (campi {sorted(set(meta) & {'date','reviewed'})}): "
+         "un brain appena creato risulterebbe gia' scaduto")

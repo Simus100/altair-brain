@@ -1,10 +1,12 @@
 ---
-date: 2026-01-01
 area: generale
-source:
+source: documentazione della cartella
 tags: []
-reviewed: 2026-01-01
 ---
+<!-- Niente 'date'/'reviewed' di proposito: questo file e documentazione della
+     cartella, non conoscenza che invecchia. Con una data fissa, un brain appena
+     creato segnalerebbe subito contenuto scaduto — un prodotto che si lamenta
+     di se stesso al primo avvio. -->
 # raw/ — materiale grezzo per macroarea
 
 Ogni sottocartella e una macroarea dichiarata in `../areas.json`. Il grafo estrae

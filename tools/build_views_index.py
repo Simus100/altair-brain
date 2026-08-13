@@ -40,6 +40,35 @@ from tools import build_atlas_view as atlante          # noqa: E402  (riuso, non
 USCITA = os.path.join(BRAIN, "graphify-out", "index.html")
 
 
+def brain_corrente():
+    """Quale brain stiamo guardando. Senza questo, la porta mostrava tre viste
+    senza dire DI CHE COSA: con un brain solo si intuisce, con due e' una trappola."""
+    if os.path.abspath(BRAIN) == os.path.abspath(ROOT):
+        return "brain di riferimento"
+    return os.path.basename(os.path.abspath(BRAIN))
+
+
+def altri_brain():
+    """Gli altri brain del repo, con la porta di ciascuno. Vuoto in un'istanza
+    autosufficiente: li' non c'e' un registro, e non ci sono altri brain da vedere."""
+    reg = os.path.join(ROOT, "brains", "brains.json")
+    if not os.path.exists(reg) or os.path.abspath(BRAIN) != os.path.abspath(ROOT):
+        return []
+    try:
+        with open(reg, encoding="utf-8") as f:
+            elenco = json.load(f).get("brains", [])
+    except (OSError, ValueError):
+        return []
+    fuori = []
+    for b in elenco:
+        porta = os.path.join(ROOT, b["percorso"], "graphify-out", "index.html")
+        # link RELATIVO alla porta di questo brain: deve funzionare da file://
+        fuori.append({"nome": b["nome"],
+                      "href": f"../{b['percorso']}/graphify-out/index.html",
+                      "pronto": os.path.exists(porta)})
+    return sorted(fuori, key=lambda x: x["nome"])
+
+
 def numeri():
     """Cosa contiene ciascuna vista, contato sul grafo vero."""
     with open(atlante.GRAFO, encoding="utf-8") as f:
@@ -59,6 +88,8 @@ def numeri():
         "compatta": compatta,
         "atlante": f"{len(dati['nodi'])} file · {len(dati['archi'])} relazioni",
         "aree": dati["conta"],
+        "brain": brain_corrente(),
+        "altri_brain": altri_brain(),
     }
 
 
@@ -103,6 +134,18 @@ def html(n):
     aree = " · ".join(f"<b>{a}</b> {q}" for a, q in
                       sorted(n["aree"].items(), key=lambda x: -x[1]))
 
+    altri = n.get("altri_brain") or []
+    if altri:
+        voci = "".join(
+            f'<a class="brain{"" if b["pronto"] else " spento"}" '
+            f'href="{b["href"]}">{b["nome"]}</a>' if b["pronto"] else
+            f'<span class="brain spento" title="grafo non ancora generato">{b["nome"]}</span>'
+            for b in altri)
+        selettore = ('\n  <nav class="brains">'
+                     '<span class="etichetta">altri brain</span>' + voci + "</nav>")
+    else:
+        selettore = ""
+
     return f"""<!DOCTYPE html>
 <html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -136,15 +179,28 @@ footer code{{background:rgba(148,163,184,.12);border-radius:4px;padding:2px 7px;
   font-family:ui-monospace,SFMono-Regular,monospace;color:#cbd5e1}}
 footer .aree{{margin-top:10px;line-height:1.9}}
 footer b{{color:#94a3b8;font-weight:600}}
+.quale{{color:#64748b !important;font-size:12px;margin-top:4px !important}}
+.quale b{{color:#22d3ee;font-weight:600}}
+.brains{{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:12px 16px;border-radius:12px;background:rgba(14,14,17,.9);
+  border:1px solid rgba(148,163,184,.22)}}
+.brains .etichetta{{font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:#64748b;font-weight:700;margin-right:4px}}
+.brain{{font-size:12px;padding:4px 11px;border-radius:999px;text-decoration:none;
+  color:#cbd5e1;border:1px solid rgba(148,163,184,.28)}}
+.brain:hover{{border-color:#22d3ee;color:#22d3ee}}
+.brain:focus-visible{{outline:2px solid #22d3ee;outline-offset:2px}}
+.brain.spento{{color:#475569;border-style:dashed;cursor:default}}
 @media(prefers-reduced-motion:reduce){{.vista{{transition:none}}}}
 </style></head><body>
 <div class="foglio">
   <header>
     <h1>Le tre viste del grafo</h1>
+    <p class="quale">stai guardando: <b>{n['brain']}</b></p>
     <p>Sono tre risposte a <b>tre domande diverse</b>. Aprire quella sbagliata per la
        domanda che hai è il modo più comune di perderci tempo — qui sta scritto
        prima del click.</p>
-  </header>
+  </header>{selettore}
   <div class="viste">{schede}
   </div>
   <footer>
