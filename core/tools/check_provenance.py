@@ -20,6 +20,13 @@ import glob, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -39,7 +46,7 @@ MIN_FATTI_NOTA = 6
 scoperti, note_dense = [], []
 
 # ---- 1. report living: le timeline sono il prodotto editoriale ----
-for db_path in sorted(glob.glob(os.path.join(ROOT, "reports", "data", "*.updates.json"))):
+for db_path in sorted(glob.glob(os.path.join(BRAIN, "reports", "data", "*.updates.json"))):
     rel = os.path.relpath(db_path, ROOT).replace("\\", "/")
     try:
         with open(db_path, encoding="utf-8") as f:

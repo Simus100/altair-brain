@@ -16,9 +16,16 @@ Mappatura: raw/<area>/ e wiki/<area>/ -> area; engine/, server/, tools/, .claude
 Uso:  python tools/build_area_graphs.py
 """
 import json, os, shutil
-
 import sys
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
 
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
@@ -30,9 +37,9 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
-AREAS = os.path.join(ROOT, "areas.json")
-OUTDIR = os.path.join(ROOT, "graphify-out", "areas")
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
+AREAS = os.path.join(BRAIN, "areas.json")
+OUTDIR = os.path.join(BRAIN, "graphify-out", "areas")
 
 with open(GRAPH, encoding="utf-8") as f:
     g = json.load(f)

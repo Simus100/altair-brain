@@ -21,7 +21,14 @@ import argparse, datetime, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-LOG = os.path.join(ROOT, "engine", "lessons.jsonl")
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
+LOG = os.path.join(BRAIN, "engine", "lessons.jsonl")
 
 ESITI = ("utile", "vicolo-cieco", "corretto", "aperto")
 

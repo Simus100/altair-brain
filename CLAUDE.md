@@ -1,3 +1,31 @@
+## Questo repo e un'OFFICINA, non un brain
+
+    tools/ tests/ server/   il MOTORE — sorgente unica, non si duplica
+    core/                   il PRODOTTO — GENERATO da tools/build_core.py, mai a mano
+    brains/                 le ISTANZE + il registro brains.json
+    raw/ wiki/ engine/      il brain di riferimento, su cui girano le guardie del motore
+
+**Un brain e autosufficiente**: propri tool, propria conoscenza, proprio grafo.
+`python tools/brain_new.py --nome <n>` ne crea uno da `core/`; `--elenco` mostra cosa
+contiene ciascuno contandolo. Due brain non condividono il motore: altrimenti sarebbero
+legati alla stessa versione per sempre, e un esperimento su uno romperebbe l'altro.
+
+**Dove vive il contenuto** lo decide `tools/brain.py`, non la posizione dei tool:
+`ALTAIR_BRAIN` > brain `attivo` nel registro > la cartella del repo. Il default rende
+ogni istanza identica a prima; l'indirezione e cio' che permette a un motore di servire
+piu' brain. Un tool che scrive `os.path.join(ROOT, "wiki")` rompe la proprieta' — c'e'
+un test che lo impedisce.
+
+**AION e un TRAINING, non un plugin.** Un training e un imprinting iniziale (fonti,
+modello, protocollo di ragionamento) che decide *come* si pensa: se ne adotta al
+massimo uno, in fase di onboarding, e si puo' non adottarne nessuno. Un plugin aggiunge
+una capacita' e non tocca il pensiero. L'inferenza acquisita — le note in `raw/`, le
+lezioni — appartiene a ciascun brain e non viaggia mai col prodotto.
+
+**Gli artefatti non sono conoscenza.** `core/` e `brains/` vengono tolti dal grafo da
+`tools/graph_prune.py` subito dopo `graphify update`: erano 1191 nodi su 3084, e quel
+rumore cresce con ogni brain creato.
+
 ## Roadmap
 
 Le implementazioni pianificate (con spec complete, regole vincolanti del progetto e

@@ -22,6 +22,13 @@ from tools import frontmatter as fm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -44,7 +51,7 @@ def _sla_dalle_aree():
     import json
     tabella = {"reports/": 30}          # l'attualita' invecchia in settimane: vale sempre
     try:
-        with open(os.path.join(ROOT, "areas.json"), encoding="utf-8") as f:
+        with open(os.path.join(BRAIN, "areas.json"), encoding="utf-8") as f:
             aree = json.load(f).get("areas", [])
     except (OSError, ValueError):
         return tabella

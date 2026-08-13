@@ -21,6 +21,13 @@ import argparse, json, os, re, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -81,14 +88,14 @@ def main():
 
     print("== COSA STAI PUBBLICANDO ==\n")
 
-    idx = os.path.join(ROOT, "engine", "search_index.json")
+    idx = os.path.join(BRAIN, "engine", "search_index.json")
     if os.path.exists(idx):
         with open(idx, encoding="utf-8") as f:
             d = json.load(f)
         print(f"CONCENTRAZIONE: engine/search_index.json espone estratti di "
               f"{len({x['file'] for x in d['documenti']})} file "
               f"({os.path.getsize(idx) // 1024} KB) in un unico file scaricabile.")
-    lez = os.path.join(ROOT, "engine", "lessons.jsonl")
+    lez = os.path.join(BRAIN, "engine", "lessons.jsonl")
     if os.path.exists(lez):
         n = sum(1 for r in open(lez, encoding="utf-8") if r.strip())
         print(f"PROFILO: engine/lessons.jsonl espone {n} lezioni — domande poste, "

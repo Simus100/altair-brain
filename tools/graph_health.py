@@ -16,6 +16,13 @@ import json, os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -26,7 +33,7 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
 SHRINK_TOLERANCE = 0.20
 MIN_BASELINE = 50
 
@@ -63,7 +70,7 @@ def components_of(prefix):
 # coesione della wiki di OGNI area (lo strato curato deve essere un unico grafo).
 # Le note grezze in raw/ possono essere scollegate (sono appunti): non si richiede coesione.
 try:
-    with open(os.path.join(ROOT, "areas.json"), encoding="utf-8") as f:
+    with open(os.path.join(BRAIN, "areas.json"), encoding="utf-8") as f:
         area_ids = [a["id"] for a in json.load(f)["areas"]]
 except Exception:
     area_ids = ["aion"]
@@ -77,7 +84,7 @@ for area in area_ids:
 # vero per questo brain e incomprensibile per chiunque altro. Dichiararlo per area lo
 # rende una scelta esplicita di chi cura l'area, non una regola nascosta nel motore.
 try:
-    with open(os.path.join(ROOT, "areas.json"), encoding="utf-8") as f:
+    with open(os.path.join(BRAIN, "areas.json"), encoding="utf-8") as f:
         coese = [a["id"] for a in json.load(f).get("areas", []) if a.get("coesa")]
 except Exception:
     coese = []
@@ -154,7 +161,7 @@ except Exception as ex:
 # coerenza (contiene date e freschezza, quindi cambia col tempo per costruzione).
 # Senza almeno un controllo di eta puo divergere dal grafo in silenzio, ed e proprio
 # il file che un agente legge per orientarsi: sarebbe una mappa vecchia data per buona.
-_dig = os.path.join(ROOT, "engine", "digest")
+_dig = os.path.join(BRAIN, "engine", "digest")
 if os.path.isdir(_dig):
     _files = [os.path.join(_dig, f) for f in os.listdir(_dig) if f.endswith(".json")]
     if _files:

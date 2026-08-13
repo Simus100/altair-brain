@@ -19,9 +19,16 @@ Metriche chiave da guardare nel tempo:
 Uso:  python tools/graph_metrics.py   (parte di rebuild_all.py)
 """
 import collections, csv, datetime, json, os, subprocess
-
 import sys
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
 
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
@@ -33,8 +40,8 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
-OUT_DIR = os.path.join(ROOT, "metrics")
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
+OUT_DIR = os.path.join(BRAIN, "metrics")
 OUT = os.path.join(OUT_DIR, "graph_metrics.csv")
 
 CAMPI = ["data", "commit", "nodi", "archi", "grado_medio", "isolati", "community",
@@ -84,7 +91,7 @@ for base in ("raw", "wiki", "reports"):
                 pass
 
 lezioni = 0
-log = os.path.join(ROOT, "engine", "lessons.jsonl")
+log = os.path.join(BRAIN, "engine", "lessons.jsonl")
 if os.path.exists(log):
     with open(log, encoding="utf-8") as f:
         lezioni = sum(1 for r in f if r.strip())

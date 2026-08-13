@@ -39,6 +39,7 @@ STEPS = [
     ("validazione modello", [PY, "tools/validate_model.py"]),
     ("DB oracle", [PY, "tools/build_iching_db.py"]),
     ("grafo (graphify update)", ["graphify", "update", "."]),
+    ("potatura del grafo (artefatti fuori)", [PY, "tools/graph_prune.py"]),
     ("ponti intercampo", [PY, "tools/apply_bridges.py"]),
     ("provenienza fonte->conoscenza", [PY, "tools/apply_provenance.py"]),
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),

@@ -25,6 +25,13 @@ import argparse, collections, json, math, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -41,7 +48,7 @@ from tools.search import cerca  # noqa: E402
 
 
 def pagine_wiki(area=None):
-    base = os.path.join(ROOT, "wiki")
+    base = os.path.join(BRAIN, "wiki")
     fuori = []
     for root, _, files in os.walk(base):
         for f in sorted(files):
@@ -80,7 +87,7 @@ def link_esistenti(testo):
 def _grafo_per_file():
     """Adiacenza a livello di FILE: due pagine sono vicine se un qualsiasi loro nodo
     e collegato. E' la granularita giusta per 'questa pagina dovrebbe citare quella'."""
-    path = os.path.join(ROOT, "graphify-out", "graph.json")
+    path = os.path.join(BRAIN, "graphify-out", "graph.json")
     if not os.path.exists(path):
         return {}
     with open(path, encoding="utf-8") as f:

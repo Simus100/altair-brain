@@ -16,6 +16,13 @@ import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -30,7 +37,7 @@ sys.path.insert(0, ROOT)
 
 from tools import build_atlas_view as atlante          # noqa: E402  (riuso, non duplico)
 
-USCITA = os.path.join(ROOT, "graphify-out", "index.html")
+USCITA = os.path.join(BRAIN, "graphify-out", "index.html")
 
 
 def numeri():
@@ -40,7 +47,7 @@ def numeri():
     dati = atlante.costruisci()
 
     compatta = "—"
-    percorso = os.path.join(ROOT, "graphify-out", "graph-compact.json")
+    percorso = os.path.join(BRAIN, "graphify-out", "graph-compact.json")
     if os.path.exists(percorso):
         with open(percorso, encoding="utf-8") as f:
             c = json.load(f)
@@ -156,7 +163,7 @@ def main():
     with open(USCITA, "w", encoding="utf-8", newline="\n") as f:
         f.write(html(n))
     mancanti = [v["file"] for v in VISTE
-                if not os.path.exists(os.path.join(ROOT, "graphify-out", v["file"]))]
+                if not os.path.exists(os.path.join(BRAIN, "graphify-out", v["file"]))]
     print(f"Porta delle viste -> graphify-out/index.html (grafo {n['commit']})")
     if mancanti:
         print(f"  ATTENZIONE: viste non ancora generate: {', '.join(mancanti)}")

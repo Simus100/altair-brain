@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "finanza",
- "built_at_commit": "87e9135d18b1a3b2e2b9e32c05d47dc2d15bfed6",
+ "built_at_commit": "c2f08c575c102fb3dd272148e4bcc53d9321b6f2",
  "nodes": [
   {
    "label": "README.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_readme",
-   "community": 112,
+   "community": 272,
    "norm_label": "readme.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "raw_finanza_readme_ambito",
-   "community": 112,
+   "community": 272,
    "norm_label": "ambito"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_readme_finanza",
-   "community": 112,
+   "community": 272,
    "norm_label": "finanza"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "raw_finanza_readme_note",
-   "community": 112,
+   "community": 272,
    "norm_label": "note"
   },
   {
@@ -52,7 +52,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_agenzie_di_rating",
-   "community": 204,
+   "community": 300,
    "norm_label": "universalis-agenzie-di-rating.md"
   },
   {
@@ -62,7 +62,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_universalis_agenzie_di_rating_agenzie_di_rating_il_declino_dell_integrità_finanziaria",
-   "community": 204,
+   "community": 300,
    "norm_label": "agenzie di rating: il declino dell'integrita finanziaria"
   },
   {
@@ -72,7 +72,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_bolla_tech_ia",
-   "community": 205,
+   "community": 301,
    "norm_label": "universalis-bolla-tech-ia.md"
   },
   {
@@ -82,7 +82,7 @@
    "source_location": "L11",
    "_origin": "ast",
    "id": "raw_finanza_universalis_bolla_tech_ia_la_bolla_tech_ia_tra_realtà_e_illusione",
-   "community": 205,
+   "community": 301,
    "norm_label": "la bolla tech ia — tra realta e illusione"
   },
   {
@@ -92,7 +92,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_charles_dow",
-   "community": 206,
+   "community": 302,
    "norm_label": "universalis-charles-dow.md"
   },
   {
@@ -102,7 +102,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_universalis_charles_dow_analisi_tecnica_dei_mercati_1_charles_dow",
-   "community": 206,
+   "community": 302,
    "norm_label": "analisi tecnica dei mercati — 1. charles dow"
   },
   {
@@ -112,7 +112,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_economia_multipolare",
-   "community": 207,
+   "community": 303,
    "norm_label": "universalis-economia-multipolare.md"
   },
   {
@@ -122,7 +122,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_finanza_universalis_economia_multipolare_economia_multipolare",
-   "community": 207,
+   "community": 303,
    "norm_label": "economia multipolare"
   },
   {
@@ -132,7 +132,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_mercati",
-   "community": 208,
+   "community": 304,
    "norm_label": "universalis-mercati.md"
   },
   {
@@ -142,7 +142,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_universalis_mercati_analisi_tecnica_dei_mercati_2_i_mercati",
-   "community": 208,
+   "community": 304,
    "norm_label": "analisi tecnica dei mercati — 2. i mercati"
   },
   {
@@ -152,7 +152,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_mercato_criptovalutario",
-   "community": 209,
+   "community": 305,
    "norm_label": "universalis-mercato-criptovalutario.md"
   },
   {
@@ -162,7 +162,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_universalis_mercato_criptovalutario_analisi_tecnica_dei_mercati_3_il_mercato_criptovalutario",
-   "community": 209,
+   "community": 305,
    "norm_label": "analisi tecnica dei mercati — 3. il mercato criptovalutario"
   },
   {
@@ -172,7 +172,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_oltre_il_costo_ia",
-   "community": 210,
+   "community": 306,
    "norm_label": "universalis-oltre-il-costo-ia.md"
   },
   {
@@ -182,7 +182,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_finanza_universalis_oltre_il_costo_ia_oltre_il_costo_dell_intelligenza_artificiale",
-   "community": 210,
+   "community": 306,
    "norm_label": "oltre il costo dell'intelligenza artificiale"
   },
   {
@@ -192,7 +192,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_finanza_universalis_spread",
-   "community": 211,
+   "community": 307,
    "norm_label": "universalis-spread.md"
   },
   {
@@ -202,7 +202,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "raw_finanza_universalis_spread_spread",
-   "community": 211,
+   "community": 307,
    "norm_label": "spread"
   },
   {
@@ -212,7 +212,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati",
-   "community": 6,
+   "community": 40,
    "norm_label": "analisi-tecnica-mercati.md"
   },
   {
@@ -222,7 +222,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati_1_da_dove_viene_l_analisi_tecnica",
-   "community": 6,
+   "community": 40,
    "norm_label": "1. da dove viene l'analisi tecnica"
   },
   {
@@ -232,7 +232,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati_2_cosa_si_scambia",
-   "community": 6,
+   "community": 40,
    "norm_label": "2. cosa si scambia"
   },
   {
@@ -242,7 +242,7 @@
    "source_location": "L49",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati_3_il_mercato_criptovalutario",
-   "community": 6,
+   "community": 40,
    "norm_label": "3. il mercato criptovalutario"
   },
   {
@@ -252,7 +252,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
-   "community": 6,
+   "community": 40,
    "norm_label": "analisi tecnica dei mercati (corso in tre parti)"
   },
   {
@@ -262,7 +262,7 @@
    "source_location": "L65",
    "_origin": "ast",
    "id": "wiki_finanza_analisi_tecnica_mercati_come_e_costruito_il_corso",
-   "community": 6,
+   "community": 40,
    "norm_label": "come e' costruito il corso"
   },
   {
@@ -272,7 +272,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia",
-   "community": 6,
+   "community": 40,
    "norm_label": "economia-dell-ia.md"
   },
   {
@@ -282,7 +282,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_cosa_se_ne_ricava",
-   "community": 6,
+   "community": 40,
    "norm_label": "cosa se ne ricava"
   },
   {
@@ -292,7 +292,7 @@
    "source_location": "L21",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_gennaio_2026_lo_scarto_è_il_sintomo_di_una_bolla",
-   "community": 6,
+   "community": 40,
    "norm_label": "gennaio 2026 — lo scarto e il sintomo di una bolla"
   },
   {
@@ -302,7 +302,7 @@
    "source_location": "L36",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_giugno_2026_lo_scarto_è_il_costo_di_una_transizione",
-   "community": 6,
+   "community": 40,
    "norm_label": "giugno 2026 — lo scarto e il costo di una transizione"
   },
   {
@@ -312,7 +312,7 @@
    "source_location": "L15",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_il_fatto_su_cui_concordano",
-   "community": 6,
+   "community": 40,
    "norm_label": "il fatto su cui concordano"
   },
   {
@@ -322,7 +322,7 @@
    "source_location": "L49",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_il_vincolo_che_entrambi_riconoscono",
-   "community": 6,
+   "community": 40,
    "norm_label": "il vincolo che entrambi riconoscono"
   },
   {
@@ -332,7 +332,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
-   "community": 6,
+   "community": 40,
    "norm_label": "l'economia dell'intelligenza artificiale — una tesi che si e rovesciata"
   },
   {
@@ -342,7 +342,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_finanza_index",
-   "community": 6,
+   "community": 40,
    "norm_label": "index.md"
   },
   {
@@ -352,7 +352,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "wiki_finanza_index_fatti_che_invecchiano",
-   "community": 6,
+   "community": 40,
    "norm_label": "fatti che invecchiano"
   },
   {
@@ -362,7 +362,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_finanza_index_finanza",
-   "community": 6,
+   "community": 40,
    "norm_label": "finanza"
   },
   {
@@ -372,7 +372,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "wiki_finanza_index_il_filone_critico",
-   "community": 6,
+   "community": 40,
    "norm_label": "il filone critico"
   }
  ],

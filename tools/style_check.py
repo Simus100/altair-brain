@@ -26,7 +26,14 @@ Uso:
 import argparse, importlib.util, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MOTORE = os.path.join(ROOT, "raw", "creativita", "bookforge", "stylometry.py")
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+MOTORE = os.path.join(BRAIN, "raw", "creativita", "bookforge", "stylometry.py")
 
 
 def carica_motore():
@@ -73,7 +80,7 @@ def testo_da_file(path):
 
 def testo_da_report(nome):
     """La prosa editoriale di un report living sta nel database, non nell'HTML."""
-    p = os.path.join(ROOT, "reports", "data", f"{nome}.updates.json")
+    p = os.path.join(BRAIN, "reports", "data", f"{nome}.updates.json")
     if not os.path.exists(p):
         sys.exit(f"report inesistente: {p}")
     with open(p, encoding="utf-8") as f:

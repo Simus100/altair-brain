@@ -28,6 +28,13 @@ from tools import frontmatter as fm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -38,7 +45,7 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")
+GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 from tools.frontmatter import STRATI_GENERATI as GENERATI   # noqa: E402
 CARTELLE = ("raw", "wiki")
 

@@ -14,9 +14,16 @@ Output (accanto a graph.html, che resta intatto):
 Deterministico, nessuna API. Uso:  python tools/altair_compact_view.py
 """
 import json, math, os
-
 import sys
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
 
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
@@ -28,11 +35,11 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
-AREAS = os.path.join(ROOT, "areas.json")
-BRIDGES = os.path.join(ROOT, "graphify-out", "areas", "bridges.json")
-OUT_JSON = os.path.join(ROOT, "graphify-out", "graph-compact.json")
-OUT_HTML = os.path.join(ROOT, "graphify-out", "graph-compact.html")
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
+AREAS = os.path.join(BRAIN, "areas.json")
+BRIDGES = os.path.join(BRAIN, "graphify-out", "areas", "bridges.json")
+OUT_JSON = os.path.join(BRAIN, "graphify-out", "graph-compact.json")
+OUT_HTML = os.path.join(BRAIN, "graphify-out", "graph-compact.html")
 
 with open(GRAPH, encoding="utf-8") as f:
     g = json.load(f)

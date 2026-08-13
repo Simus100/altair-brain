@@ -27,7 +27,14 @@ Uso da CLI:       python tools/oracle_cast.py [--seed N] [--question "..."]
 import json, os, random, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(ROOT, "engine", "iching.db.json")
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+DB_PATH = os.path.join(BRAIN, "engine", "iching.db.json")
 _db = None
 
 

@@ -16,6 +16,13 @@ import argparse, datetime, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -26,7 +33,7 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-TEMPLATE = os.path.join(ROOT, "reports", "template_showcase_3d.md")
+TEMPLATE = os.path.join(BRAIN, "reports", "template_showcase_3d.md")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--caso", required=True, help="slug kebab-case (es. altair-brain-energia-2026)")
@@ -36,8 +43,8 @@ a = ap.parse_args()
 if not re.match(r"^[a-z0-9][a-z0-9-]*$", a.caso):
     sys.exit("--caso deve essere kebab-case (a-z, 0-9, trattini)")
 
-src = os.path.join(ROOT, "reports", f"{a.caso}.html")
-db = os.path.join(ROOT, "reports", "data", f"{a.caso}.updates.json")
+src = os.path.join(BRAIN, "reports", f"{a.caso}.html")
+db = os.path.join(BRAIN, "reports", "data", f"{a.caso}.updates.json")
 for p in (src, db):
     if os.path.exists(p):
         sys.exit(f"esiste gia: {p} — scegli un altro --caso")

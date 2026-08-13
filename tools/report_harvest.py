@@ -24,6 +24,13 @@ import argparse, collections, datetime, glob, hashlib, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -34,7 +41,7 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-DEST = os.path.join(ROOT, "raw", "divulgazione", "metodo-report-verificati.md")
+DEST = os.path.join(BRAIN, "raw", "divulgazione", "metodo-report-verificati.md")
 
 
 def _voci(db):
@@ -52,7 +59,7 @@ def raccogli():
     con_fonte = totali = 0
     casi = []
 
-    for p in sorted(glob.glob(os.path.join(ROOT, "reports", "data", "*.updates.json"))):
+    for p in sorted(glob.glob(os.path.join(BRAIN, "reports", "data", "*.updates.json"))):
         with open(p, encoding="utf-8") as f:
             db = json.load(f)
         voci = _voci(db)

@@ -15,6 +15,13 @@ import argparse, json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -30,9 +37,9 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--report", required=True, help="nome del report (senza estensione)")
 a = ap.parse_args()
 
-SRC = os.path.join(ROOT, "reports", f"{a.report}.html")
-DB = os.path.join(ROOT, "reports", "data", f"{a.report}.updates.json")
-OUT = os.path.join(ROOT, "reports", f"{a.report}-prototype.html")
+SRC = os.path.join(BRAIN, "reports", f"{a.report}.html")
+DB = os.path.join(BRAIN, "reports", "data", f"{a.report}.updates.json")
+OUT = os.path.join(BRAIN, "reports", f"{a.report}-prototype.html")
 
 for p in (SRC, DB):
     if not os.path.exists(p):

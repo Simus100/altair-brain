@@ -30,6 +30,13 @@ import argparse, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -40,8 +47,8 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-GRAPH = os.path.join(ROOT, "graphify-out", "graph.json")
-DB = os.path.join(ROOT, "engine", "iching.db.json")
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
+DB = os.path.join(BRAIN, "engine", "iching.db.json")
 
 RELAZIONI = ("opposto", "rovesciato", "nucleare")
 

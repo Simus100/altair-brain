@@ -12,6 +12,13 @@ import json, sys, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -22,7 +29,7 @@ if __name__ == "__main__":
     except ImportError:
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
-MODEL = os.path.join(ROOT, "engine", "aion.model.json")
+MODEL = os.path.join(BRAIN, "engine", "aion.model.json")
 
 def main() -> int:
     with open(MODEL, encoding="utf-8") as f:
@@ -32,7 +39,7 @@ def main() -> int:
     if not isinstance(m.get("schema_version"), int) or m["schema_version"] < 1:
         print("MODELLO NON VALIDO — manca schema_version (intero >= 1)")
         return 1
-    schema_path = os.path.join(ROOT, "engine", "schema", "aion.model.schema.json")
+    schema_path = os.path.join(BRAIN, "engine", "schema", "aion.model.schema.json")
     if os.path.exists(schema_path):
         try:
             import jsonschema

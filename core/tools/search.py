@@ -20,10 +20,18 @@ Uso:
 Come modulo:  from tools.search import cerca
 """
 import json, math, os, re, unicodedata
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-INDICE = os.path.join(ROOT, "engine", "search_index.json")
-DENSO = os.path.join(ROOT, "graphify-out", "search", "dense.json")
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+INDICE = os.path.join(BRAIN, "engine", "search_index.json")
+DENSO = os.path.join(BRAIN, "graphify-out", "search", "dense.json")
 RRF_K = 60          # costante standard: attenua il peso delle prime posizioni
 
 _cache = {}
@@ -198,7 +206,7 @@ MAX_LEZIONI_IN_MEMORIA = 2000    # oltre, contano solo le piu recenti
 
 
 def _memoria():
-    path = os.path.join(ROOT, "engine", "lessons.jsonl")
+    path = os.path.join(BRAIN, "engine", "lessons.jsonl")
     if not _fresco("lezioni", path):
         voci = []
         if os.path.exists(path):

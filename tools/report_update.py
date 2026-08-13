@@ -16,6 +16,13 @@ import argparse, json, os, re, datetime, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -43,8 +50,8 @@ ap.add_argument("--confidenza", default=None, choices=["alta", "media", "bassa"]
                 help="livello di confidenza editoriale")
 a = ap.parse_args()
 
-db_path = os.path.join(ROOT, "reports", "data", f"{a.report}.updates.json")
-proto = os.path.join(ROOT, "reports", f"{a.report}-prototype.html")
+db_path = os.path.join(BRAIN, "reports", "data", f"{a.report}.updates.json")
+proto = os.path.join(BRAIN, "reports", f"{a.report}-prototype.html")
 if not os.path.exists(db_path):
     sys.exit(f"database inesistente: {db_path}")
 

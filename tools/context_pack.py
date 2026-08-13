@@ -27,6 +27,13 @@ import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -41,7 +48,7 @@ sys.path.insert(0, ROOT)
 
 from tools.search import cerca_con_diagnosi, _memoria, _corrisponde  # noqa: E402
 
-GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")
+GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 CHAR_PER_TOKEN = 4
 QUOTA_FRAMMENTI = 0.70      # il grosso va al contenuto
 QUOTA_VICINATO = 0.15

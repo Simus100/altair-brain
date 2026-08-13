@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "creativita",
- "built_at_commit": "87e9135d18b1a3b2e2b9e32c05d47dc2d15bfed6",
+ "built_at_commit": "c2f08c575c102fb3dd272148e4bcc53d9321b6f2",
  "nodes": [
   {
    "label": "anti-ai.md",
@@ -12,7 +12,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai",
-   "community": 168,
+   "community": 58,
    "norm_label": "anti-ai.md"
   },
   {
@@ -22,7 +22,7 @@
    "source_location": "L136",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_calchi_dall_inglese_da_evitare",
-   "community": 168,
+   "community": 58,
    "norm_label": "calchi dall'inglese da evitare"
   },
   {
@@ -32,7 +32,7 @@
    "source_location": "L101",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_formule_lessicali_da_evitare",
-   "community": 168,
+   "community": 58,
    "norm_label": "formule lessicali da evitare"
   },
   {
@@ -42,7 +42,7 @@
    "source_location": "L20",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_i_due_fallimenti_opposti",
-   "community": 168,
+   "community": 58,
    "norm_label": "i due fallimenti opposti"
   },
   {
@@ -52,7 +52,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_i_tic_da_llm_fallimento_a_i_più_riconoscibili_oggi",
-   "community": 168,
+   "community": 58,
    "norm_label": "i tic da llm (fallimento a) — i piu riconoscibili oggi"
   },
   {
@@ -62,7 +62,7 @@
    "source_location": "L95",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_il_controllo_finale_dopo_aver_scritto",
-   "community": 168,
+   "community": 58,
    "norm_label": "il controllo finale — dopo aver scritto"
   },
   {
@@ -72,7 +72,7 @@
    "source_location": "L91",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_il_meta_principio_il_più_sottile",
-   "community": 168,
+   "community": 58,
    "norm_label": "il meta-principio (il piu sottile)"
   },
   {
@@ -82,7 +82,7 @@
    "source_location": "L118",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_la_legatura_italiano_vs_inglese_tradotto",
-   "community": 168,
+   "community": 58,
    "norm_label": "la legatura — italiano vs inglese-tradotto"
   },
   {
@@ -92,7 +92,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_le_firme_del_manierismo_fallimento_b",
-   "community": 168,
+   "community": 58,
    "norm_label": "le firme del manierismo (fallimento b)"
   },
   {
@@ -102,7 +102,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_regole_dell_italiano",
-   "community": 168,
+   "community": 58,
    "norm_label": "regole dell'italiano"
   },
   {
@@ -112,7 +112,7 @@
    "source_location": "L129",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_sintassi_connettivi_punteggiatura",
-   "community": 168,
+   "community": 58,
    "norm_label": "sintassi, connettivi, punteggiatura"
   },
   {
@@ -122,7 +122,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_sistema_anti_ai_e_regole_dell_italiano",
-   "community": 168,
+   "community": 58,
    "norm_label": "sistema anti-ai e regole dell'italiano"
   },
   {
@@ -132,7 +132,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_sottotesto_ed_emozioni_show_don_t_tell_estremo",
-   "community": 168,
+   "community": 58,
    "norm_label": "sottotesto ed emozioni (show, don't tell estremo)"
   },
   {
@@ -142,7 +142,7 @@
    "source_location": "L87",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_anti_ai_variare_prima_di_scrivere_pattern_interruption_protocol_pip",
-   "community": 168,
+   "community": 58,
    "norm_label": "variare prima di scrivere (pattern interruption protocol, pip)"
   },
   {
@@ -152,7 +152,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia",
-   "community": 169,
+   "community": 82,
    "norm_label": "antologia.md"
   },
   {
@@ -162,7 +162,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_antologia_della_voce_il_modello_positivo",
-   "community": 169,
+   "community": 82,
    "norm_label": "antologia della voce — il modello positivo"
   },
   {
@@ -172,7 +172,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_aperture",
-   "community": 169,
+   "community": 82,
    "norm_label": "aperture"
   },
   {
@@ -182,7 +182,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_azione",
-   "community": 169,
+   "community": 82,
    "norm_label": "azione"
   },
   {
@@ -192,7 +192,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_chiusure",
-   "community": 169,
+   "community": 82,
    "norm_label": "chiusure"
   },
   {
@@ -202,7 +202,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_descrizione_in_movimento",
-   "community": 169,
+   "community": 82,
    "norm_label": "descrizione in movimento"
   },
   {
@@ -212,7 +212,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_dialogo",
-   "community": 169,
+   "community": 82,
    "norm_label": "dialogo"
   },
   {
@@ -222,7 +222,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_introspezione_indiretto_libero",
-   "community": 169,
+   "community": 82,
    "norm_label": "introspezione / indiretto libero"
   },
   {
@@ -232,7 +232,7 @@
    "source_location": "L40",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_maestri_di_riferimento_facoltativo_brevissimi",
-   "community": 169,
+   "community": 82,
    "norm_label": "maestri di riferimento (facoltativo, brevissimi)"
   },
   {
@@ -242,7 +242,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_antologia_regole_di_gestione_per_il_modello",
-   "community": 169,
+   "community": 82,
    "norm_label": "regole di gestione (per il modello)"
   },
   {
@@ -252,7 +252,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_carta",
-   "community": 179,
+   "community": 292,
    "norm_label": "carta.md"
   },
   {
@@ -262,7 +262,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_carta_la_carta_della_prosa_l_unico_documento_attivo_in_stesura",
-   "community": 179,
+   "community": 292,
    "norm_label": "la carta della prosa — l'unico documento attivo in stesura"
   },
   {
@@ -272,7 +272,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita",
-   "community": 173,
+   "community": 222,
    "norm_label": "continuita.md"
   },
   {
@@ -282,7 +282,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_bibbia_di_continuità_collane_e_sequel",
-   "community": 173,
+   "community": 222,
    "norm_label": "bibbia di continuita (collane e sequel)"
   },
   {
@@ -292,7 +292,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_character_bible_per_ogni_personaggio_ricorrente",
-   "community": 173,
+   "community": 222,
    "norm_label": "character bible (per ogni personaggio ricorrente)"
   },
   {
@@ -302,7 +302,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_protocollo_di_aggiornamento",
-   "community": 173,
+   "community": 222,
    "norm_label": "protocollo di aggiornamento"
   },
   {
@@ -312,7 +312,7 @@
    "source_location": "L51",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_revisione_inter_volume",
-   "community": 173,
+   "community": 222,
    "norm_label": "revisione inter-volume"
   },
   {
@@ -322,7 +322,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_schema_logico_fatti_regole_eventi",
-   "community": 173,
+   "community": 222,
    "norm_label": "schema logico (fatti, regole, eventi)"
   },
   {
@@ -332,7 +332,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_schema_relazionale_connessioni",
-   "community": 173,
+   "community": 222,
    "norm_label": "schema relazionale (connessioni)"
   },
   {
@@ -342,7 +342,7 @@
    "source_location": "L47",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_continuita_snapshot_di_fine_volume",
-   "community": 173,
+   "community": 222,
    "norm_label": "snapshot di fine volume"
   },
   {
@@ -352,7 +352,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_fasi",
-   "community": 178,
+   "community": 251,
    "norm_label": "fasi.md"
   },
   {
@@ -362,7 +362,7 @@
    "source_location": "L12",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_fasi_fase_1_questionario_strategico_scheda_strategica_scheda",
-   "community": 178,
+   "community": 251,
    "norm_label": "fase 1 — questionario strategico → scheda strategica (`/scheda`)"
   },
   {
@@ -372,7 +372,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_fasi_fase_3_creazione_indice_indice",
-   "community": 178,
+   "community": 251,
    "norm_label": "fase 3 — creazione indice (`/indice`)"
   },
   {
@@ -382,7 +382,7 @@
    "source_location": "L71",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_fasi_fase_5_revisione_revisione",
-   "community": 178,
+   "community": 251,
    "norm_label": "fase 5 — revisione (`/revisione`)"
   },
   {
@@ -392,7 +392,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_fasi_fasi_scheda_strategica_1_indice_3_revisione_5",
-   "community": 178,
+   "community": 251,
    "norm_label": "fasi: scheda strategica (1), indice (3), revisione (5)"
   },
   {
@@ -402,7 +402,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi",
-   "community": 174,
+   "community": 223,
    "norm_label": "generi.md"
   },
   {
@@ -412,7 +412,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_fiction_specifiche_per_genere",
-   "community": 174,
+   "community": 223,
    "norm_label": "fiction — specifiche per genere"
   },
   {
@@ -422,7 +422,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_generi_strutture_e_worldbuilding",
-   "community": 174,
+   "community": 223,
    "norm_label": "generi, strutture e worldbuilding"
   },
   {
@@ -432,7 +432,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_libri_low_content_no_content_flusso_diverso",
-   "community": 174,
+   "community": 223,
    "norm_label": "libri low-content / no-content (flusso diverso)"
   },
   {
@@ -442,7 +442,7 @@
    "source_location": "L49",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_non_fiction_specifiche_per_genere",
-   "community": 174,
+   "community": 223,
    "norm_label": "non-fiction — specifiche per genere"
   },
   {
@@ -452,7 +452,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_sotto_generi_ad_alta_domanda_kdp",
-   "community": 174,
+   "community": 223,
    "norm_label": "sotto-generi ad alta domanda kdp"
   },
   {
@@ -462,7 +462,7 @@
    "source_location": "L39",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_strutture_narrative_canoniche_fiction",
-   "community": 174,
+   "community": 223,
    "norm_label": "strutture narrative canoniche (fiction)"
   },
   {
@@ -472,7 +472,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_generi_worldbuilding_bible_worldbuilding_fantasy_sci_fi_distopia",
-   "community": 174,
+   "community": 223,
    "norm_label": "worldbuilding bible (`/worldbuilding`) — fantasy / sci-fi / distopia"
   },
   {
@@ -482,7 +482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp",
-   "community": 175,
+   "community": 224,
    "norm_label": "kdp.md"
   },
   {
@@ -492,7 +492,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_amazon_seo_seo",
-   "community": 175,
+   "community": 224,
    "norm_label": "amazon seo (`/seo`)"
   },
   {
@@ -502,7 +502,7 @@
    "source_location": "L91",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_dati_kdp_volatili_verifica_non_memorizzare",
-   "community": 175,
+   "community": 224,
    "norm_label": "⚠️ dati kdp volatili — verifica, non memorizzare"
   },
   {
@@ -512,7 +512,7 @@
    "source_location": "L86",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_estensioni_su_richiesta",
-   "community": 175,
+   "community": 224,
    "norm_label": "estensioni (su richiesta)"
   },
   {
@@ -522,7 +522,7 @@
    "source_location": "L12",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_fase_2_ricerca_di_mercato_ricerca",
-   "community": 175,
+   "community": 224,
    "norm_label": "fase 2 — ricerca di mercato (`/ricerca`)"
   },
   {
@@ -532,7 +532,7 @@
    "source_location": "L61",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_fase_6_pacchetto_kdp_kdp_pacchetto",
-   "community": 175,
+   "community": 224,
    "norm_label": "fase 6 — pacchetto kdp (`/kdp`, `/pacchetto`)"
   },
   {
@@ -542,7 +542,7 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_fase_7_piano_di_lancio_lancio_opzionale",
-   "community": 175,
+   "community": 224,
    "norm_label": "fase 7 — piano di lancio (`/lancio`, opzionale)"
   },
   {
@@ -552,7 +552,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_kdp_kdp_ricerca_di_mercato_seo_pacchetto_lancio",
-   "community": 175,
+   "community": 224,
    "norm_label": "kdp: ricerca di mercato, seo, pacchetto, lancio"
   },
   {
@@ -562,7 +562,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorsi.md"
   },
   {
@@ -572,7 +572,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorsi_operativi_a_b_c_d_q",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorsi operativi (a / b / c / d / q)"
   },
   {
@@ -582,7 +582,7 @@
    "source_location": "L12",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorso_a_nuovo_libro_nuovo",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorso a — nuovo libro (`/nuovo`)"
   },
   {
@@ -592,7 +592,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorso_b_revisione_libro_esistente_revisiona",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorso b — revisione libro esistente (`/revisiona`)"
   },
   {
@@ -602,7 +602,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorso_c_continuare_un_libro_iniziato_continua",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorso c — continuare un libro iniziato (`/continua`)"
   },
   {
@@ -612,7 +612,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorso_d_collana_sequel_collana_sequel",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorso d — collana / sequel (`/collana`, `/sequel`)"
   },
   {
@@ -622,7 +622,7 @@
    "source_location": "L77",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_percorsi_percorso_q_analisi_rapida_analisi",
-   "community": 177,
+   "community": 232,
    "norm_label": "percorso q — analisi rapida (`/analisi`)"
   },
   {
@@ -632,7 +632,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia",
-   "community": 171,
+   "community": 86,
    "norm_label": "psicologia.md"
   },
   {
@@ -642,7 +642,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_enneagramma_matrice_tipologica",
-   "community": 171,
+   "community": 86,
    "norm_label": "enneagramma — matrice tipologica"
   },
   {
@@ -652,7 +652,7 @@
    "source_location": "L27",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_framework_a_9_assi",
-   "community": 171,
+   "community": 86,
    "norm_label": "framework a 9 assi"
   },
   {
@@ -662,7 +662,7 @@
    "source_location": "L110",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_manifestazione_somatica_specifica",
-   "community": 171,
+   "community": 86,
    "norm_label": "manifestazione somatica specifica"
   },
   {
@@ -672,7 +672,7 @@
    "source_location": "L89",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_meccanismi_di_difesa_come_strumenti_di_prosa",
-   "community": 171,
+   "community": 86,
    "norm_label": "meccanismi di difesa come strumenti di prosa"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_protocollo_pre_scena_per_ogni_scena_chiave",
-   "community": 171,
+   "community": 86,
    "norm_label": "protocollo pre-scena (per ogni scena chiave)"
   },
   {
@@ -692,7 +692,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_psicologia_del_personaggio_fiction",
-   "community": 171,
+   "community": 86,
    "norm_label": "psicologia del personaggio (fiction)"
   },
   {
@@ -702,7 +702,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_scheda_personaggio_template_compilabile_comando_personaggio",
-   "community": 171,
+   "community": 86,
    "norm_label": "scheda personaggio (template compilabile — comando `/personaggio`)"
   },
   {
@@ -712,7 +712,7 @@
    "source_location": "L102",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_psicologia_triangolo_voce_corpo_azione_vca",
-   "community": 171,
+   "community": 86,
    "norm_label": "triangolo voce-corpo-azione (vca)"
   },
   {
@@ -722,7 +722,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura",
-   "community": 172,
+   "community": 87,
    "norm_label": "scrittura.md"
   },
   {
@@ -732,7 +732,7 @@
    "source_location": "L103",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_come_si_scrive_bene_la_dottrina_ogni_capitolo",
-   "community": 172,
+   "community": 87,
    "norm_label": "come si scrive bene (la dottrina — ogni capitolo)"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L125",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_il_controllo_finale_in_ordine_la_chiarezza_vince",
-   "community": 172,
+   "community": 87,
    "norm_label": "il controllo finale (in ordine — la chiarezza vince)"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_il_principio_sopra_tutti_si_scrive_per_essere_letti",
-   "community": 172,
+   "community": 87,
    "norm_label": "il principio sopra tutti: si scrive per essere letti"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L147",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_lettore_lettura_a_freddo_simulata_lettore_on_demand",
-   "community": 172,
+   "community": 87,
    "norm_label": "§lettore — lettura a freddo simulata (`/lettore`, on-demand)"
   },
   {
@@ -772,7 +772,7 @@
    "source_location": "L165",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_narrative_state_tracker_nst_dopo_ogni_capitolo",
-   "community": 172,
+   "community": 87,
    "norm_label": "narrative state tracker (nst) — dopo ogni capitolo"
   },
   {
@@ -782,7 +782,7 @@
    "source_location": "L196",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_promemoria_di_coerenza",
-   "community": 172,
+   "community": 87,
    "norm_label": "promemoria di coerenza"
   },
   {
@@ -792,7 +792,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_protocollo_per_ogni_capitolo",
-   "community": 172,
+   "community": 87,
    "norm_label": "protocollo per ogni capitolo"
   },
   {
@@ -802,7 +802,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_scrittura_scrittura_capitolo_per_capitolo_fase_4",
-   "community": 172,
+   "community": 87,
    "norm_label": "scrittura capitolo per capitolo (fase 4)"
   },
   {
@@ -812,7 +812,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr",
-   "community": 170,
+   "community": 83,
    "norm_label": "stato-bsr.md"
   },
   {
@@ -822,7 +822,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_bookforge_state_registry_bsr_salva_carica_stato",
-   "community": 170,
+   "community": 83,
    "norm_label": "bookforge state registry (bsr) — salva, carica, stato"
   },
   {
@@ -832,7 +832,7 @@
    "source_location": "L98",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_canon_audit_di_coerenza_on_demand_canon",
-   "community": 170,
+   "community": 83,
    "norm_label": "§canon — audit di coerenza on-demand (`/canon`)"
   },
   {
@@ -842,7 +842,7 @@
    "source_location": "L75",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_carica",
-   "community": 170,
+   "community": 83,
    "norm_label": "`/carica`"
   },
   {
@@ -852,7 +852,7 @@
    "source_location": "L116",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_diagrammi_opzionale",
-   "community": 170,
+   "community": 83,
    "norm_label": "`/diagrammi` (opzionale)"
   },
   {
@@ -862,7 +862,7 @@
    "source_location": "L21",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_politica_di_ritenzione_cosa_contiene_sempre_lo_stato",
-   "community": 170,
+   "community": 83,
    "norm_label": "politica di ritenzione — cosa contiene sempre lo stato"
   },
   {
@@ -872,7 +872,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_salva_e_auto_save",
-   "community": 170,
+   "community": 83,
    "norm_label": "`/salva` e auto-save"
   },
   {
@@ -882,7 +882,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_schema_bookforge_state_json_canonico",
-   "community": 170,
+   "community": 83,
    "norm_label": "schema `bookforge_state.json` (canonico)"
   },
   {
@@ -892,7 +892,7 @@
    "source_location": "L95",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_stato",
-   "community": 170,
+   "community": 83,
    "norm_label": "`/stato`"
   },
   {
@@ -902,7 +902,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stato_bsr_vista_umana_bookforge_state_md_generata_dal_json",
-   "community": 170,
+   "community": 83,
    "norm_label": "vista umana `bookforge_state.md` (generata dal json)"
   },
   {
@@ -912,7 +912,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna",
-   "community": 176,
+   "community": 225,
    "norm_label": "styledna.md"
   },
   {
@@ -922,7 +922,7 @@
    "source_location": "L64",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_deroga_verificata_l_unico_modo_di_superare_un_tetto",
-   "community": 176,
+   "community": 225,
    "norm_label": "deroga verificata (l'unico modo di superare un tetto)"
   },
   {
@@ -932,7 +932,7 @@
    "source_location": "L16",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_i_12_parametri_e_la_semantica_dei_valori",
-   "community": 176,
+   "community": 225,
    "norm_label": "i 12 parametri e la semantica dei valori"
   },
   {
@@ -942,7 +942,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_profili_preset_assegnali_automaticamente_in_fase_1_in_base_al_genere",
-   "community": 176,
+   "community": 225,
    "norm_label": "profili preset (assegnali automaticamente in fase 1 in base al genere)"
   },
   {
@@ -952,7 +952,7 @@
    "source_location": "L79",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_protocollo_clone_style_comando_clone",
-   "community": 176,
+   "community": 225,
    "norm_label": "protocollo clone style (comando `/clone`)"
   },
   {
@@ -962,7 +962,7 @@
    "source_location": "L10",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_styledna_calibrazione_parametrica_dello_stile",
-   "community": 176,
+   "community": 225,
    "norm_label": "styledna — calibrazione parametrica dello stile"
   },
   {
@@ -972,7 +972,7 @@
    "source_location": "L61",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_tetti_di_salute_lezione_imparata_su_questo_progetto",
-   "community": 176,
+   "community": 225,
    "norm_label": "tetti di salute (lezione imparata su questo progetto)"
   },
   {
@@ -982,7 +982,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_styledna_tre_modalità_di_attivazione",
-   "community": 176,
+   "community": 225,
    "norm_label": "tre modalita di attivazione"
   },
   {
@@ -992,7 +992,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry",
-   "community": 166,
+   "community": 24,
    "norm_label": "stylometry.py"
   },
   {
@@ -1002,7 +1002,7 @@
    "source_location": "L360",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_analyze",
-   "community": 166,
+   "community": 24,
    "norm_label": "analyze()"
   },
   {
@@ -1012,7 +1012,7 @@
    "source_location": "L283",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_build_patterns",
-   "community": 166,
+   "community": 24,
    "norm_label": "_build_patterns()"
   },
   {
@@ -1022,7 +1022,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_clamp",
-   "community": 166,
+   "community": 24,
    "norm_label": "clamp()"
   },
   {
@@ -1032,7 +1032,7 @@
    "source_location": "L150",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_detect_llm_tics",
-   "community": 166,
+   "community": 24,
    "norm_label": "detect_llm_tics()"
   },
   {
@@ -1042,7 +1042,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_find_repeated_ngrams",
-   "community": 166,
+   "community": 24,
    "norm_label": "find_repeated_ngrams()"
   },
   {
@@ -1052,7 +1052,7 @@
    "source_location": "L503",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_main",
-   "community": 166,
+   "community": 24,
    "norm_label": "main()"
   },
   {
@@ -1062,7 +1062,7 @@
    "source_location": "L323",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_mattr",
-   "community": 166,
+   "community": 24,
    "norm_label": "mattr()"
   },
   {
@@ -1072,7 +1072,7 @@
    "source_location": "L340",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_paragraph_register",
-   "community": 166,
+   "community": 24,
    "norm_label": "paragraph_register()"
   },
   {
@@ -1082,7 +1082,7 @@
    "source_location": "L254",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_pip_hints",
-   "community": 166,
+   "community": 24,
    "norm_label": "pip_hints()"
   },
   {
@@ -1092,7 +1092,7 @@
    "source_location": "L151",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_151",
-   "community": 166,
+   "community": 24,
    "norm_label": "tic da llm misurabili (anti-ai.md). esegui dopo la scrittura: sono spie, non quo"
   },
   {
@@ -1102,7 +1102,7 @@
    "source_location": "L255",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_255",
-   "community": 166,
+   "community": 24,
    "norm_label": "dati grezzi per il ledger pip (nst): apertura, chiusura, distribuzione del dialo"
   },
   {
@@ -1112,7 +1112,7 @@
    "source_location": "L292",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_292",
-   "community": 166,
+   "community": 24,
    "norm_label": "cerca i pattern e restituisce hit con conteggio ed esempi (max 2 per termine)."
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L324",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_324",
-   "community": 166,
+   "community": 24,
    "norm_label": "moving-average ttr: vocabolario robusto alla lunghezza (media su finestre scorre"
   },
   {
@@ -1132,7 +1132,7 @@
    "source_location": "L332",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_332",
-   "community": 166,
+   "community": 24,
    "norm_label": "paragrafi su righe vuote; se il testo e un blocco unico, finestre di ~5 frasi."
   },
   {
@@ -1142,7 +1142,7 @@
    "source_location": "L341",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_341",
-   "community": 166,
+   "community": 24,
    "norm_label": "asl e quota di frasi corte per paragrafo; segnala i tratti frantumati (anglo-tra"
   },
   {
@@ -1152,7 +1152,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_rationale_45",
-   "community": 166,
+   "community": 24,
    "norm_label": "trova gli n-gram ripetuti almeno min_count volte (esclude quelli solo-stopword)."
   },
   {
@@ -1162,7 +1162,7 @@
    "source_location": "L308",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_scan_anglicisms",
-   "community": 166,
+   "community": 24,
    "norm_label": "scan_anglicisms()"
   },
   {
@@ -1172,7 +1172,7 @@
    "source_location": "L291",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_scan_patterns",
-   "community": 166,
+   "community": 24,
    "norm_label": "_scan_patterns()"
   },
   {
@@ -1182,7 +1182,7 @@
    "source_location": "L331",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_split_paragraphs",
-   "community": 166,
+   "community": 24,
    "norm_label": "split_paragraphs()"
   },
   {
@@ -1192,7 +1192,7 @@
    "source_location": "L63",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_split_sentences",
-   "community": 166,
+   "community": 24,
    "norm_label": "split_sentences()"
   },
   {
@@ -1202,7 +1202,7 @@
    "source_location": "L74",
    "_origin": "ast",
    "id": "raw_creativita_bookforge_stylometry_tokenize_words",
-   "community": 166,
+   "community": 24,
    "norm_label": "tokenize_words()"
   },
   {
@@ -1212,7 +1212,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai",
-   "community": 102,
+   "community": 1,
    "norm_label": "anti-ai.md"
   },
   {
@@ -1222,7 +1222,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_cosa_fa_suonare_artificiale_un_testo",
-   "community": 102,
+   "community": 1,
    "norm_label": "cosa fa suonare artificiale un testo"
   },
   {
@@ -1232,7 +1232,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_i_due_fallimenti_opposti",
-   "community": 102,
+   "community": 1,
    "norm_label": "i due fallimenti opposti"
   },
   {
@@ -1242,7 +1242,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_i_tic_da_llm_più_riconoscibili",
-   "community": 102,
+   "community": 1,
    "norm_label": "i tic da llm piu riconoscibili"
   },
   {
@@ -1252,7 +1252,7 @@
    "source_location": "L56",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_il_controllo_finale",
-   "community": 102,
+   "community": 1,
    "norm_label": "il controllo finale"
   },
   {
@@ -1262,7 +1262,7 @@
    "source_location": "L39",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_il_meta_principio_il_più_sottile",
-   "community": 102,
+   "community": 1,
    "norm_label": "il meta-principio — il piu sottile"
   },
   {
@@ -1272,7 +1272,7 @@
    "source_location": "L46",
    "_origin": "ast",
    "id": "wiki_creativita_anti_ai_la_legatura_il_sintomo_italiano_più_misurabile",
-   "community": 102,
+   "community": 1,
    "norm_label": "la legatura — il sintomo italiano piu misurabile"
   },
   {
@@ -1282,7 +1282,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_carta_della_prosa",
-   "community": 102,
+   "community": 1,
    "norm_label": "carta-della-prosa.md"
   },
   {
@@ -1292,7 +1292,7 @@
    "source_location": "L42",
    "_origin": "ast",
    "id": "wiki_creativita_carta_della_prosa_cosa_non_si_tocca",
-   "community": 102,
+   "community": 1,
    "norm_label": "cosa non si tocca"
   },
   {
@@ -1302,7 +1302,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "wiki_creativita_carta_della_prosa_cosa_rende_viva_la_prosa",
-   "community": 102,
+   "community": 1,
    "norm_label": "cosa rende viva la prosa"
   },
   {
@@ -1312,7 +1312,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_carta_della_prosa_la_carta_l_unica_dottrina_attiva_in_stesura",
-   "community": 102,
+   "community": 1,
    "norm_label": "la carta — l'unica dottrina attiva in stesura"
   },
   {
@@ -1322,7 +1322,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "wiki_creativita_carta_della_prosa_la_regola_sovrana",
-   "community": 102,
+   "community": 1,
    "norm_label": "la regola sovrana"
   },
   {
@@ -1332,7 +1332,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_fasi_editoriali",
-   "community": 102,
+   "community": 1,
    "norm_label": "fasi-editoriali.md"
   },
   {
@@ -1342,7 +1342,7 @@
    "source_location": "L22",
    "_origin": "ast",
    "id": "wiki_creativita_fasi_editoriali_fase_1_trasformare_il_vago_in_concreto",
-   "community": 102,
+   "community": 1,
    "norm_label": "fase 1 — trasformare il vago in concreto"
   },
   {
@@ -1352,7 +1352,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "wiki_creativita_fasi_editoriali_fase_3_l_indice_come_struttura_non_come_elenco",
-   "community": 102,
+   "community": 1,
    "norm_label": "fase 3 — l'indice come struttura, non come elenco"
   },
   {
@@ -1362,7 +1362,7 @@
    "source_location": "L43",
    "_origin": "ast",
    "id": "wiki_creativita_fasi_editoriali_fase_5_la_revisione_ha_un_budget",
-   "community": 102,
+   "community": 1,
    "norm_label": "fase 5 — la revisione ha un budget"
   },
   {
@@ -1372,7 +1372,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_fasi_editoriali_le_sei_fasi_dall_idea_al_libro_pubblicato",
-   "community": 102,
+   "community": 1,
    "norm_label": "le sei fasi — dall'idea al libro pubblicato"
   },
   {
@@ -1382,7 +1382,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_granularita_scrittura",
-   "community": 102,
+   "community": 1,
    "norm_label": "granularita-scrittura.md"
   },
   {
@@ -1392,7 +1392,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "wiki_creativita_granularita_scrittura_cosa_non_si_frammenta_mai",
-   "community": 102,
+   "community": 1,
    "norm_label": "cosa non si frammenta mai"
   },
   {
@@ -1402,7 +1402,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "wiki_creativita_granularita_scrittura_il_rischio_del_controllo_fine_e_il_suo_antidoto",
-   "community": 102,
+   "community": 1,
    "norm_label": "il rischio del controllo fine, e il suo antidoto"
   },
   {
@@ -1412,7 +1412,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_granularita_scrittura_le_tre_tacche_di_controllo_sulla_scrittura",
-   "community": 102,
+   "community": 1,
    "norm_label": "le tre tacche di controllo sulla scrittura"
   },
   {
@@ -1422,7 +1422,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_index",
-   "community": 102,
+   "community": 1,
    "norm_label": "index.md"
   },
   {
@@ -1432,7 +1432,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_index_creatività_scrittura_ed_editoria",
-   "community": 102,
+   "community": 1,
    "norm_label": "creativita — scrittura ed editoria"
   },
   {
@@ -1442,7 +1442,7 @@
    "source_location": "L18",
    "_origin": "ast",
    "id": "wiki_creativita_index_i_quattro_pilastri",
-   "community": 102,
+   "community": 1,
    "norm_label": "i quattro pilastri"
   },
   {
@@ -1452,7 +1452,7 @@
    "source_location": "L28",
    "_origin": "ast",
    "id": "wiki_creativita_index_il_processo",
-   "community": 102,
+   "community": 1,
    "norm_label": "il processo"
   },
   {
@@ -1462,7 +1462,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "wiki_creativita_index_perche_riguarda_tutto_il_brain",
-   "community": 102,
+   "community": 1,
    "norm_label": "perche riguarda tutto il brain"
   },
   {
@@ -1472,7 +1472,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_psicologia_personaggio",
-   "community": 102,
+   "community": 1,
    "norm_label": "psicologia-personaggio.md"
   },
   {
@@ -1482,7 +1482,7 @@
    "source_location": "L19",
    "_origin": "ast",
    "id": "wiki_creativita_psicologia_personaggio_il_protocollo_pre_scena",
-   "community": 102,
+   "community": 1,
    "norm_label": "il protocollo pre-scena"
   },
   {
@@ -1492,7 +1492,7 @@
    "source_location": "L39",
    "_origin": "ast",
    "id": "wiki_creativita_psicologia_personaggio_il_rischio_speculare_l_asimmetria_che_manca",
-   "community": 102,
+   "community": 1,
    "norm_label": "il rischio speculare — l'asimmetria che manca"
   },
   {
@@ -1502,7 +1502,7 @@
    "source_location": "L32",
    "_origin": "ast",
    "id": "wiki_creativita_psicologia_personaggio_la_frizione_nei_dialoghi",
-   "community": 102,
+   "community": 1,
    "norm_label": "la frizione nei dialoghi"
   },
   {
@@ -1512,7 +1512,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_psicologia_personaggio_psicologia_del_personaggio_la_coerenza_come_sistema",
-   "community": 102,
+   "community": 1,
    "norm_label": "psicologia del personaggio — la coerenza come sistema"
   },
   {
@@ -1522,7 +1522,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_stato_narrativo",
-   "community": 102,
+   "community": 1,
    "norm_label": "stato-narrativo.md"
   },
   {
@@ -1532,7 +1532,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "wiki_creativita_stato_narrativo_il_ledger_pip_l_idea_più_riutilizzabile",
-   "community": 102,
+   "community": 1,
    "norm_label": "il ledger pip — l'idea piu riutilizzabile"
   },
   {
@@ -1542,7 +1542,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "wiki_creativita_stato_narrativo_la_lettura_a_freddo",
-   "community": 102,
+   "community": 1,
    "norm_label": "la lettura a freddo"
   },
   {
@@ -1552,7 +1552,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_stato_narrativo_lo_stato_narrativo_cosa_ricordare_perché_la_storia_tenga",
-   "community": 102,
+   "community": 1,
    "norm_label": "lo stato narrativo — cosa ricordare perche la storia tenga"
   },
   {
@@ -1562,7 +1562,7 @@
    "source_location": "L14",
    "_origin": "ast",
    "id": "wiki_creativita_stato_narrativo_narrative_state_tracker_dopo_ogni_capitolo",
-   "community": 102,
+   "community": 1,
    "norm_label": "narrative state tracker — dopo ogni capitolo"
   },
   {
@@ -1572,7 +1572,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria",
-   "community": 102,
+   "community": 1,
    "norm_label": "stilometria.md"
   },
   {
@@ -1582,7 +1582,7 @@
    "source_location": "L13",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria_come_si_usa_nel_brain",
-   "community": 102,
+   "community": 1,
    "norm_label": "come si usa nel brain"
   },
   {
@@ -1592,7 +1592,7 @@
    "source_location": "L38",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria_cosa_misura",
-   "community": 102,
+   "community": 1,
    "norm_label": "cosa misura"
   },
   {
@@ -1602,7 +1602,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria_le_due_classi_di_segnale_la_distinzione_che_conta",
-   "community": 102,
+   "community": 1,
    "norm_label": "le due classi di segnale — la distinzione che conta"
   },
   {
@@ -1612,7 +1612,7 @@
    "source_location": "L50",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria_prova_sul_brain_stesso",
-   "community": 102,
+   "community": 1,
    "norm_label": "prova sul brain stesso"
   },
   {
@@ -1622,7 +1622,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_stilometria_stilometria_la_verifica_eseguibile_della_prosa",
-   "community": 102,
+   "community": 1,
    "norm_label": "stilometria — la verifica eseguibile della prosa"
   },
   {
@@ -1632,7 +1632,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_creativita_styledna",
-   "community": 102,
+   "community": 1,
    "norm_label": "styledna.md"
   },
   {
@@ -1642,7 +1642,7 @@
    "source_location": "L15",
    "_origin": "ast",
    "id": "wiki_creativita_styledna_i_12_assi",
-   "community": 102,
+   "community": 1,
    "norm_label": "i 12 assi"
   },
   {
@@ -1652,7 +1652,7 @@
    "source_location": "L37",
    "_origin": "ast",
    "id": "wiki_creativita_styledna_i_tetti_di_salute_una_lezione_pagata",
-   "community": 102,
+   "community": 1,
    "norm_label": "i tetti di salute — una lezione pagata"
   },
   {
@@ -1662,7 +1662,7 @@
    "source_location": "L48",
    "_origin": "ast",
    "id": "wiki_creativita_styledna_la_deroga_si_guadagna_non_si_dichiara",
-   "community": 102,
+   "community": 1,
    "norm_label": "la deroga si guadagna, non si dichiara"
   },
   {
@@ -1672,7 +1672,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_creativita_styledna_styledna_lo_stile_come_vettore_misurabile",
-   "community": 102,
+   "community": 1,
    "norm_label": "styledna — lo stile come vettore misurabile"
   }
  ],

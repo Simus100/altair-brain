@@ -25,6 +25,13 @@ import argparse, collections, datetime, json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -37,10 +44,10 @@ if __name__ == "__main__":
 
 sys.path.insert(0, ROOT)
 
-GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")
-LEZIONI = os.path.join(ROOT, "engine", "lessons.jsonl")
-INDICE = os.path.join(ROOT, "engine", "search_index.json")
-OUT_DIR = os.path.join(ROOT, "engine", "digest")
+GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
+LEZIONI = os.path.join(BRAIN, "engine", "lessons.jsonl")
+INDICE = os.path.join(BRAIN, "engine", "search_index.json")
+OUT_DIR = os.path.join(BRAIN, "engine", "digest")
 
 MAX_FILE_CONFRONTO = 1500   # oltre, il doppio ciclo non e piu accettabile
 SOGLIA_SIMILI = 0.55        # sovrapposizione di termini oltre cui due note si somigliano
@@ -86,7 +93,7 @@ def digest_per_area():
 
     # Solo le macroaree dichiarate: areas.json e il registro canonico. Cartelle
     # tecniche come _inbox non sono aree e non meritano un digest.
-    reg = _carica_json(os.path.join(ROOT, "areas.json"), {}) or {}
+    reg = _carica_json(os.path.join(BRAIN, "areas.json"), {}) or {}
     valide = {a["id"] for a in reg.get("areas", [])} or None
 
     per_area = collections.defaultdict(lambda: {"nodi": [], "file": set()})
