@@ -7,9 +7,9 @@
 
 ## Sintesi
 
-- lezioni registrate: **33** · sessioni graphify: **1**
-- esiti: 25 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
-- skill piu attive: manuale (14), triage (7), aion (3), atlante-3d (3), oracle (2)
+- lezioni registrate: **34** · sessioni graphify: **1**
+- esiti: 26 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
+- skill piu attive: manuale (14), triage (7), aion (3), atlante-3d (3), officina (3)
 - temi ricorrenti: verifica (5), metodo (5), architettura (4), grafo (3), visualizzazione (3), guardie (3), separazione (3), report (2)
 
 ## Ancoraggi consolidati
@@ -61,6 +61,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una correzione. Se non lo porta, non e qui._
 
+- **Quando** un messaggio di successo elenca cosa e' stato verificato → **componilo da cio' che il codice ha davvero controllato, mai da una formula fissa: un verde che nomina verifiche mai eseguite rassicura e basta**
+  - appiglio: `guardia: graph_health diceva 'wiki/aion e raw/aion coesi' anche al brain cucina, che quelle aree non le ha`
 - **Quando** consegni uno scheletro che porta con se' il proprio banco di prova → **lancia i suoi test DENTRO una copia vergine: le guardie scritte sul brain di riferimento presuppongono training, registro e contenuto, e senza dichiararlo diventano rosse dove non hanno oggetto**
   - appiglio: `misura: 25 test rossi su 65 in una copia di core/ appena estratta; dopo la dichiarazione dei presupposti, 33 verdi 38 saltati 0 rossi`
 - **Quando** sposti una cartella di contenuto e un controllo la nomina con un percorso relativo alla radice → **verifica che il percorso ESISTA prima di confrontarlo: git diff --quiet su un percorso assente esce 0 e il controllo diventa un no-op verde**

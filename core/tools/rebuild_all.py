@@ -40,6 +40,20 @@ if __name__ == "__main__":
 
 PY = sys.executable
 
+# Passi che hanno senso solo se il brain possiede un certo INGRESSO. Non basta
+# guardare se il tool esiste: in un brain autosufficiente il tool di un training non
+# adottato non c'e' e il passo si salta da solo, ma quando e' l'OFFICINA a ricostruire
+# un altro brain i tool ci sono tutti — e la pipeline provava a generare la wiki di
+# 'cucina' da un modello AION che quel brain non ha mai adottato, fallendo al primo
+# passo. Il presupposto e' il file, non lo strumento.
+INGRESSO = {
+    "tools/gen_wiki_from_model.py": "engine/aion.model.json",
+    "tools/validate_model.py":      "engine/aion.model.json",
+    "tools/build_iching_db.py":     "raw/aion/aion-oracle.md",
+    "tools/apply_bridges.py":       "engine/bridges.json",
+    "tools/apply_provenance.py":    "engine/provenance.json",
+}
+
 STEPS = [
     ("wiki dal modello", [PY, "tools/gen_wiki_from_model.py"]),
     ("validazione modello", [PY, "tools/validate_model.py"]),
@@ -78,6 +92,10 @@ for name, cmd in STEPS:
     # primo passo, prima di dire qualsiasi cosa di utile.
     if len(cmd) > 1 and cmd[0] == PY and not os.path.exists(os.path.join(ROOT, cmd[1])):
         print(f"~~ {name}: SALTATO ({cmd[1]} non presente in questa installazione)")
+        continue
+    _ing = INGRESSO.get(cmd[1] if len(cmd) > 1 else "")
+    if _ing and not os.path.exists(os.path.join(BRAIN, _ing)):
+        print(f"~~ {name}: SALTATO (questo brain non ha {_ing})")
         continue
     print(f"== {name} ==")
     # I tool del motore vivono nell'officina (ROOT) e sanno da soli dove sta il

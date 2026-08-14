@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "tools/build_views_index.py": {
-    "mtime": 1786647746.322302,
-    "ast_hash": "936034fd1ee4e176e54e6c3344bd04e0",
+    "mtime": 1786731963.5877142,
+    "ast_hash": "8543f05aeb56e6a7f25a5adf0cbb9363",
     "semantic_hash": ""
   },
   "tools/check_privacy.py": {
@@ -305,7 +305,7 @@
     "semantic_hash": ""
   },
   "engine/LESSONS.md": {
-    "mtime": 1786731827.236402,
+    "mtime": 1786731899.7820888,
     "ast_hash": "7e9f5742ef6dcb61ace263b0ee4ee9a5",
     "semantic_hash": ""
   },
@@ -405,18 +405,18 @@
     "semantic_hash": ""
   },
   "engine/digest/ricette.json": {
-    "mtime": 1786731827.290916,
+    "mtime": 1786731899.837391,
     "ast_hash": "fbb6d6309c128e9a318ed88abef08fda",
     "semantic_hash": ""
   },
   "engine/digest/tecniche.json": {
-    "mtime": 1786731827.290916,
+    "mtime": 1786731899.837391,
     "ast_hash": "9d279cee19726b6f1829415231e1f223",
     "semantic_hash": ""
   },
   "engine/search_index.json": {
-    "mtime": 1786731827.2070005,
-    "ast_hash": "29962ef978d565c83644eba8cf571773",
+    "mtime": 1786731899.7505155,
+    "ast_hash": "adc786824e5bab06a6a1ed25b372c53a",
     "semantic_hash": ""
   }
 }

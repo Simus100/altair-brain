@@ -39,9 +39,17 @@ if __name__ == "__main__":
 GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 
 # Cartelle che NON sono conoscenza del brain:
-#   core/    il prodotto generato — copia del motore, non sapere
-#   brains/  le altre istanze — hanno il proprio grafo, non vanno nel nostro
-ESCLUSE = ("core/", "brains/")
+#   core/      il prodotto generato — copia del motore, non sapere
+#   brains/    le altre istanze — hanno il proprio grafo, non vanno nel nostro
+#   training/  il training COME PACCHETTO. Quando un brain lo adotta, le fonti
+#              entrano in raw/ e il modello in engine/: quella e' la copia viva.
+#              La cartella training/ resta la copia CEDIBILE, identica byte per byte
+#              (verificato: 7 file su 7). Lasciarla nel grafo faceva comparire la
+#              stessa conoscenza due volte — 670 nodi doppi su 2436 — gonfiando la
+#              centralita' di cio' che e' duplicato e squilibrando le aree. In un
+#              brain che il training NON l'ha adottato e' pura zavorra: nel brain
+#              'cucina' erano 670 nodi su 1252, sapere di nessuno.
+ESCLUSE = ("core/", "brains/", "training/")
 
 
 def _rel(nodo):

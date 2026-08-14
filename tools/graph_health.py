@@ -3,12 +3,13 @@
 altair-brain — controllo di salute del grafo (per CI e uso locale).
 
 Verifica:
-1. i nodi wiki/aion formano UN solo componente connesso;
-2. i nodi raw/aion formano UN solo componente connesso;
+1. la wiki di OGNI area dichiarata in areas.json forma UN solo componente connesso;
+2. lo strato grezzo delle sole aree che si dichiarano 'coesa' fa altrettanto;
 3. nessun nodo isolato (grado 0) sotto raw/, wiki/, engine/;
 4. ANTI-REGRESSIONE: il numero di nodi non cala oltre il 20% rispetto al commit
    precedente (il workflow fa 'rm graph.json' e bypassa la protezione nativa di
-   graphify). Override consapevole: variabile d'ambiente ALTAIR_ALLOW_SHRINK=1.
+   graphify). Calo voluto: ALTAIR_ALLOW_SHRINK=1 in locale, oppure il marcatore
+   [grafo-ok] nel messaggio di commit (che e' cio' che legge la CI).
 
 Exit 0 = sano; 1 = problemi. Uso:  python tools/graph_health.py
 """
@@ -161,10 +162,22 @@ try:
         if prev_nodes >= MIN_BASELINE and cur_nodes < prev_nodes * (1 - SHRINK_TOLERANCE):
             msg = (f"ANTI-REGRESSIONE: nodi {prev_nodes} -> {cur_nodes} "
                    f"(calo > {int(SHRINK_TOLERANCE*100)}%)")
-            if os.environ.get("ALTAIR_ALLOW_SHRINK") == "1":
+            # Un calo VOLUTO si dichiara. In locale con la variabile d'ambiente; in
+            # CI con un marcatore nel messaggio di commit, perche' li' non c'e' nessuno
+            # a esportarla e l'alternativa sarebbe disattivare la guardia per sempre.
+            # Stessa convenzione gia' in uso per .claude/ e .agents/ ([hooks-ok]):
+            # la deroga vive nella storia, dove resta leggibile a chi indaghera' dopo.
+            _msg = ""
+            try:
+                _msg = subprocess.run(["git", "log", "-1", "--format=%B"], cwd=ROOT,
+                                      capture_output=True, text=True, timeout=10).stdout
+            except Exception:
+                pass
+            if os.environ.get("ALTAIR_ALLOW_SHRINK") == "1" or "[grafo-ok]" in _msg:
                 print(f"[avviso, override attivo] {msg}")
             else:
-                problems.append(msg + " — se voluto: ALTAIR_ALLOW_SHRINK=1")
+                problems.append(msg + " — se voluto: ALTAIR_ALLOW_SHRINK=1, "
+                                "oppure [grafo-ok] nel messaggio di commit")
     else:
         print(f"[info] baseline {prev_ref} non disponibile, anti-regressione saltata")
 except Exception as ex:
@@ -191,5 +204,10 @@ if problems:
         print("  -", p)
     sys.exit(1)
 
+# Il messaggio dice cosa e' STATO CONTROLLATO in questo brain, non una formula fissa.
+# Diceva "wiki/aion e raw/aion coesi" a chiunque, anche a un brain di cucina che
+# quelle aree non le ha: un verde che nomina verifiche mai eseguite e' la stessa
+# classe di difetto del 'git diff' su un percorso inesistente — rassicura e basta.
+_verificate = ", ".join([f"wiki/{a}" for a in area_ids] + [f"raw/{a}" for a in coese]) or "nessuna area"
 print(f"Grafo sano: {len(nodes)} nodi, {len(g['links'])} archi; "
-      f"wiki/aion e raw/aion coesi; nessun orfano.")
+      f"coesione verificata su {_verificate}; nessun orfano.")
