@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "fae9a3d811ccc050de0991c2ec07da98a9eea192",
+ "built_at_commit": "92801e720f6160a88b6466d94c948d5f5254df4b",
  "nodes": [
   {
    "label": "BaseModel",
@@ -239,7 +239,7 @@
    "label": "Osservazioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L79",
+   "source_location": "L81",
    "_origin": "ast",
    "id": "engine_lessons_osservazioni_recenti",
    "community": 62,
@@ -362,7 +362,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_minitems",
-   "community": 35,
+   "community": 47,
    "norm_label": "minitems"
   },
   {
@@ -372,7 +372,7 @@
    "source_location": "L55",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_componenti_type",
-   "community": 35,
+   "community": 47,
    "norm_label": "type"
   },
   {
@@ -622,7 +622,7 @@
    "source_location": "L25",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_items",
-   "community": 15,
+   "community": 47,
    "norm_label": "items"
   },
   {
@@ -632,7 +632,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_minitems",
-   "community": 15,
+   "community": 35,
    "norm_label": "minitems"
   },
   {
@@ -642,7 +642,7 @@
    "source_location": "L24",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_modalita_type",
-   "community": 15,
+   "community": 35,
    "norm_label": "type"
   },
   {
@@ -722,7 +722,7 @@
    "source_location": "L54",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_componenti",
-   "community": 35,
+   "community": 47,
    "norm_label": "componenti"
   },
   {
@@ -812,7 +812,7 @@
    "source_location": "L23",
    "_origin": "ast",
    "id": "engine_schema_aion_model_schema_properties_modalita",
-   "community": 15,
+   "community": 35,
    "norm_label": "modalita"
   },
   {
@@ -13831,7 +13831,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L79",
+   "source_location": "L81",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_osservazioni_recenti",

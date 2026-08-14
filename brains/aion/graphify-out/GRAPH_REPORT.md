@@ -1,16 +1,16 @@
 # Graph Report - aion  (2026-08-14)
 
 ## Corpus Check
-- 271 files · ~290,029 words
+- 271 files · ~290,116 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2436 nodes · 3071 edges · 278 communities (255 shown, 23 thin omitted)
+- 2436 nodes · 3071 edges · 277 communities (254 shown, 23 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fae9a3d8`
+- Built from commit: `92801e72`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,7 +42,6 @@
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
@@ -301,7 +300,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (278 total, 23 thin omitted)
+## Communities (277 total, 23 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -364,8 +363,8 @@ Cohesion: 0.14
 Nodes (11): Algebra relazionale, Docker, draw.io, Jupyter Notebook, MongoDB, PostgreSQL, Power BI, Progettazione di un database (+3 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.11
-Nodes (19): properties, type, $ref, items, minItems, type, type, label (+11 more)
+Cohesion: 0.13
+Nodes (15): properties, type, $ref, type, label, livello, priorita, ruolo (+7 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.11
@@ -384,8 +383,8 @@ Cohesion: 0.15
 Nodes (17): La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini, Un solo vicino condiviso e coincidenza, non segnale: sotto soglia si tace., Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif, test_adamic_adar_formula_corretta(), test_struttura_esclude_gli_hub(), test_struttura_non_propone_coppie_gia_collegate(), test_struttura_scarta_il_vicino_singolo(), test_struttura_sul_grafo_reale_e_pulita() (+9 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.12
+Nodes (10): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 017 - Generator meta-ciclico (+2 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.15
@@ -411,13 +410,9 @@ Nodes (8): _file(), graph(), graph_compact(), model(), reasoner(), view_atlas(),
 Cohesion: 0.12
 Nodes (16): items, type, items, type, items, type, $ref, collabora (+8 more)
 
-### Community 27 - "Community 27"
-Cohesion: 0.17
-Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
-
 ### Community 28 - "Community 28"
-Cohesion: 0.20
-Nodes (8): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Livello Struttura / Logica, Modalita [ANALYTIC_CORE]
+Cohesion: 0.24
+Nodes (7): AION_Analyst, AION_DeepLogicCore, AION_Fabula, AION_Oracle, AION_Vision, Livello Operativita, Modalita [ANALYTIC_CORE]
 
 ### Community 29 - "Community 29"
 Cohesion: 0.17
@@ -445,7 +440,7 @@ Nodes (14): 0. MEMORIA — consulta le lezioni apprese, 1. INTAKE — classifica
 
 ### Community 35 - "Community 35"
 Cohesion: 0.14
-Nodes (14): minItems, type, minItems, type, type, properties, componenti, livelli (+6 more)
+Nodes (14): minItems, type, minItems, type, type, properties, livelli, modalita (+6 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.31
@@ -492,8 +487,8 @@ Cohesion: 0.17
 Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 more)
 
 ### Community 47 - "Community 47"
-Cohesion: 0.21
-Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
+Cohesion: 0.16
+Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 more)
 
 ### Community 48 - "Community 48"
 Cohesion: 0.26
@@ -513,11 +508,11 @@ Nodes (16): items, minItems, type, items, minItems, type, items, minItems (+8 mo
 
 ### Community 52 - "Community 52"
 Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
+Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
 
 ### Community 53 - "Community 53"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.12
+Nodes (12): AION_ETHOS, AION_SUPERIA, AION - modello di pensiero, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica, Livello Orchestrazione / Stile (+4 more)
 
 ### Community 54 - "Community 54"
 Cohesion: 0.20

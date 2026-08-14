@@ -7,8 +7,8 @@
 
 ## Sintesi
 
-- lezioni registrate: **32** · sessioni graphify: **1**
-- esiti: 24 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
+- lezioni registrate: **33** · sessioni graphify: **1**
+- esiti: 25 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
 - skill piu attive: manuale (14), triage (7), aion (3), atlante-3d (3), oracle (2)
 - temi ricorrenti: verifica (5), metodo (5), architettura (4), grafo (3), visualizzazione (3), guardie (3), separazione (3), report (2)
 
@@ -61,6 +61,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una correzione. Se non lo porta, non e qui._
 
+- **Quando** consegni uno scheletro che porta con se' il proprio banco di prova → **lancia i suoi test DENTRO una copia vergine: le guardie scritte sul brain di riferimento presuppongono training, registro e contenuto, e senza dichiararlo diventano rosse dove non hanno oggetto**
+  - appiglio: `misura: 25 test rossi su 65 in una copia di core/ appena estratta; dopo la dichiarazione dei presupposti, 33 verdi 38 saltati 0 rossi`
 - **Quando** sposti una cartella di contenuto e un controllo la nomina con un percorso relativo alla radice → **verifica che il percorso ESISTA prima di confrontarlo: git diff --quiet su un percorso assente esce 0 e il controllo diventa un no-op verde**
   - appiglio: `guardia: tests/test_officina.py::test_la_ci_non_verifica_percorsi_inesistenti — sei controlli di determinismo della CI erano diventati no-op`
 - **Quando** verifichi un'architettura multi-istanza con copie temporanee → **creane una VERA e lasciala: le copie usa-e-getta nascondono i difetti che nascono dalla convivenza**
@@ -80,7 +82,7 @@ _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una c
 
 ## Osservazioni recenti
 
-_Senza appiglio esterno: contesto, non regole. Da verificare prima di farci affidamento._
+_Senza appiglio esterno: contesto, non regole. Da verificare prima di farci affidamento. Il registro le conserva intere: `tools/search.py`._
 
 - **2026-08-12** _((triage, utile))_ — Al quinto caso non si tappa il tool: si chiude la classe. 30 tool su 34 erano esposti allo stesso UnicodeEncodeError. Ma rendere OBBLIGATORIO l'import della protezione ha rotto report_update in un mini-repo senza console.py: una protezione facoltativa che impedisce l'avvio e' peggio del guasto che previene, quindi l'import va reso non fatale. Trovata anche un'incoerenza a monte: freshness_report consigliava add_frontmatter --apply su 57 file, ma il tool ne toccava zero (55 in strato generato, 2 fuori copertura). Un rapporto che consiglia un comando inutile insegna a ignorare i rapporti. E TARG
 - **2026-08-12** _((oracle, utile))_ — Tuono che erompe dalla terra: l'energia e' reale e viene dal basso, ma la linea 6 avverte di non farsi travolgere e la trasformazione porta a 23, dove 'non e' propizio andare in alcun luogo'. La condotta indicata e' disciplinare la scarica emotiva con l'esperienza (linea 4), non cavalcarla.

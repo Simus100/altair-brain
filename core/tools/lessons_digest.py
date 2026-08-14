@@ -42,7 +42,16 @@ MEM_DIR = os.path.join(BRAIN, "graphify-out", "memory")
 OUT = os.path.join(BRAIN, "engine", "LESSONS.md")
 
 SOGLIA_CONSOLIDATA = 2      # citazioni utili oltre le quali una lezione e affidabile
-RECENTI = 12                # quante osservazioni mostrare per esteso
+# LE SINTESI DELLE CONVERSAZIONI RESTANO NEL PRIOR, PER SCELTA DELL'AUTORE.
+# La memoria del brain e' fatta di due cose e servono entrambe: le REGOLE, che dicono
+# cosa fare e portano una prova esterna, e le SINTESI delle sessioni, che dicono cosa
+# e' successo e perche'. Togliere le seconde renderebbe il brain capace di applicare
+# regole senza ricordare da dove vengono.
+# Il rischio resta reale e va tenuto d'occhio, non negato: una sintesi e' prosa scritta
+# dal modello, e se la rilegge ogni giorno col tempo SEMBRA verificata. Per questo sono
+# marcate come contesto, restano sotto le regole, e il tetto MAX_KB vale su tutto.
+RECENTI = 12                # quante osservazioni mostrare
+RECENTI_CARATTERI = 0       # 0 = per intero (la sintesi non si taglia)
 MAX_REGOLE = 25             # quante regole operative portare nel prior
 
 # TETTO DI CONTESTO — la seconda instabilita', dopo l'autofagia.
@@ -156,10 +165,13 @@ note = [v for v in voci if v.get("nota") and not v.get("allora")]
 if note:
     righe += ["## Osservazioni recenti", "",
               "_Senza appiglio esterno: contesto, non regole. Da verificare prima di "
-              "farci affidamento._", ""]
+              "farci affidamento. Il registro le conserva intere: `tools/search.py`._", ""]
     for v in sorted(note, key=lambda x: x.get("ts", ""), reverse=True)[:RECENTI]:
         giorno = (v.get("ts") or "")[:10]
-        righe.append(f"- **{giorno}** _(({v.get('skill', '?')}, {v.get('esito', '?')}))_ — {v['nota']}")
+        testo = v["nota"].strip()
+        if RECENTI_CARATTERI and len(testo) > RECENTI_CARATTERI:
+            testo = testo[:RECENTI_CARATTERI].rsplit(" ", 1)[0] + " […]"
+        righe.append(f"- **{giorno}** _(({v.get('skill', '?')}, {v.get('esito', '?')}))_ — {testo}")
     righe.append("")
 
 if not voci and not sessioni:

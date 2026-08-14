@@ -23,9 +23,19 @@ try:
 except ImportError:
     BRAIN = ROOT
 
+import pytest
+
 sys.path.insert(0, str(ROOT))
 
-from tools.oracle_cast import attribute_reading, cast_reading, search_by_tags  # noqa: E402
+# L'oracolo appartiene al TRAINING aion, non al motore: in un brain che non l'ha
+# adottato il modulo non esiste. Saltare e' la stessa regola che gia' vale nella
+# pipeline (un passo il cui tool manca viene saltato, non fa fallire tutto) — senza
+# di essa lo scheletro ceduto non riusciva nemmeno a raccogliere i propri test.
+_oracolo = pytest.importorskip("tools.oracle_cast",
+                               reason="training aion non adottato: nessun oracolo")
+attribute_reading = _oracolo.attribute_reading
+cast_reading = _oracolo.cast_reading
+search_by_tags = _oracolo.search_by_tags
 
 
 # ---------------- attribuzione decisionale (metodo canonico dei report) ----------------

@@ -12,12 +12,16 @@ Verifica le due proprieta su cui si basa la sicurezza dello strumento:
 """
 import json
 import sys
+
+import pytest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-import tools.apply_iching_relations as air  # noqa: E402
+# Strumento del TRAINING aion: assente in un brain che non l'ha adottato.
+air = pytest.importorskip("tools.apply_iching_relations",
+                          reason="training aion non adottato")
 
 
 def _grafo_minimo():

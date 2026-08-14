@@ -46,6 +46,13 @@ def run_graphify(args: list) -> str:
                            capture_output=True, text=True, timeout=TIMEOUT)
     except subprocess.TimeoutExpired:
         raise BrainError(504, "graphify: timeout.")
+    except OSError as e:
+        # Il contratto di questo endpoint e' "degrada o funziona", mai "esplode".
+        # graphify_available() dice che l'eseguibile c'e', non che l'ambiente sia
+        # sano: cwd inesistente, permessi, binario non eseguibile arrivavano qui come
+        # eccezione non gestita e diventavano un 500 con traccia. Un brain appena
+        # installato e' esattamente il caso in cui succede.
+        raise BrainError(503, f"graphify non eseguibile in questo ambiente: {e}")
     if p.returncode != 0:
         raise BrainError(500, f"graphify errore: {p.stderr.strip()[:500]}")
     return p.stdout

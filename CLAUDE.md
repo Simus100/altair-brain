@@ -95,7 +95,10 @@ Chiudi ogni lavoro significativo registrando cosa hai imparato. Confluisce in
 
 **Due livelli, e la differenza conta.**
 
-*Osservazione* — contesto, conservato e cercabile, ma **non** entra nel prior:
+*Osservazione* — la **sintesi di una sessione**: cosa e' successo e perche'. Entra nel
+prior come CONTESTO (sezione «Osservazioni recenti», le 12 piu' recenti per intero), mai
+fra le regole. Il registro le conserva tutte per sempre e `tools/search.py` le ritrova:
+il prior mostra le ultime, non le uniche.
 ```bash
 python tools/lesson_log.py --skill <nome> --domanda "..." --esito utile|vicolo-cieco|corretto|aperto --nota "..."
 ```

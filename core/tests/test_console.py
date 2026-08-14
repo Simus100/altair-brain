@@ -25,6 +25,12 @@ import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools"
+sys.path.insert(0, str(ROOT))
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = pathlib.Path(_b)
+except ImportError:
+    BRAIN = ROOT
 
 # Moduli di sola libreria: non hanno una riga di comando, non stampano.
 NON_ESEGUIBILI = {"__init__.py", "console.py", "frontmatter.py"}
@@ -101,9 +107,21 @@ def test_la_guardia_regge_un_carattere_fuori_tabella(tmp_path):
 @pytest.mark.parametrize("tool", ["search.py", "style_check.py", "oracle_cast.py"])
 def test_i_tre_tool_gia_colpiti_non_muoiono_piu(tool):
     """Regressione sui casi reali: sono i tre che hanno fallito davanti all'utente."""
+    # style_check appartiene al PLUGIN scrittura, oracle_cast al TRAINING aion:
+    # in un brain che non li ha, il tool non esiste e non c'e' nulla da proteggere.
+    if not (TOOLS / tool).exists():
+        pytest.skip(f"{tool} non installato in questo brain")
+    # Il bersaglio non puo' essere il file di UN brain preciso: si prende una pagina
+    # qualsiasi del brain corrente, altrimenti il test vale solo per chi lo ha scritto.
+    # la PIU LUNGA: sotto le ~50 parole style_check si rifiuta di misurare, e il test
+    # verrebbe rosso per il motivo sbagliato — qui si verifica la console, non lo stile
+    pagine = sorted(((BRAIN / "wiki").rglob("*.md") if (BRAIN / "wiki").is_dir() else []),
+                    key=lambda p: p.stat().st_size, reverse=True)
+    if tool == "style_check.py" and not pagine:
+        pytest.skip("nessuna pagina curata da verificare")
     argomenti = {
         "search.py": ["analisi dei dati", "--top", "2"],
-        "style_check.py": ["brains/aion/wiki/divulgazione/index.md"],
+        "style_check.py": [str(pagine[0]) if pagine else ""],
         "oracle_cast.py": ["--hexagram", "16"],
     }[tool]
     amb = dict(os.environ)
