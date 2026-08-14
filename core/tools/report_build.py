@@ -271,4 +271,4 @@ html = html.replace("</body>", feature + "\n</body>", 1)
 
 with open(OUT, "w", encoding="utf-8", newline="\n") as f:
     f.write(html)
-print(f"living report generato: {os.path.relpath(OUT, ROOT)} ({len(html)} byte)")
+print(f"living report generato: {os.path.relpath(OUT, BRAIN)} ({len(html)} byte)")

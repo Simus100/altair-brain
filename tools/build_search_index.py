@@ -145,7 +145,7 @@ def spezza(testo, rel):
 def raccogli_percorsi():
     trovati = []
     for base in CARTELLE:
-        radice = os.path.join(ROOT, base)
+        radice = os.path.join(BRAIN, base)
         if not os.path.isdir(radice):
             continue
         for root, dirs, files in os.walk(radice):
@@ -153,14 +153,14 @@ def raccogli_percorsi():
             for f in files:
                 if f.endswith(ESTENSIONI):
                     trovati.append(
-                        os.path.relpath(os.path.join(root, f), ROOT).replace("\\", "/"))
+                        os.path.relpath(os.path.join(root, f), BRAIN).replace("\\", "/"))
     return sorted(trovati)
 
 
 documenti, postings, df = [], {}, {}
 
 for rel in raccogli_percorsi():
-    testo = leggi(os.path.join(ROOT, rel))
+    testo = leggi(os.path.join(BRAIN, rel))
     if not testo:
         continue
     corpo, meta = togli_frontmatter(testo)

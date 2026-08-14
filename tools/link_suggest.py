@@ -54,7 +54,7 @@ def pagine_wiki(area=None):
         for f in sorted(files):
             if not f.endswith(".md"):
                 continue
-            rel = os.path.relpath(os.path.join(root, f), ROOT).replace("\\", "/")
+            rel = os.path.relpath(os.path.join(root, f), BRAIN).replace("\\", "/")
             if area and f"/{area}/" not in rel:
                 continue
             fuori.append(rel)
@@ -62,7 +62,7 @@ def pagine_wiki(area=None):
 
 
 def contenuto(rel):
-    with open(os.path.join(ROOT, rel), encoding="utf-8") as f:
+    with open(os.path.join(BRAIN, rel), encoding="utf-8") as f:
         t = f.read()
     s = t.lstrip()
     if s.startswith("---"):                      # via il front-matter
@@ -295,7 +295,7 @@ def main():
 
     testo_finale = "\n".join(righe)
     if a.out:
-        with open(os.path.join(ROOT, a.out), "w", encoding="utf-8", newline="\n") as f:
+        with open(os.path.join(BRAIN, a.out), "w", encoding="utf-8", newline="\n") as f:
             f.write(testo_finale + "\n")
         print(f"{len(proposte)} proposte ({len(intercampo)} intercampo) -> {a.out}")
     else:

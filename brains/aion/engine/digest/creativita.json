@@ -1,0 +1,68 @@
+{
+  "centrali": [
+    {
+      "dove": "raw/creativita/bookforge/stylometry.py",
+      "grado": 15,
+      "nodo": "stylometry.py"
+    },
+    {
+      "dove": "wiki/creativita/index.md",
+      "grado": 14,
+      "nodo": "index.md"
+    },
+    {
+      "dove": "raw/creativita/bookforge/stylometry.py",
+      "grado": 11,
+      "nodo": "analyze()"
+    },
+    {
+      "dove": "raw/creativita/bookforge/anti-ai.md",
+      "grado": 10,
+      "nodo": "Sistema anti-AI e regole dell'italiano"
+    },
+    {
+      "dove": "wiki/creativita/stato-narrativo.md",
+      "grado": 10,
+      "nodo": "stato-narrativo.md"
+    },
+    {
+      "dove": "raw/creativita/bookforge/antologia.md",
+      "grado": 9,
+      "nodo": "Antologia della voce — il modello positivo"
+    },
+    {
+      "dove": "wiki/creativita/carta-della-prosa.md",
+      "grado": 9,
+      "nodo": "carta-della-prosa.md"
+    },
+    {
+      "dove": "wiki/creativita/fasi-editoriali.md",
+      "grado": 9,
+      "nodo": "fasi-editoriali.md"
+    },
+    {
+      "dove": "raw/creativita/bookforge/psicologia.md",
+      "grado": 8,
+      "nodo": "Psicologia del personaggio (fiction)"
+    },
+    {
+      "dove": "raw/creativita/bookforge/scrittura.md",
+      "grado": 8,
+      "nodo": "Scrittura capitolo per capitolo (Fase 4)"
+    },
+    {
+      "dove": "wiki/creativita/anti-ai.md",
+      "grado": 8,
+      "nodo": "anti-ai.md"
+    },
+    {
+      "dove": "wiki/creativita/stilometria.md",
+      "grado": 8,
+      "nodo": "stilometria.md"
+    }
+  ],
+  "file": 22,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [],
+  "nodi": 167
+}

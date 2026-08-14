@@ -17,8 +17,16 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
+
+import pathlib as _pl
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = _pl.Path(_b) if isinstance(ROOT, _pl.Path) else _b
+except ImportError:
+    BRAIN = ROOT
+
 GOLDEN = ROOT / "tests" / "golden_queries.json"
-GRAPH = ROOT / "graphify-out" / "graph.json"
+GRAPH = BRAIN / "graphify-out" / "graph.json"
 
 
 def _norm(p: str) -> str:

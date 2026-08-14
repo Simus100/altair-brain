@@ -51,6 +51,25 @@ jobs:
           pip install -q pip-audit
           pip-audit -r server/requirements.txt --strict
 
+      # Dove vive il CONTENUTO. NON e' scritto qui: si legge dal registro, come fa
+      # tools/brain.py. Scriverlo a mano significherebbe che spostare un brain
+      # trasforma ogni controllo sottostante in un no-op silenzioso — che e'
+      # esattamente cio' che e' successo quando il brain e' passato alla radice.
+      - name: Brain attivo (dal registro)
+        run: |
+          BRAIN=$(python -c "import tools.brain, os; print(os.path.relpath(tools.brain.BRAIN))")
+          echo "BRAIN=$BRAIN" >> $GITHUB_ENV
+          echo "brain attivo: $BRAIN"
+
+      # Un 'git diff -- percorso/inesistente' esce SEMPRE 0: se un percorso sparisce,
+      # il controllo che lo usa smette di controllare senza dire nulla. Qui si rompe.
+      - name: I percorsi verificati esistono davvero
+        run: |
+          for p in "$BRAIN/wiki" "$BRAIN/engine" "$BRAIN/graphify-out" "$BRAIN/areas.json" core; do
+            [ -e "$p" ] || { echo "::error::percorso di verifica assente: $p"; exit 1; }
+          done
+          echo "percorsi ok"
+
       - name: Sintassi Python (server + tools + tests)
         run: python -m compileall -q server tools tests
 
@@ -60,7 +79,7 @@ jobs:
       - name: DB Oracle coerente col grezzo (fonte unica)
         run: |
           python tools/build_iching_db.py
-          if ! git diff --quiet -- engine/iching.db.json; then
+          if ! git diff --quiet -- "$BRAIN/engine/iching.db.json"; then
             echo "::error::engine/iching.db.json non coerente con raw/aion/aion-oracle.md — rigenera con tools/build_iching_db.py"
             exit 1
           fi
@@ -68,16 +87,16 @@ jobs:
       - name: Wiki coerente col modello (fonte unica)
         run: |
           python tools/gen_wiki_from_model.py
-          if ! git diff --quiet -- wiki/; then
+          if ! git diff --quiet -- "$BRAIN/wiki/"; then
             echo "::error::wiki/aion non coerente con engine/aion.model.json — rigenera con tools/gen_wiki_from_model.py"
-            git diff --stat -- wiki/
+            git diff --stat -- "$BRAIN/wiki/"
             exit 1
           fi
 
       - name: Sottografi per area coerenti col grafo
         run: |
           python tools/build_area_graphs.py
-          if ! git diff --quiet -- graphify-out/areas; then
+          if ! git diff --quiet -- "$BRAIN/graphify-out/areas"; then
             echo "::error::graphify-out/areas non coerente con graph.json — rigenera con tools/build_area_graphs.py"
             exit 1
           fi
@@ -87,7 +106,7 @@ jobs:
       - name: Atlante 3D coerente col grafo
         run: |
           python tools/build_atlas_view.py
-          if ! git diff --quiet -- graphify-out/graph-atlas.html; then
+          if ! git diff --quiet -- "$BRAIN/graphify-out/graph-atlas.html"; then
             echo "::error::graphify-out/graph-atlas.html non coerente con graph.json — rigenera con tools/build_atlas_view.py"
             exit 1
           fi
@@ -95,7 +114,7 @@ jobs:
       - name: Porta delle viste coerente col grafo
         run: |
           python tools/build_views_index.py
-          if ! git diff --quiet -- graphify-out/index.html; then
+          if ! git diff --quiet -- "$BRAIN/graphify-out/index.html"; then
             echo "::error::graphify-out/index.html non coerente con graph.json — rigenera con tools/build_views_index.py"
             exit 1
           fi
@@ -115,9 +134,12 @@ jobs:
         run: |
           python - <<'EOF'
           import json, sys
-          files = ["areas.json", "engine/aion.model.json", "engine/router.json",
-                   "engine/iching.db.json", "engine/schema/aion.model.schema.json",
-                   "graphify-out/graph.json", "graphify-out/graph-compact.json"]
+          import os
+          B = os.environ["BRAIN"]
+          files = [os.path.join(B, x) for x in
+                   ("areas.json", "engine/aion.model.json", "engine/router.json",
+                    "engine/iching.db.json", "engine/schema/aion.model.schema.json",
+                    "graphify-out/graph.json", "graphify-out/graph-compact.json")]
           bad = []
           for f in files:
               try:
@@ -132,7 +154,7 @@ jobs:
       - name: Indice di ricerca coerente col corpus (fonte unica)
         run: |
           python tools/build_search_index.py
-          if ! git diff --quiet -- engine/search_index.json; then
+          if ! git diff --quiet -- "$BRAIN/engine/search_index.json"; then
             echo "::error::engine/search_index.json non coerente col corpus — rigenera con tools/build_search_index.py"
             exit 1
           fi
@@ -160,7 +182,7 @@ jobs:
       - name: Metriche del brain coerenti col grafo
         run: |
           python tools/graph_metrics.py
-          if ! git diff --quiet -- metrics/; then
+          if ! git diff --quiet -- "$BRAIN/metrics/"; then
             echo "::warning::metrics/graph_metrics.csv non era aggiornato (rigenerato ora)"
           fi
 

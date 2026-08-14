@@ -1,0 +1,68 @@
+{
+  "centrali": [
+    {
+      "dove": "wiki/divulgazione/modello-di-pensiero.md",
+      "grado": 15,
+      "nodo": "modello-di-pensiero.md"
+    },
+    {
+      "dove": "wiki/divulgazione/onesta-argomentativa.md",
+      "grado": 12,
+      "nodo": "onesta-argomentativa.md"
+    },
+    {
+      "dove": "wiki/divulgazione/come-si-spiega.md",
+      "grado": 10,
+      "nodo": "come-si-spiega.md"
+    },
+    {
+      "dove": "wiki/divulgazione/corpus-universalis.md",
+      "grado": 8,
+      "nodo": "corpus-universalis.md"
+    },
+    {
+      "dove": "wiki/divulgazione/modello-di-pensiero.md",
+      "grado": 6,
+      "nodo": "Il modello di pensiero dell'autore"
+    },
+    {
+      "dove": "wiki/divulgazione/onesta-argomentativa.md",
+      "grado": 6,
+      "nodo": "Onestà argomentativa"
+    },
+    {
+      "dove": "raw/divulgazione/metodo-report-verificati.md",
+      "grado": 5,
+      "nodo": "Metodo dei report verificati"
+    },
+    {
+      "dove": "wiki/divulgazione/come-si-spiega.md",
+      "grado": 5,
+      "nodo": "Come si spiega una cosa difficile"
+    },
+    {
+      "dove": "wiki/divulgazione/corpus-universalis.md",
+      "grado": 5,
+      "nodo": "Il corpus universalis.it"
+    },
+    {
+      "dove": "wiki/divulgazione/index.md",
+      "grado": 5,
+      "nodo": "index.md"
+    },
+    {
+      "dove": "raw/divulgazione/README.md",
+      "grado": 4,
+      "nodo": "README.md"
+    },
+    {
+      "dove": "raw/divulgazione/universalis-austerita.md",
+      "grado": 4,
+      "nodo": "universalis-austerita.md"
+    }
+  ],
+  "file": 16,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [],
+  "nodi": 56
+}

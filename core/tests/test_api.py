@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN = "test-token-for-ci"
 os.environ["ALTAIR_API_TOKEN"] = TOKEN
-os.environ["ALTAIR_REPO_DIR"] = str(ROOT)
+os.environ["ALTAIR_REPO_DIR"] = str(ROOT / "brains" / "aion")
 os.environ["ALTAIR_INBOX_DIR"] = tempfile.mkdtemp(prefix="altair_inbox_")
 os.environ["ALTAIR_RATE_LIMIT"] = "10000"  # niente falsi 429 nei test
 

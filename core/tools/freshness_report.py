@@ -91,12 +91,12 @@ def come_data(valore):
 scaduti, da_riverificare, rotti, senza_meta = [], [], [], []
 
 for base in SCANSIONA:
-    for root, _, files in os.walk(os.path.join(ROOT, base)):
+    for root, _, files in os.walk(os.path.join(BRAIN, base)):
         for f in files:
             if not f.endswith(".md"):
                 continue
             p = os.path.join(root, f)
-            rel = os.path.relpath(p, ROOT).replace("\\", "/")
+            rel = os.path.relpath(p, BRAIN).replace("\\", "/")
             meta = leggi_frontmatter(p)
             if meta is None:
                 senza_meta.append(rel)
@@ -106,7 +106,7 @@ for base in SCANSIONA:
             fine = come_data(meta.get("valid_until"))
             if fine and fine < OGGI:
                 rimpiazzo = meta.get("superseded_by", "").strip()
-                if rimpiazzo and not os.path.exists(os.path.join(ROOT, rimpiazzo)):
+                if rimpiazzo and not os.path.exists(os.path.join(BRAIN, rimpiazzo)):
                     rotti.append(f"{rel}: superseded_by punta a un file inesistente "
                                  f"({rimpiazzo})")
                 scaduti.append(f"{rel} (scaduto il {fine}"

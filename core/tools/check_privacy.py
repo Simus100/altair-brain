@@ -73,7 +73,7 @@ def main():
     for rel in tracciati():
         if rel in ESENTI or not rel.endswith((".md", ".txt", ".json", ".jsonl", ".sql", ".py")):
             continue
-        p = os.path.join(ROOT, rel)
+        p = os.path.join(BRAIN, rel)
         try:
             with open(p, encoding="utf-8") as f:
                 testo = f.read()

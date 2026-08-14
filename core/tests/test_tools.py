@@ -15,6 +15,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+import pathlib as _pl
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = _pl.Path(_b) if isinstance(ROOT, _pl.Path) else _b
+except ImportError:
+    BRAIN = ROOT
+
 sys.path.insert(0, str(ROOT))
 
 from tools.oracle_cast import attribute_reading, cast_reading, search_by_tags  # noqa: E402
@@ -130,14 +138,14 @@ def test_frontmatter_idempotente_e_protegge_gli_strati_generati():
     # tutte le note bersaglio sono gia a posto: nessun file da arricchire
     assert "0 file da arricchire" in r.stdout, r.stdout
     # la wiki generata non deve MAI avere front-matter aggiunto a mano
-    generata = (ROOT / "wiki" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
+    generata = (BRAIN / "wiki" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
     assert not generata.lstrip().startswith("---"), \
         "wiki/aion e generata dal modello: front-matter a mano la farebbe divergere"
 
 
 def test_frontmatter_presente_sulle_fonti():
     """Le fonti grezze devono portare provenienza (date/area/reviewed)."""
-    testo = (ROOT / "raw" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
+    testo = (BRAIN / "raw" / "aion" / "aion-oracle.md").read_text(encoding="utf-8")
     assert testo.lstrip().startswith("---")
     testa = testo.lstrip()[3:testo.lstrip().find("\n---")]
     for campo in ("date:", "area:", "reviewed:"):
@@ -174,7 +182,7 @@ def test_ricerca_copre_le_note_grezze_di_metodo():
     con una granularita utile: non un blocco unico per nota."""
     import collections
     import json as _json
-    idx = _json.loads((ROOT / "engine" / "search_index.json").read_text(encoding="utf-8"))
+    idx = _json.loads((BRAIN / "engine" / "search_index.json").read_text(encoding="utf-8"))
     per_file = collections.Counter(
         d["file"] for d in idx["documenti"]
         if d["file"].startswith("raw/data-science/") and d["file"].endswith(".md"))
@@ -199,7 +207,7 @@ def test_ricerca_query_senza_risultati_non_esplode():
 def test_indice_coerente_col_corpus():
     """L'indice committato deve essere quello che il corpus produce ora."""
     import json as _json
-    f = ROOT / "engine" / "search_index.json"
+    f = BRAIN / "engine" / "search_index.json"
     prima = f.read_text(encoding="utf-8")
     subprocess.run([sys.executable, str(ROOT / "tools" / "build_search_index.py")],
                    capture_output=True, text=True, cwd=str(ROOT), check=True)
@@ -212,7 +220,7 @@ def test_indice_coerente_col_corpus():
 def test_metriche_una_riga_per_giorno():
     """La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno."""
     import csv as _csv
-    f = ROOT / "metrics" / "graph_metrics.csv"
+    f = BRAIN / "metrics" / "graph_metrics.csv"
     assert f.exists(), "metriche mai generate: lancia tools/graph_metrics.py"
     with open(f, encoding="utf-8", newline="") as fh:
         righe = list(_csv.DictReader(fh))
@@ -261,7 +269,7 @@ def test_tokenizzazione_query_coerente_con_indice():
     in indicizzazione non sono trovabili e la copertura risulta falsata."""
     import json as _json
     from tools.search import _tokenizza
-    idx = _json.loads((ROOT / "engine" / "search_index.json").read_text(encoding="utf-8"))
+    idx = _json.loads((BRAIN / "engine" / "search_index.json").read_text(encoding="utf-8"))
     assert idx.get("stopword"), "l'indice deve portare con se la lista di stopword"
     assert _tokenizza("chi orchestra gli agenti del modello") == \
         ["orchestra", "agenti", "modello"]
@@ -370,7 +378,7 @@ def test_consolidate_produce_digest_solo_per_aree_reali():
     from tools.consolidate import digest_per_area
     d = digest_per_area()
     assert d, "nessun digest generato"
-    reg = _json.loads((ROOT / "areas.json").read_text(encoding="utf-8"))
+    reg = _json.loads((BRAIN / "areas.json").read_text(encoding="utf-8"))
     valide = {a["id"] for a in reg["areas"]}
     assert set(d) <= valide, f"digest per non-aree: {set(d) - valide}"
     for area, dati in d.items():
@@ -466,7 +474,7 @@ def test_tutte_le_note_raw_hanno_provenienza():
     """Dopo la correzione del parser, nessuna nota deve restare scoperta."""
     from tools.frontmatter import ha_frontmatter
     scoperte = []
-    for base in (ROOT / "raw",):
+    for base in (BRAIN / "raw",):
         for p in base.rglob("*.md"):
             rel = p.relative_to(ROOT).as_posix()
             if "_inbox" in rel:
@@ -507,7 +515,7 @@ def test_resurface_segna_rivista(tmp_path, monkeypatch):
     nota = tmp_path / "n.md"
     nota.write_text("---\ndate: 2026-01-01\nreviewed: 2026-01-01\n---\ncorpo\n",
                     encoding="utf-8")
-    monkeypatch.setattr(rs, "ROOT", str(tmp_path))
+    monkeypatch.setattr(rs, "BRAIN", str(tmp_path))   # la nota vive nel BRAIN, non nell officina
     rs.segna_rivista("n.md")
     testo = nota.read_text(encoding="utf-8")
     assert "reviewed: " in testo and "2026-01-01\nreviewed: 2026-01-01" not in testo
@@ -532,9 +540,9 @@ def test_report_harvest_nota_presente_e_dichiarata():
     """La nota raccolta deve esistere ED essere dichiarata nel registro di
     provenienza: senza dichiarazione resta scollegata e il silo non si chiude."""
     import json as _json
-    nota = ROOT / "raw" / "divulgazione" / "metodo-report-verificati.md"
+    nota = BRAIN / "raw" / "divulgazione" / "metodo-report-verificati.md"
     assert nota.exists(), "nota di metodo non generata (report_harvest.py --apply)"
-    reg = _json.loads((ROOT / "engine" / "provenance.json").read_text(encoding="utf-8"))
+    reg = _json.loads((BRAIN / "engine" / "provenance.json").read_text(encoding="utf-8"))
     dichiarati = {m["wiki"] for m in reg["mappe_dirette"]}
     assert "raw/divulgazione/metodo-report-verificati.md" in dichiarati
 
@@ -549,7 +557,7 @@ def test_cache_ricarica_se_indice_cambia():
     from tools.search import cerca, _cache
     cerca("quartili", top=1)
     primo = _cache.get("idx_mtime")
-    _os.utime(ROOT / "engine" / "search_index.json", None)
+    _os.utime(BRAIN / "engine" / "search_index.json", None)
     cerca("quartili", top=1)
     assert _cache.get("idx_mtime") != primo, "cache non invalidata al cambio del file"
 
@@ -615,7 +623,7 @@ def test_harvest_non_sovrascrive_il_lavoro_umano():
     """La nota vive in raw/ (strato sorgente): integrarla a mano e legittimo, e
     rigenerarla alla cieca cancellerebbe quelle integrazioni senza dirlo."""
     import re as _re
-    nota = ROOT / "raw" / "divulgazione" / "metodo-report-verificati.md"
+    nota = BRAIN / "raw" / "divulgazione" / "metodo-report-verificati.md"
     testo = nota.read_text(encoding="utf-8")
     assert _re.search(r"^generato_hash:\s*\w+", testo, _re.M), \
         "manca l'impronta: senza, non si distingue il generato dal modificato"

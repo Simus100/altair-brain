@@ -68,8 +68,12 @@ def brain_corrente():
 def altri_brain():
     """Gli altri brain del repo, con la porta di ciascuno. Vuoto in un'istanza
     autosufficiente: li' non c'e' un registro, e non ci sono altri brain da vedere."""
+    # La condizione e' l'ESISTENZA del registro, non "BRAIN coincide con ROOT":
+    # quest'ultima era vera solo finche' il brain dell'autore stava nella radice.
+    # Spostato in brains/aion, il selettore spariva da tutte le porte in silenzio.
+    # In un'istanza autosufficiente il registro non c'e' e l'elenco resta vuoto.
     reg = os.path.join(ROOT, "brains", "brains.json")
-    if not os.path.exists(reg) or os.path.abspath(BRAIN) != os.path.abspath(ROOT):
+    if not os.path.exists(reg):
         return []
     try:
         with open(reg, encoding="utf-8") as f:

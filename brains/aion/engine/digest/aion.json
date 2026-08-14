@@ -1,0 +1,68 @@
+{
+  "centrali": [
+    {
+      "dove": "raw/aion/aion-oracle.md",
+      "grado": 79,
+      "nodo": "aion-oracle.md"
+    },
+    {
+      "dove": "wiki/aion/insegnamenti.md",
+      "grado": 29,
+      "nodo": "insegnamenti.md"
+    },
+    {
+      "dove": "wiki/aion/aion-cinematica.md",
+      "grado": 21,
+      "nodo": "aion-cinematica.md"
+    },
+    {
+      "dove": "wiki/aion/aion-fabulatorium.md",
+      "grado": 19,
+      "nodo": "aion-fabulatorium.md"
+    },
+    {
+      "dove": "wiki/aion/aion-strategic-engine.md",
+      "grado": 18,
+      "nodo": "aion-strategic-engine.md"
+    },
+    {
+      "dove": "wiki/aion/aion-superia.md",
+      "grado": 18,
+      "nodo": "aion-superia.md"
+    },
+    {
+      "dove": "wiki/aion/index.md",
+      "grado": 18,
+      "nodo": "index.md"
+    },
+    {
+      "dove": "wiki/aion/aion-hybrid-reasoner.md",
+      "grado": 17,
+      "nodo": "aion-hybrid-reasoner.md"
+    },
+    {
+      "dove": "wiki/aion/aion-synth.md",
+      "grado": 16,
+      "nodo": "aion-synth.md"
+    },
+    {
+      "dove": "wiki/aion/aion-cognition-view.md",
+      "grado": 15,
+      "nodo": "aion-cognition-view.md"
+    },
+    {
+      "dove": "wiki/aion/livello-orchestrazione-stile.md",
+      "grado": 15,
+      "nodo": "livello-orchestrazione-stile.md"
+    },
+    {
+      "dove": "wiki/aion/aion-adaptive-core.md",
+      "grado": 14,
+      "nodo": "aion-adaptive-core.md"
+    }
+  ],
+  "file": 62,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [],
+  "nodi": 645
+}

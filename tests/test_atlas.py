@@ -18,11 +18,19 @@ import sys
 import pytest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+import pathlib as _pl
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = _pl.Path(_b) if isinstance(ROOT, _pl.Path) else _b
+except ImportError:
+    BRAIN = ROOT
+
 sys.path.insert(0, ROOT)
 
 atlas = pytest.importorskip("tools.build_atlas_view")
 
-GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")
+GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 pytestmark = pytest.mark.skipif(not os.path.exists(GRAFO),
                                 reason="graph.json assente: serve 'graphify update .'")
 
@@ -160,7 +168,7 @@ def test_la_porta_apre_le_tre_viste():
     pagina = open(indice.USCITA, encoding="utf-8").read()
     for vista in indice.VISTE:
         assert f'href="{vista["file"]}"' in pagina, f"{vista['file']} non linkato"
-        assert os.path.exists(os.path.join(ROOT, "graphify-out", vista["file"]))
+        assert os.path.exists(os.path.join(BRAIN, "graphify-out", vista["file"]))
     # i link sono RELATIVI: la porta deve funzionare aperta da file://
     assert "https://" not in pagina and "http://" not in pagina
     # i numeri vengono dal grafo, non da un segnaposto

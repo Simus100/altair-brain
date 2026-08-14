@@ -121,7 +121,7 @@ for n in nodes:
     if not rel.endswith(".md") or not etichetta or etichetta == os.path.basename(rel):
         continue
     if rel not in _cache_testi:
-        p = os.path.join(ROOT, rel)
+        p = os.path.join(BRAIN, rel)
         try:
             with open(p, encoding="utf-8") as fh:
                 _cache_testi[rel] = fh.read()

@@ -1,0 +1,711 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "finanza",
+ "built_at_commit": "fae9a3d811ccc050de0991c2ec07da98a9eea192",
+ "nodes": [
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_readme",
+   "community": 225,
+   "norm_label": "readme.md"
+  },
+  {
+   "label": "Ambito",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L13",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_ambito",
+   "community": 225,
+   "norm_label": "ambito"
+  },
+  {
+   "label": "Finanza",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_finanza",
+   "community": 225,
+   "norm_label": "finanza"
+  },
+  {
+   "label": "Note",
+   "file_type": "document",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L20",
+   "_origin": "ast",
+   "id": "raw_finanza_readme_note",
+   "community": 225,
+   "norm_label": "note"
+  },
+  {
+   "label": "universalis-agenzie-di-rating.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-agenzie-di-rating.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_agenzie_di_rating",
+   "community": 248,
+   "norm_label": "universalis-agenzie-di-rating.md"
+  },
+  {
+   "label": "Agenzie di rating: il declino dell'integrità finanziaria",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-agenzie-di-rating.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_agenzie_di_rating_agenzie_di_rating_il_declino_dell_integrità_finanziaria",
+   "community": 248,
+   "norm_label": "agenzie di rating: il declino dell'integrita finanziaria"
+  },
+  {
+   "label": "universalis-bolla-tech-ia.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-bolla-tech-ia.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_bolla_tech_ia",
+   "community": 249,
+   "norm_label": "universalis-bolla-tech-ia.md"
+  },
+  {
+   "label": "La Bolla Tech IA — Tra Realtà e Illusione",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-bolla-tech-ia.md",
+   "source_location": "L11",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_bolla_tech_ia_la_bolla_tech_ia_tra_realtà_e_illusione",
+   "community": 249,
+   "norm_label": "la bolla tech ia — tra realta e illusione"
+  },
+  {
+   "label": "universalis-charles-dow.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-charles-dow.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_charles_dow",
+   "community": 250,
+   "norm_label": "universalis-charles-dow.md"
+  },
+  {
+   "label": "Analisi tecnica dei mercati — 1. Charles Dow",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-charles-dow.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_charles_dow_analisi_tecnica_dei_mercati_1_charles_dow",
+   "community": 250,
+   "norm_label": "analisi tecnica dei mercati — 1. charles dow"
+  },
+  {
+   "label": "universalis-economia-multipolare.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-economia-multipolare.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_economia_multipolare",
+   "community": 251,
+   "norm_label": "universalis-economia-multipolare.md"
+  },
+  {
+   "label": "Economia multipolare",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-economia-multipolare.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_economia_multipolare_economia_multipolare",
+   "community": 251,
+   "norm_label": "economia multipolare"
+  },
+  {
+   "label": "universalis-mercati.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-mercati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_mercati",
+   "community": 252,
+   "norm_label": "universalis-mercati.md"
+  },
+  {
+   "label": "Analisi tecnica dei mercati — 2. I mercati",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-mercati.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_mercati_analisi_tecnica_dei_mercati_2_i_mercati",
+   "community": 252,
+   "norm_label": "analisi tecnica dei mercati — 2. i mercati"
+  },
+  {
+   "label": "universalis-mercato-criptovalutario.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-mercato-criptovalutario.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_mercato_criptovalutario",
+   "community": 253,
+   "norm_label": "universalis-mercato-criptovalutario.md"
+  },
+  {
+   "label": "Analisi tecnica dei mercati — 3. Il mercato criptovalutario",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-mercato-criptovalutario.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_mercato_criptovalutario_analisi_tecnica_dei_mercati_3_il_mercato_criptovalutario",
+   "community": 253,
+   "norm_label": "analisi tecnica dei mercati — 3. il mercato criptovalutario"
+  },
+  {
+   "label": "universalis-oltre-il-costo-ia.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-oltre-il-costo-ia.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_oltre_il_costo_ia",
+   "community": 254,
+   "norm_label": "universalis-oltre-il-costo-ia.md"
+  },
+  {
+   "label": "Oltre il costo dell'intelligenza artificiale",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-oltre-il-costo-ia.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_oltre_il_costo_ia_oltre_il_costo_dell_intelligenza_artificiale",
+   "community": 254,
+   "norm_label": "oltre il costo dell'intelligenza artificiale"
+  },
+  {
+   "label": "universalis-spread.md",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-spread.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_spread",
+   "community": 255,
+   "norm_label": "universalis-spread.md"
+  },
+  {
+   "label": "Spread",
+   "file_type": "document",
+   "source_file": "raw/finanza/universalis-spread.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_finanza_universalis_spread_spread",
+   "community": 255,
+   "norm_label": "spread"
+  },
+  {
+   "label": "analisi-tecnica-mercati.md",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati",
+   "community": 23,
+   "norm_label": "analisi-tecnica-mercati.md"
+  },
+  {
+   "label": "1. Da dove viene l'analisi tecnica",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L14",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati_1_da_dove_viene_l_analisi_tecnica",
+   "community": 23,
+   "norm_label": "1. da dove viene l'analisi tecnica"
+  },
+  {
+   "label": "2. Cosa si scambia",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L32",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati_2_cosa_si_scambia",
+   "community": 23,
+   "norm_label": "2. cosa si scambia"
+  },
+  {
+   "label": "3. Il mercato criptovalutario",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L49",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati_3_il_mercato_criptovalutario",
+   "community": 23,
+   "norm_label": "3. il mercato criptovalutario"
+  },
+  {
+   "label": "Analisi tecnica dei mercati (corso in tre parti)",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "community": 23,
+   "norm_label": "analisi tecnica dei mercati (corso in tre parti)"
+  },
+  {
+   "label": "Come e' costruito il corso",
+   "file_type": "document",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L65",
+   "_origin": "ast",
+   "id": "wiki_finanza_analisi_tecnica_mercati_come_e_costruito_il_corso",
+   "community": 23,
+   "norm_label": "come e' costruito il corso"
+  },
+  {
+   "label": "economia-dell-ia.md",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia",
+   "community": 23,
+   "norm_label": "economia-dell-ia.md"
+  },
+  {
+   "label": "Cosa se ne ricava",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L60",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_cosa_se_ne_ricava",
+   "community": 23,
+   "norm_label": "cosa se ne ricava"
+  },
+  {
+   "label": "Gennaio 2026 — lo scarto è il sintomo di una bolla",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L21",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_gennaio_2026_lo_scarto_è_il_sintomo_di_una_bolla",
+   "community": 23,
+   "norm_label": "gennaio 2026 — lo scarto e il sintomo di una bolla"
+  },
+  {
+   "label": "Giugno 2026 — lo scarto è il costo di una transizione",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L36",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_giugno_2026_lo_scarto_è_il_costo_di_una_transizione",
+   "community": 23,
+   "norm_label": "giugno 2026 — lo scarto e il costo di una transizione"
+  },
+  {
+   "label": "Il fatto su cui concordano",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L15",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_il_fatto_su_cui_concordano",
+   "community": 23,
+   "norm_label": "il fatto su cui concordano"
+  },
+  {
+   "label": "Il vincolo che entrambi riconoscono",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L49",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_il_vincolo_che_entrambi_riconoscono",
+   "community": 23,
+   "norm_label": "il vincolo che entrambi riconoscono"
+  },
+  {
+   "label": "L'economia dell'intelligenza artificiale — una tesi che si è rovesciata",
+   "file_type": "document",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "community": 23,
+   "norm_label": "l'economia dell'intelligenza artificiale — una tesi che si e rovesciata"
+  },
+  {
+   "label": "index.md",
+   "file_type": "document",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "wiki_finanza_index",
+   "community": 23,
+   "norm_label": "index.md"
+  },
+  {
+   "label": "Fatti che invecchiano",
+   "file_type": "document",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L35",
+   "_origin": "ast",
+   "id": "wiki_finanza_index_fatti_che_invecchiano",
+   "community": 23,
+   "norm_label": "fatti che invecchiano"
+  },
+  {
+   "label": "Finanza",
+   "file_type": "document",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "wiki_finanza_index_finanza",
+   "community": 23,
+   "norm_label": "finanza"
+  },
+  {
+   "label": "Il filone critico",
+   "file_type": "document",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L23",
+   "_origin": "ast",
+   "id": "wiki_finanza_index_il_filone_critico",
+   "community": 23,
+   "norm_label": "il filone critico"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_readme",
+   "target": "raw_finanza_readme_finanza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L13",
+   "weight": 1.0,
+   "source": "raw_finanza_readme_finanza",
+   "target": "raw_finanza_readme_ambito",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/README.md",
+   "source_location": "L20",
+   "weight": 1.0,
+   "source": "raw_finanza_readme_finanza",
+   "target": "raw_finanza_readme_note",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-agenzie-di-rating.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_agenzie_di_rating",
+   "target": "raw_finanza_universalis_agenzie_di_rating_agenzie_di_rating_il_declino_dell_integrità_finanziaria",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-bolla-tech-ia.md",
+   "source_location": "L11",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_bolla_tech_ia",
+   "target": "raw_finanza_universalis_bolla_tech_ia_la_bolla_tech_ia_tra_realtà_e_illusione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-charles-dow.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_charles_dow",
+   "target": "raw_finanza_universalis_charles_dow_analisi_tecnica_dei_mercati_1_charles_dow",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-economia-multipolare.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_economia_multipolare",
+   "target": "raw_finanza_universalis_economia_multipolare_economia_multipolare",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-mercati.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_mercati",
+   "target": "raw_finanza_universalis_mercati_analisi_tecnica_dei_mercati_2_i_mercati",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-mercato-criptovalutario.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_mercato_criptovalutario",
+   "target": "raw_finanza_universalis_mercato_criptovalutario_analisi_tecnica_dei_mercati_3_il_mercato_criptovalutario",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-oltre-il-costo-ia.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_oltre_il_costo_ia",
+   "target": "raw_finanza_universalis_oltre_il_costo_ia_oltre_il_costo_dell_intelligenza_artificiale",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/finanza/universalis-spread.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_finanza_universalis_spread",
+   "target": "raw_finanza_universalis_spread_spread",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "raw_finanza_universalis_charles_dow",
+   "relation": "derived_from",
+   "nota": "il corso in tre puntate, ottobre 2024 - maggio 2025",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "raw_finanza_universalis_mercati",
+   "relation": "derived_from",
+   "nota": "il corso in tre puntate, ottobre 2024 - maggio 2025",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "raw_finanza_universalis_mercato_criptovalutario",
+   "relation": "derived_from",
+   "nota": "il corso in tre puntate, ottobre 2024 - maggio 2025",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L75",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "wiki_finanza_economia_dell_ia",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L74",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati",
+   "target": "wiki_finanza_index",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L14",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "target": "wiki_finanza_analisi_tecnica_mercati_1_da_dove_viene_l_analisi_tecnica",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L32",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "target": "wiki_finanza_analisi_tecnica_mercati_2_cosa_si_scambia",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L49",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "target": "wiki_finanza_analisi_tecnica_mercati_3_il_mercato_criptovalutario",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/analisi-tecnica-mercati.md",
+   "source_location": "L65",
+   "weight": 1.0,
+   "source": "wiki_finanza_analisi_tecnica_mercati_analisi_tecnica_dei_mercati_corso_in_tre_parti",
+   "target": "wiki_finanza_analisi_tecnica_mercati_come_e_costruito_il_corso",
+   "confidence_score": 1.0
+  },
+  {
+   "source": "wiki_finanza_economia_dell_ia",
+   "target": "raw_finanza_universalis_bolla_tech_ia",
+   "relation": "derived_from",
+   "nota": "le due letture opposte dello stesso divario investimenti/ricavi; entrambe conservate",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "source": "wiki_finanza_economia_dell_ia",
+   "target": "raw_finanza_universalis_oltre_il_costo_ia",
+   "relation": "derived_from",
+   "nota": "le due letture opposte dello stesso divario investimenti/ricavi; entrambe conservate",
+   "confidence": "CURATED",
+   "confidence_score": 1.0,
+   "weight": 1.0,
+   "source_file": "engine/provenance.json"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia",
+   "target": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L72",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia",
+   "target": "wiki_finanza_index",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L60",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "target": "wiki_finanza_economia_dell_ia_cosa_se_ne_ricava",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L21",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "target": "wiki_finanza_economia_dell_ia_gennaio_2026_lo_scarto_è_il_sintomo_di_una_bolla",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L36",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "target": "wiki_finanza_economia_dell_ia_giugno_2026_lo_scarto_è_il_costo_di_una_transizione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "target": "wiki_finanza_economia_dell_ia_il_fatto_su_cui_concordano",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/economia-dell-ia.md",
+   "source_location": "L49",
+   "weight": 1.0,
+   "source": "wiki_finanza_economia_dell_ia_l_economia_dell_intelligenza_artificiale_una_tesi_che_si_è_rovesciata",
+   "target": "wiki_finanza_economia_dell_ia_il_vincolo_che_entrambi_riconoscono",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "wiki_finanza_index",
+   "target": "wiki_finanza_index_finanza",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L35",
+   "weight": 1.0,
+   "source": "wiki_finanza_index_finanza",
+   "target": "wiki_finanza_index_fatti_che_invecchiano",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "wiki/finanza/index.md",
+   "source_location": "L23",
+   "weight": 1.0,
+   "source": "wiki_finanza_index_finanza",
+   "target": "wiki_finanza_index_il_filone_critico",
+   "confidence_score": 1.0
+  }
+ ]
+}

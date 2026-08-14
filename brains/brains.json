@@ -3,12 +3,12 @@
   "descrizione": "I brain di questo repo. Ognuno e un'istanza autosufficiente. Il brain addestrato coi dati dell'autore NON e un default implicito: e una voce come le altre, con percorso '.' perche vive nella radice dell'officina — che e' anche il banco di prova delle guardie del motore.",
   "brains": [
     {
-      "nome": "addestrato",
-      "percorso": ".",
+      "nome": "aion",
+      "percorso": "brains/aion",
       "creato": "2026-06-30",
       "training": "aion",
       "origine": "costruito a mano, prima di core/",
-      "nota": "il brain dell'autore: aion, creativita, data-science, divulgazione, finanza, web-design"
+      "nota": "il brain dell autore: aion, creativita, data-science, divulgazione, finanza, web-design"
     },
     {
       "nome": "cucina",
@@ -17,5 +17,9 @@
       "training": null,
       "origine": "core/"
     }
-  ]
+  ],
+  "attivo": "aion",
+  "convenzione": {
+    "attivo": "quale brain usano i tool lanciati dalla radice (vedi tools/brain.py)"
+  }
 }

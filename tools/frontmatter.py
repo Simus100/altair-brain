@@ -33,8 +33,8 @@ Una riga che contiene altro oltre ai trattini e testo, non un delimitatore.
 def _strati_generati():
     import json
     import os
-    reg = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                       "areas.json")
+    from tools.brain import BRAIN as _B
+    reg = os.path.join(_B, "areas.json")
     try:
         with open(reg, encoding="utf-8") as f:
             aree = json.load(f).get("areas", [])

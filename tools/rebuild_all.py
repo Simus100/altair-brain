@@ -22,6 +22,12 @@ import os, shutil, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -74,7 +80,11 @@ for name, cmd in STEPS:
         print(f"~~ {name}: SALTATO ({cmd[1]} non presente in questa installazione)")
         continue
     print(f"== {name} ==")
-    r = subprocess.run(cmd, cwd=ROOT)
+    # I tool del motore vivono nell'officina (ROOT) e sanno da soli dove sta il
+    # contenuto. graphify no: indicizza la cartella in cui lo lanci, quindi va
+    # lanciato NEL BRAIN. Lanciandolo in ROOT nasceva un secondo graphify-out nella
+    # radice, e il brain restava con il grafo di prima senza che nulla lo dicesse.
+    r = subprocess.run(cmd, cwd=BRAIN if cmd[0] == "graphify" else ROOT)
     if r.returncode != 0:
         print(f"XX {name}: FALLITO (exit {r.returncode}) — pipeline interrotta.")
         failed = True
@@ -91,6 +101,6 @@ print("Le TRE viste del grafo:")
 for rel, serve_a in (("graphify-out/graph.html",         "vedere tutto"),
                      ("graphify-out/graph-compact.html", "spiegare il sistema come processo"),
                      ("graphify-out/graph-atlas.html",   "navigare e orientarsi (3D esplorabile)")):
-    peso = os.path.getsize(os.path.join(ROOT, rel)) // 1024 if os.path.exists(os.path.join(ROOT, rel)) else 0
+    peso = os.path.getsize(os.path.join(BRAIN, rel)) // 1024 if os.path.exists(os.path.join(BRAIN, rel)) else 0
     print(f"  {rel:<34} {peso:>5} KB  — {serve_a}")
 print("\nOra:  git add -A && git commit -m \"...\" && git push")

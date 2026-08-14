@@ -78,7 +78,7 @@ raw_wiki = sum(1 for e in archi
 # quante note hanno provenienza tracciata (front-matter)
 note_md = con_fm = 0
 for base in ("raw", "wiki", "reports"):
-    for root, _, files in os.walk(os.path.join(ROOT, base)):
+    for root, _, files in os.walk(os.path.join(BRAIN, base)):
         for f in files:
             if not f.endswith(".md"):
                 continue

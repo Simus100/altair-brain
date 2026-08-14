@@ -3,7 +3,12 @@
     tools/ tests/ server/   il MOTORE — sorgente unica, non si duplica
     core/                   il PRODOTTO — GENERATO da tools/build_core.py, mai a mano
     brains/                 le ISTANZE + il registro brains.json
-    raw/ wiki/ engine/      il brain di riferimento, su cui girano le guardie del motore
+    brains/aion/            il brain di riferimento (raw/ wiki/ engine/ areas.json),
+                            su cui girano le guardie del motore
+
+Nella radice non c'e' piu' contenuto: e' **solo** lo scheletro. Il brain dell'autore
+sta in `brains/aion/` come qualsiasi altra istanza — era l'ultimo punto in cui il
+prodotto e la sua conoscenza si toccavano.
 
 **Un brain e autosufficiente**: propri tool, propria conoscenza, proprio grafo.
 `python tools/brain_new.py --nome <n>` ne crea uno da `core/`; `--elenco` mostra cosa

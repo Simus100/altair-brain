@@ -45,7 +45,7 @@ for dirpath, _, files in os.walk(WIKI):
             target = m.group(1).strip()
             total_links += 1
             if target not in stems:
-                rel = os.path.relpath(os.path.join(dirpath, f), ROOT).replace("\\", "/")
+                rel = os.path.relpath(os.path.join(dirpath, f), BRAIN).replace("\\", "/")
                 dangling.append((rel, target))
 
 if dangling:

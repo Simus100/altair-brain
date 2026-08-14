@@ -31,7 +31,13 @@ import pytest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-GRAFO = ROOT / "graphify-out" / "graph.json"
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = pathlib.Path(_b)
+except ImportError:
+    BRAIN = ROOT
+
+GRAFO = BRAIN / "graphify-out" / "graph.json"
 
 
 # ---------------------------------------------- 1. il prodotto non e' conoscenza
@@ -148,7 +154,7 @@ def test_si_puo_creare_un_brain_e_sta_in_piedi(tmp_path):
 def test_la_porta_dice_quale_brain_stai_guardando():
     """Con un brain solo si intuisce; con due, una porta che non lo dice e' una
     trappola — apri tre viste senza sapere di CHE COSA."""
-    porta = ROOT / "graphify-out" / "index.html"
+    porta = BRAIN / "graphify-out" / "index.html"
     if not porta.exists():
         pytest.skip("porta non generata")
     assert "stai guardando" in porta.read_text(encoding="utf-8")
@@ -220,7 +226,7 @@ def test_il_selettore_punta_a_file_che_esistono():
     for b in bvi.altri_brain():
         if not b["pronto"]:
             continue
-        dest = (ROOT / "graphify-out" / b["href"]).resolve()
+        dest = (BRAIN / "graphify-out" / b["href"]).resolve()
         assert dest.exists(), f"il selettore punta a {b['href']}, che non esiste"
 
 
@@ -234,3 +240,27 @@ def test_un_brain_non_legge_la_storia_di_un_altro():
         "il baseline non e calcolato rispetto alla radice del repository"
     assert 'f"{prev_ref}:graphify-out/graph.json"' not in testo, \
         "percorso git fisso: un'istanza leggerebbe la storia del brain di riferimento"
+
+
+def test_la_ci_non_verifica_percorsi_inesistenti():
+    """DIFETTO REALE, e il piu' insidioso di tutti: `git diff --quiet -- wiki/`
+    su un percorso che non esiste esce 0. Quando il brain e' passato dalla radice
+    a brains/aion, sei controlli di determinismo della CI sono diventati no-op
+    senza emettere un solo avviso: la pipeline restava verde smettendo di
+    verificare qualsiasi cosa.
+
+    Regola: ogni percorso confrontato dalla CI deve esistere davvero."""
+    import re
+    ci = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
+    percorsi = re.findall(r'git diff --quiet(?:\s+HEAD~1 HEAD)? -- ([^;\n]+)', ci)
+    controllati = []
+    for gruppo in percorsi:
+        for p in gruppo.split():
+            p = p.strip('"').replace("$BRAIN", str(BRAIN)).rstrip("/")
+            if not p:
+                continue
+            controllati.append(p)
+            assert pathlib.Path(p if os.path.isabs(p) else ROOT / p).exists(), \
+                f"la CI confronta '{p}', che non esiste: quel controllo e' un no-op"
+    assert len(controllati) >= 8, \
+        f"attesi almeno 8 percorsi verificati dalla CI, trovati {len(controllati)}"

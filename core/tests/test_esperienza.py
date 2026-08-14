@@ -29,11 +29,19 @@ import sys
 import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+
+import pathlib as _pl
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = _pl.Path(_b) if isinstance(ROOT, _pl.Path) else _b
+except ImportError:
+    BRAIN = ROOT
+
 sys.path.insert(0, str(ROOT))
 
-PRIOR = ROOT / "engine" / "LESSONS.md"
-REGISTRO = ROOT / "engine" / "lessons.jsonl"
-REASONER = ROOT / "engine" / "aion-reasoner.md"
+PRIOR = BRAIN / "engine" / "LESSONS.md"
+REGISTRO = BRAIN / "engine" / "lessons.jsonl"
+REASONER = BRAIN / "engine" / "aion-reasoner.md"
 
 
 def registrazioni():

@@ -76,17 +76,17 @@ def candidati(area=None):
     gradi = _gradi_per_file()
     fuori = []
     for base in CARTELLE:
-        for root, dirs, files in os.walk(os.path.join(ROOT, base)):
+        for root, dirs, files in os.walk(os.path.join(BRAIN, base)):
             dirs[:] = [d for d in dirs if not d.startswith(".") and d != "archive"]
             for f in sorted(files):
                 if not f.endswith(".md") or f.upper().startswith("README"):
                     continue
-                rel = os.path.relpath(os.path.join(root, f), ROOT).replace("\\", "/")
+                rel = os.path.relpath(os.path.join(root, f), BRAIN).replace("\\", "/")
                 if any(rel.startswith(g) for g in GENERATI):
                     continue
                 if area and f"/{area}/" not in rel:
                     continue
-                meta, corpo = _frontmatter(os.path.join(ROOT, rel))
+                meta, corpo = _frontmatter(os.path.join(BRAIN, rel))
                 if meta is None or len(corpo.strip()) < 120:
                     continue
                 rev = meta.get("reviewed") or meta.get("date") or ""
@@ -122,7 +122,7 @@ def scegli(cands, quante=3):
 
 def segna_rivista(rel):
     """Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda."""
-    p = os.path.join(ROOT, rel)
+    p = os.path.join(BRAIN, rel)
     if not os.path.exists(p):
         sys.exit(f"file inesistente: {rel}")
     with open(p, encoding="utf-8") as f:

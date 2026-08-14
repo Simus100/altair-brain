@@ -77,5 +77,5 @@ with open(OUT, "w", encoding="utf-8", newline="\n") as f:
     f.write("\n")
 
 print(f"Indice semantico pronto: {len(testi)} vettori a {vettori.shape[1]} dimensioni "
-      f"-> {os.path.relpath(OUT, ROOT)}")
+      f"-> {os.path.relpath(OUT, BRAIN)}")
 print("  La ricerca ora fonde lessicale + semantico con RRF.")

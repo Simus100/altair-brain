@@ -21,16 +21,21 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from tools import frontmatter as fm  # noqa: E402
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = pathlib.Path(_b)
+except ImportError:
+    BRAIN = ROOT
 
 
 def _senza_frontmatter():
     """Tutti i .md di conoscenza privi di front-matter, per percorso POSIX."""
     fuori = []
     for base in ("raw", "wiki", "reports"):
-        for f in (ROOT / base).rglob("*.md"):
+        for f in (BRAIN / base).rglob("*.md"):
             meta, _ = fm.leggi(f)
             if not meta:
-                fuori.append(f.relative_to(ROOT).as_posix())
+                fuori.append(f.relative_to(BRAIN).as_posix())
     return sorted(fuori)
 
 

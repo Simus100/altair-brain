@@ -1,0 +1,195 @@
+# -*- coding: utf-8 -*-
+"""
+altair-brain — controllo di salute del grafo (per CI e uso locale).
+
+Verifica:
+1. i nodi wiki/aion formano UN solo componente connesso;
+2. i nodi raw/aion formano UN solo componente connesso;
+3. nessun nodo isolato (grado 0) sotto raw/, wiki/, engine/;
+4. ANTI-REGRESSIONE: il numero di nodi non cala oltre il 20% rispetto al commit
+   precedente (il workflow fa 'rm graph.json' e bypassa la protezione nativa di
+   graphify). Override consapevole: variabile d'ambiente ALTAIR_ALLOW_SHRINK=1.
+
+Exit 0 = sano; 1 = problemi. Uso:  python tools/graph_health.py
+"""
+import json, os, subprocess, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
+
+# Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
+# per non toccare i flussi di chi importa questo modulo (test compresi).
+if __name__ == "__main__":
+    sys.path.insert(0, ROOT)
+    try:
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+
+GRAPH = os.path.join(BRAIN, "graphify-out", "graph.json")
+SHRINK_TOLERANCE = 0.20
+MIN_BASELINE = 50
+
+with open(GRAPH, encoding="utf-8") as f:
+    g = json.load(f)
+
+nodes = g["nodes"]
+adj = {n["id"]: set() for n in nodes}
+sf = {n["id"]: (n.get("source_file") or "").replace("\\", "/") for n in nodes}
+for e in g["links"]:
+    s, t = e.get("source"), e.get("target")
+    if s in adj and t in adj:
+        adj[s].add(t)
+        adj[t].add(s)
+
+problems = []
+
+def components_of(prefix):
+    ids = {i for i in adj if sf[i].startswith(prefix)}
+    seen, comps = set(), 0
+    for start in ids:
+        if start in seen:
+            continue
+        comps += 1
+        stack = [start]
+        while stack:
+            x = stack.pop()
+            if x in seen:
+                continue
+            seen.add(x)
+            stack.extend((adj[x] & ids) - seen)
+    return comps, len(ids)
+
+# coesione della wiki di OGNI area (lo strato curato deve essere un unico grafo).
+# Le note grezze in raw/ possono essere scollegate (sono appunti): non si richiede coesione.
+try:
+    with open(os.path.join(BRAIN, "areas.json"), encoding="utf-8") as f:
+        area_ids = [a["id"] for a in json.load(f)["areas"]]
+except Exception:
+    area_ids = ["aion"]
+for area in area_ids:
+    prefix = f"wiki/{area}/"
+    comps, n = components_of(prefix)
+    if n and comps != 1:
+        problems.append(f"{prefix}: {comps} componenti connessi (atteso 1) su {n} nodi")
+# Coesione anche sullo STRATO GREZZO, ma solo per le aree che la dichiarano in
+# areas.json ('coesa': true). Prima era scritto "raw/aion/" nel codice: un invariante
+# vero per questo brain e incomprensibile per chiunque altro. Dichiararlo per area lo
+# rende una scelta esplicita di chi cura l'area, non una regola nascosta nel motore.
+try:
+    with open(os.path.join(BRAIN, "areas.json"), encoding="utf-8") as f:
+        coese = [a["id"] for a in json.load(f).get("areas", []) if a.get("coesa")]
+except Exception:
+    coese = []
+for area in coese:
+    prefix = f"raw/{area}/"
+    comps, n = components_of(prefix)
+    if n and comps != 1:
+        problems.append(f"{prefix}: {comps} componenti connessi (atteso 1) su {n} nodi")
+
+# orfani ammessi solo NON negli strati curati (wiki/ ed engine/)
+orphans = [i for i in adj if not adj[i]
+           and sf[i].startswith(("wiki/", "engine/"))]
+if orphans:
+    problems.append(f"nodi isolati (grado 0) in wiki/ o engine/: {len(orphans)} — es. {orphans[:5]}")
+
+# TRACCIABILITA: ogni arco deve dichiarare da quale file nasce. Senza questo
+# invariante il grafo degrada in silenzio (archi non piu attribuibili a una fonte).
+untraced = [i for i, e in enumerate(g["links"]) if not e.get("source_file")]
+if untraced:
+    esempi = [f"#{i} {g['links'][i].get('relation','?')}" for i in untraced[:5]]
+    problems.append(f"archi senza source_file: {len(untraced)} — es. {esempi}")
+
+# NODI FANTASMA: un titolo che nel file non esiste piu. Succede quando la cache di
+# graphify non si invalida dopo una modifica (caso reale: un nodo residuo aveva
+# accumulato 72 archi e risultava il piu centrale dell'area, distorcendo il grafo
+# senza che nessun altro controllo se ne accorgesse). Rimedio: rebuild pulito
+#   rm -rf graphify-out/cache graphify-out/graph.json graphify-out/manifest.json
+_cache_testi = {}
+fantasmi = []
+for n in nodes:
+    rel = sf[n["id"]]
+    etichetta = (n.get("label") or "").strip()
+    # solo i nodi-titolo dei markdown: hanno una riga precisa da ritrovare
+    if not rel.endswith(".md") or not etichetta or etichetta == os.path.basename(rel):
+        continue
+    if rel not in _cache_testi:
+        p = os.path.join(ROOT, rel)
+        try:
+            with open(p, encoding="utf-8") as fh:
+                _cache_testi[rel] = fh.read()
+        except OSError:
+            _cache_testi[rel] = None
+    testo = _cache_testi[rel]
+    if testo is not None and etichetta not in testo:
+        fantasmi.append(f"{rel}: '{etichetta[:50]}'")
+if fantasmi:
+    problems.append(
+        f"nodi fantasma (etichetta assente dal file sorgente): {len(fantasmi)} — "
+        f"es. {fantasmi[:3]}. Cache graphify stantia: rigenera con "
+        f"'rm -rf graphify-out/cache graphify-out/graph.json graphify-out/manifest.json'")
+
+# anti-regressione vs commit precedente
+prev_ref = os.environ.get("ALTAIR_PREV_REF", "HEAD~1")
+try:
+    # I percorsi di 'git show' sono relativi al REPOSITORY, non alla cartella da cui
+    # si lancia. Con piu' brain nello stesso repo, chiedere "graphify-out/graph.json"
+    # da brains/<nome>/ restituiva il grafo del brain di RIFERIMENTO: un'istanza
+    # confrontava i propri nodi con quelli di un'altra e falliva l'anti-regressione
+    # per un calo che non era mai avvenuto. Il percorso va calcolato dalla radice
+    # del repository fino a QUESTO brain.
+    _top = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=BRAIN,
+                          capture_output=True, text=True, encoding="utf-8", timeout=30)
+    if _top.returncode == 0 and _top.stdout.strip():
+        _rel = os.path.relpath(BRAIN, _top.stdout.strip()).replace("\\", "/")
+        _percorso = "graphify-out/graph.json" if _rel == "." else f"{_rel}/graphify-out/graph.json"
+    else:
+        _percorso = "graphify-out/graph.json"
+    prev_raw = subprocess.run(
+        ["git", "show", f"{prev_ref}:{_percorso}"],
+        cwd=BRAIN, capture_output=True, text=True, encoding="utf-8", timeout=30)
+    if prev_raw.returncode == 0 and prev_raw.stdout.strip():
+        prev_nodes = len(json.loads(prev_raw.stdout).get("nodes", []))
+        cur_nodes = len(nodes)
+        if prev_nodes >= MIN_BASELINE and cur_nodes < prev_nodes * (1 - SHRINK_TOLERANCE):
+            msg = (f"ANTI-REGRESSIONE: nodi {prev_nodes} -> {cur_nodes} "
+                   f"(calo > {int(SHRINK_TOLERANCE*100)}%)")
+            if os.environ.get("ALTAIR_ALLOW_SHRINK") == "1":
+                print(f"[avviso, override attivo] {msg}")
+            else:
+                problems.append(msg + " — se voluto: ALTAIR_ALLOW_SHRINK=1")
+    else:
+        print(f"[info] baseline {prev_ref} non disponibile, anti-regressione saltata")
+except Exception as ex:
+    print(f"[info] anti-regressione saltata: {ex}")
+
+# DIGEST STANTIO: engine/digest/ e l'unico artefatto generato SENZA controllo di
+# coerenza (contiene date e freschezza, quindi cambia col tempo per costruzione).
+# Senza almeno un controllo di eta puo divergere dal grafo in silenzio, ed e proprio
+# il file che un agente legge per orientarsi: sarebbe una mappa vecchia data per buona.
+_dig = os.path.join(BRAIN, "engine", "digest")
+if os.path.isdir(_dig):
+    _files = [os.path.join(_dig, f) for f in os.listdir(_dig) if f.endswith(".json")]
+    if _files:
+        piu_vecchio = min(os.path.getmtime(f) for f in _files)
+        if piu_vecchio < os.path.getmtime(GRAPH) - 86400:
+            problems.append(
+                "engine/digest/ e piu vecchio del grafo di oltre un giorno: "
+                "rigenera con 'python tools/consolidate.py' (un agente lo legge "
+                "per orientarsi e si fiderebbe di una mappa superata)")
+
+if problems:
+    print(f"GRAFO NON SANO — {len(problems)} problemi:")
+    for p in problems:
+        print("  -", p)
+    sys.exit(1)
+
+print(f"Grafo sano: {len(nodes)} nodi, {len(g['links'])} archi; "
+      f"wiki/aion e raw/aion coesi; nessun orfano.")

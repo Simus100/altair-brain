@@ -47,7 +47,7 @@ scoperti, note_dense = [], []
 
 # ---- 1. report living: le timeline sono il prodotto editoriale ----
 for db_path in sorted(glob.glob(os.path.join(BRAIN, "reports", "data", "*.updates.json"))):
-    rel = os.path.relpath(db_path, ROOT).replace("\\", "/")
+    rel = os.path.relpath(db_path, BRAIN).replace("\\", "/")
     try:
         with open(db_path, encoding="utf-8") as f:
             db = json.load(f)
@@ -71,13 +71,13 @@ for db_path in sorted(glob.glob(os.path.join(BRAIN, "reports", "data", "*.update
 
 # ---- 2. note: promemoria, non obbligo ----
 for base in ("raw", "wiki"):
-    for root, dirs, files in os.walk(os.path.join(ROOT, base)):
+    for root, dirs, files in os.walk(os.path.join(BRAIN, base)):
         dirs[:] = [d for d in dirs if not d.startswith(".") and d != "archive"]
         for f in files:
             if not f.endswith((".md", ".txt")):
                 continue
             p = os.path.join(root, f)
-            rel = os.path.relpath(p, ROOT).replace("\\", "/")
+            rel = os.path.relpath(p, BRAIN).replace("\\", "/")
             try:
                 with open(p, encoding="utf-8") as fh:
                     testo = fh.read()

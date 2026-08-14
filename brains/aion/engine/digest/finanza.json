@@ -1,0 +1,68 @@
+{
+  "centrali": [
+    {
+      "dove": "wiki/finanza/analisi-tecnica-mercati.md",
+      "grado": 6,
+      "nodo": "analisi-tecnica-mercati.md"
+    },
+    {
+      "dove": "wiki/finanza/economia-dell-ia.md",
+      "grado": 6,
+      "nodo": "economia-dell-ia.md"
+    },
+    {
+      "dove": "wiki/finanza/economia-dell-ia.md",
+      "grado": 6,
+      "nodo": "L'economia dell'intelligenza artificiale — una tesi che si è rovesciata"
+    },
+    {
+      "dove": "wiki/finanza/analisi-tecnica-mercati.md",
+      "grado": 5,
+      "nodo": "Analisi tecnica dei mercati (corso in tre parti)"
+    },
+    {
+      "dove": "raw/finanza/universalis-bolla-tech-ia.md",
+      "grado": 4,
+      "nodo": "universalis-bolla-tech-ia.md"
+    },
+    {
+      "dove": "raw/finanza/universalis-charles-dow.md",
+      "grado": 4,
+      "nodo": "universalis-charles-dow.md"
+    },
+    {
+      "dove": "raw/finanza/universalis-oltre-il-costo-ia.md",
+      "grado": 4,
+      "nodo": "universalis-oltre-il-costo-ia.md"
+    },
+    {
+      "dove": "raw/finanza/universalis-spread.md",
+      "grado": 4,
+      "nodo": "universalis-spread.md"
+    },
+    {
+      "dove": "raw/finanza/README.md",
+      "grado": 3,
+      "nodo": "Finanza"
+    },
+    {
+      "dove": "raw/finanza/universalis-agenzie-di-rating.md",
+      "grado": 3,
+      "nodo": "universalis-agenzie-di-rating.md"
+    },
+    {
+      "dove": "raw/finanza/universalis-mercati.md",
+      "grado": 3,
+      "nodo": "universalis-mercati.md"
+    },
+    {
+      "dove": "raw/finanza/universalis-mercato-criptovalutario.md",
+      "grado": 3,
+      "nodo": "universalis-mercato-criptovalutario.md"
+    }
+  ],
+  "file": 12,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [],
+  "nodi": 37
+}

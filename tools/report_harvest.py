@@ -195,17 +195,17 @@ def main():
                 .replace("generato_hash: ", "generato_hash: PLACEHOLDER")
                 .replace("generato_hash: PLACEHOLDER", "").encode()).hexdigest()[:16]
             if m and m.group(1) != atteso:
-                print(f"  NON SOVRASCRITTA: {os.path.relpath(DEST, ROOT)} e stata")
+                print(f"  NON SOVRASCRITTA: {os.path.relpath(DEST, BRAIN)} e stata")
                 print("  modificata a mano dopo l'ultima generazione (impronta diversa).")
                 print("  Integra i numeri nuovi a mano, oppure rilancia con --force.")
                 return
         os.makedirs(os.path.dirname(DEST), exist_ok=True)
         with open(DEST, "w", encoding="utf-8", newline="\n") as f:
             f.write(testo)
-        print(f"  scritta: {os.path.relpath(DEST, ROOT)}")
+        print(f"  scritta: {os.path.relpath(DEST, BRAIN)}")
         print("  ora rigenera il grafo:  python tools/rebuild_all.py")
     else:
-        print(f"  destinazione: {os.path.relpath(DEST, ROOT)}\n")
+        print(f"  destinazione: {os.path.relpath(DEST, BRAIN)}\n")
         print(testo[:1200] + ("\n[...]" if len(testo) > 1200 else ""))
         print("\nPer scrivere davvero:  python tools/report_harvest.py --apply")
 

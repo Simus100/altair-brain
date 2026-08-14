@@ -103,7 +103,7 @@ def test_i_tre_tool_gia_colpiti_non_muoiono_piu(tool):
     """Regressione sui casi reali: sono i tre che hanno fallito davanti all'utente."""
     argomenti = {
         "search.py": ["analisi dei dati", "--top", "2"],
-        "style_check.py": ["wiki/divulgazione/index.md"],
+        "style_check.py": ["brains/aion/wiki/divulgazione/index.md"],
         "oracle_cast.py": ["--hexagram", "16"],
     }[tool]
     amb = dict(os.environ)

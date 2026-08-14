@@ -31,6 +31,12 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+sys.path.insert(0, ROOT)
+try:
+    from tools.brain import BRAIN            # dove vive il CONTENUTO
+except ImportError:
+    BRAIN = ROOT                             # istanza autosufficiente
+
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
 # per non toccare i flussi di chi importa questo modulo (test compresi).
 if __name__ == "__main__":
@@ -59,13 +65,13 @@ SALTA_ECCEZIONI = ("raw/_inbox/README.md",)
 
 
 def rel(p):
-    return os.path.relpath(p, ROOT).replace("\\", "/")
+    return os.path.relpath(p, BRAIN).replace("\\", "/")
 
 
 def data_primo_commit(path):
     """Data del primo commit che introduce il file: deterministica e verificabile."""
     try:
-        r = subprocess.run(["git", "log", "--diff-filter=A", "--format=%aI", "--", rel(path)],
+        r = subprocess.run(["git", "log", "--diff-filter=A", "--format=%aI", "--", os.path.relpath(path, ROOT).replace("\\", "/")],
                            cwd=ROOT, capture_output=True, text=True, timeout=20)
         righe = [x for x in r.stdout.strip().splitlines() if x.strip()]
         if righe:
@@ -110,13 +116,13 @@ a = ap.parse_args()
 
 candidati = []
 if a.only:
-    p = os.path.join(ROOT, a.only)
+    p = os.path.join(BRAIN, a.only)
     if not os.path.exists(p):
         sys.exit(f"file inesistente: {a.only}")
     candidati = [p]
 else:
     for base in TARGET:
-        for root, _, files in os.walk(os.path.join(ROOT, base)):
+        for root, _, files in os.walk(os.path.join(BRAIN, base)):
             for f in files:
                 if f.endswith(".md"):
                     candidati.append(os.path.join(root, f))

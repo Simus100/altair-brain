@@ -20,22 +20,30 @@ import sys
 import pytest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+import pathlib as _pl
+try:
+    from tools.brain import BRAIN as _b
+    BRAIN = _pl.Path(_b) if isinstance(ROOT, _pl.Path) else _b
+except ImportError:
+    BRAIN = ROOT
+
 sys.path.insert(0, ROOT)
 
 from tools.frontmatter import dividi  # noqa: E402
 
 PREFISSO = "universalis-"
 AREE_AMMESSE = {"divulgazione", "finanza"}
-GRAFO = os.path.join(ROOT, "graphify-out", "graph.json")
+GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 
 
 def note_del_corpus():
     """Ogni nota-fonte del corpus, come percorso relativo con separatori POSIX."""
     trovate = []
-    for radice, _, file in os.walk(os.path.join(ROOT, "raw")):
+    for radice, _, file in os.walk(os.path.join(BRAIN, "raw")):
         for f in file:
             if f.startswith(PREFISSO) and f.endswith(".md"):
-                rel = os.path.relpath(os.path.join(radice, f), ROOT)
+                rel = os.path.relpath(os.path.join(radice, f), BRAIN)
                 trovate.append(rel.replace("\\", "/"))
     return sorted(trovate)
 
@@ -63,7 +71,7 @@ def test_nessun_wikilink_dal_corpus_verso_aion():
     """Un wikilink e' un arco del grafo: basta quello per collegare le due cose."""
     colpevoli = {}
     for n in note_del_corpus():
-        with open(os.path.join(ROOT, n), encoding="utf-8") as f:
+        with open(os.path.join(BRAIN, n), encoding="utf-8") as f:
             link = re.findall(r"\[\[([^\]]+)\]\]", f.read())
         verso_aion = [x for x in link if x.startswith("aion-")]
         if verso_aion:
@@ -88,7 +96,7 @@ def test_nessun_arco_del_grafo_lega_il_corpus_ad_aion():
 
 def test_nessun_ponte_curato_tra_divulgazione_e_aion():
     """I ponti sono archi dichiarati a mano: la separazione va tenuta anche li'."""
-    with open(os.path.join(ROOT, "engine", "bridges.json"), encoding="utf-8") as f:
+    with open(os.path.join(BRAIN, "engine", "bridges.json"), encoding="utf-8") as f:
         ponti = json.load(f)["bridges"]
     cattivi = [p["concetto"] for p in ponti
                if {p["from"]["area"], p["to"]["area"]} == {"divulgazione", "aion"}]
@@ -100,7 +108,7 @@ def test_ogni_nota_dichiara_l_area_in_cui_vive():
     metriche contano una cosa e l'utente ne legge un'altra."""
     disallineate = {}
     for n in note_del_corpus():
-        with open(os.path.join(ROOT, n), encoding="utf-8") as f:
+        with open(os.path.join(BRAIN, n), encoding="utf-8") as f:
             meta, _ = dividi(f.read())
         dichiarata = (meta or {}).get("area")
         cartella = n.split("/")[1]
@@ -113,7 +121,7 @@ def test_ogni_nota_porta_la_sua_fonte():
     """Senza URL nel front-matter la nota non e' piu' risalibile all'articolo."""
     senza = []
     for n in note_del_corpus():
-        with open(os.path.join(ROOT, n), encoding="utf-8") as f:
+        with open(os.path.join(BRAIN, n), encoding="utf-8") as f:
             meta, _ = dividi(f.read())
         if not str((meta or {}).get("source", "")).startswith("http"):
             senza.append(n)
