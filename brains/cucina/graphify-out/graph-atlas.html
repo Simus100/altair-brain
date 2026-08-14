@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Altair Brain — Atlante 3D</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+/* Fondo nero pieno: il velo di profondita e i colori degli strati hanno il
+   contrasto massimo, e nulla compete con il disegno. */
+body{background:#000;color:#e2e8f0;
+  font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+canvas{display:block;cursor:grab;position:fixed;inset:0}canvas.presa{cursor:grabbing}
+canvas.sposta{cursor:move}
+/* I pannelli stanno un soffio SOPRA il nero: su fondo nero pieno un pannello nero
+   non ha bordo visibile e l'ombra non lavora, quindi la superficie sparisce. */
+.pan{position:fixed;background:rgba(14,14,17,.9);border:1px solid rgba(148,163,184,.34);
+  border-radius:13px;backdrop-filter:blur(16px)}
+#capo{top:16px;left:16px;padding:14px 17px;max-width:318px}
+#capo h1{font-size:15px;font-weight:700;letter-spacing:.01em}
+#capo p{font-size:11.5px;color:#94a3b8;margin-top:7px;line-height:1.5}
+#capo b{color:#cbd5e1}
+#hud{margin-top:9px;padding-top:9px;border-top:1px solid rgba(148,163,184,.14);
+  font-size:10.5px;color:#64748b;font-family:ui-monospace,SFMono-Regular,monospace}
+#cmd{top:16px;right:16px;padding:13px 14px;width:230px;max-height:calc(100vh - 32px);overflow:auto}
+#cmd::-webkit-scrollbar{width:5px}#cmd::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+#cmd h2{font-size:9.5px;letter-spacing:.12em;color:#64748b;text-transform:uppercase;margin:13px 0 7px}
+#cmd h2:first-child{margin-top:0}
+#cerca{width:100%;background:rgba(2,6,16,.8);border:1px solid rgba(148,163,184,.24);border-radius:8px;
+  padding:8px 10px;color:#e2e8f0;font-size:12px;outline:none}
+#cerca:focus{border-color:#38bdf8;box-shadow:0 0 0 3px rgba(56,189,248,.12)}
+#conta-esiti{font-size:10.5px;color:#64748b;margin-top:5px;min-height:13px}
+#esiti{max-height:186px;overflow:auto;margin-top:4px}
+#esiti::-webkit-scrollbar{width:4px}#esiti::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+.esito{display:flex;align-items:center;gap:7px;padding:4px 6px;border-radius:6px;cursor:pointer;font-size:11.5px}
+.esito:hover{background:rgba(56,189,248,.12);color:#fff}
+.esito .dove{color:#64748b;font-size:9.5px;margin-left:auto;white-space:nowrap}
+.riga{display:flex;align-items:center;gap:8px;padding:3.5px 0;font-size:11.5px;cursor:pointer;user-select:none}
+.riga:hover{color:#fff}.riga.spenta{opacity:.3}.riga .num{margin-left:auto;color:#475569;font-size:10px}
+.bollo{width:9px;height:9px;border-radius:50%;flex:none}
+.bollo.q{border-radius:2px}
+.bott{display:inline-block;font-size:10.5px;padding:4px 9px;margin:2px 3px 0 0;border-radius:7px;cursor:pointer;
+  border:1px solid rgba(148,163,184,.24);color:#cbd5e1;background:rgba(2,6,16,.5)}
+.bott:hover{border-color:#38bdf8;color:#fff}.bott.on{border-color:#38bdf8;color:#38bdf8;background:rgba(56,189,248,.1)}
+#det{left:16px;bottom:16px;width:378px;max-height:56vh;overflow:auto;padding:16px 18px;display:none}
+#det.aperto{display:block}
+#det::-webkit-scrollbar{width:5px}#det::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+#det .nome{font-size:15.5px;font-weight:700;word-break:break-word;padding-right:58px}
+#det .via{font-size:10.5px;color:#64748b;margin-top:3px;font-family:ui-monospace,monospace;word-break:break-all}
+.etich{display:flex;gap:6px;flex-wrap:wrap;margin:11px 0 2px}
+.tag{font-size:10px;padding:2.5px 9px;border-radius:999px;border:1px solid rgba(148,163,184,.28);color:#cbd5e1}
+#det h3{font-size:9.5px;letter-spacing:.1em;color:#64748b;text-transform:uppercase;margin:14px 0 6px}
+#det ul{list-style:none;font-size:11.5px}
+#det li{padding:3px 0;color:#cbd5e1;border-bottom:1px solid rgba(148,163,184,.07)}
+#det li.link{cursor:pointer}#det li.link:hover{color:#38bdf8}
+#det li .dove{color:#475569;font-size:10px}
+.chiudi{position:absolute;top:12px;right:14px;cursor:pointer;color:#64748b;font-size:18px;line-height:1}
+.chiudi:hover{color:#e2e8f0}
+.indietro{position:absolute;top:13px;right:40px;cursor:pointer;color:#64748b;font-size:15px;line-height:1;display:none}
+.indietro:hover{color:#38bdf8}
+#suggerimento{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:10.5px;color:#475569;
+  text-align:center;pointer-events:none;white-space:nowrap}
+kbd{background:rgba(148,163,184,.14);border-radius:3px;padding:1.5px 5px;font-size:9.5px;color:#94a3b8}
+#nube{position:fixed;pointer-events:none;background:rgba(14,14,17,.96);border:1px solid rgba(148,163,184,.36);
+  border-radius:7px;padding:5px 9px;font-size:11px;display:none;white-space:nowrap;z-index:9}
+#nube .sub{color:#64748b;font-size:10px}
+@media(max-width:820px){#cmd,#capo{display:none}#det{width:calc(100vw - 32px)}}
+</style></head><body>
+<canvas id="tela"></canvas>
+
+<div class="pan" id="capo">
+  <h1>Atlante del Brain</h1>
+  <p><b>Qui la posizione significa.</b> L'altezza è lo strato del processo, lo
+     spicchio è la macroarea, la distanza dall'asse è quanto un nodo è connesso.
+     Ogni area ha uno spicchio uguale: se è vuoto, si vede.</p>
+  <div id="hud"></div>
+</div>
+
+<div class="pan" id="cmd">
+  <h2>Cerca</h2>
+  <input id="cerca" placeholder="nome file o area…" autocomplete="off" spellcheck="false">
+  <div id="conta-esiti"></div>
+  <div id="esiti"></div>
+  <h2>Strati</h2><div id="fStrati"></div>
+  <h2>Aree</h2><div id="fAree"></div>
+  <h2>Relazioni</h2><div id="fRel"></div>
+  <h2>Vista</h2>
+  <div>
+    <span class="bott" onclick="posa('obliqua')">obliqua</span>
+    <span class="bott" onclick="posa('sezione')">sezione</span>
+    <span class="bott" onclick="posa('alto')">dall'alto</span>
+    <span class="bott" id="bLente" onclick="lente()">lente 2 passi</span>
+    <span class="bott" id="bGira" onclick="gira()">rotazione</span>
+  </div>
+</div>
+
+<div class="pan" id="det">
+  <span class="indietro" id="bIndietro" onclick="indietro()" title="torna al nodo precedente">&larr;</span>
+  <span class="chiudi" onclick="chiudi()">&times;</span>
+  <div class="nome" id="dNome"></div>
+  <div class="via" id="dVia"></div>
+  <div class="etich" id="dTag"></div>
+  <div id="dCorpo"></div>
+</div>
+
+<div id="nube"></div>
+<div id="suggerimento"><kbd>trascina</kbd> ruota · <kbd>Shift+trascina</kbd> sposta ·
+  <kbd>rotella</kbd> zoom · <kbd>click</kbd> apri · <kbd>doppio click</kbd> vola ·
+  <kbd>[ ]</kbd> scorri i vicini · <kbd>Backspace</kbd> indietro ·
+  <kbd>L</kbd> lente · <kbd>0</kbd> ricentra · <kbd>Esc</kbd> chiudi</div>
+
+<script>
+"use strict";
+const D = {"nodi":[{"n":"SKILL.md","f":".claude/skills/triage/SKILL.md","a":"impianto","s":"uso","x":0.3075,"y":3.0,"z":-3.8556,"g":0,"c":"#7c8aa0","t":"document","sez":["Procedura","Skill: triage dell'inbox","Vincoli"]},{"n":"CLAUDE.md","f":"CLAUDE.md","a":"impianto","s":"uso","x":0.0498,"y":2.925,"z":-3.9631,"g":0,"c":"#7c8aa0","t":"document","sez":["Come lavorare in questo repo","Memoria operativa","Provenienza (non negoziabile)"]},{"n":"README.md","f":"README.md","a":"impianto","s":"uso","x":-0.4915,"y":3.0,"z":-4.026,"g":0,"c":"#7c8aa0","t":"document","sez":["Cosa c'e dentro","Partenza","Training e plugin — due cose diverse","core — scheletro di second brain"]},{"n":"LESSONS.md","f":"engine/LESSONS.md","a":"impianto","s":"motore","x":1.2764,"y":1.0,"z":-4.1923,"g":0,"c":"#7c8aa0","t":"document","sez":["Lezioni apprese — memoria operativa del brain","Nessuna lezione ancora","Sintesi"]},{"n":"onboarding.py","f":"onboarding.py","a":"impianto","s":"uso","x":-1.1621,"y":2.85,"z":-3.4772,"g":1,"c":"#7c8aa0","t":"code","sez":["chiedi()","main()"]},{"n":"README.md","f":"plugins/scrittura/README.md","a":"impianto","s":"uso","x":1.1483,"y":3.075,"z":-3.9834,"g":0,"c":"#7c8aa0","t":"document","sez":["plugin: scrittura"]},{"n":"SKILL.md","f":"plugins/scrittura/skills/scrivi/SKILL.md","a":"impianto","s":"uso","x":-1.6076,"y":3.15,"z":-3.9157,"g":0,"c":"#7c8aa0","t":"document","sez":["Apprendimento (ultimo passo, obbligatorio)","In stesura vale SOLO la Carta","L'ordine conta — non invertirlo","Per testi lunghi o seriali","Scrivi — prosa che vale la pena leggere","Se serve calibrare il registro","Solo DOPO aver scritto: la revisione"]},{"n":"test_style_check.py","f":"plugins/scrittura/tests/test_style_check.py","a":"impianto","s":"uso","x":-2.1589,"y":3.15,"z":-3.7393,"g":0,"c":"#7c8aa0","t":"code","sez":["Chiedere di correggere un anglicismo dentro una citazione significa chiedere","Il codice non si giudica con le misure della scrittura: senza questo, un     not","Il test che impedisce di 'sistemare' i falsi positivi accecando la guardia.","Un [[wikilink]] punta a un identificatore, non a una parola scelta da chi     sc","Un percorso di file ripetuto tre volte in un elenco non e' una ripetizione     s","_scrivi()","test_gli_anglicismi_veri_vengono_ancora_visti()","test_i_blocchi_di_codice_non_sono_prosa()","test_il_bersaglio_di_un_wikilink_non_e_prosa()","test_il_codice_in_riga_non_e_prosa()","test_il_front_matter_non_e_prosa()","test_le_citazioni_non_sono_prosa_dell_autore()"]},{"n":"style_check.py","f":"plugins/scrittura/tools/style_check.py","a":"impianto","s":"uso","x":-3.4035,"y":3.15,"z":-1.619,"g":1,"c":"#7c8aa0","t":"code","sez":["Estrae la PROSA da md/txt/html: i tag e il front-matter non sono scrittura.","Il verdetto leggibile: prima cio che si corregge sempre, poi cio che si guarda.","Importa lo script canonico di BookForge come modulo (una sola implementazione).","La prosa editoriale di un report living sta nel database, non nell'HTML.","Ripiego robusto: lo script come processo separato, sul suo contratto pubblico.","analizza()","analizza_via_cli()","carica_motore()","main()","riassumi()","testo_da_file()","testo_da_report()"]},{"n":"README.md","f":"raw/README.md","a":"impianto","s":"fonti","x":-1.8331,"y":-2.925,"z":-3.1751,"g":0,"c":"#7c8aa0","t":"document","sez":["Front-matter standard","Regole","raw/ — materiale grezzo per macroarea"]},{"n":"vinaigrette.md","f":"raw/ricette/vinaigrette.md","a":"ricette","s":"fonti","x":3.6663,"y":-2.85,"z":0.0,"g":0,"c":"#7c8aa0","t":"document","sez":["Vinaigrette che non si separa"]},{"n":"emulsione.md","f":"raw/tecniche/emulsione.md","a":"tecniche","s":"fonti","x":-0.3031,"y":-2.85,"z":2.8841,"g":1,"c":"#7c8aa0","t":"document","sez":["Emulsione: perche si rompe"]},{"n":"maillard.md","f":"raw/tecniche/maillard.md","a":"tecniche","s":"fonti","x":-3.4418,"y":-2.85,"z":2.5006,"g":1,"c":"#7c8aa0","t":"document","sez":["Maillard: e l'acqua a decidere, non il fuoco"]},{"n":"README.md","f":"server/README.md","a":"impianto","s":"motore","x":-0.5038,"y":0.85,"z":-4.3989,"g":0,"c":"#7c8aa0","t":"document","sez":["Componenti","Custom GPT (ChatGPT Actions)","Deploy","Dipendenza: graphify (pacchetto Python)","Endpoint (v1 — alias non versionati mantenuti)","Notifiche di guasto + backup","Server MCP (assistenti AI locali)","Sicurezza (attenzioni del caso)","server/ — esposizione del second brain via FastAPI"]},{"n":"app.py","f":"server/app.py","a":"impianto","s":"motore","x":-2.4942,"y":0.85,"z":-0.5789,"g":2,"c":"#7c8aa0","t":"code","sez":["CaptureReq","Cerca nel CONTENUTO delle note (graphify naviga la struttura, questa il testo).","Contesto assemblato per un LLM entro un budget di token: frammenti pertinenti,","Feedback","OracleReq","_err()","_file()","admin_update()","affected()","areas()","auth()","capture()","context()","explain()","graph()","graph_compact()","health()","inbox_done()","inbox_list()","inbox_read()","lessons()","model()","oracle()","oracle_hexagram()"]},{"n":"brain_core.py","f":"server/brain_core.py","a":"impianto","s":"motore","x":-2.5651,"y":0.925,"z":-0.6969,"g":2,"c":"#7c8aa0","t":"code","sez":[".__init__()","BrainError","Pacchetto di contesto pronto per un LLM, entro un budget di token.     Assembla","Ricerca nel CONTENUTO (complementare a graphify, che naviga la struttura).     I","Ritorna (output, area_usata). area=None -> router; 'full' -> grafo completo.","Routing deterministico: match keyword per area. Nessun match -> grafo completo.","Stato delle tre viste rispetto al grafo da cui derivano.","_safe_inbox_file()","_slug()","area_graph_path()","capture()","context_pack()","graph_query()","graphify_available()","health_info()","inbox_done()","inbox_list()","inbox_read()","lessons_text()","load_router()","oracle_cast()","oracle_hexagram()","read_repo_json()","read_repo_text()"]},{"n":"mcp_server.py","f":"server/mcp_server.py","a":"impianto","s":"motore","x":-2.4307,"y":1.0,"z":-3.2969,"g":1,"c":"#7c8aa0","t":"code","sez":["Cerca nel CONTENUTO delle note (BM25 + semantico se attivo). Complementare a","Contesto PRONTO su un argomento, entro un budget di token: frammenti pertinenti,","Il modello di pensiero AION tipizzato (engine/aion.model.json).","Il protocollo di ragionamento AION a 9 passi (engine/aion-reasoner.md).","Interroga il knowledge graph del brain (BFS scopato). area: vuota = router     a","Lancio I Ching (AION_Oracle eseguibile). seed >= 0 per un lancio riproducibile.","Le lezioni apprese dal brain (LESSONS.md, feedback loop).","Percorso piu breve tra due nodi del grafo (graphify path).","Registra l'esito di una risposta (useful|dead_end|corrected): il brain impara.","Spiega un nodo del grafo e i suoi collegamenti (graphify explain).","_safe()","brain_context()","brain_explain()","brain_feedback()","brain_lessons()","brain_model()","brain_oracle()","brain_path()","brain_query()","brain_reasoner()","brain_search()"]},{"n":"test_api.py","f":"tests/test_api.py","a":"impianto","s":"motore","x":-2.5826,"y":0.925,"z":-3.2429,"g":1,"c":"#7c8aa0","t":"code","sez":["Il segnale che conta davvero: una mappa vecchia non si annuncia da sola.     Con","Le tre viste del grafo si scaricano solo col token. L'atlante deve essere     au","Un consumatore deve scoprire le tre viste dall'API, non dalla documentazione.","test_alias_non_versionati()","test_auth_richiesta_e_constant_time_ok()","test_capture_vuoto_e_troppo_grande()","test_feedback_node_injection_rejected()","test_health_dichiara_le_tre_viste()","test_health_pubblico_e_ricco()","test_health_segnala_una_vista_rimasta_indietro()","test_inbox_flusso_completo()","test_inbox_path_traversal_respinto()","test_le_tre_viste_sono_servite_e_protette()","test_oracle_deterministico_con_seed()","test_oracle_hexagram_lookup_re_wen()","test_query_area_invalida()","test_query_degrada_o_funziona()","test_rate_limiter_uses_client_host()","test_route_deterministico()","test_search_filtro_area()","test_search_richiede_token_e_valida_input()","test_search_trova_nel_contenuto()"]},{"n":"test_atlas.py","f":"tests/test_atlas.py","a":"impianto","s":"motore","x":-2.9144,"y":1.15,"z":-3.3923,"g":0,"c":"#7c8aa0","t":"code","sez":["Angolo del nodo nel piano, normalizzato in [0, 2pi).","Differenza angolare minima tra due angoli (il cerchio si richiude).","Due nodi di aree diverse non possono trovarsi nello stesso settore: se     accad","Gli archi 'derived_from' collegano una fonte al sapere che ne deriva:     devono","Il raggio deve essere monotono nel rango di centralita, dentro ogni     gruppo (","La quota di un nodo deve stare nella fascia del suo strato. Il rilievo     inter","La regola dichiarata: raw->fonti, wiki->sapere, motore, uso.","Nessun file resta fuori dall'atlante: una vista parziale e' peggio di     nessun","Nessuna CDN, nessun font remoto, nessuna chiamata di rete: l'atlante deve     ap","Stesso grafo, stesso atlante. Senza questo, ogni rebuild sporca il diff     di g","_angolo()","_delta_angolare()","dati()","graphify-out/index.html deve linkare file che esistono davvero: una porta     ch","test_altezza_corrisponde_allo_strato()","test_archi_puntano_a_nodi_esistenti()","test_costruzione_deterministica()","test_i_nodi_connessi_stanno_piu_vicino_allasse()","test_la_porta_apre_le_tre_viste()","test_la_porta_e_deterministica()","test_la_provenienza_sale_di_uno_strato()","test_lo_strato_segue_la_cartella()","test_ogni_area_sta_nel_suo_spicchio()","test_ogni_file_del_grafo_ha_un_posto()"]},{"n":"test_console.py","f":"tests/test_console.py","a":"impianto","s":"motore","x":-1.8082,"y":1.15,"z":-4.1388,"g":0,"c":"#7c8aa0","t":"code","sez":["Deve attivarsi SOLO da riga di comando: se scattasse all'import,     riconfigure","L'invariante strutturale che corrisponde al test sopra.","L'invariante. Vale per i tool nuovi quanto per quelli vecchi.","La prova vera: un sottoprocesso con stdout cp1252 che stampa un hanzi.     Senza","Ogni tool che puo' scrivere sullo standard output quando viene eseguito.","REGRESSIONE VERA, trovata dai test: rendere obbligatorio l'import di     tools.c","Regressione sui casi reali: sono i tre che hanno fallito davanti all'utente.","Se questo scende a zero, il test si e' rotto in silenzio.","test_ci_sono_tool_da_controllare()","test_i_tre_tool_gia_colpiti_non_muoiono_piu()","test_la_guardia_non_deve_mai_essere_fatale()","test_la_guardia_non_tocca_chi_importa()","test_la_guardia_regge_un_carattere_fuori_tabella()","test_ogni_import_della_guardia_e_protetto()","test_ogni_tool_che_stampa_usa_la_guardia()","tool_che_stampano()"]},{"n":"test_esperienza.py","f":"tests/test_esperienza.py","a":"impianto","s":"motore","x":-2.5676,"y":1.075,"z":-3.7686,"g":0,"c":"#7c8aa0","t":"code","sez":["Il difetto originale: produzione e consumo puntavano a due file diversi.","La difesa contro il pedaggio crescente su OGNI risposta.","La proprieta' che rende il sistema durevole: l'esperienza si accumula nel     re","La regola che impedisce al brain di imparare da se stesso.","Prova eseguita: una registrazione senza appiglio non diventa regola.","Se una regola resta nel registro e non compare nel prior, l'anello e aperto:","Un tetto che nessuno controlla non e un tetto.","Un tipo di ancora fuori elenco non deve passare: altrimenti il vincolo     si ag","Un'ancora deve nominare qualcosa che qualcun altro puo' andare a controllare.","Una lezione che si rivela sbagliata non si cancella: si supera. La storia     re","registrazioni()","test_ancora_inventata_viene_respinta()","test_i_tipi_di_ancora_sono_verificabili_da_terzi()","test_il_prior_resta_dentro_il_suo_tetto()","test_il_reasoner_legge_il_prior_che_viene_davvero_generato()","test_il_registro_cresce_ma_il_prior_no()","test_il_tetto_e_dichiarato_e_non_simbolico()","test_ogni_regola_del_registro_arriva_nel_prior()","test_ogni_regola_operativa_porta_un_appiglio_esterno()","test_senza_ancora_resta_osservazione()","test_una_regola_superata_esce_dal_prior_ma_resta_nel_registro()"]},{"n":"test_frontmatter_coerenza.py","f":"tests/test_frontmatter_coerenza.py","a":"impianto","s":"motore","x":-1.524,"y":1.0,"z":-4.3436,"g":0,"c":"#7c8aa0","t":"code","sez":["Il cuore della faccenda, verificato eseguendo davvero i due strumenti:     se la","La protezione non deve mai cedere: scrivere li' farebbe divergere la pagina","La regola vive in un posto solo: se qualcuno la duplica, divergera'.","Lo stato desiderato: tutto cio' che PUO' avere provenienza, ce l'ha.","Se add_frontmatter ridefinisse la propria lista, le due divergerebbero     silen","TARGET era un elenco a mano ('raw/', 'wiki/data-science/'): ogni macroarea     n","Tutti i .md di conoscenza privi di front-matter, per percorso POSIX.","_senza_frontmatter()","test_add_frontmatter_non_duplica_la_regola()","test_gli_strati_generati_restano_intatti()","test_il_rapporto_non_consiglia_un_comando_inutile()","test_la_copertura_segue_le_aree_esistenti()","test_lo_strato_generato_e_riconosciuto()","test_nessun_file_riparabile_resta_senza_front_matter()"]},{"n":"test_iching_relations.py","f":"tests/test_iching_relations.py","a":"impianto","s":"motore","x":-1.2403,"y":1.075,"z":-4.0068,"g":1,"c":"#7c8aa0","t":"code","sez":["1 opposto a 2 (unica relazione reale, come nel DB vero); 11 con relazioni     au","3 esagrammi come nodi-file, nessuna relazione ancora nel grafo.","Caso reale trovato sui 64 esagrammi veri (11/12, 17/18, 53/54, 63/64): due     e","DIFETTO REALE (trovato testando contro i 64 esagrammi veri, non ipotizzato):","Sperimentale per scelta: rebuild_all.py non deve invocarlo di default.","_db_doppia_relazione()","_db_minimo()","_grafo_minimo()","test_aggiunge_solo_le_coppie_dichiarate()","test_dry_run_non_scrive()","test_idempotente_su_grafo_minimo()","test_non_e_cablato_in_rebuild_all()","test_relazioni_multiple_sulla_stessa_coppia_non_si_perdono()","test_trova_tutti_i_nodi_esagramma()"]},{"n":"test_officina.py","f":"tests/test_officina.py","a":"impianto","s":"motore","x":-2.471,"y":1.15,"z":-3.9341,"g":0,"c":"#7c8aa0","t":"code","sez":["Con un brain solo si intuisce; con due, una porta che non lo dice e' una     tra","I percorsi del contenuto passano da tools/brain.py: e' il punto unico che     pe","L'ordine conta: se la potatura arrivasse dopo le viste o l'indice, quelli     av","La funzione che costruisce l'elenco deve reggere sia il caso a un brain     (nes","La prova che conta: un brain nuovo nasce da core/, si configura e la sua     pip","La prova funzionale: puntando ALTAIR_BRAIN altrove, i tool seguono.","La regressione da impedire: un tool nuovo che scrive os.path.join(ROOT, 'wiki')","Un prodotto che al primo avvio segnala contenuto gia' scaduto insegna a     igno","core/ e brains/ sono artefatti e istanze: nel grafo del brain non ci vanno.","test_gli_artefatti_non_stanno_nel_grafo()","test_i_tool_non_costruiscono_percorsi_di_contenuto_da_ROOT()","test_il_brain_si_puo_spostare()","test_il_motore_risolve_il_brain_invece_di_presumerlo()","test_il_registro_dei_brain_esiste_ed_e_valido()","test_il_selettore_compare_quando_ci_sono_altri_brain()","test_la_porta_dice_quale_brain_stai_guardando()","test_la_potatura_gira_prima_di_chi_legge_il_grafo()","test_si_puo_creare_un_brain_e_sta_in_piedi()","test_un_brain_vergine_non_si_lamenta_al_primo_avvio()"]},{"n":"test_tools.py","f":"tests/test_tools.py","a":"impianto","s":"motore","x":-2.8825,"y":1.075,"z":-3.1128,"g":1,"c":"#7c8aa0","t":"code","sez":["--segna deve aggiornare 'reviewed' senza toccare il resto della nota.","43 + mobili [1,2,3,5] -> 16, con un consiglio per ogni linea mobile.","6 (Il Conflitto) + 4a linea mobile -> 59 (La Dissoluzione).","BM25 deve portare in cima la pagina che tratta davvero l'argomento.","Bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     Ora il","Con budget enorme non deve gonfiare: sotto la soglia di pertinenza si tace.","Copia minima del layout repo: tools/report_update.py + report finto.","Difetto reale: una nota che inizia con '--- FUNZIONI ... ---' veniva scambiata","Dopo la correzione del parser, nessuna nota deve restare scoperta.","Fallacia: 'confidenza alta' verra letta come 'risposta corretta'. La     differe","Fuori dominio il sistema deve DIRE di non fidarsi.      Il test verificava «zero","Gli hub sono collegati a tutto per costruzione: la loro vicinanza non     signif","Il budget vale sul TESTO CONSEGNATO, non sulla somma dei pezzi: ignorare     l'i","Il caso che conta: il corpus NON ha la risposta e il sistema lo dichiara     inv","L'indice committato deve essere quello che il corpus produce ora.","La matematica dev'essere quella dichiarata: somma di 1/log(grado) sui vicini","La nota raccolta deve esistere ED essere dichiarata nel registro di     provenie","La nota vive in raw/ (strato sorgente): integrarla a mano e legittimo, e     rig","La selezione decisionale trova il 43 per l'argomento 'decisione/svolta'.","La serie storica non deve gonfiarsi a ogni rebuild dello stesso giorno.","Le fonti grezze devono portare provenienza (date/area/reviewed).","Le note dei project work (ex .txt, convertite in .md) devono essere cercabili","Prudenza sui nodi corti/numerici (es. '6'): il confronto per sottostringa     ma","Regressione: ordinando la tupla (grado, etichetta) l'etichetta faceva da     spa"]},{"n":"README.md","f":"tools/README.md","a":"impianto","s":"motore","x":0.6848,"y":0.85,"z":-4.6375,"g":0,"c":"#7c8aa0","t":"document","sez":["Le tre viste","altair_compact_view.py — vista compatta strutturale","build_atlas_view.py — atlante 3D esplorabile","build_views_index.py — la porta","tools/ — feature di supporto ad altair-brain"]},{"n":"add_frontmatter.py","f":"tools/add_frontmatter.py","a":"impianto","s":"motore","x":-0.7149,"y":1.15,"z":-2.6555,"g":2,"c":"#7c8aa0","t":"code","sez":["Data del primo commit che introduce il file: deterministica e verificabile.","Front-matter minimo e onesto: solo cio che si puo dedurre con certezza.","area_di()","costruisci()","data_primo_commit()","rel()"]},{"n":"altair_compact_view.py","f":"tools/altair_compact_view.py","a":"impianto","s":"motore","x":0.6222,"y":0.85,"z":-2.7682,"g":2,"c":"#7c8aa0","t":"code","sez":["add_edge()","add_node()","sz()"]},{"n":"apply_bridges.py","f":"tools/apply_bridges.py","a":"impianto","s":"motore","x":-2.7878,"y":1.0,"z":-0.8701,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"apply_provenance.py","f":"tools/apply_provenance.py","a":"impianto","s":"motore","x":-2.8286,"y":1.0,"z":-0.9998,"g":2,"c":"#7c8aa0","t":"code","sez":["Aggiunge un arco tra due FILE se entrambi sono nodi del grafo.","collega()"]},{"n":"brain.py","f":"tools/brain.py","a":"impianto","s":"motore","x":-1.6044,"y":1.0,"z":-0.6352,"g":31,"c":"#7c8aa0","t":"code","sez":["La cartella che contiene raw/, wiki/, engine/, areas.json di QUESTO brain.","Percorso dentro il brain attivo. Comodita' per non ripetere il join.","brain_root()","dentro()"]},{"n":"brain_new.py","f":"tools/brain_new.py","a":"impianto","s":"motore","x":-0.011,"y":0.85,"z":-4.7294,"g":0,"c":"#7c8aa0","t":"code","sez":["Cosa contiene davvero un brain: si conta, non si dichiara.","_console()","crea()","descrivi()","leggi_registro()","main()","scrivi_registro()"]},{"n":"build_area_graphs.py","f":"tools/build_area_graphs.py","a":"impianto","s":"motore","x":-2.8164,"y":1.0,"z":-1.2383,"g":2,"c":"#7c8aa0","t":"code","sez":["area_of()"]},{"n":"build_atlas_view.py","f":"tools/build_atlas_view.py","a":"impianto","s":"motore","x":-0.4747,"y":1.0,"z":-3.1143,"g":2,"c":"#7c8aa0","t":"code","sez":["Assegna x,y,z. Deterministico: dipende solo dal grafo, mai dall'ordine di     it","Ordine delle aree preso dal router: la vista non inventa una tassonomia sua.","_rel()","area_di()","aree_canoniche()","carica()","costruisci()","disponi()","html()","main()","strato_di()"]},{"n":"build_search_index.py","f":"tools/build_search_index.py","a":"impianto","s":"motore","x":-0.2472,"y":0.925,"z":-3.212,"g":2,"c":"#7c8aa0","t":"code","sez":["Frammenti per titolo markdown quando ci sono titoli; altrimenti blocchi separati","Il front-matter e metadato, non contenuto: non deve inquinare il ranking.     Re","Minuscolo senza accenti: 'analisi' e 'Analisí' devono coincidere.","leggi()","normalizza()","raccogli_percorsi()","spezza()","togli_frontmatter()","tokenizza()"]},{"n":"build_views_index.py","f":"tools/build_views_index.py","a":"impianto","s":"motore","x":-0.1301,"y":1.075,"z":-3.2879,"g":2,"c":"#7c8aa0","t":"code","sez":["Cosa contiene ciascuna vista, contato sul grafo vero.","Gli altri brain del repo, con la porta di ciascuno. Vuoto in un'istanza     auto","Quale brain stiamo guardando. Senza questo, la porta mostrava tre viste     senz","altri_brain()","brain_corrente()","html()","main()","numeri()"]},{"n":"check_privacy.py","f":"tools/check_privacy.py","a":"impianto","s":"motore","x":0.1172,"y":0.925,"z":-3.3553,"g":2,"c":"#7c8aa0","t":"code","sez":["main()","tracciati()"]},{"n":"check_provenance.py","f":"tools/check_provenance.py","a":"impianto","s":"motore","x":-3.0795,"y":1.0,"z":-1.4931,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"check_wikilinks.py","f":"tools/check_wikilinks.py","a":"impianto","s":"motore","x":-3.0776,"y":1.0,"z":-1.6364,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"console.py","f":"tools/console.py","a":"impianto","s":"motore","x":-1.2454,"y":1.0,"z":-0.7229,"g":32,"c":"#7c8aa0","t":"code","sez":["Forza stdout/stderr in UTF-8, sostituendo cio' che non e' rappresentabile.","usa_utf8()"]},{"n":"consolidate.py","f":"tools/consolidate.py","a":"impianto","s":"motore","x":-1.2982,"y":0.85,"z":-3.3012,"g":2,"c":"#7c8aa0","t":"code","sez":["Nodi mai risultati utili e mai citati: candidati a revisione, non a cestino.","Note che dicono quasi la stessa cosa, per sovrapposizione dei termini.     Segna","Per ogni macroarea: i nodi piu centrali, le note recenti, i temi.     E' la mapp","Stessa lezione registrata piu volte: stessi nodi e stesso esito.","_carica_json()","_lezioni()","conoscenza_stantia()","digest_per_area()","lezioni_ridondanti()","main()","note_simili()"]},{"n":"context_pack.py","f":"tools/context_pack.py","a":"impianto","s":"motore","x":-1.11,"y":0.85,"z":-1.9226,"g":3,"c":"#7c8aa0","t":"code","sez":["Assembla il contesto migliore per questa domanda, entro il budget.","Cosa c'e intorno ai file trovati, secondo il grafo. Evita all'agente di     dove","Il pacchetto in forma leggibile, pronto da incollare in un prompt.","Le lezioni che riguardano cio che stiamo per dare in pasto al modello.","_lezioni_pertinenti()","_token()","_vicinato()","come_testo()","pacchetto()"]},{"n":"freshness_report.py","f":"tools/freshness_report.py","a":"impianto","s":"motore","x":0.3938,"y":1.15,"z":-3.5859,"g":2,"c":"#7c8aa0","t":"code","sez":["Delega al parser condiviso (tools/frontmatter): la regola del blocco     delimit","_sla_dalle_aree()","come_data()","leggi_frontmatter()","sla_di()"]},{"n":"frontmatter.py","f":"tools/frontmatter.py","a":"impianto","s":"motore","x":-0.5245,"y":1.15,"z":-2.2841,"g":3,"c":"#7c8aa0","t":"code","sez":["(meta, corpo) da file. (None, '') se illeggibile.","(meta, corpo). Senza front-matter valido: ({}, testo intero).","Vero se il file appartiene a uno strato generato (esente da front-matter).","Vero solo per un blocco delimitato davvero: prima riga '---' e chiusura '---'.","_righe()","_strati_generati()","dividi()","e_generato()","ha_frontmatter()","leggi()"]},{"n":"graph_health.py","f":"tools/graph_health.py","a":"impianto","s":"motore","x":-3.1001,"y":1.0,"z":-1.9573,"g":2,"c":"#7c8aa0","t":"code","sez":["components_of()"]},{"n":"graph_metrics.py","f":"tools/graph_metrics.py","a":"impianto","s":"motore","x":-3.0726,"y":1.0,"z":-2.1038,"g":2,"c":"#7c8aa0","t":"code","sez":["strato()"]},{"n":"graph_prune.py","f":"tools/graph_prune.py","a":"impianto","s":"motore","x":0.691,"y":1.075,"z":-3.7164,"g":2,"c":"#7c8aa0","t":"code","sez":["Ritorna (grafo potato, nodi rimossi, archi rimossi). Deterministico.","_rel()","main()","pota()"]},{"n":"lesson_log.py","f":"tools/lesson_log.py","a":"impianto","s":"motore","x":-3.4468,"y":1.0,"z":-2.5536,"g":1,"c":"#7c8aa0","t":"code","sez":["CSV -> lista pulita. Rifiuta valori che iniziano con '-' (argument injection:","_lista()","main()"]},{"n":"lessons_digest.py","f":"tools/lessons_digest.py","a":"impianto","s":"motore","x":0.9797,"y":0.925,"z":-3.708,"g":2,"c":"#7c8aa0","t":"code","sez":["Le sessioni salvate da graphify: si contano, non si reinterpretano.","carica_jsonl()","sessioni_graphify()"]},{"n":"link_suggest.py","f":"tools/link_suggest.py","a":"impianto","s":"motore","x":-0.8345,"y":1.075,"z":-1.7315,"g":4,"c":"#7c8aa0","t":"code","sez":["Adiacenza a livello di FILE: due pagine sono vicine se un qualsiasi loro nodo","Coppie di pagine wiki non collegate ma con vicini in comune, per Adamic-Adar.","Flusso CLI. Isolato in una funzione perche il modulo dev'essere     IMPORTABILE:","_grafo_per_file()","contenuto()","link_esistenti()","main()","pagine_wiki()","proposte_strutturali()"]},{"n":"rebuild_all.py","f":"tools/rebuild_all.py","a":"impianto","s":"motore","x":-3.3858,"y":1.0,"z":-2.7093,"g":1,"c":"#7c8aa0","t":"code","sez":[]},{"n":"report_build.py","f":"tools/report_build.py","a":"impianto","s":"motore","x":-2.9442,"y":1.0,"z":-2.5414,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"report_harvest.py","f":"tools/report_harvest.py","a":"impianto","s":"motore","x":0.2842,"y":1.075,"z":-3.9322,"g":2,"c":"#7c8aa0","t":"code","sez":["_voci()","componi()","main()","raccogli()"]},{"n":"report_new.py","f":"tools/report_new.py","a":"impianto","s":"motore","x":-2.9246,"y":1.0,"z":-2.7209,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"report_update.py","f":"tools/report_update.py","a":"impianto","s":"motore","x":-2.8575,"y":1.0,"z":-2.8641,"g":2,"c":"#7c8aa0","t":"code","sez":[]},{"n":"resurface.py","f":"tools/resurface.py","a":"impianto","s":"motore","x":-0.4602,"y":0.925,"z":-2.4127,"g":3,"c":"#7c8aa0","t":"code","sez":["Aggiorna 'reviewed' a oggi: e cosi che la nota esce dalla coda.","Le piu meritevoli, ma variando: si prende dal gruppo di testa ruotando in base","Parser condiviso (tools/frontmatter).","Quanto e collegata ogni nota: le isolate sono quelle che si dimenticano prima.","_frontmatter()","_gradi_per_file()","candidati()","main()","scegli()","segna_rivista()"]},{"n":"search.py","f":"tools/search.py","a":"impianto","s":"motore","x":-0.9731,"y":1.0,"z":-1.8405,"g":4,"c":"#7c8aa0","t":"code","sez":["Cosa dice l'esperienza passata su questo risultato.","Quali termini della domanda compaiono davvero nel documento.","Quanto fidarsi di questo recupero. Deterministico e motivato.      copertura   =","Ranking BM25 classico. Ritorna [(indice_doc, punteggio)] decrescente.","Ranking semantico. Attivo solo se indice denso e libreria sono presenti.","Reciprocal Rank Fusion: fonde piu classifiche usando solo la posizione.","Ricarica se il file su disco e cambiato.      DIFETTO REALE CORRETTO: la cache e","Ricerca + valutazione della propria affidabilita (F1). E la forma che usano","Ricerca ibrida. Ritorna una lista di risultati, ognuno annotato con cio che","Stessa tokenizzazione usata in indicizzazione: la lista di stopword viaggia","Un nodo citato da una lezione si riferisce a questo risultato?      Prudenza vol","_annota_memoria()","_carica()","_corrisponde()","_fresco()","_memoria()","_normalizza()","_rrf()","_termini_del_documento()","_tokenizza()","cerca()","cerca_bm25()","cerca_con_diagnosi()","cerca_denso()"]},{"n":"README.md","f":"training/README.md","a":"impianto","s":"uso","x":-0.2395,"y":2.85,"z":-4.394,"g":0,"c":"#7c8aa0","t":"document","sez":["Disponibile","Farne uno tuo","Senza training","training — imprinting iniziale del brain"]},{"n":"aion-reasoner.md","f":"training/aion/engine/aion-reasoner.md","a":"impianto","s":"uso","x":-3.9087,"y":2.85,"z":-2.1917,"g":0,"c":"#7c8aa0","t":"document","sez":["0. MEMORIA — consulta le lezioni apprese","1. INTAKE — classifica la richiesta","2. DL_ICC — valuta la complessità","3. MODALITÀ — scegli il registro","4. ATTIVAZIONE AGENTI — orchestrazione (AION_SUPERIA)","5. COMPONENTI + INSEGNAMENTI","6. GATE ETHOS — vincolo di identità (sempre attivo)","7. VALUTAZIONE INTERMODULARE","8. SINTESI + FORMATO (SUPERIA → SFO → FCC)","AION Reasoner — protocollo di ragionamento","Apprendimento (opzionale, no API)","Decisione di fondo (gerarchia dei fattori)","Moduli trasversali (richiamabili quando pertinenti)","Pipeline (9 passi)"]},{"n":"aion.model.schema.json","f":"training/aion/engine/schema/aion.model.schema.json","a":"impianto","s":"uso","x":-2.0105,"y":3.075,"z":-4.093,"g":0,"c":"#7c8aa0","t":"code","sez":["$ref","$ref","$ref","$schema","agenti","collabora","componenti","consulta","definitions","description","dominanti","id","id","insegnamenti","interagisce","items","items","items","items","items","items","items","items","items"]},{"n":"README.md","f":"training/aion/raw/aion/README.md","a":"impianto","s":"uso","x":-1.3176,"y":3.075,"z":-0.8596,"g":6,"c":"#7c8aa0","t":"document","sez":["AION — modello di pensiero","Ambito","Documenti del corpus AION","Note"]},{"n":"aion-agents.md","f":"training/aion/raw/aion/aion-agents.md","a":"impianto","s":"uso","x":-1.5632,"y":3.075,"z":-1.1762,"g":6,"c":"#7c8aa0","t":"document","sez":[]},{"n":"aion-components.md","f":"training/aion/raw/aion/aion-components.md","a":"impianto","s":"uso","x":-1.6806,"y":3.075,"z":-1.4506,"g":6,"c":"#7c8aa0","t":"document","sez":["Ciclo computazionale semplificato – AION_NeurosSpike"]},{"n":"aion-description.md","f":"training/aion/raw/aion/aion-description.md","a":"impianto","s":"uso","x":-1.7322,"y":3.075,"z":-1.7105,"g":6,"c":"#7c8aa0","t":"document","sez":[]},{"n":"aion-framework.md","f":"training/aion/raw/aion/aion-framework.md","a":"impianto","s":"uso","x":-1.7366,"y":3.075,"z":-1.9615,"g":6,"c":"#7c8aa0","t":"document","sez":[]},{"n":"aion-manifest.md","f":"training/aion/raw/aion/aion-manifest.md","a":"impianto","s":"uso","x":-1.7026,"y":3.075,"z":-2.2045,"g":6,"c":"#7c8aa0","t":"document","sez":[]},{"n":"aion-oracle.md","f":"training/aion/raw/aion/aion-oracle.md","a":"impianto","s":"uso","x":-1.6353,"y":3.075,"z":-2.4392,"g":6,"c":"#7c8aa0","t":"document","sez":["1. 乾 Il Creativo (Qián) ䷀","10. 履 Il Procedere (Lǚ) ䷉","11. 泰 La Pace (Tài) ䷊","12. 否 Il Ristagno (Pǐ) ䷋","13. 同人 La Comunità (Tóng Rén) ䷌","14. 大有 Il Possesso Grande (Dà Yǒu) ䷍","15. 謙 La Modestia (Qiān) ䷎","16. 豫 L'Entusiasmo (Yù) ䷏","17. 隨 Il Seguimento (Suí) ䷐","18. 蠱 Il Lavoro sul Deterioramento (Gǔ) ䷑","19. 臨 L'Avvicinamento (Lín) ䷒","2. 坤 Il Ricettivo (Kūn) ䷁","20. 觀 La Contemplazione (Guān) ䷓","21. 噬嗑 Il Morso che Spezza (Shì Kè) ䷔","22. 賁 La Grazia (Bì) ䷕","23. 剝 Il Disgregarsi (Bō) ䷖","24. 復 Il Ritorno (Fù) ䷗","25. 無妄 L'Innocenza (Wú Wàng) ䷘","26. 大畜 La Forza Domatrice del Grande (Dà Chù) ䷙","27. 頤 Gli Angoli della Bocca (Yí) ䷚","28. 大過 La Preponderanza del Grande (Dà Guò) ䷛","29. 坎 L'Abissale (Kǎn) ䷜","3. 屯 Difficoltà Iniziale (Zhūn) ䷂","30. 離 L'Aderente (Lí) ䷝"]},{"n":"SKILL.md","f":"training/aion/skills/aion/SKILL.md","a":"impianto","s":"uso","x":-0.8689,"y":2.925,"z":-4.5551,"g":0,"c":"#7c8aa0","t":"document","sez":["Apprendimento (obbligatorio, ultimo passo)","Come procedere","Output atteso","Skill: ragionamento AION","Vincoli"]},{"n":"SKILL.md","f":"training/aion/skills/oracle/SKILL.md","a":"impianto","s":"uso","x":0.6885,"y":3.075,"z":-4.6623,"g":0,"c":"#7c8aa0","t":"document","sez":["Procedura","Skill: AION_Oracle (I Ching eseguibile)","Vincoli"]},{"n":"apply_iching_relations.py","f":"training/aion/tools/apply_iching_relations.py","a":"impianto","s":"uso","x":0.6523,"y":3.15,"z":-3.0066,"g":3,"c":"#7c8aa0","t":"code","sez":["I 64 nodi-esagramma nel testo grezzo: label 'N. hanzi Nome (pinyin) simbolo'.","main()","trova_nodi_esagramma()"]},{"n":"build_iching_db.py","f":"training/aion/tools/build_iching_db.py","a":"impianto","s":"uso","x":-3.233,"y":3.0,"z":-0.8013,"g":2,"c":"#7c8aa0","t":"code","sez":["section()"]},{"n":"gen_wiki_from_model.py","f":"training/aion/tools/gen_wiki_from_model.py","a":"impianto","s":"uso","x":-0.8714,"y":3.0,"z":-3.3359,"g":2,"c":"#7c8aa0","t":"code","sez":["Scrive una pagina: corpo + lista 'Collegati:' (niente sotto-heading -> niente no","w()"]},{"n":"oracle_cast.py","f":"training/aion/tools/oracle_cast.py","a":"impianto","s":"uso","x":-2.9822,"y":2.85,"z":-1.1807,"g":3,"c":"#7c8aa0","t":"code","sez":["ATTRIBUZIONE DECISIONALE (metodo canonico per i report).     Non si estrae a cas","Applica le regole di selezione della linea da interpretare. Ritorna (posizione,","Deriva i 6 lanci da un esagramma SCELTO + linee mobili decise:     bit 1 (yang):","Suggerisce gli esagrammi da ATTRIBUIRE: match tra le parole dell'argomento e i","_focus_line()","_lanci_from()","_load()","_mutate()","_public()","_to_binary()","attribute_reading()","cast_reading()","get_hexagram()","search_by_tags()"]},{"n":"validate_model.py","f":"training/aion/tools/validate_model.py","a":"impianto","s":"uso","x":-3.3898,"y":3.0,"z":-1.0857,"g":2,"c":"#7c8aa0","t":"code","sez":["main()"]}],"archi":[{"a":4,"b":39,"r":"imports_from"},{"a":8,"b":30,"r":"imports_from"},{"a":14,"b":15,"r":"imports"},{"a":17,"b":14,"r":"imports"},{"a":16,"b":15,"r":"imports"},{"a":22,"b":69,"r":"imports"},{"a":24,"b":72,"r":"imports_from"},{"a":26,"b":39,"r":"imports_from"},{"a":26,"b":43,"r":"imports_from"},{"a":27,"b":30,"r":"imports_from"},{"a":27,"b":39,"r":"imports_from"},{"a":28,"b":30,"r":"imports_from"},{"a":28,"b":39,"r":"imports_from"},{"a":29,"b":30,"r":"imports_from"},{"a":29,"b":39,"r":"imports_from"},{"a":32,"b":30,"r":"imports_from"},{"a":33,"b":30,"r":"imports_from"},{"a":34,"b":30,"r":"imports_from"},{"a":35,"b":30,"r":"imports_from"},{"a":36,"b":30,"r":"imports_from"},{"a":37,"b":30,"r":"imports_from"},{"a":38,"b":30,"r":"imports_from"},{"a":40,"b":30,"r":"imports_from"},{"a":41,"b":30,"r":"imports_from"},{"a":42,"b":30,"r":"imports_from"},{"a":44,"b":30,"r":"imports_from"},{"a":45,"b":30,"r":"imports_from"},{"a":46,"b":30,"r":"imports_from"},{"a":47,"b":30,"r":"imports_from"},{"a":48,"b":30,"r":"imports_from"},{"a":49,"b":30,"r":"imports_from"},{"a":51,"b":30,"r":"imports_from"},{"a":52,"b":30,"r":"imports_from"},{"a":53,"b":30,"r":"imports_from"},{"a":54,"b":30,"r":"imports_from"},{"a":55,"b":30,"r":"imports_from"},{"a":56,"b":30,"r":"imports_from"},{"a":69,"b":30,"r":"imports_from"},{"a":70,"b":30,"r":"imports_from"},{"a":71,"b":30,"r":"imports_from"},{"a":72,"b":30,"r":"imports_from"},{"a":73,"b":30,"r":"imports_from"},{"a":32,"b":39,"r":"imports_from"},{"a":33,"b":39,"r":"imports_from"},{"a":34,"b":39,"r":"imports_from"},{"a":35,"b":39,"r":"imports_from"},{"a":36,"b":39,"r":"imports_from"},{"a":37,"b":39,"r":"imports_from"},{"a":38,"b":39,"r":"imports_from"},{"a":40,"b":39,"r":"imports_from"},{"a":41,"b":39,"r":"imports_from"},{"a":42,"b":39,"r":"imports_from"},{"a":44,"b":39,"r":"imports_from"},{"a":45,"b":39,"r":"imports_from"},{"a":46,"b":39,"r":"imports_from"},{"a":48,"b":39,"r":"imports_from"},{"a":49,"b":39,"r":"imports_from"},{"a":50,"b":39,"r":"imports_from"},{"a":51,"b":39,"r":"imports_from"},{"a":52,"b":39,"r":"imports_from"},{"a":53,"b":39,"r":"imports_from"},{"a":54,"b":39,"r":"imports_from"},{"a":55,"b":39,"r":"imports_from"},{"a":56,"b":39,"r":"imports_from"},{"a":69,"b":39,"r":"imports_from"},{"a":70,"b":39,"r":"imports_from"},{"a":71,"b":39,"r":"imports_from"},{"a":72,"b":39,"r":"imports_from"},{"a":73,"b":39,"r":"imports_from"},{"a":41,"b":56,"r":"imports_from"},{"a":49,"b":43,"r":"imports_from"},{"a":55,"b":43,"r":"imports_from"},{"a":49,"b":56,"r":"imports_from"},{"a":12,"b":11,"r":"references"},{"a":60,"b":61,"r":"references"},{"a":60,"b":62,"r":"references"},{"a":60,"b":63,"r":"references"},{"a":60,"b":64,"r":"references"},{"a":60,"b":65,"r":"references"},{"a":60,"b":66,"r":"references"},{"a":61,"b":62,"r":"references"},{"a":61,"b":63,"r":"references"},{"a":61,"b":64,"r":"references"},{"a":61,"b":65,"r":"references"},{"a":61,"b":66,"r":"references"},{"a":62,"b":63,"r":"references"},{"a":62,"b":64,"r":"references"},{"a":62,"b":65,"r":"references"},{"a":62,"b":66,"r":"references"},{"a":63,"b":64,"r":"references"},{"a":63,"b":65,"r":"references"},{"a":63,"b":66,"r":"references"},{"a":64,"b":65,"r":"references"},{"a":64,"b":66,"r":"references"},{"a":65,"b":66,"r":"references"}],"aree":["ricette","tecniche","impianto"],"conta":{"impianto":71,"ricette":1,"tecniche":2},"strati":{"fonti":{"y":-3.0,"label":"FONTI","sotto":"raw/ — materiale grezzo","colore":"#f59e0b"},"sapere":{"y":-1.0,"label":"SAPERE","sotto":"wiki/ — conoscenza curata","colore":"#22d3ee"},"motore":{"y":1.0,"label":"MOTORE","sotto":"engine tools server tests","colore":"#a855f7"},"uso":{"y":3.0,"label":"USO","sotto":"skill, report, dottrina","colore":"#f472b6"}},"colori":{"aion":"#a78bfa","creativita":"#f472b6","data-science":"#22d3ee","divulgazione":"#34d399","finanza":"#fbbf24","web-design":"#fb923c","impianto":"#7c8aa0"}};
+const R_MIN = 1.05, R_MAX = 4.75;   // stessa geometria del layout Python
+
+/* Etichette leggibili per le relazioni che graphify estrae. Le prime tre sono
+   quelle che raccontano l'architettura: si disegnano piu spesse. */
+const REL = {
+  derived_from:  {c:'#f59e0b', l:'provenienza (fonte → sapere)', forte:1},
+  bridge:        {c:'#f472b6', l:'ponte intercampo',             forte:1},
+  generated_from:{c:'#a855f7', l:'generato da',                  forte:1},
+  references:    {c:'#64748b', l:'riferimento (wikilink)'},
+  imports:       {c:'#94a3b8', l:'import di codice'},
+  imports_from:  {c:'#94a3b8', l:'import di codice'},
+  calls:         {c:'#475569', l:'chiamata'},
+  contains:      {c:'#475569', l:'contiene'},
+};
+const info = r => REL[r] || {c:'#475569', l:r};
+
+const tela = document.getElementById('tela'), ctx = tela.getContext('2d');
+let W, H;
+/* Camera orbitale: due angoli, una distanza, un bersaglio. Il bersaglio si muove
+   quando si "vola" su un nodo — e cio che rende l'esplorazione immersiva invece
+   che una rotazione attorno a un centro fisso. */
+let angX = -0.40, angY = 0.55, dist = 14.0, scala = 900;
+let mira = {x:0, y:0, z:0}, miraObiettivo = {x:0, y:0, z:0}, distObiettivo = 14.0;
+let trascina = false, ux = 0, uy = 0, mosso = false;
+let scelto = null, sfiorato = null, conLente = false, rotante = true;
+let filtro = '', mouse = {x:-9e9, y:-9e9};
+
+const strati = new Set(Object.keys(D.strati));
+const aree = new Set(D.aree);
+const relUsate = [...new Set(D.archi.map(a => a.r))].sort(
+  (a,b) => (info(b).forte|0) - (info(a).forte|0) || a.localeCompare(b));
+const relAttive = new Set(relUsate);
+
+/* Adiacenza: serve alla lente, al pannello e all'evidenziazione. Costruita una
+   volta sola — ricalcolarla a ogni frame costerebbe piu del disegno. */
+const vicini = D.nodi.map(() => []);
+D.archi.forEach((a, i) => { vicini[a.a].push({j:a.b, i}); vicini[a.b].push({j:a.a, i}); });
+
+function intorno(i, passi) {
+  const visto = new Set([i]); let bordo = [i];
+  for (let p = 0; p < passi; p++) {
+    const prossimo = [];
+    bordo.forEach(k => vicini[k].forEach(v => {
+      if (!visto.has(v.j)) { visto.add(v.j); prossimo.push(v.j); } }));
+    bordo = prossimo;
+  }
+  return visto;
+}
+
+/* Il ridimensionamento e controllato dal ciclo di disegno, non dall'evento
+   'resize': se la pagina viene aperta in un contenitore che ha larghezza 0 al
+   caricamento (pannello nascosto, iframe montato dopo), l'evento non arriva mai
+   e la tela resterebbe vuota per sempre. Il confronto costa due letture a frame. */
+function ridimensiona() {
+  W = innerWidth; H = innerHeight;
+  tela.style.width = W + 'px'; tela.style.height = H + 'px';
+  tela.width = Math.max(1, W * devicePixelRatio);
+  tela.height = Math.max(1, H * devicePixelRatio);
+  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  // La scala segue la finestra: una costante fissa lascerebbe l'atlante grande
+  // come un francobollo su uno schermo largo e tagliato su uno piccolo.
+  // Su schermo stretto il vincolo e la larghezza, su schermo largo l'altezza:
+  // si prende il piu severo dei due, altrimenti la ruota esce dai bordi in verticale.
+  scala = Math.max(300, Math.min(W * 0.82, H * 0.95));
+}
+ridimensiona();
+
+/* --- Proiezione prospettica, scritta a mano ------------------------------
+   Traslazione sul bersaglio, rotazione attorno a Y (imbardata) poi attorno a X
+   (beccheggio), infine divisione per la profondita. Niente matrici: con due soli
+   angoli il conto esplicito e piu corto e piu veloce. */
+function proietta(p) {
+  const x0 = p.x - mira.x, y0 = p.y - mira.y, z0 = p.z - mira.z;
+  const cy = Math.cos(angY), sy = Math.sin(angY);
+  const x = x0*cy - z0*sy;  let z = x0*sy + z0*cy;
+  const cx = Math.cos(angX), sx = Math.sin(angX);
+  const y = y0*cx - z*sx;   z = y0*sx + z*cx;
+  const d = z + dist;
+  if (d <= 0.4) return null;                    // dietro la camera
+  const s = scala / d;
+  return {sx: W/2 + x*s, sy: H/2 - y*s, s, d};
+}
+/* Velo di profondita: cio che e lontano sbiadisce. E l'unico indizio di distanza
+   che il cervello legge senza pensarci, e da solo trasforma un disegno piatto in
+   uno spazio. */
+const velo = d => Math.max(0.16, Math.min(1, 1.55 - (d - (dist - 5.5)) / 13));
+
+const acceso  = n => strati.has(n.s) && aree.has(n.a);
+const combacia = n => !filtro || n.n.toLowerCase().includes(filtro) || n.a.includes(filtro);
+
+let insiemeLente = null;
+const dentroLente = i => !conLente || scelto === null || insiemeLente.has(i);
+
+/* --- Disegno ------------------------------------------------------------- */
+const P = new Array(D.nodi.length);
+
+function anelloStrato(st) {
+  ctx.strokeStyle = st.colore + '1c'; ctx.lineWidth = 1;
+  ctx.beginPath();
+  for (let i = 0; i <= 64; i++) {
+    const a = i / 64 * Math.PI * 2;
+    const p = proietta({x: Math.cos(a)*(R_MAX+0.35), y: st.y, z: Math.sin(a)*(R_MAX+0.35)});
+    if (!p) { ctx.stroke(); ctx.beginPath(); continue; }
+    i ? ctx.lineTo(p.sx, p.sy) : ctx.moveTo(p.sx, p.sy);
+  }
+  ctx.stroke();
+  const e = proietta({x: R_MAX + 0.75, y: st.y, z: 0});
+  if (e) {
+    // L'etichetta segue l'anello in 3D, ma non deve mai uscire dallo schermo:
+    // quando arriverebbe oltre il bordo si ribalta e si allinea a destra.
+    let tx = e.sx;
+    if (tx > W - 150) { tx = Math.min(tx, W - 10); ctx.textAlign = 'right'; }
+    else if (tx < 10) { tx = 10; ctx.textAlign = 'left'; }
+    else ctx.textAlign = 'left';
+    ctx.fillStyle = st.colore + 'cc'; ctx.font = '700 10.5px sans-serif';
+    ctx.fillText(st.label, tx, e.sy);
+    if (W >= 560) {                       // la riga di spiegazione solo se c'e posto
+      ctx.fillStyle = '#475569'; ctx.font = '9.5px sans-serif';
+      ctx.fillText(st.sotto, tx, e.sy + 12);
+    }
+  }
+}
+
+/* Le divisioni tra spicchi: sono cio che rende leggibile "questa area finisce
+   qui". Senza, la ruota e un disco indistinto. */
+function spicchi() {
+  const n = D.aree.length;
+  ctx.lineWidth = 1;
+  for (let k = 0; k < n; k++) {
+    const a = (k / n) * Math.PI*2 - Math.PI/n;
+    const p1 = proietta({x: Math.cos(a)*R_MIN, y: -3.35, z: Math.sin(a)*R_MIN});
+    const p2 = proietta({x: Math.cos(a)*(R_MAX+0.35), y: -3.35, z: Math.sin(a)*(R_MAX+0.35)});
+    if (p1 && p2) { ctx.strokeStyle = 'rgba(148,163,184,.10)';
+      ctx.beginPath(); ctx.moveTo(p1.sx,p1.sy); ctx.lineTo(p2.sx,p2.sy); ctx.stroke(); }
+    const area = D.aree[k], q = D.conta[area] || 0;
+    const centro = (k / n) * Math.PI*2;
+    const e = proietta({x: Math.cos(centro)*(R_MAX+0.15), y: -3.5, z: Math.sin(centro)*(R_MAX+0.15)});
+    if (e && aree.has(area)) {
+      ctx.textAlign = 'center'; ctx.font = '600 10px sans-serif';
+      ctx.fillStyle = (D.colori[area] || '#7c8aa0') + (q ? 'dd' : '55');
+      ctx.fillText(area + '  ' + q, e.sx, e.sy);
+    }
+  }
+}
+
+/* L'anello di ritorno: le lezioni prodotte usando il brain rientrano tra le
+   fonti. E un'annotazione di PROCESSO, non un arco del grafo — percio e
+   tratteggiata e dichiarata, per non farla scambiare per un dato. */
+function anelloFeedback() {
+  ctx.save(); ctx.setLineDash([5, 6]);
+  ctx.strokeStyle = 'rgba(52,211,153,.34)'; ctx.lineWidth = 1.4;
+  ctx.beginPath();
+  let primo = true, medio = null;
+  for (let i = 0; i <= 30; i++) {
+    const t = i/30, ang = -Math.PI*0.32;
+    const r = (R_MAX + 0.9) + Math.sin(t*Math.PI) * 1.5;
+    const p = proietta({x: Math.cos(ang)*r, y: 3.0 - 6.0*t, z: Math.sin(ang)*r});
+    if (!p) continue;
+    if (i === 15) medio = p;
+    primo ? (ctx.moveTo(p.sx,p.sy), primo=false) : ctx.lineTo(p.sx,p.sy);
+  }
+  ctx.stroke(); ctx.restore();
+  if (medio) { ctx.textAlign='center'; ctx.font='9.5px sans-serif';
+    ctx.fillStyle='rgba(52,211,153,.6)'; ctx.fillText('le lezioni rientrano', medio.sx, medio.sy); }
+}
+
+/* Archi come curve: il punto di controllo e spinto FUORI dall'asse, cosi due
+   nodi vicini non producono una corda che taglia il centro della ruota. In
+   prospettiva le corde dritte si sovrappongono e diventano illeggibili. */
+function arco(a, b) {
+  const mx = (a.x+b.x)/2, my = (a.y+b.y)/2, mz = (a.z+b.z)/2;
+  const l = Math.hypot(mx, mz) || 1;
+  const gonfio = 0.20 * Math.hypot(a.x-b.x, a.y-b.y, a.z-b.z);
+  const cxp = mx + (mx/l)*gonfio, czp = mz + (mz/l)*gonfio;
+  const punti = [];
+  for (let i = 0; i <= 10; i++) {
+    const t = i/10, u = 1-t;
+    const p = proietta({x: u*u*a.x + 2*u*t*cxp + t*t*b.x,
+                        y: u*u*a.y + 2*u*t*my  + t*t*b.y,
+                        z: u*u*a.z + 2*u*t*czp + t*t*b.z});
+    if (p) punti.push(p);
+  }
+  return punti;
+}
+
+function disegna() {
+  if (W !== innerWidth || H !== innerHeight) ridimensiona();
+  // interpolazione morbida verso il bersaglio: il "volo" verso un nodo
+  mira.x += (miraObiettivo.x - mira.x)*0.12;
+  mira.y += (miraObiettivo.y - mira.y)*0.12;
+  mira.z += (miraObiettivo.z - mira.z)*0.12;
+  dist += (distObiettivo - dist)*0.10;
+  if (rotante && !trascina) angY += 0.0013;
+
+  ctx.clearRect(0, 0, W, H);
+  for (let i = 0; i < D.nodi.length; i++) {
+    const n = D.nodi[i];
+    P[i] = acceso(n) ? proietta(n) : null;      // mai lasciare proiezioni stantie
+  }
+
+  spicchi();
+  Object.entries(D.strati).forEach(([k, st]) => { if (strati.has(k)) anelloStrato(st); });
+  // L'anello di ritorno gira piu largo di tutto il resto: su schermo stretto
+  // uscirebbe dal bordo, e non vale la pena rimpicciolire l'atlante per lui.
+  if (strati.size === 4 && W >= 700) anelloFeedback();
+
+  // ARCHI (prima dei nodi: restano dietro)
+  let archiVisti = 0;
+  for (const e of D.archi) {
+    const A = P[e.a], B = P[e.b];
+    if (!A || !B || !relAttive.has(e.r)) continue;
+    if (!dentroLente(e.a) || !dentroLente(e.b)) continue;
+    const sel = scelto !== null && (e.a === scelto || e.b === scelto);
+    const evi = sfiorato !== null && (e.a === sfiorato || e.b === sfiorato);
+    if (filtro && !sel && !combacia(D.nodi[e.a]) && !combacia(D.nodi[e.b])) continue;
+    const I = info(e.r), forte = !!I.forte;
+    const op = velo((A.d + B.d)/2) * (sel||evi ? 1 : (forte ? 0.5 : 0.22));
+    const punti = arco(D.nodi[e.a], D.nodi[e.b]);
+    if (punti.length < 2) continue;
+    ctx.globalAlpha = op; ctx.strokeStyle = I.c;
+    ctx.lineWidth = sel ? 2.1 : (evi ? 1.7 : (forte ? 1.25 : 0.65));
+    ctx.beginPath(); ctx.moveTo(punti[0].sx, punti[0].sy);
+    for (let i = 1; i < punti.length; i++) ctx.lineTo(punti[i].sx, punti[i].sy);
+    ctx.stroke(); archiVisti++;
+  }
+  ctx.globalAlpha = 1;
+
+  // NODI, dal fondo verso la camera (algoritmo del pittore)
+  const ordine = [];
+  for (let i = 0; i < D.nodi.length; i++) if (P[i] && dentroLente(i)) ordine.push(i);
+  ordine.sort((a, b) => P[b].d - P[a].d);
+
+  // Scala di riferimento: quella del piano che la camera sta guardando. Tutte le
+  // grandezze in pixel si esprimono come rapporto con questa, cosi restano uguali
+  // su qualsiasi schermo e crescono solo per l'avvicinamento prospettico.
+  const sRif = scala / dist;
+  const etichette = [];
+  for (const i of ordine) {
+    const n = D.nodi[i], p = P[i];
+    const sel = i === scelto, evi = i === sfiorato, ok = combacia(n);
+    const r = Math.max(2.2, (2.9 + Math.sqrt(n.g)*1.35) * p.s/sRif);
+    ctx.globalAlpha = velo(p.d) * (ok ? 1 : 0.12);
+    if (sel || evi) {                                  // alone
+      ctx.beginPath(); ctx.arc(p.sx, p.sy, r + (sel?9:6), 0, 7);
+      ctx.fillStyle = n.c + (sel ? '3a' : '22'); ctx.fill();
+    }
+    ctx.beginPath();
+    // quadrato = codice, cerchio = documento: si distingue senza leggere
+    if (n.t === 'code') ctx.rect(p.sx-r, p.sy-r, r*2, r*2);
+    else ctx.arc(p.sx, p.sy, r, 0, 7);
+    ctx.fillStyle = n.c; ctx.fill();
+    if (sel) { ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.7; ctx.stroke(); }
+    ctx.globalAlpha = 1;
+    // Etichette: solo dove non affollano. Gli hub le hanno sempre, gli altri solo
+    // se cercati o toccati — altrimenti il testo copre il disegno.
+    if (sel || evi || (filtro && ok) || n.g >= 7 || (conLente && scelto !== null))
+      etichette.push({p, n, sel: sel||evi, ok});
+  }
+  etichette.forEach(({p, n, sel, ok}) => {
+    ctx.globalAlpha = velo(p.d) * (ok ? 0.95 : 0.2);
+    ctx.font = (sel ? '700 ' : '') + Math.max(9, Math.min(15, 11*p.s/sRif)) + 'px sans-serif';
+    ctx.textAlign = 'center';
+    const testo = n.n.replace(/\.(md|py|json|html|yml|txt)$/, '');
+    if (sel) { ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(5,7,13,.85)'; ctx.strokeText(testo, p.sx, p.sy - 11); }
+    ctx.fillStyle = sel ? '#fff' : '#cbd5e1';
+    ctx.fillText(testo, p.sx, p.sy - 11);
+  });
+  ctx.globalAlpha = 1;
+
+  document.getElementById('hud').textContent =
+    ordine.length + ' file · ' + archiVisti + ' relazioni visibili' +
+    (conLente && scelto !== null ? ' · lente attiva' : '');
+}
+
+function anima() { disegna(); requestAnimationFrame(anima); }
+
+/* --- Puntamento ---------------------------------------------------------- */
+function sotto(mx, my) {
+  let vicino = null, dmin = 20;
+  for (let i = 0; i < D.nodi.length; i++) {
+    const p = P[i];
+    if (!p || !dentroLente(i) || !combacia(D.nodi[i])) continue;
+    const d = Math.hypot(p.sx - mx, p.sy - my);
+    if (d < dmin) { dmin = d; vicino = i; }
+  }
+  return vicino;
+}
+
+/* Spostamento laterale della camera. Le direzioni "destra" e "su" dello schermo
+   riespresse nel mondo sono le derivate della proiezione rispetto a x, y, z: con
+   due sole rotazioni si scrivono a mano e non serve invertire alcuna matrice. */
+function sposta(dx, dy) {
+  const s = scala / dist;                       // pixel per unita di mondo
+  const cy = Math.cos(angY), sy = Math.sin(angY);
+  const cx = Math.cos(angX), sx = Math.sin(angX);
+  const destra = {x: cy,       y: 0,  z: -sy};
+  const su     = {x: -sy * sx, y: cx, z: -cy * sx};
+  const a = -dx / s, b = dy / s;                // la scena segue il cursore
+  miraObiettivo = {
+    x: miraObiettivo.x + destra.x*a + su.x*b,
+    y: miraObiettivo.y + destra.y*a + su.y*b,
+    z: miraObiettivo.z + destra.z*a + su.z*b,
+  };
+}
+
+const nube = document.getElementById('nube');
+let spostando = false;
+tela.addEventListener('contextmenu', e => e.preventDefault());
+tela.addEventListener('mousedown', e => {
+  trascina = true; mosso = false; ux = e.clientX; uy = e.clientY;
+  spostando = e.shiftKey || e.button === 2;     // Shift o tasto destro = sposta
+  tela.classList.toggle('sposta', spostando);
+  tela.classList.toggle('presa', !spostando);
+});
+addEventListener('mouseup', () => {
+  trascina = false; spostando = false;
+  tela.classList.remove('presa', 'sposta');
+});
+addEventListener('mousemove', e => {
+  mouse = {x: e.clientX, y: e.clientY};
+  if (trascina) {
+    if (Math.abs(e.clientX-ux) + Math.abs(e.clientY-uy) > 3) { mosso = true; rotante = false; segnaGira(); }
+    if (spostando) sposta(e.clientX - ux, e.clientY - uy);
+    else {
+      angY += (e.clientX - ux) * 0.0062;
+      angX = Math.max(-1.5, Math.min(1.5, angX + (e.clientY - uy) * 0.0062));
+    }
+    ux = e.clientX; uy = e.clientY;
+    nube.style.display = 'none';
+    return;
+  }
+  const i = sotto(e.clientX, e.clientY);
+  sfiorato = i;
+  if (i === null) { nube.style.display = 'none'; return; }
+  const n = D.nodi[i];
+  nube.innerHTML = '<b>' + esc(n.n) + '</b><br><span class="sub">' + esc(n.a) +
+    ' · ' + D.strati[n.s].label.toLowerCase() + ' · ' + n.g + ' collegamenti</span>';
+  nube.style.display = 'block';
+  nube.style.left = Math.min(W - 210, e.clientX + 14) + 'px';
+  nube.style.top = (e.clientY + 16) + 'px';
+});
+tela.addEventListener('wheel', e => {
+  e.preventDefault();
+  distObiettivo = Math.max(3.2, Math.min(30, distObiettivo * (e.deltaY > 0 ? 1.11 : 0.9)));
+}, {passive: false});
+tela.addEventListener('click', e => {
+  if (mosso) return;
+  const i = sotto(e.clientX, e.clientY);
+  i === null ? chiudi() : apri(i);
+});
+tela.addEventListener('dblclick', e => {
+  const i = sotto(e.clientX, e.clientY);
+  if (i !== null) { apri(i); vola(i); }
+});
+
+/* Touch: un dito ruota, due dita zoomano. */
+let td = null;
+tela.addEventListener('touchstart', e => {
+  rotante = false; segnaGira();
+  if (e.touches.length === 1) { ux = e.touches[0].clientX; uy = e.touches[0].clientY; td = null; }
+  else if (e.touches.length === 2) td = distanzaDita(e);
+}, {passive: true});
+tela.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (e.touches.length === 1 && td === null) {
+    angY += (e.touches[0].clientX - ux) * 0.0062;
+    angX = Math.max(-1.5, Math.min(1.5, angX + (e.touches[0].clientY - uy) * 0.0062));
+    ux = e.touches[0].clientX; uy = e.touches[0].clientY;
+  } else if (e.touches.length === 2) {
+    const d = distanzaDita(e);
+    if (td) distObiettivo = Math.max(3.2, Math.min(30, distObiettivo * (td/d)));
+    td = d;
+  }
+}, {passive: false});
+const distanzaDita = e => Math.hypot(
+  e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+
+addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') { if (e.key === 'Escape') e.target.blur(); return; }
+  const k = e.key.toLowerCase();
+  if (e.key === 'Escape') chiudi();
+  else if (k === 'l') lente();
+  else if (k === 'r') gira();
+  else if (e.key === 'Backspace') { e.preventDefault(); indietro(); }
+  else if (e.key === ']') scorriVicini(1);
+  else if (e.key === '[') scorriVicini(-1);
+  else if (e.key === '0') { miraObiettivo = {x:0, y:0, z:0}; distObiettivo = 14.0; }
+  else if (k === '/') { e.preventDefault(); document.getElementById('cerca').focus(); }
+  else if (e.key === 'ArrowLeft')  angY -= 0.09;
+  else if (e.key === 'ArrowRight') angY += 0.09;
+  else if (e.key === 'ArrowUp')    angX = Math.max(-1.5, angX - 0.07);
+  else if (e.key === 'ArrowDown')  angX = Math.min(1.5, angX + 0.07);
+  else if (e.key === '+' || e.key === '=') distObiettivo = Math.max(3.2, distObiettivo*0.85);
+  else if (e.key === '-') distObiettivo = Math.min(30, distObiettivo*1.18);
+});
+
+/* --- Pannello di dettaglio ------------------------------------------------ */
+const esc = s => String(s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+/* Navigare un grafo vuol dire poter tornare indietro. Senza cronologia, tre
+   click sui vicini e non sai piu' da dove sei partito — ed e' esattamente il
+   momento in cui una mappa smette di essere una mappa. */
+let storia = [], tornando = false;
+let ancoraGiro = null, giro = -1;   // nodo di cui si stanno scorrendo i vicini
+
+function apri(i, mantieniGiro) {
+  if (!mantieniGiro) { ancoraGiro = null; giro = -1; }
+  if (scelto !== null && scelto !== i && !tornando) storia.push(scelto);
+  document.getElementById('bIndietro').style.display = storia.length ? 'block' : 'none';
+  scelto = i; insiemeLente = intorno(i, 2);
+  const n = D.nodi[i], st = D.strati[n.s];
+  document.getElementById('dNome').textContent = n.n;
+  document.getElementById('dVia').textContent = n.f;
+  document.getElementById('dTag').innerHTML =
+    `<span class="tag" style="border-color:${n.c}66;color:${n.c}">${esc(n.a)}</span>` +
+    `<span class="tag" style="border-color:${st.colore}66;color:${st.colore}">${esc(st.label)}</span>` +
+    `<span class="tag">${n.g} collegamenti</span>` +
+    `<span class="tag">${intorno(i,2).size - 1} nodi a 2 passi</span>`;
+
+  const perRel = {};
+  vicini[i].forEach(v => { const r = D.archi[v.i].r; (perRel[r] = perRel[r] || []).push(v.j); });
+
+  let h = '';
+  if (n.sez.length) h += '<h3>Dentro questo file · ' + n.sez.length + '</h3><ul>' +
+    n.sez.map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>';
+  Object.keys(perRel).sort((a,b) => (info(b).forte|0)-(info(a).forte|0) || a.localeCompare(b))
+    .forEach(r => {
+      const lista = perRel[r], I = info(r);
+      h += `<h3 style="color:${I.c}">${esc(I.l)} · ${lista.length}</h3><ul>` +
+        lista.slice(0, 18).map(j =>
+          `<li class="link" onclick="apri(${j});vola(${j})">${esc(D.nodi[j].n)}` +
+          `<span class="dove"> — ${esc(D.nodi[j].a)} · ${esc(D.strati[D.nodi[j].s].label.toLowerCase())}</span></li>`
+        ).join('') +
+        (lista.length > 18 ? `<li class="dove">…e altri ${lista.length-18}</li>` : '') + '</ul>';
+    });
+  if (!h) h = '<h3>Nessun collegamento</h3><ul><li>Nodo isolato: nessun altro file lo raggiunge.</li></ul>';
+  document.getElementById('dCorpo').innerHTML = h;
+  document.getElementById('det').classList.add('aperto');
+}
+function vola(i) {
+  const n = D.nodi[i];
+  miraObiettivo = {x: n.x, y: n.y, z: n.z};
+  distObiettivo = Math.min(distObiettivo, 7.5);
+  rotante = false; segnaGira();
+}
+function indietro() {
+  if (!storia.length) return;
+  const i = storia.pop();
+  tornando = true; apri(i); tornando = false;
+  vola(i);
+  document.getElementById('bIndietro').style.display = storia.length ? 'block' : 'none';
+}
+
+/* Scorrere i vicini di UN nodo, restando ancorati a lui: e' il modo per leggere
+   tutto cio' che tocca un file senza cercarne i pallini a occhio. */
+function scorriVicini(passo) {
+  const base = ancoraGiro !== null ? ancoraGiro : scelto;
+  if (base === null || !vicini[base].length) return;
+  const lista = vicini[base];
+  giro = (giro + passo + lista.length) % lista.length;
+  ancoraGiro = base;
+  const j = lista[giro].j;
+  apri(j, true); vola(j);
+}
+
+function chiudi() {
+  scelto = null; insiemeLente = null; storia = []; ancoraGiro = null; giro = -1;
+  miraObiettivo = {x:0, y:0, z:0};
+  document.getElementById('bIndietro').style.display = 'none';
+  document.getElementById('det').classList.remove('aperto');
+}
+
+/* --- Comandi -------------------------------------------------------------- */
+function interruttore(dove, chiave, testo, colore, insieme, quadrato) {
+  const d = document.createElement('div'); d.className = 'riga';
+  d.innerHTML = `<span class="bollo${quadrato?' q':''}" style="background:${colore}"></span><span>${testo}</span>`;
+  d.onclick = () => { insieme.has(chiave) ? insieme.delete(chiave) : insieme.add(chiave);
+                      d.classList.toggle('spenta', !insieme.has(chiave)); };
+  dove.appendChild(d); return d;
+}
+Object.entries(D.strati).forEach(([k, st]) =>
+  interruttore(document.getElementById('fStrati'), k, st.label, st.colore, strati));
+D.aree.forEach(a => {
+  const q = D.conta[a] || 0;
+  interruttore(document.getElementById('fAree'), a,
+    `${a} <span class="num">${q}</span>`, D.colori[a] || '#7c8aa0', aree);
+});
+relUsate.forEach(r => interruttore(document.getElementById('fRel'), r,
+  info(r).l, info(r).c, relAttive));
+
+const campo = document.getElementById('cerca');
+const esiti = document.getElementById('esiti'), contaEsiti = document.getElementById('conta-esiti');
+
+/* Un conteggio non basta a navigare: due file possono chiamarsi uguale (c'e' un
+   lo stesso nome puo esistere in due strati) e "Invio" sceglierebbe a caso.
+   L'elenco mostra area e strato di ciascuno, e ci si va con un click. */
+function mostraEsiti() {
+  const trovati = D.nodi.map((n, i) => ({n, i})).filter(x => acceso(x.n) && combacia(x.n));
+  if (!filtro) { contaEsiti.textContent = ''; esiti.innerHTML = ''; return; }
+  if (!trovati.length) { contaEsiti.textContent = 'nessun file'; esiti.innerHTML = ''; return; }
+  contaEsiti.textContent = trovati.length + ' file' + (trovati.length > 40 ? ' — affina la ricerca' : '');
+  esiti.innerHTML = trovati.slice(0, 40).map(({n, i}) =>
+    `<div class="esito" onclick="apri(${i});vola(${i})">` +
+    `<span class="bollo" style="background:${n.c}"></span><span>${esc(n.n)}</span>` +
+    `<span class="dove">${esc(n.a)} · ${esc(D.strati[n.s].label.toLowerCase())}</span></div>`).join('');
+}
+campo.addEventListener('input', e => { filtro = e.target.value.trim().toLowerCase(); mostraEsiti(); });
+campo.addEventListener('keydown', e => {
+  if (e.key !== 'Enter' || !filtro) return;
+  const i = D.nodi.findIndex(n => acceso(n) && combacia(n));
+  if (i >= 0) { apri(i); vola(i); }
+});
+
+function posa(quale) {
+  rotante = false; segnaGira();
+  if (quale === 'obliqua') { angX = -0.40; angY = 0.55; distObiettivo = 14.0; }
+  if (quale === 'sezione') { angX = 0.0;   angY = 0.55; distObiettivo = 15.0; }  // gli strati di taglio
+  if (quale === 'alto')    { angX = -1.44; angY = 0.0;  distObiettivo = 16.0; }  // la ruota delle aree
+  miraObiettivo = {x:0, y:0, z:0};
+}
+function lente() {
+  conLente = !conLente;
+  document.getElementById('bLente').classList.toggle('on', conLente);
+}
+function gira() { rotante = !rotante; segnaGira(); }
+function segnaGira() { document.getElementById('bGira').classList.toggle('on', rotante); }
+segnaGira();
+
+anima();
+</script></body></html>

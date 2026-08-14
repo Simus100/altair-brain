@@ -1,0 +1,23 @@
+{
+  "centrali": [
+    {
+      "dove": "raw/ricette/vinaigrette.md",
+      "grado": 1,
+      "nodo": "vinaigrette.md"
+    },
+    {
+      "dove": "raw/ricette/vinaigrette.md",
+      "grado": 1,
+      "nodo": "Vinaigrette che non si separa"
+    }
+  ],
+  "file": 1,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [
+    {
+      "file": "raw/ricette/vinaigrette.md",
+      "giorni_fa": 0
+    }
+  ],
+  "nodi": 2
+}

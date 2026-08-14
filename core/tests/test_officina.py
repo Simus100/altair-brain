@@ -186,3 +186,44 @@ def test_un_brain_vergine_non_si_lamenta_al_primo_avvio(tmp_path):
     assert not ({"date", "reviewed"} & set(meta)), \
         (f"il README dello scheletro invecchia (campi {sorted(set(meta) & {'date','reviewed'})}): "
          "un brain appena creato risulterebbe gia' scaduto")
+
+
+def test_ogni_istanza_si_chiama_col_proprio_nome():
+    """DIFETTO REALE: dentro un'istanza BRAIN e ROOT coincidono, quindi il confronto
+    faceva dichiarare 'brain di riferimento' a QUALSIASI brain — aprivi l'atlante di
+    'cucina' e diceva di essere il principale. Il riferimento si riconosce dall'essere
+    un'officina (ha core/ e brains/), non dal fatto che i percorsi coincidano."""
+    from tools import build_views_index as bvi
+    assert bvi.brain_corrente() == "brain di riferimento", \
+        "la radice, che ha core/ e brains/, e' il brain di riferimento"
+    for b in json.loads((ROOT / "brains" / "brains.json").read_text(encoding="utf-8"))["brains"]:
+        porta = ROOT / b["percorso"] / "graphify-out" / "index.html"
+        if not porta.exists():
+            continue
+        testo = porta.read_text(encoding="utf-8")
+        assert f"<b>{b['nome']}</b>" in testo, \
+            f"la porta di {b['nome']} non dichiara il proprio nome"
+        assert "brain di riferimento" not in testo, \
+            f"{b['nome']} si spaccia per il brain di riferimento"
+
+
+def test_il_selettore_punta_a_file_che_esistono():
+    """Un selettore che offre porte inesistenti e' peggio di nessun selettore."""
+    from tools import build_views_index as bvi
+    for b in bvi.altri_brain():
+        if not b["pronto"]:
+            continue
+        dest = (ROOT / "graphify-out" / b["href"]).resolve()
+        assert dest.exists(), f"il selettore punta a {b['href']}, che non esiste"
+
+
+def test_un_brain_non_legge_la_storia_di_un_altro():
+    """DIFETTO REALE: graph_health chiedeva a git 'HEAD~1:graphify-out/graph.json',
+    ma i percorsi di git sono relativi al REPOSITORY. Da brains/<nome>/ tornava il
+    grafo del brain di riferimento: un'istanza confrontava i propri nodi con quelli
+    di un'altra e falliva l'anti-regressione per un calo mai avvenuto."""
+    testo = (ROOT / "tools" / "graph_health.py").read_text(encoding="utf-8")
+    assert "rev-parse" in testo and "--show-toplevel" in testo, \
+        "il baseline non e calcolato rispetto alla radice del repository"
+    assert 'f"{prev_ref}:graphify-out/graph.json"' not in testo, \
+        "percorso git fisso: un'istanza leggerebbe la storia del brain di riferimento"

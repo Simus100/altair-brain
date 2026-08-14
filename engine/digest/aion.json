@@ -46,23 +46,23 @@
       "nodo": "aion-synth.md"
     },
     {
-      "dove": "raw/aion/aion-oracle.md",
+      "dove": "wiki/aion/aion-cognition-view.md",
       "grado": 15,
-      "nodo": "23. 剝 Il Disgregarsi (Bō) ䷖"
+      "nodo": "aion-cognition-view.md"
     },
     {
-      "dove": "raw/aion/aion-oracle.md",
+      "dove": "wiki/aion/livello-orchestrazione-stile.md",
       "grado": 15,
-      "nodo": "24. 復 Il Ritorno (Fù) ䷗"
+      "nodo": "livello-orchestrazione-stile.md"
     },
     {
-      "dove": "raw/aion/aion-oracle.md",
-      "grado": 15,
-      "nodo": "37. 家人 La Casata (Jiā Rén) ䷤"
+      "dove": "wiki/aion/aion-adaptive-core.md",
+      "grado": 14,
+      "nodo": "aion-adaptive-core.md"
     }
   ],
   "file": 62,
-  "generato_il": "2026-08-13",
+  "generato_il": "2026-08-14",
   "modificati_di_recente": [
     {
       "file": "wiki/aion/aion-adaptive-core.md",

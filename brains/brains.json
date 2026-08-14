@@ -1,5 +1,13 @@
 {
   "schema_version": 1,
   "descrizione": "I brain di questo repo. Ognuno e un'istanza autosufficiente provvista da core/.",
-  "brains": []
+  "brains": [
+    {
+      "nome": "cucina",
+      "percorso": "brains/cucina",
+      "creato": "2026-08-14",
+      "training": null,
+      "origine": "core/"
+    }
+  ]
 }

@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "id": "fase:1",
+      "label": "(1) Sorgenti — raw/",
+      "layer": "processo",
+      "kind": "fase",
+      "size": 17
+    },
+    {
+      "id": "fase:2",
+      "label": "(2) Modello — wiki/",
+      "layer": "processo",
+      "kind": "fase",
+      "size": 17
+    },
+    {
+      "id": "fase:3",
+      "label": "(3) Motore — engine/",
+      "layer": "processo",
+      "kind": "fase",
+      "size": 17
+    },
+    {
+      "id": "fase:4",
+      "label": "(4) Skill",
+      "layer": "processo",
+      "kind": "fase",
+      "size": 17
+    },
+    {
+      "id": "fase:5",
+      "label": "(5) Feedback — LESSONS",
+      "layer": "processo",
+      "kind": "fase",
+      "size": 17
+    },
+    {
+      "id": "raw:ricette",
+      "label": "ricette (raw)",
+      "layer": "area:ricette",
+      "kind": "dato",
+      "size": 9
+    },
+    {
+      "id": "raw:tecniche",
+      "label": "tecniche (raw)",
+      "layer": "area:tecniche",
+      "kind": "dato",
+      "size": 10
+    },
+    {
+      "id": "eng:LESSONS.md",
+      "label": "LESSONS.md",
+      "layer": "engine",
+      "kind": "dato",
+      "size": 8
+    },
+    {
+      "id": "skill:triage",
+      "label": "/triage",
+      "layer": "skill",
+      "kind": "dato",
+      "size": 9
+    },
+    {
+      "id": "data:lessons",
+      "label": "LESSONS / memory",
+      "layer": "feedback",
+      "kind": "dato",
+      "size": 9
+    }
+  ],
+  "links": [
+    {
+      "source": "fase:1",
+      "target": "fase:2",
+      "kind": "flow"
+    },
+    {
+      "source": "fase:2",
+      "target": "fase:3",
+      "kind": "flow"
+    },
+    {
+      "source": "fase:3",
+      "target": "fase:4",
+      "kind": "flow"
+    },
+    {
+      "source": "fase:4",
+      "target": "fase:5",
+      "kind": "flow"
+    },
+    {
+      "source": "fase:5",
+      "target": "fase:2",
+      "kind": "loop"
+    },
+    {
+      "source": "fase:1",
+      "target": "raw:ricette",
+      "kind": "has"
+    },
+    {
+      "source": "fase:1",
+      "target": "raw:tecniche",
+      "kind": "has"
+    },
+    {
+      "source": "fase:3",
+      "target": "eng:LESSONS.md",
+      "kind": "has"
+    },
+    {
+      "source": "fase:4",
+      "target": "skill:triage",
+      "kind": "has"
+    },
+    {
+      "source": "fase:3",
+      "target": "fase:4",
+      "kind": "rel"
+    },
+    {
+      "source": "fase:5",
+      "target": "data:lessons",
+      "kind": "has"
+    }
+  ],
+  "meta": {
+    "generato_da": "tools/altair_compact_view.py",
+    "fonte": "graphify-out/graph.json + areas.json",
+    "aree": [
+      "ricette",
+      "tecniche"
+    ],
+    "ponti_intercampo": 0,
+    "descrizione": "Vista compatta: altair-brain come processo a 5 fasi, un nodo per area."
+  }
+}

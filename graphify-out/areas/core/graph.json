@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "cd9bf887b9f65a8180534b08802c8de66bcb45cb",
+ "built_at_commit": "0a5428386b20cb4b8856d9c4ee22425c0294abd4",
  "nodes": [
   {
    "label": "AGENTS.md",
@@ -74,6 +74,56 @@
    "id": "basemodel",
    "community": 156,
    "norm_label": "basemodel"
+  },
+  {
+   "label": "BrainError",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "brains_cucina_server_app_py_brainerror",
+   "community": 13,
+   "norm_label": "brainerror"
+  },
+  {
+   "label": "Request",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "brains_cucina_server_app_py_request",
+   "community": 13,
+   "norm_label": "request"
+  },
+  {
+   "label": "Response",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "brains_cucina_server_app_py_response",
+   "community": 13,
+   "norm_label": "response"
+  },
+  {
+   "label": "Path",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "brains_cucina_server_brain_core_py_path",
+   "community": 15,
+   "norm_label": "path"
+  },
+  {
+   "label": "Path",
+   "file_type": "code",
+   "source_file": "",
+   "source_location": "",
+   "_origin": "ast",
+   "id": "brains_cucina_tests_test_tools_py_path",
+   "community": 12,
+   "norm_label": "path"
   },
   {
    "label": "CLAUDE.md",
@@ -422,7 +472,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "core_server_brain_core_py_path",
-   "community": 12,
+   "community": 25,
    "norm_label": "path"
   },
   {
@@ -619,7 +669,7 @@
    "label": "Osservazioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L75",
+   "source_location": "L79",
    "_origin": "ast",
    "id": "engine_lessons_osservazioni_recenti",
    "community": 157,
@@ -629,7 +679,7 @@
    "label": "Regole operative",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L58",
+   "source_location": "L60",
    "_origin": "ast",
    "id": "engine_lessons_regole_operative",
    "community": 157,
@@ -649,7 +699,7 @@
    "label": "Tentativi (da confermare)",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L27",
+   "source_location": "L29",
    "_origin": "ast",
    "id": "engine_lessons_tentativi_da_confermare",
    "community": 157,
@@ -659,7 +709,7 @@
    "label": "Vicoli ciechi",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L52",
+   "source_location": "L54",
    "_origin": "ast",
    "id": "engine_lessons_vicoli_ciechi",
    "community": 157,
@@ -1462,7 +1512,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "exception",
-   "community": 7,
+   "community": 15,
    "norm_label": "exception"
   },
   {
@@ -2232,7 +2282,7 @@
    "source_location": "L232",
    "_origin": "ast",
    "id": "server_app_capture",
-   "community": 156,
+   "community": 6,
    "norm_label": "capture()"
   },
   {
@@ -2242,7 +2292,7 @@
    "source_location": "L225",
    "_origin": "ast",
    "id": "server_app_capturereq",
-   "community": 156,
+   "community": 6,
    "norm_label": "capturereq"
   },
   {
@@ -2432,7 +2482,7 @@
    "source_location": "",
    "_origin": "ast",
    "id": "server_app_py_request",
-   "community": 309,
+   "community": 6,
    "norm_label": "request"
   },
   {
@@ -2462,7 +2512,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "server_app_rate_limiter",
-   "community": 309,
+   "community": 6,
    "norm_label": "rate_limiter()"
   },
   {
@@ -2972,7 +3022,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "server_mcp_server",
-   "community": 25,
+   "community": 7,
    "norm_label": "mcp_server.py"
   },
   {
@@ -2982,7 +3032,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "server_mcp_server_brain_context",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_context()"
   },
   {
@@ -2992,7 +3042,7 @@
    "source_location": "L81",
    "_origin": "ast",
    "id": "server_mcp_server_brain_explain",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_explain()"
   },
   {
@@ -3002,7 +3052,7 @@
    "source_location": "L120",
    "_origin": "ast",
    "id": "server_mcp_server_brain_feedback",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_feedback()"
   },
   {
@@ -3012,7 +3062,7 @@
    "source_location": "L105",
    "_origin": "ast",
    "id": "server_mcp_server_brain_lessons",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_lessons()"
   },
   {
@@ -3022,7 +3072,7 @@
    "source_location": "L93",
    "_origin": "ast",
    "id": "server_mcp_server_brain_model",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_model()"
   },
   {
@@ -3032,7 +3082,7 @@
    "source_location": "L111",
    "_origin": "ast",
    "id": "server_mcp_server_brain_oracle",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_oracle()"
   },
   {
@@ -3042,7 +3092,7 @@
    "source_location": "L87",
    "_origin": "ast",
    "id": "server_mcp_server_brain_path",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_path()"
   },
   {
@@ -3052,7 +3102,7 @@
    "source_location": "L34",
    "_origin": "ast",
    "id": "server_mcp_server_brain_query",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_query()"
   },
   {
@@ -3062,7 +3112,7 @@
    "source_location": "L99",
    "_origin": "ast",
    "id": "server_mcp_server_brain_reasoner",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_reasoner()"
   },
   {
@@ -3072,7 +3122,7 @@
    "source_location": "L44",
    "_origin": "ast",
    "id": "server_mcp_server_brain_search",
-   "community": 25,
+   "community": 7,
    "norm_label": "brain_search()"
   },
   {
@@ -3082,7 +3132,7 @@
    "source_location": "L100",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_100",
-   "community": 25,
+   "community": 7,
    "norm_label": "il protocollo di ragionamento aion a 9 passi (engine/aion-reasoner.md)."
   },
   {
@@ -3092,7 +3142,7 @@
    "source_location": "L106",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_106",
-   "community": 25,
+   "community": 7,
    "norm_label": "le lezioni apprese dal brain (lessons.md, feedback loop)."
   },
   {
@@ -3102,7 +3152,7 @@
    "source_location": "L112",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_112",
-   "community": 25,
+   "community": 7,
    "norm_label": "lancio i ching (aion_oracle eseguibile). seed >= 0 per un lancio riproducibile."
   },
   {
@@ -3112,7 +3162,7 @@
    "source_location": "L121",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_121",
-   "community": 25,
+   "community": 7,
    "norm_label": "registra l'esito di una risposta (useful|dead_end|corrected): il brain impara."
   },
   {
@@ -3122,7 +3172,7 @@
    "source_location": "L35",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_35",
-   "community": 25,
+   "community": 7,
    "norm_label": "interroga il knowledge graph del brain (bfs scopato). area: vuota = router     a"
   },
   {
@@ -3132,7 +3182,7 @@
    "source_location": "L45",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_45",
-   "community": 25,
+   "community": 7,
    "norm_label": "cerca nel contenuto delle note (bm25 + semantico se attivo). complementare a"
   },
   {
@@ -3142,7 +3192,7 @@
    "source_location": "L69",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_69",
-   "community": 25,
+   "community": 7,
    "norm_label": "contesto pronto su un argomento, entro un budget di token: frammenti pertinenti,"
   },
   {
@@ -3152,7 +3202,7 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_82",
-   "community": 25,
+   "community": 7,
    "norm_label": "spiega un nodo del grafo e i suoi collegamenti (graphify explain)."
   },
   {
@@ -3162,7 +3212,7 @@
    "source_location": "L88",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_88",
-   "community": 25,
+   "community": 7,
    "norm_label": "percorso piu breve tra due nodi del grafo (graphify path)."
   },
   {
@@ -3172,7 +3222,7 @@
    "source_location": "L94",
    "_origin": "ast",
    "id": "server_mcp_server_rationale_94",
-   "community": 25,
+   "community": 7,
    "norm_label": "il modello di pensiero aion tipizzato (engine/aion.model.json)."
   },
   {
@@ -3182,7 +3232,7 @@
    "source_location": "L26",
    "_origin": "ast",
    "id": "server_mcp_server_safe",
-   "community": 25,
+   "community": 7,
    "norm_label": "_safe()"
   },
   {
@@ -5188,6 +5238,36 @@
    "norm_label": "un prodotto che al primo avvio segnala contenuto gia' scaduto insegna a     igno"
   },
   {
+   "label": "DIFETTO REALE: dentro un'istanza BRAIN e ROOT coincidono, quindi il confronto",
+   "file_type": "rationale",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L192",
+   "_origin": "ast",
+   "id": "tests_test_officina_rationale_192",
+   "community": 4,
+   "norm_label": "difetto reale: dentro un'istanza brain e root coincidono, quindi il confronto"
+  },
+  {
+   "label": "Un selettore che offre porte inesistenti e' peggio di nessun selettore.",
+   "file_type": "rationale",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L211",
+   "_origin": "ast",
+   "id": "tests_test_officina_rationale_211",
+   "community": 4,
+   "norm_label": "un selettore che offre porte inesistenti e' peggio di nessun selettore."
+  },
+  {
+   "label": "DIFETTO REALE: graph_health chiedeva a git 'HEAD~1:graphify-out/graph.json',",
+   "file_type": "rationale",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L221",
+   "_origin": "ast",
+   "id": "tests_test_officina_rationale_221",
+   "community": 4,
+   "norm_label": "difetto reale: graph_health chiedeva a git 'head~1:graphify-out/graph.json',"
+  },
+  {
    "label": "core/ e brains/ sono artefatti e istanze: nel grafo del brain non ci vanno.",
    "file_type": "rationale",
    "source_file": "tests/test_officina.py",
@@ -5214,7 +5294,7 @@
    "source_location": "L68",
    "_origin": "ast",
    "id": "tests_test_officina_rationale_68",
-   "community": 4,
+   "community": 121,
    "norm_label": "i percorsi del contenuto passano da tools/brain.py: e' il punto unico che     pe"
   },
   {
@@ -5274,7 +5354,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tests_test_officina_test_il_motore_risolve_il_brain_invece_di_presumerlo",
-   "community": 4,
+   "community": 121,
    "norm_label": "test_il_motore_risolve_il_brain_invece_di_presumerlo()"
   },
   {
@@ -5298,6 +5378,16 @@
    "norm_label": "test_il_selettore_compare_quando_ci_sono_altri_brain()"
   },
   {
+   "label": "test_il_selettore_punta_a_file_che_esistono()",
+   "file_type": "code",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L210",
+   "_origin": "ast",
+   "id": "tests_test_officina_test_il_selettore_punta_a_file_che_esistono",
+   "community": 4,
+   "norm_label": "test_il_selettore_punta_a_file_che_esistono()"
+  },
+  {
    "label": "test_la_porta_dice_quale_brain_stai_guardando()",
    "file_type": "code",
    "source_file": "tests/test_officina.py",
@@ -5318,6 +5408,16 @@
    "norm_label": "test_la_potatura_gira_prima_di_chi_legge_il_grafo()"
   },
   {
+   "label": "test_ogni_istanza_si_chiama_col_proprio_nome()",
+   "file_type": "code",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L191",
+   "_origin": "ast",
+   "id": "tests_test_officina_test_ogni_istanza_si_chiama_col_proprio_nome",
+   "community": 4,
+   "norm_label": "test_ogni_istanza_si_chiama_col_proprio_nome()"
+  },
+  {
    "label": "test_si_puo_creare_un_brain_e_sta_in_piedi()",
    "file_type": "code",
    "source_file": "tests/test_officina.py",
@@ -5326,6 +5426,16 @@
    "id": "tests_test_officina_test_si_puo_creare_un_brain_e_sta_in_piedi",
    "community": 4,
    "norm_label": "test_si_puo_creare_un_brain_e_sta_in_piedi()"
+  },
+  {
+   "label": "test_un_brain_non_legge_la_storia_di_un_altro()",
+   "file_type": "code",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L220",
+   "_origin": "ast",
+   "id": "tests_test_officina_test_un_brain_non_legge_la_storia_di_un_altro",
+   "community": 4,
+   "norm_label": "test_un_brain_non_legge_la_storia_di_un_altro()"
   },
   {
    "label": "test_un_brain_vergine_non_si_lamenta_al_primo_avvio()",
@@ -5524,7 +5634,7 @@
    "source_location": "L148",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_148",
-   "community": 4,
+   "community": 122,
    "norm_label": "bi-temporalita: valid_until nel passato -> il fatto risulta scaduto.     ora il"
   },
   {
@@ -5574,7 +5684,7 @@
    "source_location": "L234",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_234",
-   "community": 8,
+   "community": 41,
    "norm_label": "il caso che conta: il corpus non ha la risposta e il sistema lo dichiara     inv"
   },
   {
@@ -5584,7 +5694,7 @@
    "source_location": "L244",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_244",
-   "community": 8,
+   "community": 41,
    "norm_label": "fuori dominio il sistema deve dire di non fidarsi.      il test verificava «zero"
   },
   {
@@ -5774,7 +5884,7 @@
    "source_location": "L563",
    "_origin": "ast",
    "id": "tests_test_tools_rationale_563",
-   "community": 8,
+   "community": 41,
    "norm_label": "fallacia: 'confidenza alta' verra letta come 'risposta corretta'. la     differe"
   },
   {
@@ -5884,7 +5994,7 @@
    "source_location": "L41",
    "_origin": "ast",
    "id": "tests_test_tools_test_attribuzione_senza_mobili_e_range",
-   "community": 8,
+   "community": 5,
    "norm_label": "test_attribuzione_senza_mobili_e_range()"
   },
   {
@@ -5914,7 +6024,7 @@
    "source_location": "L226",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_alta_su_conoscenza_presente",
-   "community": 8,
+   "community": 41,
    "norm_label": "test_confidenza_alta_su_conoscenza_presente()"
   },
   {
@@ -5924,7 +6034,7 @@
    "source_location": "L233",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_bassa_su_conoscenza_assente",
-   "community": 8,
+   "community": 41,
    "norm_label": "test_confidenza_bassa_su_conoscenza_assente()"
   },
   {
@@ -5934,7 +6044,7 @@
    "source_location": "L243",
    "_origin": "ast",
    "id": "tests_test_tools_test_confidenza_scarsa_fuori_dominio",
-   "community": 8,
+   "community": 41,
    "norm_label": "test_confidenza_scarsa_fuori_dominio()"
   },
   {
@@ -6014,7 +6124,7 @@
    "source_location": "L562",
    "_origin": "ast",
    "id": "tests_test_tools_test_diagnosi_dichiara_cosa_misura",
-   "community": 8,
+   "community": 41,
    "norm_label": "test_diagnosi_dichiara_cosa_misura()"
   },
   {
@@ -6024,7 +6134,7 @@
    "source_location": "L147",
    "_origin": "ast",
    "id": "tests_test_tools_test_freshness_rileva_fatto_scaduto",
-   "community": 4,
+   "community": 122,
    "norm_label": "test_freshness_rileva_fatto_scaduto()"
   },
   {
@@ -6434,7 +6544,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_altair_compact_view",
-   "community": 274,
+   "community": 0,
    "norm_label": "altair_compact_view.py"
   },
   {
@@ -6444,7 +6554,7 @@
    "source_location": "L78",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_edge",
-   "community": 274,
+   "community": 0,
    "norm_label": "add_edge()"
   },
   {
@@ -6454,7 +6564,7 @@
    "source_location": "L72",
    "_origin": "ast",
    "id": "tools_altair_compact_view_add_node",
-   "community": 274,
+   "community": 0,
    "norm_label": "add_node()"
   },
   {
@@ -6464,7 +6574,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tools_altair_compact_view_sz",
-   "community": 274,
+   "community": 0,
    "norm_label": "sz()"
   },
   {
@@ -6574,7 +6684,7 @@
    "source_location": "L30",
    "_origin": "ast",
    "id": "tools_brain_brain_root",
-   "community": 4,
+   "community": 121,
    "norm_label": "brain_root()"
   },
   {
@@ -6584,7 +6694,7 @@
    "source_location": "L59",
    "_origin": "ast",
    "id": "tools_brain_dentro",
-   "community": 0,
+   "community": 452,
    "norm_label": "dentro()"
   },
   {
@@ -6674,7 +6784,7 @@
    "source_location": "L31",
    "_origin": "ast",
    "id": "tools_brain_rationale_31",
-   "community": 4,
+   "community": 121,
    "norm_label": "la cartella che contiene raw/, wiki/, engine/, areas.json di questo brain."
   },
   {
@@ -6684,7 +6794,7 @@
    "source_location": "L60",
    "_origin": "ast",
    "id": "tools_brain_rationale_60",
-   "community": 0,
+   "community": 452,
    "norm_label": "percorso dentro il brain attivo. comodita' per non ripetere il join."
   },
   {
@@ -7051,7 +7161,7 @@
    "label": "altri_brain()",
    "file_type": "code",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L51",
+   "source_location": "L60",
    "_origin": "ast",
    "id": "tools_build_views_index_altri_brain",
    "community": 254,
@@ -7071,7 +7181,7 @@
    "label": "html()",
    "file_type": "code",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L121",
+   "source_location": "L130",
    "_origin": "ast",
    "id": "tools_build_views_index_html",
    "community": 254,
@@ -7081,7 +7191,7 @@
    "label": "main()",
    "file_type": "code",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L215",
+   "source_location": "L224",
    "_origin": "ast",
    "id": "tools_build_views_index_main",
    "community": 254,
@@ -7091,7 +7201,7 @@
    "label": "numeri()",
    "file_type": "code",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L72",
+   "source_location": "L81",
    "_origin": "ast",
    "id": "tools_build_views_index_numeri",
    "community": 254,
@@ -7111,9 +7221,9 @@
    "label": "Gli altri brain del repo, con la porta di ciascuno. Vuoto in un'istanza     auto",
    "file_type": "rationale",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L52",
+   "source_location": "L61",
    "_origin": "ast",
-   "id": "tools_build_views_index_rationale_52",
+   "id": "tools_build_views_index_rationale_61",
    "community": 254,
    "norm_label": "gli altri brain del repo, con la porta di ciascuno. vuoto in un'istanza     auto"
   },
@@ -7121,9 +7231,9 @@
    "label": "Cosa contiene ciascuna vista, contato sul grafo vero.",
    "file_type": "rationale",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L73",
+   "source_location": "L82",
    "_origin": "ast",
-   "id": "tools_build_views_index_rationale_73",
+   "id": "tools_build_views_index_rationale_82",
    "community": 254,
    "norm_label": "cosa contiene ciascuna vista, contato sul grafo vero."
   },
@@ -7134,7 +7244,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_check_privacy",
-   "community": 332,
+   "community": 0,
    "norm_label": "check_privacy.py"
   },
   {
@@ -7144,7 +7254,7 @@
    "source_location": "L67",
    "_origin": "ast",
    "id": "tools_check_privacy_main",
-   "community": 332,
+   "community": 0,
    "norm_label": "main()"
   },
   {
@@ -7154,7 +7264,7 @@
    "source_location": "L62",
    "_origin": "ast",
    "id": "tools_check_privacy_tracciati",
-   "community": 332,
+   "community": 0,
    "norm_label": "tracciati()"
   },
   {
@@ -7534,7 +7644,7 @@
    "source_location": "L81",
    "_origin": "ast",
    "id": "tools_frontmatter_leggi",
-   "community": 4,
+   "community": 122,
    "norm_label": "leggi()"
   },
   {
@@ -7574,7 +7684,7 @@
    "source_location": "L82",
    "_origin": "ast",
    "id": "tools_frontmatter_rationale_82",
-   "community": 4,
+   "community": 122,
    "norm_label": "(meta, corpo) da file. (none, '') se illeggibile."
   },
   {
@@ -8204,7 +8314,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "tools_resurface",
-   "community": 64,
+   "community": 0,
    "norm_label": "resurface.py"
   },
   {
@@ -8364,7 +8474,7 @@
    "source_location": "L309",
    "_origin": "ast",
    "id": "tools_search_cerca_con_diagnosi",
-   "community": 61,
+   "community": 41,
    "norm_label": "cerca_con_diagnosi()"
   },
   {
@@ -8504,7 +8614,7 @@
    "source_location": "L310",
    "_origin": "ast",
    "id": "tools_search_rationale_310",
-   "community": 61,
+   "community": 41,
    "norm_label": "ricerca + valutazione della propria affidabilita (f1). e la forma che usano"
   },
   {
@@ -9173,7 +9283,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L75",
+   "source_location": "L79",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_osservazioni_recenti",
@@ -9183,7 +9293,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L58",
+   "source_location": "L60",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_regole_operative",
@@ -9203,7 +9313,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L27",
+   "source_location": "L29",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_tentativi_da_confermare",
@@ -9213,7 +9323,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L52",
+   "source_location": "L54",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_vicoli_ciechi",
@@ -11184,6 +11294,17 @@
    "context": "import",
    "confidence": "EXTRACTED",
    "source_file": "server/app.py",
+   "source_location": "L29",
+   "weight": 1.0,
+   "source": "server_app",
+   "target": "server_brain_core",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "server/app.py",
    "source_location": "L199",
    "weight": 1.0,
    "source": "server_app",
@@ -12346,6 +12467,17 @@
    "weight": 1.0,
    "source": "server_client_example",
    "target": "server_client_example_show",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "imports",
+   "context": "import",
+   "confidence": "EXTRACTED",
+   "source_file": "server/mcp_server.py",
+   "source_location": "L21",
+   "weight": 1.0,
+   "source": "server_mcp_server",
+   "target": "server_brain_core",
    "confidence_score": 1.0
   },
   {
@@ -15090,6 +15222,16 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_officina.py",
+   "source_location": "L210",
+   "weight": 1.0,
+   "source": "tests_test_officina",
+   "target": "tests_test_officina_test_il_selettore_punta_a_file_che_esistono",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
    "source_location": "L148",
    "weight": 1.0,
    "source": "tests_test_officina",
@@ -15110,10 +15252,30 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tests/test_officina.py",
+   "source_location": "L191",
+   "weight": 1.0,
+   "source": "tests_test_officina",
+   "target": "tests_test_officina_test_ogni_istanza_si_chiama_col_proprio_nome",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
    "source_location": "L122",
    "weight": 1.0,
    "source": "tests_test_officina",
    "target": "tests_test_officina_test_si_puo_creare_un_brain_e_sta_in_piedi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L220",
+   "weight": 1.0,
+   "source": "tests_test_officina",
+   "target": "tests_test_officina_test_un_brain_non_legge_la_storia_di_un_altro",
    "confidence_score": 1.0
   },
   {
@@ -15186,6 +15348,36 @@
    "weight": 1.0,
    "source": "tests_test_officina_rationale_174",
    "target": "tests_test_officina_test_un_brain_vergine_non_si_lamenta_al_primo_avvio",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L192",
+   "weight": 1.0,
+   "source": "tests_test_officina_rationale_192",
+   "target": "tests_test_officina_test_ogni_istanza_si_chiama_col_proprio_nome",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L211",
+   "weight": 1.0,
+   "source": "tests_test_officina_rationale_211",
+   "target": "tests_test_officina_test_il_selettore_punta_a_file_che_esistono",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "rationale_for",
+   "confidence": "EXTRACTED",
+   "source_file": "tests/test_officina.py",
+   "source_location": "L221",
+   "weight": 1.0,
+   "source": "tests_test_officina_rationale_221",
+   "target": "tests_test_officina_test_un_brain_non_legge_la_storia_di_un_altro",
    "confidence_score": 1.0
   },
   {
@@ -18312,7 +18504,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L51",
+   "source_location": "L60",
    "weight": 1.0,
    "source": "tools_build_views_index",
    "target": "tools_build_views_index_altri_brain",
@@ -18332,7 +18524,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L121",
+   "source_location": "L130",
    "weight": 1.0,
    "source": "tools_build_views_index",
    "target": "tools_build_views_index_html",
@@ -18342,7 +18534,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L215",
+   "source_location": "L224",
    "weight": 1.0,
    "source": "tools_build_views_index",
    "target": "tools_build_views_index_main",
@@ -18352,7 +18544,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L72",
+   "source_location": "L81",
    "weight": 1.0,
    "source": "tools_build_views_index",
    "target": "tools_build_views_index_numeri",
@@ -18385,7 +18577,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L220",
+   "source_location": "L229",
    "weight": 1.0,
    "source": "tools_build_views_index_main",
    "target": "tools_build_views_index_html",
@@ -18396,7 +18588,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L218",
+   "source_location": "L227",
    "weight": 1.0,
    "source": "tools_build_views_index_main",
    "target": "tools_build_views_index_numeri",
@@ -18407,7 +18599,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L92",
+   "source_location": "L101",
    "weight": 1.0,
    "source": "tools_build_views_index_numeri",
    "target": "tools_build_views_index_altri_brain",
@@ -18418,7 +18610,7 @@
    "context": "call",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L91",
+   "source_location": "L100",
    "weight": 1.0,
    "source": "tools_build_views_index_numeri",
    "target": "tools_build_views_index_brain_corrente",
@@ -18438,9 +18630,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L52",
+   "source_location": "L61",
    "weight": 1.0,
-   "source": "tools_build_views_index_rationale_52",
+   "source": "tools_build_views_index_rationale_61",
    "target": "tools_build_views_index_altri_brain",
    "confidence_score": 1.0
   },
@@ -18448,9 +18640,9 @@
    "relation": "rationale_for",
    "confidence": "EXTRACTED",
    "source_file": "tools/build_views_index.py",
-   "source_location": "L73",
+   "source_location": "L82",
    "weight": 1.0,
-   "source": "tools_build_views_index_rationale_73",
+   "source": "tools_build_views_index_rationale_82",
    "target": "tools_build_views_index_numeri",
    "confidence_score": 1.0
   },

@@ -7,10 +7,10 @@
 
 ## Sintesi
 
-- lezioni registrate: **30** · sessioni graphify: **1**
-- esiti: 22 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
-- skill piu attive: manuale (13), triage (7), aion (3), atlante-3d (3), oracle (2)
-- temi ricorrenti: metodo (5), verifica (4), architettura (4), grafo (3), visualizzazione (3), guardie (3), separazione (3), report (2)
+- lezioni registrate: **31** · sessioni graphify: **1**
+- esiti: 23 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
+- skill piu attive: manuale (14), triage (7), aion (3), atlante-3d (3), oracle (2)
+- temi ricorrenti: verifica (5), metodo (5), architettura (4), grafo (3), visualizzazione (3), guardie (3), separazione (3), report (2)
 
 ## Ancoraggi consolidati
 
@@ -21,8 +21,10 @@ _Nodi utili in almeno 2 occasioni: punti di partenza affidabili._
 - `graph_metrics.py` — 2× utile
 - `aion-superia` — 2× utile
 - `tools/build_atlas_view.py` — 2× utile
+- `tools/build_views_index.py` — 2× utile
 - `tools/console.py` — 2× utile
 - `tests/test_console.py` — 2× utile
+- `tools/graph_health.py` — 2× utile
 
 ## Tentativi (da confermare)
 
@@ -47,7 +49,7 @@ _Visti una volta sola: verifica prima di farci affidamento._
 - `graphify-out/graph-atlas.html` — 1× utile
 - `server/brain_core.py` — 1× utile
 - `tools/rebuild_all.py` — 1× utile
-- `tools/build_views_index.py` — 1× utile
+- `graphify-out/index.html` — 1× utile
 
 ## Vicoli ciechi
 
@@ -59,6 +61,8 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una correzione. Se non lo porta, non e qui._
 
+- **Quando** verifichi un'architettura multi-istanza con copie temporanee → **creane una VERA e lasciala: le copie usa-e-getta nascondono i difetti che nascono dalla convivenza**
+  - appiglio: `guardia: creando brains/cucina sono emersi 3 difetti che 6 prove isolate non avevano mostrato — baseline git tra brain, nome dell'istanza, selettore`
 - **Quando** un repo ospita insieme motore, prodotto generato e istanze → **togli gli artefatti dal grafo subito dopo l'indicizzazione: il rumore cresce con ogni istanza creata**
   - appiglio: `misura: core/ pesava 1191 nodi su 3084, il 39% del grafo, prima della potatura`
 - **Quando** separi un motore riusabile da un brain personale → **genera l'export invece di copiarlo, e mettici una guardia che cerca contenuto personale: la copia diverge e la fuga non si vede a occhio**

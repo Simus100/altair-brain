@@ -1,0 +1,422 @@
+{
+  "areas.json": {
+    "mtime": 1786731796.931985,
+    "ast_hash": "876f14832b633008f731badbd7b63335",
+    "semantic_hash": ""
+  },
+  "engine/bridges.json": {
+    "mtime": 1786649777.202648,
+    "ast_hash": "919fd351359aac939969f6dad97f27c2",
+    "semantic_hash": ""
+  },
+  "engine/provenance.json": {
+    "mtime": 1786649777.202648,
+    "ast_hash": "95880a2de38507edc7ef40772c67b30c",
+    "semantic_hash": ""
+  },
+  "engine/router.json": {
+    "mtime": 1786731796.9329858,
+    "ast_hash": "af3bd4021a3d946cbf484bf90c2a0c4a",
+    "semantic_hash": ""
+  },
+  "onboarding.py": {
+    "mtime": 1786649777.205652,
+    "ast_hash": "9423ed401b2e9aaeb888e3a0f126c13e",
+    "semantic_hash": ""
+  },
+  "plugins/scrittura/tests/test_style_check.py": {
+    "mtime": 1786471382.7786806,
+    "ast_hash": "455f928b28ed0f050ee7ef826652d60e",
+    "semantic_hash": ""
+  },
+  "plugins/scrittura/tools/style_check.py": {
+    "mtime": 1786646785.2035851,
+    "ast_hash": "0eec7756bdf980ec472e4ceb8f4648be",
+    "semantic_hash": ""
+  },
+  "server/app.py": {
+    "mtime": 1786397972.6077278,
+    "ast_hash": "d8bfac2784a3c95b48387acbda6d5608",
+    "semantic_hash": ""
+  },
+  "server/brain_core.py": {
+    "mtime": 1786400559.9945471,
+    "ast_hash": "b6a17bdedd8bfac5893bec15589f61ec",
+    "semantic_hash": ""
+  },
+  "server/mcp_server.py": {
+    "mtime": 1786208172.4022171,
+    "ast_hash": "540f4e6f1f8831ae811adf9cb05174d3",
+    "semantic_hash": ""
+  },
+  "tests/test_api.py": {
+    "mtime": 1786400827.8450086,
+    "ast_hash": "e762619f61a1530c3c12ac5c79515bf0",
+    "semantic_hash": ""
+  },
+  "tests/test_atlas.py": {
+    "mtime": 1786467316.6170068,
+    "ast_hash": "5c0203dbd6ee18c045e983303119777a",
+    "semantic_hash": ""
+  },
+  "tests/test_console.py": {
+    "mtime": 1786562139.238748,
+    "ast_hash": "c2bc84ea1a181120b702f7ba630cacb3",
+    "semantic_hash": ""
+  },
+  "tests/test_esperienza.py": {
+    "mtime": 1786562817.8437068,
+    "ast_hash": "331932445a5107f8b0f47aa5df43b35d",
+    "semantic_hash": ""
+  },
+  "tests/test_frontmatter_coerenza.py": {
+    "mtime": 1786562040.8776586,
+    "ast_hash": "56ccfcf2e1540a1c04c0e246e5b17d02",
+    "semantic_hash": ""
+  },
+  "tests/test_iching_relations.py": {
+    "mtime": 1786292980.369656,
+    "ast_hash": "363ca9d66223960e5c120a26862b02e9",
+    "semantic_hash": ""
+  },
+  "tests/test_officina.py": {
+    "mtime": 1786647894.1300735,
+    "ast_hash": "a26eeb664439e2adbf698823b45bb655",
+    "semantic_hash": ""
+  },
+  "tests/test_tools.py": {
+    "mtime": 1786564795.9791496,
+    "ast_hash": "1181f8679953a19cfc5877b41561c95c",
+    "semantic_hash": ""
+  },
+  "tools/add_frontmatter.py": {
+    "mtime": 1786562099.8854053,
+    "ast_hash": "fd867be193b06f348892a3a9c28d1dea",
+    "semantic_hash": ""
+  },
+  "tools/altair_compact_view.py": {
+    "mtime": 1786646785.1950376,
+    "ast_hash": "c7ab1d01da11c731a07a81b32d7f0363",
+    "semantic_hash": ""
+  },
+  "tools/apply_bridges.py": {
+    "mtime": 1786646785.1950376,
+    "ast_hash": "70addb1a843917762850a9c693325f5b",
+    "semantic_hash": ""
+  },
+  "tools/apply_provenance.py": {
+    "mtime": 1786646785.1960368,
+    "ast_hash": "0048df0171e0725de3f5f4284b3af342",
+    "semantic_hash": ""
+  },
+  "tools/brain.py": {
+    "mtime": 1786646745.4356697,
+    "ast_hash": "0f852cc8bdcf39518d179e4268431723",
+    "semantic_hash": ""
+  },
+  "tools/brain_new.py": {
+    "mtime": 1786566540.3156507,
+    "ast_hash": "bb65b07288bf373c94eebe6a4a16d253",
+    "semantic_hash": ""
+  },
+  "tools/build_area_graphs.py": {
+    "mtime": 1786646785.1960368,
+    "ast_hash": "85ef3799f772e3d18822fc9e857f5f94",
+    "semantic_hash": ""
+  },
+  "tools/build_atlas_view.py": {
+    "mtime": 1786646785.1965406,
+    "ast_hash": "4e171c7751a8a4a83ab6f7c01ac9620a",
+    "semantic_hash": ""
+  },
+  "tools/build_search_index.py": {
+    "mtime": 1786646785.1970446,
+    "ast_hash": "77a69415284b63420a8809f798e46ce7",
+    "semantic_hash": ""
+  },
+  "tools/build_views_index.py": {
+    "mtime": 1786647746.322302,
+    "ast_hash": "936034fd1ee4e176e54e6c3344bd04e0",
+    "semantic_hash": ""
+  },
+  "tools/check_privacy.py": {
+    "mtime": 1786646785.1980493,
+    "ast_hash": "217a6f32a87a48f5f908f0691e119fa7",
+    "semantic_hash": ""
+  },
+  "tools/check_provenance.py": {
+    "mtime": 1786646785.1985533,
+    "ast_hash": "a9189c657ec9d97a003d318845f130d0",
+    "semantic_hash": ""
+  },
+  "tools/check_wikilinks.py": {
+    "mtime": 1786646785.1985533,
+    "ast_hash": "83766c75d1e169583b1bea057d79172c",
+    "semantic_hash": ""
+  },
+  "tools/console.py": {
+    "mtime": 1786473462.2557132,
+    "ast_hash": "c03b776b737e21a436bc1c63a48dd5a8",
+    "semantic_hash": ""
+  },
+  "tools/consolidate.py": {
+    "mtime": 1786646785.1985533,
+    "ast_hash": "8b40ee3ef97f69a280257d18204d7701",
+    "semantic_hash": ""
+  },
+  "tools/context_pack.py": {
+    "mtime": 1786646785.1985533,
+    "ast_hash": "bc0c0d44de3ae9edb9107e016c189eb4",
+    "semantic_hash": ""
+  },
+  "tools/freshness_report.py": {
+    "mtime": 1786646785.1995573,
+    "ast_hash": "0ee1768cf5fe5f97e9adcd2adae883df",
+    "semantic_hash": ""
+  },
+  "tools/frontmatter.py": {
+    "mtime": 1786564572.0978162,
+    "ast_hash": "3997da957741e01b821b2a168af35927",
+    "semantic_hash": ""
+  },
+  "tools/graph_health.py": {
+    "mtime": 1786731897.6023366,
+    "ast_hash": "397fd76a0286905fc6a63c7bac27c13c",
+    "semantic_hash": ""
+  },
+  "tools/graph_metrics.py": {
+    "mtime": 1786646785.1995573,
+    "ast_hash": "07ff94b01e961badcbc1a768c5a953b3",
+    "semantic_hash": ""
+  },
+  "tools/graph_prune.py": {
+    "mtime": 1786646870.8047428,
+    "ast_hash": "9a0938cac759d538824168ef7351b17c",
+    "semantic_hash": ""
+  },
+  "tools/lesson_log.py": {
+    "mtime": 1786646785.1995573,
+    "ast_hash": "ad0e8f149b6420d928c51fbd4f2bfdc4",
+    "semantic_hash": ""
+  },
+  "tools/lessons_digest.py": {
+    "mtime": 1786646785.1995573,
+    "ast_hash": "2390e558a52c97b542a8b5d51021b42b",
+    "semantic_hash": ""
+  },
+  "tools/link_suggest.py": {
+    "mtime": 1786646785.201069,
+    "ast_hash": "35b6386ca2026b22d71b1f10d9338ac8",
+    "semantic_hash": ""
+  },
+  "tools/rebuild_all.py": {
+    "mtime": 1786646882.3667064,
+    "ast_hash": "92dddaad9f92531f3aab551749f36478",
+    "semantic_hash": ""
+  },
+  "tools/report_build.py": {
+    "mtime": 1786646785.201069,
+    "ast_hash": "a283f173504e42246bd117eb12c0d00b",
+    "semantic_hash": ""
+  },
+  "tools/report_harvest.py": {
+    "mtime": 1786646785.201069,
+    "ast_hash": "7363bc93c537c15f580822d78ca566c1",
+    "semantic_hash": ""
+  },
+  "tools/report_new.py": {
+    "mtime": 1786646785.201069,
+    "ast_hash": "d14bc7a1ca2ab756adb5f12237f47e7c",
+    "semantic_hash": ""
+  },
+  "tools/report_update.py": {
+    "mtime": 1786646785.2025797,
+    "ast_hash": "93611ce1b230907b1b7f9256a844e57a",
+    "semantic_hash": ""
+  },
+  "tools/resurface.py": {
+    "mtime": 1786646785.2025797,
+    "ast_hash": "08cf79a10ceb702e85cea208333234ec",
+    "semantic_hash": ""
+  },
+  "tools/search.py": {
+    "mtime": 1786646785.2035851,
+    "ast_hash": "68a1c1025c94beee0b26ee3971901164",
+    "semantic_hash": ""
+  },
+  "training/aion/engine/aion.model.json": {
+    "mtime": 1782941611.1821885,
+    "ast_hash": "4304042274d818147e15eb0ae0c57dfc",
+    "semantic_hash": ""
+  },
+  "training/aion/engine/iching.db.json": {
+    "mtime": 1786649773.7668161,
+    "ast_hash": "0afa903ce634c8c50f624541638ec2f5",
+    "semantic_hash": ""
+  },
+  "training/aion/engine/schema/aion.model.schema.json": {
+    "mtime": 1782941628.444054,
+    "ast_hash": "2ec045050c90ed5aea7f8fbb7655f65d",
+    "semantic_hash": ""
+  },
+  "training/aion/tools/apply_iching_relations.py": {
+    "mtime": 1786646785.1950376,
+    "ast_hash": "b9808ad7ffa0616ce7a95a7ac3fca2b7",
+    "semantic_hash": ""
+  },
+  "training/aion/tools/build_iching_db.py": {
+    "mtime": 1786646785.1970446,
+    "ast_hash": "960b96efb4aa73c11dd58119eed75c6d",
+    "semantic_hash": ""
+  },
+  "training/aion/tools/gen_wiki_from_model.py": {
+    "mtime": 1786646785.1995573,
+    "ast_hash": "438206f8bf41e42cc79894234ee37308",
+    "semantic_hash": ""
+  },
+  "training/aion/tools/oracle_cast.py": {
+    "mtime": 1786646785.201069,
+    "ast_hash": "bb4e17ae64cbaf6460610ff89b96eb12",
+    "semantic_hash": ""
+  },
+  "training/aion/tools/validate_model.py": {
+    "mtime": 1786646785.2035851,
+    "ast_hash": "9b945fb6f495543e1b3fcbd2030ca41f",
+    "semantic_hash": ""
+  },
+  ".claude/skills/triage/SKILL.md": {
+    "mtime": 1786049018.7329922,
+    "ast_hash": "e7610b1ec874036b1028619c9a19b863",
+    "semantic_hash": ""
+  },
+  ".github/workflows/validate.yml": {
+    "mtime": 1786564948.962356,
+    "ast_hash": "b34760308e9a23913a1a55471ed22c7a",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1786649777.2046516,
+    "ast_hash": "27255b4ef92a266d4d0699f46692069f",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1786649777.2046516,
+    "ast_hash": "34769a151d29f34d4014ff5118e1b3d5",
+    "semantic_hash": ""
+  },
+  "engine/LESSONS.md": {
+    "mtime": 1786731827.236402,
+    "ast_hash": "7e9f5742ef6dcb61ace263b0ee4ee9a5",
+    "semantic_hash": ""
+  },
+  "plugins/scrittura/README.md": {
+    "mtime": 1786649777.2011454,
+    "ast_hash": "242080d2f616cb3f0df1c7109af38949",
+    "semantic_hash": ""
+  },
+  "plugins/scrittura/skills/scrivi/SKILL.md": {
+    "mtime": 1786309593.6408935,
+    "ast_hash": "c6f4cfd93c3cb0194bcd90b136393d50",
+    "semantic_hash": ""
+  },
+  "raw/README.md": {
+    "mtime": 1786649777.2036512,
+    "ast_hash": "a88adcaad55d068168b41e915040fcf9",
+    "semantic_hash": ""
+  },
+  "raw/ricette/vinaigrette.md": {
+    "mtime": 1786731824.4858284,
+    "ast_hash": "180c56b5821ec7e8939fd3a4288f42ef",
+    "semantic_hash": ""
+  },
+  "raw/tecniche/emulsione.md": {
+    "mtime": 1786731824.45754,
+    "ast_hash": "ad4dc086af27243af04b3a8c1ea087ce",
+    "semantic_hash": ""
+  },
+  "raw/tecniche/maillard.md": {
+    "mtime": 1786731824.4722588,
+    "ast_hash": "96852eaf51d1b1b68bf1dc3b7c181716",
+    "semantic_hash": ""
+  },
+  "server/README.md": {
+    "mtime": 1786400324.705337,
+    "ast_hash": "509432fed778b8decdd5fb2ee4846607",
+    "semantic_hash": ""
+  },
+  "tools/README.md": {
+    "mtime": 1786467337.0701897,
+    "ast_hash": "f00a531bf3617ba4bcb2d5dfb656c765",
+    "semantic_hash": ""
+  },
+  "training/README.md": {
+    "mtime": 1786649777.1986375,
+    "ast_hash": "d9a9559c51c1dbc80592cf3063177144",
+    "semantic_hash": ""
+  },
+  "training/aion/engine/aion-reasoner.md": {
+    "mtime": 1786562551.6922977,
+    "ast_hash": "fa52212563bce754d802e8ec3abd8d17",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/README.md": {
+    "mtime": 1786049686.8021479,
+    "ast_hash": "3290e5d490c6ba35177cad39885c08c8",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-agents.md": {
+    "mtime": 1786049686.8275938,
+    "ast_hash": "5d5f04d8197cac3709efd6fd6d6a5980",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-components.md": {
+    "mtime": 1786049686.8531077,
+    "ast_hash": "f750ef1613becaa61091364675208a40",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-description.md": {
+    "mtime": 1786049686.8768375,
+    "ast_hash": "9d7d1a3ff0fa25312ac275ad90a660a8",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-framework.md": {
+    "mtime": 1786049686.9010456,
+    "ast_hash": "79c8a98f41b7e5370cea56f3a404c096",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-manifest.md": {
+    "mtime": 1786049686.925252,
+    "ast_hash": "63dc980a69534327f6c457214656d62c",
+    "semantic_hash": ""
+  },
+  "training/aion/raw/aion/aion-oracle.md": {
+    "mtime": 1786049663.9540486,
+    "ast_hash": "193c9f492ddca7e32529e3ce887b7cad",
+    "semantic_hash": ""
+  },
+  "training/aion/skills/aion/SKILL.md": {
+    "mtime": 1786049012.0246406,
+    "ast_hash": "8eaedcb96dfdf5eb755e9910373ad3d3",
+    "semantic_hash": ""
+  },
+  "training/aion/skills/oracle/SKILL.md": {
+    "mtime": 1786049015.4208107,
+    "ast_hash": "f37d25d43bd59d5d74a818149712a546",
+    "semantic_hash": ""
+  },
+  "engine/digest/ricette.json": {
+    "mtime": 1786731827.290916,
+    "ast_hash": "fbb6d6309c128e9a318ed88abef08fda",
+    "semantic_hash": ""
+  },
+  "engine/digest/tecniche.json": {
+    "mtime": 1786731827.290916,
+    "ast_hash": "9d279cee19726b6f1829415231e1f223",
+    "semantic_hash": ""
+  },
+  "engine/search_index.json": {
+    "mtime": 1786731827.2070005,
+    "ast_hash": "29962ef978d565c83644eba8cf571773",
+    "semantic_hash": ""
+  }
+}

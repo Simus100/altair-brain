@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "description": "Registro delle macroaree. Fonte di verita unica per scaffolding, router e gate di sicurezza. Aggiungere un'area = una voce qui + la cartella raw/<id>/.",
+  "convention": {
+    "id": "kebab-case ascii, nessuno spazio; coincide con raw/<id>/",
+    "status": "active | draft | archived",
+    "sla_giorni": "giorni prima che una nota vada ri-verificata; null = non scade",
+    "coesa": "true = l'area deve restare un solo componente connesso nel grafo",
+    "generata_da": "se presente, wiki/<id>/ e GENERATA da questo file"
+  },
+  "areas": [
+    {
+      "id": "ricette",
+      "label": "Ricette",
+      "description": "Preparazioni provate, con dosi e tempi",
+      "status": "active",
+      "sla_giorni": 180
+    },
+    {
+      "id": "tecniche",
+      "label": "Tecniche",
+      "description": "Metodi di base che tornano in molte ricette",
+      "status": "active",
+      "sla_giorni": 180
+    }
+  ]
+}

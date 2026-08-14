@@ -42,10 +42,19 @@ USCITA = os.path.join(BRAIN, "graphify-out", "index.html")
 
 def brain_corrente():
     """Quale brain stiamo guardando. Senza questo, la porta mostrava tre viste
-    senza dire DI CHE COSA: con un brain solo si intuisce, con due e' una trappola."""
-    if os.path.abspath(BRAIN) == os.path.abspath(ROOT):
+    senza dire DI CHE COSA: con un brain solo si intuisce, con due e' una trappola.
+
+    ATTENZIONE al caso che sembrava innocuo: dentro un'istanza autosufficiente BRAIN
+    e ROOT COINCIDONO, quindi confrontarli faceva chiamare ogni brain 'brain di
+    riferimento' — aprivi l'atlante di 'cucina' e diceva di essere il brain
+    principale. Il riferimento si riconosce dal fatto di essere un'OFFICINA: ha
+    core/ e brains/ accanto. Tutto il resto si chiama col proprio nome."""
+    base = os.path.abspath(BRAIN)
+    officina = (os.path.isdir(os.path.join(base, "core"))
+                and os.path.isdir(os.path.join(base, "brains")))
+    if officina:
         return "brain di riferimento"
-    return os.path.basename(os.path.abspath(BRAIN))
+    return os.path.basename(base)
 
 
 def altri_brain():

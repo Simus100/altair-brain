@@ -1,0 +1,213 @@
+name: valida brain
+
+# Cancello di qualita: i consumatori (VPS, dispositivi, agenti) fanno pull alla cieca,
+# quindi main deve essere SEMPRE valido. Tutto deterministico, nessuna API a pagamento.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read   # default minimo; il job di backup chiede write per conto suo
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      # Actions pinnate a SHA (i tag sono riassegnabili: supply chain)
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5   # v4.3.1
+        with:
+          fetch-depth: 2   # serve il commit precedente per l'anti-regressione del grafo
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065   # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Dipendenze di verifica
+        run: pip install -q jsonschema fastapi httpx pytest
+
+      # Governance repo multi-agente: .claude/ e .agents/ contengono hook ESEGUIBILI
+      # sulla macchina di chi apre il repo. Ogni modifica deve essere deliberata:
+      # il commit che li tocca deve dichiararlo con [hooks-ok] nel messaggio.
+      - name: Guardia hook eseguibili (.claude/ e .agents/)
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --quiet HEAD~1 HEAD -- .claude/ .agents/; then
+            MSG="$(git log -1 --format=%B)"
+            if [[ "$MSG" != *"[hooks-ok]"* ]]; then
+              echo "::error::modifica a .claude/ o .agents/ (codice eseguibile) senza marcatore [hooks-ok] nel messaggio di commit — rivedi e ricommitta dichiarandola"
+              git diff --stat HEAD~1 HEAD -- .claude/ .agents/
+              exit 1
+            fi
+          fi
+          echo "hook: nessuna modifica non dichiarata"
+
+      # Audit CVE sulle dipendenze pinnate (informativo: non blocca, ma resta visibile
+      # nel log CI; promuovere a bloccante quando il flusso è rodato)
+      - name: pip-audit dipendenze server (avviso CVE)
+        continue-on-error: true
+        run: |
+          pip install -q pip-audit
+          pip-audit -r server/requirements.txt --strict
+
+      - name: Sintassi Python (server + tools + tests)
+        run: python -m compileall -q server tools tests
+
+      - name: Consistenza modello AION + JSON Schema (0 errori richiesti)
+        run: python tools/validate_model.py
+
+      - name: DB Oracle coerente col grezzo (fonte unica)
+        run: |
+          python tools/build_iching_db.py
+          if ! git diff --quiet -- engine/iching.db.json; then
+            echo "::error::engine/iching.db.json non coerente con raw/aion/aion-oracle.md — rigenera con tools/build_iching_db.py"
+            exit 1
+          fi
+
+      - name: Wiki coerente col modello (fonte unica)
+        run: |
+          python tools/gen_wiki_from_model.py
+          if ! git diff --quiet -- wiki/; then
+            echo "::error::wiki/aion non coerente con engine/aion.model.json — rigenera con tools/gen_wiki_from_model.py"
+            git diff --stat -- wiki/
+            exit 1
+          fi
+
+      - name: Sottografi per area coerenti col grafo
+        run: |
+          python tools/build_area_graphs.py
+          if ! git diff --quiet -- graphify-out/areas; then
+            echo "::error::graphify-out/areas non coerente con graph.json — rigenera con tools/build_area_graphs.py"
+            exit 1
+          fi
+
+      # L'atlante e derivato al 100% da graph.json: se il grafo cambia e la vista
+      # no, chi la apre naviga una mappa vecchia senza alcun segnale che lo sia.
+      - name: Atlante 3D coerente col grafo
+        run: |
+          python tools/build_atlas_view.py
+          if ! git diff --quiet -- graphify-out/graph-atlas.html; then
+            echo "::error::graphify-out/graph-atlas.html non coerente con graph.json — rigenera con tools/build_atlas_view.py"
+            exit 1
+          fi
+
+      - name: Porta delle viste coerente col grafo
+        run: |
+          python tools/build_views_index.py
+          if ! git diff --quiet -- graphify-out/index.html; then
+            echo "::error::graphify-out/index.html non coerente con graph.json — rigenera con tools/build_views_index.py"
+            exit 1
+          fi
+
+      # core/ e GENERATO dal repo vivo: una copia modificata a mano diverge in
+      # silenzio, ed e' esattamente cio' che rende inservibile un prodotto ceduto.
+      - name: Scheletro core/ coerente con la sorgente
+        run: |
+          python tools/build_core.py
+          if ! git diff --quiet -- core/; then
+            echo "::error::core/ non coerente con la sorgente — rigenera con tools/build_core.py (non modificarlo a mano)"
+            git diff --stat -- core/
+            exit 1
+          fi
+
+      - name: JSON validi
+        run: |
+          python - <<'EOF'
+          import json, sys
+          files = ["areas.json", "engine/aion.model.json", "engine/router.json",
+                   "engine/iching.db.json", "engine/schema/aion.model.schema.json",
+                   "graphify-out/graph.json", "graphify-out/graph-compact.json"]
+          bad = []
+          for f in files:
+              try:
+                  json.load(open(f, encoding="utf-8"))
+              except Exception as e:
+                  bad.append(f"{f}: {e}")
+          if bad:
+              print("\n".join(bad)); sys.exit(1)
+          print(f"{len(files)} file JSON validi")
+          EOF
+
+      - name: Indice di ricerca coerente col corpus (fonte unica)
+        run: |
+          python tools/build_search_index.py
+          if ! git diff --quiet -- engine/search_index.json; then
+            echo "::error::engine/search_index.json non coerente col corpus — rigenera con tools/build_search_index.py"
+            exit 1
+          fi
+
+      - name: Relazioni wiki (nessun wikilink rotto)
+        run: python tools/check_wikilinks.py
+
+      - name: Salute del grafo (coesione + anti-regressione + tracciabilita archi)
+        run: python tools/graph_health.py
+
+      # Osservabilita: non bloccano, ma lasciano traccia nel log di ogni push.
+      - name: Freschezza e validita della conoscenza (informativo)
+        continue-on-error: true
+        run: python tools/freshness_report.py
+
+      - name: Provenienza delle affermazioni (report bloccanti)
+        run: python tools/check_provenance.py --strict
+
+      # Repo PUBBLICO: ogni push e pubblicazione permanente (fork, mirror, cache).
+      # Informativo per scelta: decidere cosa e privato spetta all'autore, non alla CI.
+      - name: Cosa si sta pubblicando (informativo)
+        continue-on-error: true
+        run: python tools/check_privacy.py
+
+      - name: Metriche del brain coerenti col grafo
+        run: |
+          python tools/graph_metrics.py
+          if ! git diff --quiet -- metrics/; then
+            echo "::warning::metrics/graph_metrics.csv non era aggiornato (rigenerato ora)"
+          fi
+
+      - name: Test API (sicurezza, oracle, inbox, degradazione)
+        run: python -m pytest tests/ -q
+
+      - name: Fine-riga LF sugli script per la VPS
+        run: |
+          if grep -rl $'\r' server/*.sh server/*.py tools/*.py 2>/dev/null; then
+            echo "::error::trovati CRLF in file eseguiti su Linux"
+            exit 1
+          fi
+          echo "LF ok"
+
+  # Rete di sicurezza: il branch `backup` punta SEMPRE all'ultimo commit di main
+  # che ha passato l'intera validazione. Se main viene corrotto (push errato,
+  # regressione, riscrittura), backup conserva l'ultimo stato certificato buono.
+  backup:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5   # v4.3.1
+        with:
+          fetch-depth: 0   # servono tutti gli oggetti per aggiornare il ref remoto
+      - name: Aggiorna branch backup all'ultimo main validato
+        run: |
+          git push --force origin HEAD:backup
+          echo "backup -> $(git rev-parse --short HEAD)"
+
+      # RITENZIONE. `backup` si sovrascrive a ogni CI verde: protegge dal main
+      # INVALIDO, non dal main SBAGLIATO. Un errore di contenuto che passa la CI
+      # (un fatto errato, una nota cancellata per sbaglio) distrugge subito l'unico
+      # punto di ripristino. Un tag settimanale immutabile da profondita storica.
+      - name: Punto di ripristino settimanale (immutabile)
+        run: |
+          TAG="ripristino-$(date -u +%Y-w%V)"
+          if git ls-remote --exit-code --tags origin "$TAG" >/dev/null 2>&1; then
+            echo "$TAG esiste gia: la settimana e gia coperta"
+          else
+            # Tag LEGGERO di proposito: quello annotato (-a -m) richiede un'identita
+            # git, che un checkout pulito in Actions non ha — ed e esattamente cosi
+            # che questo step e fallito al primo giro. Per un punto di ripristino
+            # l'annotazione non aggiunge nulla: conta il commit a cui punta.
+            git tag "$TAG"
+            git push origin "$TAG"
+            echo "creato $TAG -> $(git rev-parse --short HEAD)"
+          fi

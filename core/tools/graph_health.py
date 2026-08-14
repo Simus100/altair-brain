@@ -139,9 +139,22 @@ if fantasmi:
 # anti-regressione vs commit precedente
 prev_ref = os.environ.get("ALTAIR_PREV_REF", "HEAD~1")
 try:
+    # I percorsi di 'git show' sono relativi al REPOSITORY, non alla cartella da cui
+    # si lancia. Con piu' brain nello stesso repo, chiedere "graphify-out/graph.json"
+    # da brains/<nome>/ restituiva il grafo del brain di RIFERIMENTO: un'istanza
+    # confrontava i propri nodi con quelli di un'altra e falliva l'anti-regressione
+    # per un calo che non era mai avvenuto. Il percorso va calcolato dalla radice
+    # del repository fino a QUESTO brain.
+    _top = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=BRAIN,
+                          capture_output=True, text=True, encoding="utf-8", timeout=30)
+    if _top.returncode == 0 and _top.stdout.strip():
+        _rel = os.path.relpath(BRAIN, _top.stdout.strip()).replace("\\", "/")
+        _percorso = "graphify-out/graph.json" if _rel == "." else f"{_rel}/graphify-out/graph.json"
+    else:
+        _percorso = "graphify-out/graph.json"
     prev_raw = subprocess.run(
-        ["git", "show", f"{prev_ref}:graphify-out/graph.json"],
-        cwd=ROOT, capture_output=True, text=True, encoding="utf-8", timeout=30)
+        ["git", "show", f"{prev_ref}:{_percorso}"],
+        cwd=BRAIN, capture_output=True, text=True, encoding="utf-8", timeout=30)
     if prev_raw.returncode == 0 and prev_raw.stdout.strip():
         prev_nodes = len(json.loads(prev_raw.stdout).get("nodes", []))
         cur_nodes = len(nodes)

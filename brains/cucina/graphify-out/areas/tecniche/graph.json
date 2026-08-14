@@ -1,0 +1,81 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "tecniche",
+ "built_at_commit": "0a5428386b20cb4b8856d9c4ee22425c0294abd4",
+ "nodes": [
+  {
+   "label": "emulsione.md",
+   "file_type": "document",
+   "source_file": "raw/tecniche/emulsione.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_tecniche_emulsione",
+   "community": 114,
+   "norm_label": "emulsione.md"
+  },
+  {
+   "label": "Emulsione: perche si rompe",
+   "file_type": "document",
+   "source_file": "raw/tecniche/emulsione.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_tecniche_emulsione_emulsione_perche_si_rompe",
+   "community": 114,
+   "norm_label": "emulsione: perche si rompe"
+  },
+  {
+   "label": "maillard.md",
+   "file_type": "document",
+   "source_file": "raw/tecniche/maillard.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_tecniche_maillard",
+   "community": 114,
+   "norm_label": "maillard.md"
+  },
+  {
+   "label": "Maillard: e l'acqua a decidere, non il fuoco",
+   "file_type": "document",
+   "source_file": "raw/tecniche/maillard.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_tecniche_maillard_maillard_e_l_acqua_a_decidere_non_il_fuoco",
+   "community": 114,
+   "norm_label": "maillard: e l'acqua a decidere, non il fuoco"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/tecniche/emulsione.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_tecniche_emulsione",
+   "target": "raw_tecniche_emulsione_emulsione_perche_si_rompe",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/tecniche/maillard.md",
+   "source_location": "L19",
+   "weight": 1.0,
+   "source": "raw_tecniche_maillard",
+   "target": "raw_tecniche_emulsione",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/tecniche/maillard.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_tecniche_maillard",
+   "target": "raw_tecniche_maillard_maillard_e_l_acqua_a_decidere_non_il_fuoco",
+   "confidence_score": 1.0
+  }
+ ]
+}

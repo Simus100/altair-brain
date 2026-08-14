@@ -1,0 +1,41 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "ricette",
+ "built_at_commit": "0a5428386b20cb4b8856d9c4ee22425c0294abd4",
+ "nodes": [
+  {
+   "label": "vinaigrette.md",
+   "file_type": "document",
+   "source_file": "raw/ricette/vinaigrette.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_ricette_vinaigrette",
+   "community": 124,
+   "norm_label": "vinaigrette.md"
+  },
+  {
+   "label": "Vinaigrette che non si separa",
+   "file_type": "document",
+   "source_file": "raw/ricette/vinaigrette.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "raw_ricette_vinaigrette_vinaigrette_che_non_si_separa",
+   "community": 124,
+   "norm_label": "vinaigrette che non si separa"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/ricette/vinaigrette.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "raw_ricette_vinaigrette",
+   "target": "raw_ricette_vinaigrette_vinaigrette_che_non_si_separa",
+   "confidence_score": 1.0
+  }
+ ]
+}

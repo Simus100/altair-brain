@@ -1,0 +1,37 @@
+{
+  "centrali": [
+    {
+      "dove": "raw/tecniche/emulsione.md",
+      "grado": 2,
+      "nodo": "emulsione.md"
+    },
+    {
+      "dove": "raw/tecniche/maillard.md",
+      "grado": 2,
+      "nodo": "maillard.md"
+    },
+    {
+      "dove": "raw/tecniche/emulsione.md",
+      "grado": 1,
+      "nodo": "Emulsione: perche si rompe"
+    },
+    {
+      "dove": "raw/tecniche/maillard.md",
+      "grado": 1,
+      "nodo": "Maillard: e l'acqua a decidere, non il fuoco"
+    }
+  ],
+  "file": 2,
+  "generato_il": "2026-08-14",
+  "modificati_di_recente": [
+    {
+      "file": "raw/tecniche/emulsione.md",
+      "giorni_fa": 0
+    },
+    {
+      "file": "raw/tecniche/maillard.md",
+      "giorni_fa": 0
+    }
+  ],
+  "nodi": 4
+}
