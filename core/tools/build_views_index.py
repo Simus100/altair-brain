@@ -50,10 +50,18 @@ def brain_corrente():
     principale. Il riferimento si riconosce dal fatto di essere un'OFFICINA: ha
     core/ e brains/ accanto. Tutto il resto si chiama col proprio nome."""
     base = os.path.abspath(BRAIN)
-    officina = (os.path.isdir(os.path.join(base, "core"))
-                and os.path.isdir(os.path.join(base, "brains")))
-    if officina:
-        return "brain di riferimento"
+    # Il REGISTRO ha la precedenza: il brain addestrato dell'autore vive nella radice
+    # dell'officina, ma non e' un default anonimo — e' una voce con un nome, come le
+    # altre. Chiamarlo "brain di riferimento" nascondeva proprio quel fatto.
+    reg = os.path.join(ROOT, "brains", "brains.json")
+    if os.path.exists(reg):
+        try:
+            with open(reg, encoding="utf-8") as f:
+                for b in json.load(f).get("brains", []):
+                    if os.path.abspath(os.path.join(ROOT, b["percorso"])) == base:
+                        return b["nome"]
+        except (OSError, ValueError, KeyError):
+            pass
     return os.path.basename(base)
 
 
@@ -70,10 +78,16 @@ def altri_brain():
         return []
     fuori = []
     for b in elenco:
-        porta = os.path.join(ROOT, b["percorso"], "graphify-out", "index.html")
-        # link RELATIVO alla porta di questo brain: deve funzionare da file://
-        fuori.append({"nome": b["nome"],
-                      "href": f"../{b['percorso']}/graphify-out/index.html",
+        base = os.path.abspath(os.path.join(ROOT, b["percorso"]))
+        # Il brain su cui sei gia' non e' un "altro": il brain addestrato dell'autore
+        # e' una voce del registro come le altre (percorso '.'), non un default
+        # implicito — ma elencarlo qui lo farebbe puntare a se stesso.
+        if base == os.path.abspath(BRAIN):
+            continue
+        porta = os.path.join(base, "graphify-out", "index.html")
+        # link RELATIVO: la porta deve funzionare aperta da file://
+        rel = os.path.relpath(porta, os.path.join(BRAIN, "graphify-out"))
+        fuori.append({"nome": b["nome"], "href": rel.replace("\\", "/"),
                       "pronto": os.path.exists(porta)})
     return sorted(fuori, key=lambda x: x["nome"])
 

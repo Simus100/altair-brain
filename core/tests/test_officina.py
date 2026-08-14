@@ -162,8 +162,12 @@ def test_il_selettore_compare_quando_ci_sono_altri_brain(tmp_path):
     importlib.reload(bvi)
     altri = bvi.altri_brain()
     reg = json.loads((ROOT / "brains" / "brains.json").read_text(encoding="utf-8"))
-    assert len(altri) == len(reg["brains"]), \
-        "il selettore non elenca tutti i brain del registro"
+    # Tutti TRANNE quello su cui sei: il brain corrente e' nel registro come gli
+    # altri (non e' un default anonimo), ma nel selettore punterebbe a se stesso.
+    assert len(altri) == len(reg["brains"]) - 1, \
+        "il selettore deve elencare tutti i brain del registro tranne quello corrente"
+    nomi = {b["nome"] for b in altri}
+    assert bvi.brain_corrente() not in nomi, "il selettore elenca il brain corrente"
     for b in altri:
         assert b["href"].startswith("../"), \
             "il link a un altro brain deve essere RELATIVO: la porta si apre da file://"
@@ -193,18 +197,21 @@ def test_ogni_istanza_si_chiama_col_proprio_nome():
     faceva dichiarare 'brain di riferimento' a QUALSIASI brain — aprivi l'atlante di
     'cucina' e diceva di essere il principale. Il riferimento si riconosce dall'essere
     un'officina (ha core/ e brains/), non dal fatto che i percorsi coincidano."""
+    import importlib
     from tools import build_views_index as bvi
-    assert bvi.brain_corrente() == "brain di riferimento", \
-        "la radice, che ha core/ e brains/, e' il brain di riferimento"
-    for b in json.loads((ROOT / "brains" / "brains.json").read_text(encoding="utf-8"))["brains"]:
+    importlib.reload(bvi)
+    reg = json.loads((ROOT / "brains" / "brains.json").read_text(encoding="utf-8"))["brains"]
+    nomi = {b["nome"] for b in reg}
+    # NESSUN brain e' un default anonimo: anche quello che vive nella radice ha una
+    # voce nel registro e si chiama col suo nome.
+    assert bvi.brain_corrente() in nomi, (
+        f"il brain corrente si chiama '{bvi.brain_corrente()}', assente dal registro")
+    for b in reg:
         porta = ROOT / b["percorso"] / "graphify-out" / "index.html"
         if not porta.exists():
             continue
-        testo = porta.read_text(encoding="utf-8")
-        assert f"<b>{b['nome']}</b>" in testo, \
+        assert f"<b>{b['nome']}</b>" in porta.read_text(encoding="utf-8"), \
             f"la porta di {b['nome']} non dichiara il proprio nome"
-        assert "brain di riferimento" not in testo, \
-            f"{b['nome']} si spaccia per il brain di riferimento"
 
 
 def test_il_selettore_punta_a_file_che_esistono():
