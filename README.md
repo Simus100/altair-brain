@@ -67,15 +67,99 @@ brains/aion/            the reference brain (raw/ wiki/ engine/ areas.json), the
 The root holds **no content at all** — it is the skeleton. The author's own brain sits
 in `brains/aion/` like any other instance.
 
-A brain is **self-sufficient**: its own tools, its own knowledge, its own graph. Two
-brains never share the engine — that would tie them to one version forever, and an
-experiment on one could break the other.
+---
 
-**Which brain you're looking at** is decided by `tools/brain.py`, not by where the tools
-live: `ALTAIR_BRAIN` → the `attivo` entry in the registry → the repo folder. The default
-keeps every instance behaving exactly as before; the indirection is what lets one engine
-serve many brains. `graphify-out/index.html` says which brain it is showing and links to
-the others.
+## One engine, many brains
+
+The engine is not a brain. It is a machine that **any number of brains** can run on, and
+that separation is what the whole repo is arranged around.
+
+```
+tools/  tests/  server/          ONE engine, one source, never duplicated
+        │
+        ├── brains/aion/         raw/ wiki/ engine/ areas.json  ·  training: aion
+        ├── brains/cucina/       raw/ wiki/ areas.json          ·  training: none
+        └── brains/<yours>/      …
+                                 each one autonomous: own knowledge, own graph,
+                                 own areas, own lessons, own search index
+```
+
+**A brain is self-sufficient.** Its own tools, its own knowledge, its own graph. Two
+brains never share an engine copy — sharing one would tie them to the same version
+forever, and an experiment on one would break the other. `brains/aion` and `brains/cucina`
+can sit on different generations of the pipeline without either noticing.
+
+**Nothing personal travels with the product.** Acquired inference — the notes in `raw/`,
+the lessons in `engine/lessons.jsonl` — belongs to one brain and never leaves it. `core/`
+is the cedible skeleton; a brain is what you grow on top of it.
+
+### The registry
+
+`brains/brains.json` lists every brain in the repo and which one is active:
+
+```json
+{ "schema_version": 1,
+  "attivo": "aion",
+  "brains": [ { "nome": "aion",   "percorso": "brains/aion",   "training": "aion" },
+              { "nome": "cucina", "percorso": "brains/cucina", "training": null } ] }
+```
+
+The author's own brain is **an entry like any other** — not an implicit default sitting in
+the root. That distinction is load-bearing: as long as one brain lived in the root, half a
+dozen guards quietly assumed "root == the brain", and several stopped checking anything at
+all the day it moved.
+
+### Choosing which brain you work on
+
+`tools/brain.py` decides, and every tool asks it — the answer is never the tool's own
+location:
+
+| priority | source | use it for |
+|---|---|---|
+| 1 | `ALTAIR_BRAIN` environment variable | one-off runs against another brain |
+| 2 | `attivo` in `brains/brains.json` | the brain you normally work on |
+| 3 | the folder the tools sit in | a brain deployed on its own, with no registry |
+
+```bash
+python tools/brain_new.py --elenco                    # what brains exist, and what's in them
+python tools/brain_new.py --nome cucina               # create one from core/
+python tools/brain_new.py --nome studio --training aion   # …adopting a training
+ALTAIR_BRAIN=brains/cucina python tools/rebuild_all.py    # rebuild a different brain
+```
+
+To change the default permanently, set `attivo` in `brains/brains.json`. Rule 3 is what
+makes a brain work **outside** this repo too: copy `brains/<name>/` anywhere, and its own
+tools serve it with no registry present.
+
+`--elenco` counts what each brain actually holds, rather than trusting the registry:
+
+```
+2 brain in questo repo:
+
+  aion             brains/aion              training: aion
+    6 aree · 68 note grezze · 112 pagine curate · 32 lezioni
+  cucina           brains/cucina            training: —
+    2 aree · 4 note grezze · 0 pagine curate · 0 lezioni
+```
+
+### Navigating between them
+
+`graphify-out/index.html` — the door to the three graph views — names the brain you are
+looking at and links to the doors of the others, so you can move between brains without
+touching a path. A brain deployed on its own shows no selector: there is no registry, and
+nothing to switch to.
+
+### What keeps them apart
+
+Isolation is verified, not assumed — these guards exist because each of them caught a real
+leak between brains:
+
+- Content location comes from `tools/brain.py`; a tool that hardcodes `ROOT/"wiki"` fails a test.
+- The graph's anti-regression baseline is computed per brain, so a small brain is never
+  compared against a large one's node count.
+- `core/` and `brains/` are pruned from every graph: instances are artifacts, not knowledge.
+- Every path the CI compares must exist, so moving a brain can never turn a check into a
+  silently green no-op.
 
 ---
 
@@ -176,12 +260,14 @@ inside a brain (e.g. brains/aion/):
 - **`GUIDA.md`** — everyday use (human, non-technical).
 - **`ROADMAP.md`** — engineering handoff (binding rules + specs) for any future contributor/agent.
 - **`server/README.md`** — API reference, MCP, and VPS deployment.
-- **`raw/template_showcase_3d.md`** — Schema riutilizzabile per dashboard neurali 3D.
+- **`brains/aion/reports/template_showcase_3d.md`** — schema riutilizzabile per dashboard neurali 3D.
 
 ## Status
 
-Two connected areas live (AION thinking-model, data-science analyst), multi-channel serving,
-CI-guarded, self-updating deployment. Growing by design.
+Two brains in the repo — `aion` (the reference brain: six connected areas, AION training
+adopted) and `cucina` (a small instance with no training, kept as a live check that the
+skeleton really starts from nothing). Multi-channel serving, CI-guarded, self-updating
+deployment. Growing by design.
 
 ---
 
