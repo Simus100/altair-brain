@@ -1,3 +1,12 @@
+# TUTTO IL TESTO IN LF, SU OGNI PIATTAFORMA. Ogni generatore del motore scrive LF
+# (newline="
+"), e la CI verifica gli artefatti rigenerandoli e confrontandoli. Con
+# la conversione automatica di Windows (core.autocrlf) un clone su Windows riceveva
+# i file in CRLF: il confronto falliva su file identici, e il test di determinismo
+# dello scheletro era rosso per chiunque clonasse il repo su Windows. text=auto
+# lascia stare i file binari.
+* text=auto eol=lf
+
 # Fine-riga LF obbligatori per i file eseguiti su Linux (VPS): CRLF li romperebbe.
 *.sh        text eol=lf
 *.py        text eol=lf
