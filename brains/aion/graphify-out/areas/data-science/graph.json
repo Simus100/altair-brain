@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "data-science",
- "built_at_commit": "cce096da86a00d8b771e23b531732a968d53cc90",
+ "built_at_commit": "91a42e3bd964cd1c1531195c9af74b9159abfcaf",
  "nodes": [
   {
    "label": "AI introduzione.md",
@@ -612,7 +612,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale",
-   "community": 14,
+   "community": 4,
    "norm_label": "algebra-relazionale.md"
   },
   {
@@ -622,7 +622,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_algebra_relazionale_algebra_relazionale",
-   "community": 14,
+   "community": 4,
    "norm_label": "algebra relazionale"
   },
   {
@@ -632,7 +632,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa",
-   "community": 198,
+   "community": 4,
    "norm_label": "analisi-esplorativa.md"
   },
   {
@@ -642,7 +642,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_esplorativa_analisi_esplorativa_eda",
-   "community": 198,
+   "community": 4,
    "norm_label": "analisi esplorativa (eda)"
   },
   {
@@ -652,7 +652,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale",
-   "community": 198,
+   "community": 4,
    "norm_label": "analisi-relazionale.md"
   },
   {
@@ -662,7 +662,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_analisi_relazionale_analisi_relazionale_confronti_tra_variabili",
-   "community": 198,
+   "community": 4,
    "norm_label": "analisi relazionale (confronti tra variabili)"
   },
   {
@@ -672,7 +672,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing",
-   "community": 29,
+   "community": 4,
    "norm_label": "cloud-computing.md"
   },
   {
@@ -682,7 +682,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_cloud_computing_cloud_computing",
-   "community": 29,
+   "community": 4,
    "norm_label": "cloud computing"
   },
   {
@@ -732,7 +732,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture",
-   "community": 29,
+   "community": 4,
    "norm_label": "data-driven-culture.md"
   },
   {
@@ -742,7 +742,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_driven_culture_data_driven_culture",
-   "community": 29,
+   "community": 4,
    "norm_label": "data-driven culture"
   },
   {
@@ -752,7 +752,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling",
-   "community": 29,
+   "community": 4,
    "norm_label": "data-storytelling.md"
   },
   {
@@ -762,7 +762,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_data_storytelling_data_storytelling",
-   "community": 29,
+   "community": 4,
    "norm_label": "data storytelling"
   },
   {
@@ -792,7 +792,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_docker",
-   "community": 14,
+   "community": 4,
    "norm_label": "docker.md"
   },
   {
@@ -802,7 +802,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_docker_docker",
-   "community": 14,
+   "community": 4,
    "norm_label": "docker"
   },
   {
@@ -812,7 +812,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_drawio",
-   "community": 14,
+   "community": 4,
    "norm_label": "drawio.md"
   },
   {
@@ -822,7 +822,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_drawio_draw_io",
-   "community": 14,
+   "community": 4,
    "norm_label": "draw.io"
   },
   {
@@ -872,7 +872,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche",
-   "community": 198,
+   "community": 4,
    "norm_label": "framework-domande-analitiche.md"
   },
   {
@@ -882,7 +882,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_framework_domande_analitiche_framework_delle_domande_analitiche",
-   "community": 198,
+   "community": 4,
    "norm_label": "framework delle domande analitiche"
   },
   {
@@ -982,7 +982,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale",
-   "community": 29,
+   "community": 4,
    "norm_label": "intelligenza-artificiale.md"
   },
   {
@@ -992,7 +992,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_intelligenza_artificiale_intelligenza_artificiale_fondamenti",
-   "community": 29,
+   "community": 4,
    "norm_label": "intelligenza artificiale (fondamenti)"
   },
   {
@@ -1002,7 +1002,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter",
-   "community": 14,
+   "community": 4,
    "norm_label": "jupyter.md"
   },
   {
@@ -1012,7 +1012,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_jupyter_jupyter_notebook",
-   "community": 14,
+   "community": 4,
    "norm_label": "jupyter notebook"
   },
   {
@@ -1082,7 +1082,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_metodi",
-   "community": 29,
+   "community": 4,
    "norm_label": "metodi.md"
   },
   {
@@ -1092,7 +1092,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_metodi_metodi_e_concetti_data_science",
-   "community": 29,
+   "community": 4,
    "norm_label": "metodi e concetti (data science)"
   },
   {
@@ -1102,7 +1102,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb",
-   "community": 14,
+   "community": 4,
    "norm_label": "mongodb.md"
   },
   {
@@ -1112,7 +1112,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_mongodb_mongodb",
-   "community": 14,
+   "community": 4,
    "norm_label": "mongodb"
   },
   {
@@ -1122,7 +1122,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali",
-   "community": 29,
+   "community": 4,
    "norm_label": "normalizzazione-decimali.md"
   },
   {
@@ -1132,7 +1132,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_normalizzazione_decimali_normalizzazione_dei_decimali_eng_ita",
-   "community": 29,
+   "community": 4,
    "norm_label": "normalizzazione dei decimali (eng/ita)"
   },
   {
@@ -1142,7 +1142,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql",
-   "community": 14,
+   "community": 4,
    "norm_label": "postgresql.md"
   },
   {
@@ -1152,7 +1152,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_postgresql_postgresql",
-   "community": 14,
+   "community": 4,
    "norm_label": "postgresql"
   },
   {
@@ -1162,7 +1162,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi",
-   "community": 14,
+   "community": 4,
    "norm_label": "power-bi.md"
   },
   {
@@ -1172,7 +1172,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_power_bi_power_bi",
-   "community": 14,
+   "community": 4,
    "norm_label": "power bi"
   },
   {
@@ -1182,7 +1182,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database",
-   "community": 14,
+   "community": 4,
    "norm_label": "progettazione-database.md"
   },
   {
@@ -1192,7 +1192,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progettazione_database_progettazione_di_un_database",
-   "community": 14,
+   "community": 4,
    "norm_label": "progettazione di un database"
   },
   {
@@ -1322,7 +1322,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce",
-   "community": 14,
+   "community": 4,
    "norm_label": "progetto-olist-ecommerce.md"
   },
   {
@@ -1332,7 +1332,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_progetto_olist_ecommerce_progetto_brazilian_e_commerce_olist",
-   "community": 14,
+   "community": 4,
    "norm_label": "progetto: brazilian e-commerce (olist)"
   },
   {
@@ -1362,7 +1362,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering",
-   "community": 29,
+   "community": 4,
    "norm_label": "prompt-engineering.md"
   },
   {
@@ -1372,7 +1372,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_prompt_engineering_prompt_engineering",
-   "community": 29,
+   "community": 4,
    "norm_label": "prompt engineering"
   },
   {
@@ -1462,7 +1462,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_sql",
-   "community": 14,
+   "community": 4,
    "norm_label": "sql.md"
   },
   {
@@ -1472,7 +1472,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_sql_sql",
-   "community": 14,
+   "community": 4,
    "norm_label": "sql"
   },
   {
@@ -1482,7 +1482,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti",
-   "community": 14,
+   "community": 4,
    "norm_label": "strumenti.md"
   },
   {
@@ -1492,7 +1492,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_strumenti_strumenti_data_science",
-   "community": 14,
+   "community": 4,
    "norm_label": "strumenti (data science)"
   },
   {
@@ -1522,7 +1522,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi",
-   "community": 29,
+   "community": 4,
    "norm_label": "tipi-di-analisi.md"
   },
   {
@@ -1532,7 +1532,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_tipi_di_analisi_tipi_di_analisi_dati",
-   "community": 29,
+   "community": 4,
    "norm_label": "tipi di analisi dati"
   },
   {
@@ -1542,7 +1542,7 @@
    "source_location": "L1",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati",
-   "community": 198,
+   "community": 4,
    "norm_label": "visualizzazione-dati.md"
   },
   {
@@ -1552,7 +1552,7 @@
    "source_location": "L8",
    "_origin": "ast",
    "id": "wiki_data_science_visualizzazione_dati_visualizzazione_efficace_dei_dati",
-   "community": 198,
+   "community": 4,
    "norm_label": "visualizzazione efficace dei dati"
   },
   {

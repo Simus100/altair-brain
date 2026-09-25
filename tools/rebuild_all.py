@@ -55,6 +55,9 @@ INGRESSO = {
 }
 
 STEPS = [
+    # Prima di tutto: questo motore puo' ricostruire questo brain? Il manifesto
+    # brain.json dice con quale versione e' stato verificato (tools/brain_upgrade.py).
+    ("compatibilita' brain-motore", [PY, "tools/brain_upgrade.py", "--verifica"]),
     ("wiki dal modello", [PY, "tools/gen_wiki_from_model.py"]),
     ("validazione modello", [PY, "tools/validate_model.py"]),
     ("DB oracle", [PY, "tools/build_iching_db.py"]),
@@ -78,6 +81,8 @@ STEPS = [
     ("metriche del brain", [PY, "tools/graph_metrics.py"]),
     ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
     ("salute del grafo", [PY, "tools/graph_health.py"]),
+    # Nell'officina: il grafo del CODICE, separato da quello della conoscenza.
+    ("grafo del codice (officina)", [PY, "tools/build_code_graph.py"]),
 ]
 
 failed = False

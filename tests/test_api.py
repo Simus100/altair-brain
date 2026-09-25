@@ -10,7 +10,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN = "test-token-for-ci"
 os.environ["ALTAIR_API_TOKEN"] = TOKEN
-os.environ["ALTAIR_REPO_DIR"] = str(ROOT / "brains" / "aion")
+# Il brain ATTIVO, risolto come fa ogni tool. Era scritto "brains/aion": fuori
+# dall'officina (un brain esportato, lo scheletro ceduto) quel percorso non esiste, e
+# il server finiva a servire il vuoto. Nello scheletro vergine non si vedeva, perche'
+# quei test venivano saltati per presupposti mancanti.
+sys.path.insert(0, str(ROOT))
+from tools.brain import BRAIN as _BRAIN_ATTIVO  # noqa: E402
+os.environ["ALTAIR_REPO_DIR"] = _BRAIN_ATTIVO
 os.environ["ALTAIR_INBOX_DIR"] = tempfile.mkdtemp(prefix="altair_inbox_")
 os.environ["ALTAIR_RATE_LIMIT"] = "10000"  # niente falsi 429 nei test
 

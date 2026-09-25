@@ -2,6 +2,9 @@
 *.key
 **/secrets.*
 **/graphify-out/cache/
+# Il grafo del CODICE nell'officina (tools/build_code_graph.py): strumento di lavoro,
+# si rigenera in pochi secondi. Solo nella radice: i grafi dei brain stanno in git.
+/graphify-out/
 # Indice semantico: grande e ricostruibile (tools/build_dense_index.py).
 # L'indice lessicale BM25 (engine/search_index.json) invece STA in git: e piccolo,
 # deterministico e serve ai consumatori senza dipendenze.

@@ -88,7 +88,9 @@ def test_i_tool_non_costruiscono_percorsi_di_contenuto_da_ROOT():
                      r'"(raw|wiki|reports|metrics|graphify-out)"')
     colpevoli = {}
     for f in sorted((ROOT / "tools").glob("*.py")):
-        if f.name in ("brain.py", "build_core.py"):   # build_core lavora sull'officina
+        # Lavorano sull'OFFICINA, non su un brain: build_core genera lo scheletro,
+        # build_code_graph mette il grafo del codice nella radice, di proposito.
+        if f.name in ("brain.py", "build_core.py", "build_code_graph.py"):
             continue
         n = pat.findall(f.read_text(encoding="utf-8"))
         if n:

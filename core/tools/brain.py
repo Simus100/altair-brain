@@ -15,9 +15,10 @@ COME SI RISOLVE, in ordine:
   2. il brain 'attivo' dichiarato in brains/brains.json;
   3. la cartella del repo stesso.
 
-Il caso 3 e' il default ed e' quello che rende il cambiamento sicuro: un'istanza
-autosufficiente — core/ dopo l'onboarding, o brains/<nome>/ — continua a comportarsi
-esattamente come prima, perche' li' contenuto e motore coincidono davvero.
+Il caso 3 e' quello di un'istanza autosufficiente — lo scheletro core/, o un brain
+esportato con tools/brain_export.py — dove contenuto e motore stanno davvero nella
+stessa cartella. I brain dell'officina (brains/<nome>/) invece sono solo conoscenza:
+li fa girare il motore della radice.
 
 Uso:  from tools.brain import BRAIN;  os.path.join(BRAIN, "wiki", ...)
 """
@@ -65,6 +66,38 @@ def relativo() -> str:
     """Il brain attivo come percorso relativo alla radice del repo ('.' se coincide)."""
     r = os.path.relpath(BRAIN, ROOT).replace("\\", "/")
     return r
+
+
+# --- Versione del motore e manifesto del brain ------------------------------
+# Un brain non porta piu' una copia del motore: dichiara con QUALE versione e'
+# stato verificato. Prima ogni brain aveva la sua copia di tools/, tests/, server/,
+# e nessuno la aggiornava: in brains/aion 17 tool su 31 erano gia' diversi da core/,
+# e nulla diceva da quale versione fosse nato. Il motore ora esiste una volta sola;
+# il manifesto rende misurabile la distanza fra un brain e il motore che lo fa girare.
+def versione_motore(root: str = ROOT) -> str:
+    try:
+        with open(os.path.join(root, "VERSION"), encoding="utf-8") as f:
+            return f.read().strip()
+    except OSError:
+        return "0.0.0"
+
+
+def manifesto(percorso: str = None) -> dict:
+    """Il file brain.json di un brain: nome, versione del motore, training."""
+    p = os.path.join(percorso or BRAIN, "brain.json")
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def versione(testo: str) -> tuple:
+    """'1.4.2' -> (1, 4, 2). Una versione illeggibile vale (0, 0, 0)."""
+    try:
+        return tuple(int(x) for x in str(testo).strip().split(".")[:3])
+    except ValueError:
+        return (0, 0, 0)
 
 
 if __name__ == "__main__":

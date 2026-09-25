@@ -38,9 +38,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 sys.path.insert(0, ROOT)
 try:
-    from tools.brain import BRAIN            # dove vive il CONTENUTO
+    from tools.brain import BRAIN, manifesto, versione_motore   # dove vive il CONTENUTO
 except ImportError:
     BRAIN = ROOT                             # istanza autosufficiente
+
+    def versione_motore():
+        with open(os.path.join(ROOT, "VERSION"), encoding="utf-8") as f:
+            return f.read().strip()
 
 
 # Console Windows (cp1252): vedi tools/console.py. Attivo SOLO da riga di comando,
@@ -68,6 +72,9 @@ TOOL_ESCLUSI = {
     "apply_procedural_iran.py",   # un singolo report, non un metodo
     "build_dense_index.py",       # livello semantico opzionale, ~2GB di dipendenze
     "build_core.py",              # genera lo scheletro: appartiene alla sorgente, non al prodotto
+    # Strumenti dell'OFFICINA: servono a chi gestisce piu' brain accanto al motore.
+    # Nello scheletro, che e' un brain solo, non avrebbero nulla su cui lavorare.
+    "brain_new.py", "brain_export.py", "build_code_graph.py",
 }
 # SECONDO PLUGIN: la verifica stilometrica. Non e' motore perche' importa un engine
 # di analisi che vive nel materiale grezzo (raw/<area>/bookforge/stylometry.py): senza
@@ -104,10 +111,17 @@ def _scrivi(rel, testo):
         f.write(testo)
 
 
-def _copia(src_rel, dst_rel):
-    src = os.path.join(ROOT, src_rel)
+def _copia(src_rel, dst_rel, base=None, obbligatorio=False):
+    src = os.path.join(base or ROOT, src_rel)
     dst = os.path.join(CORE, dst_rel)
     if not os.path.exists(src):
+        # Saltare in silenzio un file mancante e' come il pacchetto AION ha perso
+        # modello, reasoner, DB dell'oracolo e le 7 fonti: dalla migrazione del brain
+        # in brains/aion li cercava nella radice, non li trovava, e produceva lo
+        # stesso uno scheletro "valido" il cui training non installava nulla.
+        if obbligatorio:
+            raise SystemExit(f"build_core: manca {os.path.relpath(src, ROOT)} — lo "
+                             f"scheletro sarebbe incompleto, quindi non lo genero")
         return 0
     if os.path.isdir(src):
         if os.path.exists(dst):
@@ -117,6 +131,20 @@ def _copia(src_rel, dst_rel):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     shutil.copy2(src, dst)
     return 1
+
+
+def brain_col_training(nome):
+    """Il brain da cui si prende un training: quello che lo dichiara adottato nel
+    manifesto. Non il brain attivo: se l'attivo fosse un brain senza training, il
+    pacchetto uscirebbe vuoto."""
+    reg = os.path.join(ROOT, "brains", "brains.json")
+    if os.path.exists(reg):
+        with open(reg, encoding="utf-8") as f:
+            for b in json.load(f).get("brains", []):
+                p = os.path.join(ROOT, b["percorso"])
+                if manifesto(p).get("training") == nome:
+                    return p
+    return BRAIN
 
 
 def aree_vuote():
@@ -184,11 +212,16 @@ def costruisci():
         _copia(f"server/{f}", f"server/{f}")
     _copia(".github/workflows/validate.yml", ".github/workflows/validate.yml")
 
-    # 4. TRAINING AION: un imprinting, non uno strumento
+    # 4. TRAINING AION: un imprinting, non uno strumento. Il contenuto (modello,
+    # reasoner, fonti) si prende dal brain che l'ha ADOTTATO; skill e strumenti dal
+    # motore. Ogni file e' obbligatorio: un training a meta' non e' un training.
+    fonte = brain_col_training("aion")
     for src, dst in TRAINING_AION_FILE:
-        conta["training"] += _copia(src, dst)
+        base = ROOT if src.startswith(".claude/") else fonte
+        conta["training"] += _copia(src, dst, base=base, obbligatorio=True)
     for f in sorted(TOOL_TRAINING_AION):
-        conta["training"] += _copia(f"tools/{f}", f"training/aion/tools/{f}")
+        conta["training"] += _copia(f"tools/{f}", f"training/aion/tools/{f}",
+                                    obbligatorio=True)
     _scrivi("training/README.md", TRAINING_README)
 
     # 5a. PLUGIN SCRITTURA: verifica stilometrica, inerte senza il suo engine
@@ -228,6 +261,13 @@ def costruisci():
     _scrivi("wiki/.gitkeep", "")
     _scrivi("reports/.gitkeep", "")
     _scrivi("metrics/.gitkeep", "")
+
+    # 7b. VERSIONE DEL MOTORE e MANIFESTO: lo scheletro e' un brain di quella versione
+    _copia("VERSION", "VERSION")
+    _scrivi("brain.json", json.dumps(
+        {"schema_version": 1, "nome": "brain", "motore": versione_motore(),
+         "training": None, "creato": None}, ensure_ascii=False, indent=2) + "\n")
+    _scrivi(".gitignore", GITIGNORE)
 
     # 8. DOTTRINA e ONBOARDING
     _scrivi("README.md", README)
@@ -283,6 +323,32 @@ propone se lo trova qui.
 Il motore funziona lo stesso. Il modo di ragionare lo costruisci strada facendo, e
 l'anello delle lezioni lo registra man mano — con la differenza che parte da zero
 invece che da un imprinting.
+"""
+
+GITIGNORE = """# Dati pesanti delle aree: restano sul disco, NON in git (limiti di dimensione,
+# e un repo pubblicato e' permanente). I pattern iniziano con **/ perche' un pattern
+# con una barra nel mezzo e' ancorato alla radice e smette di valere se il brain
+# viene spostato: e' esattamente cosi' che dei dataset sono finiti in un repo pubblico.
+**/raw/**/*.xlsx
+**/raw/**/*.pbix
+**/raw/**/*.csv
+**/raw/**/*.zip
+**/raw/**/*.png
+**/raw/**/*.pdf
+**/raw/**/*.bkp
+**/raw/**/backup/
+**/graphify-out/cache/
+**/graphify-out/search/
+.env
+*.key
+**/secrets.*
+# Hook eseguibili degli agenti: attivi in locale, mai versionati. In un repo
+# pubblicato sarebbero codice shell eseguito sulla macchina di chi lo clona.
+.claude/settings.local.json
+.claude/settings.json
+__pycache__/
+*.pyc
+.pytest_cache/
 """
 
 INBOX_README = """---
@@ -417,102 +483,23 @@ come contesto ma mai fra le regole. E' la difesa contro l'autofagia: un brain ch
 impara dalla prosa che il modello ha scritto amplifica i propri errori a ogni giro.
 """
 
-ONBOARDING = '''# -*- coding: utf-8 -*-
-"""Prima configurazione: le tue macroaree e i plugin da attivare."""
-import json, os, shutil, sys
+ONBOARDING = """# -*- coding: utf-8 -*-
+\"\"\"Prima configurazione di questo brain: le tue macroaree e, se vuoi, un training.
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-try:
-    sys.path.insert(0, ROOT)
-    from tools.console import usa_utf8
-    usa_utf8()
-except ImportError:
-    pass
+La logica vive nel motore (tools/onboarding.py), una volta sola; questo file e' solo
+la porta d'ingresso per chi apre lo scheletro.
+  python onboarding.py                         interattivo
+  python onboarding.py --aree "a,b" --training nessuno
+\"\"\"
+import os
+import sys
 
-
-def chiedi(testo, default=""):
-    try:
-        r = input(f"{testo}{f' [{default}]' if default else ''}: ").strip()
-    except EOFError:
-        r = ""
-    return r or default
-
-
-def main():
-    print("== configurazione iniziale del brain ==\\n")
-
-    aree = []
-    print("Macroaree (invio vuoto per finire). Un id kebab-case, es. 'finanza'.")
-    while True:
-        i = chiedi(f"  area #{len(aree) + 1}")
-        if not i:
-            break
-        aree.append({"id": i, "label": chiedi("    etichetta", i.title()),
-                     "description": chiedi("    descrizione", ""),
-                     "status": "active", "sla_giorni": 180})
-    if not aree:
-        print("Nessuna area: resta quella di esempio.")
-        return
-
-    reg = json.load(open(os.path.join(ROOT, "areas.json"), encoding="utf-8"))
-    reg["areas"] = aree
-    json.dump(reg, open(os.path.join(ROOT, "areas.json"), "w", encoding="utf-8"),
-              ensure_ascii=False, indent=2)
-
-    router = json.load(open(os.path.join(ROOT, "engine/router.json"), encoding="utf-8"))
-    router["aree"] = {a["id"]: {"descrizione": a["description"],
-                                "keywords": [a["id"]]} for a in aree}
-    json.dump(router, open(os.path.join(ROOT, "engine/router.json"), "w", encoding="utf-8"),
-              ensure_ascii=False, indent=2)
-
-    for a in aree:
-        os.makedirs(os.path.join(ROOT, "raw", a["id"]), exist_ok=True)
-        os.makedirs(os.path.join(ROOT, "wiki", a["id"]), exist_ok=True)
-
-    tr = os.path.join(ROOT, "training", "aion")
-    if os.path.isdir(tr):
-        print("\\n-- TRAINING INIZIALE (opzionale) --")
-        print("Un training e un imprinting: il brain adotta un modo di ragionare gia")
-        print("formato, invece di partire senza. Non e uno strumento in piu.")
-        print("")
-        print("Disponibile: AION — modello di pensiero a livelli, quattro modalita di")
-        print("ragionamento, un gate etico sempre attivo, e un oracolo I Ching")
-        print("eseguibile per le decisioni. Aggiunge la macroarea 'aion'.")
-        print("")
-        print("Puoi non sceglierne nessuno: il motore funziona lo stesso e il modo di")
-        print("ragionare lo costruisci strada facendo. Si adotta anche piu tardi.")
-        if chiedi("Adottare il training AION? (s/n)", "n").lower().startswith("s"):
-            for sotto, dest in (("engine", "engine"), ("tools", "tools"),
-                                ("skills", ".claude/skills")):
-                src = os.path.join(tr, sotto)
-                if os.path.isdir(src):
-                    shutil.copytree(src, os.path.join(ROOT, dest), dirs_exist_ok=True)
-            src_raw = os.path.join(tr, "raw", "aion")
-            if os.path.isdir(src_raw):
-                shutil.copytree(src_raw, os.path.join(ROOT, "raw", "aion"),
-                                dirs_exist_ok=True)
-            reg["areas"].append({"id": "aion", "label": "AION",
-                                 "description": "Modello di pensiero AION.",
-                                 "status": "active", "sla_giorni": None,
-                                 "coesa": True,
-                                 "generata_da": "engine/aion.model.json"})
-            router["aree"]["aion"] = {"descrizione": "Modello di pensiero AION.",
-                                      "keywords": ["aion", "oracolo", "esagramma",
-                                                   "modalita", "ragionamento"]}
-            for dati, dove in ((reg, "areas.json"), (router, "engine/router.json")):
-                json.dump(dati, open(os.path.join(ROOT, dove), "w", encoding="utf-8"),
-                          ensure_ascii=False, indent=2)
-            print("  training AION adottato: il brain parte con un modo di ragionare.")
-        else:
-            print("  nessun training: il brain parte vuoto e impara dall'uso.")
-            print("  (resta in training/, si adotta quando vuoi)")
-
-    print(f"\\nFatto: {len(reg['areas'])} aree. Ora:  python tools/rebuild_all.py")
-
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tools.onboarding import main  # noqa: E402
 
 if __name__ == "__main__":
     main()
-'''
+"""
 
 
 def main():

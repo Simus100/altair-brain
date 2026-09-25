@@ -49,7 +49,15 @@ GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 #              centralita' di cio' che e' duplicato e squilibrando le aree. In un
 #              brain che il training NON l'ha adottato e' pura zavorra: nel brain
 #              'cucina' erano 670 nodi su 1252, sapere di nessuno.
-ESCLUSE = ("core/", "brains/", "training/")
+#   tools/ tests/ server/ plugins/
+#              il MOTORE. Un terzo del grafo di aion era codice (552 nodi su 1766), e
+#              alla domanda "come funziona il reasoner" il grafo rispondeva con app.py
+#              e test_api.py invece che col protocollo del reasoner. Il codice ha il
+#              suo grafo, nell'officina (tools/build_code_graph.py); quello di un
+#              brain e' solo conoscenza. Nell'officina queste cartelle dentro un brain
+#              non ci sono piu'; restano escluse per l'istanza autosufficiente, dove
+#              motore e brain stanno nella stessa cartella.
+ESCLUSE = ("core/", "brains/", "training/", "tools/", "tests/", "server/", "plugins/")
 
 
 def _rel(nodo):

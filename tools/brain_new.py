@@ -1,27 +1,29 @@
 # -*- coding: utf-8 -*-
 """
-altair-brain — crea un nuovo brain da core/, e tiene il registro di quelli esistenti.
+altair-brain — crea un nuovo brain, e tiene il registro di quelli esistenti.
 
 L'ARCHITETTURA. Questo repo e' un'OFFICINA, non un brain:
 
-    tools/ tests/ server/   il MOTORE, sorgente unica
+    tools/ tests/ server/   il MOTORE, una volta sola, con la sua VERSION
     core/                   il PRODOTTO, generato dal motore (tools/build_core.py)
     brains/                 le ISTANZE: un brain per cartella, piu il registro
 
-Un brain e' autosufficiente: ha i propri tool (provvisti da core/), la propria
-conoscenza, il proprio grafo. Non condivide nulla con gli altri se non l'origine.
-E' la ragione per cui i tool risolvono i percorsi rispetto alla cartella in cui
-vivono: dentro un'istanza, `wiki/...` significa la wiki di QUEL brain.
+UN BRAIN E' CONOSCENZA, NON CODICE. Contiene raw/, wiki/, engine/, areas.json e un
+manifesto (brain.json) che dichiara con quale versione del motore e' stato
+verificato. Prima ogni brain nasceva con una copia di tools/, tests/ e server/, e
+nessuno la aggiornava: in brains/aion 17 tool su 31 erano gia' diversi da core/ il
+giorno dell'audit. Una copia che nessuno aggiorna non e' autonomia: e' un motore
+vecchio che sembra nuovo.
 
-PERCHE' ISTANZE E NON UNA CARTELLA CONDIVISA. Due brain che condividessero il motore
-sarebbero legati per sempre alla stessa versione: aggiornarne uno vorrebbe dire
-aggiornarli tutti, e un esperimento su uno potrebbe rompere l'altro. Provvisti da
-core/, invece, ognuno si aggiorna quando decidi tu (tools/brain_sync.py).
+Due brain restano indipendenti lo stesso: ognuno dichiara la propria versione, e
+tools/brain_upgrade.py dice quando uno e' rimasto indietro. Per far girare un brain
+FUORI dal repo si esporta: tools/brain_export.py gli affianca il motore della sua
+versione.
 
 Uso:
-  python tools/brain_new.py --nome ricerca            crea brains/ricerca/
-  python tools/brain_new.py --nome tesi --training aion
-  python tools/brain_new.py --elenco                  mostra il registro
+  python tools/brain_new.py --nome ricerca                      crea brains/ricerca/
+  python tools/brain_new.py --nome tesi --aree "fonti,capitoli" --training aion
+  python tools/brain_new.py --elenco                            mostra il registro
 """
 import argparse, datetime, json, os, shutil, sys
 
@@ -30,9 +32,15 @@ CORE = os.path.join(ROOT, "core")
 BRAINS = os.path.join(ROOT, "brains")
 REGISTRO = os.path.join(BRAINS, "brains.json")
 
+sys.path.insert(0, ROOT)
+from tools.brain import manifesto, versione_motore  # noqa: E402
+
+# Le parti di core/ che fanno un brain. Il resto di core/ e' motore, e il motore
+# un brain dell'officina non lo porta: lo usa.
+PARTI_BRAIN = ("raw", "wiki", "engine", "reports", "metrics", "areas.json")
+
 
 def _console():
-    sys.path.insert(0, ROOT)
     try:
         from tools.console import usa_utf8
         usa_utf8()
@@ -43,8 +51,8 @@ def _console():
 def leggi_registro():
     if not os.path.exists(REGISTRO):
         return {"schema_version": 1,
-                "descrizione": "I brain di questo repo. Ognuno e un'istanza "
-                               "autosufficiente provvista da core/.",
+                "descrizione": "I brain di questo repo: nome e cartella. Tutto il "
+                               "resto lo dice il manifesto brain.json di ciascuno.",
                 "brains": []}
     with open(REGISTRO, encoding="utf-8") as f:
         return json.load(f)
@@ -61,8 +69,8 @@ def descrivi(percorso):
     """Cosa contiene davvero un brain: si conta, non si dichiara."""
     def quanti(sotto, ext=".md"):
         d = os.path.join(percorso, sotto)
-        return sum(1 for r, _, fs in os.walk(d) for x in fs if x.endswith(ext)) \
-            if os.path.isdir(d) else 0
+        return sum(1 for r, _, fs in os.walk(d) for x in fs
+                   if x.endswith(ext) and x != "README.md") if os.path.isdir(d) else 0
     aree = []
     reg = os.path.join(percorso, "areas.json")
     if os.path.exists(reg):
@@ -73,11 +81,13 @@ def descrivi(percorso):
     if os.path.exists(log):
         with open(log, encoding="utf-8") as f:
             lezioni = sum(1 for r in f if r.strip())
+    man = manifesto(percorso)
     return {"aree": aree, "note_raw": quanti("raw"), "pagine_wiki": quanti("wiki"),
-            "lezioni": lezioni}
+            "lezioni": lezioni, "training": man.get("training"),
+            "motore": man.get("motore")}
 
 
-def crea(nome, training=None):
+def crea(nome, aree=None, training=None):
     if not nome.replace("-", "").replace("_", "").isalnum():
         sys.exit("il nome deve essere alfanumerico (trattini e underscore ammessi)")
     dest = os.path.join(BRAINS, nome)
@@ -86,22 +96,33 @@ def crea(nome, training=None):
     if not os.path.isdir(CORE):
         sys.exit("core/ assente: esegui prima python tools/build_core.py")
 
-    shutil.copytree(CORE, dest)
+    os.makedirs(dest)
+    for parte in PARTI_BRAIN:
+        src = os.path.join(CORE, parte)
+        if os.path.isdir(src):
+            shutil.copytree(src, os.path.join(dest, parte),
+                            ignore=shutil.ignore_patterns("__pycache__"))
+        elif os.path.exists(src):
+            shutil.copy2(src, os.path.join(dest, parte))
     # Un brain nuovo non eredita l'esperienza di nessuno, nemmeno quella del core.
-    for vuoto in ("engine/lessons.jsonl",):
-        p = os.path.join(dest, vuoto)
-        if os.path.exists(p):
-            open(p, "w", encoding="utf-8").close()
+    open(os.path.join(dest, "engine", "lessons.jsonl"), "w", encoding="utf-8").close()
+    with open(os.path.join(dest, "brain.json"), "w", encoding="utf-8", newline="\n") as f:
+        json.dump({"schema_version": 1, "nome": nome, "motore": versione_motore(),
+                   "training": None, "creato": datetime.date.today().isoformat()},
+                  f, ensure_ascii=False, indent=2)
+        f.write("\n")
 
     reg = leggi_registro()
-    reg["brains"].append({
-        "nome": nome,
-        "percorso": f"brains/{nome}",
-        "creato": datetime.date.today().isoformat(),
-        "training": training or None,
-        "origine": "core/",
-    })
+    reg["brains"].append({"nome": nome, "percorso": f"brains/{nome}"})
     scrivi_registro(reg)
+
+    if aree or training:
+        from tools import onboarding
+        if aree:
+            onboarding.imposta_aree(dest, onboarding.aree_da_testo(aree))
+        if training and training != "nessuno":
+            if not onboarding.adotta_training(dest, training):
+                sys.exit(f"training sconosciuto: {training}")
     return dest
 
 
@@ -109,6 +130,8 @@ def main():
     _console()
     ap = argparse.ArgumentParser(description="Crea un brain o mostra il registro")
     ap.add_argument("--nome", help="nome del nuovo brain (cartella in brains/)")
+    ap.add_argument("--aree", default=None,
+                    help="macroaree separate da virgola (altrimenti: onboarding interattivo)")
     ap.add_argument("--training", default=None,
                     help="training da adottare (per ora: aion). Vuoto = nessuno")
     ap.add_argument("--elenco", action="store_true", help="mostra i brain esistenti")
@@ -119,22 +142,24 @@ def main():
         if not reg["brains"]:
             print("Nessun brain. Creane uno:  python tools/brain_new.py --nome <nome>")
             return
-        print(f"{len(reg['brains'])} brain in questo repo:\n")
+        print(f"{len(reg['brains'])} brain in questo repo · motore {versione_motore()}\n")
         for b in reg["brains"]:
             p = os.path.join(ROOT, b["percorso"])
             d = descrivi(p) if os.path.isdir(p) else None
             stato = "" if d else "  [CARTELLA ASSENTE]"
             print(f"  {b['nome']:16} {b['percorso']:24} "
-                  f"training: {b.get('training') or '—'}{stato}")
+                  f"training: {(d or {}).get('training') or '—'}{stato}")
             if d:
                 print(f"    {len(d['aree'])} aree · {d['note_raw']} note grezze · "
-                      f"{d['pagine_wiki']} pagine curate · {d['lezioni']} lezioni")
+                      f"{d['pagine_wiki']} pagine curate · {d['lezioni']} lezioni · "
+                      f"verificato col motore {d['motore'] or '— (manifesto assente)'}")
         return
 
-    dest = crea(a.nome, a.training)
-    print(f"brain creato: brains/{a.nome}")
-    print(f"  provvisto da core/ — motore, guardie, training disponibili")
-    print(f"  ora:  cd brains/{a.nome} && python onboarding.py")
+    crea(a.nome, a.aree, a.training)
+    print(f"brain creato: brains/{a.nome}  (motore {versione_motore()})")
+    if not a.aree:
+        print(f"  configuralo:  python tools/onboarding.py --brain brains/{a.nome}")
+    print(f"  poi:          ALTAIR_BRAIN=brains/{a.nome} python tools/rebuild_all.py")
 
 
 if __name__ == "__main__":

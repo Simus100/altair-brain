@@ -1,21 +1,14 @@
 {
   "schema_version": 1,
-  "descrizione": "I brain di questo repo. Il brain addestrato coi dati dell'autore NON e un default implicito: e una voce come le altre, in brains/aion. 'attivo' dice su quale lavorano i tool lanciati dalla radice.",
+  "descrizione": "I brain di questo repo: nome e cartella. Tutto il resto — versione del motore, training, origine — lo dice il manifesto brain.json di ciascuno. 'attivo' e' il brain su cui lavorano i tool lanciati dalla radice.",
   "brains": [
     {
       "nome": "aion",
-      "percorso": "brains/aion",
-      "creato": "2026-06-30",
-      "training": "aion",
-      "origine": "costruito a mano, prima di core/",
-      "nota": "il brain dell autore: aion, creativita, data-science, divulgazione, finanza, web-design"
+      "percorso": "brains/aion"
     },
     {
       "nome": "cucina",
-      "percorso": "brains/cucina",
-      "creato": "2026-08-14",
-      "training": null,
-      "origine": "core/"
+      "percorso": "brains/cucina"
     }
   ],
   "attivo": "aion",

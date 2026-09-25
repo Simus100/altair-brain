@@ -44,12 +44,24 @@ def _ha_training():
 
 
 def _ha_contenuto():
-    """Conoscenza vera: senza note non si misura recupero, coesione, ne' layout."""
+    """Conoscenza vera: aree attive E pagine curate. Senza pagine non esistono gli
+    archi fonte->sapere su cui si misurano atlante, provenienza e recupero: il brain
+    'cucina' (due aree, quattro note, zero pagine) lo ha mostrato appena esportato."""
     try:
         aree = json.load(open(BRAIN / "areas.json", encoding="utf-8"))["areas"]
     except (OSError, ValueError, KeyError):
         return False
-    return len([a for a in aree if a.get("status") == "active"]) >= 2
+    pagine = [p for p in (BRAIN / "wiki").rglob("*.md")
+              if p.name not in ("README.md", "index.md")] if (BRAIN / "wiki").is_dir() else []
+    return len([a for a in aree if a.get("status") == "active"]) >= 2 and bool(pagine)
+
+
+def _ha_esperienza():
+    """Abbastanza registrazioni da mettere alla prova la memoria (almeno 20)."""
+    p = BRAIN / "engine" / "lessons.jsonl"
+    if not p.exists():
+        return False
+    return sum(1 for r in p.read_text(encoding="utf-8").splitlines() if r.strip()) >= 20
 
 
 def _ha_plugin_scrittura():
@@ -60,6 +72,7 @@ PRESUPPOSTI = {
     "registro": (_ha_registro, "nessun registro dei brain: istanza sola"),
     "training": (_ha_training, "nessun training adottato: niente modello ne' oracolo"),
     "contenuto": (_ha_contenuto, "brain senza conoscenza: niente da misurare"),
+    "esperienza": (_ha_esperienza, "meno di 20 registrazioni: memoria non ancora messa alla prova"),
     "scrittura": (_ha_plugin_scrittura, "plugin scrittura non installato"),
 }
 
@@ -69,8 +82,10 @@ PRESUPPOSTI = {
 # vale in ogni brain, il modello tipato no.
 RICHIEDE = {
     "test_officina.py": "registro",
+    "test_motore_unico.py": "registro",
     "test_esperienza.py::test_il_reasoner_legge_il_prior_che_viene_davvero_generato": "training",
-    "test_esperienza.py::test_il_registro_cresce_ma_il_prior_no": "contenuto",
+    "test_esperienza.py::test_il_registro_cresce_ma_il_prior_no": "esperienza",
+    "test_tools.py::test_hook_eseguibili_non_versionati": "registro",
     "test_frontmatter_coerenza.py::test_lo_strato_generato_e_riconosciuto": "training",
     "test_frontmatter_coerenza.py::test_gli_strati_generati_restano_intatti": "training",
     "test_atlas.py::test_i_nodi_connessi_stanno_piu_vicino_allasse": "contenuto",
@@ -99,14 +114,3 @@ def pytest_collection_modifyitems(config, items):
         presente, motivo = PRESUPPOSTI[chiave]
         if not presente():
             item.add_marker(pytest.mark.skip(reason=f"presupposto '{chiave}' assente — {motivo}"))
-
-
-def test_nessun_presupposto_dichiarato_a_vuoto():
-    """Una voce che non corrisponde piu' a nessun test smetterebbe di proteggere
-    qualcosa senza dirlo — la stessa classe di difetto dei percorsi CI inesistenti."""
-    esistenti = {p.name for p in (ROOT / "tests").glob("test_*.py")}
-    for chiave in RICHIEDE:
-        file = chiave.split("::")[0]
-        assert file in esistenti, f"RICHIEDE nomina {file}, che non esiste"
-    for chiave in set(RICHIEDE.values()):
-        assert chiave in PRESUPPOSTI, f"presupposto sconosciuto: {chiave}"

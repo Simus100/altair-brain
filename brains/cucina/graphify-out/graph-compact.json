@@ -57,13 +57,6 @@
       "size": 8
     },
     {
-      "id": "skill:triage",
-      "label": "/triage",
-      "layer": "skill",
-      "kind": "dato",
-      "size": 9
-    },
-    {
       "id": "data:lessons",
       "label": "LESSONS / memory",
       "layer": "feedback",
@@ -110,11 +103,6 @@
     {
       "source": "fase:3",
       "target": "eng:LESSONS.md",
-      "kind": "has"
-    },
-    {
-      "source": "fase:4",
-      "target": "skill:triage",
       "kind": "has"
     },
     {

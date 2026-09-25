@@ -1,10 +1,9 @@
 ## Questo repo e un'OFFICINA, non un brain
 
-    tools/ tests/ server/   il MOTORE — sorgente unica, non si duplica
+    tools/ tests/ server/   il MOTORE — esiste una volta sola, versione in VERSION
     core/                   il PRODOTTO — GENERATO da tools/build_core.py, mai a mano
-    brains/                 le ISTANZE + il registro brains.json
-    brains/aion/            il brain di riferimento (raw/ wiki/ engine/ areas.json),
-                            su cui girano le guardie del motore
+    brains/                 le ISTANZE (solo conoscenza) + il registro brains.json
+    brains/aion/            il brain di riferimento, su cui girano le guardie del motore
 
 Nella radice non c'e' piu' contenuto: e' **solo** lo scheletro. Il brain dell'autore
 sta in `brains/aion/` come qualsiasi altra istanza — era l'ultimo punto in cui il
@@ -17,10 +16,20 @@ prodotto e la sua conoscenza si toccavano.
 radice: ogni tool trova il brain da solo. `tests/test_officina.py` verifica che ogni
 percorso citato esista in uno dei due posti.
 
-**Un brain e autosufficiente**: propri tool, propria conoscenza, proprio grafo.
-`python tools/brain_new.py --nome <n>` ne crea uno da `core/`; `--elenco` mostra cosa
-contiene ciascuno contandolo. Due brain non condividono il motore: altrimenti sarebbero
-legati alla stessa versione per sempre, e un esperimento su uno romperebbe l'altro.
+**Un brain e' conoscenza, non codice**: `raw/`, `wiki/`, `engine/`, `areas.json` e un
+manifesto `brain.json` che dichiara con quale versione del motore e' stato verificato.
+Non porta una copia del motore: prima la portava, e nessuno la aggiornava (17 tool su 31
+gia' divergenti il giorno dell'audit). `python tools/brain_new.py --nome <n>` ne crea
+uno; `--elenco` mostra cosa contiene ciascuno contandolo.
+
+**L'indipendenza fra brain passa dalle versioni, non dalle copie.**
+`python tools/brain_upgrade.py --verifica` dice se il motore puo' ricostruire il brain
+(versionamento semantico; `rebuild_all.py` lo verifica al primo passo), senza
+`--verifica` lo ricostruisce e aggiorna il manifesto solo se tutta la pipeline passa.
+Per far girare un brain FUORI dal repo si esporta, non si copia:
+`python tools/brain_export.py --nome <n> --dest <cartella>` gli affianca il motore della
+versione corrente. `tests/test_motore_unico.py` impedisce che un brain torni a portarsi
+dietro il motore.
 
 **Dove vive il contenuto** lo decide `tools/brain.py`, non la posizione dei tool:
 `ALTAIR_BRAIN` > brain `attivo` nel registro > la cartella del repo. Il default rende
@@ -34,9 +43,10 @@ massimo uno, in fase di onboarding, e si puo' non adottarne nessuno. Un plugin a
 una capacita' e non tocca il pensiero. L'inferenza acquisita — le note in `raw/`, le
 lezioni — appartiene a ciascun brain e non viaggia mai col prodotto.
 
-**Gli artefatti non sono conoscenza.** `core/` e `brains/` vengono tolti dal grafo da
-`tools/graph_prune.py` subito dopo `graphify update`: erano 1191 nodi su 3084, e quel
-rumore cresce con ogni brain creato.
+**Gli artefatti non sono conoscenza.** `tools/graph_prune.py`, subito dopo
+`graphify update`, toglie dal grafo di un brain `core/`, `brains/`, `training/` e il
+codice del motore: un terzo del grafo di aion era codice, e alla domanda "come funziona
+il reasoner" rispondeva `app.py`. Il codice ha il suo grafo, nell'officina.
 
 ## Roadmap
 
@@ -46,12 +56,16 @@ nuova feature, e aggiornalo quando completi una voce.
 
 ## graphify
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+Two graphs, two questions. **The engine's code** has its graph in the root
+`graphify-out/`, rebuilt by `tools/build_code_graph.py` (a local work tool, not in git).
+**A brain's knowledge** has its graph inside the brain: query it with
+`graphify query "<question>" --graph <brain>/graphify-out/graph.json`, where `<brain>` is
+what `python tools/brain.py` prints.
 
 Rules:
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- For codebase questions, first run `graphify query "<question>"` from the root when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- After modifying code, run `python tools/build_code_graph.py` to keep the code graph current (AST-only, no API cost).
 
 ## Viste del grafo (processo standard)
 

@@ -112,7 +112,8 @@ def test_aion_e_un_training_non_il_motore():
 def test_l_onboarding_presenta_il_training_come_scelta():
     """Il valore commerciale sta nel fatto che sia una SCELTA: se l'onboarding non
     dice che si puo' rifiutare, il prodotto sembra imporre un modo di pensare."""
-    testo = (CORE / "onboarding.py").read_text(encoding="utf-8")
+    # la logica vive nel motore (tools/onboarding.py); onboarding.py e' la porta
+    testo = (CORE / "tools" / "onboarding.py").read_text(encoding="utf-8")
     assert "TRAINING INIZIALE (opzionale)" in testo
     assert "non sceglierne nessuno" in testo, \
         "l'onboarding non dice che il training si puo' rifiutare"
@@ -149,3 +150,17 @@ def test_i_tool_esportati_compilano():
     esito = subprocess.run([sys.executable, "-m", "compileall", "-q", str(CORE / "tools")],
                            capture_output=True)
     assert esito.returncode == 0, esito.stdout.decode("utf-8", "replace")[-800:]
+
+
+def test_il_pacchetto_del_training_e_completo():
+    """DIFETTO REALE: dalla migrazione del brain in brains/aion, build_core cercava
+    modello, reasoner, DB dell'oracolo e fonti nella radice, non li trovava e li
+    SALTAVA. Lo scheletro offriva AION all'onboarding, ma adottarlo non installava
+    nessun modello. Il test di prima controllava che la cartella esistesse."""
+    import importlib
+    bc = importlib.import_module("tools.build_core")
+    mancanti = [dst for _, dst in bc.TRAINING_AION_FILE if not (CORE / dst).exists()]
+    mancanti += [f"training/aion/tools/{f}" for f in bc.TOOL_TRAINING_AION
+                 if not (CORE / "training" / "aion" / "tools" / f).exists()]
+    assert not mancanti, f"pacchetto del training incompleto: {mancanti}"
+    assert (CORE / "training" / "aion" / "raw" / "aion" / "aion-oracle.md").exists()

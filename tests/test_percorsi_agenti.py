@@ -77,3 +77,16 @@ def test_la_guardia_vede_un_percorso_rotto():
     """Senza questa prova la guardia potrebbe non vedere nulla e restare verde."""
     assert _rotti("leggi engine/file-che-non-esiste.json") == ["engine/file-che-non-esiste.json"]
     assert _rotti("smista in raw/<area>/ e poi tools/brain.py") == []
+
+
+def test_nessun_presupposto_dichiarato_a_vuoto():
+    """Il registro dei presupposti (conftest.py) deve nominare solo test che esistono.
+
+    DIFETTO REALE: questa guardia viveva DENTRO conftest.py, dove pytest non raccoglie
+    test. Non e' mai stata eseguita: una guardia verde perche' nessuno la guardava."""
+    import conftest
+    esistenti = {p.name for p in (ROOT / "tests").glob("test_*.py")}
+    for chiave in conftest.RICHIEDE:
+        assert chiave.split("::")[0] in esistenti, f"RICHIEDE nomina {chiave}, che non esiste"
+    for chiave in set(conftest.RICHIEDE.values()):
+        assert chiave in conftest.PRESUPPOSTI, f"presupposto sconosciuto: {chiave}"
