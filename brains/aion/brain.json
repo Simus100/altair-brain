@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
   "nome": "aion",
-  "motore": "1.0.0",
+  "motore": "1.1.0",
   "training": "aion",
   "creato": "2026-06-30",
   "origine": "costruito a mano, prima di core/",
-  "nota": "il brain dell autore: aion, creativita, data-science, divulgazione, finanza, web-design"
+  "nota": "il brain dell autore: aion, creativita, data-science, divulgazione, finanza, web-design",
+  "verificato": "2026-09-25"
 }

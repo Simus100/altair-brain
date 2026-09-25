@@ -31,6 +31,14 @@ Per far girare un brain FUORI dal repo si esporta, non si copia:
 versione corrente. `tests/test_motore_unico.py` impedisce che un brain torni a portarsi
 dietro il motore.
 
+**I contratti hanno uno schema.** I file che definiscono un brain — `areas.json`,
+`brain.json`, `engine/bridges.json`, `engine/provenance.json`, ogni riga di
+`engine/lessons.jsonl`, il front-matter delle note — hanno uno JSON Schema in `schema/`,
+e `python tools/validate_contracts.py` li verifica (anche in CI e in `rebuild_all`).
+`areas.json` e' l'unico registro delle aree: parole chiave per instradare le domande,
+SLA, coesione, colore. Il formato dei contratti e' legato alla versione del motore:
+quando cambia, `tools/brain_upgrade.py` porta con se' la migrazione.
+
 **Dove vive il contenuto** lo decide `tools/brain.py`, non la posizione dei tool:
 `ALTAIR_BRAIN` > brain `attivo` nel registro > la cartella del repo. Il default rende
 ogni istanza identica a prima; l'indirezione e cio' che permette a un motore di servire

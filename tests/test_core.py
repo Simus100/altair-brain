@@ -75,8 +75,9 @@ def test_nessuna_area_di_nessuno():
     aree = json.loads((CORE / "areas.json").read_text(encoding="utf-8"))["areas"]
     ids = [a["id"] for a in aree]
     assert ids == ["esempio"], f"aree reali finite nello scheletro: {ids}"
-    router = json.loads((CORE / "engine" / "router.json").read_text(encoding="utf-8"))
-    assert list(router["aree"]) == ["esempio"]
+    # dal formato 1.1 le parole chiave stanno nell'area: il router non esiste piu'
+    assert not (CORE / "engine" / "router.json").exists(), "secondo registro delle aree"
+    assert aree[0]["keywords"], "l'area d'esempio non mostra come si instrada una domanda"
 
 
 def test_il_motore_c_e_tutto():

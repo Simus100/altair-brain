@@ -1,5 +1,6 @@
 {
-  "description": "Registro della PROVENIENZA: da quale fonte grezza nasce ogni pagina curata. Senza questo, raw/ e wiki/ restano due isole scollegate nel grafo (verificato: 0 archi tra i due strati prima dell'introduzione di questo registro) e la catena fonte -> conoscenza esiste solo nella documentazione. Applicato al grafo da tools/apply_provenance.py.",
+  "schema_version": 1,
+  "descrizione": "Registro della PROVENIENZA: da quale fonte grezza nasce ogni pagina curata. Senza questo, raw/ e wiki/ restano due isole scollegate nel grafo (verificato: 0 archi tra i due strati prima dell'introduzione di questo registro) e la catena fonte -> conoscenza esiste solo nella documentazione. Applicato al grafo da tools/apply_provenance.py.",
   "convenzione": {
     "ancoraggi_area": "l'indice di un'area curata dichiara i documenti grezzi da cui l'area nasce: cuce i due strati in un unico componente connesso",
     "mappe_dirette": "quale nota grezza sta dietro a quale singola pagina (precisione fine)",

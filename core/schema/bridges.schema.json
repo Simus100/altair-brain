@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/bridges.schema.json",
+  "title": "engine/bridges.json — i ponti curati fra aree",
+  "description": "I wikilink risolvono solo dentro la stessa cartella: i concetti condivisi fra aree si dichiarano qui, pagina per pagina.",
+  "type": "object",
+  "required": ["schema_version", "bridges"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "descrizione": {"type": "string"},
+    "bridges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["concetto", "from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "concetto": {"type": "string", "minLength": 2},
+          "from": {"$ref": "#/$defs/capo"},
+          "to": {"$ref": "#/$defs/capo"},
+          "nota": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "capo": {
+      "type": "object",
+      "required": ["area", "page"],
+      "additionalProperties": false,
+      "properties": {
+        "area": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+        "page": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

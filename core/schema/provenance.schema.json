@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/provenance.schema.json",
+  "title": "engine/provenance.json — la catena fonte -> conoscenza",
+  "description": "Cuce nel grafo da quali fonti nasce ogni pagina curata. ancoraggi_area: l'indice di un'area e le note grezze che lo fondano. mappe_dirette: una pagina e le fonti da cui distilla.",
+  "type": "object",
+  "required": ["schema_version", "ancoraggi_area", "mappe_dirette"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "descrizione": {"type": "string"},
+    "convenzione": {"type": "object", "additionalProperties": {"type": "string"}},
+    "ancoraggi_area": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indice", "fonti"],
+        "additionalProperties": false,
+        "properties": {
+          "indice": {"type": "string", "pattern": "^wiki/"},
+          "fonti": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "nota": {"type": "string"}
+        }
+      }
+    },
+    "mappe_dirette": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["wiki", "fonti"],
+        "additionalProperties": false,
+        "properties": {
+          "wiki": {"type": "string"},
+          "fonti": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "nota": {"type": "string"}
+        }
+      }
+    }
+  }
+}

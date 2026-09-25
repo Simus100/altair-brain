@@ -137,7 +137,7 @@ jobs:
           import os
           B = os.environ["BRAIN"]
           files = [os.path.join(B, x) for x in
-                   ("areas.json", "engine/aion.model.json", "engine/router.json",
+                   ("areas.json", "brain.json", "engine/aion.model.json", "engine/bridges.json",
                     "engine/iching.db.json", "engine/schema/aion.model.schema.json",
                     "graphify-out/graph.json", "graphify-out/graph-compact.json")]
           bad = []
@@ -150,6 +150,14 @@ jobs:
               print("\n".join(bad)); sys.exit(1)
           print(f"{len(files)} file JSON validi")
           EOF
+
+      # Aree, manifesto, ponti, provenienza, esperienze e front-matter contro i loro
+      # schemi (schema/): per riprodurre il sistema non serve leggere il codice.
+      - name: Contratti del brain (JSON Schema)
+        run: python tools/validate_contracts.py
+
+      - name: Compatibilita' del brain col motore (manifesto brain.json)
+        run: python tools/brain_upgrade.py --verifica
 
       - name: Indice di ricerca coerente col corpus (fonte unica)
         run: |

@@ -1,5 +1,6 @@
 {
-  "description": "Cuce la catena FONTE -> CONOSCENZA nel grafo.",
+  "schema_version": 1,
+  "descrizione": "Cuce la catena FONTE -> CONOSCENZA nel grafo.",
   "convenzione": {
     "ancoraggi_area": "indice di area <- note grezze che lo fondano",
     "mappe_dirette": "pagina curata <- fonti da cui distilla"

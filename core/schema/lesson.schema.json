@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/lesson.schema.json",
+  "title": "una riga di engine/lessons.jsonl — un'esperienza registrata",
+  "description": "Osservazione (sintesi di una sessione, entra nel prior come contesto) oppure regola (quando/allora/ancora: entra fra le regole solo con un appiglio esterno verificabile). Il registro e' append-only: una regola sbagliata si supera, non si cancella.",
+  "type": "object",
+  "required": ["ts", "skill", "domanda", "esito"],
+  "additionalProperties": false,
+  "properties": {
+    "ts": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}"},
+    "skill": {"type": "string", "minLength": 1},
+    "domanda": {"type": "string", "minLength": 1, "maxLength": 400},
+    "esito": {"enum": ["utile", "vicolo-cieco", "corretto", "aperto"]},
+    "nodi": {"type": "array", "items": {"type": "string"}},
+    "tag": {"type": "array", "items": {"type": "string"}},
+    "nota": {"type": "string", "maxLength": 600},
+    "quando": {"type": "string", "maxLength": 160},
+    "allora": {"type": "string", "maxLength": 220},
+    "ancora": {"type": "string", "maxLength": 200,
+               "pattern": "^(test|errore|misura|utente|guardia):\\s*\\S"},
+    "ancora_tipo": {"enum": ["test", "errore", "misura", "utente", "guardia"]},
+    "supera": {"type": "string", "maxLength": 40},
+    "livello": {"enum": ["lezione", "osservazione"]}
+  },
+  "dependentRequired": {
+    "ancora": ["quando", "allora", "ancora_tipo"]
+  }
+}

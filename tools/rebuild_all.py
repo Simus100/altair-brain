@@ -58,6 +58,8 @@ STEPS = [
     # Prima di tutto: questo motore puo' ricostruire questo brain? Il manifesto
     # brain.json dice con quale versione e' stato verificato (tools/brain_upgrade.py).
     ("compatibilita' brain-motore", [PY, "tools/brain_upgrade.py", "--verifica"]),
+    # I file che definiscono il brain, contro i loro schemi (schema/).
+    ("contratti del brain", [PY, "tools/validate_contracts.py"]),
     ("wiki dal modello", [PY, "tools/gen_wiki_from_model.py"]),
     ("validazione modello", [PY, "tools/validate_model.py"]),
     ("DB oracle", [PY, "tools/build_iching_db.py"]),
@@ -70,8 +72,12 @@ STEPS = [
     ("vista atlante 3D", [PY, "tools/build_atlas_view.py"]),
     ("porta delle viste (index)", [PY, "tools/build_views_index.py"]),
     ("scheletro cedibile core/", [PY, "tools/build_core.py"]),
-    ("indice di ricerca (BM25)", [PY, "tools/build_search_index.py"]),
+    # PRIMA la memoria, POI l'indice: l'indice legge engine/LESSONS.md. Nell'ordine
+    # inverso indicizzava il prior del giro precedente, e ogni lezione nuova restava
+    # invisibile alla ricerca fino al rebuild successivo. Lo ha scoperto la prima
+    # esecuzione dei test su un brain appena esportato.
     ("lezioni consolidate", [PY, "tools/lessons_digest.py"]),
+    ("indice di ricerca (BM25)", [PY, "tools/build_search_index.py"]),
     # Consolidamento offline: RIGENERA i digest per area (senza --solo-proposte, che
     # li salterebbe: incoerenza rilevata dalla guardia anti-digest-stantio in
     # graph_health). Volutamente SENZA check di coerenza in CI, a differenza degli

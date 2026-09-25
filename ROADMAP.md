@@ -211,8 +211,9 @@ Un solo `graph.json` monolitico non scala (traversal lenti, viz inusabile a 10k+
 e lo scope di sicurezza per-area come "filtro sui risultati" è fragile. Architettura:
 - genera `graphify-out/areas/<area>/graph.json` (sottografo per macroarea; un tool in
   `tools/` che partiziona per prefisso `source_file`, oppure run graphify per-cartella);
-- `engine/router.json`: tabella di routing machine-readable
-  `{area: {keywords[], descrizione, budget_default}}` — il router deterministico
+- tabella di routing machine-readable — in origine un `router.json` a se' stante; dal
+  formato 1.1 (motore 1.1.0) derivata da `areas.json`, campi `keywords` e `budget`
+  di ogni area, cosi' il registro delle aree e' uno solo — il router deterministico
   (match keyword; embeddings locali in futuro) decide quale/i grafo/i interrogare;
 - API: `/query?area=` usa `--graph graphify-out/areas/<area>/graph.json`; senza `area`,
   il router decide. Scope di sicurezza = QUALE FILE puoi leggere (per costruzione),

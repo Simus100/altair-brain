@@ -29,6 +29,94 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 from tools.brain import BRAIN, manifesto, versione, versione_motore  # noqa: E402
 
+# --- MIGRAZIONI ---------------------------------------------------------------
+# Quando il formato dei file di un brain cambia, il motore porta con se' il modo di
+# convertirli. Una migrazione si applica a un brain verificato con una versione
+# PRECEDENTE alla sua, in ordine; se la pipeline poi fallisce, i file tornano com'erano.
+
+def _leggi(brain, rel):
+    p = os.path.join(brain, rel)
+    if not os.path.exists(p):
+        return None
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _scrivi(brain, rel, dati):
+    with open(os.path.join(brain, rel), "w", encoding="utf-8", newline="\n") as f:
+        json.dump(dati, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def _intestazione(dati, descrizione=None):
+    """Ogni contratto apre con schema_version e descrizione, in quest'ordine."""
+    testa = {"schema_version": dati.pop("schema_version", None) or dati.pop("version", None) or 1}
+    d = dati.pop("descrizione", None) or dati.pop("description", None) or descrizione
+    if d:
+        testa["descrizione"] = d
+    conv = dati.pop("convenzione", None) or dati.pop("convention", None)
+    if conv:
+        testa["convenzione"] = conv
+    testa.update(dati)
+    return testa
+
+
+# Colori delle aree che il motore conosceva per nome: erano scritti nel codice
+# dell'atlante, cioe' il motore sapeva come si chiamano le aree di UN brain. La
+# migrazione li sposta nell'areas.json del brain che li usa; il motore da ora
+# assegna un colore da una tavolozza a chi non ne dichiara uno.
+_COLORI_STORICI = {
+    "aion": "#a78bfa", "creativita": "#f472b6", "data-science": "#22d3ee",
+    "divulgazione": "#34d399", "finanza": "#fbbf24", "web-design": "#fb923c",
+}
+
+
+def migra_1_1(brain):
+    """Formato 1.1: un solo registro delle aree, intestazione uniforme dei contratti."""
+    cambi = []
+    aree = _leggi(brain, "areas.json")
+    router = _leggi(brain, os.path.join("engine", "router.json")) or {}
+    instradamento = router.get("aree", {})
+    if aree is not None:
+        aree = _intestazione(aree)
+        aree.setdefault("convenzione", {})
+        aree["convenzione"].setdefault(
+            "keywords", "parole che instradano una domanda a quest'area (sottostringa)")
+        aree["convenzione"].setdefault("colore", "colore dello spicchio nell'atlante 3D")
+        for a in aree.get("areas", []):
+            r = instradamento.get(a["id"], {})
+            if "keywords" not in a:
+                a["keywords"] = r.get("keywords") or [a["id"]]
+            if "budget" not in a and r.get("budget_default"):
+                a["budget"] = r["budget_default"]
+            if "colore" not in a and a["id"] in _COLORI_STORICI:
+                a["colore"] = _COLORI_STORICI[a["id"]]
+        _scrivi(brain, "areas.json", aree)
+        cambi.append("areas.json: parole chiave dal router, intestazione uniforme")
+    if os.path.exists(os.path.join(brain, "engine", "router.json")):
+        os.remove(os.path.join(brain, "engine", "router.json"))
+        cambi.append("engine/router.json: tolto (era un secondo registro delle aree)")
+    prov = _leggi(brain, os.path.join("engine", "provenance.json"))
+    if prov is not None:
+        _scrivi(brain, os.path.join("engine", "provenance.json"), _intestazione(prov))
+        cambi.append("engine/provenance.json: intestazione uniforme")
+    return cambi
+
+
+# (versione che la introduce, cosa cambia, funzione)
+MIGRAZIONI = [
+    ("1.1.0", "un solo registro delle aree; contratti con intestazione uniforme", migra_1_1),
+]
+TOCCATI = ("areas.json", os.path.join("engine", "router.json"),
+           os.path.join("engine", "provenance.json"))
+
+
+def migrazioni_da_applicare(brain):
+    vb = versione(manifesto(brain).get("motore", "0.0.0"))
+    vm = versione(versione_motore())
+    return [m for m in MIGRAZIONI if vb < versione(m[0]) <= vm]
+
+
 # Variabile con cui brain_upgrade chiede a rebuild_all di non verificare la versione
 # che sta appunto aggiornando: senza, un brain indietro non si aggiornerebbe mai.
 SALTA = "ALTAIR_UPGRADE_IN_CORSO"
@@ -63,14 +151,34 @@ def aggiorna(brain=BRAIN):
     if codice == "incompatibile" and versione(manifesto(brain).get("motore", "0")) > \
             versione(versione_motore()):
         sys.exit(msg)
+    # Copia di sicurezza dei file che le migrazioni possono toccare: se la pipeline
+    # fallisce, il brain torna esattamente com'era, con la versione che dichiarava.
+    copia = {}
+    for rel in TOCCATI:
+        p = os.path.join(brain, rel)
+        if os.path.exists(p):
+            with open(p, "rb") as fh:
+                copia[rel] = fh.read()
+    for da, cosa, funzione in migrazioni_da_applicare(brain):
+        print(f"migrazione {da}: {cosa}", flush=True)
+        for c in funzione(brain):
+            print(f"  - {c}", flush=True)
+
     amb = dict(os.environ, ALTAIR_BRAIN=brain, PYTHONIOENCODING="utf-8")
     amb[SALTA] = "1"
-    print(f"ricostruisco {os.path.relpath(brain, ROOT)} col motore {versione_motore()}...")
+    print(f"ricostruisco {os.path.relpath(brain, ROOT)} col motore {versione_motore()}...", flush=True)
     esito = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "rebuild_all.py")],
                            cwd=ROOT, env=amb)
     if esito.returncode != 0:
-        sys.exit("pipeline fallita: il manifesto NON viene aggiornato. Il brain resta "
-                 "dichiarato con la versione precedente, che e' quella verificata.")
+        for rel in TOCCATI:
+            p = os.path.join(brain, rel)
+            if rel in copia:
+                with open(p, "wb") as fh:
+                    fh.write(copia[rel])
+            elif os.path.exists(p):
+                os.remove(p)
+        sys.exit("pipeline fallita: migrazioni annullate e manifesto NON aggiornato. Il "
+                 "brain resta com'era, dichiarato con la versione che era stata verificata.")
     man = manifesto(brain) or {"schema_version": 1,
                                "nome": os.path.basename(os.path.abspath(brain))}
     man["motore"] = versione_motore()

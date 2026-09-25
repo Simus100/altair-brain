@@ -185,6 +185,18 @@ looking at and links to the doors of the others, so you can move between brains 
 touching a path. A brain deployed on its own shows no selector: there is no registry, and
 nothing to switch to.
 
+### The contracts
+
+Everything that defines a brain has a JSON Schema in `schema/`: the areas registry
+(`areas.json`, the only one — routing keywords, freshness SLA, cohesion and colour are
+properties of an area), the manifest, the cross-area bridges, the provenance chain,
+every line of the experience log and every note's front-matter. To reproduce the system
+you read the schemas, not the code. `python tools/validate_contracts.py` checks a brain
+against them, including what a schema alone can't: bridges pointing at undeclared areas,
+generated layers whose source is missing. The format is tied to the engine version; when
+it changes, `tools/brain_upgrade.py` carries the migration — and undoes it if the rebuild
+fails.
+
 ### Two graphs
 
 A brain's graph answers *what do I know*: sources, pages, model. The engine's graph
@@ -308,7 +320,7 @@ brains/           the instances + brains.json registry
 
 inside a brain (e.g. brains/aion/):
   raw/<area>/     grezzo sources per macro-area           areas.json  the areas it declares
-  wiki/<area>/    interlinked model (generated for AION)  engine/     typed model + reasoner + router
+  wiki/<area>/    interlinked model (generated for AION)  engine/     typed model + reasoner + bridges
   graphify-out/   graph + the three visual views          reports/ metrics/
 ```
 

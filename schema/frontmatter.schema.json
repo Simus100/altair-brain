@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/frontmatter.schema.json",
+  "title": "front-matter di una nota — la sua provenienza",
+  "description": "I valori arrivano come testo (li legge tools/frontmatter.py). Chiavi sconosciute vietate: un refuso come 'reviwed' disattiverebbe in silenzio la freschezza della nota. Un fatto che smette di essere vero non si cancella: si invalida con valid_until e superseded_by.",
+  "type": "object",
+  "required": ["date", "area"],
+  "additionalProperties": false,
+  "properties": {
+    "date": {"$ref": "#/$defs/data"},
+    "area": {"type": "string", "minLength": 1},
+    "source": {"type": "string"},
+    "tags": {"type": "string"},
+    "reviewed": {"$ref": "#/$defs/data"},
+    "confidence": {"enum": ["alta", "media", "bassa"]},
+    "valid_from": {"$ref": "#/$defs/data"},
+    "valid_until": {"$ref": "#/$defs/data"},
+    "superseded_by": {"type": "string"},
+    "generato_hash": {"type": "string"}
+  },
+  "$defs": {
+    "data": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+  }
+}

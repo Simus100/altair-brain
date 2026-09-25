@@ -179,3 +179,13 @@ def test_una_regola_superata_esce_dal_prior_ma_resta_nel_registro():
         if v.get("ts") in ts_superati and v.get("allora"):
             assert v["allora"] not in testo, \
                 f"una regola superata e ancora nel prior: {v['allora'][:60]}"
+
+
+def test_la_memoria_si_consolida_prima_di_essere_indicizzata():
+    """DIFETTO REALE: rebuild_all costruiva l'indice di ricerca PRIMA di rigenerare
+    engine/LESSONS.md, che l'indice legge. Ogni lezione nuova restava invisibile alla
+    ricerca fino al rebuild successivo. L'ordine dei passi e' una dipendenza: si fissa."""
+    testo = (ROOT / "tools" / "rebuild_all.py").read_text(encoding="utf-8")
+    i_memoria = testo.index('"tools/lessons_digest.py"')
+    i_indice = testo.index('"tools/build_search_index.py"')
+    assert i_memoria < i_indice, "l'indice si costruisce prima della memoria che indicizza"

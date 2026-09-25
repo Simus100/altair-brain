@@ -31,7 +31,10 @@ from tools.brain_upgrade import stato  # noqa: E402
 # Cio' che e' del brain. Tutto il resto dell'export viene da core/.
 PARTI_BRAIN = ("raw", "wiki", "engine", "reports", "metrics", "graphify-out",
                "areas.json", "brain.json")
-NON_COPIARE = shutil.ignore_patterns("__pycache__", "cache", "memory")
+# graphify-out/memory/ NON si esclude: sono le sessioni di feedback del brain, cioe'
+# esperienza acquisita. Escluderla (la credevo una cache) faceva uscire aion
+# dall'export con zero sessioni invece di una.
+NON_COPIARE = shutil.ignore_patterns("__pycache__", "cache")
 
 
 def trova(nome):

@@ -152,16 +152,18 @@ def aree_vuote():
     Le regole per area (SLA, coesione, strato generato) restano documentate, cosi'
     chi arriva vede subito che sono configurazione e non codice."""
     return {
-        "version": 1,
-        "description": "Registro delle macroaree. Fonte di verita unica per scaffolding, "
-                       "router e gate di sicurezza. Aggiungere un'area = una voce qui "
-                       "+ la cartella raw/<id>/.",
-        "convention": {
+        "schema_version": 1,
+        "descrizione": "Registro delle macroaree: unica fonte per scaffolding, instradamento "
+                       "delle domande, freschezza e coesione. Aggiungere un'area = una voce "
+                       "qui + la cartella raw/<id>/. Schema: schema/areas.schema.json.",
+        "convenzione": {
             "id": "kebab-case ascii, nessuno spazio; coincide con raw/<id>/",
             "status": "active | draft | archived",
             "sla_giorni": "giorni prima che una nota vada ri-verificata; null = non scade",
             "coesa": "true = l'area deve restare un solo componente connesso nel grafo",
             "generata_da": "se presente, wiki/<id>/ e GENERATA da questo file",
+            "keywords": "parole che instradano una domanda a quest'area (sottostringa)",
+            "colore": "colore dello spicchio nell'atlante 3D (facoltativo)",
         },
         "areas": [{
             "id": "esempio",
@@ -169,22 +171,8 @@ def aree_vuote():
             "description": "Sostituisci questa voce con la tua prima macroarea.",
             "status": "draft",
             "sla_giorni": 180,
-        }],
-    }
-
-
-def router_vuoto():
-    return {
-        "schema_version": 1,
-        "descrizione": "Tabella di routing: decide QUALE sottografo interrogare. "
-                       "Deterministica (match keyword, case-insensitive, substring). "
-                       "Se nessuna area supera score 0 si usa il grafo completo.",
-        "regola_ponti": "un nodo-ponte tra due aree e visibile solo a chi puo leggere "
-                        "ENTRAMBE le aree",
-        "aree": {"esempio": {
-            "descrizione": "Sostituisci con la tua area.",
             "keywords": ["esempio", "prova"],
-        }},
+        }],
     }
 
 
@@ -238,14 +226,14 @@ def costruisci():
 
     # 6. CONFIGURAZIONE VUOTA — nessuna area di nessuno
     _scrivi("areas.json", json.dumps(aree_vuote(), ensure_ascii=False, indent=2) + "\n")
-    _scrivi("engine/router.json", json.dumps(router_vuoto(), ensure_ascii=False, indent=2) + "\n")
     _scrivi("engine/bridges.json", json.dumps(
         {"schema_version": 1,
          "descrizione": "Ponti intercampo CURATI tra macroaree. I wikilink non "
                         "attraversano le cartelle: i ponti si dichiarano qui.",
          "bridges": []}, ensure_ascii=False, indent=2) + "\n")
     _scrivi("engine/provenance.json", json.dumps(
-        {"description": "Cuce la catena FONTE -> CONOSCENZA nel grafo.",
+        {"schema_version": 1,
+         "descrizione": "Cuce la catena FONTE -> CONOSCENZA nel grafo.",
          "convenzione": {"ancoraggi_area": "indice di area <- note grezze che lo fondano",
                          "mappe_dirette": "pagina curata <- fonti da cui distilla"},
          "ancoraggi_area": [], "mappe_dirette": []}, ensure_ascii=False, indent=2) + "\n")
@@ -262,8 +250,9 @@ def costruisci():
     _scrivi("reports/.gitkeep", "")
     _scrivi("metrics/.gitkeep", "")
 
-    # 7b. VERSIONE DEL MOTORE e MANIFESTO: lo scheletro e' un brain di quella versione
-    _copia("VERSION", "VERSION")
+    # 7b. VERSIONE DEL MOTORE, SCHEMI DEI CONTRATTI e MANIFESTO
+    _copia("VERSION", "VERSION", obbligatorio=True)
+    _copia("schema", "schema", obbligatorio=True)
     _scrivi("brain.json", json.dumps(
         {"schema_version": 1, "nome": "brain", "motore": versione_motore(),
          "training": None, "creato": None}, ensure_ascii=False, indent=2) + "\n")
@@ -456,9 +445,9 @@ cartella stessa (stampa `.`); in un'officina con piu' brain e' `brains/<nome>`.
 - La conoscenza sta in due strati: `raw/` (fonti grezze) e `wiki/` (pagine curate e
   collegate con `[[wikilink]]`). I wikilink si risolvono **solo dentro la stessa
   cartella**: i concetti condivisi tra aree si dichiarano in `engine/bridges.json`.
-- Le macroaree si dichiarano in `areas.json` e in `engine/router.json`. Nessuna area
-  va scritta dentro il codice: SLA, coesione e strati generati sono proprieta' delle
-  aree, non dei tool.
+- Le macroaree si dichiarano in `areas.json`, un registro solo: parole chiave per
+  instradare le domande, SLA, coesione, strati generati, colore. Nessuna area va
+  scritta dentro il codice. Gli schemi dei contratti sono in `schema/`.
 - Dopo ogni modifica: **`python tools/rebuild_all.py`**, che rigenera grafo, viste,
   indice di ricerca, metriche e fa girare le guardie. Poi commit.
 

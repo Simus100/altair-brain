@@ -37,4 +37,4 @@ macroaree del brain, poi rigenera e pubblica.
 ## Vincoli
 - Non inventare contenuti: smisti, non riscrivi (piccole correzioni di battitura ok).
 - Se una nota non appartiene a nessuna area, chiedi se creare una nuova area
-  (voce in areas.json + engine/router.json + cartelle) o lasciarla in inbox.
+  (una voce in areas.json, con le sue parole chiave, piu' le cartelle raw/ e wiki/) o lasciarla in inbox.

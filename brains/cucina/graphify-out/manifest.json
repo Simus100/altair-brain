@@ -1,7 +1,7 @@
 {
   "areas.json": {
-    "mtime": 1786731796.931985,
-    "ast_hash": "876f14832b633008f731badbd7b63335",
+    "mtime": 1790369639.1433232,
+    "ast_hash": "b37396be7168a4143c375c2b401e5266",
     "semantic_hash": ""
   },
   "engine/bridges.json": {
@@ -10,17 +10,12 @@
     "semantic_hash": ""
   },
   "engine/provenance.json": {
-    "mtime": 1786649777.202648,
-    "ast_hash": "95880a2de38507edc7ef40772c67b30c",
-    "semantic_hash": ""
-  },
-  "engine/router.json": {
-    "mtime": 1786731796.9329858,
-    "ast_hash": "af3bd4021a3d946cbf484bf90c2a0c4a",
+    "mtime": 1790369639.144827,
+    "ast_hash": "d5dbc2eaff39e24b0bb1279090ea6577",
     "semantic_hash": ""
   },
   "engine/LESSONS.md": {
-    "mtime": 1790368795.7792592,
+    "mtime": 1790369771.324273,
     "ast_hash": "7e9f5742ef6dcb61ace263b0ee4ee9a5",
     "semantic_hash": ""
   },
@@ -45,23 +40,23 @@
     "semantic_hash": ""
   },
   "engine/digest/ricette.json": {
-    "mtime": 1790368795.827508,
+    "mtime": 1790369771.3811073,
     "ast_hash": "cdbefcf70608a48548fa249c3dce980c",
     "semantic_hash": ""
   },
   "engine/digest/tecniche.json": {
-    "mtime": 1790368795.827508,
+    "mtime": 1790369771.3811073,
     "ast_hash": "8803459b7e9dc097f1e295e520a58ada",
     "semantic_hash": ""
   },
   "engine/search_index.json": {
-    "mtime": 1790368795.749617,
+    "mtime": 1790369771.2927642,
     "ast_hash": "adc786824e5bab06a6a1ed25b372c53a",
     "semantic_hash": ""
   },
   "brain.json": {
-    "mtime": 1790368783.7125077,
-    "ast_hash": "885b148deee3e4476d413ae14ee16243",
+    "mtime": 1790369643.0243347,
+    "ast_hash": "55a5a000b094633e0817bbb0bf7163ce",
     "semantic_hash": ""
   }
 }

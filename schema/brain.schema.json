@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/brain.schema.json",
+  "title": "brain.json — il manifesto di un brain",
+  "description": "Cosa e' un brain: nome, con quale versione del motore e' stato verificato, quale training ha adottato. Il registro brains/brains.json dice solo DOVE sta.",
+  "type": "object",
+  "required": ["schema_version", "nome", "motore"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "nome": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+    "motore": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$",
+               "description": "versione del motore con cui il brain e' stato verificato l'ultima volta"},
+    "training": {"type": ["string", "null"]},
+    "creato": {"type": ["string", "null"], "format": "date"},
+    "verificato": {"type": "string", "format": "date"},
+    "origine": {"type": "string"},
+    "nota": {"type": "string"}
+  }
+}

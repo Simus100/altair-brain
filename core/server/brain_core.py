@@ -110,11 +110,46 @@ def lessons_text() -> str:
 
 
 # ---------------- router per-area ----------------
+# Le domande sull'INFRASTRUTTURA del brain (server, deploy, pipeline) vanno al
+# sottografo 'core', dove build_area_graphs raccoglie cio' che non appartiene a
+# nessuna area. E' una proprieta' del motore, non di un brain: per questo sta qui e
+# non in areas.json. (La regola dei ponti — un nodo-ponte fra due aree e' visibile
+# solo a chi puo' leggere entrambe — la applicano i sottografi, non il router.)
+IMPIANTO = {"core": {
+    "descrizione": "Infrastruttura del brain: engine, server, tool, repository.",
+    "keywords": ["repository", "git ", "graphify", "fastapi", "infrastruttur", "endpoint",
+                 "deploy", "vps", "engine", "reasoner del brain", "server", "systemd",
+                 "auto-update", "ci ", "pipeline"],
+    "budget": 2000,
+}}
+
+
 def load_router() -> dict:
+    """Tabella di instradamento: le aree di areas.json con le loro parole chiave, piu'
+    il contenitore 'core' dell'impianto.
+
+    Era un secondo registro delle aree (engine/router.json), che il brain aion aveva
+    finito per tenere con un'area in piu' del primo. Dal formato 1.1 c'e' un registro
+    solo; un brain ancora in formato 1.0 si legge come prima, finche' non viene
+    aggiornato con tools/brain_upgrade.py."""
+    aree = {}
     try:
-        return read_repo_json("engine/router.json")
+        for a in read_repo_json("areas.json").get("areas", []):
+            if a.get("status") != "archived" and a.get("keywords"):
+                voce = {"descrizione": a.get("description", ""), "keywords": a["keywords"]}
+                if a.get("budget"):
+                    voce["budget"] = a["budget"]
+                aree[a["id"]] = voce
     except BrainError:
-        return {"aree": {}}
+        pass
+    if not aree:
+        try:
+            aree = dict(read_repo_json("engine/router.json").get("aree", {}))   # formato 1.0
+        except BrainError:
+            aree = {}
+    aree.pop("core", None)
+    aree.update(IMPIANTO)
+    return {"aree": aree}
 
 
 def valid_areas() -> list:

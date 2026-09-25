@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Simus100/altair-brain/schema/brains.schema.json",
+  "title": "brains/brains.json — il registro dei brain di un'officina",
+  "description": "Dove sta ciascun brain e quale e' attivo. Cosa contiene un brain lo dice il suo manifesto brain.json: qui non si ripete.",
+  "type": "object",
+  "required": ["schema_version", "brains"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "descrizione": {"type": "string"},
+    "convenzione": {"type": "object", "additionalProperties": {"type": "string"}},
+    "attivo": {"type": "string"},
+    "brains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nome", "percorso"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+          "percorso": {"type": "string", "pattern": "^brains/[A-Za-z0-9_-]+$"},
+          "nota": {"type": "string"}
+        }
+      }
+    }
+  }
+}

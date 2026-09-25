@@ -7,9 +7,9 @@ cartella stessa (stampa `.`); in un'officina con piu' brain e' `brains/<nome>`.
 - La conoscenza sta in due strati: `raw/` (fonti grezze) e `wiki/` (pagine curate e
   collegate con `[[wikilink]]`). I wikilink si risolvono **solo dentro la stessa
   cartella**: i concetti condivisi tra aree si dichiarano in `engine/bridges.json`.
-- Le macroaree si dichiarano in `areas.json` e in `engine/router.json`. Nessuna area
-  va scritta dentro il codice: SLA, coesione e strati generati sono proprieta' delle
-  aree, non dei tool.
+- Le macroaree si dichiarano in `areas.json`, un registro solo: parole chiave per
+  instradare le domande, SLA, coesione, strati generati, colore. Nessuna area va
+  scritta dentro il codice. Gli schemi dei contratti sono in `schema/`.
 - Dopo ogni modifica: **`python tools/rebuild_all.py`**, che rigenera grafo, viste,
   indice di ricerca, metriche e fa girare le guardie. Poi commit.
 

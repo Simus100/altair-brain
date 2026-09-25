@@ -93,18 +93,10 @@ def imposta_aree(brain, aree):
               and os.path.isdir(os.path.join(brain, "raw", a["id"]))]
     reg["areas"] = tenute + [a for a in aree if a["id"] not in {t["id"] for t in tenute}]
     _scrivi(brain, "areas.json", reg)
-    _sincronizza_router(brain, reg["areas"])
     for a in aree:
         for strato in ("raw", "wiki"):
             os.makedirs(os.path.join(brain, strato, a["id"]), exist_ok=True)
     return reg["areas"]
-
-
-def _sincronizza_router(brain, aree):
-    router = _leggi(brain, "engine/router.json", {"schema_version": 1, "aree": {}})
-    router["aree"] = {a["id"]: {"descrizione": a.get("description", ""),
-                                "keywords": a.get("keywords") or [a["id"]]} for a in aree}
-    _scrivi(brain, "engine/router.json", router)
 
 
 def adotta_training(brain, nome):
@@ -134,7 +126,6 @@ def adotta_training(brain, nome):
     if nome in AREE_TRAINING and nome not in {a["id"] for a in reg["areas"]}:
         reg["areas"].append(dict(AREE_TRAINING[nome]))
         _scrivi(brain, "areas.json", reg)
-        _sincronizza_router(brain, reg["areas"])
     man = _leggi(brain, "brain.json", {"schema_version": 1})
     man["training"] = nome
     _scrivi(brain, "brain.json", man)

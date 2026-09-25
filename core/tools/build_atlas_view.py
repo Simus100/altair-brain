@@ -62,7 +62,8 @@ if __name__ == "__main__":
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
 GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
-ROUTER = os.path.join(BRAIN, "engine", "router.json")
+AREE = os.path.join(BRAIN, "areas.json")
+ROUTER = os.path.join(BRAIN, "engine", "router.json")   # solo formato 1.0
 OUT = os.path.join(BRAIN, "graphify-out", "graph-atlas.html")
 
 # --- Gli strati del processo, dal basso verso l'alto ------------------------
@@ -77,16 +78,35 @@ STRATI = {
 CARTELLE_MOTORE = ("engine", "tools", "server", "tests", "graphify-out", "metrics")
 CARTELLE_USO = (".claude", ".agents", "reports", ".github")
 
-COLORI_AREA = {
-    "aion":         "#a78bfa",
-    "creativita":   "#f472b6",
-    "data-science": "#22d3ee",
-    "divulgazione": "#34d399",
-    "finanza":      "#fbbf24",
-    "web-design":   "#fb923c",
-    "impianto":     "#7c8aa0",
-}
 AREA_ALTRO = "impianto"          # tutto cio che non e conoscenza di dominio
+
+# I colori erano scritti qui coi NOMI delle aree di un brain preciso (aion,
+# creativita, finanza...): il motore sapeva come si chiamavano le aree di una persona,
+# e ogni altro brain riceveva lo stesso grigio. Ora il colore e' una proprieta'
+# dell'area ('colore' in areas.json); chi non lo dichiara ne riceve uno da questa
+# tavolozza, nell'ordine delle aree: deterministico, quindi l'atlante non cambia fra
+# due generazioni.
+TAVOLOZZA = ["#a78bfa", "#22d3ee", "#fbbf24", "#34d399", "#fb923c", "#f472b6",
+             "#60a5fa", "#f87171", "#4ade80", "#e879f9"]
+COLORE_IMPIANTO = "#7c8aa0"
+
+
+def _aree_dichiarate():
+    try:
+        with open(AREE, encoding="utf-8") as f:
+            return [a for a in json.load(f).get("areas", []) if a.get("status") != "archived"]
+    except (OSError, ValueError):
+        return []
+
+
+def colori_aree():
+    colori = {a["id"]: a.get("colore") or TAVOLOZZA[i % len(TAVOLOZZA)]
+              for i, a in enumerate(_aree_dichiarate())}
+    colori[AREA_ALTRO] = COLORE_IMPIANTO
+    return colori
+
+
+COLORI_AREA = colori_aree()
 
 # Geometria della ruota. R_MIN evita che gli hub collassino sull'asse.
 R_MIN, R_MAX = 1.05, 4.75
@@ -113,7 +133,11 @@ def strato_di(rel):
 
 
 def aree_canoniche():
-    """Ordine delle aree preso dal router: la vista non inventa una tassonomia sua."""
+    """Ordine delle aree preso dal registro delle aree: la vista non inventa una
+    tassonomia sua. Un brain in formato 1.0 lo teneva nel router."""
+    dichiarate = [a["id"] for a in _aree_dichiarate()]
+    if dichiarate:
+        return dichiarate
     try:
         with open(ROUTER, encoding="utf-8") as f:
             return list(json.load(f).get("aree", {}).keys())
