@@ -16,6 +16,7 @@ Si saltano i segnaposto (<area>, <nome>, *, {…}): descrivono una forma, non un
 Di ROADMAP.md si controlla solo la parte operativa: lo storico cita per forza file
 che non esistono piu', ed e' giusto che resti com'era.
 """
+import os
 import pathlib
 import re
 import sys
@@ -47,15 +48,48 @@ def _testi():
         yield p.relative_to(ROOT).as_posix(), p.read_text(encoding="utf-8")
 
 
+def _ignorati(candidati):
+    """I percorsi che git ignora per costruzione (cache, output rigenerabili).
+
+    DIFETTO REALE della prima versione di questa guardia: controllava il DISCO. Sulla
+    macchina dell'autore graphify-out/cache esiste, quindi ROADMAP.md passava; in CI,
+    su un clone pulito, no — e la CI e' fallita per un controllo che in locale era
+    verde. Citare un artefatto ignorato e' legittimo ('cancella la cache'): lo si
+    riconosce chiedendolo a git, che risponde anche per cartelle che non esistono."""
+    import subprocess
+    righe = []
+    for p in candidati:
+        for base in ("", os.path.relpath(BRAIN, ROOT).replace("\\", "/")):
+            q = f"{base}/{p}" if base not in ("", ".") else p
+            righe += [q, q + "/"]
+    try:
+        esito = subprocess.run(["git", "check-ignore", "--stdin", "-v"], cwd=str(ROOT),
+                               input="\n".join(righe).encode("utf-8"),
+                               capture_output=True, timeout=30)
+    except (OSError, subprocess.TimeoutExpired):
+        return set()
+    # Si accetta solo una risposta che nomina un pattern VERO. Per un percorso che
+    # finisce con '/' e non esiste, git puo' rispondere "ignorato" citando una riga
+    # VUOTA di .gitignore (pattern vuoto): verificato, e senza questo filtro la guardia
+    # dichiarava ignorato qualunque file inventato, e non vedeva piu' nulla.
+    ignorati = set()
+    for r in esito.stdout.decode("utf-8").splitlines():
+        meta, _, percorso = r.partition("\t")
+        if meta.split(":", 2)[-1].strip():
+            ignorati.add(percorso.strip().rstrip("/"))
+    return {p for p in candidati
+            if any(q.rstrip("/").endswith(p) for q in ignorati)}
+
+
 def _rotti(testo):
-    fuori = set()
+    assenti = set()
     for m in PERCORSO.finditer(testo):
         p = m.group(1).rstrip("/.")
         if any(c in p for c in "<*{…"):
             continue
         if not ((ROOT / p).exists() or (BRAIN / p).exists()):
-            fuori.add(p)
-    return sorted(fuori)
+            assenti.add(p)
+    return sorted(assenti - _ignorati(assenti)) if assenti else []
 
 
 def test_ogni_percorso_citato_agli_agenti_esiste():
