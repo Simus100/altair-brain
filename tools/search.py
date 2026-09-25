@@ -328,6 +328,12 @@ if __name__ == "__main__":
     ap.add_argument("--json", action="store_true", help="output JSON")
     a = ap.parse_args()
 
+    # Un brain appena creato non ha ancora un indice. Era un traceback: la prima
+    # ricerca di chi ha appena ricevuto lo scheletro finiva con FileNotFoundError.
+    if not os.path.exists(INDICE):
+        _sys.exit("indice di ricerca assente per questo brain: "
+                  "esegui  python tools/rebuild_all.py")
+
     esito = cerca_con_diagnosi(a.query, top=a.top, area=a.area)
     risultati, d = esito["risultati"], esito["diagnosi"]
     if a.json:

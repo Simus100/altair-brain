@@ -64,6 +64,10 @@ brains/aion/            the reference brain (raw/ wiki/ engine/ areas.json), the
                         the engine's guards run against
 ```
 
+Paths such as `raw/`, `wiki/`, `engine/` and `areas.json` in this document and in the
+skills are relative to the **active brain** (`python tools/brain.py` prints it);
+`tools/`, `server/`, `core/` and `brains/` are relative to the root.
+
 The root holds **no content at all** — it is the skeleton. The author's own brain sits
 in `brains/aion/` like any other instance.
 
@@ -177,8 +181,8 @@ python tools/rebuild_all.py       # graph, three views, search index, guards
 Or, to keep it inside this repo alongside the others:
 
 ```bash
-python tools/brain_new.py --nome my-brain
-cd brains/my-brain && python onboarding.py
+python tools/brain_new.py --nome <name>
+cd brains/<name> && python onboarding.py
 ```
 
 **What you get**: `raw/<area>/` and `wiki/<area>/` for every area you declared, an empty

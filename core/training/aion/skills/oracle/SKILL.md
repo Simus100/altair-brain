@@ -5,6 +5,10 @@ description: Consulta AION_Oracle (I Ching eseguibile) per una domanda strategic
 
 # Skill: AION_Oracle (I Ching eseguibile)
 
+> **Percorsi.** `raw/`, `wiki/`, `engine/`, `reports/` e `areas.json` sono relativi al
+> **brain attivo**: `python tools/brain.py` ne stampa la cartella (`brains/<nome>` nell'officina, `.` in un'istanza autosufficiente).
+> I comandi `python tools/...` si lanciano dalla radice del repo e trovano il brain da soli.
+
 Consulenza decisionale simbolica secondo il componente AION_Oracle.
 
 ## Procedura

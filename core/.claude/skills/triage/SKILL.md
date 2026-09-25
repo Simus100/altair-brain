@@ -5,6 +5,10 @@ description: Smista le note dell'inbox del second brain nelle macroaree giuste e
 
 # Skill: triage dell'inbox
 
+> **Percorsi.** `raw/`, `wiki/`, `engine/`, `reports/` e `areas.json` sono relativi al
+> **brain attivo**: `python tools/brain.py` ne stampa la cartella (`brains/<nome>` nell'officina, `.` in un'istanza autosufficiente).
+> I comandi `python tools/...` si lanciano dalla radice del repo e trovano il brain da soli.
+
 Smista le note grezze catturate (dal telefono via API o a mano in `raw/_inbox/`) nelle
 macroaree del brain, poi rigenera e pubblica.
 
@@ -23,8 +27,8 @@ macroaree del brain, poi rigenera e pubblica.
 3. **Rigenera e verifica:** `python tools/rebuild_all.py` (fa tutto: wiki, validazioni,
    grafo, sottografi, viste, salute). Deve uscire senza errori.
 4. **Pubblica:** commit con messaggio descrittivo + push.
-5. **Archivia le note processate:** locali → spostale in `raw/_inbox/archive/`
-   (creala se manca); remote → `POST /v1/inbox/{id}/done`.
+5. **Archivia le note processate:** locali → spostale in `raw/_inbox/archive/`;
+   remote → `POST /v1/inbox/{id}/done`.
 6. **Registra la lezione** (ultimo passo): `python tools/lesson_log.py --skill triage
    --domanda "smistamento di N note" --esito utile --nodi "<aree toccate>"
    --nota "<criterio di smistamento non ovvio, o ambiguita incontrata>"`.

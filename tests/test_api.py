@@ -206,3 +206,34 @@ def test_health_segnala_una_vista_rimasta_indietro():
     for v in viste.values():
         assert v["aggiornata"] is False
         assert v["indietro_di_secondi"] > 0
+
+
+def test_il_server_serve_il_brain_attivo_con_la_config_di_produzione(tmp_path):
+    """DIFETTO REALE: sul server ALTAIR_REPO_DIR punta alla radice del clone (lo
+    scrive server/bootstrap.sh). Da quando il brain dell'autore e' in brains/aion,
+    il server cercava modello, lezioni e indice in <clone>/engine/ e rispondeva 404
+    o 503 a ogni richiesta di contenuto — in produzione, senza che un test lo vedesse,
+    perche' qui ALTAIR_REPO_DIR punta direttamente al brain.
+
+    Qui si riproduce la configurazione vera, in un processo pulito: il server deve
+    servire lo STESSO brain che i tool considerano attivo."""
+    import json as _json
+    import subprocess as _sp
+    codice = (
+        "import json,os,sys;"
+        f"sys.path[:0]=[{str(ROOT / 'server')!r},{str(ROOT)!r}];"
+        "import brain_core;"
+        "from tools.brain import brain_root;"
+        f"print(json.dumps({{'server':str(brain_core.BRAIN),"
+        f"'atteso':os.path.abspath(brain_root({str(ROOT)!r}))}}))"
+    )
+    amb = {k: v for k, v in os.environ.items() if k not in ("ALTAIR_BRAIN",)}
+    amb.update(ALTAIR_REPO_DIR=str(ROOT), ALTAIR_API_TOKEN="t",
+               ALTAIR_INBOX_DIR=str(tmp_path), PYTHONIOENCODING="utf-8")
+    esito = _sp.run([sys.executable, "-c", codice], capture_output=True, env=amb)
+    assert esito.returncode == 0, esito.stderr.decode("utf-8", "replace")[-600:]
+    d = _json.loads(esito.stdout.decode("utf-8").strip().splitlines()[-1])
+    assert os.path.normcase(d["server"]) == os.path.normcase(d["atteso"]), (
+        f"il server serve {d['server']} ma il brain attivo e' {d['atteso']}")
+    assert (Path(d["server"]) / "areas.json").exists(), \
+        "il server punta a una cartella che non e' un brain"

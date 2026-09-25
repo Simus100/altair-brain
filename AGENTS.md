@@ -1,5 +1,8 @@
 # AGENTS.md — regole di altair-brain per gli agenti
 
+- **Percorsi:** `raw/`, `wiki/`, `engine/`, `areas.json` sono relativi al brain attivo
+  (`python tools/brain.py` lo stampa, es. `brains/aion`); `tools/` e `server/` alla radice.
+
 - `raw/` e materiale grezzo, diviso per macroarea (`raw/<area>/`, registro in `areas.json`).
 - `wiki/` e GENERATA: `wiki/aion/` deriva da `engine/aion.model.json` via
   `tools/gen_wiki_from_model.py`. Non editarla a mano: modifica il modello e rigenera.

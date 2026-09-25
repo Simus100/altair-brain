@@ -10,6 +10,13 @@ Nella radice non c'e' piu' contenuto: e' **solo** lo scheletro. Il brain dell'au
 sta in `brains/aion/` come qualsiasi altra istanza — era l'ultimo punto in cui il
 prodotto e la sua conoscenza si toccavano.
 
+**Percorsi.** In questo documento, nelle skill e nelle guide, `raw/`, `wiki/`, `engine/`,
+`reports/`, `metrics/`, `graphify-out/` e `areas.json` sono relativi al **brain attivo**:
+`python tools/brain.py` ne stampa la cartella (oggi `brains/aion`). `tools/`, `tests/`,
+`server/`, `core/` e `brains/` sono relativi alla radice. I comandi si lanciano dalla
+radice: ogni tool trova il brain da solo. `tests/test_officina.py` verifica che ogni
+percorso citato esista in uno dei due posti.
+
 **Un brain e autosufficiente**: propri tool, propria conoscenza, proprio grafo.
 `python tools/brain_new.py --nome <n>` ne crea uno da `core/`; `--elenco` mostra cosa
 contiene ciascuno contandolo. Due brain non condividono il motore: altrimenti sarebbero
@@ -43,7 +50,6 @@ This project has a knowledge graph at graphify-out/ with god nodes, community st
 
 Rules:
 - For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
 

@@ -10,17 +10,49 @@ Nessuna API a pagamento.
 import json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
 
-REPO = Path(os.environ.get("ALTAIR_REPO_DIR", Path(__file__).resolve().parent.parent))
+# TRE CARTELLE, NON UNA. Finche' il brain dell'autore stava nella radice del repo,
+# motore, clone git e conoscenza coincidevano, e il codice usava REPO per tutte e tre.
+# Dopo lo spostamento in brains/aion il server cercava modello, lezioni e indice in
+# <clone>/engine/ — che non esiste piu' — e ogni endpoint di contenuto rispondeva
+# 404 o 503. Ora ognuna ha il suo nome:
+#   ENGINE  dove vivono server/ e tools/ (il codice che gira)
+#   REPO    il clone git: serve solo agli aggiornamenti
+#   BRAIN   la conoscenza servita: raw/, wiki/, engine/, graphify-out/
+ENGINE = Path(__file__).resolve().parent.parent
+REPO = Path(os.environ.get("ALTAIR_REPO_DIR", ENGINE))
+sys.path.insert(0, str(ENGINE))  # per: from tools.oracle_cast import ...
+
+
+def _risolvi_brain() -> Path:
+    """Stessa regola di tools/brain.py, piu' un caso di compatibilita'."""
+    esplicito = os.environ.get("ALTAIR_BRAIN")
+    if esplicito:
+        p = Path(esplicito)
+        return (p if p.is_absolute() else REPO / p).resolve()
+    # Compatibilita': ALTAIR_REPO_DIR che punta gia' a un brain (ha il suo
+    # areas.json). E' la configurazione di un'istanza autosufficiente come core/.
+    if (REPO / "areas.json").exists():
+        return REPO.resolve()
+    from tools.brain import brain_root
+    return Path(brain_root(str(REPO)))
+
+
+BRAIN = _risolvi_brain()
+# I tool importati dal server (ricerca, pacchetto di contesto, oracolo) risolvono il
+# brain da soli: devono trovare QUESTO, non uno dedotto dalla loro posizione.
+os.environ["ALTAIR_BRAIN"] = str(BRAIN)
+if "tools.brain" in sys.modules:
+    import importlib
+    importlib.reload(sys.modules["tools.brain"])
+
 GRAPHIFY = os.environ.get("GRAPHIFY_BIN", "graphify")
 TIMEOUT = int(os.environ.get("ALTAIR_CMD_TIMEOUT", "120"))
-MEMORY_DIR = Path(os.environ.get("ALTAIR_MEMORY_DIR", REPO / "graphify-out" / "memory"))
+MEMORY_DIR = Path(os.environ.get("ALTAIR_MEMORY_DIR", BRAIN / "graphify-out" / "memory"))
 # Digest curato (generato da tools/lessons_digest.py, fonde skill + sessioni graphify).
 # Override esplicito con ALTAIR_LESSONS; fallback storico su graphify-out/reflections.
-LESSONS = Path(os.environ.get("ALTAIR_LESSONS", REPO / "engine" / "LESSONS.md"))
-INBOX_DIR = Path(os.environ.get("ALTAIR_INBOX_DIR", REPO / "raw" / "_inbox"))
-UPDATE_SCRIPT = Path(os.environ.get("ALTAIR_UPDATE_SCRIPT", REPO / "server" / "update_brain.sh"))
-
-sys.path.insert(0, str(REPO))  # per: from tools.oracle_cast import ...
+LESSONS = Path(os.environ.get("ALTAIR_LESSONS", BRAIN / "engine" / "LESSONS.md"))
+INBOX_DIR = Path(os.environ.get("ALTAIR_INBOX_DIR", BRAIN / "raw" / "_inbox"))
+UPDATE_SCRIPT = Path(os.environ.get("ALTAIR_UPDATE_SCRIPT", ENGINE / "server" / "update_brain.sh"))
 
 _SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*\.md$")
 _SAFE_AREA = re.compile(r"^[a-z0-9-]+$")
@@ -42,7 +74,7 @@ def run_graphify(args: list) -> str:
     if not graphify_available():
         raise BrainError(503, "graphify non disponibile sul server.")
     try:
-        p = subprocess.run([GRAPHIFY, *[str(a) for a in args]], cwd=str(REPO),
+        p = subprocess.run([GRAPHIFY, *[str(a) for a in args]], cwd=str(BRAIN),
                            capture_output=True, text=True, timeout=TIMEOUT)
     except subprocess.TimeoutExpired:
         raise BrainError(504, "graphify: timeout.")
@@ -60,7 +92,7 @@ def run_graphify(args: list) -> str:
 
 # ---------------- file del brain (sola lettura) ----------------
 def read_repo_text(rel: str) -> str:
-    f = REPO / rel
+    f = BRAIN / rel
     if not f.exists():
         raise BrainError(404, f"File non presente: {rel}")
     return f.read_text(encoding="utf-8")
@@ -71,7 +103,7 @@ def read_repo_json(rel: str) -> dict:
 
 
 def lessons_text() -> str:
-    for f in (LESSONS, REPO / "graphify-out" / "reflections" / "LESSONS.md"):
+    for f in (LESSONS, BRAIN / "graphify-out" / "reflections" / "LESSONS.md"):
         if Path(f).exists():
             return Path(f).read_text(encoding="utf-8")
     return "# Nessuna lezione ancora.\n"
@@ -86,7 +118,7 @@ def load_router() -> dict:
 
 
 def valid_areas() -> list:
-    base = REPO / "graphify-out" / "areas"
+    base = BRAIN / "graphify-out" / "areas"
     if not base.is_dir():
         return []
     return sorted(d.name for d in base.iterdir() if (d / "graph.json").exists())
@@ -95,7 +127,7 @@ def valid_areas() -> list:
 def area_graph_path(area: str) -> Path:
     if not _SAFE_AREA.match(area or ""):
         raise BrainError(400, "Nome area non valido.")
-    p = REPO / "graphify-out" / "areas" / area / "graph.json"
+    p = BRAIN / "graphify-out" / "areas" / area / "graph.json"
     if not p.exists():
         raise BrainError(404, f"Area '{area}' inesistente. Aree: {', '.join(valid_areas())}")
     return p
@@ -140,7 +172,7 @@ def search(q: str, top: int = 8, area: str = None) -> dict:
         from tools.search import cerca_con_diagnosi
     except Exception as e:
         raise BrainError(503, f"ricerca non disponibile: {e}")
-    if not (REPO / "engine" / "search_index.json").exists():
+    if not (BRAIN / "engine" / "search_index.json").exists():
         raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
     esito = cerca_con_diagnosi(q, top=top, area=area)
     # La diagnosi viaggia col risultato: chi consuma l'API deve poter sapere QUANTO
@@ -160,7 +192,7 @@ def context_pack(q: str, budget: int = 2000, area: str = None) -> dict:
         from tools.context_pack import pacchetto
     except Exception as e:
         raise BrainError(503, f"pacchetto di contesto non disponibile: {e}")
-    if not (REPO / "engine" / "search_index.json").exists():
+    if not (BRAIN / "engine" / "search_index.json").exists():
         raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
     return pacchetto(q, budget_token=budget, area=area)
 
@@ -278,7 +310,7 @@ def save_feedback(question: str, answer: str, outcome: str = "useful",
     out = run_graphify(args)
     LESSONS.parent.mkdir(parents=True, exist_ok=True)
     run_graphify(["reflect", "--memory-dir", str(MEMORY_DIR), "--out", str(LESSONS),
-                  "--graph", str(REPO / "graphify-out" / "graph.json")])
+                  "--graph", str(BRAIN / "graphify-out" / "graph.json")])
     return out.strip()
 
 
@@ -302,7 +334,7 @@ def views_info(graph_mtime) -> dict:
     """Stato delle tre viste rispetto al grafo da cui derivano."""
     fuori = {}
     for nome, rel, rotta, serve_a in VISTE:
-        f = REPO / rel
+        f = BRAIN / rel
         voce = {"endpoint": rotta, "serve_a": serve_a, "presente": f.exists()}
         if f.exists() and graph_mtime:
             ritardo = int(graph_mtime - f.stat().st_mtime)
@@ -314,7 +346,7 @@ def views_info(graph_mtime) -> dict:
 
 
 def health_info() -> dict:
-    gpath = REPO / "graphify-out" / "graph.json"
+    gpath = BRAIN / "graphify-out" / "graph.json"
     mtime = gpath.stat().st_mtime if gpath.exists() else None
     if _health_cache["mtime"] == mtime and _health_cache["data"]:
         return _health_cache["data"]

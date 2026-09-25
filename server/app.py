@@ -85,7 +85,7 @@ def health():
 
 # ---------------- dati del brain (sola lettura) ----------------
 def _file(rel, media):
-    f = core.REPO / rel
+    f = core.BRAIN / rel
     if not f.exists():
         raise HTTPException(404, f"File non presente: {rel}")
     return FileResponse(str(f), media_type=media)

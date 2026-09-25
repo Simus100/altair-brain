@@ -119,6 +119,8 @@ def test_i_tre_tool_gia_colpiti_non_muoiono_piu(tool):
                     key=lambda p: p.stat().st_size, reverse=True)
     if tool == "style_check.py" and not pagine:
         pytest.skip("nessuna pagina curata da verificare")
+    if tool == "search.py" and not (BRAIN / "engine" / "search_index.json").exists():
+        pytest.skip("indice di ricerca non ancora costruito in questo brain")
     argomenti = {
         "search.py": ["analisi dei dati", "--top", "2"],
         "style_check.py": [str(pagine[0]) if pagine else ""],

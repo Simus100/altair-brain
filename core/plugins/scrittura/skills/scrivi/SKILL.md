@@ -5,6 +5,10 @@ description: Scrive o revisiona un testo applicando la dottrina della prosa del 
 
 # Scrivi — prosa che vale la pena leggere
 
+> **Percorsi.** `raw/`, `wiki/`, `engine/`, `reports/` e `areas.json` sono relativi al
+> **brain attivo**: `python tools/brain.py` ne stampa la cartella (`brains/<nome>` nell'officina, `.` in un'istanza autosufficiente).
+> I comandi `python tools/...` si lanciano dalla radice del repo e trovano il brain da soli.
+
 Il brain non serve solo a ricordare: **scrive**. Report editoriali, pagine curate, note
 di metodo. Questa skill applica a quella prosa la dottrina dell'area `creativita`
 (distillata dal sistema BookForge) e la sua verifica misurabile.

@@ -1,5 +1,9 @@
 # GUIDA — come usare il tuo second brain (per umani, zero tecnicismi)
 
+> I percorsi come `engine/…`, `raw/…`, `wiki/…` stanno dentro il brain che stai usando
+> (`python tools/brain.py` ti dice quale: di solito `brains/aion`). I comandi si danno
+> dalla cartella principale del progetto.
+
 > Questa guida spiega l'uso quotidiano. Per le specifiche tecniche c'è `ROADMAP.md`,
 > per la panoramica `README.md`, per il deploy sulla VPS `server/README.md`.
 

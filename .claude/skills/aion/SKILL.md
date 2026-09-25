@@ -5,6 +5,10 @@ description: Ragiona su una richiesta usando il modello di pensiero AION (orches
 
 # Skill: ragionamento AION
 
+> **Percorsi.** `raw/`, `wiki/`, `engine/`, `reports/` e `areas.json` sono relativi al
+> **brain attivo**: `python tools/brain.py` ne stampa la cartella (`brains/<nome>` nell'officina, `.` in un'istanza autosufficiente).
+> I comandi `python tools/...` si lanciano dalla radice del repo e trovano il brain da soli.
+
 Applica il modello di pensiero AION alla richiesta dell'utente.
 
 ## Come procedere

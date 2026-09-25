@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "descrizione": "I brain di questo repo. Ognuno e un'istanza autosufficiente. Il brain addestrato coi dati dell'autore NON e un default implicito: e una voce come le altre, con percorso '.' perche vive nella radice dell'officina — che e' anche il banco di prova delle guardie del motore.",
+  "descrizione": "I brain di questo repo. Il brain addestrato coi dati dell'autore NON e un default implicito: e una voce come le altre, in brains/aion. 'attivo' dice su quale lavorano i tool lanciati dalla radice.",
   "brains": [
     {
       "nome": "aion",

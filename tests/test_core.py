@@ -57,8 +57,11 @@ def test_il_motore_non_contiene_contenuto_personale():
 
 def test_nessuna_conoscenza_acquisita():
     """Niente note, niente pagine curate, niente report: solo le cartelle vuote."""
-    for cartella, ammessi in (("wiki", 1), ("raw", 1), ("reports", 1)):
-        n = sum(1 for f in (CORE / cartella).rglob("*") if f.is_file())
+    # README e .gitkeep sono STRUTTURA (dicono a cosa serve una cartella), non contenuto
+    struttura = {"README.md", ".gitkeep"}
+    for cartella, ammessi in (("wiki", 0), ("raw", 0), ("reports", 0)):
+        n = sum(1 for f in (CORE / cartella).rglob("*")
+                if f.is_file() and f.name not in struttura)
         assert n <= ammessi, f"core/{cartella}/ contiene {n} file: dovrebbe essere vuota"
 
 

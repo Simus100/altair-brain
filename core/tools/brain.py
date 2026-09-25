@@ -59,3 +59,23 @@ BRAIN = brain_root()
 def dentro(*parti) -> str:
     """Percorso dentro il brain attivo. Comodita' per non ripetere il join."""
     return os.path.join(BRAIN, *parti)
+
+
+def relativo() -> str:
+    """Il brain attivo come percorso relativo alla radice del repo ('.' se coincide)."""
+    r = os.path.relpath(BRAIN, ROOT).replace("\\", "/")
+    return r
+
+
+if __name__ == "__main__":
+    try:
+        import sys
+        sys.path.insert(0, ROOT)
+        from tools.console import usa_utf8
+        usa_utf8()
+    except ImportError:
+        pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
+    # Le skill e i documenti per agenti scrivono engine/, raw/, wiki/ relativi al
+    # brain attivo, e rimandano qui per sapere quale sia. Senza questa riga un agente
+    # che apre il repo vede 'engine/aion.model.json' e cerca un file che non c'e'.
+    print(relativo())
