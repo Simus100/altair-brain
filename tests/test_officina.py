@@ -264,3 +264,29 @@ def test_la_ci_non_verifica_percorsi_inesistenti():
                 f"la CI confronta '{p}', che non esiste: quel controllo e' un no-op"
     assert len(controllati) >= 8, \
         f"attesi almeno 8 percorsi verificati dalla CI, trovati {len(controllati)}"
+
+
+def test_i_dati_locali_non_finiscono_nel_repo():
+    """DIFETTO REALE, e il piu' costoso di tutti: il repo e' pubblico. .gitignore
+    escludeva 'raw/**/*.csv', ma un pattern con una barra nel mezzo e' ANCORATO alla
+    radice. Spostato il brain in brains/aion, la regola ha smesso di coprirlo e il
+    commit successivo ha pubblicato 3 CSV e 2 PDF di un project work, piu' 366 file
+    di cache di graphify. Le regole di esclusione devono valere per OGNI brain.
+
+    Si controlla l'effetto, non il file .gitignore: cio' che git traccia davvero."""
+    import re
+    try:
+        esito = subprocess.run(["git", "ls-files", "-z"], cwd=str(ROOT),
+                               capture_output=True, timeout=60)
+    except (OSError, subprocess.TimeoutExpired):
+        pytest.skip("git non disponibile")
+    if esito.returncode != 0:
+        pytest.skip("non e' un repository git")
+    tracciati = esito.stdout.decode("utf-8", "replace").split("\0")
+    dati = re.compile(r"(^|/)raw/.+\.(xlsx|pbix|csv|zip|png|pdf|bkp)$", re.I)
+    fuori_posto = [p for p in tracciati
+                   if dati.search(p) or "/graphify-out/cache/" in f"/{p}"
+                   or "/graphify-out/search/" in f"/{p}"]
+    assert not fuori_posto, (
+        f"{len(fuori_posto)} file che dovevano restare locali sono tracciati, es. "
+        f"{fuori_posto[:3]} — rimedio: git rm --cached, e un pattern '**/' in .gitignore")

@@ -1,28 +1,32 @@
 .env
 *.key
 **/secrets.*
-graphify-out/cache/
+**/graphify-out/cache/
 # Indice semantico: grande e ricostruibile (tools/build_dense_index.py).
 # L'indice lessicale BM25 (engine/search_index.json) invece STA in git: e piccolo,
 # deterministico e serve ai consumatori senza dipendenze.
-graphify-out/search/
+**/graphify-out/search/
 __pycache__/
 *.pyc
 .pytest_cache/
 
 # Dati pesanti delle macroaree: restano su disco locale, NON in git
+# I pattern iniziano con **/ di proposito: un pattern con una barra nel mezzo e'
+# ANCORATO alla radice. Finche' il brain stava nella radice bastava 'raw/**/*.csv';
+# spostato in brains/aion, la regola ha smesso di coprirlo e il commit successivo ha
+# pubblicato dataset e PDF che dovevano restare locali. Vale per ogni brain, ovunque.
 # (limiti GitHub 100MB/file; la VPS clona il repo a ogni update). La conoscenza
 # vive negli appunti .txt/.md/.docx e nelle pagine wiki; i dati sono documentati.
-raw/**/*.xlsx
-raw/**/*.pbix
-raw/**/*.csv
-raw/**/*.zip
-raw/**/*.png
-raw/**/*.pdf
-raw/**/*.bkp
+**/raw/**/*.xlsx
+**/raw/**/*.pbix
+**/raw/**/*.csv
+**/raw/**/*.zip
+**/raw/**/*.png
+**/raw/**/*.pdf
+**/raw/**/*.bkp
 **/~$*
-raw/**/backup/
-raw/**/excell_old/
+**/raw/**/backup/
+**/raw/**/excell_old/
 test_env/
 
 # Hook eseguibili: attivi in locale, MAI versionati (repo pubblico).
