@@ -124,3 +124,15 @@ def test_nessun_presupposto_dichiarato_a_vuoto():
         assert chiave.split("::")[0] in esistenti, f"RICHIEDE nomina {chiave}, che non esiste"
     for chiave in set(conftest.RICHIEDE.values()):
         assert chiave in conftest.PRESUPPOSTI, f"presupposto sconosciuto: {chiave}"
+
+
+def test_le_skill_degli_altri_agenti_sono_una_copia_generata():
+    """.agents/skills/ (standard Agent Skills: Codex, Gemini CLI...) deve essere
+    identica a .claude/skills/, la fonte. Due copie tenute a mano divergono: e' come le
+    copie del motore dentro i brain erano arrivate a 17 tool diversi su 31."""
+    if not (ROOT / ".agents" / "skills").is_dir():
+        import pytest
+        pytest.skip("nessuna copia per altri agenti in questa installazione")
+    from tools.sync_agent_skills import differenze
+    d = differenze()
+    assert not d, f"skill divergenti: {d} — rigenera con python tools/sync_agent_skills.py"

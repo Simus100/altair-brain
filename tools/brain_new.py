@@ -115,6 +115,8 @@ def crea(nome, aree=None, training=None):
     reg = leggi_registro()
     reg["brains"].append({"nome": nome, "percorso": f"brains/{nome}"})
     scrivi_registro(reg)
+    from tools.oplog import registra
+    registra("creazione", f"brain '{nome}' creato col motore {versione_motore()}", dest)
 
     if aree or training:
         from tools import onboarding

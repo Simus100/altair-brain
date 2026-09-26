@@ -27,9 +27,11 @@ macroaree del brain, poi rigenera e pubblica.
 3. **Rigenera e verifica:** `python tools/rebuild_all.py` (fa tutto: wiki, validazioni,
    grafo, sottografi, viste, salute). Deve uscire senza errori.
 4. **Pubblica:** commit con messaggio descrittivo + push.
-5. **Archivia le note processate:** locali → spostale in `raw/_inbox/archive/`;
+5. **Registra l'operazione** nel registro del brain (cronaca, non esperienza):
+   `python tools/oplog.py ingest "N note smistate: <aree>"`.
+6. **Archivia le note processate:** locali → spostale in `raw/_inbox/archive/`;
    remote → `POST /v1/inbox/{id}/done`.
-6. **Registra la lezione** (ultimo passo): `python tools/lesson_log.py --skill triage
+7. **Registra la lezione** (ultimo passo): `python tools/lesson_log.py --skill triage
    --domanda "smistamento di N note" --esito utile --nodi "<aree toccate>"
    --nota "<criterio di smistamento non ovvio, o ambiguita incontrata>"`.
    Serve alla volta dopo: le ambiguita ricorrenti diventano regole.

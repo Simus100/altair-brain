@@ -35,6 +35,8 @@ test_env/
 # Hook eseguibili: attivi in locale, MAI versionati (repo pubblico).
 .claude/settings.local.json
 .claude/settings.json
+# Stessa regola per gli hook di Codex: configurazione eseguibile, solo locale.
+.codex/
 
 # Windows: file di sistema delle cartelle, nessuna informazione
 desktop.ini

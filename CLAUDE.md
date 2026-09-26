@@ -114,7 +114,9 @@ oracle e GENERATO da `raw/aion/aion-oracle.md`; l'indice di ricerca e GENERATO d
 - **Contenuto** → `python tools/search.py "..."` : BM25 sul testo, **inclusi i .txt che
   graphify non indicizza** (le note di `raw/data-science/` sono visibili solo qui).
   Endpoint `/v1/search`, tool MCP `brain_search`. Semantico opzionale: vedi
-  `tools/build_dense_index.py`.
+  `tools/build_dense_index.py`. **Il tempo conta**: un fatto scaduto (`valid_until`)
+  scende in fondo marcato con cio' che lo sostituisce; `--al AAAA-MM-GG` (API: `?al=`)
+  risponde con cio' che era vero in quella data.
 
 ## Memoria operativa (come il brain impara dall'esperienza)
 
@@ -157,6 +159,16 @@ ogni risposta, quindi se crescesse senza limite degraderebbe ogni domanda. Il re
 `tests/test_esperienza.py`, che controlla anche che ogni regola registrata arrivi
 davvero nel prior — l'anello era rimasto aperto per sei settimane senza che nulla lo
 segnalasse.
+
+## Cronaca e contraddizioni
+
+- **`log.md`** nella radice del brain: cosa e' stato fatto e quando (creazione, onboarding,
+  training, ingest, rebuild, aggiornamento, export). Solo aggiunte, cresce solo quando
+  qualcosa cambia: `python tools/oplog.py ingest "..."`, `--elenco 10`. L'esperienza
+  (cosa si e' imparato) resta in `engine/lessons.jsonl`.
+- **`python tools/contradiction_report.py`**: note diverse che danno valori diversi per
+  la stessa cosa. Rapporto, non guardia; tace su cio' che il brain ha gia' risolto
+  (`superseded_by`, `valid_until`) e sulle serie storiche datate.
 
 ## Provenienza (non negoziabile sui report)
 

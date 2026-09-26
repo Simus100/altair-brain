@@ -30,7 +30,7 @@ from tools.brain_upgrade import stato  # noqa: E402
 
 # Cio' che e' del brain. Tutto il resto dell'export viene da core/.
 PARTI_BRAIN = ("raw", "wiki", "engine", "reports", "metrics", "graphify-out",
-               "areas.json", "brain.json")
+               "areas.json", "brain.json", "log.md")
 # graphify-out/memory/ NON si esclude: sono le sessioni di feedback del brain, cioe'
 # esperienza acquisita. Escluderla (la credevo una cache) faceva uscire aion
 # dall'export con zero sessioni invece di una.
@@ -101,6 +101,9 @@ def main():
     if not brain:
         sys.exit(f"brain sconosciuto: {a.nome}")
     training = esporta(brain, os.path.abspath(a.dest))
+    from tools.oplog import registra
+    registra("export", f"esportato col motore {versione_motore()} in {os.path.basename(os.path.abspath(a.dest))}",
+             brain)
     print(f"esportato in {a.dest}: brain {a.nome} + motore {versione_motore()}"
           f"{' + training ' + training if training else ''}")
     print(f"  li':  python tools/rebuild_all.py")

@@ -198,3 +198,23 @@ def test_confidenza_alta_sulle_domande_golden():
               in ("bassa", "nessuna")]
     assert len(scarse) <= len(casi) * 0.3, (
         f"F1 troppo pessimista su conoscenza presente: {scarse}")
+
+
+MRR_MINIMO = 0.75
+
+
+def test_la_risposta_giusta_sta_in_alto():
+    """Il richiamo dice SE la risposta compare; il rango reciproco medio dice QUANTO IN
+    ALTO. Misurato 0.732 senza contesto dei frammenti, 0.774 col titolo della nota sul
+    primo frammento (tools/build_search_index.py): la soglia protegge il guadagno."""
+    from tools.search import cerca
+    casi = _casi_recupero()
+    somma = 0.0
+    for caso in casi:
+        attesi = {_norm(f) for f in caso["attesi"]}
+        for i, r in enumerate(cerca(caso["domanda"], top=20), 1):
+            if _norm(r["file"]) in attesi:
+                somma += 1 / i
+                break
+    mrr = somma / len(casi)
+    assert mrr >= MRR_MINIMO, f"MRR {mrr:.3f} sotto {MRR_MINIMO}: il ranking e' peggiorato"

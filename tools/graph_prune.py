@@ -57,7 +57,13 @@ GRAFO = os.path.join(BRAIN, "graphify-out", "graph.json")
 #              brain e' solo conoscenza. Nell'officina queste cartelle dentro un brain
 #              non ci sono piu'; restano escluse per l'istanza autosufficiente, dove
 #              motore e brain stanno nella stessa cartella.
-ESCLUSE = ("core/", "brains/", "training/", "tools/", "tests/", "server/", "plugins/")
+#   log.md     il registro delle operazioni: cronaca di cosa e' stato fatto, non
+#              conoscenza (tools/oplog.py).
+#   schema/    gli schemi dei contratti: motore. In un'installazione autonoma, dove
+#              motore e brain condividono la cartella, erano 294 nodi su 322 del
+#              grafo di un brain vuoto.
+ESCLUSE = ("core/", "brains/", "training/", "tools/", "tests/", "server/", "plugins/",
+           "schema/", "log.md")
 
 
 def _rel(nodo):

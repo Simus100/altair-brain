@@ -1,0 +1,25 @@
+{
+  "ancoraggi_area": [
+    {
+      "indice": "wiki/aion/index.md",
+      "fonti": [
+        "raw/aion/aion-framework.md",
+        "raw/aion/aion-agents.md",
+        "raw/aion/aion-components.md",
+        "raw/aion/aion-description.md",
+        "raw/aion/aion-manifest.md",
+        "raw/aion/aion-oracle.md"
+      ],
+      "nota": "wiki/aion e GENERATA da engine/aion.model.json (fonte unica), che a sua volta distilla questi sei documenti grezzi originali"
+    }
+  ],
+  "mappe_dirette": [
+    {
+      "wiki": "wiki/aion/aion-oracle.md",
+      "fonti": [
+        "raw/aion/aion-oracle.md"
+      ],
+      "nota": "la pagina curata dell'oracolo e il documento grezzo con la sequenza di Re Wen da cui nasce engine/iching.db.json"
+    }
+  ]
+}

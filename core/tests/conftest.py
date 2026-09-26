@@ -68,10 +68,24 @@ def _ha_plugin_scrittura():
     return (BRAIN / "plugins" / "scrittura").is_dir() or (ROOT / "tools" / "style_check.py").exists()
 
 
+def _ha_corpus_data_science():
+    """Le note di data-science del brain di riferimento: i test di recupero su
+    'quartili / outlier / IQR' cercano proprio quelle."""
+    d = BRAIN / "raw" / "data-science"
+    return d.is_dir() and any(p.name != "README.md" for p in d.rglob("*.md"))
+
+
+def _ha_report_verificati():
+    return (BRAIN / "raw" / "divulgazione" / "metodo-report-verificati.md").exists()
+
+
 PRESUPPOSTI = {
     "registro": (_ha_registro, "nessun registro dei brain: istanza sola"),
     "training": (_ha_training, "nessun training adottato: niente modello ne' oracolo"),
     "contenuto": (_ha_contenuto, "brain senza conoscenza: niente da misurare"),
+    "corpus_data_science": (_ha_corpus_data_science,
+                            "nessuna nota di data-science: le domande su quartili e outlier non hanno oggetto"),
+    "report_verificati": (_ha_report_verificati, "nessun report verificato da cui estrarre il metodo"),
     "esperienza": (_ha_esperienza, "meno di 20 registrazioni: memoria non ancora messa alla prova"),
     "scrittura": (_ha_plugin_scrittura, "plugin scrittura non installato"),
 }
@@ -97,8 +111,19 @@ RICHIEDE = {
     "test_api.py::test_oracle_deterministico_con_seed": "training",
     "test_api.py::test_oracle_hexagram_lookup_re_wen": "training",
     "test_api.py::test_rate_limiter_uses_client_host": "training",
-    "test_api.py::test_search_trova_nel_contenuto": "contenuto",
-    "test_api.py::test_search_filtro_area": "contenuto",
+    "test_api.py::test_search_trova_nel_contenuto": "corpus_data_science",
+    # Questi interrogano il CONTENUTO del brain di riferimento. Il comportamento del
+    # motore che verificano (ricerca, confidenza, diagnosi) e' coperto ovunque, su un
+    # brain sintetico, da test_valutazione.py.
+    "test_tools.py::test_ricerca_trova_il_contenuto_giusto": "corpus_data_science",
+    "test_tools.py::test_ricerca_copre_le_note_grezze_di_metodo": "corpus_data_science",
+    "test_tools.py::test_confidenza_alta_su_conoscenza_presente": "corpus_data_science",
+    "test_tools.py::test_diagnosi_dichiara_cosa_misura": "corpus_data_science",
+    "test_tools.py::test_memoria_annota_ancoraggi_consolidati": "esperienza",
+    "test_tools.py::test_report_harvest_estrae_fonti_e_metodo": "report_verificati",
+    "test_tools.py::test_report_harvest_nota_presente_e_dichiarata": "report_verificati",
+    "test_tools.py::test_harvest_non_sovrascrive_il_lavoro_umano": "report_verificati",
+    "test_api.py::test_search_filtro_area": "corpus_data_science",
     "test_api.py::test_le_tre_viste_sono_servite_e_protette": "contenuto",
     "test_api.py::test_health_dichiara_le_tre_viste": "contenuto",
     "test_api.py::test_health_segnala_una_vista_rimasta_indietro": "contenuto",

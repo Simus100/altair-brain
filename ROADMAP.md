@@ -367,6 +367,16 @@ banco in `tests/golden_queries.json`, non a impressione.
 
 ## Completato (storico, per orientamento)
 
+- **Audit architetturale e riproducibilita'** (2026-09-25/26): motore unico con VERSION e
+  manifesto `brain.json` per brain (`brain_upgrade.py`, `brain_export.py`, onboarding nel
+  motore); contratti con JSON Schema in `schema/` e `validate_contracts.py`; un solo
+  registro delle aree (motore 1.1.0, prima migrazione); grafo della conoscenza senza
+  codice e grafo del codice separato; ricerca bi-temporale (`--al`) e valutazione su
+  aggiornamento/tempo/astensione; contesto dei frammenti (MRR 0.732 -> 0.774); rapporto
+  sulle contraddizioni; registro delle operazioni `log.md`; struttura di AION verificata
+  (raggiungibilita' da SUPERIA, un solo cancello ETHOS, simmetrie) in `validate_model.py`.
+  Installazione vergine verificata con e senza AION.
+
 - **Upgrade P1-P10 2026-08-06** (da revisione architetturale + letteratura scientifica:
   A-MEM arXiv 2502.12110, Zep arXiv 2501.13956, hybrid search RRF, freshness SLA):
   - **P1 memoria operativa**: `tools/lesson_log.py` (JSONL append-only) +

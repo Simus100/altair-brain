@@ -178,6 +178,10 @@ jobs:
         continue-on-error: true
         run: python tools/freshness_report.py
 
+      - name: Contraddizioni fra note (informativo)
+        continue-on-error: true
+        run: python tools/contradiction_report.py
+
       - name: Provenienza delle affermazioni (report bloccanti)
         run: python tools/check_provenance.py --strict
 

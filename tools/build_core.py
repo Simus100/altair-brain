@@ -210,6 +210,19 @@ def costruisci():
     for f in sorted(TOOL_TRAINING_AION):
         conta["training"] += _copia(f"tools/{f}", f"training/aion/tools/{f}",
                                     obbligatorio=True)
+    # La catena di provenienza del training: da quali fonti deriva la sua wiki. Senza,
+    # un brain che adottava AION riceveva la wiki ma nessuno dichiarava da dove venisse
+    # (l'atlante non aveva archi di provenienza: lo ha mostrato un'installazione vergine).
+    with open(os.path.join(fonte, "engine", "provenance.json"), encoding="utf-8") as fh:
+        prov = json.load(fh)
+    parte = {"ancoraggi_area": [x for x in prov.get("ancoraggi_area", [])
+                                if x.get("indice", "").startswith("wiki/aion/")],
+             "mappe_dirette": [x for x in prov.get("mappe_dirette", [])
+                               if x.get("wiki", "").startswith("wiki/aion/")]}
+    if not parte["ancoraggi_area"]:
+        raise SystemExit("build_core: il training aion non ha una catena di provenienza")
+    _scrivi("training/aion/provenance.json",
+            json.dumps(parte, ensure_ascii=False, indent=2) + "\n")
     _scrivi("training/README.md", TRAINING_README)
 
     # 5a. PLUGIN SCRITTURA: verifica stilometrica, inerte senza il suo engine

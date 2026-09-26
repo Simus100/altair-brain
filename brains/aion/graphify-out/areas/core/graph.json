@@ -3,7 +3,7 @@
  "multigraph": false,
  "graph": {},
  "area": "core",
- "built_at_commit": "f0a537da168ace80518f3cbee708181b8e410f5c",
+ "built_at_commit": "ad99cc2076a3c22133be3f1ac56b8cf2032ef5fe",
  "nodes": [
   {
    "label": "aion-reasoner.md",
@@ -189,7 +189,7 @@
    "label": "Osservazioni recenti",
    "file_type": "document",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L85",
+   "source_location": "L89",
    "_origin": "ast",
    "id": "engine_lessons_osservazioni_recenti",
    "community": 62,
@@ -1451,7 +1451,7 @@
    "relation": "contains",
    "confidence": "EXTRACTED",
    "source_file": "engine/LESSONS.md",
-   "source_location": "L85",
+   "source_location": "L89",
    "weight": 1.0,
    "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
    "target": "engine_lessons_osservazioni_recenti",

@@ -111,6 +111,63 @@ def main() -> int:
             if d not in aid | cid:
                 err.append(f"{x['id']}.dominanti -> entita inesistente: {d}")
 
+    # --- AGGREGAZIONE: che il modello stia insieme, non solo che i nomi esistano ---
+    # Verificato a mano il 2026-09-26 su richiesta dell'autore ("gli agenti sono ben
+    # aggregati? ETHOS e' coerente?"): tutto reggeva. Diventa regola, cosi' la
+    # risposta resta vera anche dopo la prossima modifica al modello.
+    agenti = {a["id"]: a for a in m["agenti"]}
+    insegnamenti = {t["id"]: t for t in m["insegnamenti"]}
+
+    # simmetria consulta <-> consultato_da (come usa <-> usato_da)
+    for a in m["agenti"]:
+        for t in a.get("consulta", []):
+            if t in insegnamenti and a["id"] not in insegnamenti[t].get("consultato_da", []):
+                err.append(f"asimmetria: {a['id']} consulta {t}, ma {t}.consultato_da non lo elenca")
+    for t in m["insegnamenti"]:
+        for a in t.get("consultato_da", []):
+            if a not in agenti:
+                err.append(f"{t['id']}.consultato_da -> agente inesistente: {a}")
+            elif t["id"] not in agenti[a].get("consulta", []):
+                err.append(f"asimmetria: {t['id']}.consultato_da elenca {a}, ma {a}.consulta no")
+
+    # nessun componente inutilizzato: uno strumento che nessun agente usa e' morto
+    usati = {c for a in m["agenti"] for c in a.get("usa", [])}
+    for c in sorted(cid - usati):
+        err.append(f"componente orfano (nessun agente lo usa): {c}")
+
+    # ogni agente raggiungibile dall'orchestratore (orchestra + collabora)
+    orchestratori = [a["id"] for a in m["agenti"] if a.get("orchestra")]
+    if len(orchestratori) != 1:
+        err.append(f"attesi un solo orchestratore, trovati: {orchestratori}")
+    else:
+        visti, coda = {orchestratori[0]}, [orchestratori[0]]
+        while coda:
+            x = coda.pop()
+            for y in agenti[x].get("orchestra", []) + agenti[x].get("collabora", []):
+                if y in agenti and y not in visti:
+                    visti.add(y)
+                    coda.append(y)
+        for a in sorted(aid - visti):
+            err.append(f"agente irraggiungibile dall'orchestratore {orchestratori[0]}: {a}")
+
+    # ogni modalita attiva almeno un AGENTE, non solo componenti
+    for x in m["modalita"]:
+        if not set(x.get("dominanti", [])) & aid:
+            err.append(f"{x['id']}: nessun agente dominante — la modalita' non ha chi la guida")
+
+    # ETHOS: un solo cancello, al livello dell'identita', e il protocollo lo applica sempre
+    cancelli = [a for a in m["agenti"] if str(a.get("gate")).lower() == "true"]
+    if len(cancelli) != 1:
+        err.append(f"atteso un solo agente-cancello (gate), trovati: {[a['id'] for a in cancelli]}")
+    elif not cancelli[0]["livello"].startswith("livello-identita"):
+        err.append(f"il cancello {cancelli[0]['id']} non sta al livello dell'identita'/etica")
+    reasoner = os.path.join(BRAIN, "engine", "aion-reasoner.md")
+    if cancelli and os.path.exists(reasoner):
+        with open(reasoner, encoding="utf-8") as f:
+            protocollo = f.read().lower()
+        if "gate" not in protocollo or "sempre attivo" not in protocollo:
+            err.append("il protocollo del reasoner non applica il cancello come 'sempre attivo'")
+
     if err:
         print(f"MODELLO NON VALIDO — {len(err)} errori:")
         for e in err:

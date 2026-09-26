@@ -197,11 +197,16 @@ def graph_query(q: str, budget: int = 2000, area: str = None) -> tuple:
 
 
 # ---------------- ricerca ibrida (BM25 + semantico opzionale) ----------------
-def search(q: str, top: int = 8, area: str = None) -> dict:
+_SAFE_DATA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def search(q: str, top: int = 8, area: str = None, al: str = None) -> dict:
     """Ricerca nel CONTENUTO (complementare a graphify, che naviga la struttura).
     Include i .txt che il grafo non indicizza. Degrada con grazia se l'indice manca."""
     if area and not _SAFE_AREA.match(area):
         raise BrainError(400, "Nome area non valido.")
+    if al and not _SAFE_DATA.match(al):
+        raise BrainError(400, "Data non valida: usa AAAA-MM-GG.")
     top = max(1, min(int(top or 8), 50))
     try:
         from tools.search import cerca_con_diagnosi
@@ -209,10 +214,10 @@ def search(q: str, top: int = 8, area: str = None) -> dict:
         raise BrainError(503, f"ricerca non disponibile: {e}")
     if not (BRAIN / "engine" / "search_index.json").exists():
         raise BrainError(503, "indice di ricerca assente: esegui tools/build_search_index.py")
-    esito = cerca_con_diagnosi(q, top=top, area=area)
+    esito = cerca_con_diagnosi(q, top=top, area=area, al=al)
     # La diagnosi viaggia col risultato: chi consuma l'API deve poter sapere QUANTO
     # fidarsi, non solo cosa e stato trovato.
-    return {"query": q, "area": area, "n": len(esito["risultati"]),
+    return {"query": q, "area": area, "al": al, "n": len(esito["risultati"]),
             "diagnosi": esito["diagnosi"], "risultati": esito["risultati"]}
 
 

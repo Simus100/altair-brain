@@ -186,6 +186,8 @@ def aggiorna(brain=BRAIN):
     with open(os.path.join(brain, "brain.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(man, f, ensure_ascii=False, indent=2)
         f.write("\n")
+    from tools.oplog import registra
+    registra("aggiornamento", f"verificato col motore {man['motore']}", brain)
     print(f"brain aggiornato: verificato col motore {man['motore']}")
     return 0
 

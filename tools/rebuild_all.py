@@ -86,9 +86,14 @@ STEPS = [
     ("consolidamento (digest per area)", [PY, "tools/consolidate.py"]),
     ("metriche del brain", [PY, "tools/graph_metrics.py"]),
     ("relazioni wiki (link non rotti)", [PY, "tools/check_wikilinks.py"]),
+    # Rapporto, non guardia: esce sempre 0. Dice a chi cura il brain dove due note
+    # danno valori diversi per la stessa cosa (tools/contradiction_report.py).
+    ("contraddizioni fra note (rapporto)", [PY, "tools/contradiction_report.py"]),
     ("salute del grafo", [PY, "tools/graph_health.py"]),
     # Nell'officina: il grafo del CODICE, separato da quello della conoscenza.
     ("grafo del codice (officina)", [PY, "tools/build_code_graph.py"]),
+    # Le skill per Codex e gli altri agenti: una copia GENERATA, non tenuta a mano.
+    ("skill per gli altri agenti", [PY, "tools/sync_agent_skills.py"]),
 ]
 
 failed = False
@@ -118,6 +123,26 @@ for name, cmd in STEPS:
         print(f"XX {name}: FALLITO (exit {r.returncode}) — pipeline interrotta.")
         failed = True
         break
+
+# La cronaca: una riga nel registro delle operazioni, solo se qualcosa e' cambiato.
+if not failed:
+    try:
+        import json as _json
+        sys.path.insert(0, ROOT)
+        from tools.oplog import registra
+        def _conta(rel, chiave):
+            with open(os.path.join(BRAIN, rel), encoding="utf-8") as _f:
+                return len(_json.load(_f)[chiave])
+        _regole = 0
+        _log = os.path.join(BRAIN, "engine", "lessons.jsonl")
+        if os.path.exists(_log):
+            with open(_log, encoding="utf-8") as _f:
+                _regole = sum(1 for r in _f if '"livello": "lezione"' in r)
+        registra("rebuild", f"{_conta('graphify-out/graph.json', 'nodes')} nodi, "
+                            f"{_conta('engine/search_index.json', 'documenti')} frammenti, "
+                            f"{_regole} regole")
+    except (OSError, ValueError, KeyError, ImportError):
+        pass          # la cronaca non deve mai far fallire una pipeline riuscita
 
 if failed:
     sys.exit(1)

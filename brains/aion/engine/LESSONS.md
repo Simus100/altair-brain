@@ -7,9 +7,9 @@
 
 ## Sintesi
 
-- lezioni registrate: **34** · sessioni graphify: **1**
-- esiti: 26 utili · 1 vicoli ciechi · 7 correzioni · 0 aperte
-- skill piu attive: manuale (14), triage (7), aion (3), atlante-3d (3), officina (3)
+- lezioni registrate: **37** · sessioni graphify: **1**
+- esiti: 28 utili · 1 vicoli ciechi · 8 correzioni · 0 aperte
+- skill piu attive: manuale (14), triage (9), officina (4), aion (3), atlante-3d (3)
 - temi ricorrenti: verifica (5), metodo (5), architettura (4), grafo (3), visualizzazione (3), guardie (3), separazione (3), report (2)
 
 ## Ancoraggi consolidati
@@ -61,6 +61,12 @@ _Non hanno portato a nulla in passato. Se il brain e cambiato, vale riprovare._
 
 _Ognuna porta il proprio appiglio esterno: un test, un errore, una misura, una correzione. Se non lo porta, non e qui._
 
+- **Quando** cambi il motore, lo scheletro o il pacchetto di un training → **installa core/ da zero in tre varianti (con training, senza, solo training), ricostruisci e lancia i test DENTRO ciascuna: l'officina non vede i difetti di chi parte da zero**
+  - appiglio: `misura: 4 difetti visti solo cosi' — schema/ era 294 nodi su 322 del grafo vuoto, AION senza provenienza, domanda sul training saltata senza aree, un tool senza guardia di codifica`
+- **Quando** un testo d'opinione firmato (articoli, divulgazione) sta per entrare in raw/aion o collegarsi ad aion con un wikilink → **va in divulgazione o finanza, mai in AION: il modello di pensiero deve restare impersonale e valere per chiunque lo usi**
+  - appiglio: `test: tests/test_corpus_divulgazione.py — 8 test impediscono che opinioni firmate entrino in raw/aion o lo colleghino`
+- **Quando** un'area riceve file .txt, notebook o PDF invece di .md → **graphify non li vede: verifica che tools/search.py li trovi, e scrivi una pagina .md che li ancori nel grafo**
+  - appiglio: `test: tests/test_tools.py::test_ricerca_copre_le_note_grezze_di_metodo — le 27 note grezze di data-science sono visibili solo alla ricerca`
 - **Quando** un messaggio di successo elenca cosa e' stato verificato → **componilo da cio' che il codice ha davvero controllato, mai da una formula fissa: un verde che nomina verifiche mai eseguite rassicura e basta**
   - appiglio: `guardia: graph_health diceva 'wiki/aion e raw/aion coesi' anche al brain cucina, che quelle aree non le ha`
 - **Quando** consegni uno scheletro che porta con se' il proprio banco di prova → **lancia i suoi test DENTRO una copia vergine: le guardie scritte sul brain di riferimento presuppongono training, registro e contenuto, e senza dichiararlo diventano rosse dove non hanno oggetto**

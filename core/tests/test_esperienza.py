@@ -189,3 +189,13 @@ def test_la_memoria_si_consolida_prima_di_essere_indicizzata():
     i_memoria = testo.index('"tools/lessons_digest.py"')
     i_indice = testo.index('"tools/build_search_index.py"')
     assert i_memoria < i_indice, "l'indice si costruisce prima della memoria che indicizza"
+
+
+def test_un_appiglio_lasciato_nella_prosa_viene_fatto_notare():
+    """MISURA: 6 osservazioni su 24 del brain aion citavano una prova verificabile
+    (un file di test, "8 test", un numero misurato) mai finita nel campo --ancora.
+    lesson_log non le promuove da solo — sarebbe autofagia — ma lo fa notare."""
+    from tools.lesson_log import appigli_nascosti
+    assert appigli_nascosti("regola resa eseguibile con 8 test")
+    assert appigli_nascosti("tests/test_x.py passa da rosso a verde")
+    assert not appigli_nascosti("sessione tranquilla, niente di particolare")

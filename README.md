@@ -210,6 +210,16 @@ graphify query "how is the search index built"                                  
 graphify query "what does AION do" --graph brains/aion/graphify-out/graph.json   # a brain
 ```
 
+### Time, contradictions, chronicle
+
+- **Search respects time.** A fact past its `valid_until` is not deleted — history stays —
+  but it drops below current facts and says what superseded it; `search.py --al 2025-01-01`
+  (API `?al=`) answers with what was true on that date. Measured, with abstention, by
+  `tests/test_valutazione.py` on a synthetic brain.
+- **`tools/contradiction_report.py`** lists notes giving different values for the same
+  thing, skipping what the brain already resolved and dated time series. A report, not a gate.
+- **`log.md`** in each brain: an append-only chronicle of what was done to it and when.
+
 ### What keeps them apart
 
 Isolation is verified, not assumed — these guards exist because each of them caught a real

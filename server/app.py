@@ -175,11 +175,14 @@ def affected(x: str = Query(..., min_length=1), depth: int = Query(2, ge=1, le=5
 # ---------------- ricerca nel contenuto (ibrida BM25 + semantica) ----------------
 @api.get("/search", dependencies=[Depends(auth)])
 def search(q: str = Query(..., min_length=2), top: int = Query(8, ge=1, le=50),
-           area: str = Query(None, pattern="^[a-z0-9-]+$")):
+           area: str = Query(None, pattern="^[a-z0-9-]+$"),
+           al: str = Query(None, pattern=r"^\d{4}-\d{2}-\d{2}$")):
     """Cerca nel CONTENUTO delle note (graphify naviga la struttura, questa il testo).
-    Copre anche i .txt che il grafo non indicizza."""
+    Copre anche i .txt che il grafo non indicizza. Senza 'al' risponde con la verita'
+    corrente (i fatti scaduti scendono in fondo, marcati); con 'al=AAAA-MM-GG' con cio'
+    che era vero in quella data."""
     try:
-        return core.search(q, top=top, area=area)
+        return core.search(q, top=top, area=area, al=al)
     except core.BrainError as e:
         raise _err(e)
 

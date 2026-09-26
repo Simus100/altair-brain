@@ -157,6 +157,24 @@ def raccogli_percorsi():
     return sorted(trovati)
 
 
+# CONTESTO DEL FRAMMENTO — la versione deterministica, senza LLM, del "contextual
+# retrieval" di Anthropic. Un frammento staccato dalla sua nota perde da dove viene.
+# Si e' misurato sul golden set (18 domande) prima di scegliere come restituirglielo:
+#   nessun contesto                         top-3 78%  top-8 100%  MRR 0.732
+#   area + titolo della nota su OGNI pezzo  top-3 83%  top-8  94%  MRR 0.770
+#   ... piu' max 2 frammenti per file       top-3 83%  top-8  94%  MRR 0.772
+#   titolo della nota sul PRIMO pezzo       top-3 83%  top-8 100%  MRR 0.774
+# Sul titolo ripetuto a ogni frammento una nota lunga (raw/aion/aion-agents.md)
+# riempiva da sola i primi posti e spingeva fuori la pagina giusta. Sul primo
+# frammento soltanto, la nota si ritrova per titolo senza inondare i risultati.
+def titolo_nota(rel, corpo):
+    """Il primo titolo di livello 1, oppure il nome del file."""
+    for riga in corpo.splitlines():
+        if riga.startswith("# "):
+            return riga[2:].strip()
+    return os.path.splitext(os.path.basename(rel))[0].replace("-", " ").replace("_", " ")
+
+
 documenti, postings, df = [], {}, {}
 
 for rel in raccogli_percorsi():
@@ -166,19 +184,28 @@ for rel in raccogli_percorsi():
     corpo, meta = togli_frontmatter(testo)
     parti = rel.split("/")
     area = parti[1] if len(parti) > 2 and parti[0] in ("raw", "wiki") else parti[0]
-    for titolo, frammento in spezza(corpo, rel):
+    contesto = titolo_nota(rel, corpo)
+    for n_fr, (titolo, frammento) in enumerate(spezza(corpo, rel)):
         idx = len(documenti)
-        token = tokenizza(titolo + " " + frammento)
+        token = tokenizza((contesto + " " if n_fr == 0 else "") + titolo + " " + frammento)
         if not token:
             continue
-        documenti.append({
+        doc = {
             "file": rel,
             "titolo": titolo or os.path.basename(rel),
             "area": area,
             "estratto": re.sub(r"\s+", " ", frammento)[:280],
             "n_token": len(token),
             "tags": meta.get("tags", ""),
-        })
+        }
+        # BI-TEMPORALITA': l'intervallo in cui il fatto e' vero viaggia col frammento.
+        # Senza, la ricerca restituiva un fatto scaduto come se fosse vero: le note
+        # dichiaravano valid_until e superseded_by, ma nessuno li leggeva.
+        for chiave, campo in (("valid_from", "valido_dal"), ("valid_until", "valido_fino"),
+                              ("superseded_by", "sostituito_da")):
+            if (meta.get(chiave) or "").strip():
+                doc[campo] = meta[chiave].strip()
+        documenti.append(doc)
         tf = {}
         for t in token:
             tf[t] = tf.get(t, 0) + 1

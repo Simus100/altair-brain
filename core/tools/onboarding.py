@@ -93,6 +93,8 @@ def imposta_aree(brain, aree):
               and os.path.isdir(os.path.join(brain, "raw", a["id"]))]
     reg["areas"] = tenute + [a for a in aree if a["id"] not in {t["id"] for t in tenute}]
     _scrivi(brain, "areas.json", reg)
+    from tools.oplog import registra
+    registra("onboarding", "aree: " + ", ".join(a["id"] for a in reg["areas"]), brain)
     for a in aree:
         for strato in ("raw", "wiki"):
             os.makedirs(os.path.join(brain, strato, a["id"]), exist_ok=True)
@@ -122,6 +124,15 @@ def adotta_training(brain, nome):
                 continue
             os.makedirs(dest, exist_ok=True)
             (shutil.copytree if os.path.isdir(a) else shutil.copy2)(a, b)
+    # la catena fonte -> conoscenza del training si unisce a quella del brain
+    parte = _leggi(tr, "provenance.json", {})
+    if parte:
+        prov = _leggi(brain, "engine/provenance.json",
+                      {"schema_version": 1, "ancoraggi_area": [], "mappe_dirette": []})
+        for chiave, id_ in (("ancoraggi_area", "indice"), ("mappe_dirette", "wiki")):
+            noti = {x.get(id_) for x in prov.setdefault(chiave, [])}
+            prov[chiave] += [x for x in parte.get(chiave, []) if x.get(id_) not in noti]
+        _scrivi(brain, "engine/provenance.json", prov)
     reg = _leggi(brain, "areas.json", {"schema_version": 1, "areas": []})
     if nome in AREE_TRAINING and nome not in {a["id"] for a in reg["areas"]}:
         reg["areas"].append(dict(AREE_TRAINING[nome]))
@@ -129,6 +140,8 @@ def adotta_training(brain, nome):
     man = _leggi(brain, "brain.json", {"schema_version": 1})
     man["training"] = nome
     _scrivi(brain, "brain.json", man)
+    from tools.oplog import registra
+    registra("training", f"adottato il training {nome}", brain)
     return True
 
 
@@ -156,11 +169,13 @@ def interattivo(brain):
         aree.append({"id": i, "label": chiedi("    etichetta", i.title()),
                      "description": chiedi("    descrizione", ""),
                      "status": "active", "sla_giorni": 180, "keywords": [i]})
-    if not aree:
-        print("Nessuna area: resta quella di esempio.")
-        return
-    imposta_aree(brain, aree)
+    if aree:
+        imposta_aree(brain, aree)
+    else:
+        print("Nessuna area tua per ora: resta quella di esempio, le aggiungi quando vuoi.")
 
+    # La domanda sul training si fa SEMPRE. Prima usciva qui se non si dichiaravano
+    # aree: chi voleva partire solo con AION non vedeva mai la scelta.
     if "aion" in training_disponibili():
         print("\n-- TRAINING INIZIALE (opzionale) --")
         print("Un training e un imprinting: il brain adotta un modo di ragionare gia")
@@ -174,6 +189,11 @@ def interattivo(brain):
         print("ragionare lo costruisci strada facendo. Si adotta anche piu tardi.")
         if chiedi("Adottare il training AION? (s/n)", "n").lower().startswith("s"):
             adotta_training(brain, "aion")
+            if not aree:
+                # l'area d'esempio era un segnaposto: ora il brain ha un contenuto vero
+                reg = _leggi(brain, "areas.json", {"areas": []})
+                reg["areas"] = [a for a in reg["areas"] if a.get("id") != "esempio"]
+                _scrivi(brain, "areas.json", reg)
             print("  training AION adottato: il brain parte con un modo di ragionare.")
         else:
             print("  nessun training: il brain parte vuoto e impara dall'uso.")

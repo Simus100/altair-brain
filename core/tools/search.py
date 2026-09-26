@@ -271,9 +271,21 @@ def _annota_memoria(file_rel, titolo):
     return {"utile": utile, "vicolo_cieco": cieco, "nota": nota}
 
 
-def cerca(query, top=8, area=None):
+def _valido_al(d, data):
+    """Il frammento era vero in quella data? Estremi mancanti = intervallo aperto."""
+    return not ((d.get("valido_dal") and d["valido_dal"] > data) or
+                (d.get("valido_fino") and d["valido_fino"] < data))
+
+
+def cerca(query, top=8, area=None, al=None):
     """Ricerca ibrida. Ritorna una lista di risultati, ognuno annotato con cio che
-    la memoria operativa sa di quel nodo (F3)."""
+    la memoria operativa sa di quel nodo (F3).
+
+    IL TEMPO. Senza 'al' si cerca la verita' CORRENTE: un fatto scaduto (valid_until
+    passato) non sparisce — la storia resta — ma scende dopo tutti quelli validi e
+    porta con se' la data di scadenza e cio' che lo sostituisce. Con 'al'
+    (AAAA-MM-GG) si chiede cio' che era vero in quella data: restano solo i frammenti
+    validi allora."""
     idx = _carica()
     docs = idx["documenti"]
     lessicale = cerca_bm25(query)
@@ -284,10 +296,14 @@ def cerca(query, top=8, area=None):
     ordinati = _rrf(classifiche) if len(classifiche) > 1 else \
         [(d, s) for d, s in classifiche[0]]
 
-    fuori = []
+    import datetime
+    oggi = datetime.date.today().isoformat()
+    fuori, scaduti = [], []
     for doc_id, punteggio in ordinati:
         d = docs[doc_id]
         if area and d["area"] != area:
+            continue
+        if al and not _valido_al(d, al):
             continue
         voce = {
             "file": d["file"],
@@ -300,18 +316,28 @@ def cerca(query, top=8, area=None):
         memoria = _annota_memoria(d["file"], d["titolo"])
         if memoria:
             voce["memoria"] = memoria
+        if not al and d.get("valido_fino") and d["valido_fino"] < oggi:
+            voce["scaduto"] = d["valido_fino"]
+            if d.get("sostituito_da"):
+                voce["sostituito_da"] = d["sostituito_da"]
+            scaduti.append(voce)
+            continue
         fuori.append(voce)
         if len(fuori) >= top:
             break
-    return fuori
+    return (fuori + scaduti)[:top]
 
 
-def cerca_con_diagnosi(query, top=8, area=None):
+def cerca_con_diagnosi(query, top=8, area=None, al=None):
     """Ricerca + valutazione della propria affidabilita (F1). E la forma che usano
     l'API e la CLI: un risultato senza giudizio sulla sua qualita induce a fidarsi
     anche quando non si dovrebbe."""
-    risultati = cerca(query, top=top, area=area)
-    return {"risultati": risultati, "diagnosi": diagnosi(query, cerca_bm25(query))}
+    risultati = cerca(query, top=top, area=area, al=al)
+    diag = diagnosi(query, cerca_bm25(query))
+    if risultati and all(r.get("scaduto") for r in risultati[:3]):
+        diag["motivo"] += (" — ATTENZIONE: i primi risultati sono fatti scaduti; "
+                           "cio' che li sostituisce e' indicato in 'sostituito_da'")
+    return {"risultati": risultati, "diagnosi": diag}
 
 
 if __name__ == "__main__":
@@ -326,6 +352,8 @@ if __name__ == "__main__":
     ap.add_argument("--top", type=int, default=8)
     ap.add_argument("--area", default=None, help="filtra per macroarea")
     ap.add_argument("--json", action="store_true", help="output JSON")
+    ap.add_argument("--al", default=None, metavar="AAAA-MM-GG",
+                    help="cio' che era vero in quella data (default: la verita' corrente)")
     a = ap.parse_args()
 
     # Un brain appena creato non ha ancora un indice. Era un traceback: la prima
@@ -334,7 +362,7 @@ if __name__ == "__main__":
         _sys.exit("indice di ricerca assente per questo brain: "
                   "esegui  python tools/rebuild_all.py")
 
-    esito = cerca_con_diagnosi(a.query, top=a.top, area=a.area)
+    esito = cerca_con_diagnosi(a.query, top=a.top, area=a.area, al=a.al)
     risultati, d = esito["risultati"], esito["diagnosi"]
     if a.json:
         print(json.dumps(esito, ensure_ascii=False, indent=2))
@@ -349,6 +377,9 @@ if __name__ == "__main__":
         for i, r in enumerate(risultati, 1):
             print(f"{i}. [{r['area']}] {r['titolo']}  ({r['punteggio']})")
             print(f"   {r['file']}")
+            if r.get("scaduto"):
+                print(f"   SCADUTO il {r['scaduto']}"
+                      f"{' — sostituito da ' + r['sostituito_da'] if r.get('sostituito_da') else ''}")
             if r.get("memoria"):
                 print(f"   memoria: {r['memoria']['nota']}")
             print(f"   {r['estratto'][:160]}...\n")

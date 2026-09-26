@@ -70,6 +70,32 @@ def _lista(val: str) -> list:
     return out
 
 
+# Indizi di un appiglio esterno lasciato nella prosa. MISURA: su 24 osservazioni del
+# brain aion, piu' d'una citava una prova verificabile ("regola resa eseguibile con 8
+# test", un file di test, un numero misurato) che non era finita nel campo --ancora:
+# una cosa verificata finiva nello scaffale di quelle non verificate. Lo strumento non
+# la promuove da solo — deciderlo al posto di chi scrive sarebbe proprio l'autofagia
+# che l'appiglio obbligatorio vuole impedire — ma lo fa notare.
+INDIZI = (
+    (r"tests?/[\w/.-]+\.py", "un file di test"),
+    (r"\b\d+\s+test\b", "un numero di test"),
+    (r"da rosso a verde|test (?:rosso|verde)", "un test che cambia esito"),
+    (r"\b(?:errore|exit|traceback|eccezione)\b", "un errore"),
+    (r"\b(?:misurat[oaie]|\d+(?:[.,]\d+)?\s*%)", "una misura"),
+    (r"\bguardia\b", "una guardia"),
+)
+
+
+def appigli_nascosti(testo):
+    import re as _re
+    visti = []
+    for pat, cosa in INDIZI:
+        m = _re.search(pat, testo or "", _re.IGNORECASE)
+        if m:
+            visti.append(f"{cosa} («{m.group(0)}»)")
+    return visti
+
+
 def main():
     # Console Windows (cp1252): vedi tools/console.py.
     sys.path.insert(0, ROOT)
@@ -139,9 +165,14 @@ def main():
     print(f"{voce['livello']} registrata ({voce['esito']}) — {len(voce['nodi'])} nodi, "
           f"skill '{voce['skill']}'")
     if voce["livello"] == "osservazione":
-        print("  senza --ancora resta OSSERVAZIONE: conservata e cercabile, ma non entra")
-        print("  in engine/LESSONS.md, che il reasoner legge prima di ogni risposta.")
-        print("  Per promuoverla serve un appiglio esterno: " + ", ".join(ANCORE))
+        print("  senza --ancora resta OSSERVAZIONE: entra in engine/LESSONS.md come contesto")
+        print("  (le 12 piu' recenti), mai fra le regole. Per diventare regola serve un")
+        print("  appiglio esterno: " + ", ".join(ANCORE))
+        indizi = appigli_nascosti(voce.get("nota", "") + " " + voce["domanda"])
+        if indizi:
+            print("  QUESTA NOTA CITA QUALCOSA DI VERIFICABILE: " + "; ".join(indizi))
+            print("  se e' la prova di cio' che hai imparato, registrala come regola:")
+            print("    --quando \"...\" --allora \"...\" --ancora \"test: ...\"")
     elif voce["ancora_tipo"] in ANCORE_FORTI:
         print(f"  ancora '{voce['ancora_tipo']}': verificata da altri, consolida subito.")
     else:
