@@ -67,6 +67,7 @@ STEPS = [
     ("potatura del grafo (artefatti fuori)", [PY, "tools/graph_prune.py"]),
     ("ponti intercampo", [PY, "tools/apply_bridges.py"]),
     ("provenienza fonte->conoscenza", [PY, "tools/apply_provenance.py"]),
+    ("vista estesa sul grafo definitivo", [PY, "tools/sync_extended_view.py"]),
     ("sottografi per area", [PY, "tools/build_area_graphs.py"]),
     ("vista compatta", [PY, "tools/altair_compact_view.py"]),
     ("vista atlante 3D", [PY, "tools/build_atlas_view.py"]),
@@ -99,8 +100,9 @@ STEPS = [
 failed = False
 for name, cmd in STEPS:
     if cmd[0] == "graphify" and shutil.which("graphify") is None:
-        print(f"~~ {name}: SALTATO (graphify non installato: pipx install graphifyy)")
-        continue
+        print(f"XX {name}: graphify non installato; impossibile rigenerare il grafo.")
+        failed = True
+        break
     # Un passo il cui tool non c'e' viene SALTATO, non fa fallire la pipeline.
     # Serve perche' il motore e modulare: i passi di un training (wiki dal modello,
     # validazione, DB oracle) esistono solo se quel training e stato adottato.

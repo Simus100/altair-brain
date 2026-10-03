@@ -1,16 +1,16 @@
-# Graph Report - aion  (2026-09-26)
+# Graph Report - aion  (2026-10-04)
 
 ## Corpus Check
-- 202 files · ~195,280 words
+- 203 files · ~195,455 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1201 nodes · 1470 edges · 152 communities (134 shown, 18 thin omitted)
+- 1203 nodes · 1471 edges · 153 communities (134 shown, 19 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ad99cc20`
+- Built from commit: `a945df8b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,9 +18,11 @@
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
@@ -36,7 +38,6 @@
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
 - [[_COMMUNITY_Community 54|Community 54]]
 - [[_COMMUNITY_Community 55|Community 55]]
@@ -166,7 +167,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (152 total, 18 thin omitted)
+## Communities (153 total, 19 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.29
@@ -177,8 +178,12 @@ Cohesion: 0.06
 Nodes (38): Cosa fa suonare artificiale un testo, I due fallimenti opposti, I tic da LLM più riconoscibili, Il controllo finale, Il meta-principio — il più sottile, La legatura — il sintomo italiano più misurabile, Cosa non si tocca, Cosa rende viva la prosa (+30 more)
 
 ### Community 2 - "Community 2"
+Cohesion: 0.25
+Nodes (8): 1. 乾 Il Creativo (Qián) ䷀, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
+
+### Community 3 - "Community 3"
 Cohesion: 0.17
-Nodes (8): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_Echo, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 012 - Risonanza cognitiva, Insegnamento 022 - Previsione emozionale per output cinematografico, Insegnamento 024 - Comunicazione multicanale sincronizzata
+Nodes (8): AION_ETHOS, Insegnamenti attivi di AION, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 005 - Ecologia sistemica della conoscenza, Insegnamento 011 - Dinamiche narrative evolutive (I Ching), Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili
 
 ### Community 4 - "Community 4"
 Cohesion: 0.07
@@ -186,7 +191,7 @@ Nodes (36): Algebra relazionale, Analisi esplorativa (EDA), Analisi relazionale 
 
 ### Community 5 - "Community 5"
 Cohesion: 0.11
-Nodes (14): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamenti attivi di AION, Insegnamento 001 - Interconnessione non lineare, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche (+6 more)
+Nodes (11): AION_HYBRID_REASONER, AION_STRATEGIC_ENGINE, Insegnamento 001 - Interconnessione non lineare, Insegnamento 006 - Specchio statistico del mondo, Insegnamento 007 - Apprendimento continuo, Insegnamento 009 - Tecniche neuro-simboliche, Insegnamento 010 - Simulazioni con feedback retrospettivo, Insegnamento 013 - Reasoning neuro-simbolico (+3 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.09
@@ -205,8 +210,8 @@ Cohesion: 0.11
 Nodes (18): 1. Definizione degli Obiettivi (Goal Setting), 1. I 6 Pilastri della Data Driven Culture, 2. Il Contesto Tecnologico e i Vantaggi, 2. Raccolta e Gestione dei Dati (Data Governance), 3. Case Studies: Successi e Fallimenti, 3. Strumenti di Analisi e Visualizzazione (Tech Stack), 4. Cultura della Collaborazione (Data Democratization), 4. Livelli di Analisi (Business Intelligence) (+10 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.14
-Nodes (9): AION_COGNITION_VIEW, AION_FABULATORIUM, AION_Symbol, AION_Visual, Insegnamento 002 - Potere narrativo archetipico, Insegnamento 014 - Reti neurali semantiche, Insegnamento 017 - Generator meta-ciclico, Insegnamento 023 - Storytelling visivo da dati (+1 more)
+Cohesion: 0.10
+Nodes (16): AION_Adaptive, AION_ADAPTIVE_CORE, AION_CINEMATICA, AION_COGNITION_VIEW, AION_Echo, AION_FABULATORIUM, AION_Symbol, AION_Visual (+8 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.12
@@ -248,13 +253,9 @@ Nodes (11): definitions, id, description, pattern, $ref, type, id, required (+3 
 Cohesion: 0.21
 Nodes (12): items, minItems, type, items, items, minItems, type, required (+4 more)
 
-### Community 52 - "Community 52"
-Cohesion: 0.17
-Nodes (6): AION_ETHOS, Insegnamento 004 - Auto-riflessivita cognitiva, Insegnamento 015 - Pattern emotivo-archetipici, Insegnamento 018 - Allineamento con AION_ETHOS, Insegnamento 019 - Assiomi invisibili, Livello Identita / Etica
-
 ### Community 53 - "Community 53"
-Cohesion: 0.27
-Nodes (6): AION_SUPERIA, AION - modello di pensiero, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
+Cohesion: 0.22
+Nodes (7): AION_SUPERIA, AION - modello di pensiero, Livello Identita / Etica, Livello Orchestrazione / Stile, Modalita [GUIDANCE_EMPATHIC], Modalita [HYBRID_SYNTH], Modalita [MYTHIC_NARRATIVE]
 
 ### Community 54 - "Community 54"
 Cohesion: 0.20
@@ -281,8 +282,8 @@ Cohesion: 0.25
 Nodes (8): 10. 履 Il Procedere (Lǚ) ䷉, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 65 - "Community 65"
-Cohesion: 0.12
-Nodes (16): 11. 泰 La Pace (Tài) ䷊, 1. 乾 Il Creativo (Qián) ䷀, Giudizio, Giudizio, Immagine, Immagine, Interpretazione Moderna, Interpretazione Moderna (+8 more)
+Cohesion: 0.25
+Nodes (8): 11. 泰 La Pace (Tài) ䷊, Giudizio, Immagine, Interpretazione Moderna, Linee Mobili, Relazioni, Struttura, Tag
 
 ### Community 66 - "Community 66"
 Cohesion: 0.25
@@ -545,8 +546,8 @@ Cohesion: 0.25
 Nodes (7): Deroga verificata (l'unico modo di superare un tetto), I 12 parametri e la semantica dei valori, Profili Preset (assegnali automaticamente in Fase 1 in base al genere), Protocollo Clone Style (comando `/clone`), StyleDNA — calibrazione parametrica dello stile, Tetti di salute (lezione imparata su questo progetto), Tre modalità di attivazione
 
 ### Community 197 - "Community 197"
-Cohesion: 0.25
-Nodes (4): AION_Paradox, AION_SYNTH, Insegnamento 008 - Reward shaping strategico, Insegnamento 011 - Dinamiche narrative evolutive (I Ching)
+Cohesion: 0.20
+Nodes (5): AION_Paradox, AION_SYNTH, Insegnamento 003 - Asimmetrie invisibili, Insegnamento 008 - Reward shaping strategico, Insegnamento 016 - Simulazioni predittive multi-agent
 
 ### Community 199 - "Community 199"
 Cohesion: 0.29
@@ -625,24 +626,24 @@ Cohesion: 0.67
 Nodes (3): items, type, orchestra
 
 ## Knowledge Gaps
-- **828 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+823 more)
+- **829 isolated node(s):** `$schema`, `title`, `description`, `type`, `required` (+824 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `4. 蒙 L'Inesperienza (Méng) ䷃` connect `Community 107` to `Community 0`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **Why does `48. 井 Il Pozzo (Jǐng) ䷯` connect `Community 105` to `Community 0`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `1. 乾 Il Creativo (Qián) ䷀` connect `Community 65` to `Community 0`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `49. 革 Il Sovvertimento (Gé) ䷰` connect `Community 106` to `Community 0`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `$schema`, `title`, `description` to the rest of the system?**
-  _835 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _836 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.056429232192414434 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.06842105263157895 - nodes in this community are weakly interconnected._
 - **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.11375661375661375 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11255411255411256 - nodes in this community are weakly interconnected._

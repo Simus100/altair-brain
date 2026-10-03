@@ -77,7 +77,7 @@ def _tokenizza(t):
             if len(x) >= 3 and x not in stop]
 
 
-def cerca_bm25(query, limite=40):
+def cerca_bm25(query, limite=40, area=None, al=None):
     """Ranking BM25 classico. Ritorna [(indice_doc, punteggio)] decrescente."""
     idx = _carica()
     k1 = idx["parametri"]["k1"]
@@ -91,6 +91,8 @@ def cerca_bm25(query, limite=40):
             continue
         peso_idf = idx["idf"].get(termine, 0.0)
         for doc_id, tf in posting:
+            if not _ammesso(docs[doc_id], area, al):
+                continue
             dl = docs[doc_id]["n_token"]
             num = tf * (k1 + 1)
             den = tf + k1 * (1 - b + b * dl / avgdl)
@@ -98,9 +100,19 @@ def cerca_bm25(query, limite=40):
     return sorted(punteggi.items(), key=lambda x: -x[1])[:limite]
 
 
-def cerca_denso(query, limite=40):
+def cerca_denso(query, limite=40, area=None, al=None):
     """Ranking semantico. Attivo solo se indice denso e libreria sono presenti."""
     if not os.path.exists(DENSO):
+        return []
+    # Gli ID densi sono posizioni nel corpus. Dopo un rebuild possono indicare
+    # un altro testo pur avendo ancora la stessa lunghezza: mai fondere due versioni.
+    try:
+        with open(DENSO, encoding="utf-8") as f:
+            meta = json.load(f)
+        docs = _carica()["documenti"]
+        if meta.get("corpus_sha256") != impronta_corpus(docs):
+            return []
+    except (OSError, ValueError):
         return []
     try:
         from sentence_transformers import SentenceTransformer
@@ -108,16 +120,23 @@ def cerca_denso(query, limite=40):
     except ImportError:
         return []
     try:
-        with open(DENSO, encoding="utf-8") as f:
-            meta = json.load(f)
         vettori = np.array(meta["vettori"], dtype="float32")
         modello = SentenceTransformer(meta["modello"])
         q = modello.encode([query], normalize_embeddings=True)[0]
         sim = vettori @ q
-        ordine = sim.argsort()[::-1][:limite]
+        docs = _carica()["documenti"]
+        ordine = [i for i in sim.argsort()[::-1]
+                  if i < len(docs) and _ammesso(docs[i], area, al)][:limite]
         return [(int(i), float(sim[i])) for i in ordine]
     except Exception:
         return []          # il semantico non deve mai far cadere la ricerca
+
+
+def impronta_corpus(documenti):
+    """Identita' ordinata del corpus condivisa dai due indici."""
+    import hashlib
+    payload = json.dumps(documenti, sort_keys=True, ensure_ascii=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def _rrf(classifiche):
@@ -277,6 +296,15 @@ def _valido_al(d, data):
                 (d.get("valido_fino") and d["valido_fino"] < data))
 
 
+def _ammesso(d, area=None, al=None):
+    """Lo scope precede il taglio top-k, altrimenti le aree piccole spariscono."""
+    if not al and d.get("valido_dal"):
+        import datetime
+        if d["valido_dal"] > datetime.date.today().isoformat():
+            return False
+    return (not area or d["area"] == area) and (not al or _valido_al(d, al))
+
+
 def cerca(query, top=8, area=None, al=None):
     """Ricerca ibrida. Ritorna una lista di risultati, ognuno annotato con cio che
     la memoria operativa sa di quel nodo (F3).
@@ -288,8 +316,10 @@ def cerca(query, top=8, area=None, al=None):
     validi allora."""
     idx = _carica()
     docs = idx["documenti"]
-    lessicale = cerca_bm25(query)
-    semantico = cerca_denso(query)
+    # Si conservano anche i candidati oltre i primi 40: i fatti correnti devono
+    # poter precedere tutti quelli scaduti, anche quando hanno un punteggio minore.
+    lessicale = cerca_bm25(query, limite=len(docs), area=area, al=al)
+    semantico = cerca_denso(query, limite=len(docs), area=area, al=al)
     classifiche = [c for c in (lessicale, semantico) if c]
     if not classifiche:
         return []
@@ -333,7 +363,9 @@ def cerca_con_diagnosi(query, top=8, area=None, al=None):
     l'API e la CLI: un risultato senza giudizio sulla sua qualita induce a fidarsi
     anche quando non si dovrebbe."""
     risultati = cerca(query, top=top, area=area, al=al)
-    diag = diagnosi(query, cerca_bm25(query))
+    diag = diagnosi(query, cerca_bm25(query, area=area, al=al))
+    if not risultati:
+        diag = diagnosi(query, [])
     if risultati and all(r.get("scaduto") for r in risultati[:3]):
         diag["motivo"] += (" — ATTENZIONE: i primi risultati sono fatti scaduti; "
                            "cio' che li sostituisce e' indicato in 'sostituito_da'")

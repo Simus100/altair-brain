@@ -15,7 +15,7 @@
     "semantic_hash": ""
   },
   "engine/LESSONS.md": {
-    "mtime": 1790369936.2574172,
+    "mtime": 1791067378.57757,
     "ast_hash": "7e9f5742ef6dcb61ace263b0ee4ee9a5",
     "semantic_hash": ""
   },
@@ -40,23 +40,28 @@
     "semantic_hash": ""
   },
   "engine/digest/ricette.json": {
-    "mtime": 1790369936.3470647,
-    "ast_hash": "cdbefcf70608a48548fa249c3dce980c",
+    "mtime": 1791067378.7578673,
+    "ast_hash": "910983957c6dfe71f1a61b3ee33b82d0",
     "semantic_hash": ""
   },
   "engine/digest/tecniche.json": {
-    "mtime": 1790369936.348069,
-    "ast_hash": "8803459b7e9dc097f1e295e520a58ada",
+    "mtime": 1791067378.7578673,
+    "ast_hash": "1373ab366962a013eee90c989cdbd228",
     "semantic_hash": ""
   },
   "engine/search_index.json": {
-    "mtime": 1790369936.2920835,
-    "ast_hash": "adc786824e5bab06a6a1ed25b372c53a",
+    "mtime": 1791067378.6502373,
+    "ast_hash": "c00490aaced1654cba983dbdcb6eb1cb",
     "semantic_hash": ""
   },
   "brain.json": {
     "mtime": 1790369643.0243347,
     "ast_hash": "55a5a000b094633e0817bbb0bf7163ce",
+    "semantic_hash": ""
+  },
+  "log.md": {
+    "mtime": 1790410664.3583071,
+    "ast_hash": "c1e8e61d13e7697aea66d5dc3b559c73",
     "semantic_hash": ""
   }
 }

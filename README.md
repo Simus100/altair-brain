@@ -49,8 +49,8 @@ an operational brain that AIs think with — and keeps it correct over time.*
 ```
 
 - **Macro-areas** (`areas.json`) with a **deterministic router**: a query is scoped to the
-  right area subgraph — *performance and security by construction* (scope = which file you
-  may read, not a filter on results).
+  right area subgraph. This narrows retrieval; it is **not an authorization boundary**:
+  the current API token grants access to the whole served brain, including administration.
 - **Curated cross-area bridges** (`engine/bridges.json`) connect domains explicitly, so
   distinct fields start to inform each other.
 
@@ -154,6 +154,9 @@ python tools/brain_upgrade.py --verifica                  # can this engine rebu
 ```
 
 To change the default permanently, set `attivo` in `brains/brains.json`.
+An invalid explicit path or registry now stops the operation: it never silently selects
+another brain. See the [system audit](AUDIT_SISTEMA_2026-10-04.md) for verified behavior,
+corrected defects, and remaining production limits.
 
 **Running a brain outside this repo** means *exporting* it, not copying its folder:
 

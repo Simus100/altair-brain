@@ -74,6 +74,13 @@ def pota(g):
     """Ritorna (grafo potato, nodi rimossi, archi rimossi). Deterministico."""
     da_togliere = {n["id"] for n in g["nodes"]
                    if _rel(n).startswith(ESCLUSE)}
+    # graphify crea riferimenti AST esterni senza source_file (es. classi di
+    # libreria). Se la potatura elimina tutto il codice che li cita, restano
+    # isolati: non sono conoscenza del brain e vanno tolti con i loro chiamanti.
+    collegati = {e[k] for e in g['links'] for k in ('source', 'target')
+                 if e.get('source') not in da_togliere and e.get('target') not in da_togliere}
+    da_togliere.update(n['id'] for n in g['nodes'] if not _rel(n)
+                       and n.get('file_type') == 'code' and n['id'] not in collegati)
     if not da_togliere:
         return g, 0, 0
     nodi_prima, archi_prima = len(g["nodes"]), len(g["links"])

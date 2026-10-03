@@ -127,6 +127,9 @@ def pacchetto(query, budget_token=2000, area=None):
         visti.add(r["file"])
         voce = {"file": r["file"], "titolo": r["titolo"], "area": r["area"],
                 "testo": r["estratto"]}
+        for campo in ("scaduto", "sostituito_da"):
+            if r.get(campo):
+                voce[campo] = r[campo]
         if r.get("memoria"):
             voce["memoria"] = r["memoria"]["nota"]
         frammenti.append(voce)
@@ -199,6 +202,9 @@ def come_testo(p):
         r.append("## Conoscenza pertinente")
         for f in p["frammenti"]:
             r.append(f"### {f['titolo']}  _({f['file']})_")
+            if f.get("scaduto"):
+                r.append(f"SCADUTO il {f['scaduto']}; sostituito da: "
+                         f"{f.get('sostituito_da', 'non indicato')}.")
             if f.get("memoria"):
                 r.append(f"_memoria: {f['memoria']}_")
             r.append(f["testo"])

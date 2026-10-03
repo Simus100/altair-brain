@@ -7,7 +7,7 @@ config, esecuzione sicura di graphify (argomenti a lista, MAI shell), lettura fi
 router per-area, oracle, inbox (con anti path-traversal), feedback, health.
 Nessuna API a pagamento.
 """
-import json, os, re, shutil, subprocess, sys, time
+import json, os, re, shutil, subprocess, sys, time, uuid
 from pathlib import Path
 
 # TRE CARTELLE, NON UNA. Finche' il brain dell'autore stava nella radice del repo,
@@ -28,7 +28,10 @@ def _risolvi_brain() -> Path:
     esplicito = os.environ.get("ALTAIR_BRAIN")
     if esplicito:
         p = Path(esplicito)
-        return (p if p.is_absolute() else REPO / p).resolve()
+        p = (p if p.is_absolute() else REPO / p).resolve()
+        if not p.is_dir():
+            raise ValueError(f"ALTAIR_BRAIN non esiste: {p}")
+        return p
     # Compatibilita': ALTAIR_REPO_DIR che punta gia' a un brain (ha il suo
     # areas.json). E' la configurazione di un'istanza autosufficiente come core/.
     if (REPO / "areas.json").exists():
@@ -207,6 +210,12 @@ def search(q: str, top: int = 8, area: str = None, al: str = None) -> dict:
         raise BrainError(400, "Nome area non valido.")
     if al and not _SAFE_DATA.match(al):
         raise BrainError(400, "Data non valida: usa AAAA-MM-GG.")
+    if al:
+        from datetime import date
+        try:
+            date.fromisoformat(al)
+        except ValueError:
+            raise BrainError(400, "Data di calendario non valida.")
     top = max(1, min(int(top or 8), 50))
     try:
         from tools.search import cerca_con_diagnosi
@@ -239,6 +248,8 @@ def context_pack(q: str, budget: int = 2000, area: str = None) -> dict:
 
 # ---------------- oracle ----------------
 def oracle_cast(question: str = None, seed=None) -> dict:
+    if not (BRAIN / "engine" / "iching.db.json").is_file():
+        raise BrainError(503, "Oracle non disponibile in questo brain: training non adottato.")
     if seed is not None:
         try:
             seed = int(seed)
@@ -287,17 +298,19 @@ def capture(text: str, title: str = None, area_hint: str = None, source: str = N
         raise BrainError(400, "area_hint non valida.")
     INBOX_DIR.mkdir(parents=True, exist_ok=True)
     ts = time.strftime("%Y%m%d_%H%M%S")
-    name = f"{ts}_{_slug(title or text[:40])}.md"
+    # Lo stesso titolo nello stesso secondo e' normale con piu' client.
+    # ID distinto e apertura esclusiva: una cattura non sovrascrive mai un'altra.
+    name = f"{ts}_{_slug(title or text[:40])}_{uuid.uuid4().hex}.md"
     front = ["---", f"date: {time.strftime('%Y-%m-%dT%H:%M:%S')}"]
     if title:
-        front.append(f"title: {title}")
+        front.append(f"title: {json.dumps(title, ensure_ascii=False)}")
     if area_hint:
         front.append(f"area_hint: {area_hint}")
     if source:
-        front.append(f"source: {source}")
+        front.append(f"source: {json.dumps(source, ensure_ascii=False)}")
     front.append("---")
-    (INBOX_DIR / name).write_text("\n".join(front) + "\n\n" + text.strip() + "\n",
-                                  encoding="utf-8", newline="\n")
+    with (INBOX_DIR / name).open("x", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(front) + "\n\n" + text.strip() + "\n")
     return {"id": name}
 
 
@@ -348,8 +361,11 @@ def save_feedback(question: str, answer: str, outcome: str = "useful",
     if correction:
         args += ["--correction", correction]
     out = run_graphify(args)
-    LESSONS.parent.mkdir(parents=True, exist_ok=True)
-    run_graphify(["reflect", "--memory-dir", str(MEMORY_DIR), "--out", str(LESSONS),
+    # La riflessione di graphify non contiene le regole curate in lessons.jsonl:
+    # non puo' sovrascrivere engine/LESSONS.md, il prior letto dagli agenti.
+    reflection = BRAIN / "graphify-out" / "reflections" / "LESSONS.md"
+    reflection.parent.mkdir(parents=True, exist_ok=True)
+    run_graphify(["reflect", "--memory-dir", str(MEMORY_DIR), "--out", str(reflection),
                   "--graph", str(BRAIN / "graphify-out" / "graph.json")])
     return out.strip()
 

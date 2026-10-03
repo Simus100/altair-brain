@@ -39,6 +39,7 @@ if __name__ == "__main__":
         pass          # tool eseguito fuori dal repo: si perde la protezione, non il tool
 
 INDICE = os.path.join(BRAIN, "engine", "search_index.json")
+from tools.search import impronta_corpus
 OUT_DIR = os.path.join(BRAIN, "graphify-out", "search")
 OUT = os.path.join(OUT_DIR, "dense.json")
 
@@ -70,6 +71,7 @@ os.makedirs(OUT_DIR, exist_ok=True)
 with open(OUT, "w", encoding="utf-8", newline="\n") as f:
     json.dump({
         "modello": MODELLO,
+        "corpus_sha256": impronta_corpus(idx["documenti"]),
         "n_documenti": len(testi),
         "dimensioni": int(vettori.shape[1]),
         "vettori": [[round(float(x), 6) for x in v] for v in vettori],

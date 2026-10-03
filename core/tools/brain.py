@@ -35,6 +35,7 @@ def brain_root(root: str = ROOT) -> str:
         p = esplicito if os.path.isabs(esplicito) else os.path.join(root, esplicito)
         if os.path.isdir(p):
             return os.path.abspath(p)
+        raise ValueError(f"ALTAIR_BRAIN non esiste: {p}. Nessun altro brain selezionato.")
 
     registro = os.path.join(root, "brains", "brains.json")
     if os.path.exists(registro):
@@ -48,8 +49,11 @@ def brain_root(root: str = ROOT) -> str:
                         p = os.path.join(root, b["percorso"])
                         if os.path.isdir(p):
                             return os.path.abspath(p)
-        except (OSError, ValueError, KeyError):
-            pass          # registro illeggibile: si ricade sul repo, non si esplode
+                        raise ValueError(f"Cartella del brain attivo assente: {p}")
+            raise ValueError("Brain attivo assente dal registro")
+        except (OSError, ValueError, KeyError) as exc:
+            # Un errore di configurazione non deve deviare letture o scritture.
+            raise ValueError(f"Registro brain non utilizzabile: {registro}: {exc}") from exc
 
     return root
 

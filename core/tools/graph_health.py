@@ -51,6 +51,15 @@ for e in g["links"]:
         adj[t].add(s)
 
 problems = []
+if len(adj) != len(nodes):
+    problems.append("ID di nodo duplicati")
+mancanti = [n['id'] for n in nodes if sf[n['id']] and
+            not os.path.isfile(os.path.join(BRAIN, sf[n['id']]))]
+if mancanti:
+    problems.append(f"sorgenti assenti per {len(mancanti)} nodi: {mancanti[:3]}")
+pendenti = [e for e in g['links'] if e.get('source') not in adj or e.get('target') not in adj]
+if pendenti:
+    problems.append(f"archi con estremi assenti: {len(pendenti)}")
 
 def components_of(prefix):
     ids = {i for i in adj if sf[i].startswith(prefix)}
