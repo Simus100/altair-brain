@@ -201,7 +201,7 @@ sim.on("tick", () => {
 HTML = (HTML.replace("__DATA__", DATA).replace("__COLORS__", color_js)
             .replace("__LEGEND_AREAS__", legend_areas))
 with open(OUT_HTML, "w", encoding="utf-8", newline="\n") as f:
-    f.write(HTML)
+    f.write("\n".join(line.rstrip() for line in HTML.split("\n")))
 
 print("Vista compatta generata:")
 print("  nodi:", len(nodes), " edge:", len(edges), " ponti intercampo:", bridge_count)

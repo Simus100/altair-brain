@@ -12,7 +12,7 @@
 ## Cos'è, in un minuto
 
 Hai un "cervello" fatto di file, dentro questa cartella (che è anche su GitHub).
-- Metti **conoscenza grezza** in `raw/<area>/` (es. `raw/finanza/`).
+- Metti **conoscenza grezza** in `raw/<area>/` (es. `raw/<area>/`).
 - Un grafo collega tutto e le AI possono **interrogarlo, ragionarci e impararci sopra**.
 - Ogni modifica che pubblichi (push) arriva **da sola** alla VPS e a tutti i dispositivi.
 - Non serve pagare nessuna API: funziona tutto in locale.

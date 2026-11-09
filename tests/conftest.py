@@ -88,6 +88,7 @@ PRESUPPOSTI = {
     "report_verificati": (_ha_report_verificati, "nessun report verificato da cui estrarre il metodo"),
     "esperienza": (_ha_esperienza, "meno di 20 registrazioni: memoria non ancora messa alla prova"),
     "scrittura": (_ha_plugin_scrittura, "plugin scrittura non installato"),
+    "motore_scrittura": (lambda: any((BRAIN / "raw").glob("*/*/stylometry.py")), "motore stilometrico opzionale non installato"),
 }
 
 # Chi presuppone cosa. Chiave: nome del file di test, oppure 'file::test' per i
@@ -95,6 +96,16 @@ PRESUPPOSTI = {
 # guardie che dipendono da un training — test_api ne e' l'esempio: l'autenticazione
 # vale in ogni brain, il modello tipato no.
 RICHIEDE = {
+    "test_style_check.py::test_gli_anglicismi_veri_vengono_ancora_visti": "motore_scrittura",
+    "test_tools.py::test_attribuzione_6_linea4_da_59": "training",
+    "test_tools.py::test_attribuzione_43_quattro_mobili_da_16": "training",
+    "test_tools.py::test_attribuzione_senza_mobili_e_range": "training",
+    "test_tools.py::test_cast_seedato_riproducibile": "training",
+    "test_tools.py::test_ricerca_tag_suggerisce_43": "training",
+    "test_tools.py::test_frontmatter_idempotente_e_protegge_gli_strati_generati": "training",
+    "test_tools.py::test_frontmatter_presente_sulle_fonti": "corpus_data_science",
+    "test_golden.py": "corpus_data_science",
+    "test_corpus_divulgazione.py": "report_verificati",
     "test_officina.py": "registro",
     "test_motore_unico.py": "registro",
     "test_esperienza.py::test_il_reasoner_legge_il_prior_che_viene_davvero_generato": "training",
@@ -133,6 +144,10 @@ RICHIEDE = {
 def pytest_collection_modifyitems(config, items):
     for item in items:
         file = pathlib.Path(str(item.fspath)).name
+        if 'style_check.py' in item.name and not any((BRAIN / 'raw').glob('*/*/stylometry.py')):
+            item.add_marker(pytest.mark.skip(reason='optional writing engine not installed'))
+        if 'oracle_cast.py' in item.name and not _ha_training():
+            item.add_marker(pytest.mark.skip(reason='oracle training not adopted'))
         chiave = RICHIEDE.get(f"{file}::{item.originalname or item.name}") or RICHIEDE.get(file)
         if not chiave:
             continue

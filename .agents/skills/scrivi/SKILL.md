@@ -10,7 +10,7 @@ description: Scrive o revisiona un testo applicando la dottrina della prosa del 
 > I comandi `python tools/...` si lanciano dalla radice del repo e trovano il brain da soli.
 
 Il brain non serve solo a ricordare: **scrive**. Report editoriali, pagine curate, note
-di metodo. Questa skill applica a quella prosa la dottrina dell'area `creativita`
+di metodo. Cerca prima nel brain attivo le pagine di stile configurate. Se mancano, dichiara che la dottrina opzionale non è installata e usa le istruzioni esplicite dell’utente. I percorsi `wiki/<area>/` sotto sono modelli da risolvere con la ricerca, non file garantiti. Questa skill applica a quella prosa la dottrina dell'area scelta
 (distillata dal sistema BookForge) e la sua verifica misurabile.
 
 ## L'ordine conta — non invertirlo
@@ -21,7 +21,7 @@ proprio i tic che vorresti evitare.
 
 ### In stesura vale SOLO la Carta
 
-Leggi `wiki/creativita/carta-della-prosa.md`. Sono imperativi positivi:
+Leggi `wiki/<area>/carta-della-prosa.md`. Sono imperativi positivi:
 
 - **Concreto, non astratto** — il moltiplicatore numero uno. Non «una macchina vecchia»
   ma «una Panda col paraurti tenuto su dal fil di ferro».
@@ -53,7 +53,7 @@ in modo pulito, la sintassi semplice.
      LLM. Dice *dove guardare*. **L'orecchio batte i numeri**: uno staccato voluto non
      è un difetto perché una soglia dice così.
 
-2. **Apri ora** `wiki/creativita/anti-ai.md` (mai prima) e orientati sui due fallimenti:
+2. **Apri ora** `wiki/<area>/anti-ai.md` (mai prima) e orientati sui due fallimenti:
    se la pagina è competente ma **anonima** manca voce — aggiungi specifico e opinione;
    se è brillante a *ogni* riga e in posa, **togli lucidatura**.
 
@@ -64,7 +64,7 @@ in modo pulito, la sintassi semplice.
 
 ## Per testi lunghi o seriali
 
-Consulta `wiki/creativita/stato-narrativo.md`. L'idea più riutilizzabile è il **Ledger
+Consulta `wiki/<area>/stato-narrativo.md`. L'idea più riutilizzabile è il **Ledger
 PIP**: annota come hai aperto e chiuso ogni pezzo, quale senso e quale campo metaforico
 dominavano — e nel pezzo successivo **scegli diverso**. La ripetizione invisibile, pezzo
 dopo pezzo, è ciò che fa «suonare AI» una serie anche quando la singola pagina è buona.
@@ -72,7 +72,7 @@ Vale per i report quanto per i capitoli.
 
 ## Se serve calibrare il registro
 
-`wiki/creativita/styledna.md` — 12 assi da 1 a 10. Ricorda i **tetti di salute**
+`wiki/<area>/styledna.md` — 12 assi da 1 a 10. Ricorda i **tetti di salute**
 (ST ≤ 7, SUB ≤ 7, RV ≤ 7): oltre, la prosa diventa fredda e oscura, ed è una lezione
 pagata su un progetto reale. Una deroga si **guadagna** con una scena-prova verificata,
 non si dichiara.

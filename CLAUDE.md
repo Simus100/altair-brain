@@ -1,3 +1,8 @@
+> Public distribution: `brains/starter/` is virgin. Installed brains and the local
+> registry are ignored by Git. On a fresh clone, tools/brain.py selects the public
+> default. AION is optional; its uninstalled reference package lives in training/aion/.
+> Historical examples below may describe a locally installed brain, not shipped content.
+
 ## Questo repo e un'OFFICINA, non un brain
 
     tools/ tests/ server/   il MOTORE — esiste una volta sola, versione in VERSION
@@ -11,7 +16,7 @@ prodotto e la sua conoscenza si toccavano.
 
 **Percorsi.** In questo documento, nelle skill e nelle guide, `raw/`, `wiki/`, `engine/`,
 `reports/`, `metrics/`, `graphify-out/` e `areas.json` sono relativi al **brain attivo**:
-`python tools/brain.py` ne stampa la cartella (oggi `brains/aion`). `tools/`, `tests/`,
+`python tools/brain.py` ne stampa la cartella (esegui il comando per verificarlo). `tools/`, `tests/`,
 `server/`, `core/` e `brains/` sono relativi alla radice. I comandi si lanciano dalla
 radice: ogni tool trova il brain da solo. `tests/test_officina.py` verifica che ogni
 percorso citato esista in uno dei due posti.
@@ -112,7 +117,7 @@ oracle e GENERATO da `raw/aion/aion-oracle.md`; l'indice di ricerca e GENERATO d
 
 - **Struttura** → `graphify query "..."` : nodi e relazioni. Prima scelta per orientarsi.
 - **Contenuto** → `python tools/search.py "..."` : BM25 sul testo, **inclusi i .txt che
-  graphify non indicizza** (le note di `raw/data-science/` sono visibili solo qui).
+  graphify non indicizza** (le note di `raw/<area>/` sono visibili solo qui).
   Endpoint `/v1/search`, tool MCP `brain_search`. Semantico opzionale: vedi
   `tools/build_dense_index.py`. **Il tempo conta**: un fatto scaduto (`valid_until`)
   scende in fondo marcato con cio' che lo sostituisce; `--al AAAA-MM-GG` (API: `?al=`)
@@ -184,8 +189,8 @@ consumatori (VPS, dispositivi) ricevono solo un brain valido.
 
 Report, pagine curate, note lunghe: la prosa del brain segue la dottrina dell'area
 `creativita` (distillata da BookForge). **L'ordine non si inverte**: in stesura vale
-solo `wiki/creativita/carta-della-prosa.md` (imperativi positivi); l'elenco dei tic
-(`wiki/creativita/anti-ai.md`) si apre **in revisione**, mai durante il draft.
+solo `wiki/<area>/carta-della-prosa.md` (imperativi positivi); l'elenco dei tic
+(`wiki/<area>/anti-ai.md`) si apre **in revisione**, mai durante il draft.
 
 Regola sovrana: *se una frase va riletta per essere capita, va riscritta piu semplice* —
 batte ogni altra regola. Verifica misurabile: `python tools/style_check.py <file>`

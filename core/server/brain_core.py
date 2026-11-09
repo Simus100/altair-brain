@@ -28,7 +28,8 @@ def _risolvi_brain() -> Path:
     esplicito = os.environ.get("ALTAIR_BRAIN")
     if esplicito:
         p = Path(esplicito)
-        p = (p if p.is_absolute() else REPO / p).resolve()
+        base = ENGINE if (REPO / 'areas.json').exists() else REPO
+        p = (p if p.is_absolute() else base / p).resolve()
         if not p.is_dir():
             raise ValueError(f"ALTAIR_BRAIN non esiste: {p}")
         return p

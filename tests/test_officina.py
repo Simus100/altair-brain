@@ -105,13 +105,17 @@ def test_il_brain_si_puo_spostare():
     import importlib
     from tools import brain as mod
     finto = ROOT / "core"          # una cartella che ha la forma di un brain
+    precedente = os.environ.get("ALTAIR_BRAIN")
     os.environ["ALTAIR_BRAIN"] = "core"
     try:
         importlib.reload(mod)
         assert mod.BRAIN == str(finto.resolve()), \
             "ALTAIR_BRAIN non sposta il contenuto: il motore resta legato al repo"
     finally:
-        os.environ.pop("ALTAIR_BRAIN", None)
+        if precedente is None:
+            os.environ.pop("ALTAIR_BRAIN", None)
+        else:
+            os.environ["ALTAIR_BRAIN"] = precedente
         importlib.reload(mod)
 
 
@@ -255,6 +259,12 @@ def test_la_ci_non_verifica_percorsi_inesistenti():
     import re
     ci = (ROOT / ".github" / "workflows" / "validate.yml").read_text(encoding="utf-8")
     percorsi = re.findall(r'git diff --quiet(?:\s+HEAD~1 HEAD)? -- ([^;\n]+)', ci)
+    if not percorsi:
+        assert 'python tools/rebuild_all.py' in ci
+        assert 'python -m pytest tests/ -q' in ci
+        assert 'python tools/check_distribution.py' in ci
+        assert '--training aion' in ci
+        return
     controllati = []
     for gruppo in percorsi:
         for p in gruppo.split():

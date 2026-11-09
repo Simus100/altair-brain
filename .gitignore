@@ -1,4 +1,10 @@
 .env
+# Acquired brains and the active-brain registry belong to this installation.
+/brains/*
+!/brains/starter/
+!/brains/brains.default.json
+!/brains/README.md
+/output/
 *.key
 **/secrets.*
 **/graphify-out/cache/
@@ -43,3 +49,7 @@ desktop.ini
 
 # artefatti di compilazione dentro lo scheletro generato
 core/**/__pycache__/
+
+.playwright-cli/
+
+.venv/

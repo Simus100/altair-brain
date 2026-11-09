@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "attivo": "starter",
+  "brains": [
+    {
+      "nome": "starter",
+      "percorso": "brains/starter"
+    }
+  ]
+}

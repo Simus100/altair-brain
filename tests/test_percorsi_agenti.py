@@ -75,7 +75,7 @@ def _ignorati(candidati):
     ignorati = set()
     for r in esito.stdout.decode("utf-8").splitlines():
         meta, _, percorso = r.partition("\t")
-        if meta.split(":", 2)[-1].strip():
+        if meta.split(":", 2)[-1].strip() and (meta.split(":", 2)[-1].strip() != "/brains/*" or percorso.strip().rstrip("/") in candidati):
             ignorati.add(percorso.strip().rstrip("/"))
     return {p for p in candidati
             if any(q.rstrip("/").endswith(p) for q in ignorati)}
@@ -87,7 +87,7 @@ def _rotti(testo):
         p = m.group(1).rstrip("/.")
         if any(c in p for c in "<*{…"):
             continue
-        if not ((ROOT / p).exists() or (BRAIN / p).exists()):
+        if not ((ROOT / p).exists() or (BRAIN / p).exists() or (ROOT / "training/aion" / p).exists() or ((p == "wiki/aion" or p.startswith("wiki/aion/")) and (ROOT / "training/aion/engine/aion.model.json").exists())):
             assenti.add(p)
     return sorted(assenti - _ignorati(assenti)) if assenti else []
 

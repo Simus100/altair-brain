@@ -310,7 +310,7 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
   3. rilancia `link_suggest.py` e conta le proposte **INTERCAMPO**: se restano 0, il
      semantico non sta aiutando su questo corpus e la dipendenza non si ripaga.
 - **Accettare le proposte di collegamento** (`python tools/link_suggest.py`): ~53
-  proposte azionabili in attesa in `wiki/data-science/`. Accettarne una = aggiungere
+  proposte azionabili in attesa in `wiki/<area>/`. Accettarne una = aggiungere
   il `[[wikilink]]` nella pagina di partenza e rilanciare `rebuild_all`. E il modo
   diretto per far risalire il `grado_medio` in `metrics/graph_metrics.csv`, sceso a
   2.54 dopo l'ingresso delle 23 note grezze (che ancora non citano nessuno).
@@ -318,7 +318,7 @@ prossima passata CI; I2.1 appena esiste la seconda macroarea popolata; il resto 
   aggiunta in `engine/aion.model.json`, non nella pagina.
 
 - **Normalizzare i nomi in kebab-case** (facoltativo, cosmetico ma da convenzione):
-  `raw/data-science/` contiene nomi con spazi e maiuscole (`CALCOLO QUARTILE E
+  `raw/<area>/` contiene nomi con spazi e maiuscole (`CALCOLO QUARTILE E
   INDIVIDUAZIONE OUTLIER.md`, `PROJECT WORK/`), mentre `raw/README.md` prescrive
   kebab-case ascii. Funziona tutto lo stesso — i nodi del grafo portano quei nomi
   come etichette — ma un rename con `git mv` renderebbe le etichette leggibili e i
@@ -401,9 +401,9 @@ banco in `tests/golden_queries.json`, non a impressione.
   - 44 test verdi, pipeline a 12 passi, CI a 18 step.
 
   **LIMITE RISOLTO (2026-08-06)**: graphify indicizza solo `.md`, quindi le 23 note
-  `.txt` di `raw/data-science/` (la metodologia dei project work) erano fuori dal
+  `.txt` di `raw/<area>/` (la metodologia dei project work) erano fuori dal
   grafo (4 nodi). Convertite con `git mv` (storia preservata, contenuto identico):
-  `raw/data-science` passa a **55 nodi**, gli archi di provenienza da 8 a 31 (le
+  `raw/<area>` passa a **55 nodi**, gli archi di provenienza da 8 a 31 (le
   mappe dirette del registro ora agganciano davvero). Adeguata anche la granularita
   dell'indice: le note in prosa senza titoli markdown vengono spezzate a blocchi,
   altrimenti finirebbero in un frammento unico e BM25 penalizza i documenti lunghi.

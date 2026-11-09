@@ -63,7 +63,7 @@ STEPS = [
     ("wiki dal modello", [PY, "tools/gen_wiki_from_model.py"]),
     ("validazione modello", [PY, "tools/validate_model.py"]),
     ("DB oracle", [PY, "tools/build_iching_db.py"]),
-    ("grafo (graphify update)", ["graphify", "update", "."]),
+    ("grafo (graphify update isolato)", [PY, "tools/extract_graph.py"]),
     ("potatura del grafo (artefatti fuori)", [PY, "tools/graph_prune.py"]),
     ("ponti intercampo", [PY, "tools/apply_bridges.py"]),
     ("provenienza fonte->conoscenza", [PY, "tools/apply_provenance.py"]),

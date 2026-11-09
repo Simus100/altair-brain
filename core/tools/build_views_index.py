@@ -66,6 +66,14 @@ def brain_corrente():
 
 
 def altri_brain():
+    # The distributable starter must not advertise brains installed on its author’s PC.
+    pubblico = os.path.join(ROOT, 'brains', 'brains.default.json')
+    if os.path.isfile(pubblico):
+        with open(pubblico, encoding='utf-8') as f:
+            pubblici = json.load(f).get('brains', [])
+        if any(os.path.abspath(os.path.join(ROOT, b['percorso'])) == os.path.abspath(BRAIN)
+               for b in pubblici):
+            return []
     """Gli altri brain del repo, con la porta di ciascuno. Vuoto in un'istanza
     autosufficiente: li' non c'e' un registro, e non ci sono altri brain da vedere."""
     # La condizione e' l'ESISTENZA del registro, non "BRAIN coincide con ROOT":

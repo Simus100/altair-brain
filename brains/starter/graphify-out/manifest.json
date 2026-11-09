@@ -1,0 +1,32 @@
+{
+  "engine/bridges.json": {
+    "mtime": 1791067991.2123084,
+    "ast_hash": "919fd351359aac939969f6dad97f27c2",
+    "semantic_hash": ""
+  },
+  "engine/provenance.json": {
+    "mtime": 1791067991.2123084,
+    "ast_hash": "d5dbc2eaff39e24b0bb1279090ea6577",
+    "semantic_hash": ""
+  },
+  "engine/LESSONS.md": {
+    "mtime": 1794256719.2211497,
+    "ast_hash": "7e9f5742ef6dcb61ace263b0ee4ee9a5",
+    "semantic_hash": ""
+  },
+  "raw/README.md": {
+    "mtime": 1791067991.2133083,
+    "ast_hash": "a88adcaad55d068168b41e915040fcf9",
+    "semantic_hash": ""
+  },
+  "raw/_inbox/README.md": {
+    "mtime": 1791067991.2133083,
+    "ast_hash": "82000f75ce5c5c2a29cfa43bf1b6d0a6",
+    "semantic_hash": ""
+  },
+  "engine/search_index.json": {
+    "mtime": 1794256719.3089488,
+    "ast_hash": "fc5ec727e944a10bb5fe4bdb47ecc08f",
+    "semantic_hash": ""
+  }
+}

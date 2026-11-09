@@ -74,7 +74,7 @@ TOOL_ESCLUSI = {
     "build_core.py",              # genera lo scheletro: appartiene alla sorgente, non al prodotto
     # Strumenti dell'OFFICINA: servono a chi gestisce piu' brain accanto al motore.
     # Nello scheletro, che e' un brain solo, non avrebbero nulla su cui lavorare.
-    "brain_new.py", "brain_export.py", "build_code_graph.py",
+    "brain_new.py", "brain_export.py", "build_code_graph.py", "check_distribution.py",
 }
 # SECONDO PLUGIN: la verifica stilometrica. Non e' motore perche' importa un engine
 # di analisi che vive nel materiale grezzo (raw/<area>/bookforge/stylometry.py): senza
@@ -137,6 +137,9 @@ def brain_col_training(nome):
     """Il brain da cui si prende un training: quello che lo dichiara adottato nel
     manifesto. Non il brain attivo: se l'attivo fosse un brain senza training, il
     pacchetto uscirebbe vuoto."""
+    pacchetto = os.path.join(ROOT, "training", nome)
+    if os.path.isdir(pacchetto):
+        return pacchetto
     reg = os.path.join(ROOT, "brains", "brains.json")
     if os.path.exists(reg):
         with open(reg, encoding="utf-8") as f:
@@ -198,7 +201,22 @@ def costruisci():
     # 3. API e CI
     for f in ("app.py", "brain_core.py", "mcp_server.py", "README.md"):
         _copia(f"server/{f}", f"server/{f}")
-    _copia(".github/workflows/validate.yml", ".github/workflows/validate.yml")
+    _scrivi(".github/workflows/validate.yml", """name: validate standalone brain
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: pip install pytest jsonschema httpx fastapi graphifyy==0.9.2
+      - run: python tools/rebuild_all.py
+      - run: python -m pytest tests/ -q
+""")
 
     # 4. TRAINING AION: un imprinting, non uno strumento. Il contenuto (modello,
     # reasoner, fonti) si prende dal brain che l'ha ADOTTATO; skill e strumenti dal
@@ -213,7 +231,10 @@ def costruisci():
     # La catena di provenienza del training: da quali fonti deriva la sua wiki. Senza,
     # un brain che adottava AION riceveva la wiki ma nessuno dichiarava da dove venisse
     # (l'atlante non aveva archi di provenienza: lo ha mostrato un'installazione vergine).
-    with open(os.path.join(fonte, "engine", "provenance.json"), encoding="utf-8") as fh:
+    prov_path = os.path.join(fonte, "provenance.json")
+    if not os.path.isfile(prov_path):
+        prov_path = os.path.join(fonte, "engine", "provenance.json")
+    with open(prov_path, encoding="utf-8") as fh:
         prov = json.load(fh)
     parte = {"ancoraggi_area": [x for x in prov.get("ancoraggi_area", [])
                                 if x.get("indice", "").startswith("wiki/aion/")],

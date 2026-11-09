@@ -38,6 +38,8 @@ def brain_root(root: str = ROOT) -> str:
         raise ValueError(f"ALTAIR_BRAIN non esiste: {p}. Nessun altro brain selezionato.")
 
     registro = os.path.join(root, "brains", "brains.json")
+    if not os.path.exists(registro):
+        registro = os.path.join(root, "brains", "brains.default.json")
     if os.path.exists(registro):
         try:
             with open(registro, encoding="utf-8") as f:

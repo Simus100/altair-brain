@@ -1,0 +1,151 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "area": "core",
+ "built_at_commit": null,
+ "nodes": [
+  {
+   "label": "LESSONS.md",
+   "file_type": "document",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "engine_lessons",
+   "community": 1,
+   "norm_label": "lessons.md"
+  },
+  {
+   "label": "Lezioni apprese — memoria operativa del brain",
+   "file_type": "document",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
+   "community": 1,
+   "norm_label": "lezioni apprese — memoria operativa del brain"
+  },
+  {
+   "label": "Nessuna lezione ancora",
+   "file_type": "document",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L15",
+   "_origin": "ast",
+   "id": "engine_lessons_nessuna_lezione_ancora",
+   "community": 1,
+   "norm_label": "nessuna lezione ancora"
+  },
+  {
+   "label": "Sintesi",
+   "file_type": "document",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L8",
+   "_origin": "ast",
+   "id": "engine_lessons_sintesi",
+   "community": 1,
+   "norm_label": "sintesi"
+  },
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "raw/README.md",
+   "source_location": "L1",
+   "_origin": "ast",
+   "id": "raw_readme",
+   "community": 0,
+   "norm_label": "readme.md"
+  },
+  {
+   "label": "Front-matter standard",
+   "file_type": "document",
+   "source_file": "raw/README.md",
+   "source_location": "L15",
+   "_origin": "ast",
+   "id": "raw_readme_front_matter_standard",
+   "community": 0,
+   "norm_label": "front-matter standard"
+  },
+  {
+   "label": "raw/ — materiale grezzo per macroarea",
+   "file_type": "document",
+   "source_file": "raw/README.md",
+   "source_location": "L10",
+   "_origin": "ast",
+   "id": "raw_readme_raw_materiale_grezzo_per_macroarea",
+   "community": 0,
+   "norm_label": "raw/ — materiale grezzo per macroarea"
+  },
+  {
+   "label": "Regole",
+   "file_type": "document",
+   "source_file": "raw/README.md",
+   "source_location": "L33",
+   "_origin": "ast",
+   "id": "raw_readme_regole",
+   "community": 0,
+   "norm_label": "regole"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L1",
+   "weight": 1.0,
+   "source": "engine_lessons",
+   "target": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
+   "target": "engine_lessons_nessuna_lezione_ancora",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "engine/LESSONS.md",
+   "source_location": "L8",
+   "weight": 1.0,
+   "source": "engine_lessons_lezioni_apprese_memoria_operativa_del_brain",
+   "target": "engine_lessons_sintesi",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/README.md",
+   "source_location": "L10",
+   "weight": 1.0,
+   "source": "raw_readme",
+   "target": "raw_readme_raw_materiale_grezzo_per_macroarea",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/README.md",
+   "source_location": "L15",
+   "weight": 1.0,
+   "source": "raw_readme_raw_materiale_grezzo_per_macroarea",
+   "target": "raw_readme_front_matter_standard",
+   "confidence_score": 1.0
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source_file": "raw/README.md",
+   "source_location": "L33",
+   "weight": 1.0,
+   "source": "raw_readme_raw_materiale_grezzo_per_macroarea",
+   "target": "raw_readme_regole",
+   "confidence_score": 1.0
+  }
+ ]
+}
