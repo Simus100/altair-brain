@@ -10,12 +10,12 @@ Il motore, senza la conoscenza di nessuno. Ci metti la tua.
   esiste nel grafo, non solo nella documentazione.
 - **Freschezza e bi-temporalita**: SLA per area, fatti che scadono senza essere
   cancellati.
-- **Ricerca** BM25 in Python puro, senza dipendenze, con misura di confidenza che
-  dichiara cosa sta misurando.
+- **Ricerca** BM25 in Python puro, senza dipendenze. La confidenza riportata misura
+  il segnale di recupero, non la verita di cio che si trova.
 - **Anello di apprendimento**: le lezioni entrano nel prior del ragionamento solo se
   portano un appiglio esterno verificabile, e il prior ha un tetto di dimensione.
 - **API** con token, rate limit e validazione dell'input.
-- **Guardie**: la suite di test che impedisce alle regole di degradare in silenzio.
+- **Guardie**: test che falliscono quando una di queste regole smette di valere.
 
 ## Partenza
 
@@ -23,7 +23,7 @@ Il motore, senza la conoscenza di nessuno. Ci metti la tua.
 python onboarding.py
 ```
 
-Chiede le tue macroaree e se attivare il plugin AION. Poi:
+Chiede le tue macroaree e se adottare il training AION. Poi:
 
 ```bash
 python tools/rebuild_all.py
