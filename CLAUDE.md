@@ -8,11 +8,10 @@
     tools/ tests/ server/   il MOTORE — esiste una volta sola, versione in VERSION
     core/                   il PRODOTTO — GENERATO da tools/build_core.py, mai a mano
     brains/                 le ISTANZE (solo conoscenza) + il registro brains.json
-    brains/aion/            il brain di riferimento, su cui girano le guardie del motore
+    brains/starter/         il brain vergine pubblicato, su cui gira la CI
 
-Nella radice non c'e' piu' contenuto: e' **solo** lo scheletro. Il brain dell'autore
-sta in `brains/aion/` come qualsiasi altra istanza — era l'ultimo punto in cui il
-prodotto e la sua conoscenza si toccavano.
+Nella radice non c'e' piu' contenuto: e' **solo** lo scheletro. Ogni brain, compreso
+quello dell'autore, sta in `brains/<nome>/` come istanza locale ignorata da Git.
 
 **Percorsi.** In questo documento, nelle skill e nelle guide, `raw/`, `wiki/`, `engine/`,
 `reports/`, `metrics/`, `graphify-out/` e `areas.json` sono relativi al **brain attivo**:

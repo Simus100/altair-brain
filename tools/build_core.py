@@ -69,7 +69,6 @@ TOOL_TRAINING_AION = {
 }
 # Legati a contenuto di questo brain, non generalizzabili come sono.
 TOOL_ESCLUSI = {
-    "apply_procedural_iran.py",   # un singolo report, non un metodo
     "build_dense_index.py",       # livello semantico opzionale, ~2GB di dipendenze
     "build_core.py",              # genera lo scheletro: appartiene alla sorgente, non al prodotto
     # Strumenti dell'OFFICINA: servono a chi gestisce piu' brain accanto al motore.

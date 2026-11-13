@@ -1,224 +1,225 @@
-# GUIDA — uso quotidiano del brain
+# User guide — working with a brain day to day
 
-> I percorsi come `engine/…`, `raw/…`, `wiki/…` stanno dentro il brain che stai usando
-> (`python tools/brain.py` ti dice quale: su un clone nuovo è `brains/starter`). I comandi si danno
-> dalla cartella principale del progetto.
+> Paths such as `engine/…`, `raw/…` and `wiki/…` are inside the brain you are using
+> (`python tools/brain.py` prints which one: `brains/starter` on a fresh clone). Run
+> every command from the repository root.
 
-> Questa guida spiega l'uso quotidiano. Per le specifiche tecniche c'è `ROADMAP.md`,
-> per la panoramica `README.md`, per il deploy sulla VPS `server/README.md`.
-
----
-
-## Cos'è, in un minuto
-
-Un brain è una cartella di file Markdown.
-- Le fonti grezze vanno in `raw/<area>/`, le pagine curate in `wiki/<area>/`.
-- La pipeline ne ricava un grafo e un indice di ricerca, che un assistente AI può
-  interrogare da terminale, via MCP o via HTTP.
-- Se hai una VPS collegata, ogni push le arriva al prossimo aggiornamento automatico.
-- Nessuna API a pagamento: grafo, ricerca e viste si costruiscono in locale.
+> This guide covers daily use. The overview is in `README.md`, technical specs in
+> `ROADMAP.md`, VPS deployment in `server/README.md`. Command-line flags are in
+> Italian (`--nome`, `--aree`, `--domanda`); they are shown here exactly as typed.
 
 ---
 
-## Le 6 cose che farai più spesso
+## What a brain is
 
-### 1. Aggiungere conoscenza (dal PC)
-Metti il file in `raw/_inbox/`, oppure direttamente in `raw/<area>/` se sai già
-dove va. Poi apri l'agente (Claude Code) e digli:
+A brain is a folder of Markdown files.
+- Raw sources go in `raw/<area>/`, curated pages in `wiki/<area>/`.
+- The pipeline builds a graph and a search index from them, which an AI assistant can
+  query from the terminal, over MCP or over HTTP.
+- If a VPS is connected, every push reaches it at the next automatic update.
+- No paid API: graph, search and views are all built locally.
 
-> smista l'inbox    *(usa la skill `/triage`)*
+---
 
-oppure, se hai messo i file già a posto:
+## Everyday tasks
 
-> rigenera il brain e pubblica
+### 1. Add knowledge from your computer
+Put the file in `raw/_inbox/`, or straight into `raw/<area>/` if you already know where
+it belongs. Then open the agent (Claude Code) and say:
 
-L'agente esegue `python tools/rebuild_all.py` (un comando fa tutto: wiki, validazioni,
-grafo, sottografi, viste, salute) e poi commit+push.
+> triage    *(or "smista l'inbox": runs the `/triage` skill)*
 
-### 2. Catturare un'idea dal telefono (o ovunque)
-Con la VPS attiva, manda una richiesta all'API. Conviene salvarla una volta in un
-Comando rapido di iOS o in un'automazione Android:
+or, if the files are already in place:
+
+> rebuild the brain and publish
+
+The agent runs `python tools/rebuild_all.py`, which validates the brain and regenerates
+graph, subgraphs, views and health checks in one pass, then commits and pushes.
+
+### 2. Capture an idea from your phone
+With the VPS running, send one request to the API. Save it once as an iOS Shortcut or
+an Android automation:
 
 ```
-POST https://TUO-DOMINIO/v1/capture
-Authorization: Bearer IL-TUO-TOKEN
-{"text": "l'idea che mi è venuta", "title": "titolo breve"}
+POST https://YOUR-DOMAIN/v1/capture
+Authorization: Bearer YOUR-TOKEN
+{"text": "the idea I just had", "title": "short title"}
 ```
 
-La nota finisce nell'inbox della VPS. Al prossimo "smista l'inbox" dal PC l'agente la
-recupera, la assegna a un'area e la archivia.
+The note lands in the VPS inbox. The next time you sort the inbox from your computer,
+the agent fetches it, assigns it to an area and archives it.
 
-### 3. Interrogare il brain
+### 3. Query the brain
 
-Ci sono due motori, e servono a domande diverse:
+There are two engines, for two kinds of question:
 
-| Cerchi… | Usa | Perché |
+| You are looking for… | Use | Why |
 |---|---|---|
-| un **nome preciso** o come sono collegate le cose | `graphify query "..."` | naviga la **struttura**: nodi e relazioni |
-| un **concetto**, con parole tue | `python tools/search.py "..."` | cerca nel **testo**, anche nelle note `.txt` che il grafo non vede |
+| an **exact name**, or how things connect | `graphify query "..."` | walks the **structure**: nodes and relationships |
+| a **concept**, in your own words | `python tools/search.py "..."` | searches the **text**, including `.txt` notes the graph does not see |
 
-- **Dall'agente:** chiedi ("cosa sa il brain su X?"). Con il training AION puoi
-  usare `/aion <domanda>` per un ragionamento guidato dal suo protocollo.
-- **Da terminale:**
-  - struttura → `graphify query "domanda"` (`--graph graphify-out/areas/<area>/graph.json` per una sola area)
-  - contenuto → `python tools/search.py "domanda" --area <area> --top 5`
-- **Da altri dispositivi:** `GET /v1/query?q=...` (grafo, con router automatico) e
-  `GET /v1/search?q=...` (contenuto). Entrambi col token.
+- **From the agent:** ask ("what does the brain know about X?"). With the AION training
+  you can use `/aion <question>` for reasoning guided by its protocol.
+- **From the terminal:**
+  - structure → `graphify query "question"` (`--graph graphify-out/areas/<area>/graph.json` for one area)
+  - content → `python tools/search.py "question" --area <area> --top 5`
+- **From other devices:** `GET /v1/query?q=...` (graph, with automatic area routing)
+  and `GET /v1/search?q=...` (content). Both need the token.
 
-> La ricerca funziona subito in modalità **lessicale** (BM25, nessuna dipendenza).
-> Per la ricerca **semantica**, che trova anche con parole diverse:
-> `pip install sentence-transformers`, poi `python tools/build_dense_index.py`.
-> Da quel momento le due ricerche vengono fuse. Il pacchetto pesa circa 2 GB.
+> Search works out of the box in **lexical** mode (BM25, no dependencies). For
+> **semantic** search, which also matches different wording:
+> `pip install sentence-transformers`, then `python tools/build_dense_index.py`.
+> From then on the two rankings are fused. The package is about 2 GB.
 
-### 4. Consultare l'oracolo (solo con AION)
-Dall'agente: `/oracle <domanda>`. Il lancio genera sei linee, ricava l'esagramma
-dalla sequenza di Re Wen e calcola linee mobili ed esagramma di trasformazione; la
-lettura segue il protocollo AION.
-Da API: `POST /v1/oracle` con `{"question": "..."}`.
+### 4. Consult the oracle (AION only)
+From the agent: `/oracle <question>`. A cast produces six lines, looks up the hexagram
+in the King Wen sequence and works out the moving lines and the transformed hexagram;
+the reading follows the AION protocol.
+From the API: `POST /v1/oracle` with `{"question": "..."}`.
 
-### 5. Far imparare il brain
-Le skill registrano una lezione a fine esecuzione. Puoi farlo anche a mano:
+### 5. Teach the brain
+Skills log a lesson when they finish. You can also log one by hand:
 
 ```bash
-python tools/lesson_log.py --skill manuale --domanda "cosa cercavo" --esito utile --nota "cosa ricordare"
+python tools/lesson_log.py --skill manuale --domanda "what I was looking for" --esito utile --nota "what to remember"
 ```
 
-Gli esiti sono `utile`, `vicolo-cieco`, `corretto`, `aperto`. Così si registra
-un'osservazione. Perché diventi una regola servono anche `--quando`, `--allora` e
-`--ancora`, cioè un riscontro esterno (un test, un errore, una misura, una tua
-correzione): le istruzioni complete sono in `CLAUDE.md`. Tutto confluisce in
-`engine/LESSONS.md`, che l'agente rilegge prima di rispondere.
+Outcomes are `utile` (useful), `vicolo-cieco` (dead end), `corretto` (corrected) and
+`aperto` (open). This records an observation. To make it a rule, add `--quando` (when),
+`--allora` (then) and `--ancora` (anchor): an external check such as a test, an error,
+a measurement or your own correction. Full instructions are in `CLAUDE.md`. Everything
+is collected in `engine/LESSONS.md`, which the agent reads before answering.
 
-### 6. Vedere il grafo e la salute del brain
-- `graphify-out/index.html` è la pagina d'ingresso: elenca le tre viste e dice a
-  quale domanda risponde ciascuna.
-- `graphify-out/graph.html`: vista estesa, tutti i nodi.
-- `graphify-out/graph-compact.html`: vista compatta, il sistema come processo a 5 fasi.
-- `graphify-out/graph-atlas.html`: atlante 3D, quello da aprire per orientarsi: altezza = strato (fonti → sapere → motore → uso), spicchio = macroarea,
-  distanza dall'asse = quanto un file è connesso. Doppio click per volare su un nodo,
-  `L` per isolare il suo vicinato a 2 passi.
-- Da remoto: `GET /v1/views/compact` o `/v1/views/atlas` con il token.
-- `metrics/graph_metrics.csv`: l'andamento del brain nel tempo. Se il `grado_medio`
-  scende mentre i nodi crescono, stai accumulando note scollegate.
+### 6. Look at the graph and the brain's health
+- `graphify-out/index.html` is the entry page: it lists the three views and says which
+  question each one answers.
+- `graphify-out/graph.html`: extended view, every node.
+- `graphify-out/graph-compact.html`: compact view, the system as a five-stage process.
+- `graphify-out/graph-atlas.html`: the 3D atlas, the one to open when you need to find
+  your way. Height is the layer (sources → knowledge → engine → use), the slice is the
+  area, distance from the axis is how connected a file is. Double-click to fly to a
+  node, press `L` to isolate its two-step neighbourhood.
+- Remotely: `GET /v1/views/compact` or `/v1/views/atlas` with the token.
+- `metrics/graph_metrics.csv`: how the brain changes over time. If `grado_medio`
+  (average degree) falls while the node count rises, you are adding unconnected notes.
 
 ---
 
-## Manutenzione (ogni tanto, non tutti i giorni)
+## Maintenance (occasionally, not daily)
 
-| Comando | Cosa ti dice | Quando |
+| Command | What it tells you | When |
 |---|---|---|
-| `python tools/freshness_report.py` | cosa è scaduto e cosa non verifichi da troppo | ogni mese |
-| `python tools/check_provenance.py` | affermazioni con numeri e senza fonte | prima di pubblicare un report |
-| `python tools/link_suggest.py` | collegamenti mancanti tra pagine affini | dopo aver aggiunto note |
-| `python tools/add_frontmatter.py` | note senza provenienza (anteprima; `--apply` per scrivere) | dopo un import |
-| `python tools/check_privacy.py` | cosa stai rendendo pubblico (email, segreti, concentrazione) | **prima di ogni push importante** |
-| `python tools/resurface.py` | 3 note da rilegge­re, priorita alle isolate | una volta a settimana |
-| `python tools/consolidate.py` | digest per area + cosa potare | una volta al mese |
+| `python tools/freshness_report.py` | what has expired and what you have not reviewed for too long | monthly |
+| `python tools/check_provenance.py` | claims with figures and no source | before publishing a report |
+| `python tools/link_suggest.py` | missing links between related pages | after adding notes |
+| `python tools/add_frontmatter.py` | notes without provenance (preview; `--apply` to write) | after an import |
+| `python tools/check_privacy.py` | what you are about to make public (emails, secrets, concentration) | **before every significant push** |
+| `python tools/resurface.py` | 3 notes to reread, isolated ones first | weekly |
+| `python tools/consolidate.py` | per-area digest and what to prune | monthly |
 
-Nessuno di questi modifica le note: propongono, e decidi tu. `link_suggest` non scrive
-mai, perché un collegamento sbagliato inserito in automatico passerebbe inosservato.
+None of these edits your notes: they propose, you decide. `link_suggest` never writes,
+because a wrong link added automatically would go unnoticed.
 
-## Catturare una fonte dal web
+## Capture a web source
 
 ```bash
-graphify add https://esempio.it/articolo --author "Autore" --contributor "io"
+graphify add https://example.com/article --author "Author" --contributor "me"
 ```
 
-Scarica la pagina in `raw/`, ne registra autore e contributore e aggiorna il grafo.
-La fonte resta nel brain anche se il link originale smette di funzionare. Poi aggiungi la provenienza con
-`python tools/add_frontmatter.py --apply` e rigenera con `rebuild_all`.
+This downloads the page into `raw/`, records author and contributor, and updates the
+graph. The source stays in the brain even if the original link stops working. Then add
+provenance with `python tools/add_frontmatter.py --apply` and rebuild with `rebuild_all`.
 
-> ⚠️ Se il brain finisce in un repo pubblico, anche ciò che scarichi diventa pubblico.
-> Usa questo comando solo per contenuti che puoi ridistribuire, e controlla cosa è
-> entrato prima del push.
+> ⚠️ If the brain ends up in a public repository, whatever you download becomes public
+> too. Use this command only for content you are allowed to redistribute, and check
+> what came in before you push.
 
 ---
 
-## Collegare altre AI al brain
+## Connect other AI clients
 
-**Claude Desktop (o altri client MCP)** — aggiungi al file di config
-(`claude_desktop_config.json`):
+**Claude Desktop (or another MCP client)** — add to `claude_desktop_config.json`:
 ```json
 { "mcpServers": { "altair-brain": {
     "command": "python",
-    "args": ["<PERCORSO>/altair-brain/server/mcp_server.py"],
-    "env": { "ALTAIR_REPO_DIR": "<PERCORSO>/altair-brain" } } } }
+    "args": ["<PATH>/altair-brain/server/mcp_server.py"],
+    "env": { "ALTAIR_REPO_DIR": "<PATH>/altair-brain" } } } }
 ```
-Serve una volta `pip install mcp`. L'assistente avrà i tool `brain_query`,
-`brain_search`, `brain_context`, `brain_feedback` e gli altri elencati in
-`server/README.md`.
+Run `pip install mcp` once. The assistant then has `brain_query`, `brain_search`,
+`brain_context`, `brain_feedback` and the other tools listed in `server/README.md`.
 
-**Custom GPT (ChatGPT)** — nelle Actions del GPT: importa lo schema da
-`https://TUO-DOMINIO/openapi.json`, autenticazione "API Key / Bearer" con il tuo token.
+**Custom GPT (ChatGPT)** — in the GPT's Actions, import the schema from
+`https://YOUR-DOMAIN/openapi.json` and set authentication to API Key / Bearer with your
+token.
 
-**Qualsiasi altro client HTTP** — usa gli endpoint `/v1/...` con il token
-(elenco completo in `server/README.md`).
-
----
-
-## La VPS (il brain sempre acceso)
-
-- Si aggiorna da GitHub ogni 3 giorni, o subito con `POST /v1/admin/update`.
-- Se un servizio si ferma ricevi una notifica push sul telefono: installa l'app
-  [ntfy](https://ntfy.sh), scegli un topic segreto (es. `altair-x8k2f9q`), iscriviti
-  nell'app e scrivilo in `~/altair-api/.env` come `NTFY_TOPIC=altair-x8k2f9q`.
-- I dati scrivibili (feedback, catture) hanno un backup giornaliero automatico.
-- Il deploy è descritto passo per passo in `server/README.md`.
+**Any other HTTP client** — call the `/v1/...` endpoints with the token (full list in
+`server/README.md`).
 
 ---
 
-## Se qualcosa va storto
+## The VPS (the always-on brain)
 
-| Sintomo | Cosa fare |
+- It pulls from GitHub every three days, or immediately with `POST /v1/admin/update`.
+- If a service stops you get a push notification: install the [ntfy](https://ntfy.sh)
+  app, pick a secret topic (e.g. `altair-x8k2f9q`), subscribe to it in the app and set
+  `NTFY_TOPIC=altair-x8k2f9q` in `~/altair-api/.env`.
+- Writable data (feedback, captures) is backed up automatically every day.
+- Deployment is described step by step in `server/README.md`.
+
+---
+
+## When something goes wrong
+
+| Symptom | What to do |
 |---|---|
-| La CI su GitHub è rossa ❌ | Il push ha un problema: apri l'errore in GitHub → Actions, o chiedi all'agente di sistemare la CI. Il branch `backup` resta sull'ultimo commit validato. |
-| `rebuild_all` fallisce | Leggi quale passo è fallito: dice esattamente cosa rigenerare. |
-| L'API risponde 401 | Token sbagliato o mancante nell'header Authorization. |
-| L'API risponde 429 | Troppe richieste al minuto: aspetta un attimo. |
-| L'API risponde 503 su /query | graphify non è installato su quel server: `pipx install graphifyy`. |
-| La VPS sembra "vecchia" | `GET /v1/health` mostra `built_at_commit` e l'età del grafo. Forza: `POST /v1/admin/update`. |
+| CI on GitHub is red ❌ | The push has a problem: open the error under GitHub → Actions, or ask the agent to fix CI. The `backup` branch stays on the last validated commit. |
+| `rebuild_all` fails | Read which step failed: it names what to regenerate. |
+| The API returns 401 | Wrong or missing token in the Authorization header. |
+| The API returns 429 | Too many requests per minute: wait a moment. |
+| The API returns 503 on /query | graphify is not installed on that server: `pipx install graphifyy`. |
+| The VPS looks out of date | `GET /v1/health` shows `built_at_commit` and the graph's age. Force it with `POST /v1/admin/update`. |
 
 ---
 
-## Le regole d'oro (non dimenticarle)
+## Ground rules
 
-1. **Le pagine generate non si modificano a mano.** Con AION, `wiki/aion/` deriva da
-   `engine/aion.model.json`: si cambia il modello e si rigenera.
-2. **Un solo comando per rigenerare tutto:** `python tools/rebuild_all.py`.
-3. **Il token è un segreto**: mai committarlo, mai condividerlo in chat pubbliche.
-4. **Il repo è pubblico.** I brain installati e il registro locale sono esclusi da Git,
-   e `tools/check_distribution.py` lo verifica in CI. Credenziali e dati personali
-   restano comunque fuori dal repo (`~/altair-data`, dischi locali).
-5. Per qualsiasi lavoro nuovo, l'agente deve leggere prima `ROADMAP.md`.
-6. **Gli hook NON stanno in git.** Vivono in `.claude/settings.local.json` (ignorato):
-   in un repo pubblico un hook versionato eseguirebbe comandi sulla macchina di
-   chiunque lo cloni. L'esempio inerte e `.claude/settings.example.json`; per
-   attivarlo su una nuova macchina: `cp .claude/settings.example.json .claude/settings.local.json`.
-7. **`.agents/` resta versionato**: ogni modifica va dichiarata col marcatore
-   `[hooks-ok]` nel commit, o la CI la respinge.
+1. **Generated pages are not edited by hand.** With AION, `wiki/aion/` is generated
+   from `engine/aion.model.json`: change the model and rebuild.
+2. **One command rebuilds everything:** `python tools/rebuild_all.py`.
+3. **The token is a secret:** never commit it, never paste it in a public chat.
+4. **The repository is public.** Installed brains and the local registry are excluded
+   from Git, and `tools/check_distribution.py` checks this in CI. Credentials and
+   personal data stay outside the repository (`~/altair-data`, local disks).
+5. Before any new work, the agent reads `ROADMAP.md`.
+6. **Hooks are not in Git.** They live in `.claude/settings.local.json`, which is
+   ignored: in a public repository a versioned hook would run commands on the machine
+   of anyone who clones it. The inert example is `.claude/settings.example.json`; to
+   enable it on a new machine: `cp .claude/settings.example.json .claude/settings.local.json`.
+7. **`.agents/` is versioned**: any change to it must carry the `[hooks-ok]` marker in
+   the commit message, or CI rejects it.
 
 ---
 
-## Disaster recovery — ricostruire tutto da zero
+## Disaster recovery
 
-Tutto ciò che è generato si ricostruisce da un clone. Se perdi il PC o la VPS, o se
-main viene danneggiato:
+Everything generated can be rebuilt from a clone. If you lose the computer or the VPS,
+or `main` is damaged:
 
-1. **Repo**: clona `main` da GitHub, oppure il branch `backup`, che punta all'ultimo
-   commit passato dalla CI (`git checkout backup`), oppure usa un clone locale o
-   della VPS. La CI crea anche un tag settimanale `ripristino-AAAA-wNN`.
-2. **Strumenti**: Python 3.12+, `pipx install graphifyy`, `pip install -r
-   server/requirements.txt` (versioni pinnate = ricostruzione identica).
-3. **Rigenerazione**: `python tools/rebuild_all.py` ricrea grafo, sottografi, viste e
-   indice dalle fonti (`raw/`, `wiki/`, `engine/`).
-4. **Dati fuori repo** (`~/altair-data`: feedback, catture, lezioni VPS): ripristina
-   dall'ultimo `~/backups/altair-data_*.tar.gz` (7 copie locali) o dalla copia
-   off-site rclone se configurata (`ALTAIR_RCLONE_REMOTE`).
-5. **Se sparisse graphify da PyPI**: il brain resta leggibile (è tutto testo);
-   query/grafo si perdono ma nessun contenuto. Sorgente upstream:
+1. **Repository**: clone `main` from GitHub, or the `backup` branch, which points to the
+   last commit that passed CI (`git checkout backup`), or use an existing local or VPS
+   clone. CI also creates a weekly tag, `ripristino-YYYY-wNN`.
+2. **Tools**: Python 3.12+, `pipx install graphifyy`, `pip install -r
+   server/requirements.txt` (pinned versions, so the rebuild is identical).
+3. **Rebuild**: `python tools/rebuild_all.py` regenerates graph, subgraphs, views and
+   index from the sources (`raw/`, `wiki/`, `engine/`).
+4. **Data outside the repository** (`~/altair-data`: feedback, captures, VPS lessons):
+   restore from the latest `~/backups/altair-data_*.tar.gz` (7 local copies) or from the
+   off-site rclone copy if configured (`ALTAIR_RCLONE_REMOTE`).
+5. **If graphify disappeared from PyPI**: the brain stays readable, since it is all text.
+   Queries and the graph would be lost, no content. Upstream source:
    github.com/safishamsi/graphify.
 
-**Prova di ripristino, ogni tre mesi circa:** scompatta l'ultimo archivio di
-`~/altair-data` in una cartella temporanea e controlla che i file si aprano; clona il
-repo in una cartella nuova e lancia `python tools/rebuild_all.py`. Un backup che non
-hai mai ripristinato non sai se funziona.
+**Restore test, roughly every three months:** unpack the latest `~/altair-data` archive
+into a temporary folder and check that the files open; clone the repository into a new
+folder and run `python tools/rebuild_all.py`. A backup you have never restored is a
+backup you do not know works.

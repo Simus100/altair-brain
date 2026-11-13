@@ -149,7 +149,7 @@ brains/      the empty starter; installed brains stay local
 docs/        screenshots, demo generator, verification record
 ```
 
-The day-to-day user guide, in Italian, is [GUIDA.md](GUIDA.md).
+Day-to-day usage is covered in the [user guide](GUIDA.md).
 
 ## Authorship and credits
 
