@@ -1,7 +1,34 @@
-# tools/ — feature di supporto ad altair-brain
+# tools/ — il motore
 
-Strumenti versionati che **estendono** graphify senza modificarne il binario installato
-(questa è "l'attenzione del caso": il tool esterno resta intatto e aggiornabile).
+Ogni comando si lancia dalla radice del repo e trova da solo il brain attivo
+(`python tools/brain.py` lo stampa). I tool estendono graphify senza modificarlo: il
+pacchetto installato resta intatto e aggiornabile.
+
+## Indice
+
+| Gruppo | Comandi |
+|---|---|
+| Pipeline | `rebuild_all.py` (tutto, in ordine), `extract_graph.py`, `graph_prune.py`, `apply_bridges.py`, `apply_provenance.py`, `build_area_graphs.py`, `sync_extended_view.py` |
+| Brain | `brain.py` (quale brain è attivo), `brain_new.py`, `brain_upgrade.py`, `brain_export.py`, `onboarding.py`, `oplog.py` |
+| Ricerca e contesto | `search.py`, `build_search_index.py`, `build_dense_index.py` (semantica, facoltativa), `context_pack.py` |
+| Viste | `altair_compact_view.py`, `build_atlas_view.py`, `build_views_index.py` |
+| Contratti e guardie | `validate_contracts.py`, `graph_health.py`, `check_wikilinks.py`, `check_provenance.py`, `check_privacy.py`, `check_distribution.py` |
+| Qualità del corpus | `freshness_report.py`, `contradiction_report.py`, `link_suggest.py`, `add_frontmatter.py`, `resurface.py`, `consolidate.py`, `graph_metrics.py` |
+| Lezioni | `lesson_log.py`, `lessons_digest.py` |
+| Report | `report_new.py`, `report_build.py`, `report_update.py`, `report_harvest.py`, `style_check.py` |
+| AION (solo con il training) | `gen_wiki_from_model.py`, `validate_model.py`, `build_iching_db.py`, `oracle_cast.py`, `apply_iching_relations.py` |
+| Officina | `build_core.py` (genera `core/`), `build_code_graph.py`, `sync_agent_skills.py`, `console.py` |
+
+Ogni file spiega nella propria intestazione cosa fa e perché. I report di qualità
+propongono e basta: nessuno modifica le note da solo.
+
+Lo scheletro `core/`, che è un brain solo, riceve una parte di questi tool. Restano
+nell'officina quelli che gestiscono più brain (`brain_new.py`, `brain_export.py`,
+`check_distribution.py`), `build_core.py`, `build_code_graph.py` e la ricerca
+semantica. I tool AION vanno in `training/aion/tools/`, `style_check.py` nel plugin
+`scrittura`, perché richiede un motore di stilometria che vive nel materiale grezzo.
+
+Le sezioni che seguono descrivono le tre viste del grafo.
 
 ## altair_compact_view.py — vista compatta strutturale
 
@@ -27,13 +54,12 @@ Uso:
 python tools/altair_compact_view.py
 ```
 
-Proprietà: **deterministico, nessuna API a pagamento**, idempotente.
+Deterministico e idempotente, senza API a pagamento.
 
 ## build_atlas_view.py — atlante 3D esplorabile
 
-La terza vista. Le altre due falliscono l'esplorazione da lati opposti: l'estesa è un
-gomitolo dove la posizione non significa nulla, la compatta è un diagramma che si
-legge ma non si percorre.
+La vista estesa mostra tutto ma la posizione dei nodi non significa nulla; la compatta
+si legge ma non si percorre. L'atlante serve a esplorare.
 
 L'atlante usa **l'architettura del brain come sistema di coordinate**: altezza =
 strato del processo, spicchio = macroarea, raggio = centralità. Mostra i nodi-FILE e
@@ -47,23 +73,22 @@ python tools/build_atlas_view.py
 Comandi: trascina per ruotare, rotella per lo zoom, click per aprire un nodo, doppio
 click per volarci, `L` lente sul vicinato a 2 passi, `R` rotazione, `/` cerca.
 
-Le promesse del layout non sono affidate all'occhio: `tests/test_atlas.py` verifica
+`tests/test_atlas.py` verifica
 che ogni nodo stia nel suo strato e nel suo spicchio, che il raggio segua la
 centralità, che la provenienza resti verticale, e che la pagina non contenga
 dipendenze esterne.
 
-## build_views_index.py — la porta
+## build_views_index.py — pagina d'ingresso
 
-Chi apre `graphify-out/` trova tre file `.html` e nessun indizio su quale serva.
-`graphify-out/index.html` è la porta: apre le tre viste dicendo a quale domanda
-risponde ciascuna, **prima** del click. Link relativi: funziona anche da `file://`.
+`graphify-out/index.html` è la pagina d'ingresso: elenca le tre viste e dice a quale
+domanda risponde ciascuna. Link relativi: funziona anche da `file://`.
 
 ```bash
 python tools/build_views_index.py
 ```
 
-Deterministica — i numeri vengono dal grafo, non dall'orologio né dal peso dei file
-(che dipende dalla versione di graphify installata). La CI ne verifica la coerenza.
+È deterministica: i numeri vengono dal grafo, non dall'orologio né dalla dimensione
+dei file, che cambia con la versione di graphify. La CI ne verifica la coerenza.
 
 ## Le tre viste
 

@@ -1,84 +1,130 @@
-# server/ — esposizione del second brain via FastAPI
+# server/ — API HTTP e server MCP
 
-Espone il brain e graphify ad altri dispositivi, in sicurezza, **senza API a pagamento**
-(graphify gira in locale; il ragionamento LLM resta al client, es. OpenClaw/GPT).
+Espone un brain ad altri dispositivi e ad assistenti AI. Graphify gira in locale e il
+ragionamento resta al client che interroga (Claude, ChatGPT, qualsiasi client HTTP o
+MCP): nessuna API a pagamento.
 
-## Componenti
-- `app.py` — API FastAPI (auth a token, endpoint sotto).
-- `requirements.txt` — dipendenze Python (fastapi, uvicorn).
-- `update_brain.sh` — pull + `graphify update` + vista compatta (auto-update).
-- `systemd/` — servizio API + timer "ogni 3 giorni".
-- `Caddyfile` — reverse proxy con HTTPS automatico.
-- `.env.example` — copia in `.env` e imposta `ALTAIR_API_TOKEN`.
+## File
 
-## Dipendenza: graphify (pacchetto Python)
-graphify e il pacchetto PyPI **`graphifyy`** (CLI `graphify`), da https://github.com/safishamsi/graphify.
-Installazione su Linux (consigliata pipx o uv):
+| File | Ruolo |
+|---|---|
+| `app.py` | API FastAPI, endpoint sotto `/v1` |
+| `brain_core.py` | logica condivisa da API e server MCP |
+| `mcp_server.py` | server MCP via stdio, per assistenti locali |
+| `requirements.txt` | dipendenze con versioni bloccate (fastapi, uvicorn, mcp) |
+| `bootstrap.sh` | installa il runtime sulla VPS: cartelle, virtualenv, dipendenze |
+| `update_brain.sh` | allinea il repo al remoto e rigenera grafo e viste |
+| `backup_data.sh` | backup giornaliero a rotazione dei dati scrivibili |
+| `systemd/` | unit per API, aggiornamento periodico, backup e notifiche di guasto |
+| `Caddyfile` | reverse proxy con HTTPS automatico |
+| `.env.example` | elenco delle variabili di configurazione |
+| `client_example.py` | client di prova, solo libreria standard |
+| `altair.http` | richieste di esempio per VS Code REST Client o JetBrains |
+
+## Graphify
+
+Graphify si installa dal pacchetto PyPI `graphifyy`, che fornisce il comando `graphify`
+([sorgente](https://github.com/safishamsi/graphify)). Su Linux:
 
 ```bash
-pipx install graphifyy         # oppure:  uv tool install graphifyy
+pipx install graphifyy         # oppure: uv tool install graphifyy
 graphify --version
 ```
 
-Va sul PATH dell'utente (`~/.local/bin`). Poiche i servizi systemd non ereditano quel
-PATH, imposta in `server/.env` la variabile `GRAPHIFY_BIN` col percorso assoluto
-(es. `/home/altair/.local/bin/graphify`); `bootstrap.sh` lo fa da solo. L'API degrada
-con eleganza: gli endpoint dati funzionano comunque, quelli graphify rispondono 503 se
-il binario non e raggiungibile.
+Il comando finisce in `~/.local/bin`, che i servizi systemd non hanno nel PATH. Per
+questo il file `.env` del runtime contiene `GRAPHIFY_BIN` con il percorso assoluto;
+`bootstrap.sh` lo imposta da solo. Se il binario non si trova, gli endpoint sui dati continuano a
+funzionare e quelli che usano graphify rispondono 503.
 
-## Endpoint (v1 — alias non versionati mantenuti)
-| Metodo | Path | Funzione |
-|--------|------|----------|
-| GET | `/v1/health` | stato ricco: grafo (nodi, commit, età), modello, aree (pubblico) |
-| GET | `/v1/model` | `engine/aion.model.json` (contratto: `schema_version`) |
-| GET | `/v1/reasoner` | protocollo di ragionamento AION |
-| GET | `/v1/graph`, `?area=<id>`, `/v1/graph/compact` | grafo completo / per area / compatto |
-| GET | `/v1/areas` | aree disponibili + tabella di routing |
-| GET | `/v1/views/extended`, `/v1/views/compact`, `/v1/views/atlas` | le tre viste HTML (l'atlante è autosufficiente: nessuna CDN) |
-| GET | `/v1/lessons` | lezioni apprese |
-| GET | `/v1/route?q=` | decisione del router (trasparenza) |
-| GET | `/v1/query?q=&area=&budget=` | query (router automatico; header `X-Altair-Area`) |
-| GET | `/v1/path`, `/v1/explain`, `/v1/affected` | funzioni graphify |
-| POST | `/v1/oracle` `{question?, seed?}` | lancio I Ching (AION_Oracle eseguibile) |
-| GET | `/v1/oracle/hexagram/{id}` | scheda esagramma (1-64) |
-| POST | `/v1/capture` `{text, title?, area_hint?, source?}` | cattura nota → inbox |
-| GET | `/v1/inbox`, `/v1/inbox/{id}` | note pendenti / contenuto |
-| POST | `/v1/inbox/{id}/done` | archivia nota processata |
-| POST | `/v1/feedback` | registra esito + reflect (apprendimento) |
-| POST | `/v1/admin/update` | allineamento manuale al remoto |
+## Endpoint
 
-Tutti (tranne `/health`) richiedono `Authorization: Bearer <ALTAIR_API_TOKEN>`
-(o `X-API-Key`). Confronto token constant-time; rate limit per IP
-(`ALTAIR_RATE_LIMIT`, default 120 req/min).
+Tutti sotto `/v1`; i vecchi percorsi senza prefisso restano attivi come alias.
 
-## Server MCP (assistenti AI locali)
-`server/mcp_server.py` espone il brain come tool MCP nativi (`brain_query`,
-`brain_model`, `brain_oracle`, `brain_feedback`, ...). Richiede `pip install mcp`.
-Config Claude Desktop: vedi intestazione del file o `GUIDA.md`.
+| Metodo | Percorso | Risposta |
+|---|---|---|
+| GET | `/v1/health` | stato: nodi del grafo, commit di build, età, aree. Senza token |
+| GET | `/v1/areas` | aree e tabella di instradamento |
+| GET | `/v1/route?q=` | in quale area il router manderebbe la domanda |
+| GET | `/v1/query?q=&area=&budget=` | interrogazione del grafo; l'area scelta torna nell'header `X-Altair-Area` |
+| GET | `/v1/search?q=&top=&area=&al=` | ricerca nel testo (BM25, più semantica se attivata); `al=AAAA-MM-GG` risponde con ciò che era vero in quella data |
+| GET | `/v1/context?q=&budget=&area=&formato=` | contesto pronto per un LLM entro un budget di token; `formato=testo` restituisce markdown |
+| GET | `/v1/path`, `/v1/explain`, `/v1/affected` | percorso fra due nodi, spiegazione di un concetto, nodi toccati da una modifica |
+| GET | `/v1/graph`, `/v1/graph?area=`, `/v1/graph/compact` | grafo completo, di un'area, compatto |
+| GET | `/v1/views/extended`, `/v1/views/compact`, `/v1/views/atlas` | le tre viste HTML |
+| GET | `/v1/lessons` | lezioni consolidate |
+| POST | `/v1/capture` `{text, title?, area_hint?, source?}` | salva una nota nell'inbox |
+| GET | `/v1/inbox`, `/v1/inbox/{id}` | note in attesa, contenuto di una nota |
+| POST | `/v1/inbox/{id}/done` | archivia una nota smistata |
+| POST | `/v1/feedback` | registra l'esito di una risposta |
+| POST | `/v1/admin/update` | forza l'allineamento al remoto |
 
-## Custom GPT (ChatGPT Actions)
-Nelle Actions del GPT importa lo schema da `https://<dominio>/openapi.json` e imposta
-autenticazione API Key → Bearer con il token. Il GPT ottiene tutti gli endpoint v1.
+Solo con il training AION:
 
-## Notifiche di guasto + backup
-- `systemd/altair-notify@.service`: push gratuito via ntfy.sh quando una unit fallisce
-  (imposta `NTFY_TOPIC` in `.env`, iscriviti dall'app ntfy sul telefono). Le unit
-  API/update/backup hanno gia `OnFailure=`.
-- `systemd/altair-backup.{service,timer}` + `backup_data.sh`: backup giornaliero
-  rotante (7 copie) di `~/altair-data` — l'unico dato non protetto da GitHub.
+| Metodo | Percorso | Risposta |
+|---|---|---|
+| GET | `/v1/model` | il modello AION (`engine/aion.model.json`, campo `schema_version`) |
+| GET | `/v1/reasoner` | il protocollo di ragionamento |
+| POST | `/v1/oracle` `{question?, seed?}` | lancio I Ching |
+| GET | `/v1/oracle/hexagram/{id}` | scheda di un esagramma, da 1 a 64 |
 
-## Deploy
-Vedi i prompt passo-passo per OpenClaw (consegnati a parte). In sintesi:
-1. utente dedicato + dipendenze (python3-venv, git, caddy, build Linux di graphify);
-2. `git clone` del repo, venv, `pip install -r server/requirements.txt`;
-3. `server/.env` con un token casuale robusto;
-4. `systemd` per l'API e per il timer di aggiornamento (3 giorni);
-5. Caddy per HTTPS + firewall (solo 80/443 pubblici; API su 127.0.0.1:8000);
-6. verifica da un altro dispositivo con il token.
+Ogni endpoint tranne `/health` richiede `Authorization: Bearer <ALTAIR_API_TOKEN>`
+oppure `X-API-Key`. Il token si confronta in tempo costante; il limite di richieste per
+IP si imposta con `ALTAIR_RATE_LIMIT` (predefinito 120 al minuto).
 
-## Sicurezza (attenzioni del caso)
-- Token obbligatorio; l'API non parte senza `ALTAIR_API_TOKEN`.
-- Subprocess con argomenti come lista (no shell) → niente command injection.
-- Uvicorn su `127.0.0.1`; l'esterno passa solo da Caddy (TLS).
-- Modulo **Velario inerte** a livello di dati: non aggira filtri.
-- Esegui come utente non-root; `server/.env` non e versionato.
+## Server MCP
+
+`mcp_server.py` espone gli stessi servizi come tool MCP: `brain_query`,
+`brain_search`, `brain_context`, `brain_explain`, `brain_path`, `brain_lessons`,
+`brain_feedback` e, con AION, `brain_model`, `brain_reasoner`, `brain_oracle`.
+Gira dove il repo è clonato, senza rete e senza token. Serve `pip install mcp`.
+
+Configurazione di Claude Desktop (`claude_desktop_config.json`):
+
+```json
+{ "mcpServers": { "altair-brain": {
+    "command": "python",
+    "args": ["<PERCORSO>/altair-brain/server/mcp_server.py"],
+    "env": { "ALTAIR_REPO_DIR": "<PERCORSO>/altair-brain" } } } }
+```
+
+## ChatGPT (Custom GPT)
+
+Nelle Actions del GPT importa lo schema da `https://<dominio>/openapi.json` e scegli
+l'autenticazione API Key di tipo Bearer con il token.
+
+## Deploy su VPS
+
+1. Crea un utente dedicato, non root, e installa python3-venv, git, Caddy e graphify.
+2. Clona il repo nella home di quell'utente e lancia `server/bootstrap.sh`. Crea
+   `~/altair-api` (runtime: virtualenv, codice, configurazione) e `~/altair-data`
+   (dati scrivibili fuori da Git: feedback, catture, lezioni). Si può rilanciare.
+3. Al primo avvio lo script scrive `~/altair-api/.env` con un token casuale di 64
+   caratteri esadecimali e lo stampa una volta: conservalo. Un `.env` esistente non
+   viene toccato.
+4. Installa come root le unit di `systemd/`: l'API, il timer di aggiornamento ogni tre giorni,
+   il backup giornaliero.
+5. Configura Caddy per l'HTTPS. Uvicorn ascolta solo su `127.0.0.1:8000`; il firewall
+   lascia aperte solo le porte 80 e 443.
+6. Prova da un altro dispositivo con `client_example.py` e il token.
+
+Il repo sulla VPS si usa in sola lettura: l'aggiornamento fa fetch e reset, quindi
+modifiche locali al repo vanno perse. I dati vivi stanno in `~/altair-data`.
+
+## Guasti e backup
+
+- `systemd/altair-notify@.service` manda una notifica push via [ntfy](https://ntfy.sh)
+  quando una unit fallisce. Imposta `NTFY_TOPIC` in `.env` e iscriviti allo stesso topic
+  dall'app. API, aggiornamento e backup hanno già `OnFailure=`.
+- `systemd/altair-backup.{service,timer}` con `backup_data.sh` salvano ogni giorno
+  `~/altair-data` e tengono le ultime 7 copie. È l'unico dato che GitHub non conserva.
+
+## Sicurezza
+
+- L'API non parte senza `ALTAIR_API_TOKEN`; `.env` non è versionato.
+- I comandi esterni ricevono gli argomenti come lista, senza shell.
+- Aree, id dell'inbox e seed vengono validati prima dell'uso.
+- Il modulo Velario del protocollo AION è inerte: l'API non lo usa per aggirare filtri.
+
+**Limite noto.** C'è un solo token, e vale per tutto il brain servito, operazioni
+amministrative comprese (`/v1/admin/update`, `/v1/inbox/{id}/done`). Credenziali
+separate per lettura e amministrazione sono fra le prossime priorità.

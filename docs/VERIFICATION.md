@@ -13,7 +13,7 @@ Distribution transition: 9 November 2026. Engine 1.2.0.
 
 Screenshots are browser captures of generated product pages, not mockups.
 The corpus is created by `python docs/generate_demo.py`, entirely independently
-of installed brains. PNGs in assets/ were captured at 1440 Ã— 960 with Edge/Playwright.
+of installed brains. PNGs in assets/ were captured at 1440 × 960 with Edge/Playwright.
 
 ## Validation
 
